@@ -21,3 +21,6 @@ website/next-env.d.ts
 
 # Local data backups (large, machine-specific)
 data/backups/
+
+# Raw provider API snapshots (sanitized but bulky; apps read normalized CSVs, not these)
+outputs/live_state/provider_snapshots/
