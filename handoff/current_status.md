@@ -6,11 +6,12 @@ Scope: current state snapshot for next session. No secrets are included.
 
 ## Deployment status (2026-07-10)
 
-- **Repository is deployment-ready but NOT yet deployed.** Branch `main`, HEAD `df0cf8b`, no git remote configured.
-- Deployment could not be performed from the working environment: no `gh` CLI, no `vercel` CLI, no Streamlit deploy CLI, no auth tokens. All three platform deployments and the first hosted GitHub Actions run are browser/authenticated-CLI-only and remain user actions.
+- **GitHub: DEPLOYED.** Repository live at **https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor** (public). `origin/main` verified identical to local HEAD; both GitHub Actions workflows present on the remote.
+- **Vercel + Streamlit Cloud: not yet deployed** (browser/account steps — see below).
 - Re-verified this session: pytest 16/16; `validate` no failures; `validate-features/-simulation/-bracket/-live-forecast` pass; `validate-public-exports` 31/31; `validate-dashboard` 10/10; `validate-deployment-readiness` ready (8/8); website `npm ci`+lint+build clean (55 static pages); Streamlit headless health OK; secret scan 0 hits.
-- Change this session (commit `df0cf8b`): untracked 1.4 MB of raw `provider_snapshots/` (sanitized, no secrets, unread by apps) and gitignored them before public release. Normalized CSVs the apps consume stay tracked.
-- Exact remaining user steps and full details: `handoff/deployment_status_handoff.md`.
+- Pre-release change (commit `df0cf8b`): untracked 1.4 MB of raw `provider_snapshots/` (sanitized, no secrets, unread by apps) and gitignored them. Normalized CSVs the apps consume stay tracked.
+- Remaining user steps: (1) set the `FOOTBALL_DATA_ORG_KEY` GitHub Actions secret; (2) confirm the auto-triggered **Validate** workflow is green; (3) Vercel New Project → Root Directory `website` → deploy; (4) Streamlit Cloud → `dashboard/app.py` → deploy; (5) put real URLs into `NEXT_PUBLIC_*` env vars + README. Full details: `handoff/deployment_status_handoff.md`.
+- Note: `gh` could not be authenticated in the tool environment; the push used the machine's cached git credential. Setting Actions secrets and monitoring workflow runs require the user's authenticated `gh` terminal or the GitHub web UI.
 
 ## Completed Phases
 

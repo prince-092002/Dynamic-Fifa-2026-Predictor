@@ -5,7 +5,15 @@ Scope: attempt to deploy the completed Phase 6/6B portfolio system to GitHub, Ve
 
 ## Outcome in one line
 
-The repository is fully deployment-ready on branch `main` (HEAD `df0cf8b`), all validations/tests/builds pass, but **no actual GitHub/Vercel/Streamlit deployment was possible from this environment** because it has no `gh` CLI, no `vercel` CLI, no Streamlit deploy CLI, and no GitHub/Vercel auth tokens. Every deployment step is browser- or authenticated-CLI-only and is left as a one-command user action below.
+**GitHub is deployed:** repository live at https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor with `main` pushed and verified. Vercel and Streamlit Cloud remain user browser/account steps. `gh` could not be authenticated in the tool environment, so the push used the machine's cached git credential (Windows Credential Manager); setting Actions secrets and monitoring workflow runs still require the user's authenticated `gh` terminal or the web UI.
+
+## GitHub deployment (completed 2026-07-10)
+
+- Repository: **https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor** (public), created by the user (empty, no README/gitignore/license).
+- `git remote add origin https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor.git`; `git push -u origin main` succeeded.
+- Verified: `git ls-remote origin refs/heads/main` == local HEAD `ea71270`; full 5-commit history on remote; both `.github/workflows/{validate,portfolio-refresh}.yml` present remotely.
+- The push to `main` should auto-trigger the **Validate** workflow (`on: push: branches:[main]`); run status was not observable from the tool environment (no `gh` auth / API access there).
+- Still pending (user's authenticated terminal or web UI): `gh secret set FOOTBALL_DATA_ORG_KEY --repo prince-092002/Dynamic-Fifa-2026-Predictor`; confirm Validate is green.
 
 ## Environment audit (verified this session)
 
