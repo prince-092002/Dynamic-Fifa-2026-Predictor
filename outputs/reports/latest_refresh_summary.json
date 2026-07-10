@@ -1,0 +1,84 @@
+{
+  "refresh_timestamp": "2026-07-10T00:54:44+00:00",
+  "mode": "matchday",
+  "force": false,
+  "source_used": "existing_processed_csv",
+  "api_key_available": true,
+  "fixtures_fetched": 104,
+  "completed_results_count": 0,
+  "new_completed_matches_detected": 0,
+  "files_updated": [
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\processed\\historical_international_matches.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\processed\\historical_world_cup_matches.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\processed\\fixtures_2026.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\processed\\results_2026.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\processed\\team_ratings.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\processed\\team_stats_2026.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\processed\\player_stats_2026.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\processed\\matches_master.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\data_validation_report.csv",
+    "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\end_of_matchday_update_summary.md"
+  ],
+  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260709_195444",
+  "validation_status": "passed",
+  "warnings": [
+    "API-Football returned 0 fixture rows; using existing processed CSVs."
+  ],
+  "errors": [],
+  "next_recommended_action": "Data refresh complete. Ready for the next modeling phase when needed.",
+  "live_forecast": {
+    "status": "success",
+    "current_phase": "quarterfinal",
+    "finalist_prediction_active": true,
+    "top_finalist_pair": "Argentina vs France",
+    "top_finalist_pair_probability": 0.288,
+    "top_champion": "France",
+    "top_champion_probability": 0.316,
+    "fallback_bracket_usage": 0.0967741935483871,
+    "forecast_mode": "true_live_forecast",
+    "public_label": "True live forecast from current tournament state",
+    "source_quality_score": 100,
+    "forecast_ran": true,
+    "live_matchup_prediction_status": "success",
+    "live_matchups_predicted": 3,
+    "live_model_probability_uses": 3000,
+    "probability_source_counts": {
+      "completed_result": 1000,
+      "live_model_exact": 3000,
+      "elo_fallback": 2945,
+      "model_reversed": 55
+    },
+    "run_id": "2026-07-10T005454Z-caf80429",
+    "phase_transition": {
+      "previous_phase": "quarterfinal",
+      "current_phase": "quarterfinal",
+      "phase_changed": false,
+      "detected_at": "2026-07-10T00:55:19+00:00",
+      "newly_resolved_matchups": 0,
+      "newly_completed_matches": 0,
+      "completed_match_count": 97,
+      "resolved_matchup_ids": [
+        "football_data_org_537384",
+        "football_data_org_537385",
+        "football_data_org_537386"
+      ],
+      "first_recorded_run": false
+    },
+    "reports": [
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\providers\\provider_selection_report.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\fifa_official_live_status.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\fifa_official_live_status.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\live_knockout_prediction_report.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\live_knockout_prediction_validation.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\probability_source_progression.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\live_state\\latest_live_run_manifest.json",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\live_state_summary.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\finalist_prediction_summary.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\live_update_limitations.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\source_verification\\live_forecast_quality_gate.md",
+      "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\live_validation_report.md"
+    ]
+  },
+  "no_retrain": true,
+  "allow_fallback_forecast": false
+}

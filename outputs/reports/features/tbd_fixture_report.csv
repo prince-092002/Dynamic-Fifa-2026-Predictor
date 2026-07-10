@@ -1,0 +1,105 @@
+match_id,date,stage,group,team_a,team_b,team_a_is_tbd,team_b_is_tbd,fixture_has_tbd_team
+1,2026-06-11,Group Stage,Group A,Mexico,South Africa,False,False,False
+2,2026-06-12,Group Stage,Group A,South Korea,Winner UEFA Playoff D,False,False,False
+3,2026-06-12,Group Stage,Group B,Canada,Winner UEFA Playoff A,False,False,False
+4,2026-06-13,Group Stage,Group D,United States,Paraguay,False,False,False
+5,2026-06-13,Group Stage,Group B,Qatar,Switzerland,False,False,False
+6,2026-06-13,Group Stage,Group C,Brazil,Morocco,False,False,False
+7,2026-06-14,Group Stage,Group C,Haiti,Scotland,False,False,False
+8,2026-06-14,Group Stage,Group D,Australia,Winner UEFA Playoff C,False,False,False
+9,2026-06-14,Group Stage,Group E,Germany,Curaçao,False,False,False
+10,2026-06-14,Group Stage,Group F,Netherlands,Japan,False,False,False
+11,2026-06-14,Group Stage,Group E,Ivory Coast,Ecuador,False,False,False
+12,2026-06-15,Group Stage,Group F,Winner UEFA Playoff B,Tunisia,False,False,False
+13,2026-06-15,Group Stage,Group H,Spain,Cabo Verde,False,False,False
+14,2026-06-15,Group Stage,Group G,Belgium,Egypt,False,False,False
+15,2026-06-15,Group Stage,Group H,Saudi Arabia,Uruguay,False,False,False
+16,2026-06-16,Group Stage,Group G,Iran,New Zealand,False,False,False
+17,2026-06-16,Group Stage,Group I,France,Senegal,False,False,False
+18,2026-06-16,Group Stage,Group I,Winner FIFA Playoff 2,Norway,False,False,False
+19,2026-06-17,Group Stage,Group J,Argentina,Algeria,False,False,False
+20,2026-06-17,Group Stage,Group J,Austria,Jordan,False,False,False
+21,2026-06-17,Group Stage,Group K,Portugal,Winner FIFA Playoff 1,False,False,False
+22,2026-06-17,Group Stage,Group L,England,Croatia,False,False,False
+23,2026-06-17,Group Stage,Group L,Ghana,Panama,False,False,False
+24,2026-06-18,Group Stage,Group K,Uzbekistan,Colombia,False,False,False
+25,2026-06-18,Group Stage,Group A,Winner UEFA Playoff D,South Africa,False,False,False
+26,2026-06-18,Group Stage,Group B,Switzerland,Winner UEFA Playoff A,False,False,False
+27,2026-06-19,Group Stage,Group B,Canada,Qatar,False,False,False
+28,2026-06-19,Group Stage,Group A,Mexico,South Korea,False,False,False
+29,2026-06-19,Group Stage,Group D,United States,Australia,False,False,False
+30,2026-06-19,Group Stage,Group C,Scotland,Morocco,False,False,False
+31,2026-06-20,Group Stage,Group C,Brazil,Haiti,False,False,False
+32,2026-06-20,Group Stage,Group D,Winner UEFA Playoff C,Paraguay,False,False,False
+33,2026-06-20,Group Stage,Group F,Netherlands,Winner UEFA Playoff B,False,False,False
+34,2026-06-20,Group Stage,Group E,Germany,Ivory Coast,False,False,False
+35,2026-06-21,Group Stage,Group E,Ecuador,Curaçao,False,False,False
+36,2026-06-21,Group Stage,Group F,Tunisia,Japan,False,False,False
+37,2026-06-21,Group Stage,Group H,Spain,Saudi Arabia,False,False,False
+38,2026-06-21,Group Stage,Group G,Belgium,Iran,False,False,False
+39,2026-06-21,Group Stage,Group H,Uruguay,Cabo Verde,False,False,False
+40,2026-06-22,Group Stage,Group G,New Zealand,Egypt,False,False,False
+41,2026-06-22,Group Stage,Group J,Argentina,Austria,False,False,False
+42,2026-06-22,Group Stage,Group I,France,Winner FIFA Playoff 2,False,False,False
+43,2026-06-23,Group Stage,Group I,Norway,Senegal,False,False,False
+44,2026-06-23,Group Stage,Group J,Jordan,Algeria,False,False,False
+45,2026-06-23,Group Stage,Group K,Portugal,Uzbekistan,False,False,False
+46,2026-06-23,Group Stage,Group L,England,Ghana,False,False,False
+47,2026-06-23,Group Stage,Group L,Panama,Croatia,False,False,False
+48,2026-06-24,Group Stage,Group K,Colombia,Winner FIFA Playoff 1,False,False,False
+49,2026-06-24,Group Stage,Group B,Switzerland,Canada,False,False,False
+50,2026-06-24,Group Stage,Group B,Winner UEFA Playoff A,Qatar,False,False,False
+51,2026-06-24,Group Stage,Group C,Scotland,Brazil,False,False,False
+52,2026-06-24,Group Stage,Group C,Morocco,Haiti,False,False,False
+53,2026-06-25,Group Stage,Group A,Winner UEFA Playoff D,Mexico,False,False,False
+54,2026-06-25,Group Stage,Group A,South Africa,South Korea,False,False,False
+55,2026-06-25,Group Stage,Group E,Curaçao,Ivory Coast,False,False,False
+56,2026-06-25,Group Stage,Group E,Ecuador,Germany,False,False,False
+57,2026-06-26,Group Stage,Group F,Japan,Winner UEFA Playoff B,False,False,False
+58,2026-06-26,Group Stage,Group F,Tunisia,Netherlands,False,False,False
+59,2026-06-26,Group Stage,Group D,Winner UEFA Playoff C,United States,False,False,False
+60,2026-06-26,Group Stage,Group D,Paraguay,Australia,False,False,False
+61,2026-06-26,Group Stage,Group I,Norway,France,False,False,False
+62,2026-06-26,Group Stage,Group I,Senegal,Winner FIFA Playoff 2,False,False,False
+63,2026-06-27,Group Stage,Group H,Cabo Verde,Saudi Arabia,False,False,False
+64,2026-06-27,Group Stage,Group H,Uruguay,Spain,False,False,False
+65,2026-06-27,Group Stage,Group G,Egypt,Iran,False,False,False
+66,2026-06-27,Group Stage,Group G,New Zealand,Belgium,False,False,False
+67,2026-06-27,Group Stage,Group L,Panama,England,False,False,False
+68,2026-06-27,Group Stage,Group L,Croatia,Ghana,False,False,False
+69,2026-06-27,Group Stage,Group K,Colombia,Portugal,False,False,False
+70,2026-06-27,Group Stage,Group K,Winner FIFA Playoff 1,Uzbekistan,False,False,False
+71,2026-06-28,Group Stage,Group J,Algeria,Austria,False,False,False
+72,2026-06-28,Group Stage,Group J,Jordan,Argentina,False,False,False
+73,2026-06-28,Round of 32,2A vs 2B,TBD_Team_A,TBD_Team_B,True,True,True
+74,2026-06-29,Round of 32,1C vs 2F,TBD_Team_A,TBD_Team_B,True,True,True
+75,2026-06-29,Round of 32,1E vs 3ABCDF,TBD_Team_A,TBD_Team_B,True,True,True
+76,2026-06-30,Round of 32,1F vs 2C,TBD_Team_A,TBD_Team_B,True,True,True
+77,2026-06-30,Round of 32,2E vs 2I,TBD_Team_A,TBD_Team_B,True,True,True
+78,2026-06-30,Round of 32,1I vs 3CDFGH,TBD_Team_A,TBD_Team_B,True,True,True
+79,2026-07-01,Round of 32,1A vs 3CEFHI,TBD_Team_A,TBD_Team_B,True,True,True
+80,2026-07-01,Round of 32,1L vs 3EHIJK,TBD_Team_A,TBD_Team_B,True,True,True
+81,2026-07-01,Round of 32,1G vs 3AEHIJ,TBD_Team_A,TBD_Team_B,True,True,True
+82,2026-07-02,Round of 32,1D vs 3BEFIJ,TBD_Team_A,TBD_Team_B,True,True,True
+83,2026-07-02,Round of 32,1H vs 2J,TBD_Team_A,TBD_Team_B,True,True,True
+84,2026-07-02,Round of 32,2K vs 2L,TBD_Team_A,TBD_Team_B,True,True,True
+85,2026-07-03,Round of 32,1B vs 3EFGIJ,TBD_Team_A,TBD_Team_B,True,True,True
+86,2026-07-03,Round of 32,2D vs 2G,TBD_Team_A,TBD_Team_B,True,True,True
+87,2026-07-03,Round of 32,1J vs 2H,TBD_Team_A,TBD_Team_B,True,True,True
+88,2026-07-04,Round of 32,1K vs 3DEIJL,TBD_Team_A,TBD_Team_B,True,True,True
+89,2026-07-04,Round of 16,W73 vs W75,TBD_Team_A,TBD_Team_B,True,True,True
+90,2026-07-04,Round of 16,W74 vs W77,TBD_Team_A,TBD_Team_B,True,True,True
+91,2026-07-05,Round of 16,W76 vs W78,TBD_Team_A,TBD_Team_B,True,True,True
+92,2026-07-06,Round of 16,W79 vs W80,TBD_Team_A,TBD_Team_B,True,True,True
+93,2026-07-06,Round of 16,W83 vs W84,TBD_Team_A,TBD_Team_B,True,True,True
+94,2026-07-07,Round of 16,W81 vs W82,TBD_Team_A,TBD_Team_B,True,True,True
+95,2026-07-07,Round of 16,W86 vs W88,TBD_Team_A,TBD_Team_B,True,True,True
+96,2026-07-07,Round of 16,W85 vs W87,TBD_Team_A,TBD_Team_B,True,True,True
+97,2026-07-09,Quarterfinals,W89 vs W90,TBD_Team_A,TBD_Team_B,True,True,True
+98,2026-07-10,Quarterfinals,W93 vs W94,TBD_Team_A,TBD_Team_B,True,True,True
+99,2026-07-11,Quarterfinals,W91 vs W92,TBD_Team_A,TBD_Team_B,True,True,True
+100,2026-07-12,Quarterfinals,W95 vs W100,TBD_Team_A,TBD_Team_B,True,True,True
+101,2026-07-14,Semifinals,W97 vs W98,TBD_Team_A,TBD_Team_B,True,True,True
+102,2026-07-15,Semifinals,W99 vs W100,TBD_Team_A,TBD_Team_B,True,True,True
+103,2026-07-18,Third Place Playoff,RU101 vs RU102,TBD_Team_A,TBD_Team_B,True,True,True
+104,2026-07-19,Final,W101 vs W102,TBD_Team_A,TBD_Team_B,True,True,True

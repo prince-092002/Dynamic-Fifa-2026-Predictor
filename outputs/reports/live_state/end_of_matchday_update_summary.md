@@ -1,0 +1,24 @@
+# End-of-Matchday Update Summary
+
+- Refresh timestamp: 2026-07-10T00:55:19+00:00
+- Update status: passed
+- New completed matches detected: 0
+- Live forecast status: success
+- Forecast ran: True
+- Forecast mode: true_live_forecast
+- Public label: True live forecast from current tournament state
+- Source quality score: 100
+- Current phase: quarterfinal
+- Fallback usage: 9.68%
+- Live matchup predictions: success (3 matchups predicted by the model)
+- Live model probability uses in simulation: 3000
+- Tournament phase before update: quarterfinal
+- Tournament phase after update: quarterfinal
+- Phase transition detected: False
+- Newly completed matches (since last forecast run): 0
+- Newly resolved knockout matchups: 0
+- New XGBoost predictions generated: 3
+- Why or why not: forecast ran or no blocking reason reported
+- Top finalist pair: Argentina vs France
+- Top champion: France
+- Next recommended action: Use --allow-fallback-forecast only for testing when the gate reports fallback_pre_tournament_forecast.

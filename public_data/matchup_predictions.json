@@ -1,0 +1,68 @@
+{
+ "matchups": [
+  {
+   "stage": "Quarterfinal",
+   "team_a": "Spain",
+   "team_b": "Belgium",
+   "team_a_slug": "spain",
+   "team_b_slug": "belgium",
+   "team_a_advance_probability": 0.739971,
+   "team_b_advance_probability": 0.260029,
+   "prob_team_a_win": 0.642653,
+   "prob_draw": 0.194635,
+   "prob_team_a_loss": 0.162711,
+   "favorite": "Spain",
+   "model": "xgboost",
+   "prediction_status": "predicted",
+   "probability_source": "live_model",
+   "source_label": "Live XGBoost prediction",
+   "generated_at": "2026-07-10T06:06:24+00:00"
+  },
+  {
+   "stage": "Quarterfinal",
+   "team_a": "Norway",
+   "team_b": "England",
+   "team_a_slug": "norway",
+   "team_b_slug": "england",
+   "team_a_advance_probability": 0.361887,
+   "team_b_advance_probability": 0.638113,
+   "prob_team_a_win": 0.234368,
+   "prob_draw": 0.25504,
+   "prob_team_a_loss": 0.510593,
+   "favorite": "England",
+   "model": "xgboost",
+   "prediction_status": "predicted",
+   "probability_source": "live_model",
+   "source_label": "Live XGBoost prediction",
+   "generated_at": "2026-07-10T06:06:24+00:00"
+  },
+  {
+   "stage": "Quarterfinal",
+   "team_a": "Argentina",
+   "team_b": "Switzerland",
+   "team_a_slug": "argentina",
+   "team_b_slug": "switzerland",
+   "team_a_advance_probability": 0.768798,
+   "team_b_advance_probability": 0.231202,
+   "prob_team_a_win": 0.683397,
+   "prob_draw": 0.170802,
+   "prob_team_a_loss": 0.145801,
+   "favorite": "Argentina",
+   "model": "xgboost",
+   "prediction_status": "predicted",
+   "probability_source": "live_model",
+   "source_label": "Live XGBoost prediction",
+   "generated_at": "2026-07-10T06:06:24+00:00"
+  }
+ ],
+ "_meta": {
+  "generated_at": "2026-07-10T06:08:19+00:00",
+  "source_files": [
+   "outputs/live_state/live_knockout_match_predictions.csv"
+  ],
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "current_phase": "quarterfinal",
+  "run_id": "2026-07-10T060556Z-428e59f3"
+ }
+}

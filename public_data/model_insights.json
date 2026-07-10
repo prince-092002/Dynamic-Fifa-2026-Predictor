@@ -1,0 +1,161 @@
+{
+ "models": [
+  {
+   "model": "logistic_regression",
+   "selected": false,
+   "test_accuracy": 0.5752,
+   "test_log_loss": 0.8872,
+   "test_brier_score": 0.5241,
+   "test_macro_f1": 0.5273,
+   "train_rows": 34712,
+   "test_rows": 7439
+  },
+  {
+   "model": "xgboost",
+   "selected": true,
+   "test_accuracy": 0.6075,
+   "test_log_loss": 0.8607,
+   "test_brier_score": 0.5056,
+   "test_macro_f1": 0.4511,
+   "train_rows": 34712,
+   "test_rows": 7439
+  }
+ ],
+ "selected_feature_columns": [
+  "team_a_pre_match_elo",
+  "team_b_pre_match_elo",
+  "elo_difference",
+  "elo_expected_score_team_a",
+  "form_points_last_5_diff",
+  "win_rate_last_5_diff",
+  "loss_rate_last_5_diff",
+  "goals_for_avg_last_5_diff",
+  "goals_against_avg_last_5_diff",
+  "goal_diff_avg_last_5_diff",
+  "clean_sheet_rate_last_5_diff",
+  "h2h_matches_last_10",
+  "h2h_team_a_win_rate_last_10",
+  "h2h_goal_diff_team_a_last_10",
+  "is_world_cup_match",
+  "is_friendly",
+  "is_qualifier",
+  "is_neutral",
+  "tournament_importance_score",
+  "team_a_days_since_last_match",
+  "team_b_days_since_last_match",
+  "rest_days_diff",
+  "team_a_matches_last_30_days",
+  "team_b_matches_last_30_days",
+  "match_congestion_diff"
+ ],
+ "global_feature_importance": [
+  {
+   "feature": "elo_expected_score_team_a",
+   "importance": 0.310251
+  },
+  {
+   "feature": "elo_difference",
+   "importance": 0.225871
+  },
+  {
+   "feature": "is_qualifier",
+   "importance": 0.055008
+  },
+  {
+   "feature": "is_neutral",
+   "importance": 0.045939
+  },
+  {
+   "feature": "h2h_goal_diff_team_a_last_10",
+   "importance": 0.045144
+  },
+  {
+   "feature": "goals_against_avg_last_5_diff",
+   "importance": 0.038387
+  },
+  {
+   "feature": "goal_diff_avg_last_5_diff",
+   "importance": 0.029796
+  },
+  {
+   "feature": "is_friendly",
+   "importance": 0.020307
+  },
+  {
+   "feature": "h2h_team_a_win_rate_last_10",
+   "importance": 0.019437
+  },
+  {
+   "feature": "team_b_pre_match_elo",
+   "importance": 0.019392
+  },
+  {
+   "feature": "tournament_importance_score",
+   "importance": 0.018311
+  },
+  {
+   "feature": "h2h_matches_last_10",
+   "importance": 0.016098
+  },
+  {
+   "feature": "team_b_days_since_last_match",
+   "importance": 0.014662
+  },
+  {
+   "feature": "team_a_pre_match_elo",
+   "importance": 0.014032
+  },
+  {
+   "feature": "is_world_cup_match",
+   "importance": 0.013626
+  },
+  {
+   "feature": "rest_days_diff",
+   "importance": 0.013316
+  },
+  {
+   "feature": "team_a_days_since_last_match",
+   "importance": 0.013312
+  },
+  {
+   "feature": "team_b_matches_last_30_days",
+   "importance": 0.012618
+  },
+  {
+   "feature": "team_a_matches_last_30_days",
+   "importance": 0.01119
+  },
+  {
+   "feature": "form_points_last_5_diff",
+   "importance": 0.011078
+  },
+  {
+   "feature": "loss_rate_last_5_diff",
+   "importance": 0.010874
+  },
+  {
+   "feature": "match_congestion_diff",
+   "importance": 0.010686
+  },
+  {
+   "feature": "clean_sheet_rate_last_5_diff",
+   "importance": 0.010235
+  },
+  {
+   "feature": "win_rate_last_5_diff",
+   "importance": 0.010235
+  },
+  {
+   "feature": "goals_for_avg_last_5_diff",
+   "importance": 0.010195
+  }
+ ],
+ "importance_note": "Global feature importance shows which features are influential across the model overall. It does not by itself explain a specific matchup.",
+ "_meta": {
+  "generated_at": "2026-07-10T06:08:19+00:00",
+  "source_files": [
+   "outputs/models/model_registry.json",
+   "outputs/models/selected_model.joblib"
+  ]
+ }
+}

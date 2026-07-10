@@ -1,0 +1,2528 @@
+{
+ "team_stats": {
+  "algeria": {
+   "team": "Algeria",
+   "slug": "algeria",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 5,
+   "goals_against": 9,
+   "clean_sheets": 0,
+   "goal_difference": -4,
+   "avg_goals_for": 1.25,
+   "avg_goals_against": 2.25,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Argentina",
+     "goals_for": 0,
+     "goals_against": 3,
+     "result": "L",
+     "score": "0-3"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Jordan",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-06-28",
+     "stage": "Group Stage",
+     "opponent": "Austria",
+     "goals_for": 3,
+     "goals_against": 3,
+     "result": "D",
+     "score": "3-3"
+    },
+    {
+     "date": "2026-07-03",
+     "stage": "Round of 32",
+     "opponent": "Switzerland",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    }
+   ]
+  },
+  "argentina": {
+   "team": "Argentina",
+   "slug": "argentina",
+   "played": 5,
+   "wins": 5,
+   "draws": 0,
+   "losses": 0,
+   "goals_for": 14,
+   "goals_against": 5,
+   "clean_sheets": 2,
+   "goal_difference": 9,
+   "avg_goals_for": 2.8,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Algeria",
+     "goals_for": 3,
+     "goals_against": 0,
+     "result": "W",
+     "score": "3-0"
+    },
+    {
+     "date": "2026-06-22",
+     "stage": "Group Stage",
+     "opponent": "Austria",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-06-28",
+     "stage": "Group Stage",
+     "opponent": "Jordan",
+     "goals_for": 3,
+     "goals_against": 1,
+     "result": "W",
+     "score": "3-1"
+    },
+    {
+     "date": "2026-07-03",
+     "stage": "Round of 32",
+     "opponent": "Cape Verde Islands",
+     "goals_for": 3,
+     "goals_against": 2,
+     "result": "W",
+     "score": "3-2"
+    },
+    {
+     "date": "2026-07-07",
+     "stage": "Round of 16",
+     "opponent": "Egypt",
+     "goals_for": 3,
+     "goals_against": 2,
+     "result": "W",
+     "score": "3-2"
+    }
+   ]
+  },
+  "australia": {
+   "team": "Australia",
+   "slug": "australia",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 5,
+   "goals_against": 7,
+   "clean_sheets": 2,
+   "goal_difference": -2,
+   "avg_goals_for": 1.25,
+   "avg_goals_against": 1.75,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Turkey",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-06-19",
+     "stage": "Group Stage",
+     "opponent": "United States",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    },
+    {
+     "date": "2026-06-26",
+     "stage": "Group Stage",
+     "opponent": "Paraguay",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-07-03",
+     "stage": "Round of 32",
+     "opponent": "Egypt",
+     "goals_for": 3,
+     "goals_against": 5,
+     "result": "L",
+     "score": "3-5"
+    }
+   ]
+  },
+  "austria": {
+   "team": "Austria",
+   "slug": "austria",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 6,
+   "goals_against": 9,
+   "clean_sheets": 0,
+   "goal_difference": -3,
+   "avg_goals_for": 1.5,
+   "avg_goals_against": 2.25,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Jordan",
+     "goals_for": 3,
+     "goals_against": 1,
+     "result": "W",
+     "score": "3-1"
+    },
+    {
+     "date": "2026-06-22",
+     "stage": "Group Stage",
+     "opponent": "Argentina",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    },
+    {
+     "date": "2026-06-28",
+     "stage": "Group Stage",
+     "opponent": "Algeria",
+     "goals_for": 3,
+     "goals_against": 3,
+     "result": "D",
+     "score": "3-3"
+    },
+    {
+     "date": "2026-07-02",
+     "stage": "Round of 32",
+     "opponent": "Spain",
+     "goals_for": 0,
+     "goals_against": 3,
+     "result": "L",
+     "score": "0-3"
+    }
+   ]
+  },
+  "belgium": {
+   "team": "Belgium",
+   "slug": "belgium",
+   "played": 5,
+   "wins": 3,
+   "draws": 2,
+   "losses": 0,
+   "goals_for": 13,
+   "goals_against": 5,
+   "clean_sheets": 1,
+   "goal_difference": 8,
+   "avg_goals_for": 2.6,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-15",
+     "stage": "Group Stage",
+     "opponent": "Egypt",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Iran",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "New Zealand",
+     "goals_for": 5,
+     "goals_against": 1,
+     "result": "W",
+     "score": "5-1"
+    },
+    {
+     "date": "2026-07-01",
+     "stage": "Round of 32",
+     "opponent": "Senegal",
+     "goals_for": 3,
+     "goals_against": 2,
+     "result": "W",
+     "score": "3-2"
+    },
+    {
+     "date": "2026-07-07",
+     "stage": "Round of 16",
+     "opponent": "United States",
+     "goals_for": 4,
+     "goals_against": 1,
+     "result": "W",
+     "score": "4-1"
+    }
+   ]
+  },
+  "bosnia-herzegovina": {
+   "team": "Bosnia-Herzegovina",
+   "slug": "bosnia-herzegovina",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 5,
+   "goals_against": 8,
+   "clean_sheets": 0,
+   "goal_difference": -3,
+   "avg_goals_for": 1.25,
+   "avg_goals_against": 2.0,
+   "matches": [
+    {
+     "date": "2026-06-12",
+     "stage": "Group Stage",
+     "opponent": "Canada",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-18",
+     "stage": "Group Stage",
+     "opponent": "Switzerland",
+     "goals_for": 1,
+     "goals_against": 4,
+     "result": "L",
+     "score": "1-4"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Qatar",
+     "goals_for": 3,
+     "goals_against": 1,
+     "result": "W",
+     "score": "3-1"
+    },
+    {
+     "date": "2026-07-02",
+     "stage": "Round of 32",
+     "opponent": "United States",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    }
+   ]
+  },
+  "brazil": {
+   "team": "Brazil",
+   "slug": "brazil",
+   "played": 5,
+   "wins": 3,
+   "draws": 1,
+   "losses": 1,
+   "goals_for": 10,
+   "goals_against": 4,
+   "clean_sheets": 2,
+   "goal_difference": 6,
+   "avg_goals_for": 2.0,
+   "avg_goals_against": 0.8,
+   "matches": [
+    {
+     "date": "2026-06-13",
+     "stage": "Group Stage",
+     "opponent": "Morocco",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-20",
+     "stage": "Group Stage",
+     "opponent": "Haiti",
+     "goals_for": 3,
+     "goals_against": 0,
+     "result": "W",
+     "score": "3-0"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Scotland",
+     "goals_for": 3,
+     "goals_against": 0,
+     "result": "W",
+     "score": "3-0"
+    },
+    {
+     "date": "2026-06-29",
+     "stage": "Round of 32",
+     "opponent": "Japan",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-07-05",
+     "stage": "Round of 16",
+     "opponent": "Norway",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    }
+   ]
+  },
+  "canada": {
+   "team": "Canada",
+   "slug": "canada",
+   "played": 5,
+   "wins": 2,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 9,
+   "goals_against": 6,
+   "clean_sheets": 2,
+   "goal_difference": 3,
+   "avg_goals_for": 1.8,
+   "avg_goals_against": 1.2,
+   "matches": [
+    {
+     "date": "2026-06-12",
+     "stage": "Group Stage",
+     "opponent": "Bosnia-Herzegovina",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-18",
+     "stage": "Group Stage",
+     "opponent": "Qatar",
+     "goals_for": 6,
+     "goals_against": 0,
+     "result": "W",
+     "score": "6-0"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Switzerland",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    },
+    {
+     "date": "2026-06-28",
+     "stage": "Round of 32",
+     "opponent": "South Africa",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-07-04",
+     "stage": "Round of 16",
+     "opponent": "Morocco",
+     "goals_for": 0,
+     "goals_against": 3,
+     "result": "L",
+     "score": "0-3"
+    }
+   ]
+  },
+  "cape-verde-islands": {
+   "team": "Cape Verde Islands",
+   "slug": "cape-verde-islands",
+   "played": 4,
+   "wins": 0,
+   "draws": 3,
+   "losses": 1,
+   "goals_for": 4,
+   "goals_against": 5,
+   "clean_sheets": 2,
+   "goal_difference": -1,
+   "avg_goals_for": 1.0,
+   "avg_goals_against": 1.25,
+   "matches": [
+    {
+     "date": "2026-06-15",
+     "stage": "Group Stage",
+     "opponent": "Spain",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Uruguay",
+     "goals_for": 2,
+     "goals_against": 2,
+     "result": "D",
+     "score": "2-2"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Saudi Arabia",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-07-03",
+     "stage": "Round of 32",
+     "opponent": "Argentina",
+     "goals_for": 2,
+     "goals_against": 3,
+     "result": "L",
+     "score": "2-3"
+    }
+   ]
+  },
+  "colombia": {
+   "team": "Colombia",
+   "slug": "colombia",
+   "played": 5,
+   "wins": 3,
+   "draws": 1,
+   "losses": 1,
+   "goals_for": 8,
+   "goals_against": 5,
+   "clean_sheets": 3,
+   "goal_difference": 3,
+   "avg_goals_for": 1.6,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-18",
+     "stage": "Group Stage",
+     "opponent": "Uzbekistan",
+     "goals_for": 3,
+     "goals_against": 1,
+     "result": "W",
+     "score": "3-1"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Congo DR",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Portugal",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-07-04",
+     "stage": "Round of 32",
+     "opponent": "Ghana",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-07-07",
+     "stage": "Round of 16",
+     "opponent": "Switzerland",
+     "goals_for": 3,
+     "goals_against": 4,
+     "result": "L",
+     "score": "3-4"
+    }
+   ]
+  },
+  "congo-dr": {
+   "team": "Congo DR",
+   "slug": "congo-dr",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 5,
+   "goals_against": 5,
+   "clean_sheets": 0,
+   "goal_difference": 0,
+   "avg_goals_for": 1.25,
+   "avg_goals_against": 1.25,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Portugal",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Colombia",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Uzbekistan",
+     "goals_for": 3,
+     "goals_against": 1,
+     "result": "W",
+     "score": "3-1"
+    },
+    {
+     "date": "2026-07-01",
+     "stage": "Round of 32",
+     "opponent": "England",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    }
+   ]
+  },
+  "croatia": {
+   "team": "Croatia",
+   "slug": "croatia",
+   "played": 4,
+   "wins": 2,
+   "draws": 0,
+   "losses": 2,
+   "goals_for": 6,
+   "goals_against": 7,
+   "clean_sheets": 1,
+   "goal_difference": -1,
+   "avg_goals_for": 1.5,
+   "avg_goals_against": 1.75,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "England",
+     "goals_for": 2,
+     "goals_against": 4,
+     "result": "L",
+     "score": "2-4"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Panama",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Ghana",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-07-02",
+     "stage": "Round of 32",
+     "opponent": "Portugal",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    }
+   ]
+  },
+  "curacao": {
+   "team": "Cura\u00e7ao",
+   "slug": "curacao",
+   "played": 3,
+   "wins": 0,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 1,
+   "goals_against": 9,
+   "clean_sheets": 1,
+   "goal_difference": -8,
+   "avg_goals_for": 0.33,
+   "avg_goals_against": 3.0,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Germany",
+     "goals_for": 1,
+     "goals_against": 7,
+     "result": "L",
+     "score": "1-7"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Ecuador",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Ivory Coast",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    }
+   ]
+  },
+  "czechia": {
+   "team": "Czechia",
+   "slug": "czechia",
+   "played": 3,
+   "wins": 0,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 2,
+   "goals_against": 6,
+   "clean_sheets": 0,
+   "goal_difference": -4,
+   "avg_goals_for": 0.67,
+   "avg_goals_against": 2.0,
+   "matches": [
+    {
+     "date": "2026-06-12",
+     "stage": "Group Stage",
+     "opponent": "South Korea",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    },
+    {
+     "date": "2026-06-18",
+     "stage": "Group Stage",
+     "opponent": "South Africa",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Mexico",
+     "goals_for": 0,
+     "goals_against": 3,
+     "result": "L",
+     "score": "0-3"
+    }
+   ]
+  },
+  "ecuador": {
+   "team": "Ecuador",
+   "slug": "ecuador",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 2,
+   "goals_against": 4,
+   "clean_sheets": 1,
+   "goal_difference": -2,
+   "avg_goals_for": 0.5,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Ivory Coast",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Cura\u00e7ao",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Germany",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-07-01",
+     "stage": "Round of 32",
+     "opponent": "Mexico",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    }
+   ]
+  },
+  "egypt": {
+   "team": "Egypt",
+   "slug": "egypt",
+   "played": 5,
+   "wins": 2,
+   "draws": 2,
+   "losses": 1,
+   "goals_for": 12,
+   "goals_against": 9,
+   "clean_sheets": 0,
+   "goal_difference": 3,
+   "avg_goals_for": 2.4,
+   "avg_goals_against": 1.8,
+   "matches": [
+    {
+     "date": "2026-06-15",
+     "stage": "Group Stage",
+     "opponent": "Belgium",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-22",
+     "stage": "Group Stage",
+     "opponent": "New Zealand",
+     "goals_for": 3,
+     "goals_against": 1,
+     "result": "W",
+     "score": "3-1"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Iran",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-07-03",
+     "stage": "Round of 32",
+     "opponent": "Australia",
+     "goals_for": 5,
+     "goals_against": 3,
+     "result": "W",
+     "score": "5-3"
+    },
+    {
+     "date": "2026-07-07",
+     "stage": "Round of 16",
+     "opponent": "Argentina",
+     "goals_for": 2,
+     "goals_against": 3,
+     "result": "L",
+     "score": "2-3"
+    }
+   ]
+  },
+  "england": {
+   "team": "England",
+   "slug": "england",
+   "played": 5,
+   "wins": 4,
+   "draws": 1,
+   "losses": 0,
+   "goals_for": 11,
+   "goals_against": 5,
+   "clean_sheets": 2,
+   "goal_difference": 6,
+   "avg_goals_for": 2.2,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Croatia",
+     "goals_for": 4,
+     "goals_against": 2,
+     "result": "W",
+     "score": "4-2"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Ghana",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Panama",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-07-01",
+     "stage": "Round of 32",
+     "opponent": "Congo DR",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-07-06",
+     "stage": "Round of 16",
+     "opponent": "Mexico",
+     "goals_for": 3,
+     "goals_against": 2,
+     "result": "W",
+     "score": "3-2"
+    }
+   ]
+  },
+  "france": {
+   "team": "France",
+   "slug": "france",
+   "played": 6,
+   "wins": 6,
+   "draws": 0,
+   "losses": 0,
+   "goals_for": 16,
+   "goals_against": 2,
+   "clean_sheets": 4,
+   "goal_difference": 14,
+   "avg_goals_for": 2.67,
+   "avg_goals_against": 0.33,
+   "matches": [
+    {
+     "date": "2026-06-16",
+     "stage": "Group Stage",
+     "opponent": "Senegal",
+     "goals_for": 3,
+     "goals_against": 1,
+     "result": "W",
+     "score": "3-1"
+    },
+    {
+     "date": "2026-06-22",
+     "stage": "Group Stage",
+     "opponent": "Iraq",
+     "goals_for": 3,
+     "goals_against": 0,
+     "result": "W",
+     "score": "3-0"
+    },
+    {
+     "date": "2026-06-26",
+     "stage": "Group Stage",
+     "opponent": "Norway",
+     "goals_for": 4,
+     "goals_against": 1,
+     "result": "W",
+     "score": "4-1"
+    },
+    {
+     "date": "2026-06-30",
+     "stage": "Round of 32",
+     "opponent": "Sweden",
+     "goals_for": 3,
+     "goals_against": 0,
+     "result": "W",
+     "score": "3-0"
+    },
+    {
+     "date": "2026-07-04",
+     "stage": "Round of 16",
+     "opponent": "Paraguay",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-07-09",
+     "stage": "Quarterfinal",
+     "opponent": "Morocco",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    }
+   ]
+  },
+  "germany": {
+   "team": "Germany",
+   "slug": "germany",
+   "played": 4,
+   "wins": 2,
+   "draws": 0,
+   "losses": 2,
+   "goals_for": 14,
+   "goals_against": 9,
+   "clean_sheets": 0,
+   "goal_difference": 5,
+   "avg_goals_for": 3.5,
+   "avg_goals_against": 2.25,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Cura\u00e7ao",
+     "goals_for": 7,
+     "goals_against": 1,
+     "result": "W",
+     "score": "7-1"
+    },
+    {
+     "date": "2026-06-20",
+     "stage": "Group Stage",
+     "opponent": "Ivory Coast",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Ecuador",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    },
+    {
+     "date": "2026-06-29",
+     "stage": "Round of 32",
+     "opponent": "Paraguay",
+     "goals_for": 4,
+     "goals_against": 5,
+     "result": "L",
+     "score": "4-5"
+    }
+   ]
+  },
+  "ghana": {
+   "team": "Ghana",
+   "slug": "ghana",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 2,
+   "goals_against": 3,
+   "clean_sheets": 2,
+   "goal_difference": -1,
+   "avg_goals_for": 0.5,
+   "avg_goals_against": 0.75,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Panama",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "England",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Croatia",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    },
+    {
+     "date": "2026-07-04",
+     "stage": "Round of 32",
+     "opponent": "Colombia",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    }
+   ]
+  },
+  "haiti": {
+   "team": "Haiti",
+   "slug": "haiti",
+   "played": 3,
+   "wins": 0,
+   "draws": 0,
+   "losses": 3,
+   "goals_for": 2,
+   "goals_against": 8,
+   "clean_sheets": 0,
+   "goal_difference": -6,
+   "avg_goals_for": 0.67,
+   "avg_goals_against": 2.67,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Scotland",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    },
+    {
+     "date": "2026-06-20",
+     "stage": "Group Stage",
+     "opponent": "Brazil",
+     "goals_for": 0,
+     "goals_against": 3,
+     "result": "L",
+     "score": "0-3"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Morocco",
+     "goals_for": 2,
+     "goals_against": 4,
+     "result": "L",
+     "score": "2-4"
+    }
+   ]
+  },
+  "iran": {
+   "team": "Iran",
+   "slug": "iran",
+   "played": 3,
+   "wins": 0,
+   "draws": 3,
+   "losses": 0,
+   "goals_for": 3,
+   "goals_against": 3,
+   "clean_sheets": 1,
+   "goal_difference": 0,
+   "avg_goals_for": 1.0,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-16",
+     "stage": "Group Stage",
+     "opponent": "New Zealand",
+     "goals_for": 2,
+     "goals_against": 2,
+     "result": "D",
+     "score": "2-2"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Belgium",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Egypt",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    }
+   ]
+  },
+  "iraq": {
+   "team": "Iraq",
+   "slug": "iraq",
+   "played": 3,
+   "wins": 0,
+   "draws": 0,
+   "losses": 3,
+   "goals_for": 1,
+   "goals_against": 12,
+   "clean_sheets": 0,
+   "goal_difference": -11,
+   "avg_goals_for": 0.33,
+   "avg_goals_against": 4.0,
+   "matches": [
+    {
+     "date": "2026-06-16",
+     "stage": "Group Stage",
+     "opponent": "Norway",
+     "goals_for": 1,
+     "goals_against": 4,
+     "result": "L",
+     "score": "1-4"
+    },
+    {
+     "date": "2026-06-22",
+     "stage": "Group Stage",
+     "opponent": "France",
+     "goals_for": 0,
+     "goals_against": 3,
+     "result": "L",
+     "score": "0-3"
+    },
+    {
+     "date": "2026-06-26",
+     "stage": "Group Stage",
+     "opponent": "Senegal",
+     "goals_for": 0,
+     "goals_against": 5,
+     "result": "L",
+     "score": "0-5"
+    }
+   ]
+  },
+  "ivory-coast": {
+   "team": "Ivory Coast",
+   "slug": "ivory-coast",
+   "played": 4,
+   "wins": 2,
+   "draws": 0,
+   "losses": 2,
+   "goals_for": 5,
+   "goals_against": 4,
+   "clean_sheets": 2,
+   "goal_difference": 1,
+   "avg_goals_for": 1.25,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Ecuador",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-20",
+     "stage": "Group Stage",
+     "opponent": "Germany",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Cura\u00e7ao",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-06-30",
+     "stage": "Round of 32",
+     "opponent": "Norway",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    }
+   ]
+  },
+  "japan": {
+   "team": "Japan",
+   "slug": "japan",
+   "played": 4,
+   "wins": 1,
+   "draws": 2,
+   "losses": 1,
+   "goals_for": 8,
+   "goals_against": 5,
+   "clean_sheets": 1,
+   "goal_difference": 3,
+   "avg_goals_for": 2.0,
+   "avg_goals_against": 1.25,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Netherlands",
+     "goals_for": 2,
+     "goals_against": 2,
+     "result": "D",
+     "score": "2-2"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Tunisia",
+     "goals_for": 4,
+     "goals_against": 0,
+     "result": "W",
+     "score": "4-0"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Sweden",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-29",
+     "stage": "Round of 32",
+     "opponent": "Brazil",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    }
+   ]
+  },
+  "jordan": {
+   "team": "Jordan",
+   "slug": "jordan",
+   "played": 3,
+   "wins": 0,
+   "draws": 0,
+   "losses": 3,
+   "goals_for": 3,
+   "goals_against": 8,
+   "clean_sheets": 0,
+   "goal_difference": -5,
+   "avg_goals_for": 1.0,
+   "avg_goals_against": 2.67,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Austria",
+     "goals_for": 1,
+     "goals_against": 3,
+     "result": "L",
+     "score": "1-3"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Algeria",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
+    },
+    {
+     "date": "2026-06-28",
+     "stage": "Group Stage",
+     "opponent": "Argentina",
+     "goals_for": 1,
+     "goals_against": 3,
+     "result": "L",
+     "score": "1-3"
+    }
+   ]
+  },
+  "mexico": {
+   "team": "Mexico",
+   "slug": "mexico",
+   "played": 5,
+   "wins": 4,
+   "draws": 0,
+   "losses": 1,
+   "goals_for": 10,
+   "goals_against": 3,
+   "clean_sheets": 4,
+   "goal_difference": 7,
+   "avg_goals_for": 2.0,
+   "avg_goals_against": 0.6,
+   "matches": [
+    {
+     "date": "2026-06-11",
+     "stage": "Group Stage",
+     "opponent": "South Africa",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-06-19",
+     "stage": "Group Stage",
+     "opponent": "South Korea",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Czechia",
+     "goals_for": 3,
+     "goals_against": 0,
+     "result": "W",
+     "score": "3-0"
+    },
+    {
+     "date": "2026-07-01",
+     "stage": "Round of 32",
+     "opponent": "Ecuador",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-07-06",
+     "stage": "Round of 16",
+     "opponent": "England",
+     "goals_for": 2,
+     "goals_against": 3,
+     "result": "L",
+     "score": "2-3"
+    }
+   ]
+  },
+  "morocco": {
+   "team": "Morocco",
+   "slug": "morocco",
+   "played": 6,
+   "wins": 4,
+   "draws": 1,
+   "losses": 1,
+   "goals_for": 13,
+   "goals_against": 8,
+   "clean_sheets": 2,
+   "goal_difference": 5,
+   "avg_goals_for": 2.17,
+   "avg_goals_against": 1.33,
+   "matches": [
+    {
+     "date": "2026-06-13",
+     "stage": "Group Stage",
+     "opponent": "Brazil",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-19",
+     "stage": "Group Stage",
+     "opponent": "Scotland",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Haiti",
+     "goals_for": 4,
+     "goals_against": 2,
+     "result": "W",
+     "score": "4-2"
+    },
+    {
+     "date": "2026-06-30",
+     "stage": "Round of 32",
+     "opponent": "Netherlands",
+     "goals_for": 4,
+     "goals_against": 3,
+     "result": "W",
+     "score": "4-3"
+    },
+    {
+     "date": "2026-07-04",
+     "stage": "Round of 16",
+     "opponent": "Canada",
+     "goals_for": 3,
+     "goals_against": 0,
+     "result": "W",
+     "score": "3-0"
+    },
+    {
+     "date": "2026-07-09",
+     "stage": "Quarterfinal",
+     "opponent": "France",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    }
+   ]
+  },
+  "netherlands": {
+   "team": "Netherlands",
+   "slug": "netherlands",
+   "played": 4,
+   "wins": 2,
+   "draws": 1,
+   "losses": 1,
+   "goals_for": 13,
+   "goals_against": 8,
+   "clean_sheets": 0,
+   "goal_difference": 5,
+   "avg_goals_for": 3.25,
+   "avg_goals_against": 2.0,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Japan",
+     "goals_for": 2,
+     "goals_against": 2,
+     "result": "D",
+     "score": "2-2"
+    },
+    {
+     "date": "2026-06-20",
+     "stage": "Group Stage",
+     "opponent": "Sweden",
+     "goals_for": 5,
+     "goals_against": 1,
+     "result": "W",
+     "score": "5-1"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Tunisia",
+     "goals_for": 3,
+     "goals_against": 1,
+     "result": "W",
+     "score": "3-1"
+    },
+    {
+     "date": "2026-06-30",
+     "stage": "Round of 32",
+     "opponent": "Morocco",
+     "goals_for": 3,
+     "goals_against": 4,
+     "result": "L",
+     "score": "3-4"
+    }
+   ]
+  },
+  "new-zealand": {
+   "team": "New Zealand",
+   "slug": "new-zealand",
+   "played": 3,
+   "wins": 0,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 4,
+   "goals_against": 10,
+   "clean_sheets": 0,
+   "goal_difference": -6,
+   "avg_goals_for": 1.33,
+   "avg_goals_against": 3.33,
+   "matches": [
+    {
+     "date": "2026-06-16",
+     "stage": "Group Stage",
+     "opponent": "Iran",
+     "goals_for": 2,
+     "goals_against": 2,
+     "result": "D",
+     "score": "2-2"
+    },
+    {
+     "date": "2026-06-22",
+     "stage": "Group Stage",
+     "opponent": "Egypt",
+     "goals_for": 1,
+     "goals_against": 3,
+     "result": "L",
+     "score": "1-3"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Belgium",
+     "goals_for": 1,
+     "goals_against": 5,
+     "result": "L",
+     "score": "1-5"
+    }
+   ]
+  },
+  "norway": {
+   "team": "Norway",
+   "slug": "norway",
+   "played": 5,
+   "wins": 4,
+   "draws": 0,
+   "losses": 1,
+   "goals_for": 12,
+   "goals_against": 9,
+   "clean_sheets": 0,
+   "goal_difference": 3,
+   "avg_goals_for": 2.4,
+   "avg_goals_against": 1.8,
+   "matches": [
+    {
+     "date": "2026-06-16",
+     "stage": "Group Stage",
+     "opponent": "Iraq",
+     "goals_for": 4,
+     "goals_against": 1,
+     "result": "W",
+     "score": "4-1"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Senegal",
+     "goals_for": 3,
+     "goals_against": 2,
+     "result": "W",
+     "score": "3-2"
+    },
+    {
+     "date": "2026-06-26",
+     "stage": "Group Stage",
+     "opponent": "France",
+     "goals_for": 1,
+     "goals_against": 4,
+     "result": "L",
+     "score": "1-4"
+    },
+    {
+     "date": "2026-06-30",
+     "stage": "Round of 32",
+     "opponent": "Ivory Coast",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-07-05",
+     "stage": "Round of 16",
+     "opponent": "Brazil",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    }
+   ]
+  },
+  "panama": {
+   "team": "Panama",
+   "slug": "panama",
+   "played": 3,
+   "wins": 0,
+   "draws": 0,
+   "losses": 3,
+   "goals_for": 0,
+   "goals_against": 4,
+   "clean_sheets": 0,
+   "goal_difference": -4,
+   "avg_goals_for": 0.0,
+   "avg_goals_against": 1.33,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Ghana",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Croatia",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "England",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    }
+   ]
+  },
+  "paraguay": {
+   "team": "Paraguay",
+   "slug": "paraguay",
+   "played": 5,
+   "wins": 2,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 7,
+   "goals_against": 9,
+   "clean_sheets": 2,
+   "goal_difference": -2,
+   "avg_goals_for": 1.4,
+   "avg_goals_against": 1.8,
+   "matches": [
+    {
+     "date": "2026-06-13",
+     "stage": "Group Stage",
+     "opponent": "United States",
+     "goals_for": 1,
+     "goals_against": 4,
+     "result": "L",
+     "score": "1-4"
+    },
+    {
+     "date": "2026-06-20",
+     "stage": "Group Stage",
+     "opponent": "Turkey",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-26",
+     "stage": "Group Stage",
+     "opponent": "Australia",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-29",
+     "stage": "Round of 32",
+     "opponent": "Germany",
+     "goals_for": 5,
+     "goals_against": 4,
+     "result": "W",
+     "score": "5-4"
+    },
+    {
+     "date": "2026-07-04",
+     "stage": "Round of 16",
+     "opponent": "France",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    }
+   ]
+  },
+  "portugal": {
+   "team": "Portugal",
+   "slug": "portugal",
+   "played": 5,
+   "wins": 2,
+   "draws": 2,
+   "losses": 1,
+   "goals_for": 8,
+   "goals_against": 3,
+   "clean_sheets": 2,
+   "goal_difference": 5,
+   "avg_goals_for": 1.6,
+   "avg_goals_against": 0.6,
+   "matches": [
+    {
+     "date": "2026-06-17",
+     "stage": "Group Stage",
+     "opponent": "Congo DR",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Uzbekistan",
+     "goals_for": 5,
+     "goals_against": 0,
+     "result": "W",
+     "score": "5-0"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Colombia",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-07-02",
+     "stage": "Round of 32",
+     "opponent": "Croatia",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-07-06",
+     "stage": "Round of 16",
+     "opponent": "Spain",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    }
+   ]
+  },
+  "qatar": {
+   "team": "Qatar",
+   "slug": "qatar",
+   "played": 3,
+   "wins": 0,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 2,
+   "goals_against": 10,
+   "clean_sheets": 0,
+   "goal_difference": -8,
+   "avg_goals_for": 0.67,
+   "avg_goals_against": 3.33,
+   "matches": [
+    {
+     "date": "2026-06-13",
+     "stage": "Group Stage",
+     "opponent": "Switzerland",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-18",
+     "stage": "Group Stage",
+     "opponent": "Canada",
+     "goals_for": 0,
+     "goals_against": 6,
+     "result": "L",
+     "score": "0-6"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Bosnia-Herzegovina",
+     "goals_for": 1,
+     "goals_against": 3,
+     "result": "L",
+     "score": "1-3"
+    }
+   ]
+  },
+  "saudi-arabia": {
+   "team": "Saudi Arabia",
+   "slug": "saudi-arabia",
+   "played": 3,
+   "wins": 0,
+   "draws": 2,
+   "losses": 1,
+   "goals_for": 1,
+   "goals_against": 5,
+   "clean_sheets": 1,
+   "goal_difference": -4,
+   "avg_goals_for": 0.33,
+   "avg_goals_against": 1.67,
+   "matches": [
+    {
+     "date": "2026-06-15",
+     "stage": "Group Stage",
+     "opponent": "Uruguay",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Spain",
+     "goals_for": 0,
+     "goals_against": 4,
+     "result": "L",
+     "score": "0-4"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Cape Verde Islands",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    }
+   ]
+  },
+  "scotland": {
+   "team": "Scotland",
+   "slug": "scotland",
+   "played": 3,
+   "wins": 1,
+   "draws": 0,
+   "losses": 2,
+   "goals_for": 1,
+   "goals_against": 4,
+   "clean_sheets": 1,
+   "goal_difference": -3,
+   "avg_goals_for": 0.33,
+   "avg_goals_against": 1.33,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Haiti",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-19",
+     "stage": "Group Stage",
+     "opponent": "Morocco",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Brazil",
+     "goals_for": 0,
+     "goals_against": 3,
+     "result": "L",
+     "score": "0-3"
+    }
+   ]
+  },
+  "senegal": {
+   "team": "Senegal",
+   "slug": "senegal",
+   "played": 4,
+   "wins": 1,
+   "draws": 0,
+   "losses": 3,
+   "goals_for": 10,
+   "goals_against": 9,
+   "clean_sheets": 1,
+   "goal_difference": 1,
+   "avg_goals_for": 2.5,
+   "avg_goals_against": 2.25,
+   "matches": [
+    {
+     "date": "2026-06-16",
+     "stage": "Group Stage",
+     "opponent": "France",
+     "goals_for": 1,
+     "goals_against": 3,
+     "result": "L",
+     "score": "1-3"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Norway",
+     "goals_for": 2,
+     "goals_against": 3,
+     "result": "L",
+     "score": "2-3"
+    },
+    {
+     "date": "2026-06-26",
+     "stage": "Group Stage",
+     "opponent": "Iraq",
+     "goals_for": 5,
+     "goals_against": 0,
+     "result": "W",
+     "score": "5-0"
+    },
+    {
+     "date": "2026-07-01",
+     "stage": "Round of 32",
+     "opponent": "Belgium",
+     "goals_for": 2,
+     "goals_against": 3,
+     "result": "L",
+     "score": "2-3"
+    }
+   ]
+  },
+  "south-africa": {
+   "team": "South Africa",
+   "slug": "south-africa",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 2,
+   "goals_against": 4,
+   "clean_sheets": 1,
+   "goal_difference": -2,
+   "avg_goals_for": 0.5,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-11",
+     "stage": "Group Stage",
+     "opponent": "Mexico",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    },
+    {
+     "date": "2026-06-18",
+     "stage": "Group Stage",
+     "opponent": "Czechia",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "South Korea",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-06-28",
+     "stage": "Round of 32",
+     "opponent": "Canada",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    }
+   ]
+  },
+  "south-korea": {
+   "team": "South Korea",
+   "slug": "south-korea",
+   "played": 3,
+   "wins": 1,
+   "draws": 0,
+   "losses": 2,
+   "goals_for": 2,
+   "goals_against": 3,
+   "clean_sheets": 0,
+   "goal_difference": -1,
+   "avg_goals_for": 0.67,
+   "avg_goals_against": 1.0,
+   "matches": [
+    {
+     "date": "2026-06-12",
+     "stage": "Group Stage",
+     "opponent": "Czechia",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-06-19",
+     "stage": "Group Stage",
+     "opponent": "Mexico",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "South Africa",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    }
+   ]
+  },
+  "spain": {
+   "team": "Spain",
+   "slug": "spain",
+   "played": 5,
+   "wins": 4,
+   "draws": 1,
+   "losses": 0,
+   "goals_for": 9,
+   "goals_against": 0,
+   "clean_sheets": 5,
+   "goal_difference": 9,
+   "avg_goals_for": 1.8,
+   "avg_goals_against": 0.0,
+   "matches": [
+    {
+     "date": "2026-06-15",
+     "stage": "Group Stage",
+     "opponent": "Cape Verde Islands",
+     "goals_for": 0,
+     "goals_against": 0,
+     "result": "D",
+     "score": "0-0"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Saudi Arabia",
+     "goals_for": 4,
+     "goals_against": 0,
+     "result": "W",
+     "score": "4-0"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Uruguay",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    },
+    {
+     "date": "2026-07-02",
+     "stage": "Round of 32",
+     "opponent": "Austria",
+     "goals_for": 3,
+     "goals_against": 0,
+     "result": "W",
+     "score": "3-0"
+    },
+    {
+     "date": "2026-07-06",
+     "stage": "Round of 16",
+     "opponent": "Portugal",
+     "goals_for": 1,
+     "goals_against": 0,
+     "result": "W",
+     "score": "1-0"
+    }
+   ]
+  },
+  "sweden": {
+   "team": "Sweden",
+   "slug": "sweden",
+   "played": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "goals_for": 7,
+   "goals_against": 10,
+   "clean_sheets": 0,
+   "goal_difference": -3,
+   "avg_goals_for": 1.75,
+   "avg_goals_against": 2.5,
+   "matches": [
+    {
+     "date": "2026-06-15",
+     "stage": "Group Stage",
+     "opponent": "Tunisia",
+     "goals_for": 5,
+     "goals_against": 1,
+     "result": "W",
+     "score": "5-1"
+    },
+    {
+     "date": "2026-06-20",
+     "stage": "Group Stage",
+     "opponent": "Netherlands",
+     "goals_for": 1,
+     "goals_against": 5,
+     "result": "L",
+     "score": "1-5"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Japan",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-30",
+     "stage": "Round of 32",
+     "opponent": "France",
+     "goals_for": 0,
+     "goals_against": 3,
+     "result": "L",
+     "score": "0-3"
+    }
+   ]
+  },
+  "switzerland": {
+   "team": "Switzerland",
+   "slug": "switzerland",
+   "played": 5,
+   "wins": 4,
+   "draws": 1,
+   "losses": 0,
+   "goals_for": 13,
+   "goals_against": 6,
+   "clean_sheets": 1,
+   "goal_difference": 7,
+   "avg_goals_for": 2.6,
+   "avg_goals_against": 1.2,
+   "matches": [
+    {
+     "date": "2026-06-13",
+     "stage": "Group Stage",
+     "opponent": "Qatar",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-18",
+     "stage": "Group Stage",
+     "opponent": "Bosnia-Herzegovina",
+     "goals_for": 4,
+     "goals_against": 1,
+     "result": "W",
+     "score": "4-1"
+    },
+    {
+     "date": "2026-06-24",
+     "stage": "Group Stage",
+     "opponent": "Canada",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
+    },
+    {
+     "date": "2026-07-03",
+     "stage": "Round of 32",
+     "opponent": "Algeria",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-07-07",
+     "stage": "Round of 16",
+     "opponent": "Colombia",
+     "goals_for": 4,
+     "goals_against": 3,
+     "result": "W",
+     "score": "4-3"
+    }
+   ]
+  },
+  "tunisia": {
+   "team": "Tunisia",
+   "slug": "tunisia",
+   "played": 3,
+   "wins": 0,
+   "draws": 0,
+   "losses": 3,
+   "goals_for": 2,
+   "goals_against": 12,
+   "clean_sheets": 0,
+   "goal_difference": -10,
+   "avg_goals_for": 0.67,
+   "avg_goals_against": 4.0,
+   "matches": [
+    {
+     "date": "2026-06-15",
+     "stage": "Group Stage",
+     "opponent": "Sweden",
+     "goals_for": 1,
+     "goals_against": 5,
+     "result": "L",
+     "score": "1-5"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Japan",
+     "goals_for": 0,
+     "goals_against": 4,
+     "result": "L",
+     "score": "0-4"
+    },
+    {
+     "date": "2026-06-25",
+     "stage": "Group Stage",
+     "opponent": "Netherlands",
+     "goals_for": 1,
+     "goals_against": 3,
+     "result": "L",
+     "score": "1-3"
+    }
+   ]
+  },
+  "turkey": {
+   "team": "Turkey",
+   "slug": "turkey",
+   "played": 3,
+   "wins": 1,
+   "draws": 0,
+   "losses": 2,
+   "goals_for": 3,
+   "goals_against": 5,
+   "clean_sheets": 0,
+   "goal_difference": -2,
+   "avg_goals_for": 1.0,
+   "avg_goals_against": 1.67,
+   "matches": [
+    {
+     "date": "2026-06-14",
+     "stage": "Group Stage",
+     "opponent": "Australia",
+     "goals_for": 0,
+     "goals_against": 2,
+     "result": "L",
+     "score": "0-2"
+    },
+    {
+     "date": "2026-06-20",
+     "stage": "Group Stage",
+     "opponent": "Paraguay",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    },
+    {
+     "date": "2026-06-26",
+     "stage": "Group Stage",
+     "opponent": "United States",
+     "goals_for": 3,
+     "goals_against": 2,
+     "result": "W",
+     "score": "3-2"
+    }
+   ]
+  },
+  "united-states": {
+   "team": "United States",
+   "slug": "united-states",
+   "played": 5,
+   "wins": 3,
+   "draws": 0,
+   "losses": 2,
+   "goals_for": 11,
+   "goals_against": 8,
+   "clean_sheets": 2,
+   "goal_difference": 3,
+   "avg_goals_for": 2.2,
+   "avg_goals_against": 1.6,
+   "matches": [
+    {
+     "date": "2026-06-13",
+     "stage": "Group Stage",
+     "opponent": "Paraguay",
+     "goals_for": 4,
+     "goals_against": 1,
+     "result": "W",
+     "score": "4-1"
+    },
+    {
+     "date": "2026-06-19",
+     "stage": "Group Stage",
+     "opponent": "Australia",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-06-26",
+     "stage": "Group Stage",
+     "opponent": "Turkey",
+     "goals_for": 2,
+     "goals_against": 3,
+     "result": "L",
+     "score": "2-3"
+    },
+    {
+     "date": "2026-07-02",
+     "stage": "Round of 32",
+     "opponent": "Bosnia-Herzegovina",
+     "goals_for": 2,
+     "goals_against": 0,
+     "result": "W",
+     "score": "2-0"
+    },
+    {
+     "date": "2026-07-07",
+     "stage": "Round of 16",
+     "opponent": "Belgium",
+     "goals_for": 1,
+     "goals_against": 4,
+     "result": "L",
+     "score": "1-4"
+    }
+   ]
+  },
+  "uruguay": {
+   "team": "Uruguay",
+   "slug": "uruguay",
+   "played": 3,
+   "wins": 0,
+   "draws": 2,
+   "losses": 1,
+   "goals_for": 3,
+   "goals_against": 4,
+   "clean_sheets": 0,
+   "goal_difference": -1,
+   "avg_goals_for": 1.0,
+   "avg_goals_against": 1.33,
+   "matches": [
+    {
+     "date": "2026-06-15",
+     "stage": "Group Stage",
+     "opponent": "Saudi Arabia",
+     "goals_for": 1,
+     "goals_against": 1,
+     "result": "D",
+     "score": "1-1"
+    },
+    {
+     "date": "2026-06-21",
+     "stage": "Group Stage",
+     "opponent": "Cape Verde Islands",
+     "goals_for": 2,
+     "goals_against": 2,
+     "result": "D",
+     "score": "2-2"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Spain",
+     "goals_for": 0,
+     "goals_against": 1,
+     "result": "L",
+     "score": "0-1"
+    }
+   ]
+  },
+  "uzbekistan": {
+   "team": "Uzbekistan",
+   "slug": "uzbekistan",
+   "played": 3,
+   "wins": 0,
+   "draws": 0,
+   "losses": 3,
+   "goals_for": 2,
+   "goals_against": 11,
+   "clean_sheets": 0,
+   "goal_difference": -9,
+   "avg_goals_for": 0.67,
+   "avg_goals_against": 3.67,
+   "matches": [
+    {
+     "date": "2026-06-18",
+     "stage": "Group Stage",
+     "opponent": "Colombia",
+     "goals_for": 1,
+     "goals_against": 3,
+     "result": "L",
+     "score": "1-3"
+    },
+    {
+     "date": "2026-06-23",
+     "stage": "Group Stage",
+     "opponent": "Portugal",
+     "goals_for": 0,
+     "goals_against": 5,
+     "result": "L",
+     "score": "0-5"
+    },
+    {
+     "date": "2026-06-27",
+     "stage": "Group Stage",
+     "opponent": "Congo DR",
+     "goals_for": 1,
+     "goals_against": 3,
+     "result": "L",
+     "score": "1-3"
+    }
+   ]
+  }
+ },
+ "_meta": {
+  "generated_at": "2026-07-10T06:08:19+00:00",
+  "source_files": [
+   "outputs/live_state/football_data_org_fixtures_normalized.csv"
+  ],
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "current_phase": "quarterfinal",
+  "run_id": "2026-07-10T060556Z-428e59f3"
+ }
+}

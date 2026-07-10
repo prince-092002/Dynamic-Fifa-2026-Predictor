@@ -1,0 +1,2 @@
+group,rank,team,team_id,played,wins,draws,losses,goals_for,goals_against,goal_difference,points,form,qualification_status,source,provider,last_updated,third_place_rank,qualifies_as_best_third
+STAGE,3,Mexico,769,3,3,0,0,6,0,6,9,"W,W,W",still_possible,football_data_org,football_data_org,2026-07-10T06:06:17+00:00,1,True

@@ -1,0 +1,425 @@
+{
+ "rounds": [
+  {
+   "stage": "Round of 32",
+   "matches": [
+    {
+     "fixture_id": 537417,
+     "stage": "Round of 32",
+     "date": "2026-06-28T19:00:00Z",
+     "state": "completed",
+     "team_a": "South Africa",
+     "team_b": "Canada",
+     "score": "0-1",
+     "winner": "Canada",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537423,
+     "stage": "Round of 32",
+     "date": "2026-06-29T17:00:00Z",
+     "state": "completed",
+     "team_a": "Brazil",
+     "team_b": "Japan",
+     "score": "2-1",
+     "winner": "Brazil",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537415,
+     "stage": "Round of 32",
+     "date": "2026-06-29T20:30:00Z",
+     "state": "completed",
+     "team_a": "Germany",
+     "team_b": "Paraguay",
+     "score": "4-5",
+     "winner": "Paraguay",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537418,
+     "stage": "Round of 32",
+     "date": "2026-06-30T01:00:00Z",
+     "state": "completed",
+     "team_a": "Netherlands",
+     "team_b": "Morocco",
+     "score": "3-4",
+     "winner": "Morocco",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537424,
+     "stage": "Round of 32",
+     "date": "2026-06-30T17:00:00Z",
+     "state": "completed",
+     "team_a": "Ivory Coast",
+     "team_b": "Norway",
+     "score": "1-2",
+     "winner": "Norway",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537416,
+     "stage": "Round of 32",
+     "date": "2026-06-30T21:00:00Z",
+     "state": "completed",
+     "team_a": "France",
+     "team_b": "Sweden",
+     "score": "3-0",
+     "winner": "France",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537425,
+     "stage": "Round of 32",
+     "date": "2026-07-01T02:00:00Z",
+     "state": "completed",
+     "team_a": "Mexico",
+     "team_b": "Ecuador",
+     "score": "2-0",
+     "winner": "Mexico",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537426,
+     "stage": "Round of 32",
+     "date": "2026-07-01T16:00:00Z",
+     "state": "completed",
+     "team_a": "England",
+     "team_b": "Congo DR",
+     "score": "2-1",
+     "winner": "England",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537422,
+     "stage": "Round of 32",
+     "date": "2026-07-01T20:00:00Z",
+     "state": "completed",
+     "team_a": "Belgium",
+     "team_b": "Senegal",
+     "score": "3-2",
+     "winner": "Belgium",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537421,
+     "stage": "Round of 32",
+     "date": "2026-07-02T00:00:00Z",
+     "state": "completed",
+     "team_a": "United States",
+     "team_b": "Bosnia-Herzegovina",
+     "score": "2-0",
+     "winner": "United States",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537420,
+     "stage": "Round of 32",
+     "date": "2026-07-02T19:00:00Z",
+     "state": "completed",
+     "team_a": "Spain",
+     "team_b": "Austria",
+     "score": "3-0",
+     "winner": "Spain",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537419,
+     "stage": "Round of 32",
+     "date": "2026-07-02T23:00:00Z",
+     "state": "completed",
+     "team_a": "Portugal",
+     "team_b": "Croatia",
+     "score": "2-1",
+     "winner": "Portugal",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537429,
+     "stage": "Round of 32",
+     "date": "2026-07-03T03:00:00Z",
+     "state": "completed",
+     "team_a": "Switzerland",
+     "team_b": "Algeria",
+     "score": "2-0",
+     "winner": "Switzerland",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537428,
+     "stage": "Round of 32",
+     "date": "2026-07-03T18:00:00Z",
+     "state": "completed",
+     "team_a": "Australia",
+     "team_b": "Egypt",
+     "score": "3-5",
+     "winner": "Egypt",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537427,
+     "stage": "Round of 32",
+     "date": "2026-07-03T22:00:00Z",
+     "state": "completed",
+     "team_a": "Argentina",
+     "team_b": "Cape Verde Islands",
+     "score": "3-2",
+     "winner": "Argentina",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537430,
+     "stage": "Round of 32",
+     "date": "2026-07-04T01:30:00Z",
+     "state": "completed",
+     "team_a": "Colombia",
+     "team_b": "Ghana",
+     "score": "1-0",
+     "winner": "Colombia",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    }
+   ]
+  },
+  {
+   "stage": "Round of 16",
+   "matches": [
+    {
+     "fixture_id": 537376,
+     "stage": "Round of 16",
+     "date": "2026-07-04T17:00:00Z",
+     "state": "completed",
+     "team_a": "Canada",
+     "team_b": "Morocco",
+     "score": "0-3",
+     "winner": "Morocco",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537375,
+     "stage": "Round of 16",
+     "date": "2026-07-04T21:00:00Z",
+     "state": "completed",
+     "team_a": "Paraguay",
+     "team_b": "France",
+     "score": "0-1",
+     "winner": "France",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537377,
+     "stage": "Round of 16",
+     "date": "2026-07-05T20:00:00Z",
+     "state": "completed",
+     "team_a": "Brazil",
+     "team_b": "Norway",
+     "score": "1-2",
+     "winner": "Norway",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537378,
+     "stage": "Round of 16",
+     "date": "2026-07-06T01:00:00Z",
+     "state": "completed",
+     "team_a": "Mexico",
+     "team_b": "England",
+     "score": "2-3",
+     "winner": "England",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537379,
+     "stage": "Round of 16",
+     "date": "2026-07-06T19:00:00Z",
+     "state": "completed",
+     "team_a": "Portugal",
+     "team_b": "Spain",
+     "score": "0-1",
+     "winner": "Spain",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537380,
+     "stage": "Round of 16",
+     "date": "2026-07-07T00:00:00Z",
+     "state": "completed",
+     "team_a": "United States",
+     "team_b": "Belgium",
+     "score": "1-4",
+     "winner": "Belgium",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537381,
+     "stage": "Round of 16",
+     "date": "2026-07-07T16:00:00Z",
+     "state": "completed",
+     "team_a": "Argentina",
+     "team_b": "Egypt",
+     "score": "3-2",
+     "winner": "Argentina",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537382,
+     "stage": "Round of 16",
+     "date": "2026-07-07T20:00:00Z",
+     "state": "completed",
+     "team_a": "Switzerland",
+     "team_b": "Colombia",
+     "score": "4-3",
+     "winner": "Switzerland",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    }
+   ]
+  },
+  {
+   "stage": "Quarterfinal",
+   "matches": [
+    {
+     "fixture_id": 537383,
+     "stage": "Quarterfinal",
+     "date": "2026-07-09T20:00:00Z",
+     "state": "completed",
+     "team_a": "France",
+     "team_b": "Morocco",
+     "score": "2-0",
+     "winner": "France",
+     "source": "completed_result",
+     "source_label": "Completed real result"
+    },
+    {
+     "fixture_id": 537384,
+     "stage": "Quarterfinal",
+     "date": "2026-07-10T19:00:00Z",
+     "state": "scheduled_known",
+     "team_a": "Spain",
+     "team_b": "Belgium",
+     "team_a_advance_probability": 0.739971,
+     "team_b_advance_probability": 0.260029,
+     "predicted_favorite": "Spain",
+     "source": "live_model",
+     "source_label": "Live XGBoost prediction",
+     "model": "xgboost"
+    },
+    {
+     "fixture_id": 537385,
+     "stage": "Quarterfinal",
+     "date": "2026-07-11T21:00:00Z",
+     "state": "scheduled_known",
+     "team_a": "Norway",
+     "team_b": "England",
+     "team_a_advance_probability": 0.361887,
+     "team_b_advance_probability": 0.638113,
+     "predicted_favorite": "England",
+     "source": "live_model",
+     "source_label": "Live XGBoost prediction",
+     "model": "xgboost"
+    },
+    {
+     "fixture_id": 537386,
+     "stage": "Quarterfinal",
+     "date": "2026-07-12T01:00:00Z",
+     "state": "scheduled_known",
+     "team_a": "Argentina",
+     "team_b": "Switzerland",
+     "team_a_advance_probability": 0.768798,
+     "team_b_advance_probability": 0.231202,
+     "predicted_favorite": "Argentina",
+     "source": "live_model",
+     "source_label": "Live XGBoost prediction",
+     "model": "xgboost"
+    }
+   ]
+  },
+  {
+   "stage": "Semifinal",
+   "matches": [
+    {
+     "fixture_id": 537387,
+     "stage": "Semifinal",
+     "date": "2026-07-14T19:00:00Z",
+     "state": "tbd",
+     "team_a": null,
+     "team_b": null,
+     "placeholder": "Winners of earlier rounds",
+     "source": "unresolved_tbd",
+     "source_label": "Awaiting real participants"
+    },
+    {
+     "fixture_id": 537388,
+     "stage": "Semifinal",
+     "date": "2026-07-15T19:00:00Z",
+     "state": "tbd",
+     "team_a": null,
+     "team_b": null,
+     "placeholder": "Winners of earlier rounds",
+     "source": "unresolved_tbd",
+     "source_label": "Awaiting real participants"
+    }
+   ]
+  },
+  {
+   "stage": "Final",
+   "matches": [
+    {
+     "fixture_id": 537390,
+     "stage": "Final",
+     "date": "2026-07-19T19:00:00Z",
+     "state": "tbd",
+     "team_a": null,
+     "team_b": null,
+     "placeholder": "Winners of earlier rounds",
+     "source": "unresolved_tbd",
+     "source_label": "Awaiting real participants"
+    }
+   ]
+  }
+ ],
+ "source_legend": {
+  "completed_result": "Completed real result",
+  "live_model": "Live XGBoost prediction",
+  "model_exact": "Pre-tournament model prediction",
+  "elo_fallback": "Elo fallback",
+  "neutral_fallback": "Neutral fallback",
+  "unresolved_tbd": "Awaiting real participants"
+ },
+ "current_phase": "quarterfinal",
+ "_meta": {
+  "generated_at": "2026-07-10T06:08:19+00:00",
+  "source_files": [
+   "outputs/live_state/merged_bracket_state.csv",
+   "outputs/live_state/football_data_org_fixtures_normalized.csv",
+   "outputs/live_state/live_knockout_match_predictions.csv"
+  ],
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "current_phase": "quarterfinal",
+  "run_id": "2026-07-10T060556Z-428e59f3"
+ }
+}

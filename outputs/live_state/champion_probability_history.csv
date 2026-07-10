@@ -1,0 +1,8 @@
+run_id,timestamp,phase,simulation_count,provider,forecast_mode,team,champion_probability
+2026-07-10T060556Z-428e59f3,2026-07-10T06:08:19+00:00,quarterfinal,10000,football_data_org,true_live_forecast,France,0.2949
+2026-07-10T060556Z-428e59f3,2026-07-10T06:08:19+00:00,quarterfinal,10000,football_data_org,true_live_forecast,Argentina,0.2517
+2026-07-10T060556Z-428e59f3,2026-07-10T06:08:19+00:00,quarterfinal,10000,football_data_org,true_live_forecast,Spain,0.2086
+2026-07-10T060556Z-428e59f3,2026-07-10T06:08:19+00:00,quarterfinal,10000,football_data_org,true_live_forecast,England,0.151
+2026-07-10T060556Z-428e59f3,2026-07-10T06:08:19+00:00,quarterfinal,10000,football_data_org,true_live_forecast,Belgium,0.0417
+2026-07-10T060556Z-428e59f3,2026-07-10T06:08:19+00:00,quarterfinal,10000,football_data_org,true_live_forecast,Switzerland,0.0298
+2026-07-10T060556Z-428e59f3,2026-07-10T06:08:19+00:00,quarterfinal,10000,football_data_org,true_live_forecast,Norway,0.0223

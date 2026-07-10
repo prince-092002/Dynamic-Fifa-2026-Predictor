@@ -1,0 +1,59 @@
+name: Update FIFA Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs daily at 23:00 UTC. Edit this cron line for a different refresh time.
+    - cron: "0 23 * * *"
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create .env from GitHub Secrets
+        shell: bash
+        run: |
+          touch .env
+          if [ -n "${{ secrets.API_FOOTBALL_KEY }}" ]; then
+            echo "API_FOOTBALL_KEY=${{ secrets.API_FOOTBALL_KEY }}" >> .env
+          fi
+          if [ -n "${{ secrets.KAGGLE_USERNAME }}" ]; then
+            echo "KAGGLE_USERNAME=${{ secrets.KAGGLE_USERNAME }}" >> .env
+          fi
+          if [ -n "${{ secrets.KAGGLE_KEY }}" ]; then
+            echo "KAGGLE_KEY=${{ secrets.KAGGLE_KEY }}" >> .env
+          fi
+
+      - name: Run matchday update
+        run: python main.py update --mode matchday
+
+      - name: Upload processed data artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: processed-data
+          path: data/processed/
+
+      - name: Upload metadata artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: metadata
+          path: data/metadata/
+
+      - name: Upload reports artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: outputs/reports/
+

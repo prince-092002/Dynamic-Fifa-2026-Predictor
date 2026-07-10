@@ -1,0 +1,50 @@
+{
+ "entries": [
+  {
+   "team": "France",
+   "reach_final_probability": 0.5293,
+   "slug": "france"
+  },
+  {
+   "team": "Argentina",
+   "reach_final_probability": 0.4892,
+   "slug": "argentina"
+  },
+  {
+   "team": "Spain",
+   "reach_final_probability": 0.3747,
+   "slug": "spain"
+  },
+  {
+   "team": "England",
+   "reach_final_probability": 0.3189,
+   "slug": "england"
+  },
+  {
+   "team": "Switzerland",
+   "reach_final_probability": 0.0982,
+   "slug": "switzerland"
+  },
+  {
+   "team": "Belgium",
+   "reach_final_probability": 0.096,
+   "slug": "belgium"
+  },
+  {
+   "team": "Norway",
+   "reach_final_probability": 0.0937,
+   "slug": "norway"
+  }
+ ],
+ "simulations": 10000,
+ "_meta": {
+  "generated_at": "2026-07-10T06:08:19+00:00",
+  "source_files": [
+   "outputs/live_state/team_reach_final_probabilities.csv"
+  ],
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "current_phase": "quarterfinal",
+  "run_id": "2026-07-10T060556Z-428e59f3"
+ }
+}

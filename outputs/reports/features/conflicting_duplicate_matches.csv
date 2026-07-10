@@ -1,0 +1,221 @@
+match_id,date,team_a,team_b,team_a_goals,team_b_goals,winner,is_draw,tournament,stage,city,country,venue,neutral,source,last_updated
+1916-08-15-argentina-uruguay-copa-newton,1916-08-15,Argentina,Uruguay,3.0,1.0,Argentina,False,Copa Newton,,Avellaneda,Argentina,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1916-08-15-uruguay-argentina-copa-lipton,1916-08-15,Uruguay,Argentina,1.0,2.0,Argentina,False,Copa Lipton,,Montevideo,Uruguay,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1916-10-01-argentina-uruguay-friendly,1916-10-01,Argentina,Uruguay,7.0,2.0,Argentina,False,Friendly,,Avellaneda,Argentina,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1916-10-01-uruguay-argentina-copa-premio-honor-uruguayo,1916-10-01,Uruguay,Argentina,0.0,1.0,Argentina,False,Copa Premio Honor Uruguayo,,Montevideo,Uruguay,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1921-05-30-japan-philippines-friendly,1921-05-30,Japan,Philippines,0.0,3.0,Philippines,False,Friendly,,Shanghai,China,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1921-05-30-philippines-japan-far-eastern-championship-games,1921-05-30,Philippines,Japan,3.0,1.0,Philippines,False,Far Eastern Championship Games,,Shanghai,China,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1924-05-25-argentina-uruguay-copa-newton,1924-05-25,Argentina,Uruguay,4.0,0.0,Argentina,False,Copa Newton,,Buenos Aires,Argentina,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1924-05-25-uruguay-argentina-copa-lipton,1924-05-25,Uruguay,Argentina,2.0,0.0,Uruguay,False,Copa Lipton,,Montevideo,Uruguay,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1925-05-20-china-japan-friendly,1925-05-20,China,Japan,2.0,0.0,China,False,Friendly,,Manila,Philippines,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1925-05-20-japan-china-far-eastern-championship-games,1925-05-20,Japan,China,0.0,2.0,China,False,Far Eastern Championship Games,,Manila,Philippines,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1929-06-16-argentina-uruguay-friendly,1929-06-16,Argentina,Uruguay,2.0,0.0,Argentina,False,Friendly,,Buenos Aires,Argentina,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1929-06-16-uruguay-argentina-friendly,1929-06-16,Uruguay,Argentina,1.0,1.0,Draw,True,Friendly,,Montevideo,Uruguay,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-13-belgium-united-states-fifa-world-cup,1930-07-13,Belgium,United States,0.0,3.0,United States,False,FIFA World Cup,,Montevideo,Uruguay,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-13-united-states-belgium,1930-07-13,United States,Belgium,3.0,0.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-14-brazil-yugoslavia-fifa-world-cup,1930-07-14,Brazil,Yugoslavia,1.0,2.0,Yugoslavia,False,FIFA World Cup,,Montevideo,Uruguay,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-14-yugoslavia-brazil,1930-07-14,Yugoslavia,Brazil,2.0,1.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-14-peru-romania-fifa-world-cup,1930-07-14,Peru,Romania,1.0,3.0,Romania,False,FIFA World Cup,,Montevideo,Uruguay,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-14-romania-peru,1930-07-14,Romania,Peru,3.0,1.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-17-bolivia-yugoslavia-fifa-world-cup,1930-07-17,Bolivia,Yugoslavia,0.0,4.0,Yugoslavia,False,FIFA World Cup,,Montevideo,Uruguay,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-17-yugoslavia-bolivia,1930-07-17,Yugoslavia,Bolivia,4.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-17-paraguay-united-states-fifa-world-cup,1930-07-17,Paraguay,United States,0.0,3.0,United States,False,FIFA World Cup,,Montevideo,Uruguay,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-17-united-states-paraguay,1930-07-17,United States,Paraguay,3.0,0.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-20-belgium-paraguay-fifa-world-cup,1930-07-20,Belgium,Paraguay,0.0,1.0,Paraguay,False,FIFA World Cup,,Montevideo,Uruguay,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-20-paraguay-belgium,1930-07-20,Paraguay,Belgium,1.0,0.0,Paraguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-20-bolivia-brazil-fifa-world-cup,1930-07-20,Bolivia,Brazil,0.0,4.0,Brazil,False,FIFA World Cup,,Montevideo,Uruguay,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-20-brazil-bolivia,1930-07-20,Brazil,Bolivia,4.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-argentina-sweden-fifa-world-cup,1934-05-27,Argentina,Sweden,2.0,3.0,Sweden,False,FIFA World Cup,,Bologna,Italy,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1934-05-27-sweden-argentina,1934-05-27,Sweden,Argentina,3.0,2.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-belgium-germany-fifa-world-cup,1934-05-27,Belgium,Germany,2.0,5.0,Germany,False,FIFA World Cup,,Florence,Italy,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1934-05-27-germany-belgium,1934-05-27,Germany,Belgium,5.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-brazil-spain-fifa-world-cup,1934-05-27,Brazil,Spain,1.0,3.0,Spain,False,FIFA World Cup,,Genoa,Italy,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1934-05-27-spain-brazil,1934-05-27,Spain,Brazil,3.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-egypt-hungary-fifa-world-cup,1934-05-27,Egypt,Hungary,2.0,4.0,Hungary,False,FIFA World Cup,,Naples,Italy,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1934-05-27-hungary-egypt,1934-05-27,Hungary,Egypt,4.0,2.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-netherlands-switzerland-fifa-world-cup,1934-05-27,Netherlands,Switzerland,2.0,3.0,Switzerland,False,FIFA World Cup,,Milan,Italy,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1934-05-27-switzerland-netherlands,1934-05-27,Switzerland,Netherlands,3.0,2.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-06-07-austria-germany-fifa-world-cup,1934-06-07,Austria,Germany,2.0,3.0,Germany,False,FIFA World Cup,,Naples,Italy,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1934-06-07-germany-austria,1934-06-07,Germany,Austria,3.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-09-germany-switzerland-fifa-world-cup,1938-06-09,Germany,Switzerland,2.0,4.0,Switzerland,False,FIFA World Cup,,Paris,France,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1938-06-09-switzerland-germany,1938-06-09,Switzerland,Germany,4.0,2.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-12-cuba-sweden-fifa-world-cup,1938-06-12,Cuba,Sweden,0.0,8.0,Sweden,False,FIFA World Cup,,Antibes,France,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1938-06-12-sweden-cuba,1938-06-12,Sweden,Cuba,8.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-12-france-italy-fifa-world-cup,1938-06-12,France,Italy,1.0,3.0,Italy,False,FIFA World Cup,,Colombes,France,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1938-06-12-italy-france,1938-06-12,Italy,France,3.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-16-brazil-italy-fifa-world-cup,1938-06-16,Brazil,Italy,1.0,2.0,Italy,False,FIFA World Cup,,Marseille,France,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1938-06-16-italy-brazil,1938-06-16,Italy,Brazil,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-19-hungary-italy-fifa-world-cup,1938-06-19,Hungary,Italy,2.0,4.0,Italy,False,FIFA World Cup,,Colombes,France,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1938-06-19-italy-hungary,1938-06-19,Italy,Hungary,4.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-25-chile-england-fifa-world-cup,1950-06-25,Chile,England,0.0,2.0,England,False,FIFA World Cup,,Rio de Janeiro,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-06-25-england-chile,1950-06-25,England,Chile,2.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-25-italy-sweden-fifa-world-cup,1950-06-25,Italy,Sweden,2.0,3.0,Sweden,False,FIFA World Cup,,São Paulo,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-06-25-sweden-italy,1950-06-25,Sweden,Italy,3.0,2.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-25-switzerland-yugoslavia-fifa-world-cup,1950-06-25,Switzerland,Yugoslavia,0.0,3.0,Yugoslavia,False,FIFA World Cup,,Belo Horizonte,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-06-25-yugoslavia-switzerland,1950-06-25,Yugoslavia,Switzerland,3.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-28-mexico-yugoslavia-fifa-world-cup,1950-06-28,Mexico,Yugoslavia,1.0,4.0,Yugoslavia,False,FIFA World Cup,,Porto Alegre,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-06-28-yugoslavia-mexico,1950-06-28,Yugoslavia,Mexico,4.0,1.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-29-chile-spain-fifa-world-cup,1950-06-29,Chile,Spain,0.0,2.0,Spain,False,FIFA World Cup,,Rio de Janeiro,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-06-29-spain-chile,1950-06-29,Spain,Chile,2.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-29-england-united-states-fifa-world-cup,1950-06-29,England,United States,0.0,1.0,United States,False,FIFA World Cup,,Belo Horizonte,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-06-29-united-states-england,1950-06-29,United States,England,1.0,0.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-02-bolivia-uruguay-fifa-world-cup,1950-07-02,Bolivia,Uruguay,0.0,8.0,Uruguay,False,FIFA World Cup,,Belo Horizonte,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-07-02-uruguay-bolivia,1950-07-02,Uruguay,Bolivia,8.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-02-england-spain-fifa-world-cup,1950-07-02,England,Spain,0.0,1.0,Spain,False,FIFA World Cup,,Rio de Janeiro,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-07-02-spain-england,1950-07-02,Spain,England,1.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-02-mexico-switzerland-fifa-world-cup,1950-07-02,Mexico,Switzerland,1.0,2.0,Switzerland,False,FIFA World Cup,,Porto Alegre,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-07-02-switzerland-mexico,1950-07-02,Switzerland,Mexico,2.0,1.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-13-sweden-uruguay-fifa-world-cup,1950-07-13,Sweden,Uruguay,2.0,3.0,Uruguay,False,FIFA World Cup,,São Paulo,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-07-13-uruguay-sweden,1950-07-13,Uruguay,Sweden,3.0,2.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-16-brazil-uruguay-fifa-world-cup,1950-07-16,Brazil,Uruguay,1.0,2.0,Uruguay,False,FIFA World Cup,,Rio de Janeiro,Brazil,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-07-16-uruguay-brazil,1950-07-16,Uruguay,Brazil,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-16-spain-sweden-fifa-world-cup,1950-07-16,Spain,Sweden,1.0,3.0,Sweden,False,FIFA World Cup,,São Paulo,Brazil,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1950-07-16-sweden-spain,1950-07-16,Sweden,Spain,3.0,1.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-16-czechoslovakia-uruguay-fifa-world-cup,1954-06-16,Czechoslovakia,Uruguay,0.0,2.0,Uruguay,False,FIFA World Cup,,Bern,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-16-uruguay-czechoslovakia,1954-06-16,Uruguay,Czechoslovakia,2.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-16-france-yugoslavia-fifa-world-cup,1954-06-16,France,Yugoslavia,0.0,1.0,Yugoslavia,False,FIFA World Cup,,Lausanne,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-16-yugoslavia-france,1954-06-16,Yugoslavia,France,1.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-19-scotland-uruguay-fifa-world-cup,1954-06-19,Scotland,Uruguay,0.0,7.0,Uruguay,False,FIFA World Cup,,Basel,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-19-uruguay-scotland,1954-06-19,Uruguay,Scotland,7.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-20-belgium-italy-fifa-world-cup,1954-06-20,Belgium,Italy,1.0,4.0,Italy,False,FIFA World Cup,,Lugano,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-20-italy-belgium,1954-06-20,Italy,Belgium,4.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-20-germany-hungary-fifa-world-cup,1954-06-20,Germany,Hungary,3.0,8.0,Hungary,False,FIFA World Cup,,Basel,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-20-hungary-germany,1954-06-20,Hungary,Germany,8.0,3.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-20-south-korea-turkey-fifa-world-cup,1954-06-20,South Korea,Turkey,0.0,7.0,Turkey,False,FIFA World Cup,,Geneva,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-20-turkey-south-korea,1954-06-20,Turkey,South Korea,7.0,0.0,Turkey,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-26-england-uruguay-fifa-world-cup,1954-06-26,England,Uruguay,2.0,4.0,Uruguay,False,FIFA World Cup,,Basel,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-26-uruguay-england,1954-06-26,Uruguay,England,4.0,2.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-27-brazil-hungary-fifa-world-cup,1954-06-27,Brazil,Hungary,2.0,4.0,Hungary,False,FIFA World Cup,,Bern,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-27-hungary-brazil,1954-06-27,Hungary,Brazil,4.0,2.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-30-austria-germany-fifa-world-cup,1954-06-30,Austria,Germany,1.0,6.0,Germany,False,FIFA World Cup,,Basel,Switzerland,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1954-06-30-germany-austria,1954-06-30,Germany,Austria,6.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-08-austria-brazil-fifa-world-cup,1958-06-08,Austria,Brazil,0.0,3.0,Brazil,False,FIFA World Cup,,Uddevalla,Sweden,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1958-06-08-brazil-austria,1958-06-08,Brazil,Austria,3.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-08-czechoslovakia-northern-ireland-fifa-world-cup,1958-06-08,Czechoslovakia,Northern Ireland,0.0,1.0,Northern Ireland,False,FIFA World Cup,,Halmstad,Sweden,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1958-06-08-northern-ireland-czechoslovakia,1958-06-08,Northern Ireland,Czechoslovakia,1.0,0.0,Northern Ireland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-11-france-yugoslavia-fifa-world-cup,1958-06-11,France,Yugoslavia,2.0,3.0,Yugoslavia,False,FIFA World Cup,,Västerås,Sweden,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1958-06-11-yugoslavia-france,1958-06-11,Yugoslavia,France,3.0,2.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-15-argentina-czechoslovakia-fifa-world-cup,1958-06-15,Argentina,Czechoslovakia,1.0,6.0,Czechoslovakia,False,FIFA World Cup,,Helsingborg,Sweden,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1958-06-15-czechoslovakia-argentina,1958-06-15,Czechoslovakia,Argentina,6.0,1.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-17-czechoslovakia-northern-ireland-fifa-world-cup,1958-06-17,Czechoslovakia,Northern Ireland,1.0,2.0,Northern Ireland,False,FIFA World Cup,,Malmö,Sweden,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1958-06-17-northern-ireland-czechoslovakia,1958-06-17,Northern Ireland,Czechoslovakia,2.0,1.0,Northern Ireland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-17-hungary-wales-fifa-world-cup,1958-06-17,Hungary,Wales,1.0,2.0,Wales,False,FIFA World Cup,,Solna,Sweden,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1958-06-17-wales-hungary,1958-06-17,Wales,Hungary,2.0,1.0,Wales,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-29-sweden-brazil-fifa-world-cup,1958-06-29,Sweden,Brazil,2.0,5.0,Brazil,False,FIFA World Cup,,Solna,Sweden,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1958-06-29-brazil-sweden,1958-06-29,Brazil,Sweden,5.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-05-30-colombia-uruguay-fifa-world-cup,1962-05-30,Colombia,Uruguay,1.0,2.0,Uruguay,False,FIFA World Cup,,Arica,Chile,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-05-30-uruguay-colombia,1962-05-30,Uruguay,Colombia,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-05-31-england-hungary-fifa-world-cup,1962-05-31,England,Hungary,1.0,2.0,Hungary,False,FIFA World Cup,,Rancagua,Chile,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-05-31-hungary-england,1962-05-31,Hungary,England,2.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-02-argentina-england-fifa-world-cup,1962-06-02,Argentina,England,1.0,3.0,England,False,FIFA World Cup,,Rancagua,Chile,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-06-02-england-argentina,1962-06-02,England,Argentina,3.0,1.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-02-uruguay-yugoslavia-fifa-world-cup,1962-06-02,Uruguay,Yugoslavia,1.0,3.0,Yugoslavia,False,FIFA World Cup,,Arica,Chile,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-06-02-yugoslavia-uruguay,1962-06-02,Yugoslavia,Uruguay,3.0,1.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-03-bulgaria-hungary-fifa-world-cup,1962-06-03,Bulgaria,Hungary,1.0,6.0,Hungary,False,FIFA World Cup,,Rancagua,Chile,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-06-03-hungary-bulgaria,1962-06-03,Hungary,Bulgaria,6.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-03-mexico-spain-fifa-world-cup,1962-06-03,Mexico,Spain,0.0,1.0,Spain,False,FIFA World Cup,,Viña del Mar,Chile,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-06-03-spain-mexico,1962-06-03,Spain,Mexico,1.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-07-colombia-yugoslavia-fifa-world-cup,1962-06-07,Colombia,Yugoslavia,0.0,5.0,Yugoslavia,False,FIFA World Cup,,Arica,Chile,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-06-07-yugoslavia-colombia,1962-06-07,Yugoslavia,Colombia,5.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-07-czechoslovakia-mexico-fifa-world-cup,1962-06-07,Czechoslovakia,Mexico,1.0,3.0,Mexico,False,FIFA World Cup,,Viña del Mar,Chile,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-06-07-mexico-czechoslovakia,1962-06-07,Mexico,Czechoslovakia,3.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-13-chile-brazil-fifa-world-cup,1962-06-13,Chile,Brazil,2.0,4.0,Brazil,False,FIFA World Cup,,Santiago,Chile,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1962-06-13-brazil-chile,1962-06-13,Brazil,Chile,4.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-13-chile-italy-fifa-world-cup,1966-07-13,Chile,Italy,0.0,2.0,Italy,False,FIFA World Cup,,Sunderland,England,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1966-07-13-italy-chile,1966-07-13,Italy,Chile,2.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-13-hungary-portugal-fifa-world-cup,1966-07-13,Hungary,Portugal,1.0,3.0,Portugal,False,FIFA World Cup,,Manchester,England,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1966-07-13-portugal-hungary,1966-07-13,Portugal,Hungary,3.0,1.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-15-brazil-hungary-fifa-world-cup,1966-07-15,Brazil,Hungary,1.0,3.0,Hungary,False,FIFA World Cup,,Liverpool,England,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1966-07-15-hungary-brazil,1966-07-15,Hungary,Brazil,3.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-15-france-uruguay-fifa-world-cup,1966-07-15,France,Uruguay,1.0,2.0,Uruguay,False,FIFA World Cup,,London,England,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1966-07-15-uruguay-france,1966-07-15,Uruguay,France,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-16-bulgaria-portugal-fifa-world-cup,1966-07-16,Bulgaria,Portugal,0.0,3.0,Portugal,False,FIFA World Cup,,Manchester,England,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1966-07-16-portugal-bulgaria,1966-07-16,Portugal,Bulgaria,3.0,0.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-19-brazil-portugal-fifa-world-cup,1966-07-19,Brazil,Portugal,1.0,3.0,Portugal,False,FIFA World Cup,,Liverpool,England,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1966-07-19-portugal-brazil,1966-07-19,Portugal,Brazil,3.0,1.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-20-bulgaria-hungary-fifa-world-cup,1966-07-20,Bulgaria,Hungary,1.0,3.0,Hungary,False,FIFA World Cup,,Manchester,England,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1966-07-20-hungary-bulgaria,1966-07-20,Hungary,Bulgaria,3.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1969-02-02-uganda-cameroon-african-cup-of-nations-qualification,1969-02-02,Uganda,Cameroon,2.0,1.0,Uganda,False,African Cup of Nations qualification,,Kampala,Uganda,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1969-02-02-cameroon-uganda-african-cup-of-nations-qualification,1969-02-02,Cameroon,Uganda,2.0,0.0,Cameroon,False,African Cup of Nations qualification,,Yaoundé,Cameroon,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1969-06-29-zambia-cameroon-african-cup-of-nations-qualification,1969-06-29,Zambia,Cameroon,2.0,2.0,Draw,True,African Cup of Nations qualification,,Ndola,Zambia,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1969-06-29-cameroon-zambia-african-cup-of-nations-qualification,1969-06-29,Cameroon,Zambia,2.0,1.0,Cameroon,False,African Cup of Nations qualification,,Yaoundé,Cameroon,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1970-06-02-bulgaria-peru-fifa-world-cup,1970-06-02,Bulgaria,Peru,2.0,3.0,Peru,False,FIFA World Cup,,León,Mexico,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1970-06-02-peru-bulgaria,1970-06-02,Peru,Bulgaria,3.0,2.0,Peru,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-02-israel-uruguay-fifa-world-cup,1970-06-02,Israel,Uruguay,0.0,2.0,Uruguay,False,FIFA World Cup,,Puebla,Mexico,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1970-06-02-uruguay-israel,1970-06-02,Uruguay,Israel,2.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-06-czechoslovakia-romania-fifa-world-cup,1970-06-06,Czechoslovakia,Romania,1.0,2.0,Romania,False,FIFA World Cup,,Guadalajara,Mexico,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1970-06-06-romania-czechoslovakia,1970-06-06,Romania,Czechoslovakia,2.0,1.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-06-morocco-peru-fifa-world-cup,1970-06-06,Morocco,Peru,0.0,3.0,Peru,False,FIFA World Cup,,León,Mexico,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1970-06-06-peru-morocco,1970-06-06,Peru,Morocco,3.0,0.0,Peru,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-11-czechoslovakia-england-fifa-world-cup,1970-06-11,Czechoslovakia,England,0.0,1.0,England,False,FIFA World Cup,,Guadalajara,Mexico,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1970-06-11-england-czechoslovakia,1970-06-11,England,Czechoslovakia,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-14-mexico-italy-fifa-world-cup,1970-06-14,Mexico,Italy,1.0,4.0,Italy,False,FIFA World Cup,,Toluca,Mexico,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1970-06-14-italy-mexico,1970-06-14,Italy,Mexico,4.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1971-10-06-bermuda-mexico-concacaf-championship-qualification,1971-10-06,Bermuda,Mexico,0.0,2.0,Mexico,False,CONCACAF Championship qualification,,Hamilton,Bermuda,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1971-10-06-mexico-bermuda-concacaf-championship-qualification,1971-10-06,Mexico,Bermuda,4.0,0.0,Mexico,False,CONCACAF Championship qualification,,Mexico City,Mexico,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-04-08-ethiopia-tanzania-african-cup-of-nations-qualification,1973-04-08,Ethiopia,Tanzania,2.0,1.0,Ethiopia,False,African Cup of Nations qualification,,Addis Ababa,Ethiopia,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-04-08-tanzania-ethiopia-african-cup-of-nations-qualification,1973-04-08,Tanzania,Ethiopia,3.0,0.0,Tanzania,False,African Cup of Nations qualification,,Dar es Salaam,Tanzania,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-06-05-zambia-madagascar-african-cup-of-nations-qualification,1973-06-05,Zambia,Madagascar,3.0,1.0,Zambia,False,African Cup of Nations qualification,,Ndola,Zambia,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-06-05-madagascar-zambia-african-cup-of-nations-qualification,1973-06-05,Madagascar,Zambia,2.0,1.0,Madagascar,False,African Cup of Nations qualification,,Antananarivo,Madagascar,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-07-15-zambia-nigeria-african-cup-of-nations-qualification,1973-07-15,Zambia,Nigeria,5.0,1.0,Zambia,False,African Cup of Nations qualification,,Lusaka,Zambia,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-07-15-nigeria-zambia-african-cup-of-nations-qualification,1973-07-15,Nigeria,Zambia,3.0,2.0,Nigeria,False,African Cup of Nations qualification,,Lagos,Nigeria,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1975-03-22-morocco-senegal-african-cup-of-nations-qualification,1975-03-22,Morocco,Senegal,4.0,0.0,Morocco,False,African Cup of Nations qualification,,Fez,Morocco,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1975-03-22-senegal-morocco-african-cup-of-nations-qualification,1975-03-22,Senegal,Morocco,2.0,1.0,Senegal,False,African Cup of Nations qualification,,Kaolack,Senegal,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1975-03-23-sudan-kenya-african-cup-of-nations-qualification,1975-03-23,Sudan,Kenya,1.0,0.0,Sudan,False,African Cup of Nations qualification,,Khartoum,Sudan,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1975-03-23-kenya-sudan-african-cup-of-nations-qualification,1975-03-23,Kenya,Sudan,0.0,2.0,Sudan,False,African Cup of Nations qualification,,Nairobi,Kenya,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-02-france-italy-fifa-world-cup,1978-06-02,France,Italy,1.0,2.0,Italy,False,FIFA World Cup,,Mar del Plata,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-02-italy-france,1978-06-02,Italy,France,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-02-mexico-tunisia-fifa-world-cup,1978-06-02,Mexico,Tunisia,1.0,3.0,Tunisia,False,FIFA World Cup,,Rosario,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-02-tunisia-mexico,1978-06-02,Tunisia,Mexico,3.0,1.0,Tunisia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-03-iran-netherlands-fifa-world-cup,1978-06-03,Iran,Netherlands,0.0,3.0,Netherlands,False,FIFA World Cup,,Mendoza,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-03-netherlands-iran,1978-06-03,Netherlands,Iran,3.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-06-hungary-italy-fifa-world-cup,1978-06-06,Hungary,Italy,1.0,3.0,Italy,False,FIFA World Cup,,Mar del Plata,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-06-italy-hungary,1978-06-06,Italy,Hungary,3.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-10-argentina-italy-fifa-world-cup,1978-06-10,Argentina,Italy,0.0,1.0,Italy,False,FIFA World Cup,,Buenos Aires,Argentina,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-10-italy-argentina,1978-06-10,Italy,Argentina,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-10-mexico-poland-fifa-world-cup,1978-06-10,Mexico,Poland,1.0,3.0,Poland,False,FIFA World Cup,,Rosario,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-10-poland-mexico,1978-06-10,Poland,Mexico,3.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-11-austria-brazil-fifa-world-cup,1978-06-11,Austria,Brazil,0.0,1.0,Brazil,False,FIFA World Cup,,Mar del Plata,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-11-brazil-austria,1978-06-11,Brazil,Austria,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-11-iran-peru-fifa-world-cup,1978-06-11,Iran,Peru,1.0,4.0,Peru,False,FIFA World Cup,,Córdoba,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-11-peru-iran,1978-06-11,Peru,Iran,4.0,1.0,Peru,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-11-netherlands-scotland-fifa-world-cup,1978-06-11,Netherlands,Scotland,2.0,3.0,Scotland,False,FIFA World Cup,,Mendoza,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-11-scotland-netherlands,1978-06-11,Scotland,Netherlands,3.0,2.0,Scotland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-14-austria-netherlands-fifa-world-cup,1978-06-14,Austria,Netherlands,1.0,5.0,Netherlands,False,FIFA World Cup,,Córdoba,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-14-netherlands-austria,1978-06-14,Netherlands,Austria,5.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-18-austria-italy-fifa-world-cup,1978-06-18,Austria,Italy,0.0,1.0,Italy,False,FIFA World Cup,,Buenos Aires,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-18-italy-austria,1978-06-18,Italy,Austria,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-18-peru-poland-fifa-world-cup,1978-06-18,Peru,Poland,0.0,1.0,Poland,False,FIFA World Cup,,Mendoza,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-18-poland-peru,1978-06-18,Poland,Peru,1.0,0.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-21-italy-netherlands-fifa-world-cup,1978-06-21,Italy,Netherlands,1.0,2.0,Netherlands,False,FIFA World Cup,,Buenos Aires,Argentina,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-21-netherlands-italy,1978-06-21,Netherlands,Italy,2.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1979-10-22-guadeloupe-saint-vincent-and-the-grenadines-cfu-caribbean-cup-qualification,1979-10-22,Guadeloupe,Saint Vincent and the Grenadines,1.0,3.0,Saint Vincent and the Grenadines,False,CFU Caribbean Cup qualification,,Basse-Terre,Guadeloupe,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1979-10-22-saint-vincent-and-the-grenadines-guadeloupe-cfu-caribbean-cup-qualification,1979-10-22,Saint Vincent and the Grenadines,Guadeloupe,0.0,0.0,Draw,True,CFU Caribbean Cup qualification,,Kingstown,Saint Vincent and the Grenadines,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1982-06-25-spain-northern-ireland-fifa-world-cup,1982-06-25,Spain,Northern Ireland,0.0,1.0,Northern Ireland,False,FIFA World Cup,,Valencia,Spain,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1982-06-25-northern-ireland-spain,1982-06-25,Northern Ireland,Spain,1.0,0.0,Northern Ireland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-03-mexico-belgium-fifa-world-cup,1986-06-03,Mexico,Belgium,2.0,1.0,Mexico,False,FIFA World Cup,,Mexico City,Mexico,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1986-06-03-belgium-mexico,1986-06-03,Belgium,Mexico,1.0,2.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-11-mexico-iraq-fifa-world-cup,1986-06-11,Mexico,Iraq,1.0,0.0,Mexico,False,FIFA World Cup,,Mexico City,Mexico,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1986-06-11-iraq-mexico,1986-06-11,Iraq,Mexico,0.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-07-01-cameroon-england-fifa-world-cup,1990-07-01,Cameroon,England,2.0,3.0,England,False,FIFA World Cup,,Naples,Italy,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1990-07-01-england-cameroon,1990-07-01,England,Cameroon,3.0,2.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-04-united-states-brazil-fifa-world-cup,1994-07-04,United States,Brazil,0.0,1.0,Brazil,False,FIFA World Cup,,Palo Alto,United States,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1994-07-04-brazil-united-states,1994-07-04,Brazil,United States,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-12-france-brazil-fifa-world-cup,1998-07-12,France,Brazil,3.0,0.0,France,False,FIFA World Cup,,Saint-Denis,France,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1998-07-12-brazil-france,1998-07-12,Brazil,France,0.0,3.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-14-japan-tunisia-fifa-world-cup,2002-06-14,Japan,Tunisia,2.0,0.0,Japan,False,FIFA World Cup,,Osaka,Japan,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+2002-06-14-tunisia-japan,2002-06-14,Tunisia,Japan,0.0,2.0,Japan,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-14-south-korea-portugal-fifa-world-cup,2002-06-14,South Korea,Portugal,1.0,0.0,South Korea,False,FIFA World Cup,,Incheon,South Korea,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+2002-06-14-portugal-south-korea,2002-06-14,Portugal,South Korea,0.0,1.0,South Korea,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-25-south-korea-germany-fifa-world-cup,2002-06-25,South Korea,Germany,0.0,1.0,Germany,False,FIFA World Cup,,Seoul,South Korea,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+2002-06-25-germany-south-korea,2002-06-25,Germany,South Korea,1.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-20-germany-ecuador-fifa-world-cup,2006-06-20,Germany,Ecuador,3.0,0.0,Germany,False,FIFA World Cup,,Berlin,Germany,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+2006-06-20-ecuador-germany,2006-06-20,Ecuador,Germany,0.0,3.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-22-south-africa-france-fifa-world-cup,2010-06-22,South Africa,France,2.0,1.0,South Africa,False,FIFA World Cup,,Bloemfontein,South Africa,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+2010-06-22-france-south-africa,2010-06-22,France,South Africa,1.0,2.0,South Africa,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-23-brazil-cameroon-fifa-world-cup,2014-06-23,Brazil,Cameroon,4.0,1.0,Brazil,False,FIFA World Cup,,Brasília,Brazil,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+2014-06-23-cameroon-brazil,2014-06-23,Cameroon,Brazil,1.0,4.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-25-russia-uruguay-fifa-world-cup,2018-06-25,Russia,Uruguay,0.0,3.0,Uruguay,False,FIFA World Cup,,Samara,Russia,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+2018-06-25-uruguay-russia,2018-06-25,Uruguay,Russia,3.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-29-qatar-netherlands-fifa-world-cup,2022-11-29,Qatar,Netherlands,0.0,2.0,Netherlands,False,FIFA World Cup,,Al Khor,Qatar,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+2022-11-29-netherlands-qatar,2022-11-29,Netherlands,Qatar,2.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00

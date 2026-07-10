@@ -1,0 +1,2 @@
+simulations,full_bracket_completed_count,full_bracket_completed_rate,avg_unresolved_matches,model_exact_probability_uses,model_reversed_probability_uses,elo_fallback_probability_uses,neutral_fallback_probability_uses
+10000,10000,1.0,21.0,1118,685,308197,0

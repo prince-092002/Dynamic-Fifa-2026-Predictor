@@ -1,0 +1,33 @@
+slot_id,stage,match_slot,team_slot,qualifier_type,group,placement,third_place_mapping_key,notes
+R32_M1_team_a,Round of 32,R32_M1,team_a,group_winner,A,1,,Fallback group_winner Group A
+R32_M1_team_b,Round of 32,R32_M1,team_b,group_runner_up,B,2,,Fallback group_runner_up Group B
+R32_M2_team_a,Round of 32,R32_M2,team_a,group_winner,C,1,,Fallback group_winner Group C
+R32_M2_team_b,Round of 32,R32_M2,team_b,group_runner_up,D,2,,Fallback group_runner_up Group D
+R32_M3_team_a,Round of 32,R32_M3,team_a,group_winner,E,1,,Fallback group_winner Group E
+R32_M3_team_b,Round of 32,R32_M3,team_b,group_runner_up,F,2,,Fallback group_runner_up Group F
+R32_M4_team_a,Round of 32,R32_M4,team_a,group_winner,G,1,,Fallback group_winner Group G
+R32_M4_team_b,Round of 32,R32_M4,team_b,group_runner_up,H,2,,Fallback group_runner_up Group H
+R32_M5_team_a,Round of 32,R32_M5,team_a,group_winner,I,1,,Fallback group_winner Group I
+R32_M5_team_b,Round of 32,R32_M5,team_b,group_runner_up,J,2,,Fallback group_runner_up Group J
+R32_M6_team_a,Round of 32,R32_M6,team_a,group_winner,K,1,,Fallback group_winner Group K
+R32_M6_team_b,Round of 32,R32_M6,team_b,group_runner_up,L,2,,Fallback group_runner_up Group L
+R32_M7_team_a,Round of 32,R32_M7,team_a,group_winner,B,1,,Fallback group_winner Group B
+R32_M7_team_b,Round of 32,R32_M7,team_b,group_runner_up,A,2,,Fallback group_runner_up Group A
+R32_M8_team_a,Round of 32,R32_M8,team_a,group_winner,D,1,,Fallback group_winner Group D
+R32_M8_team_b,Round of 32,R32_M8,team_b,group_runner_up,C,2,,Fallback group_runner_up Group C
+R32_M9_team_a,Round of 32,R32_M9,team_a,group_winner,F,1,,Fallback group_winner Group F
+R32_M9_team_b,Round of 32,R32_M9,team_b,group_runner_up,E,2,,Fallback group_runner_up Group E
+R32_M10_team_a,Round of 32,R32_M10,team_a,group_winner,H,1,,Fallback group_winner Group H
+R32_M10_team_b,Round of 32,R32_M10,team_b,group_runner_up,G,2,,Fallback group_runner_up Group G
+R32_M11_team_a,Round of 32,R32_M11,team_a,group_winner,J,1,,Fallback group_winner Group J
+R32_M11_team_b,Round of 32,R32_M11,team_b,group_runner_up,I,2,,Fallback group_runner_up Group I
+R32_M12_team_a,Round of 32,R32_M12,team_a,group_winner,L,1,,Fallback group_winner Group L
+R32_M12_team_b,Round of 32,R32_M12,team_b,group_runner_up,K,2,,Fallback group_runner_up Group K
+R32_M13_team_a,Round of 32,R32_M13,team_a,best_third_place,,,TP_SLOT_1,Fallback best third-place rank slot
+R32_M13_team_b,Round of 32,R32_M13,team_b,best_third_place,,,TP_SLOT_8,Fallback best third-place rank slot
+R32_M14_team_a,Round of 32,R32_M14,team_a,best_third_place,,,TP_SLOT_2,Fallback best third-place rank slot
+R32_M14_team_b,Round of 32,R32_M14,team_b,best_third_place,,,TP_SLOT_7,Fallback best third-place rank slot
+R32_M15_team_a,Round of 32,R32_M15,team_a,best_third_place,,,TP_SLOT_3,Fallback best third-place rank slot
+R32_M15_team_b,Round of 32,R32_M15,team_b,best_third_place,,,TP_SLOT_6,Fallback best third-place rank slot
+R32_M16_team_a,Round of 32,R32_M16,team_a,best_third_place,,,TP_SLOT_4,Fallback best third-place rank slot
+R32_M16_team_b,Round of 32,R32_M16,team_b,best_third_place,,,TP_SLOT_5,Fallback best third-place rank slot

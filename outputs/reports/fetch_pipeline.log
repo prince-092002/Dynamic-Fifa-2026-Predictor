@@ -1,0 +1,809 @@
+2026-07-04 13:06:36 | WARNING | src.cleaning.clean_matches | No Kaggle international results CSV found; writing empty output.
+2026-07-04 13:06:36 | WARNING | src.cleaning.clean_matches | No historical World Cup CSV found; writing empty output.
+2026-07-04 13:06:40 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-04 13:06:45 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-04 13:07:17 | WARNING | src.fetch.fetch_kaggle | Kaggle credentials are missing. Add KAGGLE_USERNAME and KAGGLE_KEY to .env or manually download https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017 and place the CSV files in C:\Users\abelp\Desktop\Fifa Project\data\raw\kaggle\international_results.
+2026-07-04 13:07:17 | WARNING | src.fetch.fetch_kaggle | Kaggle credentials are missing. Add KAGGLE_USERNAME and KAGGLE_KEY to .env or manually download https://www.kaggle.com/datasets/piterfm/fifa-football-world-cup and place the CSV files in C:\Users\abelp\Desktop\Fifa Project\data\raw\kaggle\world_cup_historical.
+2026-07-04 13:07:17 | WARNING | src.fetch.fetch_kaggle | Kaggle credentials are missing. Add KAGGLE_USERNAME and KAGGLE_KEY to .env or manually download https://www.kaggle.com/datasets/areezvisram12/fifa-world-cup-2026-match-data-unofficial and place the CSV files in C:\Users\abelp\Desktop\Fifa Project\data\raw\kaggle\world_cup_2026_schedule.
+2026-07-04 13:07:53 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:07:53 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:07:53 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:07:53 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:07:54 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:08:55 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:08:55 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:08:55 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:08:55 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:08:55 | WARNING | src.fetch.fetch_api_football | API_FOOTBALL_KEY is missing from .env; skipping API-Football.
+2026-07-04 13:09:00 | WARNING | src.cleaning.clean_matches | No Kaggle international results CSV found; writing empty output.
+2026-07-04 13:09:00 | WARNING | src.cleaning.clean_matches | No historical World Cup CSV found; writing empty output.
+2026-07-04 13:09:05 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-04 13:09:05 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-04 14:29:31 | WARNING | src.cleaning.clean_matches | No Kaggle international results CSV found; writing empty output.
+2026-07-04 14:29:31 | WARNING | src.cleaning.clean_matches | No historical World Cup CSV found; writing empty output.
+2026-07-04 14:29:31 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-04 14:29:31 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-04 14:29:41 | WARNING | src.cleaning.clean_matches | No Kaggle international results CSV found; writing empty output.
+2026-07-04 14:29:41 | WARNING | src.cleaning.clean_matches | No historical World Cup CSV found; writing empty output.
+2026-07-04 14:29:41 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-04 14:29:41 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-04 14:29:58 | WARNING | src.cleaning.clean_matches | No Kaggle international results CSV found; writing empty output.
+2026-07-04 14:29:58 | WARNING | src.cleaning.clean_matches | No historical World Cup CSV found; writing empty output.
+2026-07-04 14:29:59 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-04 14:29:59 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-04 23:36:48 | INFO | src.loading.real_data_loader | Real data load started with backup folder C:\Users\abelp\Desktop\Fifa Project\data\backups\20260704_233648
+2026-07-04 23:36:48 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-04 23:36:48 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-04 23:36:48 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-04 23:36:48 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-04 23:36:48 | ERROR | src.fetch.fetch_elo | Could not fetch World Football Elo ratings
+Traceback (most recent call last):
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1331, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1377, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1326, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1085, in _send_output
+    self.send(msg)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1029, in send
+    self.connect()
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1465, in connect
+    super().connect()
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 995, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 837, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\fetch\fetch_elo.py", line 57, in fetch_world_football_elo
+    tables = pd.read_html(ELO_URL)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 1226, in read_html
+    return _parse(
+           ^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 979, in _parse
+    tables = p.parse_tables()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 237, in parse_tables
+    tables = self._parse_tables(self._build_doc(), self.match, self.attrs)
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 789, in _build_doc
+    with get_handle(self.io, "r", storage_options=self.storage_options) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 772, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 404, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 281, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)  # noqa: TID251
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 1347, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions>
+2026-07-04 23:36:48 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-04 23:36:48 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/World-Cup-Stats: Install project requirements first: pip install -r requirements.txt
+2026-07-04 23:36:51 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/stats/World-Cup-Stats: Install project requirements first: pip install -r requirements.txt
+2026-07-04 23:36:54 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/shooting/World-Cup-Stats: Install project requirements first: pip install -r requirements.txt
+2026-07-04 23:36:57 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/passing/World-Cup-Stats: Install project requirements first: pip install -r requirements.txt
+2026-07-04 23:37:00 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/defense/World-Cup-Stats: Install project requirements first: pip install -r requirements.txt
+2026-07-04 23:37:03 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/possession/World-Cup-Stats: Install project requirements first: pip install -r requirements.txt
+2026-07-04 23:37:06 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/keepers/World-Cup-Stats: Install project requirements first: pip install -r requirements.txt
+2026-07-04 23:37:10 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/misc/World-Cup-Stats: Install project requirements first: pip install -r requirements.txt
+2026-07-04 23:37:13 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-04 23:37:13 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-04 23:37:13 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-04 23:37:13 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-04 23:37:13 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-04 23:37:13 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-04 23:37:13 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-04 23:37:13 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-04 23:37:13 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-04 23:39:55 | INFO | src.loading.real_data_loader | Real data load started with backup folder C:\Users\abelp\Desktop\Fifa Project\data\backups\20260704_233955
+2026-07-04 23:39:55 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-04 23:39:55 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-04 23:39:55 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-04 23:39:55 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-04 23:39:55 | ERROR | src.fetch.fetch_elo | Could not fetch World Football Elo ratings
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\fetch\fetch_elo.py", line 57, in fetch_world_football_elo
+    tables = pd.read_html(ELO_URL)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 1226, in read_html
+    return _parse(
+           ^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 999, in _parse
+    raise retained
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 979, in _parse
+    tables = p.parse_tables()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 237, in parse_tables
+    tables = self._parse_tables(self._build_doc(), self.match, self.attrs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 604, in _parse_tables
+    raise ValueError("No tables found")
+ValueError: No tables found
+2026-07-04 23:39:55 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-04 23:40:00 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/World-Cup-Stats
+2026-07-04 23:40:07 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/stats/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/stats/World-Cup-Stats
+2026-07-04 23:40:15 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/shooting/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/shooting/World-Cup-Stats
+2026-07-04 23:40:23 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/passing/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/passing/World-Cup-Stats
+2026-07-04 23:40:31 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/defense/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/defense/World-Cup-Stats
+2026-07-04 23:40:39 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/possession/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/possession/World-Cup-Stats
+2026-07-04 23:40:47 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/keepers/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/keepers/World-Cup-Stats
+2026-07-04 23:40:55 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/misc/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/misc/World-Cup-Stats
+2026-07-04 23:40:58 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-04 23:40:58 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-04 23:40:58 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-04 23:40:58 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-04 23:40:58 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-04 23:40:58 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-04 23:40:58 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-04 23:40:58 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-04 23:40:58 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-05 16:23:34 | INFO | src.loading.real_data_loader | Real data load started with backup folder C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_162334
+2026-07-05 16:23:34 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:23:34 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:23:34 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:23:34 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:23:34 | ERROR | src.fetch.fetch_elo | Could not fetch World Football Elo ratings
+Traceback (most recent call last):
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1331, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1377, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1326, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1085, in _send_output
+    self.send(msg)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1029, in send
+    self.connect()
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1465, in connect
+    super().connect()
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 995, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 837, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\fetch\fetch_elo.py", line 57, in fetch_world_football_elo
+    tables = pd.read_html(ELO_URL)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 1226, in read_html
+    return _parse(
+           ^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 979, in _parse
+    tables = p.parse_tables()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 237, in parse_tables
+    tables = self._parse_tables(self._build_doc(), self.match, self.attrs)
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 789, in _build_doc
+    with get_handle(self.io, "r", storage_options=self.storage_options) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 772, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 404, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 281, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)  # noqa: TID251
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py", line 1347, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions>
+2026-07-05 16:23:34 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:23:37 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/World-Cup-Stats: HTTPSConnectionPool(host='fbref.com', port=443): Max retries exceeded with url: /en/comps/1/World-Cup-Stats (Caused by NewConnectionError("HTTPSConnection(host='fbref.com', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-05 16:23:43 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/stats/World-Cup-Stats: HTTPSConnectionPool(host='fbref.com', port=443): Max retries exceeded with url: /en/comps/1/stats/World-Cup-Stats (Caused by NewConnectionError("HTTPSConnection(host='fbref.com', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-05 16:23:49 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/shooting/World-Cup-Stats: HTTPSConnectionPool(host='fbref.com', port=443): Max retries exceeded with url: /en/comps/1/shooting/World-Cup-Stats (Caused by NewConnectionError("HTTPSConnection(host='fbref.com', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-05 16:23:55 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/passing/World-Cup-Stats: HTTPSConnectionPool(host='fbref.com', port=443): Max retries exceeded with url: /en/comps/1/passing/World-Cup-Stats (Caused by NewConnectionError("HTTPSConnection(host='fbref.com', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-05 16:24:01 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/defense/World-Cup-Stats: HTTPSConnectionPool(host='fbref.com', port=443): Max retries exceeded with url: /en/comps/1/defense/World-Cup-Stats (Caused by NewConnectionError("HTTPSConnection(host='fbref.com', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-05 16:24:08 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/possession/World-Cup-Stats: HTTPSConnectionPool(host='fbref.com', port=443): Max retries exceeded with url: /en/comps/1/possession/World-Cup-Stats (Caused by NewConnectionError("HTTPSConnection(host='fbref.com', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-05 16:24:14 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/keepers/World-Cup-Stats: HTTPSConnectionPool(host='fbref.com', port=443): Max retries exceeded with url: /en/comps/1/keepers/World-Cup-Stats (Caused by NewConnectionError("HTTPSConnection(host='fbref.com', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-05 16:24:20 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/misc/World-Cup-Stats: HTTPSConnectionPool(host='fbref.com', port=443): Max retries exceeded with url: /en/comps/1/misc/World-Cup-Stats (Caused by NewConnectionError("HTTPSConnection(host='fbref.com', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-05 16:24:23 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:24:23 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:24:23 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:24:23 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:24:23 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:24:23 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:24:23 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:24:23 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-05 16:24:23 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-05 16:24:44 | INFO | src.loading.real_data_loader | Real data load started with backup folder C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_162444
+2026-07-05 16:24:44 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:24:44 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:24:44 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:24:44 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:24:44 | ERROR | src.fetch.fetch_elo | Could not fetch World Football Elo ratings
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\fetch\fetch_elo.py", line 57, in fetch_world_football_elo
+    tables = pd.read_html(ELO_URL)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 1226, in read_html
+    return _parse(
+           ^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 999, in _parse
+    raise retained
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 979, in _parse
+    tables = p.parse_tables()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 237, in parse_tables
+    tables = self._parse_tables(self._build_doc(), self.match, self.attrs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 604, in _parse_tables
+    raise ValueError("No tables found")
+ValueError: No tables found
+2026-07-05 16:24:44 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:24:48 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/World-Cup-Stats
+2026-07-05 16:24:56 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/stats/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/stats/World-Cup-Stats
+2026-07-05 16:25:02 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/shooting/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/shooting/World-Cup-Stats
+2026-07-05 16:25:09 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/passing/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/passing/World-Cup-Stats
+2026-07-05 16:25:16 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/defense/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/defense/World-Cup-Stats
+2026-07-05 16:25:23 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/possession/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/possession/World-Cup-Stats
+2026-07-05 16:25:30 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/keepers/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/keepers/World-Cup-Stats
+2026-07-05 16:25:37 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/misc/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/misc/World-Cup-Stats
+2026-07-05 16:25:40 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:25:40 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:25:40 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:25:40 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:25:40 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:25:40 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:25:40 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:25:40 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-05 16:25:40 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-05 16:26:36 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-05 16:26:43 | WARNING | src.cleaning.clean_matches | No Kaggle international results CSV found; writing empty output.
+2026-07-05 16:26:43 | WARNING | src.cleaning.clean_matches | No historical World Cup CSV found; writing empty output.
+2026-07-05 16:26:43 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:26:43 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:26:43 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:26:43 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:26:43 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:26:43 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:26:43 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:26:43 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-05 16:26:43 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-05 16:32:16 | INFO | src.loading.real_data_loader | Real data load started with backup folder C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_163216
+2026-07-05 16:32:16 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:32:16 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:32:16 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:32:16 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:32:17 | ERROR | src.fetch.fetch_elo | Could not fetch World Football Elo ratings
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\fetch\fetch_elo.py", line 57, in fetch_world_football_elo
+    tables = pd.read_html(ELO_URL)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 1226, in read_html
+    return _parse(
+           ^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 999, in _parse
+    raise retained
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 979, in _parse
+    tables = p.parse_tables()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 237, in parse_tables
+    tables = self._parse_tables(self._build_doc(), self.match, self.attrs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 604, in _parse_tables
+    raise ValueError("No tables found")
+ValueError: No tables found
+2026-07-05 16:32:17 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:32:21 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/World-Cup-Stats
+2026-07-05 16:32:28 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/stats/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/stats/World-Cup-Stats
+2026-07-05 16:32:34 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/shooting/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/shooting/World-Cup-Stats
+2026-07-05 16:32:41 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/passing/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/passing/World-Cup-Stats
+2026-07-05 16:32:48 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/defense/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/defense/World-Cup-Stats
+2026-07-05 16:32:55 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/possession/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/possession/World-Cup-Stats
+2026-07-05 16:33:02 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/keepers/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/keepers/World-Cup-Stats
+2026-07-05 16:33:09 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/misc/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/misc/World-Cup-Stats
+2026-07-05 16:33:12 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:33:12 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:33:12 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:33:12 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:33:12 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:33:12 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:33:12 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:33:12 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-05 16:33:12 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-05 16:33:21 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-05 16:33:21 | WARNING | src.cleaning.clean_matches | No Kaggle international results CSV found; writing empty output.
+2026-07-05 16:33:21 | WARNING | src.cleaning.clean_matches | No historical World Cup CSV found; writing empty output.
+2026-07-05 16:33:21 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:33:21 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:33:21 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:33:21 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:33:21 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:33:21 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:33:21 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:33:21 | INFO | src.cleaning.build_master_dataset | Saved matches master with 0 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-05 16:33:21 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-05 16:45:36 | INFO | src.loading.real_data_loader | Real data load started with backup folder C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_164536
+2026-07-05 16:45:43 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:45:48 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:45:48 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:45:51 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:45:51 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:45:51 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:45:51 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:45:52 | ERROR | src.fetch.fetch_elo | Could not fetch World Football Elo ratings
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\fetch\fetch_elo.py", line 57, in fetch_world_football_elo
+    tables = pd.read_html(ELO_URL)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 1226, in read_html
+    return _parse(
+           ^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 999, in _parse
+    raise retained
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 979, in _parse
+    tables = p.parse_tables()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 237, in parse_tables
+    tables = self._parse_tables(self._build_doc(), self.match, self.attrs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 604, in _parse_tables
+    raise ValueError("No tables found")
+ValueError: No tables found
+2026-07-05 16:45:52 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:45:57 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/World-Cup-Stats
+2026-07-05 16:46:04 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/stats/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/stats/World-Cup-Stats
+2026-07-05 16:46:10 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/shooting/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/shooting/World-Cup-Stats
+2026-07-05 16:46:17 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/passing/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/passing/World-Cup-Stats
+2026-07-05 16:46:24 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/defense/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/defense/World-Cup-Stats
+2026-07-05 16:46:31 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/possession/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/possession/World-Cup-Stats
+2026-07-05 16:46:38 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/keepers/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/keepers/World-Cup-Stats
+2026-07-05 16:46:45 | WARNING | src.fetch.fetch_fbref | FBref fetch failed for https://fbref.com/en/comps/1/misc/World-Cup-Stats: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/misc/World-Cup-Stats
+2026-07-05 16:46:48 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:46:48 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:46:48 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:46:48 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:46:48 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:46:48 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:46:48 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:46:48 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:46:53 | INFO | src.cleaning.build_master_dataset | Saved matches master with 49501 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-05 16:46:56 | WARNING | src.validation.validate_data | Validation completed with 5 failing checks.
+2026-07-05 16:48:37 | INFO | src.loading.real_data_loader | Real data load started with backup folder C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_164837
+2026-07-05 16:48:44 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:48:46 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:48:47 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:48:47 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:48:47 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 186, in main
+    result = load_real_data(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\loading\real_data_loader.py", line 360, in load_real_data
+    source_rows.extend(_run_kaggle_load(skip_kaggle, prefer, manual_needed))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\loading\real_data_loader.py", line 196, in _run_kaggle_load
+    output_path = cleaner()
+                  ^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\cleaning\clean_matches.py", line 172, in clean_2026_fixtures
+    df["date"] = parse_date_series(df["date"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\utils\dates.py", line 15, in parse_date_series
+    parsed = pd.to_datetime(series, errors="coerce", utc=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\tools\datetimes.py", line 1040, in to_datetime
+    values = convert_listlike(arg._values, format)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\tools\datetimes.py", line 435, in _convert_listlike_datetimes
+    return _array_strptime_with_fallback(arg, name, utc, format, exact, errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\tools\datetimes.py", line 470, in _array_strptime_with_fallback
+    result, tz_out = array_strptime(arg, fmt, exact=exact, errors=errors, utc=utc)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/tslibs/strptime.pyx", line 566, in pandas._libs.tslibs.strptime.array_strptime
+  File "pandas/_libs/tslibs/strptime.pyx", line 317, in pandas._libs.tslibs.strptime.DatetimeParseState.check_for_mixed_inputs
+ValueError: Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+2026-07-05 16:49:08 | INFO | src.loading.real_data_loader | Real data load started with backup folder C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_164908
+2026-07-05 16:49:15 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:49:18 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:49:19 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:49:19 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:49:19 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:49:22 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:49:22 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:49:22 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:49:22 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:49:22 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:49:23 | ERROR | src.fetch.fetch_elo | Could not fetch World Football Elo ratings
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\fetch\fetch_elo.py", line 57, in fetch_world_football_elo
+    tables = pd.read_html(ELO_URL)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 1226, in read_html
+    return _parse(
+           ^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 999, in _parse
+    raise retained
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 979, in _parse
+    tables = p.parse_tables()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 237, in parse_tables
+    tables = self._parse_tables(self._build_doc(), self.match, self.attrs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\html.py", line 604, in _parse_tables
+    raise ValueError("No tables found")
+ValueError: No tables found
+2026-07-05 16:49:23 | INFO | src.cleaning.standardize_team_names | Saved 201 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:49:23 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:49:23 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:49:23 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:49:23 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:49:23 | INFO | src.loading.manual_sources | Manual team_ratings template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_ratings_template.csv
+2026-07-05 16:49:23 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:49:23 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:49:25 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:49:25 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:49:30 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-05 16:49:34 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-05 16:50:38 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:50:39 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:50:39 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-05 16:50:39 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:50:39 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:50:39 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-05 16:50:39 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-05 16:50:39 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-05 16:50:39 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-05 16:50:40 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:50:40 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-05 16:50:45 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-05 16:50:48 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-06 16:44:10 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 198, in main
+    build_result = build_all_features()
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\features\feature_builder.py", line 131, in build_all_features
+    training = build_historical_training_features()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\features\feature_builder.py", line 74, in build_historical_training_features
+    build_head_to_head_features(target_base, target_base, "historical_h2h_features.csv"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\features\head_to_head_features.py", line 49, in build_head_to_head_features
+    values = _h2h_before(history, row.get("date"), row.get("team_a"), row.get("team_b"))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\features\head_to_head_features.py", line 16, in _h2h_before
+    prior = history[(history["date"] < date) & (history["pair"].eq(pair))].tail(10)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\series.py", line 6951, in eq
+    return self._flex_method(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\series.py", line 6866, in _flex_method
+    raise ValueError("Lengths must be equal")
+ValueError: Lengths must be equal
+2026-07-06 19:28:09 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 236, in main
+    result = run_modeling_pipeline()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\modeling\model_pipeline.py", line 53, in run_modeling_pipeline
+    elo_model, elo_issue = train_elo_logistic_baseline(train_df)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\modeling\baselines.py", line 42, in train_elo_logistic_baseline
+    ("model", LogisticRegression(multi_class="multinomial", max_iter=1000, class_weight="balanced")),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LogisticRegression.__init__() got an unexpected keyword argument 'multi_class'
+2026-07-06 19:28:36 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\data.py", line 408, in pandas_feature_info
+    new_feature_types.append(_pandas_dtype_mapper[dtype.name])
+                             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'object'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 236, in main
+    result = run_modeling_pipeline()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\modeling\model_pipeline.py", line 91, in run_modeling_pipeline
+    predictions = predict_fixtures(selected_model)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\modeling\predict_fixtures.py", line 43, in predict_fixtures
+    proba = model.predict_proba(X_fixture)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\sklearn.py", line 1921, in predict_proba
+    class_probs = super().predict(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\core.py", line 751, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\core.py", line 751, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\core.py", line 2852, in inplace_predict
+    data, fns, _ = _transform_pandas_df(data, enable_categorical)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\data.py", line 668, in _transform_pandas_df
+    feature_names, feature_types = pandas_feature_info(
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\data.py", line 410, in pandas_feature_info
+    _invalid_dataframe_dtype(data)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\xgboost\data.py", line 373, in _invalid_dataframe_dtype
+    raise ValueError(msg)
+ValueError: DataFrame.dtypes for data must be int, float, bool or category. When categorical type is supplied, the experimental DMatrix parameter`enable_categorical` must be set to `True`.  Invalid columns:team_a_pre_match_elo: object, team_b_pre_match_elo: object
+2026-07-07 17:10:05 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 285, in main
+    result = run_simulation_pipeline(n_simulations=args.n_simulations, seed=args.seed, mode=args.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\simulation\simulation_pipeline.py", line 36, in run_simulation_pipeline
+    fallback = [sim["used_fallback_count"] for sim in simulation_result["simulations"]]
+                ~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'used_fallback_count'
+2026-07-07 19:08:28 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 383, in main
+    result = build_live_state()
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\live_state\live_pipeline.py", line 54, in build_live_state
+    standings = pd.read_csv(LIVE_STATE_DIR / "live_standings_normalized.csv") if (LIVE_STATE_DIR / "live_standings_normalized.csv").exists() else pd.DataFrame()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2026-07-07 19:20:56 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:20:57 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:20:57 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-07 19:20:57 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-07 19:20:57 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:20:57 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-07 19:20:57 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-07 19:20:57 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-07 19:20:57 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-07 19:20:58 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:20:59 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:21:04 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-07 19:21:07 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-07 19:52:39 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 486, in main
+    standings = pd.read_csv(LIVE_STATE_DIR / "live_standings_normalized.csv") if (LIVE_STATE_DIR / "live_standings_normalized.csv").exists() else pd.DataFrame()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2026-07-07 19:53:24 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:53:25 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:53:25 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-07 19:53:25 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-07 19:53:25 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:53:25 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-07 19:53:25 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-07 19:53:25 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-07 19:53:25 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-07 19:53:26 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:53:27 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:53:33 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-07 19:53:38 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-07 19:54:09 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:54:10 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:54:10 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-07 19:54:10 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-07 19:54:10 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:54:10 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-07 19:54:10 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-07 19:54:10 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-07 19:54:10 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-07 19:54:11 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:54:12 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-07 19:54:19 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-07 19:54:23 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-08 00:32:56 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 521, in main
+    state = build_live_state()
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\live_state\live_pipeline.py", line 94, in build_live_state
+    state = build_current_tournament_state(fixtures, standings_result["standings"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\live_state\state_builder.py", line 32, in build_current_tournament_state
+    phase = detect_current_phase(fixtures)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\live_state\live_config.py", line 72, in detect_current_phase
+    data["status_norm"] = data.get("status", "").astype(str).str.lower()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'astype'
+2026-07-08 00:40:55 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 403, in main
+    result = run_live_forecast_pipeline(n_simulations=args.n_simulations, seed=args.seed, allow_fallback_forecast=args.allow_fallback_forecast)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\live_state\live_pipeline.py", line 150, in run_live_forecast_pipeline
+    aggregate = aggregate_live_finalist_results(sim_result["results"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\live_state\finalist_aggregation.py", line 19, in aggregate_live_finalist_results
+    pair[["finalist_team_1", "finalist_team_2"]] = pair["finalist_pair_key"].str.split(" vs ", n=1, expand=True)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4660, in __setitem__
+    self._setitem_array(key, value)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4699, in _setitem_array
+    check_key_length(self.columns, key, value)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexers\utils.py", line 392, in check_key_length
+    raise ValueError("Columns must be same length as key")
+ValueError: Columns must be same length as key
+2026-07-08 00:49:42 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 00:49:43 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 00:49:43 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-08 00:49:43 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-08 00:49:43 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 00:49:43 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-08 00:49:43 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-08 00:49:43 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-08 00:49:43 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-08 00:49:44 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 00:49:45 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 00:49:51 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-08 00:49:54 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-08 23:27:18 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 23:27:18 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 23:27:18 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-08 23:27:18 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-08 23:27:18 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 23:27:18 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-08 23:27:18 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-08 23:27:18 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-08 23:27:18 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-08 23:27:19 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 23:27:19 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-08 23:27:23 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-08 23:27:25 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-09 12:35:12 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 12:35:12 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 12:35:13 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-09 12:35:13 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-09 12:35:13 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 12:35:13 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-09 12:35:13 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-09 12:35:13 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-09 12:35:13 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-09 12:35:13 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 12:35:14 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 12:35:19 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-09 12:35:22 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-09 15:41:17 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-09 15:43:56 | WARNING | src.validation.validate_data | Validation completed with 3 failing checks.
+2026-07-09 19:24:40 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-09 19:34:24 | ERROR | __main__ | Command failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\blocks.py", line 1115, in setitem
+    casted = np_can_hold_element(values.dtype, value)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\dtypes\cast.py", line 1792, in np_can_hold_element
+    raise LossySetitemError
+pandas.errors.LossySetitemError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\main.py", line 460, in main
+    result = run_live_matchup_flow_check()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\live_state\integration_checks.py", line 68, in run_live_matchup_flow_check
+    synthetic = _build_synthetic_state(sandbox)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\live_state\integration_checks.py", line 34, in _build_synthetic_state
+    bracket.loc[idx, ["winner", "status", "is_completed", "is_scheduled"]] = [winner, "FINISHED", True, False]
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexing.py", line 938, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexing.py", line 1953, in _setitem_with_indexer
+    self._setitem_with_indexer_split_path(indexer, value, name)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexing.py", line 2026, in _setitem_with_indexer_split_path
+    self._setitem_single_column(loc, v, pi)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexing.py", line 2181, in _setitem_single_column
+    self.obj._mgr.column_setitem(loc, plane_indexer, value)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py", line 1520, in column_setitem
+    new_mgr = col_mgr.setitem((idx,), value)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py", line 604, in setitem
+    return self.apply("setitem", indexer=indexer, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py", line 442, in apply
+    applied = getattr(b, f)(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\blocks.py", line 1118, in setitem
+    nb = self.coerce_to_target_dtype(value, raise_on_upcast=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\blocks.py", line 468, in coerce_to_target_dtype
+    raise TypeError(f"Invalid value '{other}' for dtype '{self.values.dtype}'")
+TypeError: Invalid value 'FINISHED' for dtype 'float64'
+2026-07-09 19:54:46 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 19:54:46 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 19:54:46 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-09 19:54:46 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-09 19:54:46 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 19:54:46 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-09 19:54:46 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-09 19:54:46 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-09 19:54:46 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-09 19:54:47 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 19:54:47 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-09 19:54:50 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-09 19:54:54 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-10 01:19:11 | INFO | src.validation.validate_data | Validation completed with no failures.

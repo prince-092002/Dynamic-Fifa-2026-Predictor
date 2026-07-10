@@ -1,0 +1,23 @@
+.env
+*.env
+kaggle.json
+access_token
+.kaggle/
+**pycache**/
+__pycache__/
+*.pyc
+data/raw/api_football/*.json
+outputs/reports/*diagnostic*.json
+
+# Node / Next.js (website)
+website/node_modules/
+website/.next/
+website/out/
+website/next-env.d.ts
+*.tsbuildinfo
+
+# Streamlit local secrets (theme config stays tracked)
+.streamlit/secrets.toml
+
+# Local data backups (large, machine-specific)
+data/backups/

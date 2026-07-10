@@ -1,0 +1,25 @@
+{
+  "simulations": 10000,
+  "top_finalist_pair": "Argentina vs France",
+  "top_finalist_pair_probability": 0.2607,
+  "top_champion": "France",
+  "top_champion_probability": 0.2949,
+  "fallback_mapping_used": true,
+  "status": "success",
+  "forecast_ran": true,
+  "forecast_mode": "true_live_forecast",
+  "public_label": "True live forecast from current tournament state",
+  "current_phase": "quarterfinal",
+  "finalist_prediction_active": true,
+  "fallback_bracket_usage": 0.0967741935483871,
+  "source_quality_score": 100,
+  "live_matchup_prediction_status": "success",
+  "live_matchups_predicted": 3,
+  "live_model_probability_uses": 30000,
+  "probability_source_counts": {
+    "completed_result": 10000,
+    "live_model_exact": 30000,
+    "elo_fallback": 29510,
+    "model_reversed": 490
+  }
+}

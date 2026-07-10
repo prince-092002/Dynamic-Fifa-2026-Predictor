@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* FIFA-2026-inspired design tokens — independent project, no official branding */
+:root {
+  --background-primary: #070b18;
+  --background-secondary: #0b1226;
+  --surface: #111a33;
+  --surface-elevated: #182448;
+  --border: #223055;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --accent-blue: #3b82f6;
+  --accent-cyan: #22d3ee;
+  --accent-magenta: #e94fd0;
+  --accent-red: #fb5d3f;
+  --accent-green: #34d399;
+  --status-success: #34d399;
+  --status-warning: #fbbf24;
+  --status-error: #f87171;
+}
+
+@theme inline {
+  --color-bg: var(--background-primary);
+  --color-bg2: var(--background-secondary);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface-elevated);
+  --color-line: var(--border);
+  --color-fg: var(--text-primary);
+  --color-fg2: var(--text-secondary);
+  --color-blue: var(--accent-blue);
+  --color-cyan: var(--accent-cyan);
+  --color-magenta: var(--accent-magenta);
+  --color-hot: var(--accent-red);
+  --color-green: var(--accent-green);
+  --color-warn: var(--status-warning);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--text-primary);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}

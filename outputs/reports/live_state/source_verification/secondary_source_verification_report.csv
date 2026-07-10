@@ -1,0 +1,5 @@
+source,url,reachable,parseable,detected,matches_api_state,differences,recommendation
+FIFA official,https://inside.fifa.com/data-centre/matches,True,True,basic page text parseable,not_checked,,Use only as a sanity-check report; do not overwrite API-Football state by default.
+ESPN soccer,https://www.espn.com/soccer/,True,True,basic page text parseable,not_checked,,Use only as a sanity-check report; do not overwrite API-Football state by default.
+FOX Sports soccer,https://www.foxsports.com/soccer,True,True,basic page text parseable,not_checked,,Use only as a sanity-check report; do not overwrite API-Football state by default.
+Reuters sports,https://www.reuters.com/sports/,False,False,HTTP 401,not_checked,,Unavailable for automated verification; keep API/local state unchanged.

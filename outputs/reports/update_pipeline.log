@@ -1,0 +1,153 @@
+2026-07-04 14:29:24 | INFO | fifa_update_pipeline | Update started | mode=completed-match | force=False | api_key_available=False
+2026-07-04 14:29:24 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-04 14:29:24 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-04 14:29:31 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=False
+2026-07-04 14:29:31 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-04 14:29:31 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260704_142931
+2026-07-04 14:29:32 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-04 14:29:41 | INFO | fifa_update_pipeline | Update started | mode=completed-match | force=True | api_key_available=False
+2026-07-04 14:29:41 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-04 14:29:41 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260704_142941
+2026-07-04 14:29:41 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-04 14:29:58 | INFO | fifa_update_pipeline | Update started | mode=completed-match | force=False | api_key_available=False
+2026-07-04 14:29:58 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-04 14:29:58 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-04 14:29:58 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=False
+2026-07-04 14:29:58 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-04 14:29:58 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260704_142958
+2026-07-04 14:29:59 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-04 14:37:46 | INFO | fifa_update_pipeline | Update started | mode=completed-match | force=False | api_key_available=False
+2026-07-04 14:37:46 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-04 14:37:46 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-05 16:26:42 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=False
+2026-07-05 16:26:42 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-05 16:26:43 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_162642
+2026-07-05 16:26:43 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-05 16:33:21 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=False
+2026-07-05 16:33:21 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-05 16:33:21 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_163321
+2026-07-05 16:33:21 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-05 16:50:12 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-05 16:50:12 | ERROR | fifa_update_pipeline | Update workflow failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\update\update_runner.py", line 265, in run_update
+    candidate_fixtures, candidate_results, source_used = _fetch_candidate_api_data(warnings)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\update\update_runner.py", line 178, in _fetch_candidate_api_data
+    results = fixtures[fixtures["status"].eq("completed")].copy()
+                       ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\range.py", line 525, in get_loc
+    raise KeyError(key)
+KeyError: 'status'
+2026-07-05 16:50:12 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-05 16:50:36 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-05 16:50:36 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-05 16:50:36 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260705_165036
+2026-07-05 16:50:48 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-07 19:20:31 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-07 19:20:31 | ERROR | fifa_update_pipeline | Update workflow failed
+Traceback (most recent call last):
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPSConnection(host='v3.football.api-sports.io', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='v3.football.api-sports.io', port=443): Max retries exceeded with url: /fixtures?league=1&season=2026 (Caused by NewConnectionError("HTTPSConnection(host='v3.football.api-sports.io', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abelp\Desktop\Fifa Project\src\update\update_runner.py", line 289, in run_update
+    candidate_fixtures, candidate_results, source_used = _fetch_candidate_api_data(warnings)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\update\update_runner.py", line 188, in _fetch_candidate_api_data
+    data = api_football_request(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\fetch\fetch_api_football.py", line 58, in api_football_request
+    return get_json(url, headers=headers, params=params, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\Desktop\Fifa Project\src\utils\http.py", line 70, in get_json
+    response = requests.get(
+               ^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abelp\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='v3.football.api-sports.io', port=443): Max retries exceeded with url: /fixtures?league=1&season=2026 (Caused by NewConnectionError("HTTPSConnection(host='v3.football.api-sports.io', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-07-07 19:20:31 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-07 19:20:54 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-07 19:20:54 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-07 19:20:54 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260707_192054
+2026-07-07 19:21:44 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-07 19:53:21 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-07 19:53:22 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-07 19:53:22 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260707_195322
+2026-07-07 19:53:53 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-07 19:54:07 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-07 19:54:07 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-07 19:54:07 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260707_195407
+2026-07-07 19:55:04 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-08 00:49:39 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-08 00:49:40 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-08 00:49:40 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260708_004940
+2026-07-08 00:50:21 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-08 23:27:16 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-08 23:27:16 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-08 23:27:16 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260708_232716
+2026-07-08 23:27:46 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-09 12:35:10 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-09 12:35:10 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-09 12:35:10 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260709_123510
+2026-07-09 12:41:16 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-09 19:54:44 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-09 19:54:44 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-09 19:54:44 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260709_195444
+2026-07-09 19:55:19 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json

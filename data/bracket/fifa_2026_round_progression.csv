@@ -1,0 +1,31 @@
+from_stage,from_match_slot,winner_feeds_to_stage,winner_feeds_to_match_slot,winner_feeds_to_team_slot,notes
+Round of 32,R32_M1,Round of 16,R16_M1,team_a,Winner feeds to Round of 16
+Round of 32,R32_M2,Round of 16,R16_M1,team_b,Winner feeds to Round of 16
+Round of 32,R32_M3,Round of 16,R16_M2,team_a,Winner feeds to Round of 16
+Round of 32,R32_M4,Round of 16,R16_M2,team_b,Winner feeds to Round of 16
+Round of 32,R32_M5,Round of 16,R16_M3,team_a,Winner feeds to Round of 16
+Round of 32,R32_M6,Round of 16,R16_M3,team_b,Winner feeds to Round of 16
+Round of 32,R32_M7,Round of 16,R16_M4,team_a,Winner feeds to Round of 16
+Round of 32,R32_M8,Round of 16,R16_M4,team_b,Winner feeds to Round of 16
+Round of 32,R32_M9,Round of 16,R16_M5,team_a,Winner feeds to Round of 16
+Round of 32,R32_M10,Round of 16,R16_M5,team_b,Winner feeds to Round of 16
+Round of 32,R32_M11,Round of 16,R16_M6,team_a,Winner feeds to Round of 16
+Round of 32,R32_M12,Round of 16,R16_M6,team_b,Winner feeds to Round of 16
+Round of 32,R32_M13,Round of 16,R16_M7,team_a,Winner feeds to Round of 16
+Round of 32,R32_M14,Round of 16,R16_M7,team_b,Winner feeds to Round of 16
+Round of 32,R32_M15,Round of 16,R16_M8,team_a,Winner feeds to Round of 16
+Round of 32,R32_M16,Round of 16,R16_M8,team_b,Winner feeds to Round of 16
+Round of 16,R16_M1,Quarterfinal,QF_M1,team_a,Winner feeds to Quarterfinal
+Round of 16,R16_M2,Quarterfinal,QF_M1,team_b,Winner feeds to Quarterfinal
+Round of 16,R16_M3,Quarterfinal,QF_M2,team_a,Winner feeds to Quarterfinal
+Round of 16,R16_M4,Quarterfinal,QF_M2,team_b,Winner feeds to Quarterfinal
+Round of 16,R16_M5,Quarterfinal,QF_M3,team_a,Winner feeds to Quarterfinal
+Round of 16,R16_M6,Quarterfinal,QF_M3,team_b,Winner feeds to Quarterfinal
+Round of 16,R16_M7,Quarterfinal,QF_M4,team_a,Winner feeds to Quarterfinal
+Round of 16,R16_M8,Quarterfinal,QF_M4,team_b,Winner feeds to Quarterfinal
+Quarterfinal,QF_M1,Semifinal,SF_M1,team_a,Winner feeds to Semifinal
+Quarterfinal,QF_M2,Semifinal,SF_M1,team_b,Winner feeds to Semifinal
+Quarterfinal,QF_M3,Semifinal,SF_M2,team_a,Winner feeds to Semifinal
+Quarterfinal,QF_M4,Semifinal,SF_M2,team_b,Winner feeds to Semifinal
+Semifinal,SF_M1,Final,FINAL_M1,team_a,Winner feeds to Final
+Semifinal,SF_M2,Final,FINAL_M1,team_b,Winner feeds to Final

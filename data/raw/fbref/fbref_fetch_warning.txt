@@ -1,0 +1,2 @@
+FBref could not be fetched or parsed. It may be blocking automated requests. Use manual CSVs in data/raw/manual as a fallback.
+Original error: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/1/misc/World-Cup-Stats

@@ -1,0 +1,33 @@
+{
+ "current_phase": "quarterfinal",
+ "completed_matches": 97,
+ "teams_total": 48,
+ "teams_alive": 7,
+ "teams_eliminated": 41,
+ "known_unresolved_matchups": 3,
+ "top_champion": "France",
+ "top_champion_probability": 0.2949,
+ "top_finalist_pair": "Argentina vs France",
+ "top_finalist_pair_probability": 0.2607,
+ "forecast_mode": "true_live_forecast",
+ "public_label": "True live forecast from current tournament state",
+ "provider": "football_data_org",
+ "data_source_mode": "fresh_api",
+ "data_age_minutes": 0.0,
+ "source_quality_score": 100,
+ "simulations": 10000,
+ "selected_model": "xgboost",
+ "live_forecast_validation": "pass",
+ "broader_refresh_validation": "pass",
+ "run_id": "2026-07-10T060556Z-428e59f3",
+ "seed": 42,
+ "_meta": {
+  "generated_at": "2026-07-10T06:08:19+00:00",
+  "source_files": [
+   "outputs/live_state/live_forecast_summary.json",
+   "outputs/live_state/live_forecast_quality_gate.json",
+   "outputs/live_state/live_provider_freshness.json",
+   "outputs/live_state/latest_live_run_manifest.json"
+  ]
+ }
+}

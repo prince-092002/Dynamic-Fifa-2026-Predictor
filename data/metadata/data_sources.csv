@@ -1,0 +1,8 @@
+source_name,source_type,url,usage,requires_api_key,official_or_unofficial,notes
+FIFA Data Centre,website,https://inside.fifa.com/data-centre/matches,"Official fixtures, results, teams, venues",no,official,May be JavaScript-rendered; use manual/API fallback if blocked.
+API-Football,api,https://www.api-football.com/,"Live fixtures, results, teams, standings, stats",yes,third-party,Requires API_FOOTBALL_KEY in .env.
+Kaggle international football results,downloadable dataset,https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017,Historical international match training data,yes,unofficial,Requires Kaggle credentials or manual download.
+Kaggle FIFA World Cup historical,downloadable dataset,https://www.kaggle.com/datasets/piterfm/fifa-football-world-cup,Historical World Cup match data,yes,unofficial,Useful for World Cup-specific patterns.
+Kaggle FIFA World Cup 2026 unofficial schedule,downloadable dataset,https://www.kaggle.com/datasets/areezvisram12/fifa-world-cup-2026-match-data-unofficial,"Backup 2026 schedule, venues, stages",yes,unofficial,May differ from official FIFA data.
+World Football Elo Ratings,website,https://eloratings.net/,Current national team Elo ratings,no,third-party,Parsed politely with pandas.read_html.
+FBref World Cup stats,website,https://fbref.com/en/comps/1/World-Cup-Stats,Team and player tournament stats,no,third-party,May block automated requests; manual CSV fallback is supported.

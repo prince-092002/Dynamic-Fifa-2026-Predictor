@@ -1,0 +1,10 @@
+Processed file,Exists,Rows,Columns,Real-data status,Last modified
+data/processed/historical_international_matches.csv,yes,49502,"date, team_a, team_b, team_a_goals, team_b_goals, tournament, city, country, neutral, winner, is_draw, source, last_updated",REAL DATA,2026-07-09T12:35:12
+data/processed/historical_world_cup_matches.csv,yes,964,"date, team_a, team_b, team_a_goals, team_b_goals, tournament, city, country, neutral, winner, is_draw, source, last_updated",REAL DATA,2026-07-09T12:35:13
+data/processed/matches_master.csv,yes,50464,"match_id, date, team_a, team_b, team_a_goals, team_b_goals, winner, is_draw, tournament, stage, city, country, venue, neutral, source, last_updated",REAL DATA,2026-07-09T12:35:19
+data/processed/fixtures_2026.csv,yes,104,"match_id, date, stage, group, team_a, team_b, venue, city, country, status, source, last_updated",REAL DATA,2026-07-09T12:35:13
+data/processed/results_2026.csv,yes,0,"match_id, date, stage, team_a, team_b, team_a_goals, team_b_goals, winner, is_draw, status, source, last_updated",HEADER-ONLY,2026-07-09T12:35:13
+data/processed/team_ratings.csv,yes,211,"team, fifa_rank, fifa_points, elo_rank, elo_rating, rating_date, source, last_updated",REAL DATA,2026-07-05T16:49:23
+data/processed/team_stats_2026.csv,yes,0,"team, matches_played, goals_for, goals_against, goal_difference, xg_for, xg_against, shots, shots_on_target, possession, passes_completed, passes_attempted, yellow_cards, red_cards, source, last_updated",HEADER-ONLY,2026-07-09T12:35:13
+data/processed/player_stats_2026.csv,yes,0,"player, team, position, age, minutes, goals, assists, xg, shots, shots_on_target, passes_completed, yellow_cards, red_cards, source, last_updated",HEADER-ONLY,2026-07-09T12:35:13
+data/processed/team_name_map.csv,yes,22,"raw_team_name, standard_team_name, source",REAL DATA,2026-07-04T13:06:28

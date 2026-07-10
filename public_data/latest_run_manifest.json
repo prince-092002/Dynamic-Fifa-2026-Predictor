@@ -1,0 +1,42 @@
+{
+ "run_id": "2026-07-10T060556Z-428e59f3",
+ "run_started_at": "2026-07-10T06:05:56+00:00",
+ "run_completed_at": "2026-07-10T06:08:19+00:00",
+ "provider": "football_data_org",
+ "forecast_mode": "true_live_forecast",
+ "source_quality_score": 100,
+ "current_phase": "quarterfinal",
+ "simulation_count": 10000,
+ "seed": 42,
+ "selected_model": "xgboost",
+ "known_live_knockout_matchups": 3,
+ "live_model_predictions_generated": 3,
+ "live_matchup_prediction_status": "success",
+ "live_forecast_validation": "pass",
+ "live_knockout_prediction_validation": "pass",
+ "phase_transition": {
+  "previous_phase": "quarterfinal",
+  "current_phase": "quarterfinal",
+  "phase_changed": false,
+  "newly_resolved_matchups": 0,
+  "newly_completed_matches": 0
+ },
+ "top_finalist_pair": "Argentina vs France",
+ "top_champion": "France",
+ "probability_sources": {
+  "completed_result": 10000,
+  "live_model_exact": 30000,
+  "elo_fallback": 29510,
+  "model_reversed": 490
+ },
+ "data_source_mode": "fresh_api",
+ "provider_data_age_minutes": 0.0,
+ "provider_rate_limited": true,
+ "broader_refresh_validation": "pass",
+ "_meta": {
+  "generated_at": "2026-07-10T06:08:19+00:00",
+  "source_files": [
+   "outputs/live_state/latest_live_run_manifest.json"
+  ]
+ }
+}

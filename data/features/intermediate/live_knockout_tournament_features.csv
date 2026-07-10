@@ -1,0 +1,4 @@
+match_id,is_world_cup_match,is_friendly,is_qualifier,is_knockout,is_group_stage,is_neutral,stage_encoded,tournament_importance_score
+football_data_org_537384,True,False,False,True,False,True,0,5
+football_data_org_537385,True,False,False,True,False,True,0,5
+football_data_org_537386,True,False,False,True,False,True,0,5

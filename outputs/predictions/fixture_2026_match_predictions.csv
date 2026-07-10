@@ -1,0 +1,105 @@
+match_id,date,team_a,team_b,stage,group,venue,status,is_predictable_now,prob_team_a_loss,prob_draw,prob_team_a_win,predicted_result,predicted_result_label,confidence,model_name,prediction_timestamp,prediction_status
+1,2026-06-11,Mexico,South Africa,Group Stage,Group A,Estadio Azteca,scheduled,True,0.07228962224290338,0.0986259341444681,0.8290844436126286,2,team_a_win,0.8290844436126286,xgboost,2026-07-09T04:22:00+00:00,predicted
+2,2026-06-12,South Korea,Winner UEFA Playoff D,Group Stage,Group A,Estadio Akron,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+3,2026-06-12,Canada,Winner UEFA Playoff A,Group Stage,Group B,BMO Field,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+4,2026-06-13,United States,Paraguay,Group Stage,Group D,SoFi Stadium,scheduled,True,0.10756159814212318,0.12375244774861144,0.7686859541092653,2,team_a_win,0.7686859541092653,xgboost,2026-07-09T04:22:00+00:00,predicted
+5,2026-06-13,Qatar,Switzerland,Group Stage,Group B,Levi's Stadium,scheduled,True,0.44640234112739563,0.2634675204753876,0.2901301383972168,0,team_a_loss,0.44640234112739563,xgboost,2026-07-09T04:22:00+00:00,predicted
+6,2026-06-13,Brazil,Morocco,Group Stage,Group C,MetLife Stadium,scheduled,True,0.17872062591792084,0.1680490548617997,0.6532303192202794,2,team_a_win,0.6532303192202794,xgboost,2026-07-09T04:22:00+00:00,predicted
+7,2026-06-14,Haiti,Scotland,Group Stage,Group C,Gillette Stadium,scheduled,True,0.5455847626440866,0.20422407407570217,0.25019116328021124,0,team_a_loss,0.5455847626440866,xgboost,2026-07-09T04:22:00+00:00,predicted
+8,2026-06-14,Australia,Winner UEFA Playoff C,Group Stage,Group D,BC Place,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+9,2026-06-14,Germany,Curaçao,Group Stage,Group E,NRG Stadium,scheduled,True,0.030621716581536177,0.04028087459347653,0.9290974088249873,2,team_a_win,0.9290974088249873,xgboost,2026-07-09T04:22:00+00:00,predicted
+10,2026-06-14,Netherlands,Japan,Group Stage,Group F,AT&T Stadium,scheduled,True,0.13696067443372828,0.23030918032852352,0.6327301452377482,2,team_a_win,0.6327301452377482,xgboost,2026-07-09T04:22:00+00:00,predicted
+11,2026-06-14,Ivory Coast,Ecuador,Group Stage,Group E,Lincoln Financial Field,scheduled,True,0.3418101864513699,0.30605905335965594,0.35213076018897416,2,team_a_win,0.35213076018897416,xgboost,2026-07-09T04:22:00+00:00,predicted
+12,2026-06-15,Winner UEFA Playoff B,Tunisia,Group Stage,Group F,Estadio BBVA,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+13,2026-06-15,Spain,Cabo Verde,Group Stage,Group H,Mercedes-Benz Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+14,2026-06-15,Belgium,Egypt,Group Stage,Group G,Lumen Field,scheduled,True,0.12063089488526668,0.14826009836211582,0.7311090067526175,2,team_a_win,0.7311090067526175,xgboost,2026-07-09T04:22:00+00:00,predicted
+15,2026-06-15,Saudi Arabia,Uruguay,Group Stage,Group H,Hard Rock Stadium,scheduled,True,0.4715917197648412,0.2377525312713147,0.29065574896384405,0,team_a_loss,0.4715917197648412,xgboost,2026-07-09T04:22:00+00:00,predicted
+16,2026-06-16,Iran,New Zealand,Group Stage,Group G,SoFi Stadium,scheduled,True,0.031276797294783484,0.07701520937370994,0.8917079933315065,2,team_a_win,0.8917079933315065,xgboost,2026-07-09T04:22:00+00:00,predicted
+17,2026-06-16,France,Senegal,Group Stage,Group I,MetLife Stadium,scheduled,True,0.1698049110057897,0.14773873375289046,0.6824563552413199,2,team_a_win,0.6824563552413199,xgboost,2026-07-09T04:22:00+00:00,predicted
+18,2026-06-16,Winner FIFA Playoff 2,Norway,Group Stage,Group I,Gillette Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+19,2026-06-17,Argentina,Algeria,Group Stage,Group J,Arrowhead Stadium,scheduled,True,0.03083900926790947,0.0854702742499677,0.8836907164821228,2,team_a_win,0.8836907164821228,xgboost,2026-07-09T04:22:00+00:00,predicted
+20,2026-06-17,Austria,Jordan,Group Stage,Group J,Levi's Stadium,scheduled,True,0.08008967578678357,0.11585633801985794,0.8040539861933584,2,team_a_win,0.8040539861933584,xgboost,2026-07-09T04:22:00+00:00,predicted
+21,2026-06-17,Portugal,Winner FIFA Playoff 1,Group Stage,Group K,NRG Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+22,2026-06-17,England,Croatia,Group Stage,Group L,AT&T Stadium,scheduled,True,0.12380725145339966,0.22969841957092285,0.6464943289756775,2,team_a_win,0.6464943289756775,xgboost,2026-07-09T04:22:00+00:00,predicted
+23,2026-06-17,Ghana,Panama,Group Stage,Group L,BMO Field,scheduled,True,0.44534558057785034,0.2810887396335602,0.2735656797885895,0,team_a_loss,0.44534558057785034,xgboost,2026-07-09T04:22:00+00:00,predicted
+24,2026-06-18,Uzbekistan,Colombia,Group Stage,Group K,Estadio Azteca,scheduled,True,0.6344666670103868,0.20853029812962706,0.15700303485998615,0,team_a_loss,0.6344666670103868,xgboost,2026-07-09T04:22:00+00:00,predicted
+25,2026-06-18,Winner UEFA Playoff D,South Africa,Group Stage,Group A,Mercedes-Benz Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+26,2026-06-18,Switzerland,Winner UEFA Playoff A,Group Stage,Group B,SoFi Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+27,2026-06-19,Canada,Qatar,Group Stage,Group B,BC Place,scheduled,True,0.08008891463412217,0.059226916122837606,0.8606841692430403,2,team_a_win,0.8606841692430403,xgboost,2026-07-09T04:22:00+00:00,predicted
+28,2026-06-19,Mexico,South Korea,Group Stage,Group A,Estadio Akron,scheduled,True,0.14104157246959004,0.19063587416975752,0.6683225533606524,2,team_a_win,0.6683225533606524,xgboost,2026-07-09T04:22:00+00:00,predicted
+29,2026-06-19,United States,Australia,Group Stage,Group D,Lumen Field,scheduled,True,0.17399102449417114,0.1829742193222046,0.6430347561836243,2,team_a_win,0.6430347561836243,xgboost,2026-07-09T04:22:00+00:00,predicted
+30,2026-06-19,Scotland,Morocco,Group Stage,Group C,Gillette Stadium,scheduled,True,0.5766466174029318,0.21041105374081354,0.2129423288562547,0,team_a_loss,0.5766466174029318,xgboost,2026-07-09T04:22:00+00:00,predicted
+31,2026-06-20,Brazil,Haiti,Group Stage,Group C,Lincoln Financial Field,scheduled,True,0.014458994176970502,0.035308988677976084,0.9502320171450535,2,team_a_win,0.9502320171450535,xgboost,2026-07-09T04:22:00+00:00,predicted
+32,2026-06-20,Winner UEFA Playoff C,Paraguay,Group Stage,Group D,Levi's Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+33,2026-06-20,Netherlands,Winner UEFA Playoff B,Group Stage,Group F,NRG Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+34,2026-06-20,Germany,Ivory Coast,Group Stage,Group E,BMO Field,scheduled,True,0.12060182451753448,0.12847889864087925,0.7509192768415862,2,team_a_win,0.7509192768415862,xgboost,2026-07-09T04:22:00+00:00,predicted
+35,2026-06-21,Ecuador,Curaçao,Group Stage,Group E,Arrowhead Stadium,scheduled,True,0.04911480770834077,0.1006680413981074,0.8502171508935519,2,team_a_win,0.8502171508935519,xgboost,2026-07-09T04:22:00+00:00,predicted
+36,2026-06-21,Tunisia,Japan,Group Stage,Group F,Estadio BBVA,scheduled,True,0.5275662620002964,0.22115551264815797,0.2512782253515456,0,team_a_loss,0.5275662620002964,xgboost,2026-07-09T04:22:00+00:00,predicted
+37,2026-06-21,Spain,Saudi Arabia,Group Stage,Group H,Mercedes-Benz Stadium,scheduled,True,0.020802774894170328,0.05759875336888471,0.921598471736945,2,team_a_win,0.921598471736945,xgboost,2026-07-09T04:22:00+00:00,predicted
+38,2026-06-21,Belgium,Iran,Group Stage,Group G,SoFi Stadium,scheduled,True,0.16529108583927155,0.23641769587993622,0.5982912182807922,2,team_a_win,0.5982912182807922,xgboost,2026-07-09T04:22:00+00:00,predicted
+39,2026-06-21,Uruguay,Cabo Verde,Group Stage,Group H,Hard Rock Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+40,2026-06-22,New Zealand,Egypt,Group Stage,Group G,BC Place,scheduled,True,0.6476230411304856,0.205213022542776,0.14716393632673838,0,team_a_loss,0.6476230411304856,xgboost,2026-07-09T04:22:00+00:00,predicted
+41,2026-06-22,Argentina,Austria,Group Stage,Group J,AT&T Stadium,scheduled,True,0.06447171467894103,0.10169607476663645,0.8338322105544225,2,team_a_win,0.8338322105544225,xgboost,2026-07-09T04:22:00+00:00,predicted
+42,2026-06-22,France,Winner FIFA Playoff 2,Group Stage,Group I,Lincoln Financial Field,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+43,2026-06-23,Norway,Senegal,Group Stage,Group I,MetLife Stadium,scheduled,True,0.3986491679742684,0.20025429726404836,0.40109653476168317,2,team_a_win,0.40109653476168317,xgboost,2026-07-09T04:22:00+00:00,predicted
+44,2026-06-23,Jordan,Algeria,Group Stage,Group J,Levi's Stadium,scheduled,True,0.5937557728028927,0.19483348436901743,0.21141074282808986,0,team_a_loss,0.5937557728028927,xgboost,2026-07-09T04:22:00+00:00,predicted
+45,2026-06-23,Portugal,Uzbekistan,Group Stage,Group K,NRG Stadium,scheduled,True,0.04706953360729962,0.07098284950145671,0.8819476168912437,2,team_a_win,0.8819476168912437,xgboost,2026-07-09T04:22:00+00:00,predicted
+46,2026-06-23,England,Ghana,Group Stage,Group L,Gillette Stadium,scheduled,True,0.03385969813129109,0.06625394148308457,0.8998863603856243,2,team_a_win,0.8998863603856243,xgboost,2026-07-09T04:22:00+00:00,predicted
+47,2026-06-23,Panama,Croatia,Group Stage,Group L,BMO Field,scheduled,True,0.5110589189669651,0.2414964550510577,0.2474446259819772,0,team_a_loss,0.5110589189669651,xgboost,2026-07-09T04:22:00+00:00,predicted
+48,2026-06-24,Colombia,Winner FIFA Playoff 1,Group Stage,Group K,Estadio Akron,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+49,2026-06-24,Switzerland,Canada,Group Stage,Group B,BC Place,scheduled,True,0.2196808555579568,0.24305513097592282,0.5372640134661204,2,team_a_win,0.5372640134661204,xgboost,2026-07-09T04:22:00+00:00,predicted
+50,2026-06-24,Winner UEFA Playoff A,Qatar,Group Stage,Group B,Lumen Field,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+51,2026-06-24,Scotland,Brazil,Group Stage,Group C,Hard Rock Stadium,scheduled,True,0.5440948443384515,0.24054951248915457,0.21535564317239395,0,team_a_loss,0.5440948443384515,xgboost,2026-07-09T04:22:00+00:00,predicted
+52,2026-06-24,Morocco,Haiti,Group Stage,Group C,Mercedes-Benz Stadium,scheduled,True,0.03887870849849718,0.11313961277694087,0.847981678724562,2,team_a_win,0.847981678724562,xgboost,2026-07-09T04:22:00+00:00,predicted
+53,2026-06-25,Winner UEFA Playoff D,Mexico,Group Stage,Group A,Estadio Azteca,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+54,2026-06-25,South Africa,South Korea,Group Stage,Group A,Estadio BBVA,scheduled,True,0.43064165115356445,0.20186501741409302,0.36749333143234253,0,team_a_loss,0.43064165115356445,xgboost,2026-07-09T04:22:00+00:00,predicted
+55,2026-06-25,Curaçao,Ivory Coast,Group Stage,Group E,Lincoln Financial Field,scheduled,True,0.6598141396156466,0.173433442507181,0.16675241787717235,0,team_a_loss,0.6598141396156466,xgboost,2026-07-09T04:22:00+00:00,predicted
+56,2026-06-25,Ecuador,Germany,Group Stage,Group E,MetLife Stadium,scheduled,True,0.5245447236976731,0.21421854517189481,0.26123673113043205,0,team_a_loss,0.5245447236976731,xgboost,2026-07-09T04:22:00+00:00,predicted
+57,2026-06-26,Japan,Winner UEFA Playoff B,Group Stage,Group F,AT&T Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+58,2026-06-26,Tunisia,Netherlands,Group Stage,Group F,Arrowhead Stadium,scheduled,True,0.659761180583221,0.1680210207697597,0.17221779864701928,0,team_a_loss,0.659761180583221,xgboost,2026-07-09T04:22:00+00:00,predicted
+59,2026-06-26,Winner UEFA Playoff C,United States,Group Stage,Group D,SoFi Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+60,2026-06-26,Paraguay,Australia,Group Stage,Group D,Levi's Stadium,scheduled,True,0.32389827030442375,0.23198109412108783,0.44412063557448844,2,team_a_win,0.44412063557448844,xgboost,2026-07-09T04:22:00+00:00,predicted
+61,2026-06-26,Norway,France,Group Stage,Group I,Gillette Stadium,scheduled,True,0.6307347228904151,0.23499535813941486,0.13426991897017004,0,team_a_loss,0.6307347228904151,xgboost,2026-07-09T04:22:00+00:00,predicted
+62,2026-06-26,Senegal,Winner FIFA Playoff 2,Group Stage,Group I,BMO Field,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+63,2026-06-27,Cabo Verde,Saudi Arabia,Group Stage,Group H,NRG Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+64,2026-06-27,Uruguay,Spain,Group Stage,Group H,Estadio Akron,scheduled,True,0.5522853136062622,0.19266942143440247,0.2550452649593353,0,team_a_loss,0.5522853136062622,xgboost,2026-07-09T04:22:00+00:00,predicted
+65,2026-06-27,Egypt,Iran,Group Stage,Group G,Lumen Field,scheduled,True,0.3763389941504448,0.19491501442961418,0.4287459914199411,2,team_a_win,0.4287459914199411,xgboost,2026-07-09T04:22:00+00:00,predicted
+66,2026-06-27,New Zealand,Belgium,Group Stage,Group G,BC Place,scheduled,True,0.9161956445550874,0.054277614754632865,0.029526740690279756,0,team_a_loss,0.9161956445550874,xgboost,2026-07-09T04:22:00+00:00,predicted
+67,2026-06-27,Panama,England,Group Stage,Group L,MetLife Stadium,scheduled,True,0.7435630296273393,0.16629394142153597,0.09014302895112465,0,team_a_loss,0.7435630296273393,xgboost,2026-07-09T04:22:00+00:00,predicted
+68,2026-06-27,Croatia,Ghana,Group Stage,Group L,Lincoln Financial Field,scheduled,True,0.045121010560993144,0.1586090928264301,0.7962698966125767,2,team_a_win,0.7962698966125767,xgboost,2026-07-09T04:22:00+00:00,predicted
+69,2026-06-27,Colombia,Portugal,Group Stage,Group K,Hard Rock Stadium,scheduled,True,0.3771659023414283,0.26646869580540966,0.356365401853162,0,team_a_loss,0.3771659023414283,xgboost,2026-07-09T04:22:00+00:00,predicted
+70,2026-06-27,Winner FIFA Playoff 1,Uzbekistan,Group Stage,Group K,Mercedes-Benz Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+71,2026-06-28,Algeria,Austria,Group Stage,Group J,Arrowhead Stadium,scheduled,True,0.33381935954093933,0.2063116729259491,0.4598689675331116,2,team_a_win,0.4598689675331116,xgboost,2026-07-09T04:22:00+00:00,predicted
+72,2026-06-28,Jordan,Argentina,Group Stage,Group J,AT&T Stadium,scheduled,True,0.8777863848539236,0.08671080191864368,0.03550281322743277,0,team_a_loss,0.8777863848539236,xgboost,2026-07-09T04:22:00+00:00,predicted
+73,2026-06-28,TBD_Team_A,TBD_Team_B,Round of 32,2A vs 2B,SoFi Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+74,2026-06-29,TBD_Team_A,TBD_Team_B,Round of 32,1C vs 2F,NRG Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+75,2026-06-29,TBD_Team_A,TBD_Team_B,Round of 32,1E vs 3ABCDF,Gillette Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+76,2026-06-30,TBD_Team_A,TBD_Team_B,Round of 32,1F vs 2C,Estadio BBVA,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+77,2026-06-30,TBD_Team_A,TBD_Team_B,Round of 32,2E vs 2I,AT&T Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+78,2026-06-30,TBD_Team_A,TBD_Team_B,Round of 32,1I vs 3CDFGH,MetLife Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+79,2026-07-01,TBD_Team_A,TBD_Team_B,Round of 32,1A vs 3CEFHI,Estadio Azteca,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+80,2026-07-01,TBD_Team_A,TBD_Team_B,Round of 32,1L vs 3EHIJK,Mercedes-Benz Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+81,2026-07-01,TBD_Team_A,TBD_Team_B,Round of 32,1G vs 3AEHIJ,Lumen Field,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+82,2026-07-02,TBD_Team_A,TBD_Team_B,Round of 32,1D vs 3BEFIJ,Levi's Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+83,2026-07-02,TBD_Team_A,TBD_Team_B,Round of 32,1H vs 2J,SoFi Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+84,2026-07-02,TBD_Team_A,TBD_Team_B,Round of 32,2K vs 2L,BMO Field,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+85,2026-07-03,TBD_Team_A,TBD_Team_B,Round of 32,1B vs 3EFGIJ,BC Place,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+86,2026-07-03,TBD_Team_A,TBD_Team_B,Round of 32,2D vs 2G,AT&T Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+87,2026-07-03,TBD_Team_A,TBD_Team_B,Round of 32,1J vs 2H,Hard Rock Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+88,2026-07-04,TBD_Team_A,TBD_Team_B,Round of 32,1K vs 3DEIJL,Arrowhead Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+89,2026-07-04,TBD_Team_A,TBD_Team_B,Round of 16,W73 vs W75,NRG Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+90,2026-07-04,TBD_Team_A,TBD_Team_B,Round of 16,W74 vs W77,Lincoln Financial Field,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+91,2026-07-05,TBD_Team_A,TBD_Team_B,Round of 16,W76 vs W78,MetLife Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+92,2026-07-06,TBD_Team_A,TBD_Team_B,Round of 16,W79 vs W80,Estadio Azteca,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+93,2026-07-06,TBD_Team_A,TBD_Team_B,Round of 16,W83 vs W84,AT&T Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+94,2026-07-07,TBD_Team_A,TBD_Team_B,Round of 16,W81 vs W82,Lumen Field,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+95,2026-07-07,TBD_Team_A,TBD_Team_B,Round of 16,W86 vs W88,Mercedes-Benz Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+96,2026-07-07,TBD_Team_A,TBD_Team_B,Round of 16,W85 vs W87,BC Place,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+97,2026-07-09,TBD_Team_A,TBD_Team_B,Quarterfinals,W89 vs W90,Gillette Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+98,2026-07-10,TBD_Team_A,TBD_Team_B,Quarterfinals,W93 vs W94,SoFi Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+99,2026-07-11,TBD_Team_A,TBD_Team_B,Quarterfinals,W91 vs W92,Hard Rock Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+100,2026-07-12,TBD_Team_A,TBD_Team_B,Quarterfinals,W95 vs W100,Arrowhead Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+101,2026-07-14,TBD_Team_A,TBD_Team_B,Semifinals,W97 vs W98,AT&T Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+102,2026-07-15,TBD_Team_A,TBD_Team_B,Semifinals,W99 vs W100,Mercedes-Benz Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+103,2026-07-18,TBD_Team_A,TBD_Team_B,Third Place Playoff,RU101 vs RU102,Hard Rock Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features
+104,2026-07-19,TBD_Team_A,TBD_Team_B,Final,W101 vs W102,MetLife Stadium,scheduled,False,,,,,,,xgboost,2026-07-09T04:22:00+00:00,not_predictable_tbd_or_missing_features

@@ -1,0 +1,26 @@
+dataset,check,status,message,rows_affected
+matches_master,required_columns,pass,All required columns are present.,0
+matches_master,parseable_dates,pass,0 invalid date values.,0
+matches_master,numeric_team_a_goals,pass,0 invalid numeric values.,0
+matches_master,numeric_team_b_goals,pass,0 invalid numeric values.,0
+matches_master,non_null_team_a,pass,0 missing team names.,0
+matches_master,non_null_team_b,pass,0 missing team names.,0
+matches_master,duplicate_match_id,pass,0 duplicate match_id values.,0
+matches_master,duplicate_same_date_same_teams,warn,868 duplicate same-date team rows in the raw master. Expected condition: the overlapping Kaggle feeds (international results + world cup historical) list the same matches; feature engineering deduplicates into matches_master_feature_clean.csv before any feature or model use.,868
+matches_master_feature_clean,feature_clean_no_duplicates,pass,0 duplicate same-date team rows in the deduplicated file consumed by feature engineering.,0
+fixtures_2026,required_columns,pass,All required columns are present.,0
+fixtures_2026,parseable_dates,pass,0 invalid date values.,0
+fixtures_2026,non_null_team_a,pass,0 group-stage or completed fixtures missing team names.,0
+fixtures_2026,knockout_placeholder_team_a,warn,32 scheduled knockout fixtures without team names. Expected condition: the pre-tournament template keeps TBD knockout slots; live bracket data resolves them.,32
+fixtures_2026,non_null_team_b,pass,0 group-stage or completed fixtures missing team names.,0
+fixtures_2026,knockout_placeholder_team_b,warn,32 scheduled knockout fixtures without team names. Expected condition: the pre-tournament template keeps TBD knockout slots; live bracket data resolves them.,32
+fixtures_2026,duplicate_match_id,pass,0 duplicate match_id values.,0
+fixtures_2026,valid_status,pass,0 invalid fixture statuses.,0
+results_2026,parseable_dates,pass,No dates to validate.,0
+team_ratings,required_columns,pass,All required columns are present.,0
+team_ratings,non_null_team,pass,0 missing team names.,0
+team_ratings,numeric_elo_rating,pass,0 invalid numeric values.,0
+team_ratings,numeric_elo_rank,pass,0 invalid numeric values.,0
+team_ratings,numeric_fifa_rank,pass,0 invalid numeric values.,0
+team_ratings,numeric_fifa_points,pass,0 invalid numeric values.,0
+team_stats_2026,required_columns,pass,All required columns are present.,0

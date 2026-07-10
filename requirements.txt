@@ -1,0 +1,17 @@
+pandas
+numpy
+requests
+python-dotenv
+beautifulsoup4
+lxml
+html5lib
+kaggle
+tenacity
+tqdm
+pyarrow
+streamlit
+plotly
+scikit-learn
+xgboost
+requests-cache
+

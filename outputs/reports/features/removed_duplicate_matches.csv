@@ -1,0 +1,869 @@
+match_id,date,team_a,team_b,team_a_goals,team_b_goals,winner,is_draw,tournament,stage,city,country,venue,neutral,source,last_updated
+1916-08-15-uruguay-argentina-copa-lipton,1916-08-15,Uruguay,Argentina,1.0,2.0,Argentina,False,Copa Lipton,,Montevideo,Uruguay,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1916-10-01-uruguay-argentina-copa-premio-honor-uruguayo,1916-10-01,Uruguay,Argentina,0.0,1.0,Argentina,False,Copa Premio Honor Uruguayo,,Montevideo,Uruguay,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1921-05-30-philippines-japan-far-eastern-championship-games,1921-05-30,Philippines,Japan,3.0,1.0,Philippines,False,Far Eastern Championship Games,,Shanghai,China,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1924-05-25-uruguay-argentina-copa-lipton,1924-05-25,Uruguay,Argentina,2.0,0.0,Uruguay,False,Copa Lipton,,Montevideo,Uruguay,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1925-05-20-japan-china-far-eastern-championship-games,1925-05-20,Japan,China,0.0,2.0,China,False,Far Eastern Championship Games,,Manila,Philippines,,True,kaggle_international_results,2026-07-05T21:50:39+00:00
+1929-06-16-uruguay-argentina-friendly,1929-06-16,Uruguay,Argentina,1.0,1.0,Draw,True,Friendly,,Montevideo,Uruguay,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1930-07-13-united-states-belgium,1930-07-13,United States,Belgium,3.0,0.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-13-france-mexico,1930-07-13,France,Mexico,4.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-14-yugoslavia-brazil,1930-07-14,Yugoslavia,Brazil,2.0,1.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-14-romania-peru,1930-07-14,Romania,Peru,3.0,1.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-15-argentina-france,1930-07-15,Argentina,France,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-16-chile-mexico,1930-07-16,Chile,Mexico,3.0,0.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-17-yugoslavia-bolivia,1930-07-17,Yugoslavia,Bolivia,4.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-17-united-states-paraguay,1930-07-17,United States,Paraguay,3.0,0.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-18-uruguay-peru,1930-07-18,Uruguay,Peru,1.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-19-argentina-mexico,1930-07-19,Argentina,Mexico,6.0,3.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-19-chile-france,1930-07-19,Chile,France,1.0,0.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-20-paraguay-belgium,1930-07-20,Paraguay,Belgium,1.0,0.0,Paraguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-20-brazil-bolivia,1930-07-20,Brazil,Bolivia,4.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-21-uruguay-romania,1930-07-21,Uruguay,Romania,4.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-22-argentina-chile,1930-07-22,Argentina,Chile,3.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-26-argentina-united-states,1930-07-26,Argentina,United States,6.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-27-uruguay-yugoslavia,1930-07-27,Uruguay,Yugoslavia,6.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1930-07-30-uruguay-argentina,1930-07-30,Uruguay,Argentina,4.0,2.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-sweden-argentina,1934-05-27,Sweden,Argentina,3.0,2.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-austria-france,1934-05-27,Austria,France,3.0,2.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-germany-belgium,1934-05-27,Germany,Belgium,5.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-spain-brazil,1934-05-27,Spain,Brazil,3.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-czechoslovakia-romania,1934-05-27,Czechoslovakia,Romania,2.0,1.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-hungary-egypt,1934-05-27,Hungary,Egypt,4.0,2.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-italy-united-states,1934-05-27,Italy,United States,7.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-27-switzerland-netherlands,1934-05-27,Switzerland,Netherlands,3.0,2.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-31-austria-hungary,1934-05-31,Austria,Hungary,2.0,1.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-31-czechoslovakia-switzerland,1934-05-31,Czechoslovakia,Switzerland,3.0,2.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-31-germany-sweden,1934-05-31,Germany,Sweden,2.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-05-31-italy-spain,1934-05-31,Italy,Spain,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-06-01-italy-spain,1934-06-01,Italy,Spain,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-06-03-czechoslovakia-germany,1934-06-03,Czechoslovakia,Germany,3.0,1.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-06-03-italy-austria,1934-06-03,Italy,Austria,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-06-07-germany-austria,1934-06-07,Germany,Austria,3.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1934-06-10-italy-czechoslovakia,1934-06-10,Italy,Czechoslovakia,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-04-switzerland-germany,1938-06-04,Switzerland,Germany,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-05-brazil-poland,1938-06-05,Brazil,Poland,6.0,5.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-05-cuba-romania,1938-06-05,Cuba,Romania,3.0,3.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-05-czechoslovakia-netherlands,1938-06-05,Czechoslovakia,Netherlands,3.0,0.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-05-france-belgium,1938-06-05,France,Belgium,3.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-05-italy-norway,1938-06-05,Italy,Norway,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-09-cuba-romania,1938-06-09,Cuba,Romania,2.0,1.0,Cuba,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-09-switzerland-germany,1938-06-09,Switzerland,Germany,4.0,2.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-12-brazil-czechoslovakia,1938-06-12,Brazil,Czechoslovakia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-12-sweden-cuba,1938-06-12,Sweden,Cuba,8.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-12-italy-france,1938-06-12,Italy,France,3.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-12-hungary-switzerland,1938-06-12,Hungary,Switzerland,2.0,0.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-14-brazil-czechoslovakia,1938-06-14,Brazil,Czechoslovakia,2.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-16-italy-brazil,1938-06-16,Italy,Brazil,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-16-hungary-sweden,1938-06-16,Hungary,Sweden,5.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-19-brazil-sweden,1938-06-19,Brazil,Sweden,4.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1938-06-19-italy-hungary,1938-06-19,Italy,Hungary,4.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-24-brazil-mexico,1950-06-24,Brazil,Mexico,4.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-25-england-chile,1950-06-25,England,Chile,2.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-25-sweden-italy,1950-06-25,Sweden,Italy,3.0,2.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-25-spain-united-states,1950-06-25,Spain,United States,3.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-25-yugoslavia-switzerland,1950-06-25,Yugoslavia,Switzerland,3.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-28-brazil-switzerland,1950-06-28,Brazil,Switzerland,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-28-yugoslavia-mexico,1950-06-28,Yugoslavia,Mexico,4.0,1.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-29-spain-chile,1950-06-29,Spain,Chile,2.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-29-united-states-england,1950-06-29,United States,England,1.0,0.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-06-29-sweden-paraguay,1950-06-29,Sweden,Paraguay,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-01-brazil-yugoslavia,1950-07-01,Brazil,Yugoslavia,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-02-uruguay-bolivia,1950-07-02,Uruguay,Bolivia,8.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-02-chile-united-states,1950-07-02,Chile,United States,5.0,2.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-02-spain-england,1950-07-02,Spain,England,1.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-02-italy-paraguay,1950-07-02,Italy,Paraguay,2.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-02-switzerland-mexico,1950-07-02,Switzerland,Mexico,2.0,1.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-09-brazil-sweden,1950-07-09,Brazil,Sweden,7.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-09-uruguay-spain,1950-07-09,Uruguay,Spain,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-13-brazil-spain,1950-07-13,Brazil,Spain,6.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-13-uruguay-sweden,1950-07-13,Uruguay,Sweden,3.0,2.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-16-uruguay-brazil,1950-07-16,Uruguay,Brazil,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1950-07-16-sweden-spain,1950-07-16,Sweden,Spain,3.0,1.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-16-austria-scotland,1954-06-16,Austria,Scotland,1.0,0.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-16-brazil-mexico,1954-06-16,Brazil,Mexico,5.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-16-uruguay-czechoslovakia,1954-06-16,Uruguay,Czechoslovakia,2.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-16-yugoslavia-france,1954-06-16,Yugoslavia,France,1.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-17-england-belgium,1954-06-17,England,Belgium,4.0,4.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-17-germany-turkey,1954-06-17,Germany,Turkey,4.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-17-hungary-south-korea,1954-06-17,Hungary,South Korea,9.0,0.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-17-switzerland-italy,1954-06-17,Switzerland,Italy,2.0,1.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-19-austria-czechoslovakia,1954-06-19,Austria,Czechoslovakia,5.0,0.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-19-brazil-yugoslavia,1954-06-19,Brazil,Yugoslavia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-19-france-mexico,1954-06-19,France,Mexico,3.0,2.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-19-uruguay-scotland,1954-06-19,Uruguay,Scotland,7.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-20-italy-belgium,1954-06-20,Italy,Belgium,4.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-20-hungary-germany,1954-06-20,Hungary,Germany,8.0,3.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-20-turkey-south-korea,1954-06-20,Turkey,South Korea,7.0,0.0,Turkey,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-20-switzerland-england,1954-06-20,Switzerland,England,0.0,2.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-23-germany-turkey,1954-06-23,Germany,Turkey,7.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-23-switzerland-italy,1954-06-23,Switzerland,Italy,4.0,1.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-26-uruguay-england,1954-06-26,Uruguay,England,4.0,2.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-26-switzerland-austria,1954-06-26,Switzerland,Austria,5.0,7.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-27-hungary-brazil,1954-06-27,Hungary,Brazil,4.0,2.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-27-germany-yugoslavia,1954-06-27,Germany,Yugoslavia,2.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-30-germany-austria,1954-06-30,Germany,Austria,6.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-06-30-hungary-uruguay,1954-06-30,Hungary,Uruguay,4.0,2.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-07-03-austria-uruguay,1954-07-03,Austria,Uruguay,3.0,1.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1954-07-04-germany-hungary,1954-07-04,Germany,Hungary,3.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-08-brazil-austria,1958-06-08,Brazil,Austria,3.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-08-northern-ireland-czechoslovakia,1958-06-08,Northern Ireland,Czechoslovakia,1.0,0.0,Northern Ireland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-08-france-paraguay,1958-06-08,France,Paraguay,7.0,3.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-08-hungary-wales,1958-06-08,Hungary,Wales,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-08-yugoslavia-scotland,1958-06-08,Yugoslavia,Scotland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-08-sweden-mexico,1958-06-08,Sweden,Mexico,3.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-11-argentina-northern-ireland,1958-06-11,Argentina,Northern Ireland,3.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-11-brazil-england,1958-06-11,Brazil,England,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-11-yugoslavia-france,1958-06-11,Yugoslavia,France,3.0,2.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-11-mexico-wales,1958-06-11,Mexico,Wales,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-11-paraguay-scotland,1958-06-11,Paraguay,Scotland,3.0,2.0,Paraguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-12-sweden-hungary,1958-06-12,Sweden,Hungary,2.0,1.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-15-czechoslovakia-argentina,1958-06-15,Czechoslovakia,Argentina,6.0,1.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-15-england-austria,1958-06-15,England,Austria,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-15-france-scotland,1958-06-15,France,Scotland,2.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-15-hungary-mexico,1958-06-15,Hungary,Mexico,4.0,0.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-15-paraguay-yugoslavia,1958-06-15,Paraguay,Yugoslavia,3.0,3.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-15-sweden-wales,1958-06-15,Sweden,Wales,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-17-northern-ireland-czechoslovakia,1958-06-17,Northern Ireland,Czechoslovakia,2.0,1.0,Northern Ireland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-17-wales-hungary,1958-06-17,Wales,Hungary,2.0,1.0,Wales,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-19-brazil-wales,1958-06-19,Brazil,Wales,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-19-france-northern-ireland,1958-06-19,France,Northern Ireland,4.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-24-brazil-france,1958-06-24,Brazil,France,5.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1958-06-29-brazil-sweden,1958-06-29,Brazil,Sweden,5.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-05-30-argentina-bulgaria,1962-05-30,Argentina,Bulgaria,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-05-30-brazil-mexico,1962-05-30,Brazil,Mexico,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-05-30-chile-switzerland,1962-05-30,Chile,Switzerland,3.0,1.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-05-30-uruguay-colombia,1962-05-30,Uruguay,Colombia,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-05-31-czechoslovakia-spain,1962-05-31,Czechoslovakia,Spain,1.0,0.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-05-31-hungary-england,1962-05-31,Hungary,England,2.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-02-england-argentina,1962-06-02,England,Argentina,3.0,1.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-02-brazil-czechoslovakia,1962-06-02,Brazil,Czechoslovakia,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-02-chile-italy,1962-06-02,Chile,Italy,2.0,0.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-02-yugoslavia-uruguay,1962-06-02,Yugoslavia,Uruguay,3.0,1.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-03-hungary-bulgaria,1962-06-03,Hungary,Bulgaria,6.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-03-spain-mexico,1962-06-03,Spain,Mexico,1.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-06-hungary-argentina,1962-06-06,Hungary,Argentina,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-06-brazil-spain,1962-06-06,Brazil,Spain,2.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-07-england-bulgaria,1962-06-07,England,Bulgaria,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-07-yugoslavia-colombia,1962-06-07,Yugoslavia,Colombia,5.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-07-mexico-czechoslovakia,1962-06-07,Mexico,Czechoslovakia,3.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-07-italy-switzerland,1962-06-07,Italy,Switzerland,3.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-10-brazil-england,1962-06-10,Brazil,England,3.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-10-czechoslovakia-hungary,1962-06-10,Czechoslovakia,Hungary,1.0,0.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-13-brazil-chile,1962-06-13,Brazil,Chile,4.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-13-czechoslovakia-yugoslavia,1962-06-13,Czechoslovakia,Yugoslavia,3.0,1.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-16-chile-yugoslavia,1962-06-16,Chile,Yugoslavia,1.0,0.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1962-06-17-brazil-czechoslovakia,1962-06-17,Brazil,Czechoslovakia,3.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-11-england-uruguay,1966-07-11,England,Uruguay,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-12-brazil-bulgaria,1966-07-12,Brazil,Bulgaria,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-13-argentina-spain,1966-07-13,Argentina,Spain,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-13-italy-chile,1966-07-13,Italy,Chile,2.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-13-france-mexico,1966-07-13,France,Mexico,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-13-portugal-hungary,1966-07-13,Portugal,Hungary,3.0,1.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-15-hungary-brazil,1966-07-15,Hungary,Brazil,3.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-15-uruguay-france,1966-07-15,Uruguay,France,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-15-spain-switzerland,1966-07-15,Spain,Switzerland,2.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-16-portugal-bulgaria,1966-07-16,Portugal,Bulgaria,3.0,0.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-16-england-mexico,1966-07-16,England,Mexico,2.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-19-argentina-switzerland,1966-07-19,Argentina,Switzerland,2.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-19-portugal-brazil,1966-07-19,Portugal,Brazil,3.0,1.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-19-uruguay-mexico,1966-07-19,Uruguay,Mexico,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-20-hungary-bulgaria,1966-07-20,Hungary,Bulgaria,3.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-20-england-france,1966-07-20,England,France,2.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-23-england-argentina,1966-07-23,England,Argentina,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1966-07-26-england-portugal,1966-07-26,England,Portugal,2.0,1.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1969-02-02-cameroon-uganda-african-cup-of-nations-qualification,1969-02-02,Cameroon,Uganda,2.0,0.0,Cameroon,False,African Cup of Nations qualification,,Yaoundé,Cameroon,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1969-06-29-cameroon-zambia-african-cup-of-nations-qualification,1969-06-29,Cameroon,Zambia,2.0,1.0,Cameroon,False,African Cup of Nations qualification,,Yaoundé,Cameroon,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1970-06-02-peru-bulgaria,1970-06-02,Peru,Bulgaria,3.0,2.0,Peru,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-02-england-romania,1970-06-02,England,Romania,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-02-uruguay-israel,1970-06-02,Uruguay,Israel,2.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-03-belgium-el-salvador,1970-06-03,Belgium,El Salvador,3.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-03-brazil-czechoslovakia,1970-06-03,Brazil,Czechoslovakia,4.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-03-italy-sweden,1970-06-03,Italy,Sweden,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-06-romania-czechoslovakia,1970-06-06,Romania,Czechoslovakia,2.0,1.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-06-uruguay-italy,1970-06-06,Uruguay,Italy,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-06-peru-morocco,1970-06-06,Peru,Morocco,3.0,0.0,Peru,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-07-brazil-england,1970-06-07,Brazil,England,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-07-sweden-israel,1970-06-07,Sweden,Israel,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-07-mexico-el-salvador,1970-06-07,Mexico,El Salvador,4.0,0.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-10-brazil-romania,1970-06-10,Brazil,Romania,3.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-10-sweden-uruguay,1970-06-10,Sweden,Uruguay,1.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-11-bulgaria-morocco,1970-06-11,Bulgaria,Morocco,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-11-england-czechoslovakia,1970-06-11,England,Czechoslovakia,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-11-italy-israel,1970-06-11,Italy,Israel,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-11-mexico-belgium,1970-06-11,Mexico,Belgium,1.0,0.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-14-brazil-peru,1970-06-14,Brazil,Peru,4.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-14-italy-mexico,1970-06-14,Italy,Mexico,4.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-17-brazil-uruguay,1970-06-17,Brazil,Uruguay,3.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1970-06-21-brazil-italy,1970-06-21,Brazil,Italy,4.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1971-10-06-mexico-bermuda-concacaf-championship-qualification,1971-10-06,Mexico,Bermuda,4.0,0.0,Mexico,False,CONCACAF Championship qualification,,Mexico City,Mexico,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-04-08-tanzania-ethiopia-african-cup-of-nations-qualification,1973-04-08,Tanzania,Ethiopia,3.0,0.0,Tanzania,False,African Cup of Nations qualification,,Dar es Salaam,Tanzania,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-06-05-madagascar-zambia-african-cup-of-nations-qualification,1973-06-05,Madagascar,Zambia,2.0,1.0,Madagascar,False,African Cup of Nations qualification,,Antananarivo,Madagascar,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1973-07-15-nigeria-zambia-african-cup-of-nations-qualification,1973-07-15,Nigeria,Zambia,3.0,2.0,Nigeria,False,African Cup of Nations qualification,,Lagos,Nigeria,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1974-06-13-brazil-yugoslavia,1974-06-13,Brazil,Yugoslavia,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-15-italy-haiti,1974-06-15,Italy,Haiti,3.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-15-poland-argentina,1974-06-15,Poland,Argentina,3.0,2.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-15-sweden-bulgaria,1974-06-15,Sweden,Bulgaria,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-15-uruguay-netherlands,1974-06-15,Uruguay,Netherlands,0.0,2.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-18-scotland-brazil,1974-06-18,Scotland,Brazil,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-19-argentina-italy,1974-06-19,Argentina,Italy,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-19-bulgaria-uruguay,1974-06-19,Bulgaria,Uruguay,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-19-haiti-poland,1974-06-19,Haiti,Poland,0.0,7.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-19-netherlands-sweden,1974-06-19,Netherlands,Sweden,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-22-australia-chile,1974-06-22,Australia,Chile,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-22-scotland-yugoslavia,1974-06-22,Scotland,Yugoslavia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-23-argentina-haiti,1974-06-23,Argentina,Haiti,4.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-23-bulgaria-netherlands,1974-06-23,Bulgaria,Netherlands,1.0,4.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-23-poland-italy,1974-06-23,Poland,Italy,2.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-23-sweden-uruguay,1974-06-23,Sweden,Uruguay,3.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-26-netherlands-argentina,1974-06-26,Netherlands,Argentina,4.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-26-sweden-poland,1974-06-26,Sweden,Poland,0.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-30-argentina-brazil,1974-06-30,Argentina,Brazil,1.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-06-30-poland-yugoslavia,1974-06-30,Poland,Yugoslavia,2.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-07-03-netherlands-brazil,1974-07-03,Netherlands,Brazil,2.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-07-03-sweden-yugoslavia,1974-07-03,Sweden,Yugoslavia,2.0,1.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1974-07-06-brazil-poland,1974-07-06,Brazil,Poland,0.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1975-03-22-senegal-morocco-african-cup-of-nations-qualification,1975-03-22,Senegal,Morocco,2.0,1.0,Senegal,False,African Cup of Nations qualification,,Kaolack,Senegal,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1975-03-23-kenya-sudan-african-cup-of-nations-qualification,1975-03-23,Kenya,Sudan,0.0,2.0,Sudan,False,African Cup of Nations qualification,,Nairobi,Kenya,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1978-06-02-argentina-hungary,1978-06-02,Argentina,Hungary,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-02-italy-france,1978-06-02,Italy,France,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-02-tunisia-mexico,1978-06-02,Tunisia,Mexico,3.0,1.0,Tunisia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-03-austria-spain,1978-06-03,Austria,Spain,2.0,1.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-03-sweden-brazil,1978-06-03,Sweden,Brazil,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-03-netherlands-iran,1978-06-03,Netherlands,Iran,3.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-03-peru-scotland,1978-06-03,Peru,Scotland,3.0,1.0,Peru,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-06-argentina-france,1978-06-06,Argentina,France,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-06-italy-hungary,1978-06-06,Italy,Hungary,3.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-06-poland-tunisia,1978-06-06,Poland,Tunisia,1.0,0.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-07-austria-sweden,1978-06-07,Austria,Sweden,1.0,0.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-07-brazil-spain,1978-06-07,Brazil,Spain,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-07-scotland-iran,1978-06-07,Scotland,Iran,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-07-netherlands-peru,1978-06-07,Netherlands,Peru,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-10-italy-argentina,1978-06-10,Italy,Argentina,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-10-france-hungary,1978-06-10,France,Hungary,3.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-10-poland-mexico,1978-06-10,Poland,Mexico,3.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-11-brazil-austria,1978-06-11,Brazil,Austria,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-11-peru-iran,1978-06-11,Peru,Iran,4.0,1.0,Peru,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-11-scotland-netherlands,1978-06-11,Scotland,Netherlands,3.0,2.0,Scotland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-11-spain-sweden,1978-06-11,Spain,Sweden,1.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-14-argentina-poland,1978-06-14,Argentina,Poland,2.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-14-netherlands-austria,1978-06-14,Netherlands,Austria,5.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-14-brazil-peru,1978-06-14,Brazil,Peru,3.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-18-argentina-brazil,1978-06-18,Argentina,Brazil,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-18-italy-austria,1978-06-18,Italy,Austria,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-18-poland-peru,1978-06-18,Poland,Peru,1.0,0.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-21-argentina-peru,1978-06-21,Argentina,Peru,6.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-21-brazil-poland,1978-06-21,Brazil,Poland,3.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-21-netherlands-italy,1978-06-21,Netherlands,Italy,2.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-24-brazil-italy,1978-06-24,Brazil,Italy,2.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1978-06-25-argentina-netherlands,1978-06-25,Argentina,Netherlands,3.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1979-10-22-saint-vincent-and-the-grenadines-guadeloupe-cfu-caribbean-cup-qualification,1979-10-22,Saint Vincent and the Grenadines,Guadeloupe,0.0,0.0,Draw,True,CFU Caribbean Cup qualification,,Kingstown,Saint Vincent and the Grenadines,,False,kaggle_international_results,2026-07-05T21:50:39+00:00
+1982-06-13-argentina-belgium,1982-06-13,Argentina,Belgium,0.0,1.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-14-italy-poland,1982-06-14,Italy,Poland,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-15-hungary-el-salvador,1982-06-15,Hungary,El Salvador,10.0,1.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-15-peru-cameroon,1982-06-15,Peru,Cameroon,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-15-scotland-new-zealand,1982-06-15,Scotland,New Zealand,5.0,2.0,Scotland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-16-england-france,1982-06-16,England,France,3.0,1.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-16-spain-honduras,1982-06-16,Spain,Honduras,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-17-chile-austria,1982-06-17,Chile,Austria,0.0,1.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-17-czechoslovakia-kuwait,1982-06-17,Czechoslovakia,Kuwait,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-17-yugoslavia-northern-ireland,1982-06-17,Yugoslavia,Northern Ireland,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-18-argentina-hungary,1982-06-18,Argentina,Hungary,4.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-18-brazil-scotland,1982-06-18,Brazil,Scotland,4.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-18-italy-peru,1982-06-18,Italy,Peru,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-19-belgium-el-salvador,1982-06-19,Belgium,El Salvador,1.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-19-poland-cameroon,1982-06-19,Poland,Cameroon,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-20-england-czechoslovakia,1982-06-20,England,Czechoslovakia,2.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-20-spain-yugoslavia,1982-06-20,Spain,Yugoslavia,2.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-21-algeria-austria,1982-06-21,Algeria,Austria,0.0,2.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-21-france-kuwait,1982-06-21,France,Kuwait,4.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-21-honduras-northern-ireland,1982-06-21,Honduras,Northern Ireland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-22-belgium-hungary,1982-06-22,Belgium,Hungary,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-22-poland-peru,1982-06-22,Poland,Peru,5.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-23-argentina-el-salvador,1982-06-23,Argentina,El Salvador,2.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-23-brazil-new-zealand,1982-06-23,Brazil,New Zealand,4.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-23-italy-cameroon,1982-06-23,Italy,Cameroon,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-24-algeria-chile,1982-06-24,Algeria,Chile,3.0,2.0,Algeria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-24-france-czechoslovakia,1982-06-24,France,Czechoslovakia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-24-honduras-yugoslavia,1982-06-24,Honduras,Yugoslavia,0.0,1.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-25-england-kuwait,1982-06-25,England,Kuwait,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-25-northern-ireland-spain,1982-06-25,Northern Ireland,Spain,1.0,0.0,Northern Ireland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-28-austria-france,1982-06-28,Austria,France,0.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-28-poland-belgium,1982-06-28,Poland,Belgium,3.0,0.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-06-29-italy-argentina,1982-06-29,Italy,Argentina,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-07-01-austria-northern-ireland,1982-07-01,Austria,Northern Ireland,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-07-02-argentina-brazil,1982-07-02,Argentina,Brazil,1.0,3.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-07-04-france-northern-ireland,1982-07-04,France,Northern Ireland,4.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-07-05-italy-brazil,1982-07-05,Italy,Brazil,3.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-07-05-spain-england,1982-07-05,Spain,England,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-07-08-poland-italy,1982-07-08,Poland,Italy,0.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1982-07-10-poland-france,1982-07-10,Poland,France,3.0,2.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-05-31-bulgaria-italy,1986-05-31,Bulgaria,Italy,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-01-canada-france,1986-06-01,Canada,France,0.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-01-spain-brazil,1986-06-01,Spain,Brazil,0.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-02-argentina-south-korea,1986-06-02,Argentina,South Korea,3.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-02-morocco-poland,1986-06-02,Morocco,Poland,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-03-algeria-northern-ireland,1986-06-03,Algeria,Northern Ireland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-03-belgium-mexico,1986-06-03,Belgium,Mexico,1.0,2.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-03-portugal-england,1986-06-03,Portugal,England,1.0,0.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-04-paraguay-iraq,1986-06-04,Paraguay,Iraq,1.0,0.0,Paraguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-04-scotland-denmark,1986-06-04,Scotland,Denmark,0.0,1.0,Denmark,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-05-italy-argentina,1986-06-05,Italy,Argentina,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-05-south-korea-bulgaria,1986-06-05,South Korea,Bulgaria,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-06-brazil-algeria,1986-06-06,Brazil,Algeria,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-06-england-morocco,1986-06-06,England,Morocco,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-06-hungary-canada,1986-06-06,Hungary,Canada,2.0,0.0,Hungary,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-07-mexico-paraguay,1986-06-07,Mexico,Paraguay,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-07-northern-ireland-spain,1986-06-07,Northern Ireland,Spain,1.0,2.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-07-poland-portugal,1986-06-07,Poland,Portugal,1.0,0.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-08-denmark-uruguay,1986-06-08,Denmark,Uruguay,6.0,1.0,Denmark,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-08-iraq-belgium,1986-06-08,Iraq,Belgium,1.0,2.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-09-hungary-france,1986-06-09,Hungary,France,0.0,3.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-10-argentina-bulgaria,1986-06-10,Argentina,Bulgaria,2.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-10-south-korea-italy,1986-06-10,South Korea,Italy,2.0,3.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-11-england-poland,1986-06-11,England,Poland,3.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-11-iraq-mexico,1986-06-11,Iraq,Mexico,0.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-11-paraguay-belgium,1986-06-11,Paraguay,Belgium,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-11-portugal-morocco,1986-06-11,Portugal,Morocco,1.0,3.0,Morocco,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-12-algeria-spain,1986-06-12,Algeria,Spain,0.0,3.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-12-northern-ireland-brazil,1986-06-12,Northern Ireland,Brazil,0.0,3.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-13-scotland-uruguay,1986-06-13,Scotland,Uruguay,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-15-mexico-bulgaria,1986-06-15,Mexico,Bulgaria,2.0,0.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-16-argentina-uruguay,1986-06-16,Argentina,Uruguay,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-16-brazil-poland,1986-06-16,Brazil,Poland,4.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-17-italy-france,1986-06-17,Italy,France,0.0,2.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-18-denmark-spain,1986-06-18,Denmark,Spain,1.0,5.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-18-england-paraguay,1986-06-18,England,Paraguay,3.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-21-brazil-france,1986-06-21,Brazil,France,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-22-argentina-england,1986-06-22,Argentina,England,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-22-spain-belgium,1986-06-22,Spain,Belgium,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-25-argentina-belgium,1986-06-25,Argentina,Belgium,2.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1986-06-28-france-belgium,1986-06-28,France,Belgium,4.0,2.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-08-argentina-cameroon,1990-06-08,Argentina,Cameroon,0.0,1.0,Cameroon,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-09-italy-austria,1990-06-09,Italy,Austria,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-09-united-arab-emirates-colombia,1990-06-09,United Arab Emirates,Colombia,0.0,2.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-10-brazil-sweden,1990-06-10,Brazil,Sweden,2.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-10-united-states-czechoslovakia,1990-06-10,United States,Czechoslovakia,1.0,5.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-11-costa-rica-scotland,1990-06-11,Costa Rica,Scotland,1.0,0.0,Costa Rica,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-11-england-republic-of-ireland,1990-06-11,England,Republic of Ireland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-12-belgium-south-korea,1990-06-12,Belgium,South Korea,2.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-12-netherlands-egypt,1990-06-12,Netherlands,Egypt,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-13-uruguay-spain,1990-06-13,Uruguay,Spain,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-14-cameroon-romania,1990-06-14,Cameroon,Romania,2.0,1.0,Cameroon,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-14-italy-united-states,1990-06-14,Italy,United States,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-14-yugoslavia-colombia,1990-06-14,Yugoslavia,Colombia,1.0,0.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-15-austria-czechoslovakia,1990-06-15,Austria,Czechoslovakia,0.0,1.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-16-brazil-costa-rica,1990-06-16,Brazil,Costa Rica,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-16-england-netherlands,1990-06-16,England,Netherlands,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-16-sweden-scotland,1990-06-16,Sweden,Scotland,1.0,2.0,Scotland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-17-belgium-uruguay,1990-06-17,Belgium,Uruguay,3.0,1.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-17-republic-of-ireland-egypt,1990-06-17,Republic of Ireland,Egypt,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-17-south-korea-spain,1990-06-17,South Korea,Spain,1.0,3.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-18-argentina-romania,1990-06-18,Argentina,Romania,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-19-austria-united-states,1990-06-19,Austria,United States,2.0,1.0,Austria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-19-italy-czechoslovakia,1990-06-19,Italy,Czechoslovakia,2.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-19-yugoslavia-united-arab-emirates,1990-06-19,Yugoslavia,United Arab Emirates,4.0,1.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-20-brazil-scotland,1990-06-20,Brazil,Scotland,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-20-sweden-costa-rica,1990-06-20,Sweden,Costa Rica,1.0,2.0,Costa Rica,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-21-belgium-spain,1990-06-21,Belgium,Spain,1.0,2.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-21-england-egypt,1990-06-21,England,Egypt,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-21-republic-of-ireland-netherlands,1990-06-21,Republic of Ireland,Netherlands,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-21-south-korea-uruguay,1990-06-21,South Korea,Uruguay,0.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-23-cameroon-colombia,1990-06-23,Cameroon,Colombia,2.0,1.0,Cameroon,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-23-czechoslovakia-costa-rica,1990-06-23,Czechoslovakia,Costa Rica,4.0,1.0,Czechoslovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-24-brazil-argentina,1990-06-24,Brazil,Argentina,0.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-25-republic-of-ireland-romania,1990-06-25,Republic of Ireland,Romania,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-25-italy-uruguay,1990-06-25,Italy,Uruguay,2.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-26-england-belgium,1990-06-26,England,Belgium,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-26-spain-yugoslavia,1990-06-26,Spain,Yugoslavia,1.0,2.0,Yugoslavia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-30-italy-republic-of-ireland,1990-06-30,Italy,Republic of Ireland,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-06-30-yugoslavia-argentina,1990-06-30,Yugoslavia,Argentina,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-07-01-england-cameroon,1990-07-01,England,Cameroon,3.0,2.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-07-03-italy-argentina,1990-07-03,Italy,Argentina,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1990-07-07-italy-england,1990-07-07,Italy,England,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-17-germany-bolivia,1994-06-17,Germany,Bolivia,1.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-17-spain-south-korea,1994-06-17,Spain,South Korea,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-18-colombia-romania,1994-06-18,Colombia,Romania,1.0,3.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-18-italy-republic-of-ireland,1994-06-18,Italy,Republic of Ireland,0.0,1.0,Republic of Ireland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-18-united-states-switzerland,1994-06-18,United States,Switzerland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-19-belgium-morocco,1994-06-19,Belgium,Morocco,1.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-19-cameroon-sweden,1994-06-19,Cameroon,Sweden,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-19-norway-mexico,1994-06-19,Norway,Mexico,1.0,0.0,Norway,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-20-brazil-russia,1994-06-20,Brazil,Russia,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-20-netherlands-saudi-arabia,1994-06-20,Netherlands,Saudi Arabia,2.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-21-argentina-greece,1994-06-21,Argentina,Greece,4.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-21-germany-spain,1994-06-21,Germany,Spain,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-21-nigeria-bulgaria,1994-06-21,Nigeria,Bulgaria,3.0,0.0,Nigeria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-22-romania-switzerland,1994-06-22,Romania,Switzerland,1.0,4.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-22-united-states-colombia,1994-06-22,United States,Colombia,2.0,1.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-23-italy-norway,1994-06-23,Italy,Norway,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-23-south-korea-bolivia,1994-06-23,South Korea,Bolivia,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-24-brazil-cameroon,1994-06-24,Brazil,Cameroon,3.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-24-mexico-republic-of-ireland,1994-06-24,Mexico,Republic of Ireland,2.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-24-sweden-russia,1994-06-24,Sweden,Russia,3.0,1.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-25-argentina-nigeria,1994-06-25,Argentina,Nigeria,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-25-belgium-netherlands,1994-06-25,Belgium,Netherlands,1.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-25-saudi-arabia-morocco,1994-06-25,Saudi Arabia,Morocco,2.0,1.0,Saudi Arabia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-26-bulgaria-greece,1994-06-26,Bulgaria,Greece,4.0,0.0,Bulgaria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-26-switzerland-colombia,1994-06-26,Switzerland,Colombia,0.0,2.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-26-united-states-romania,1994-06-26,United States,Romania,0.0,1.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-27-bolivia-spain,1994-06-27,Bolivia,Spain,1.0,3.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-27-germany-south-korea,1994-06-27,Germany,South Korea,3.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-28-brazil-sweden,1994-06-28,Brazil,Sweden,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-28-republic-of-ireland-norway,1994-06-28,Republic of Ireland,Norway,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-28-italy-mexico,1994-06-28,Italy,Mexico,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-28-russia-cameroon,1994-06-28,Russia,Cameroon,6.0,1.0,Russia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-29-belgium-saudi-arabia,1994-06-29,Belgium,Saudi Arabia,0.0,1.0,Saudi Arabia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-29-morocco-netherlands,1994-06-29,Morocco,Netherlands,1.0,2.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-30-argentina-bulgaria,1994-06-30,Argentina,Bulgaria,0.0,2.0,Bulgaria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-06-30-greece-nigeria,1994-06-30,Greece,Nigeria,0.0,2.0,Nigeria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-02-germany-belgium,1994-07-02,Germany,Belgium,3.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-02-spain-switzerland,1994-07-02,Spain,Switzerland,3.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-03-romania-argentina,1994-07-03,Romania,Argentina,3.0,2.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-03-saudi-arabia-sweden,1994-07-03,Saudi Arabia,Sweden,1.0,3.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-04-netherlands-republic-of-ireland,1994-07-04,Netherlands,Republic of Ireland,2.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-04-brazil-united-states,1994-07-04,Brazil,United States,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-05-mexico-bulgaria,1994-07-05,Mexico,Bulgaria,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-05-nigeria-italy,1994-07-05,Nigeria,Italy,1.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-09-italy-spain,1994-07-09,Italy,Spain,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-09-netherlands-brazil,1994-07-09,Netherlands,Brazil,2.0,3.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-10-bulgaria-germany,1994-07-10,Bulgaria,Germany,2.0,1.0,Bulgaria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-10-romania-sweden,1994-07-10,Romania,Sweden,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-13-bulgaria-italy,1994-07-13,Bulgaria,Italy,1.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-13-sweden-brazil,1994-07-13,Sweden,Brazil,0.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-16-sweden-bulgaria,1994-07-16,Sweden,Bulgaria,4.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1994-07-17-brazil-italy,1994-07-17,Brazil,Italy,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-10-brazil-scotland,1998-06-10,Brazil,Scotland,2.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-10-morocco-norway,1998-06-10,Morocco,Norway,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-11-cameroon-austria,1998-06-11,Cameroon,Austria,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-11-italy-chile,1998-06-11,Italy,Chile,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-12-france-south-africa,1998-06-12,France,South Africa,3.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-12-paraguay-bulgaria,1998-06-12,Paraguay,Bulgaria,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-12-saudi-arabia-denmark,1998-06-12,Saudi Arabia,Denmark,0.0,1.0,Denmark,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-13-south-korea-mexico,1998-06-13,South Korea,Mexico,1.0,3.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-13-netherlands-belgium,1998-06-13,Netherlands,Belgium,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-13-spain-nigeria,1998-06-13,Spain,Nigeria,2.0,3.0,Nigeria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-14-argentina-japan,1998-06-14,Argentina,Japan,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-14-jamaica-croatia,1998-06-14,Jamaica,Croatia,1.0,3.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-15-england-tunisia,1998-06-15,England,Tunisia,2.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-15-germany-united-states,1998-06-15,Germany,United States,2.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-15-romania-colombia,1998-06-15,Romania,Colombia,1.0,0.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-16-brazil-morocco,1998-06-16,Brazil,Morocco,3.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-16-scotland-norway,1998-06-16,Scotland,Norway,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-17-chile-austria,1998-06-17,Chile,Austria,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-17-italy-cameroon,1998-06-17,Italy,Cameroon,3.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-18-france-saudi-arabia,1998-06-18,France,Saudi Arabia,4.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-18-south-africa-denmark,1998-06-18,South Africa,Denmark,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-19-nigeria-bulgaria,1998-06-19,Nigeria,Bulgaria,1.0,0.0,Nigeria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-19-spain-paraguay,1998-06-19,Spain,Paraguay,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-20-belgium-mexico,1998-06-20,Belgium,Mexico,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-20-japan-croatia,1998-06-20,Japan,Croatia,0.0,1.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-20-netherlands-south-korea,1998-06-20,Netherlands,South Korea,5.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-21-argentina-jamaica,1998-06-21,Argentina,Jamaica,5.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-21-united-states-iran,1998-06-21,United States,Iran,1.0,2.0,Iran,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-22-colombia-tunisia,1998-06-22,Colombia,Tunisia,1.0,0.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-22-romania-england,1998-06-22,Romania,England,2.0,1.0,Romania,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-23-brazil-norway,1998-06-23,Brazil,Norway,1.0,2.0,Norway,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-23-chile-cameroon,1998-06-23,Chile,Cameroon,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-23-italy-austria,1998-06-23,Italy,Austria,2.0,1.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-23-scotland-morocco,1998-06-23,Scotland,Morocco,0.0,3.0,Morocco,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-24-france-denmark,1998-06-24,France,Denmark,2.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-24-nigeria-paraguay,1998-06-24,Nigeria,Paraguay,1.0,3.0,Paraguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-24-south-africa-saudi-arabia,1998-06-24,South Africa,Saudi Arabia,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-24-spain-bulgaria,1998-06-24,Spain,Bulgaria,6.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-25-belgium-south-korea,1998-06-25,Belgium,South Korea,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-25-germany-iran,1998-06-25,Germany,Iran,2.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-25-netherlands-mexico,1998-06-25,Netherlands,Mexico,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-26-argentina-croatia,1998-06-26,Argentina,Croatia,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-26-colombia-england,1998-06-26,Colombia,England,0.0,2.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-26-japan-jamaica,1998-06-26,Japan,Jamaica,1.0,2.0,Jamaica,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-26-romania-tunisia,1998-06-26,Romania,Tunisia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-27-brazil-chile,1998-06-27,Brazil,Chile,4.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-27-italy-norway,1998-06-27,Italy,Norway,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-28-france-paraguay,1998-06-28,France,Paraguay,1.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-28-nigeria-denmark,1998-06-28,Nigeria,Denmark,1.0,4.0,Denmark,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-29-germany-mexico,1998-06-29,Germany,Mexico,2.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-30-argentina-england,1998-06-30,Argentina,England,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-06-30-romania-croatia,1998-06-30,Romania,Croatia,0.0,1.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-03-brazil-denmark,1998-07-03,Brazil,Denmark,3.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-03-italy-france,1998-07-03,Italy,France,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-04-germany-croatia,1998-07-04,Germany,Croatia,0.0,3.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-04-netherlands-argentina,1998-07-04,Netherlands,Argentina,2.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-07-brazil-netherlands,1998-07-07,Brazil,Netherlands,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-08-france-croatia,1998-07-08,France,Croatia,2.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-11-netherlands-croatia,1998-07-11,Netherlands,Croatia,1.0,2.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+1998-07-12-brazil-france,1998-07-12,Brazil,France,0.0,3.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-05-31-france-senegal,2002-05-31,France,Senegal,0.0,1.0,Senegal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-01-germany-saudi-arabia,2002-06-01,Germany,Saudi Arabia,8.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-01-republic-of-ireland-cameroon,2002-06-01,Republic of Ireland,Cameroon,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-01-uruguay-denmark,2002-06-01,Uruguay,Denmark,1.0,2.0,Denmark,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-02-argentina-nigeria,2002-06-02,Argentina,Nigeria,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-02-england-sweden,2002-06-02,England,Sweden,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-02-paraguay-south-africa,2002-06-02,Paraguay,South Africa,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-02-spain-slovenia,2002-06-02,Spain,Slovenia,3.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-03-brazil-turkey,2002-06-03,Brazil,Turkey,2.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-03-croatia-mexico,2002-06-03,Croatia,Mexico,0.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-03-italy-ecuador,2002-06-03,Italy,Ecuador,2.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-04-japan-belgium,2002-06-04,Japan,Belgium,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-04-south-korea-poland,2002-06-04,South Korea,Poland,2.0,0.0,South Korea,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-05-germany-republic-of-ireland,2002-06-05,Germany,Republic of Ireland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-05-russia-tunisia,2002-06-05,Russia,Tunisia,2.0,0.0,Russia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-05-united-states-portugal,2002-06-05,United States,Portugal,3.0,2.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-06-cameroon-saudi-arabia,2002-06-06,Cameroon,Saudi Arabia,1.0,0.0,Cameroon,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-06-denmark-senegal,2002-06-06,Denmark,Senegal,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-06-france-uruguay,2002-06-06,France,Uruguay,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-07-argentina-england,2002-06-07,Argentina,England,0.0,1.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-07-spain-paraguay,2002-06-07,Spain,Paraguay,3.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-07-sweden-nigeria,2002-06-07,Sweden,Nigeria,2.0,1.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-08-italy-croatia,2002-06-08,Italy,Croatia,1.0,2.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-08-south-africa-slovenia,2002-06-08,South Africa,Slovenia,1.0,0.0,South Africa,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-09-costa-rica-turkey,2002-06-09,Costa Rica,Turkey,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-09-japan-russia,2002-06-09,Japan,Russia,1.0,0.0,Japan,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-09-mexico-ecuador,2002-06-09,Mexico,Ecuador,2.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-10-south-korea-united-states,2002-06-10,South Korea,United States,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-10-portugal-poland,2002-06-10,Portugal,Poland,4.0,0.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-10-tunisia-belgium,2002-06-10,Tunisia,Belgium,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-11-cameroon-germany,2002-06-11,Cameroon,Germany,0.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-11-denmark-france,2002-06-11,Denmark,France,2.0,0.0,Denmark,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-11-saudi-arabia-republic-of-ireland,2002-06-11,Saudi Arabia,Republic of Ireland,0.0,3.0,Republic of Ireland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-11-senegal-uruguay,2002-06-11,Senegal,Uruguay,3.0,3.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-12-nigeria-england,2002-06-12,Nigeria,England,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-12-slovenia-paraguay,2002-06-12,Slovenia,Paraguay,1.0,3.0,Paraguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-12-south-africa-spain,2002-06-12,South Africa,Spain,2.0,3.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-12-sweden-argentina,2002-06-12,Sweden,Argentina,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-13-costa-rica-brazil,2002-06-13,Costa Rica,Brazil,2.0,5.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-13-ecuador-croatia,2002-06-13,Ecuador,Croatia,1.0,0.0,Ecuador,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-13-mexico-italy,2002-06-13,Mexico,Italy,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-14-belgium-russia,2002-06-14,Belgium,Russia,3.0,2.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-14-tunisia-japan,2002-06-14,Tunisia,Japan,0.0,2.0,Japan,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-14-portugal-south-korea,2002-06-14,Portugal,South Korea,0.0,1.0,South Korea,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-14-poland-united-states,2002-06-14,Poland,United States,3.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-15-denmark-england,2002-06-15,Denmark,England,0.0,3.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-15-germany-paraguay,2002-06-15,Germany,Paraguay,1.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-16-spain-republic-of-ireland,2002-06-16,Spain,Republic of Ireland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-16-sweden-senegal,2002-06-16,Sweden,Senegal,1.0,2.0,Senegal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-17-brazil-belgium,2002-06-17,Brazil,Belgium,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-17-mexico-united-states,2002-06-17,Mexico,United States,0.0,2.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-18-japan-turkey,2002-06-18,Japan,Turkey,0.0,1.0,Turkey,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-18-south-korea-italy,2002-06-18,South Korea,Italy,2.0,1.0,South Korea,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-21-england-brazil,2002-06-21,England,Brazil,1.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-21-germany-united-states,2002-06-21,Germany,United States,1.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-22-spain-south-korea,2002-06-22,Spain,South Korea,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-22-senegal-turkey,2002-06-22,Senegal,Turkey,0.0,1.0,Turkey,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-25-germany-south-korea,2002-06-25,Germany,South Korea,1.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-26-brazil-turkey,2002-06-26,Brazil,Turkey,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-29-south-korea-turkey,2002-06-29,South Korea,Turkey,2.0,3.0,Turkey,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2002-06-30-germany-brazil,2002-06-30,Germany,Brazil,0.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-09-germany-costa-rica,2006-06-09,Germany,Costa Rica,4.0,2.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-09-poland-ecuador,2006-06-09,Poland,Ecuador,0.0,2.0,Ecuador,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-10-argentina-ivory-coast,2006-06-10,Argentina,Ivory Coast,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-10-england-paraguay,2006-06-10,England,Paraguay,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-10-trinidad-and-tobago-sweden,2006-06-10,Trinidad and Tobago,Sweden,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-11-angola-portugal,2006-06-11,Angola,Portugal,0.0,1.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-11-mexico-iran,2006-06-11,Mexico,Iran,3.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-12-australia-japan,2006-06-12,Australia,Japan,3.0,1.0,Australia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-12-italy-ghana,2006-06-12,Italy,Ghana,2.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-12-united-states-czech-republic,2006-06-12,United States,Czech Republic,0.0,3.0,Czech Republic,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-13-brazil-croatia,2006-06-13,Brazil,Croatia,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-13-france-switzerland,2006-06-13,France,Switzerland,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-13-south-korea-togo,2006-06-13,South Korea,Togo,2.0,1.0,South Korea,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-14-germany-poland,2006-06-14,Germany,Poland,1.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-14-spain-ukraine,2006-06-14,Spain,Ukraine,4.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-14-tunisia-saudi-arabia,2006-06-14,Tunisia,Saudi Arabia,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-15-ecuador-costa-rica,2006-06-15,Ecuador,Costa Rica,3.0,0.0,Ecuador,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-15-england-trinidad-and-tobago,2006-06-15,England,Trinidad and Tobago,2.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-15-sweden-paraguay,2006-06-15,Sweden,Paraguay,1.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-16-mexico-angola,2006-06-16,Mexico,Angola,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-16-netherlands-ivory-coast,2006-06-16,Netherlands,Ivory Coast,2.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-17-czech-republic-ghana,2006-06-17,Czech Republic,Ghana,0.0,2.0,Ghana,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-17-italy-united-states,2006-06-17,Italy,United States,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-17-portugal-iran,2006-06-17,Portugal,Iran,2.0,0.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-18-brazil-australia,2006-06-18,Brazil,Australia,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-18-france-south-korea,2006-06-18,France,South Korea,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-18-japan-croatia,2006-06-18,Japan,Croatia,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-19-saudi-arabia-ukraine,2006-06-19,Saudi Arabia,Ukraine,0.0,4.0,Ukraine,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-19-spain-tunisia,2006-06-19,Spain,Tunisia,3.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-19-togo-switzerland,2006-06-19,Togo,Switzerland,0.0,2.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-20-costa-rica-poland,2006-06-20,Costa Rica,Poland,1.0,2.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-20-ecuador-germany,2006-06-20,Ecuador,Germany,0.0,3.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-20-paraguay-trinidad-and-tobago,2006-06-20,Paraguay,Trinidad and Tobago,2.0,0.0,Paraguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-20-sweden-england,2006-06-20,Sweden,England,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-21-iran-angola,2006-06-21,Iran,Angola,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-21-netherlands-argentina,2006-06-21,Netherlands,Argentina,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-21-portugal-mexico,2006-06-21,Portugal,Mexico,2.0,1.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-22-croatia-australia,2006-06-22,Croatia,Australia,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-22-czech-republic-italy,2006-06-22,Czech Republic,Italy,0.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-22-ghana-united-states,2006-06-22,Ghana,United States,2.0,1.0,Ghana,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-22-japan-brazil,2006-06-22,Japan,Brazil,1.0,4.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-23-saudi-arabia-spain,2006-06-23,Saudi Arabia,Spain,0.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-23-switzerland-south-korea,2006-06-23,Switzerland,South Korea,2.0,0.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-23-togo-france,2006-06-23,Togo,France,0.0,2.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-23-ukraine-tunisia,2006-06-23,Ukraine,Tunisia,1.0,0.0,Ukraine,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-24-argentina-mexico,2006-06-24,Argentina,Mexico,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-24-germany-sweden,2006-06-24,Germany,Sweden,2.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-25-england-ecuador,2006-06-25,England,Ecuador,1.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-25-portugal-netherlands,2006-06-25,Portugal,Netherlands,1.0,0.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-26-italy-australia,2006-06-26,Italy,Australia,1.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-26-switzerland-ukraine,2006-06-26,Switzerland,Ukraine,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-27-brazil-ghana,2006-06-27,Brazil,Ghana,3.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-27-spain-france,2006-06-27,Spain,France,1.0,3.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-30-germany-argentina,2006-06-30,Germany,Argentina,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-06-30-italy-ukraine,2006-06-30,Italy,Ukraine,3.0,0.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-07-01-brazil-france,2006-07-01,Brazil,France,0.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-07-01-england-portugal,2006-07-01,England,Portugal,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-07-04-germany-italy,2006-07-04,Germany,Italy,0.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-07-05-portugal-france,2006-07-05,Portugal,France,0.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-07-08-germany-portugal,2006-07-08,Germany,Portugal,3.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2006-07-09-italy-france,2006-07-09,Italy,France,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-11-south-africa-mexico,2010-06-11,South Africa,Mexico,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-11-uruguay-france,2010-06-11,Uruguay,France,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-12-argentina-nigeria,2010-06-12,Argentina,Nigeria,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-12-england-united-states,2010-06-12,England,United States,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-12-south-korea-greece,2010-06-12,South Korea,Greece,2.0,0.0,South Korea,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-13-algeria-slovenia,2010-06-13,Algeria,Slovenia,0.0,1.0,Slovenia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-13-germany-australia,2010-06-13,Germany,Australia,4.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-13-serbia-ghana,2010-06-13,Serbia,Ghana,0.0,1.0,Ghana,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-14-italy-paraguay,2010-06-14,Italy,Paraguay,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-14-japan-cameroon,2010-06-14,Japan,Cameroon,1.0,0.0,Japan,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-14-netherlands-denmark,2010-06-14,Netherlands,Denmark,2.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-15-ivory-coast-portugal,2010-06-15,Ivory Coast,Portugal,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-15-new-zealand-slovakia,2010-06-15,New Zealand,Slovakia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-16-honduras-chile,2010-06-16,Honduras,Chile,0.0,1.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-16-south-africa-uruguay,2010-06-16,South Africa,Uruguay,0.0,3.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-16-spain-switzerland,2010-06-16,Spain,Switzerland,0.0,1.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-17-argentina-south-korea,2010-06-17,Argentina,South Korea,4.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-17-france-mexico,2010-06-17,France,Mexico,0.0,2.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-17-greece-nigeria,2010-06-17,Greece,Nigeria,2.0,1.0,Greece,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-18-england-algeria,2010-06-18,England,Algeria,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-18-germany-serbia,2010-06-18,Germany,Serbia,0.0,1.0,Serbia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-18-slovenia-united-states,2010-06-18,Slovenia,United States,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-19-cameroon-denmark,2010-06-19,Cameroon,Denmark,1.0,2.0,Denmark,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-19-ghana-australia,2010-06-19,Ghana,Australia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-19-netherlands-japan,2010-06-19,Netherlands,Japan,1.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-20-brazil-ivory-coast,2010-06-20,Brazil,Ivory Coast,3.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-20-italy-new-zealand,2010-06-20,Italy,New Zealand,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-20-slovakia-paraguay,2010-06-20,Slovakia,Paraguay,0.0,2.0,Paraguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-21-chile-switzerland,2010-06-21,Chile,Switzerland,1.0,0.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-21-spain-honduras,2010-06-21,Spain,Honduras,2.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-22-greece-argentina,2010-06-22,Greece,Argentina,0.0,2.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-22-mexico-uruguay,2010-06-22,Mexico,Uruguay,0.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-22-nigeria-south-korea,2010-06-22,Nigeria,South Korea,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-22-france-south-africa,2010-06-22,France,South Africa,1.0,2.0,South Africa,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-23-australia-serbia,2010-06-23,Australia,Serbia,2.0,1.0,Australia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-23-ghana-germany,2010-06-23,Ghana,Germany,0.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-23-slovenia-england,2010-06-23,Slovenia,England,0.0,1.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-23-united-states-algeria,2010-06-23,United States,Algeria,1.0,0.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-24-cameroon-netherlands,2010-06-24,Cameroon,Netherlands,1.0,2.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-24-denmark-japan,2010-06-24,Denmark,Japan,1.0,3.0,Japan,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-24-paraguay-new-zealand,2010-06-24,Paraguay,New Zealand,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-24-slovakia-italy,2010-06-24,Slovakia,Italy,3.0,2.0,Slovakia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-25-chile-spain,2010-06-25,Chile,Spain,1.0,2.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-25-portugal-brazil,2010-06-25,Portugal,Brazil,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-25-switzerland-honduras,2010-06-25,Switzerland,Honduras,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-26-uruguay-south-korea,2010-06-26,Uruguay,South Korea,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-26-united-states-ghana,2010-06-26,United States,Ghana,1.0,2.0,Ghana,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-27-argentina-mexico,2010-06-27,Argentina,Mexico,3.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-27-germany-england,2010-06-27,Germany,England,4.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-28-brazil-chile,2010-06-28,Brazil,Chile,3.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-28-netherlands-slovakia,2010-06-28,Netherlands,Slovakia,2.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-29-paraguay-japan,2010-06-29,Paraguay,Japan,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-06-29-spain-portugal,2010-06-29,Spain,Portugal,1.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-07-02-netherlands-brazil,2010-07-02,Netherlands,Brazil,2.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-07-02-uruguay-ghana,2010-07-02,Uruguay,Ghana,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-07-03-argentina-germany,2010-07-03,Argentina,Germany,0.0,4.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-07-03-paraguay-spain,2010-07-03,Paraguay,Spain,0.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-07-06-uruguay-netherlands,2010-07-06,Uruguay,Netherlands,2.0,3.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-07-07-germany-spain,2010-07-07,Germany,Spain,0.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-07-10-uruguay-germany,2010-07-10,Uruguay,Germany,2.0,3.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2010-07-11-netherlands-spain,2010-07-11,Netherlands,Spain,0.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-12-brazil-croatia,2014-06-12,Brazil,Croatia,3.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-13-chile-australia,2014-06-13,Chile,Australia,3.0,1.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-13-mexico-cameroon,2014-06-13,Mexico,Cameroon,1.0,0.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-13-spain-netherlands,2014-06-13,Spain,Netherlands,1.0,5.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-14-colombia-greece,2014-06-14,Colombia,Greece,3.0,0.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-14-england-italy,2014-06-14,England,Italy,1.0,2.0,Italy,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-14-ivory-coast-japan,2014-06-14,Ivory Coast,Japan,2.0,1.0,Ivory Coast,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-14-uruguay-costa-rica,2014-06-14,Uruguay,Costa Rica,1.0,3.0,Costa Rica,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-15-argentina-bosnia-and-herzegovina,2014-06-15,Argentina,Bosnia and Herzegovina,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-15-france-honduras,2014-06-15,France,Honduras,3.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-15-switzerland-ecuador,2014-06-15,Switzerland,Ecuador,2.0,1.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-16-germany-portugal,2014-06-16,Germany,Portugal,4.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-16-ghana-united-states,2014-06-16,Ghana,United States,1.0,2.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-16-iran-nigeria,2014-06-16,Iran,Nigeria,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-17-belgium-algeria,2014-06-17,Belgium,Algeria,2.0,1.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-17-brazil-mexico,2014-06-17,Brazil,Mexico,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-17-russia-south-korea,2014-06-17,Russia,South Korea,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-18-australia-netherlands,2014-06-18,Australia,Netherlands,2.0,3.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-18-cameroon-croatia,2014-06-18,Cameroon,Croatia,0.0,4.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-18-spain-chile,2014-06-18,Spain,Chile,0.0,2.0,Chile,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-19-colombia-ivory-coast,2014-06-19,Colombia,Ivory Coast,2.0,1.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-19-japan-greece,2014-06-19,Japan,Greece,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-19-uruguay-england,2014-06-19,Uruguay,England,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-20-honduras-ecuador,2014-06-20,Honduras,Ecuador,1.0,2.0,Ecuador,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-20-italy-costa-rica,2014-06-20,Italy,Costa Rica,0.0,1.0,Costa Rica,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-20-switzerland-france,2014-06-20,Switzerland,France,2.0,5.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-21-argentina-iran,2014-06-21,Argentina,Iran,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-21-germany-ghana,2014-06-21,Germany,Ghana,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-21-nigeria-bosnia-and-herzegovina,2014-06-21,Nigeria,Bosnia and Herzegovina,1.0,0.0,Nigeria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-22-belgium-russia,2014-06-22,Belgium,Russia,1.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-22-south-korea-algeria,2014-06-22,South Korea,Algeria,2.0,4.0,Algeria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-22-united-states-portugal,2014-06-22,United States,Portugal,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-23-australia-spain,2014-06-23,Australia,Spain,0.0,3.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-23-cameroon-brazil,2014-06-23,Cameroon,Brazil,1.0,4.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-23-croatia-mexico,2014-06-23,Croatia,Mexico,1.0,3.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-23-netherlands-chile,2014-06-23,Netherlands,Chile,2.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-24-costa-rica-england,2014-06-24,Costa Rica,England,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-24-greece-ivory-coast,2014-06-24,Greece,Ivory Coast,2.0,1.0,Greece,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-24-italy-uruguay,2014-06-24,Italy,Uruguay,0.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-24-japan-colombia,2014-06-24,Japan,Colombia,1.0,4.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-25-bosnia-and-herzegovina-iran,2014-06-25,Bosnia and Herzegovina,Iran,3.0,1.0,Bosnia and Herzegovina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-25-ecuador-france,2014-06-25,Ecuador,France,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-25-honduras-switzerland,2014-06-25,Honduras,Switzerland,0.0,3.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-25-nigeria-argentina,2014-06-25,Nigeria,Argentina,2.0,3.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-26-algeria-russia,2014-06-26,Algeria,Russia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-26-south-korea-belgium,2014-06-26,South Korea,Belgium,0.0,1.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-26-portugal-ghana,2014-06-26,Portugal,Ghana,2.0,1.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-26-united-states-germany,2014-06-26,United States,Germany,0.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-28-brazil-chile,2014-06-28,Brazil,Chile,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-28-colombia-uruguay,2014-06-28,Colombia,Uruguay,2.0,0.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-29-costa-rica-greece,2014-06-29,Costa Rica,Greece,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-29-netherlands-mexico,2014-06-29,Netherlands,Mexico,2.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-30-france-nigeria,2014-06-30,France,Nigeria,2.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-06-30-germany-algeria,2014-06-30,Germany,Algeria,2.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-01-argentina-switzerland,2014-07-01,Argentina,Switzerland,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-01-belgium-united-states,2014-07-01,Belgium,United States,2.0,1.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-04-brazil-colombia,2014-07-04,Brazil,Colombia,2.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-04-france-germany,2014-07-04,France,Germany,0.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-05-argentina-belgium,2014-07-05,Argentina,Belgium,1.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-05-netherlands-costa-rica,2014-07-05,Netherlands,Costa Rica,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-08-brazil-germany,2014-07-08,Brazil,Germany,1.0,7.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-09-netherlands-argentina,2014-07-09,Netherlands,Argentina,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-12-brazil-netherlands,2014-07-12,Brazil,Netherlands,0.0,3.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2014-07-13-germany-argentina,2014-07-13,Germany,Argentina,1.0,0.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-14-russia-saudi-arabia,2018-06-14,Russia,Saudi Arabia,5.0,0.0,Russia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-15-egypt-uruguay,2018-06-15,Egypt,Uruguay,0.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-15-morocco-iran,2018-06-15,Morocco,Iran,0.0,1.0,Iran,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-15-portugal-spain,2018-06-15,Portugal,Spain,3.0,3.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-16-france-australia,2018-06-16,France,Australia,2.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-16-argentina-iceland,2018-06-16,Argentina,Iceland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-16-peru-denmark,2018-06-16,Peru,Denmark,0.0,1.0,Denmark,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-16-croatia-nigeria,2018-06-16,Croatia,Nigeria,2.0,0.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-17-costa-rica-serbia,2018-06-17,Costa Rica,Serbia,0.0,1.0,Serbia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-17-germany-mexico,2018-06-17,Germany,Mexico,0.0,1.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-17-brazil-switzerland,2018-06-17,Brazil,Switzerland,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-18-sweden-south-korea,2018-06-18,Sweden,South Korea,1.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-18-belgium-panama,2018-06-18,Belgium,Panama,3.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-18-tunisia-england,2018-06-18,Tunisia,England,1.0,2.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-19-colombia-japan,2018-06-19,Colombia,Japan,1.0,2.0,Japan,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-19-poland-senegal,2018-06-19,Poland,Senegal,1.0,2.0,Senegal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-19-russia-egypt,2018-06-19,Russia,Egypt,3.0,1.0,Russia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-20-portugal-morocco,2018-06-20,Portugal,Morocco,1.0,0.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-20-uruguay-saudi-arabia,2018-06-20,Uruguay,Saudi Arabia,1.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-20-iran-spain,2018-06-20,Iran,Spain,0.0,1.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-21-denmark-australia,2018-06-21,Denmark,Australia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-21-france-peru,2018-06-21,France,Peru,1.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-21-argentina-croatia,2018-06-21,Argentina,Croatia,0.0,3.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-22-brazil-costa-rica,2018-06-22,Brazil,Costa Rica,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-22-nigeria-iceland,2018-06-22,Nigeria,Iceland,2.0,0.0,Nigeria,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-22-serbia-switzerland,2018-06-22,Serbia,Switzerland,1.0,2.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-23-belgium-tunisia,2018-06-23,Belgium,Tunisia,5.0,2.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-23-south-korea-mexico,2018-06-23,South Korea,Mexico,1.0,2.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-23-germany-sweden,2018-06-23,Germany,Sweden,2.0,1.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-24-england-panama,2018-06-24,England,Panama,6.0,1.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-24-japan-senegal,2018-06-24,Japan,Senegal,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-24-poland-colombia,2018-06-24,Poland,Colombia,0.0,3.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-25-uruguay-russia,2018-06-25,Uruguay,Russia,3.0,0.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-25-saudi-arabia-egypt,2018-06-25,Saudi Arabia,Egypt,2.0,1.0,Saudi Arabia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-25-spain-morocco,2018-06-25,Spain,Morocco,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-25-iran-portugal,2018-06-25,Iran,Portugal,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-26-australia-peru,2018-06-26,Australia,Peru,0.0,2.0,Peru,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-26-denmark-france,2018-06-26,Denmark,France,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-26-nigeria-argentina,2018-06-26,Nigeria,Argentina,1.0,2.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-26-iceland-croatia,2018-06-26,Iceland,Croatia,1.0,2.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-27-south-korea-germany,2018-06-27,South Korea,Germany,2.0,0.0,South Korea,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-27-mexico-sweden,2018-06-27,Mexico,Sweden,0.0,3.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-27-serbia-brazil,2018-06-27,Serbia,Brazil,0.0,2.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-27-switzerland-costa-rica,2018-06-27,Switzerland,Costa Rica,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-28-japan-poland,2018-06-28,Japan,Poland,0.0,1.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-28-senegal-colombia,2018-06-28,Senegal,Colombia,0.0,1.0,Colombia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-28-panama-tunisia,2018-06-28,Panama,Tunisia,1.0,2.0,Tunisia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-28-england-belgium,2018-06-28,England,Belgium,0.0,1.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-30-france-argentina,2018-06-30,France,Argentina,4.0,3.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-06-30-uruguay-portugal,2018-06-30,Uruguay,Portugal,2.0,1.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-01-spain-russia,2018-07-01,Spain,Russia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-01-croatia-denmark,2018-07-01,Croatia,Denmark,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-02-brazil-mexico,2018-07-02,Brazil,Mexico,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-02-belgium-japan,2018-07-02,Belgium,Japan,3.0,2.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-03-sweden-switzerland,2018-07-03,Sweden,Switzerland,1.0,0.0,Sweden,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-03-colombia-england,2018-07-03,Colombia,England,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-06-uruguay-france,2018-07-06,Uruguay,France,0.0,2.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-06-brazil-belgium,2018-07-06,Brazil,Belgium,1.0,2.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-07-sweden-england,2018-07-07,Sweden,England,0.0,2.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-07-russia-croatia,2018-07-07,Russia,Croatia,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-10-france-belgium,2018-07-10,France,Belgium,1.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-11-croatia-england,2018-07-11,Croatia,England,2.0,1.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-14-belgium-england,2018-07-14,Belgium,England,2.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2018-07-15-france-croatia,2018-07-15,France,Croatia,4.0,2.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-20-qatar-ecuador,2022-11-20,Qatar,Ecuador,0.0,2.0,Ecuador,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-21-senegal-netherlands,2022-11-21,Senegal,Netherlands,0.0,2.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-21-england-iran,2022-11-21,England,Iran,6.0,2.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-21-united-states-wales,2022-11-21,United States,Wales,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-22-argentina-saudi-arabia,2022-11-22,Argentina,Saudi Arabia,1.0,2.0,Saudi Arabia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-22-mexico-poland,2022-11-22,Mexico,Poland,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-22-denmark-tunisia,2022-11-22,Denmark,Tunisia,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-22-france-australia,2022-11-22,France,Australia,4.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-23-germany-japan,2022-11-23,Germany,Japan,1.0,2.0,Japan,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-23-spain-costa-rica,2022-11-23,Spain,Costa Rica,7.0,0.0,Spain,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-23-morocco-croatia,2022-11-23,Morocco,Croatia,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-23-belgium-canada,2022-11-23,Belgium,Canada,1.0,0.0,Belgium,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-24-switzerland-cameroon,2022-11-24,Switzerland,Cameroon,1.0,0.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-24-brazil-serbia,2022-11-24,Brazil,Serbia,2.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-24-uruguay-south-korea,2022-11-24,Uruguay,South Korea,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-24-portugal-ghana,2022-11-24,Portugal,Ghana,3.0,2.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-25-qatar-senegal,2022-11-25,Qatar,Senegal,1.0,3.0,Senegal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-25-netherlands-ecuador,2022-11-25,Netherlands,Ecuador,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-25-wales-iran,2022-11-25,Wales,Iran,0.0,2.0,Iran,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-25-england-united-states,2022-11-25,England,United States,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-26-poland-saudi-arabia,2022-11-26,Poland,Saudi Arabia,2.0,0.0,Poland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-26-argentina-mexico,2022-11-26,Argentina,Mexico,2.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-26-tunisia-australia,2022-11-26,Tunisia,Australia,0.0,1.0,Australia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-26-france-denmark,2022-11-26,France,Denmark,2.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-27-japan-costa-rica,2022-11-27,Japan,Costa Rica,0.0,1.0,Costa Rica,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-27-spain-germany,2022-11-27,Spain,Germany,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-27-belgium-morocco,2022-11-27,Belgium,Morocco,0.0,2.0,Morocco,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-27-croatia-canada,2022-11-27,Croatia,Canada,4.0,1.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-28-cameroon-serbia,2022-11-28,Cameroon,Serbia,3.0,3.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-28-brazil-switzerland,2022-11-28,Brazil,Switzerland,1.0,0.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-28-south-korea-ghana,2022-11-28,South Korea,Ghana,2.0,3.0,Ghana,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-28-portugal-uruguay,2022-11-28,Portugal,Uruguay,2.0,0.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-29-ecuador-senegal,2022-11-29,Ecuador,Senegal,1.0,2.0,Senegal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-29-netherlands-qatar,2022-11-29,Netherlands,Qatar,2.0,0.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-29-wales-england,2022-11-29,Wales,England,0.0,3.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-29-iran-united-states,2022-11-29,Iran,United States,0.0,1.0,United States,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-30-poland-argentina,2022-11-30,Poland,Argentina,0.0,2.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-30-saudi-arabia-mexico,2022-11-30,Saudi Arabia,Mexico,1.0,2.0,Mexico,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-30-australia-denmark,2022-11-30,Australia,Denmark,1.0,0.0,Australia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-11-30-tunisia-france,2022-11-30,Tunisia,France,1.0,0.0,Tunisia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-01-japan-spain,2022-12-01,Japan,Spain,2.0,1.0,Japan,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-01-costa-rica-germany,2022-12-01,Costa Rica,Germany,2.0,4.0,Germany,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-01-croatia-belgium,2022-12-01,Croatia,Belgium,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-01-canada-morocco,2022-12-01,Canada,Morocco,1.0,2.0,Morocco,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-02-serbia-switzerland,2022-12-02,Serbia,Switzerland,2.0,3.0,Switzerland,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-02-cameroon-brazil,2022-12-02,Cameroon,Brazil,1.0,0.0,Cameroon,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-02-ghana-uruguay,2022-12-02,Ghana,Uruguay,0.0,2.0,Uruguay,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-02-south-korea-portugal,2022-12-02,South Korea,Portugal,2.0,1.0,South Korea,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-03-netherlands-united-states,2022-12-03,Netherlands,United States,3.0,1.0,Netherlands,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-03-argentina-australia,2022-12-03,Argentina,Australia,2.0,1.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-04-france-poland,2022-12-04,France,Poland,3.0,1.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-04-england-senegal,2022-12-04,England,Senegal,3.0,0.0,England,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-05-japan-croatia,2022-12-05,Japan,Croatia,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-05-brazil-south-korea,2022-12-05,Brazil,South Korea,4.0,1.0,Brazil,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-06-morocco-spain,2022-12-06,Morocco,Spain,0.0,0.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-06-portugal-switzerland,2022-12-06,Portugal,Switzerland,6.0,1.0,Portugal,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-09-croatia-brazil,2022-12-09,Croatia,Brazil,1.0,1.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-09-netherlands-argentina,2022-12-09,Netherlands,Argentina,2.0,2.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-10-morocco-portugal,2022-12-10,Morocco,Portugal,1.0,0.0,Morocco,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-10-england-france,2022-12-10,England,France,1.0,2.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-13-argentina-croatia,2022-12-13,Argentina,Croatia,3.0,0.0,Argentina,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-14-france-morocco,2022-12-14,France,Morocco,2.0,0.0,France,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-17-croatia-morocco,2022-12-17,Croatia,Morocco,2.0,1.0,Croatia,False,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00
+2022-12-18-argentina-france,2022-12-18,Argentina,France,3.0,3.0,Draw,True,,,,,,,kaggle_world_cup_historical,2026-07-05T21:50:39+00:00

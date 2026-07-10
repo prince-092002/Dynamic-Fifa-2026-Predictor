@@ -1,0 +1,7 @@
+{
+  "response": [],
+  "errors": {
+    "request_failed": "HTTPSConnectionPool(host='v3.football.api-sports.io', port=443): Max retries exceeded with url: /fixtures?league=1&season=2026 (Caused by NewConnectionError(\"HTTPSConnection(host='v3.football.api-sports.io', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions\"))"
+  },
+  "source": "api_football"
+}

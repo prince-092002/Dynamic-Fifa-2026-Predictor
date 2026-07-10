@@ -1,0 +1,68 @@
+"""Technical audit: latest run manifest and public artifact downloads."""
+
+import json
+import sys
+from pathlib import Path
+
+import pandas as pd
+import streamlit as st
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from data.loaders import PUBLIC_DATA, load_json, missing, source_label  # noqa: E402
+
+st.set_page_config(page_title="Technical Audit", page_icon="🔍", layout="wide")
+st.title("🔍 Technical Audit")
+
+manifest = load_json("latest_run_manifest.json")
+if not manifest:
+    missing("Run manifest unavailable. Run the live forecast pipeline first.")
+    st.stop()
+
+left, mid, right = st.columns(3)
+left.metric("Run ID", str(manifest.get("run_id", "—"))[:28])
+mid.metric("Run started", str(manifest.get("run_started_at", "—"))[:19].replace("T", " "))
+right.metric("Run completed", str(manifest.get("run_completed_at", "—"))[:19].replace("T", " "))
+left, mid, right, far = st.columns(4)
+left.metric("Simulations", f"{manifest.get('simulation_count', 0):,}")
+mid.metric("Seed", manifest.get("seed", "—"))
+right.metric("Model", manifest.get("selected_model", "—"))
+far.metric("Provider", manifest.get("provider", "—"))
+left, mid, right, far = st.columns(4)
+left.metric("Live validation", manifest.get("live_forecast_validation", "—"))
+mid.metric("Broader validation", manifest.get("broader_refresh_validation", "—"))
+right.metric("Data source mode", manifest.get("data_source_mode", "—"))
+far.metric("Provider data age", f"{manifest.get('provider_data_age_minutes', '—')} min")
+
+st.subheader("Probability-source counts (latest run)")
+sources = manifest.get("probability_sources") or {}
+if sources:
+    frame = pd.DataFrame([{"Source": key, "Label": source_label(key), "Decisions": value} for key, value in sources.items()]).sort_values("Decisions", ascending=False)
+    st.dataframe(frame, use_container_width=True, hide_index=True)
+else:
+    missing("No probability-source counts in the manifest.")
+
+st.subheader("Top results (latest run)")
+st.markdown(f"- Top champion: **{manifest.get('top_champion', '—')}**")
+st.markdown(f"- Top finalist pair: **{manifest.get('top_finalist_pair', '—')}**")
+transition = manifest.get("phase_transition") or {}
+st.markdown(f"- Phase: **{transition.get('previous_phase') or '—'} → {transition.get('current_phase') or '—'}** (changed: {transition.get('phase_changed', '—')})")
+
+st.subheader("Download public artifacts")
+downloadables = [
+    "champion_forecast.json",
+    "finalist_forecast.json",
+    "finalist_pairs.json",
+    "matchup_predictions.json",
+    "latest_run_manifest.json",
+    "probability_source_history.json",
+    "system_health.json",
+]
+columns = st.columns(3)
+for index, name in enumerate(downloadables):
+    path = PUBLIC_DATA / name
+    if path.exists():
+        columns[index % 3].download_button(f"⬇ {name}", data=path.read_text(encoding="utf-8"), file_name=name, mime="application/json")
+st.caption("All downloads are public-safe exports. Raw provider payloads, credentials, and local paths are never exposed.")
+
+with st.expander("Full run manifest (JSON)"):
+    st.json(manifest)

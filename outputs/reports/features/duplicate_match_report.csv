@@ -1,0 +1,76 @@
+duplicate_type,match_id,date,team_a,team_b,team_a_goals,team_b_goals,source
+same_date_team_a_team_b,1930-07-13-france-mexico-fifa-world-cup,1930-07-13,France,Mexico,4.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-15-argentina-france-fifa-world-cup,1930-07-15,Argentina,France,1.0,0.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-16-chile-mexico-fifa-world-cup,1930-07-16,Chile,Mexico,3.0,0.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-18-uruguay-peru-fifa-world-cup,1930-07-18,Uruguay,Peru,1.0,0.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-19-argentina-mexico-fifa-world-cup,1930-07-19,Argentina,Mexico,6.0,3.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-19-chile-france-fifa-world-cup,1930-07-19,Chile,France,1.0,0.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-21-uruguay-romania-fifa-world-cup,1930-07-21,Uruguay,Romania,4.0,0.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-22-argentina-chile-fifa-world-cup,1930-07-22,Argentina,Chile,3.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-26-argentina-united-states-fifa-world-cup,1930-07-26,Argentina,United States,6.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-27-uruguay-yugoslavia-fifa-world-cup,1930-07-27,Uruguay,Yugoslavia,6.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1930-07-30-uruguay-argentina-fifa-world-cup,1930-07-30,Uruguay,Argentina,4.0,2.0,kaggle_international_results
+same_date_team_a_team_b,1934-05-27-austria-france-fifa-world-cup,1934-05-27,Austria,France,3.0,2.0,kaggle_international_results
+same_date_team_a_team_b,1934-05-27-czechoslovakia-romania-fifa-world-cup,1934-05-27,Czechoslovakia,Romania,2.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1934-05-27-italy-united-states-fifa-world-cup,1934-05-27,Italy,United States,7.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1934-05-31-austria-hungary-fifa-world-cup,1934-05-31,Austria,Hungary,2.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1934-05-31-czechoslovakia-switzerland-fifa-world-cup,1934-05-31,Czechoslovakia,Switzerland,3.0,2.0,kaggle_international_results
+same_date_team_a_team_b,1934-05-31-germany-sweden-fifa-world-cup,1934-05-31,Germany,Sweden,2.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1934-05-31-italy-spain-fifa-world-cup,1934-05-31,Italy,Spain,1.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1934-06-01-italy-spain-fifa-world-cup,1934-06-01,Italy,Spain,1.0,0.0,kaggle_international_results
+same_date_team_a_team_b,1934-06-03-czechoslovakia-germany-fifa-world-cup,1934-06-03,Czechoslovakia,Germany,3.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1934-06-03-italy-austria-fifa-world-cup,1934-06-03,Italy,Austria,1.0,0.0,kaggle_international_results
+same_date_team_a_team_b,1934-06-10-italy-czechoslovakia-fifa-world-cup,1934-06-10,Italy,Czechoslovakia,2.0,1.0,kaggle_international_results
+same_date_team_a_team_b,1938-06-05-brazil-poland-fifa-world-cup,1938-06-05,Brazil,Poland,6.0,5.0,kaggle_international_results
+same_date_team_a_team_b,1938-06-05-cuba-romania-fifa-world-cup,1938-06-05,Cuba,Romania,3.0,3.0,kaggle_international_results
+same_date_team_a_team_b,1938-06-05-czechoslovakia-netherlands-fifa-world-cup,1938-06-05,Czechoslovakia,Netherlands,3.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1916-08-15-argentina-uruguay-copa-newton,1916-08-15,Argentina,Uruguay,3.0,1.0,kaggle_international_results
+same_date_team_b_team_a,1916-08-15-uruguay-argentina-copa-lipton,1916-08-15,Uruguay,Argentina,1.0,2.0,kaggle_international_results
+same_date_team_b_team_a,1916-10-01-argentina-uruguay-friendly,1916-10-01,Argentina,Uruguay,7.0,2.0,kaggle_international_results
+same_date_team_b_team_a,1916-10-01-uruguay-argentina-copa-premio-honor-uruguayo,1916-10-01,Uruguay,Argentina,0.0,1.0,kaggle_international_results
+same_date_team_b_team_a,1921-05-30-japan-philippines-friendly,1921-05-30,Japan,Philippines,0.0,3.0,kaggle_international_results
+same_date_team_b_team_a,1921-05-30-philippines-japan-far-eastern-championship-games,1921-05-30,Philippines,Japan,3.0,1.0,kaggle_international_results
+same_date_team_b_team_a,1924-05-25-argentina-uruguay-copa-newton,1924-05-25,Argentina,Uruguay,4.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1924-05-25-uruguay-argentina-copa-lipton,1924-05-25,Uruguay,Argentina,2.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1925-05-20-china-japan-friendly,1925-05-20,China,Japan,2.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1925-05-20-japan-china-far-eastern-championship-games,1925-05-20,Japan,China,0.0,2.0,kaggle_international_results
+same_date_team_b_team_a,1929-06-16-argentina-uruguay-friendly,1929-06-16,Argentina,Uruguay,2.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1929-06-16-uruguay-argentina-friendly,1929-06-16,Uruguay,Argentina,1.0,1.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-13-belgium-united-states-fifa-world-cup,1930-07-13,Belgium,United States,0.0,3.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-13-france-mexico-fifa-world-cup,1930-07-13,France,Mexico,4.0,1.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-14-brazil-yugoslavia-fifa-world-cup,1930-07-14,Brazil,Yugoslavia,1.0,2.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-14-peru-romania-fifa-world-cup,1930-07-14,Peru,Romania,1.0,3.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-15-argentina-france-fifa-world-cup,1930-07-15,Argentina,France,1.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-16-chile-mexico-fifa-world-cup,1930-07-16,Chile,Mexico,3.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-17-bolivia-yugoslavia-fifa-world-cup,1930-07-17,Bolivia,Yugoslavia,0.0,4.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-17-paraguay-united-states-fifa-world-cup,1930-07-17,Paraguay,United States,0.0,3.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-18-uruguay-peru-fifa-world-cup,1930-07-18,Uruguay,Peru,1.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-19-argentina-mexico-fifa-world-cup,1930-07-19,Argentina,Mexico,6.0,3.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-19-chile-france-fifa-world-cup,1930-07-19,Chile,France,1.0,0.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-20-belgium-paraguay-fifa-world-cup,1930-07-20,Belgium,Paraguay,0.0,1.0,kaggle_international_results
+same_date_team_b_team_a,1930-07-20-bolivia-brazil-fifa-world-cup,1930-07-20,Bolivia,Brazil,0.0,4.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-13-france-mexico-fifa-world-cup,1930-07-13,France,Mexico,4.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-15-argentina-france-fifa-world-cup,1930-07-15,Argentina,France,1.0,0.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-16-chile-mexico-fifa-world-cup,1930-07-16,Chile,Mexico,3.0,0.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-18-uruguay-peru-fifa-world-cup,1930-07-18,Uruguay,Peru,1.0,0.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-19-argentina-mexico-fifa-world-cup,1930-07-19,Argentina,Mexico,6.0,3.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-19-chile-france-fifa-world-cup,1930-07-19,Chile,France,1.0,0.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-21-uruguay-romania-fifa-world-cup,1930-07-21,Uruguay,Romania,4.0,0.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-22-argentina-chile-fifa-world-cup,1930-07-22,Argentina,Chile,3.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-26-argentina-united-states-fifa-world-cup,1930-07-26,Argentina,United States,6.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-27-uruguay-yugoslavia-fifa-world-cup,1930-07-27,Uruguay,Yugoslavia,6.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1930-07-30-uruguay-argentina-fifa-world-cup,1930-07-30,Uruguay,Argentina,4.0,2.0,kaggle_international_results
+same_teams_same_score_same_date,1934-05-27-austria-france-fifa-world-cup,1934-05-27,Austria,France,3.0,2.0,kaggle_international_results
+same_teams_same_score_same_date,1934-05-27-czechoslovakia-romania-fifa-world-cup,1934-05-27,Czechoslovakia,Romania,2.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1934-05-27-italy-united-states-fifa-world-cup,1934-05-27,Italy,United States,7.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1934-05-31-austria-hungary-fifa-world-cup,1934-05-31,Austria,Hungary,2.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1934-05-31-czechoslovakia-switzerland-fifa-world-cup,1934-05-31,Czechoslovakia,Switzerland,3.0,2.0,kaggle_international_results
+same_teams_same_score_same_date,1934-05-31-germany-sweden-fifa-world-cup,1934-05-31,Germany,Sweden,2.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1934-05-31-italy-spain-fifa-world-cup,1934-05-31,Italy,Spain,1.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1934-06-01-italy-spain-fifa-world-cup,1934-06-01,Italy,Spain,1.0,0.0,kaggle_international_results
+same_teams_same_score_same_date,1934-06-03-czechoslovakia-germany-fifa-world-cup,1934-06-03,Czechoslovakia,Germany,3.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1934-06-03-italy-austria-fifa-world-cup,1934-06-03,Italy,Austria,1.0,0.0,kaggle_international_results
+same_teams_same_score_same_date,1934-06-10-italy-czechoslovakia-fifa-world-cup,1934-06-10,Italy,Czechoslovakia,2.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1938-06-04-germany-switzerland-fifa-world-cup,1938-06-04,Germany,Switzerland,1.0,1.0,kaggle_international_results
+same_teams_same_score_same_date,1938-06-05-brazil-poland-fifa-world-cup,1938-06-05,Brazil,Poland,6.0,5.0,kaggle_international_results
+same_teams_same_score_same_date,1938-06-05-cuba-romania-fifa-world-cup,1938-06-05,Cuba,Romania,3.0,3.0,kaggle_international_results
