@@ -1,8 +1,16 @@
 # Current Project Status
 
 Project: Dynamic FIFA 2026 Tournament Outcome Predictor  
-Saved: 2026-07-10 (post Phase 6B)  
+Saved: 2026-07-10 (post Phase 6B; deployment-ready, not yet deployed)  
 Scope: current state snapshot for next session. No secrets are included.
+
+## Deployment status (2026-07-10)
+
+- **Repository is deployment-ready but NOT yet deployed.** Branch `main`, HEAD `df0cf8b`, no git remote configured.
+- Deployment could not be performed from the working environment: no `gh` CLI, no `vercel` CLI, no Streamlit deploy CLI, no auth tokens. All three platform deployments and the first hosted GitHub Actions run are browser/authenticated-CLI-only and remain user actions.
+- Re-verified this session: pytest 16/16; `validate` no failures; `validate-features/-simulation/-bracket/-live-forecast` pass; `validate-public-exports` 31/31; `validate-dashboard` 10/10; `validate-deployment-readiness` ready (8/8); website `npm ci`+lint+build clean (55 static pages); Streamlit headless health OK; secret scan 0 hits.
+- Change this session (commit `df0cf8b`): untracked 1.4 MB of raw `provider_snapshots/` (sanitized, no secrets, unread by apps) and gitignored them before public release. Normalized CSVs the apps consume stay tracked.
+- Exact remaining user steps and full details: `handoff/deployment_status_handoff.md`.
 
 ## Completed Phases
 
@@ -20,6 +28,7 @@ Scope: current state snapshot for next session. No secrets are included.
 - Phase 5G: Live pipeline reliability, validation cleanup, feature performance, matchday automation hardening
 - Phase 6: Public website (Next.js/Vercel-ready), Streamlit dashboard, public data exports, GitHub repository readiness
 - Phase 6B: GitHub automation and matchday deployment workflow
+- Deployment prep: repository made public-ready (raw snapshots untracked); GitHub/Vercel/Streamlit deployment pending user's authenticated accounts
 
 ## Phase 6B verified state (2026-07-10)
 
