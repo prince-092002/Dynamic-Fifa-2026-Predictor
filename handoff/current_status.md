@@ -1,7 +1,7 @@
 # Current Project Status
 
 Project: Dynamic FIFA 2026 Tournament Outcome Predictor  
-Saved: 2026-07-09 (post Phase 5G)  
+Saved: 2026-07-10 (post Phase 6)  
 Scope: current state snapshot for next session. No secrets are included.
 
 ## Completed Phases
@@ -18,6 +18,20 @@ Scope: current state snapshot for next session. No secrets are included.
 - Phase 5E: football-data.org live provider integration
 - Phase 5F: Live knockout feature + model prediction regeneration
 - Phase 5G: Live pipeline reliability, validation cleanup, feature performance, matchday automation hardening
+- Phase 6: Public website (Next.js/Vercel-ready), Streamlit dashboard, public data exports, GitHub repository readiness
+
+## Phase 6 verified state (2026-07-10)
+
+- Git repository initialized (`main`, initial commit `3e240d4`); secret scan over all 421 tracked files: 0 hits; `.env`/node_modules/backups ignored.
+- Public export layer: `python main.py build-public-exports` writes 13 JSON contracts to `public_data/` (documented in `PUBLIC_DATA_CONTRACT.md`); rebuilt automatically at the end of every live forecast run.
+- New validations, all passing: `validate-public-exports` (31 checks), `validate-dashboard` (6 checks), `validate-deployment-readiness` (8/8 ready).
+- Forecast history persistence added (champion/finalist/pair CSVs, append-safe, run_id-deduplicated, backend-written).
+- Streamlit dashboard: `streamlit run dashboard/app.py` — overview + 8 pages, startup health verified, renders from saved outputs with no API access.
+- Next.js website: `website/` — lint clean, production build passes (Next 15.5.20, 55 static pages incl. all 48 team pages), fully static from `public_data/`.
+- Team lifecycle (alive/eliminated/champion/runner-up) derived from real bracket state; team statistics from completed real fixtures only.
+- Current export values: phase quarterfinal, 97 completed, 7 alive / 41 eliminated, 3 unresolved matchups (all live-XGBoost predicted), 10,000 sims, top champion France 29.49%, top final Argentina vs France 26.07%, both validations pass.
+- Remaining manual steps: push to GitHub, connect Vercel (root dir `website`) and Streamlit Cloud (`dashboard/app.py`), paste live URLs into README.
+- See `handoff/phase6_public_website_dashboard_deployment_handoff.md`.
 
 ## Latest Verified State
 
