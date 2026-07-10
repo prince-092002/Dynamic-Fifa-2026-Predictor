@@ -1,5 +1,5 @@
 {
-  "refresh_timestamp": "2026-07-10T00:54:44+00:00",
+  "refresh_timestamp": "2026-07-10T06:50:28+00:00",
   "mode": "matchday",
   "force": false,
   "source_used": "existing_processed_csv",
@@ -19,7 +19,7 @@
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\data_validation_report.csv",
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\end_of_matchday_update_summary.md"
   ],
-  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260709_195444",
+  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260710_015029",
   "validation_status": "passed",
   "warnings": [
     "API-Football returned 0 fixture rows; using existing processed CSVs."
@@ -31,9 +31,9 @@
     "current_phase": "quarterfinal",
     "finalist_prediction_active": true,
     "top_finalist_pair": "Argentina vs France",
-    "top_finalist_pair_probability": 0.288,
+    "top_finalist_pair_probability": 0.2607,
     "top_champion": "France",
-    "top_champion_probability": 0.316,
+    "top_champion_probability": 0.2949,
     "fallback_bracket_usage": 0.0967741935483871,
     "forecast_mode": "true_live_forecast",
     "public_label": "True live forecast from current tournament state",
@@ -41,19 +41,19 @@
     "forecast_ran": true,
     "live_matchup_prediction_status": "success",
     "live_matchups_predicted": 3,
-    "live_model_probability_uses": 3000,
+    "live_model_probability_uses": 30000,
     "probability_source_counts": {
-      "completed_result": 1000,
-      "live_model_exact": 3000,
-      "elo_fallback": 2945,
-      "model_reversed": 55
+      "completed_result": 10000,
+      "live_model_exact": 30000,
+      "elo_fallback": 29510,
+      "model_reversed": 490
     },
-    "run_id": "2026-07-10T005454Z-caf80429",
+    "run_id": "2026-07-10T065046Z-a7edab47",
     "phase_transition": {
       "previous_phase": "quarterfinal",
       "current_phase": "quarterfinal",
       "phase_changed": false,
-      "detected_at": "2026-07-10T00:55:19+00:00",
+      "detected_at": "2026-07-10T06:52:42+00:00",
       "newly_resolved_matchups": 0,
       "newly_completed_matches": 0,
       "completed_match_count": 97,
@@ -63,6 +63,43 @@
         "football_data_org_537386"
       ],
       "first_recorded_run": false
+    },
+    "public_export_publication": {
+      "status": "published",
+      "published": true,
+      "validation_status": "pass",
+      "failed_checks": [],
+      "changed_files": [
+        "champion_forecast.json",
+        "finalist_forecast.json",
+        "finalist_pairs.json",
+        "forecast_history.json",
+        "knockout_bracket.json",
+        "latest_overview.json",
+        "latest_run_manifest.json",
+        "matchup_predictions.json",
+        "model_insights.json",
+        "probability_source_history.json",
+        "system_health.json",
+        "team_stats.json",
+        "teams.json"
+      ],
+      "written": [
+        "latest_overview.json",
+        "knockout_bracket.json",
+        "champion_forecast.json",
+        "finalist_forecast.json",
+        "finalist_pairs.json",
+        "matchup_predictions.json",
+        "teams.json",
+        "team_stats.json",
+        "forecast_history.json",
+        "probability_source_history.json",
+        "system_health.json",
+        "latest_run_manifest.json",
+        "model_insights.json"
+      ],
+      "message": "13 public files changed."
     },
     "reports": [
       "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\providers\\provider_selection_report.md",

@@ -1,6 +1,6 @@
 # Live Knockout Prediction Report
 
-- Generated: 2026-07-10T06:08:19+00:00
+- Generated: 2026-07-10T06:52:42+00:00
 - Known remaining knockout matchups: 3
 - Predicted by live model: 3
 - Failed (missing features): 0
@@ -26,14 +26,14 @@
 
 | Source | Previous run | Latest run |
 |---|---:|---:|
-| completed_result | 1000 | 10000 |
-| elo_fallback | 2945 | 29510 |
-| live_model_exact | 3000 | 30000 |
-| model_reversed | 55 | 490 |
+| completed_result | 10000 | 10000 |
+| elo_fallback | 29510 | 29510 |
+| live_model_exact | 30000 | 30000 |
+| model_reversed | 490 | 490 |
 
-- Elo/neutral fallback share before: 42.07%
+- Elo/neutral fallback share before: 42.16%
 - Elo/neutral fallback share after: 42.16%
-- Fallback reduction: -0.09%
+- Fallback reduction: +0.00%
 
 ## Remaining Limitations
 

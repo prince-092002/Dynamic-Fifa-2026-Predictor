@@ -155,6 +155,12 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers.add_parser("validate-public-exports", help="Validate public JSON exports (website data contract)")
     subparsers.add_parser("validate-dashboard", help="Validate dashboard inputs and public exports")
     subparsers.add_parser("validate-deployment-readiness", help="Check local deployment readiness (exports, dashboard, secrets, dependencies)")
+    refresh_parser = subparsers.add_parser("refresh-portfolio", help="One-command matchday refresh: forecast, validate, fail-closed publish, manifest")
+    refresh_parser.add_argument("--n-simulations", type=int, default=10000, help="Monte Carlo simulation count")
+    refresh_parser.add_argument("--no-retrain", action="store_true", default=True, help="Use the existing selected model (default and recommended)")
+    refresh_parser.add_argument("--allow-fallback-forecast", action="store_true", help="Explicitly allow fallback-only forecast output (testing only)")
+    commit_check_parser = subparsers.add_parser("check-commit-safety", help="Classify changed files against the automation commit allowlist")
+    commit_check_parser.add_argument("--json", action="store_true", help="Print machine-readable JSON")
     subparsers.add_parser("validate-live-forecast", help="Validate live finalist forecast outputs")
     subparsers.add_parser("diagnose-live-api", help="Deeply diagnose API-Football live FIFA 2026 access")
     subparsers.add_parser("diagnose-football-data-org", help="Diagnose football-data.org World Cup 2026 access")
@@ -479,6 +485,36 @@ def main(argv: list[str] | None = None) -> int:
             result = validate_dashboard()
             print(f"Dashboard validation: {result['status']} ({result['checks']} checks, {result['failed']} failed)")
             print(f"Report: {result['report']}")
+        elif args.command == "refresh-portfolio":
+            from src.public_export.portfolio_refresh import MANIFEST_PATH, run_portfolio_refresh
+
+            manifest = run_portfolio_refresh(n_simulations=args.n_simulations, no_retrain=args.no_retrain, allow_fallback_forecast=args.allow_fallback_forecast)
+            print("Portfolio refresh completed.")
+            for key in ["refresh_id", "phase_before", "phase_after", "provider", "provider_mode", "completed_matches_after", "newly_completed_matches", "newly_predicted_matchups", "live_forecast_status", "public_export_publication", "public_export_validation", "dashboard_validation", "deployment_readiness", "eligible_for_publication"]:
+                print(f"  {key}: {manifest.get(key)}")
+            if manifest.get("warnings"):
+                print(f"  warnings: {len(manifest['warnings'])} (see manifest)")
+            print(f"  changed public files: {len(manifest.get('changed_public_files', []))}")
+            print(f"Manifest: {MANIFEST_PATH}")
+            if not manifest.get("eligible_for_publication"):
+                print("NOT eligible for publication — do not commit/push public updates from this run.")
+                return 1
+        elif args.command == "check-commit-safety":
+            import json as json_module
+
+            from src.public_export.commit_safety import evaluate_commit_safety
+
+            result = evaluate_commit_safety()
+            if args.json:
+                print(json_module.dumps(result, indent=1))
+            else:
+                print(f"safe_to_commit: {result['safe_to_commit']} ({result['reason']})")
+                print(f"  to_commit ({len(result['to_commit'])}): {result['to_commit'][:12]}")
+                print(f"  tolerated (not committed): {len(result['tolerated'])}")
+                if result["unexpected"]:
+                    print(f"  UNEXPECTED: {result['unexpected']}")
+            if not result["safe_to_commit"] and result.get("unexpected"):
+                return 1
         elif args.command == "validate-deployment-readiness":
             from src.public_export.deployment_readiness import validate_deployment_readiness
 

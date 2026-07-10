@@ -236,12 +236,14 @@ def run_live_forecast_pipeline(n_simulations: int = DEFAULT_LIVE_N_SIMULATIONS, 
         }
     )
     reports.append(manifest_path)
-    try:  # refresh public website/dashboard exports; never blocks the forecast
-        from src.public_export.build_public_exports import build_public_exports
+    try:  # refresh public website/dashboard exports; never blocks the forecast.
+        # Fail-closed: staged exports are validated first and an invalid set
+        # never replaces the previous known-good public_data.
+        from src.public_export.publish import safe_publish_public_exports
 
-        build_public_exports()
-    except Exception:
-        pass
+        publication = safe_publish_public_exports()
+    except Exception as exc:
+        publication = {"status": "error", "published": False, "message": str(exc)[:200]}
     reports.extend(
         [
             write_live_state_summary(phase),
@@ -270,5 +272,6 @@ def run_live_forecast_pipeline(n_simulations: int = DEFAULT_LIVE_N_SIMULATIONS, 
         "probability_source_counts": {k: int(v) for k, v in source_counts.items()},
         "run_id": run_id,
         "phase_transition": transition,
+        "public_export_publication": publication,
         "reports": reports,
     }

@@ -1,7 +1,7 @@
 # Current Project Status
 
 Project: Dynamic FIFA 2026 Tournament Outcome Predictor  
-Saved: 2026-07-10 (post Phase 6)  
+Saved: 2026-07-10 (post Phase 6B)  
 Scope: current state snapshot for next session. No secrets are included.
 
 ## Completed Phases
@@ -19,6 +19,18 @@ Scope: current state snapshot for next session. No secrets are included.
 - Phase 5F: Live knockout feature + model prediction regeneration
 - Phase 5G: Live pipeline reliability, validation cleanup, feature performance, matchday automation hardening
 - Phase 6: Public website (Next.js/Vercel-ready), Streamlit dashboard, public data exports, GitHub repository readiness
+- Phase 6B: GitHub automation and matchday deployment workflow
+
+## Phase 6B verified state (2026-07-10)
+
+- One-command operational refresh: `python main.py refresh-portfolio --n-simulations 10000 --no-retrain` — verified end-to-end against the live provider: eligible_for_publication True, publication published, 13 public files changed, all validations pass.
+- Fail-closed publication: staged exports validated before promotion; invalid exports can never replace the last known-good `public_data/` (tested).
+- Commit safety: strict allowlist + secret/path scans + unexpected-file stop (`python main.py check-commit-safety`); provider snapshots and credentials can never be auto-committed.
+- GitHub Actions: `validate.yml` (offline CI, secret-free: backend suite + pytest + website lint/build) and `portfolio-refresh.yml` (manual dispatch only, gated commit of allowlisted artifacts, `FOOTBALL_DATA_ORG_KEY` secret, dry-run supported). Legacy unsafe daily-cron workflow removed. Workflows locally YAML-validated; not yet executed on GitHub (no remote configured).
+- Forecast-history dedup validation added to `validate-dashboard`; tests: 16/16 pass (`python -m pytest tests -q`).
+- Docs: `docs/MATCHDAY_OPERATIONS.md` (local + Actions procedures, four-level success distinction, emergency fallbacks), `outputs/reports/portfolio/phase6b_automation_audit.md`.
+- Remaining manual steps: add GitHub remote + push, set `FOOTBALL_DATA_ORG_KEY` repo secret, connect Vercel (root `website`) and Streamlit Cloud (`dashboard/app.py`), first Actions run with dry_run.
+- See `handoff/phase6b_automation_handoff.md`.
 
 ## Phase 6 verified state (2026-07-10)
 

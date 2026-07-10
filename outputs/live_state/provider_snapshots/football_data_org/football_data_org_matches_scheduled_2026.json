@@ -46,7 +46,7 @@
       "matchday": null,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-07-09T05:20:10Z",
+      "lastUpdated": "2026-07-10T05:20:09Z",
       "homeTeam": {
         "id": 760,
         "name": "Spain",
@@ -105,7 +105,7 @@
       "matchday": null,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-07-09T05:20:10Z",
+      "lastUpdated": "2026-07-10T05:20:09Z",
       "homeTeam": {
         "id": 8872,
         "name": "Norway",
@@ -164,7 +164,7 @@
       "matchday": null,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-07-09T05:20:10Z",
+      "lastUpdated": "2026-07-10T05:20:09Z",
       "homeTeam": {
         "id": 762,
         "name": "Argentina",
@@ -223,13 +223,13 @@
       "matchday": null,
       "stage": "SEMI_FINALS",
       "group": null,
-      "lastUpdated": "2026-07-09T05:20:10Z",
+      "lastUpdated": "2026-07-10T05:20:09Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 773,
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
         "id": null,
@@ -282,7 +282,7 @@
       "matchday": null,
       "stage": "SEMI_FINALS",
       "group": null,
-      "lastUpdated": "2026-07-09T05:20:10Z",
+      "lastUpdated": "2026-07-10T05:20:09Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -341,7 +341,7 @@
       "matchday": null,
       "stage": "THIRD_PLACE",
       "group": null,
-      "lastUpdated": "2026-07-09T05:20:10Z",
+      "lastUpdated": "2026-07-10T05:20:09Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -400,7 +400,7 @@
       "matchday": null,
       "stage": "FINAL",
       "group": null,
-      "lastUpdated": "2026-07-09T05:20:10Z",
+      "lastUpdated": "2026-07-10T05:20:09Z",
       "homeTeam": {
         "id": null,
         "name": null,

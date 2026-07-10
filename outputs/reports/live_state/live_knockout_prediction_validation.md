@@ -1,6 +1,6 @@
 # Live Knockout Prediction Validation
 
-- Generated: 2026-07-10T06:08:19+00:00
+- Generated: 2026-07-10T06:52:42+00:00
 
 | Check | Status | Message |
 |---|---|---|
@@ -14,4 +14,4 @@
 | completed_matches_not_predicted | pass | 0 completed matches predicted |
 | tbd_matches_not_predicted | pass | 0 TBD matches predicted |
 | live_model_source_used_in_simulation | pass | live_model_exact + live_model_reversed = 30000 |
-| elo_fallback_usage_decreased | warn | fallback share 42.07% -> 42.16% |
+| elo_fallback_usage_decreased | warn | fallback share 42.16% -> 42.16% |

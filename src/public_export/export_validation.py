@@ -48,11 +48,12 @@ def _check(rows: list, check: str, ok: bool, message: str) -> None:
     rows.append({"check": check, "status": "pass" if ok else "fail", "message": message})
 
 
-def validate_public_exports() -> dict:
+def validate_public_exports(directory: Path | None = None, write_report: bool = True) -> dict:
+    data_dir = Path(directory) if directory else PUBLIC_DATA_DIR
     rows: list[dict] = []
     payloads: dict[str, dict] = {}
     for name, required_keys in REQUIRED_EXPORTS.items():
-        path = PUBLIC_DATA_DIR / name
+        path = data_dir / name
         if not path.exists():
             _check(rows, f"{name}:readable", False, "file missing")
             continue
@@ -129,7 +130,7 @@ def validate_public_exports() -> dict:
     secrets = _load_secret_values()
     leaked = []
     private_paths = []
-    for path in PUBLIC_DATA_DIR.glob("*.json"):
+    for path in data_dir.glob("*.json"):
         text = path.read_text(encoding="utf-8", errors="ignore")
         if any(secret in text for secret in secrets):
             leaked.append(path.name)
@@ -137,6 +138,9 @@ def validate_public_exports() -> dict:
             private_paths.append(path.name)
     _check(rows, "exports:no_secret_values", not leaked, f"secret values found in: {leaked}" if leaked else f"{len(secrets)} secret values checked, 0 hits")
     _check(rows, "exports:no_private_local_paths", not private_paths, f"private paths found in: {private_paths}" if private_paths else "no private local paths in exports")
+    if not write_report:
+        failed = [row for row in rows if row["status"] == "fail"]
+        return {"status": "fail" if failed else "pass", "checks": len(rows), "failed": len(failed), "report": "not_written", "rows": rows}
     return _write_report(rows, EXPORT_REPORT_DIR, "public_export_validation", "Public Export Validation")
 
 
@@ -159,6 +163,19 @@ def validate_dashboard() -> dict:
         _check(rows, "team_stats:only_completed_matches", future_dated == 0, f"{future_dated} future-dated rows in completed stats" if future_dated else "team stats contain only completed (non-future) matches")
         names = [entry.get("team") for entry in stats.values()]
         _check(rows, "team_stats:no_duplicate_identities", len(names) == len(set(names)), "duplicate team identities" if len(names) != len(set(names)) else f"{len(names)} unique team identities")
+    for history_name, id_columns in [
+        ("champion_probability_history.csv", ["run_id", "team"]),
+        ("finalist_probability_history.csv", ["run_id", "team"]),
+        ("finalist_pair_probability_history.csv", ["run_id", "finalist_team_1", "finalist_team_2"]),
+        ("probability_source_history.csv", ["run_id"]),
+    ]:
+        history_path = live_dir / history_name
+        if not history_path.exists():
+            continue
+        history = pd.read_csv(history_path)
+        columns = [c for c in id_columns if c in history.columns]
+        duplicates = int(history.duplicated(subset=columns).sum()) if columns else -1
+        _check(rows, f"history:{history_name}:no_duplicate_run_entries", duplicates == 0, f"{duplicates} duplicate {columns} rows" if duplicates else f"{len(history)} rows, no duplicate {columns} entries")
     return _write_report(rows, DASHBOARD_REPORT_DIR, "dashboard_validation", "Dashboard Validation")
 
 

@@ -1,7 +1,7 @@
 {
-  "run_id": "2026-07-10T060556Z-428e59f3",
-  "run_started_at": "2026-07-10T06:05:56+00:00",
-  "run_completed_at": "2026-07-10T06:08:19+00:00",
+  "run_id": "2026-07-10T065046Z-a7edab47",
+  "run_started_at": "2026-07-10T06:50:46+00:00",
+  "run_completed_at": "2026-07-10T06:52:42+00:00",
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "source_quality_score": 100,

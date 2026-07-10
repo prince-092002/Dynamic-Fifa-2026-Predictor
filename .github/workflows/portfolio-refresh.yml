@@ -1,0 +1,107 @@
+name: Portfolio Refresh (matchday)
+
+# Deliberately controlled: manual dispatch only. Runs the verified matchday
+# refresh, gates publication on validation, and commits only allowlisted
+# generated artifacts. Never prints or writes secrets to files.
+
+on:
+  workflow_dispatch:
+    inputs:
+      n_simulations:
+        description: "Monte Carlo simulation count"
+        required: false
+        default: "10000"
+      dry_run:
+        description: "Run everything but do not commit or push (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portfolio-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run portfolio refresh
+        env:
+          FOOTBALL_DATA_ORG_KEY: ${{ secrets.FOOTBALL_DATA_ORG_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python main.py refresh-portfolio --n-simulations "${{ inputs.n_simulations }}" --no-retrain
+
+      - name: Check publication eligibility
+        id: eligibility
+        run: |
+          python - <<'EOF'
+          import json, os, sys
+          manifest = json.load(open("outputs/reports/portfolio/latest_portfolio_refresh_manifest.json"))
+          eligible = manifest.get("eligible_for_publication") is True
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"eligible={'true' if eligible else 'false'}\n")
+          print("eligible_for_publication:", eligible)
+          for key in ["phase_after", "completed_matches_after", "newly_completed_matches", "newly_predicted_matchups", "live_forecast_status", "public_export_validation", "dashboard_validation"]:
+              print(f"{key}: {manifest.get(key)}")
+          if not eligible:
+              print("Refusing publication: validation did not fully pass. Previous public data is preserved.")
+          EOF
+
+      - name: Evaluate commit safety (allowlist + scans)
+        id: safety
+        if: steps.eligibility.outputs.eligible == 'true'
+        run: |
+          python - <<'EOF'
+          import json, os
+          from src.public_export.commit_safety import evaluate_commit_safety
+          result = evaluate_commit_safety()
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"safe={'true' if result['safe_to_commit'] else 'false'}\n")
+          print("safe_to_commit:", result["safe_to_commit"], "|", result["reason"])
+          print("files to commit:", len(result["to_commit"]))
+          if result["unexpected"]:
+              print("UNEXPECTED FILES (stopping):", result["unexpected"][:20])
+          json.dump(result["to_commit"], open("commit_list.json", "w"))
+          EOF
+
+      - name: Commit and push allowlisted artifacts
+        if: steps.eligibility.outputs.eligible == 'true' && steps.safety.outputs.safe == 'true' && inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python - <<'EOF'
+          import json, subprocess
+          files = json.load(open("commit_list.json"))
+          if files:
+              subprocess.run(["git", "add", "--"] + files, check=True)
+          EOF
+          if git diff --cached --quiet; then
+            echo "No staged changes; nothing to publish."
+          else
+            git commit -m "Update live FIFA 2026 forecast after completed match (automated matchday refresh)"
+            git push
+          fi
+
+      - name: Upload refresh manifest artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-refresh-manifest
+          path: outputs/reports/portfolio/latest_portfolio_refresh_manifest.json
+          if-no-files-found: ignore

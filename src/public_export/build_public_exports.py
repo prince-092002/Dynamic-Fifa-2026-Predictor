@@ -515,8 +515,9 @@ def _build_model_insights() -> dict | None:
     }
 
 
-def build_public_exports() -> dict:
-    PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
+def build_public_exports(target_dir: Path | None = None) -> dict:
+    output_dir = Path(target_dir) if target_dir else PUBLIC_DATA_DIR
+    output_dir.mkdir(parents=True, exist_ok=True)
     lifecycle = compute_team_lifecycle()
     stats = compute_team_stats()
     teams_export, stats_export = _build_teams(lifecycle, stats)
@@ -540,6 +541,6 @@ def build_public_exports() -> dict:
         if payload is None:
             skipped.append(name)
             continue
-        (PUBLIC_DATA_DIR / name).write_text(json.dumps(payload, indent=1, default=str), encoding="utf-8")
+        (output_dir / name).write_text(json.dumps(payload, indent=1, default=str), encoding="utf-8")
         written.append(name)
-    return {"written": written, "skipped": skipped, "directory": _rel(PUBLIC_DATA_DIR)}
+    return {"written": written, "skipped": skipped, "directory": _rel(output_dir)}

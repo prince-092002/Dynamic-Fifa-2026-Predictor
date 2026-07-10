@@ -1,6 +1,6 @@
 # End-of-Matchday Update Summary
 
-- Refresh timestamp: 2026-07-10T00:55:19+00:00
+- Refresh timestamp: 2026-07-10T06:52:42+00:00
 - Update status: passed
 - New completed matches detected: 0
 - Live forecast status: success
@@ -11,7 +11,7 @@
 - Current phase: quarterfinal
 - Fallback usage: 9.68%
 - Live matchup predictions: success (3 matchups predicted by the model)
-- Live model probability uses in simulation: 3000
+- Live model probability uses in simulation: 30000
 - Tournament phase before update: quarterfinal
 - Tournament phase after update: quarterfinal
 - Phase transition detected: False

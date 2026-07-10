@@ -75,13 +75,13 @@
  ],
  "simulations": 10000,
  "_meta": {
-  "generated_at": "2026-07-10T06:08:19+00:00",
+  "generated_at": "2026-07-10T06:52:42+00:00",
   "source_files": [
    "outputs/live_state/finalist_pair_probabilities.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "quarterfinal",
-  "run_id": "2026-07-10T060556Z-428e59f3"
+  "run_id": "2026-07-10T065046Z-a7edab47"
  }
 }

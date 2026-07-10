@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-07-10T06:08:19+00:00",
+  "generated_at": "2026-07-10T06:52:42+00:00",
   "source_files": [
    "outputs/live_state/champion_probability_history.csv",
    "outputs/live_state/finalist_probability_history.csv",
@@ -9,7 +9,7 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "quarterfinal",
-  "run_id": "2026-07-10T060556Z-428e59f3"
+  "run_id": "2026-07-10T065046Z-a7edab47"
  },
  "champion": [
   {
@@ -75,6 +75,76 @@
   {
    "run_id": "2026-07-10T060556Z-428e59f3",
    "timestamp": "2026-07-10T06:08:19+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Norway",
+   "champion_probability": 0.0223
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "France",
+   "champion_probability": 0.2949
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Argentina",
+   "champion_probability": 0.2517
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "champion_probability": 0.2086
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "England",
+   "champion_probability": 0.151
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Belgium",
+   "champion_probability": 0.0417
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Switzerland",
+   "champion_probability": 0.0298
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
    "phase": "quarterfinal",
    "simulation_count": 10000,
    "provider": "football_data_org",
@@ -147,6 +217,76 @@
   {
    "run_id": "2026-07-10T060556Z-428e59f3",
    "timestamp": "2026-07-10T06:08:19+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Norway",
+   "reach_final_probability": 0.0937
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "France",
+   "reach_final_probability": 0.5293
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Argentina",
+   "reach_final_probability": 0.4892
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "reach_final_probability": 0.3747
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "England",
+   "reach_final_probability": 0.3189
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Switzerland",
+   "reach_final_probability": 0.0982
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Belgium",
+   "reach_final_probability": 0.096
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
    "phase": "quarterfinal",
    "simulation_count": 10000,
    "provider": "football_data_org",
@@ -280,6 +420,138 @@
   {
    "run_id": "2026-07-10T060556Z-428e59f3",
    "timestamp": "2026-07-10T06:08:19+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Belgium",
+   "finalist_team_2": "Norway",
+   "probability": 0.0087
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Argentina",
+   "finalist_team_2": "France",
+   "probability": 0.2607
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Argentina",
+   "finalist_team_2": "Spain",
+   "probability": 0.1824
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "England",
+   "finalist_team_2": "France",
+   "probability": 0.1689
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "England",
+   "finalist_team_2": "Spain",
+   "probability": 0.1195
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "France",
+   "finalist_team_2": "Switzerland",
+   "probability": 0.0507
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "France",
+   "finalist_team_2": "Norway",
+   "probability": 0.049
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Argentina",
+   "finalist_team_2": "Belgium",
+   "probability": 0.0461
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Spain",
+   "finalist_team_2": "Switzerland",
+   "probability": 0.0368
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Norway",
+   "finalist_team_2": "Spain",
+   "probability": 0.036
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Belgium",
+   "finalist_team_2": "England",
+   "probability": 0.0305
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
+   "phase": "quarterfinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Belgium",
+   "finalist_team_2": "Switzerland",
+   "probability": 0.0107
+  },
+  {
+   "run_id": "2026-07-10T065046Z-a7edab47",
+   "timestamp": "2026-07-10T06:52:42+00:00",
    "phase": "quarterfinal",
    "simulation_count": 10000,
    "provider": "football_data_org",

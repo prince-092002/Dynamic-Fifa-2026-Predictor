@@ -1,0 +1,42 @@
+{
+  "refresh_id": "refresh-2026-07-10T065028Z-9fa8bf",
+  "started_at": "2026-07-10T06:50:28+00:00",
+  "completed_at": "2026-07-10T06:52:43+00:00",
+  "git_commit_before_refresh": "efa514a",
+  "phase_before": "quarterfinal",
+  "phase_after": "quarterfinal",
+  "provider": "football_data_org",
+  "provider_mode": "fresh_api",
+  "completed_matches_before": 97,
+  "completed_matches_after": 97,
+  "teams_alive": 7,
+  "teams_eliminated": 41,
+  "newly_completed_matches": 0,
+  "newly_predicted_matchups": 3,
+  "simulation_count": 10000,
+  "live_forecast_status": "success",
+  "live_forecast_validation": "pass",
+  "public_export_publication": "published",
+  "public_export_validation": "pass",
+  "dashboard_validation": "pass",
+  "deployment_readiness": "ready",
+  "changed_public_files": [
+    "champion_forecast.json",
+    "finalist_forecast.json",
+    "finalist_pairs.json",
+    "forecast_history.json",
+    "knockout_bracket.json",
+    "latest_overview.json",
+    "latest_run_manifest.json",
+    "matchup_predictions.json",
+    "model_insights.json",
+    "probability_source_history.json",
+    "system_health.json",
+    "team_stats.json",
+    "teams.json"
+  ],
+  "warnings": [
+    "API-Football returned 0 fixture rows; using existing processed CSVs."
+  ],
+  "eligible_for_publication": true
+}

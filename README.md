@@ -52,10 +52,16 @@ cp .env.example .env       # add your own keys (only needed to refresh live data
 ### Refresh after a real match (the one operational command)
 
 ```bash
-python main.py update --mode matchday --run-live-forecast --n-simulations 10000 --no-retrain
+python main.py refresh-portfolio --n-simulations 10000 --no-retrain
 ```
 
-This fetches live state, locks new results, predicts newly resolved matchups with XGBoost, re-runs the Monte Carlo forecast, validates, and rebuilds `public_data/` for both apps.
+This fetches live state, locks new results, predicts newly resolved matchups with XGBoost, re-runs the Monte Carlo forecast, validates everything, **fail-closed publishes** `public_data/` (an invalid export never replaces the last known-good one), and writes a machine-readable refresh manifest with an explicit `eligible_for_publication` verdict. Then check what automation may commit:
+
+```bash
+python main.py check-commit-safety
+```
+
+Full post-match procedure, GitHub Actions usage, and failure behavior: [docs/MATCHDAY_OPERATIONS.md](docs/MATCHDAY_OPERATIONS.md). The lower-level `update --mode matchday --run-live-forecast …` command remains available.
 
 ### Rebuild / validate public exports only
 
@@ -101,9 +107,15 @@ npm run build      # production build (also run by Vercel)
 ### Operational flow after each real match
 
 ```text
-match completes → run the matchday command → commit/push public-safe output changes
+match completes → run refresh-portfolio → eligibility + commit-safety gates pass
+→ commit/push allowlisted public artifacts
 → Vercel redeploys the website → Streamlit reads the newest repository outputs
 ```
+
+### GitHub Actions
+
+- `validate.yml` — offline CI on every PR/push: backend validation suite, pytest, website lint + production build. No secrets, no live API calls.
+- `portfolio-refresh.yml` — **manual dispatch only**: runs the full matchday refresh in CI (requires the `FOOTBALL_DATA_ORG_KEY` repository secret), refuses publication unless all validations pass, and commits only strictly allowlisted generated artifacts. Supports a `dry_run` input.
 
 ## Repository structure
 
