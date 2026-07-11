@@ -163,6 +163,13 @@ def build_parser() -> argparse.ArgumentParser:
     commit_check_parser.add_argument("--json", action="store_true", help="Print machine-readable JSON")
     subparsers.add_parser("validate-live-forecast", help="Validate live finalist forecast outputs")
     subparsers.add_parser("diagnose-live-api", help="Deeply diagnose API-Football live FIFA 2026 access")
+    subparsers.add_parser("diagnose-zafronix", help="Diagnose Zafronix World Cup enrichment API access (no key printed)")
+    subparsers.add_parser("fetch-zafronix", help="Fetch Zafronix World Cup tournament snapshots (bounded)")
+    subparsers.add_parser("normalize-zafronix", help="Normalize Zafronix snapshots into processed tables")
+    subparsers.add_parser("zafronix-entities", help="Resolve Zafronix team names to canonical training names")
+    subparsers.add_parser("zafronix-coverage", help="Audit Zafronix enrichment coverage of the training corpus")
+    subparsers.add_parser("build-zafronix-features", help="Build leakage-safe Zafronix enrichment features + registry")
+    subparsers.add_parser("run-zafronix-challenger", help="Evaluate Zafronix-enriched challenger vs frozen baseline (Phase 5H-A)")
     subparsers.add_parser("diagnose-football-data-org", help="Diagnose football-data.org World Cup 2026 access")
     subparsers.add_parser("fetch-football-data-org", help="Fetch football-data.org raw World Cup 2026 data")
     subparsers.add_parser("normalize-football-data-org", help="Normalize football-data.org World Cup 2026 data")
@@ -592,6 +599,60 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  standings rows: {result['standings_count']}")
             print(f"  current phase: {result['current_phase']}")
             print(f"  report: {result['report']}")
+        elif args.command == "diagnose-zafronix":
+            from src.enrichment.zafronix_fetch import diagnose_zafronix
+
+            diag = diagnose_zafronix()
+            print("Zafronix diagnostic completed (enrichment provider; key never printed).")
+            print(f"  authentication available: {diag['authentication_available']}")
+            print(f"  API reachable: {diag['api_reachable']}")
+            print(f"  tournament years: {diag['year_count']} (2026 present: {diag['has_2026']})")
+            print(f"  report: outputs/reports/enrichment/zafronix/zafronix_provider_diagnostic.md")
+        elif args.command == "fetch-zafronix":
+            from src.enrichment.zafronix_fetch import fetch_zafronix
+
+            summary = fetch_zafronix()
+            print(f"Zafronix fetch: {summary['status']} — {summary['fetched']} tournament(s) snapshotted.")
+            if summary.get("failed"):
+                print(f"  failed years: {summary['failed']}")
+        elif args.command == "normalize-zafronix":
+            from src.enrichment.zafronix_normalize import normalize_zafronix
+
+            result = normalize_zafronix()
+            print("Zafronix normalization completed.")
+            print(f"  tournaments: {result['tournaments']} | appearances: {result['appearances']} | players: {result['players']}")
+        elif args.command == "zafronix-entities":
+            from src.enrichment.zafronix_entities import build_entity_resolution
+
+            result = build_entity_resolution()
+            print(f"Zafronix entity resolution: {result['resolved']}/{result['zafronix_names']} resolved "
+                  f"({result['resolution_rate'] * 100:.1f}%), {result['unresolved']} unresolved.")
+            if result["unresolved_names"]:
+                print(f"  unresolved: {result['unresolved_names']}")
+        elif args.command == "zafronix-coverage":
+            from src.enrichment.zafronix_coverage import build_coverage_report
+
+            report = build_coverage_report()
+            print("Zafronix coverage audit completed.")
+            print(f"  WC finals matches: {report['wc_finals_matches_total']} ({report['wc_finals_pct_of_training']}% of training)")
+            print(f"  both-teams-WC-nations matches: {report['both_teams_wc_nations_total']} ({report['both_teams_wc_nations_pct']}%)")
+        elif args.command == "build-zafronix-features":
+            from src.enrichment.zafronix_features import build_and_save_features
+            from src.modeling.data_loader import load_training_dataset
+
+            result = build_and_save_features(load_training_dataset())
+            print("Zafronix features built.")
+            print(f"  rows: {result['rows']} | features: {len(result['features'])}")
+            print(f"  pedigree-available rows: {result['pedigree_available_rows']} | squad-available rows: {result['squad_available_rows']}")
+        elif args.command == "run-zafronix-challenger":
+            from src.enrichment.zafronix_challenger import run_phase5h_challenger
+
+            result = run_phase5h_challenger()
+            print(f"Phase 5H-A challenger evaluation completed in {result['seconds']}s.")
+            print(f"  selected challenger: {result['selected_challenger']}")
+            print(f"  baseline test accuracy: {result['baseline_test']['accuracy']:.4f} | challenger: {result['challenger_test']['accuracy']:.4f}")
+            print(f"  accuracy gain: {result['acc_gain']:+.4f} | 95% CI: [{result['bootstrap_ci'][0]:+.4f}, {result['bootstrap_ci'][1]:+.4f}]")
+            print(f"  PROMOTE: {result['promote']} — {'challenger promoted' if result['promote'] else 'production XGBoost retained unchanged'}")
         elif args.command == "diagnose-football-data-org":
             from src.live_state.provider_diagnostics import diagnose_football_data_org
 

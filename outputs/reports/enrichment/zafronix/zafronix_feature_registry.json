@@ -1,0 +1,79 @@
+{
+  "phase": "5H-A",
+  "provider": "zafronix",
+  "generated_note": "All features are difference (team_a - team_b) or symmetric availability indicators.",
+  "families": {
+    "pedigree": {
+      "features": [
+        "z_prior_wc_appearances_diff",
+        "z_prior_wc_titles_diff",
+        "z_prior_wc_finals_diff",
+        "z_prior_wc_semifinals_diff",
+        "z_prior_wc_knockout_win_rate_diff",
+        "z_prior_wc_goal_difference_diff",
+        "z_prior_wc_best_finish_diff",
+        "z_years_since_last_wc_diff",
+        "z_prior_wc_experience_score_diff"
+      ],
+      "source_endpoint": "GET /tournaments/{year}",
+      "source_fields": [
+        "finalPosition",
+        "knockoutPath",
+        "groupStage"
+      ],
+      "applicable_match_types": "any international match",
+      "availability_semantics": "uses only World Cups with end_date strictly before kickoff",
+      "leakage_rule": "prior completed World Cups only; a team's in-progress WC is excluded",
+      "missing_value_strategy": "0 (no prior WC = true zero) + z_pedigree_available indicator",
+      "status": "experimental"
+    },
+    "squad": {
+      "features": [
+        "z_squad_avg_age_diff",
+        "z_squad_age_std_diff",
+        "z_squad_defender_share_diff",
+        "z_squad_forward_share_diff"
+      ],
+      "source_endpoint": "GET /tournaments/{year} (embedded squad)",
+      "source_fields": [
+        "ageAtTournament",
+        "position"
+      ],
+      "applicable_match_types": "World Cup finals matches only",
+      "availability_semantics": "age & position known at tournament start",
+      "leakage_rule": "tournament-start values only; no in-tournament stats",
+      "missing_value_strategy": "0 + z_squad_features_available indicator",
+      "status": "experimental"
+    },
+    "player_experience": {
+      "features": [
+        "z_players_prior_wc_share_diff",
+        "z_squad_prior_wc_appearances_total_diff"
+      ],
+      "source_endpoint": "GET /tournaments/{year} (embedded squads across years)",
+      "source_fields": [
+        "squad player name",
+        "year"
+      ],
+      "applicable_match_types": "World Cup finals matches only",
+      "availability_semantics": "prior-tournament squad membership (year < current)",
+      "leakage_rule": "strictly prior World Cups; name+nation matched, no future data",
+      "missing_value_strategy": "0 + z_squad_features_available indicator",
+      "status": "experimental"
+    }
+  },
+  "rejected_families": {
+    "squad_caps_and_national_goals": {
+      "reason": "Source coverage ~0% (caps/nationalGoals populated for <0.4% of players in every era).",
+      "decision": "excluded from modeling; would be fabricated, not measured."
+    },
+    "weather": {
+      "reason": "Match weather is an observed/retrospective value with no pre-kickoff forecast provenance (see report \u00a716).",
+      "decision": "descriptive only; never a model feature."
+    },
+    "physical_attributes_height_weight": {
+      "reason": "heightCm/weightKg coverage ~0.4%.",
+      "decision": "excluded."
+    }
+  }
+}

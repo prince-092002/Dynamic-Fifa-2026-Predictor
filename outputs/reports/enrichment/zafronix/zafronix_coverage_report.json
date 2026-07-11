@@ -1,0 +1,65 @@
+{
+  "training_matches": 49589,
+  "wc_finals_matches_total": 1054,
+  "wc_finals_pct_of_training": 2.125,
+  "both_teams_wc_nations_total": 20681,
+  "both_teams_wc_nations_pct": 41.7,
+  "distinct_wc_nations": 91,
+  "per_split": [
+    {
+      "split": "all",
+      "matches": 49589,
+      "wc_finals_matches": 1054,
+      "both_teams_wc_nations": 20681,
+      "both_teams_wc_nations_pct": 41.7
+    },
+    {
+      "split": "train",
+      "matches": 34712,
+      "wc_finals_matches": 772,
+      "both_teams_wc_nations": 15986,
+      "both_teams_wc_nations_pct": 46.05
+    },
+    {
+      "split": "validation",
+      "matches": 7438,
+      "wc_finals_matches": 128,
+      "both_teams_wc_nations": 2384,
+      "both_teams_wc_nations_pct": 32.05
+    },
+    {
+      "split": "test",
+      "matches": 7439,
+      "wc_finals_matches": 154,
+      "both_teams_wc_nations": 2311,
+      "both_teams_wc_nations_pct": 31.07
+    }
+  ],
+  "tournaments_covered": 23,
+  "years": [
+    1930,
+    1934,
+    1938,
+    1950,
+    1954,
+    1958,
+    1962,
+    1966,
+    1970,
+    1974,
+    1978,
+    1982,
+    1986,
+    1990,
+    1994,
+    1998,
+    2002,
+    2006,
+    2010,
+    2014,
+    2018,
+    2022,
+    2026
+  ],
+  "squad_field_coverage_note": "position ~100% and age ~95-100% in every era; caps/nationalGoals/height/weight <0.5% in every era -> only position and age are usable; caps-based experience features are rejected."
+}

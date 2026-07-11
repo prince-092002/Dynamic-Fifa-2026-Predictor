@@ -1,0 +1,27 @@
+{
+  "matchup": "France vs Spain (2026 semifinal)",
+  "status": "unresolved (kickoff 2026-07-14)",
+  "production_model": {
+    "model_name": "xgboost",
+    "probability_source": "live_model_exact",
+    "P_France_win": 0.3332,
+    "P_draw": 0.2257,
+    "P_Spain_win": 0.4411,
+    "elo_difference": -36.93425023087707
+  },
+  "enriched_challenger_E7": {
+    "P_France_win": 0.3493,
+    "P_draw": 0.266,
+    "P_Spain_win": 0.3846
+  },
+  "zafronix_features_used": {
+    "z_prior_wc_titles_diff": 1.0,
+    "z_prior_wc_experience_score_diff": 19.5,
+    "z_prior_wc_knockout_win_rate_diff": 0.338,
+    "z_prior_wc_best_finish_diff": 0.0,
+    "z_pedigree_available": 1.0,
+    "z_squad_features_available": 1.0
+  },
+  "probability_difference_France_win": 0.0161,
+  "note": "Challenger was NOT promoted; production probabilities are the operative forecast and are UNCHANGED. The enriched column is shown only for transparency. France holds a World Cup pedigree edge (more titles/finals, higher experience score), but the production model already captures relative strength via Elo, so the enriched probabilities differ only marginally."
+}

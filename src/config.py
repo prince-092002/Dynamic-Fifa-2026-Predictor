@@ -53,6 +53,11 @@ FOOTBALL_DATA_ORG_COMPETITION_ID: str = os.getenv("FOOTBALL_DATA_ORG_COMPETITION
 FOOTBALL_DATA_ORG_COMPETITION_CODE: str = os.getenv("FOOTBALL_DATA_ORG_COMPETITION_CODE", "WC")
 FOOTBALL_DATA_ORG_SEASON: str = os.getenv("FOOTBALL_DATA_ORG_SEASON", "2026")
 
+# Zafronix World Cup API — secondary historical / squad enrichment provider (NOT live truth).
+# football-data.org remains the primary authoritative live-tournament-state provider.
+ZAFRONIX_API_KEY: Optional[str] = os.getenv("ZAFRONIX_API_KEY")
+ZAFRONIX_BASE_URL: str = os.getenv("ZAFRONIX_BASE_URL", "https://api.zafronix.com/fifa/worldcup/v1")
+
 
 def ensure_project_directories() -> None:
     """Create the folders used by the data pipeline."""

@@ -1,0 +1,23 @@
+{
+  "generated_note": "Zafronix -> training canonical team-name resolution. Explicit map only; no fuzzy matching.",
+  "alias_map": {
+    "East Germany": "German DR"
+  },
+  "historical_distinct_notes": {
+    "West Germany": "Kept separate from 'Germany' (post-1990). Pre-1990 pedigree is not inherited by 'Germany'.",
+    "German DR": "East Germany \u2014 dissolved 1990; kept fully separate.",
+    "Soviet Union": "Kept separate from 'Russia' and other post-Soviet states.",
+    "Yugoslavia": "Kept separate from 'FR Yugoslavia', 'Serbia and Montenegro', 'Serbia', and other successors.",
+    "FR Yugoslavia": "Kept separate from 'Yugoslavia' and 'Serbia and Montenegro'.",
+    "Serbia and Montenegro": "Kept separate from 'Serbia' and 'FR Yugoslavia'.",
+    "Czechoslovakia": "Kept separate from 'Czech Republic' and 'Slovakia'.",
+    "Zaire": "Kept separate from 'DR Congo' (same country, distinct dataset name).",
+    "Dutch East Indies": "1938 entity; kept separate from 'Indonesia'."
+  },
+  "counts": {
+    "zafronix_names": 91,
+    "exact": 90,
+    "alias": 1,
+    "unresolved": 0
+  }
+}

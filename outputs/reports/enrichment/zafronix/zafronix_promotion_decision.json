@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-07-11T23:18:51+00:00",
+  "promote": false,
+  "production_model_unchanged": true,
+  "selected_challenger": "E3_base_plus_player_experience",
+  "challenger_feature_count": 27,
+  "baseline_feature_count": 25,
+  "baseline_test": {
+    "accuracy": 0.6074741228659766,
+    "macro_f1": 0.4510675043406742,
+    "log_loss": 0.8607220399132883,
+    "brier_score": 0.5055903524650359,
+    "ece": 0.005348774672213715
+  },
+  "challenger_test": {
+    "accuracy": 0.6074741228659766,
+    "macro_f1": 0.4510833609568908,
+    "log_loss": 0.8609789054380776,
+    "brier_score": 0.5057986687218324,
+    "ece": 0.005333401674846576
+  },
+  "test_accuracy_gain": 0.0,
+  "bootstrap_acc_diff_95ci": [
+    -0.0013442667025137522,
+    0.0013442667025137522
+  ],
+  "ci_excludes_zero": false,
+  "log_loss_change": 0.0002568655247893181,
+  "brier_change": 0.00020831625679651466,
+  "cv_baseline": {
+    "folds": 4,
+    "mean_accuracy": 0.5843418953973998,
+    "std_accuracy": 0.003702514443960541,
+    "mean_log_loss": 0.8935892192374757
+  },
+  "cv_challenger": {
+    "folds": 4,
+    "mean_accuracy": 0.5830133340336948,
+    "std_accuracy": 0.003939928373708316,
+    "mean_log_loss": 0.8936563102278426
+  },
+  "rules": {
+    "meaningful_accuracy_gain(>=0.005 & CI>0)": false,
+    "probability_quality_preserved(logloss&brier not worse >0.002)": true,
+    "cv_stable": true
+  },
+  "world_cup_finals_support_in_test": 154,
+  "routed_hybrid_test": {
+    "accuracy": 0.6073396961957253,
+    "macro_f1": 0.45095168756285936,
+    "log_loss": 0.8607650373789537,
+    "brier_score": 0.5056111757621417,
+    "ece": 0.004907430260107004
+  },
+  "wc_specific_challenger": {
+    "status": "ok",
+    "train_wc": 772,
+    "test_wc": 154,
+    "base_accuracy": 0.5194805194805194,
+    "enriched_accuracy": 0.5584415584415584,
+    "base_log_loss": 1.031013097551502,
+    "enriched_log_loss": 0.9613985158904601,
+    "base_macro_f1": 0.4530426297058212,
+    "enriched_macro_f1": 0.49481495126691843,
+    "note": "World-Cup-finals-only model; small test support -> interpret cautiously."
+  },
+  "rationale": "Challenger REJECTED \u2014 production XGBoost retained unchanged. Zafronix World Cup pedigree/squad features did not clear all promotion gates on the frozen global test set (meaningful+significant accuracy gain AND preserved log loss/Brier AND CV stability). This is an expected, acceptable outcome: only ~2.1% of training matches are World Cup finals and pedigree signal overlaps heavily with existing Elo/form features. Per Phase 5H-A rules, no model change is forced; the enrichment pipeline is retained for analysis and future use."
+}

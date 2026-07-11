@@ -1,0 +1,427 @@
+{
+  "status": "ok",
+  "years_requested": [
+    1930,
+    1934,
+    1938,
+    1950,
+    1954,
+    1958,
+    1962,
+    1966,
+    1970,
+    1974,
+    1978,
+    1982,
+    1986,
+    1990,
+    1994,
+    1998,
+    2002,
+    2006,
+    2010,
+    2014,
+    2018,
+    2022,
+    2026
+  ],
+  "fetched": 23,
+  "failed": [],
+  "results": [
+    {
+      "year": 1930,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1934,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1938,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1950,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1954,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1958,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1962,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1966,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1970,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1974,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1978,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1982,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1986,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1990,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1994,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 1998,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 2002,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 2006,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 2010,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 2014,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 2018,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 2022,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    },
+    {
+      "year": 2026,
+      "ok": true,
+      "status": 304,
+      "from_cache": true,
+      "stale": false
+    }
+  ],
+  "diagnostic": {
+    "provider": "zafronix",
+    "role": "historical_and_squad_enrichment",
+    "authentication_available": true,
+    "api_reachable": true,
+    "base_url": "https://api.zafronix.com/fifa/worldcup/v1",
+    "health_ok": true,
+    "tournaments_loaded": 24,
+    "stadium_count": 206,
+    "match_count": 1172,
+    "years_available": [
+      1930,
+      1934,
+      1938,
+      1950,
+      1954,
+      1958,
+      1962,
+      1966,
+      1970,
+      1974,
+      1978,
+      1982,
+      1986,
+      1990,
+      1994,
+      1998,
+      2002,
+      2006,
+      2010,
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "year_count": 23,
+    "has_2026": true,
+    "rate_limit_remaining": "217",
+    "usage": {
+      "keyType": "read",
+      "tier": "free",
+      "quota": {
+        "daily": 250,
+        "used": 33,
+        "remaining": 217
+      },
+      "windowResetAt": "2026-07-12T23:25:15.000Z",
+      "last24h": {
+        "requests": 33,
+        "errors": 1,
+        "avgLatencyMs": 4.2,
+        "p95LatencyMs": 3.2,
+        "topEndpoints": [
+          {
+            "path": "/fifa/worldcup/v1/tournaments",
+            "count": 5,
+            "percent": 15.2
+          },
+          {
+            "path": "/fifa/worldcup/v1/tournaments/2022",
+            "count": 3,
+            "percent": 9.1
+          },
+          {
+            "path": "/fifa/worldcup/v1/me/usage",
+            "count": 2,
+            "percent": 6.1
+          },
+          {
+            "path": "/fifa/worldcup/v1/teams",
+            "count": 1,
+            "percent": 3
+          },
+          {
+            "path": "/fifa/worldcup/v1/tournaments/1930",
+            "count": 1,
+            "percent": 3
+          },
+          {
+            "path": "/fifa/worldcup/v1/tournaments/1934",
+            "count": 1,
+            "percent": 3
+          },
+          {
+            "path": "/fifa/worldcup/v1/tournaments/1938",
+            "count": 1,
+            "percent": 3
+          },
+          {
+            "path": "/fifa/worldcup/v1/tournaments/1950",
+            "count": 1,
+            "percent": 3
+          },
+          {
+            "path": "/fifa/worldcup/v1/tournaments/1954",
+            "count": 1,
+            "percent": 3
+          },
+          {
+            "path": "/fifa/worldcup/v1/tournaments/1958",
+            "count": 1,
+            "percent": 3
+          }
+        ]
+      },
+      "last30d": {
+        "requests": 33,
+        "requestsByDay": [
+          {
+            "date": "2026-06-12",
+            "count": 0
+          },
+          {
+            "date": "2026-06-13",
+            "count": 0
+          },
+          {
+            "date": "2026-06-14",
+            "count": 0
+          },
+          {
+            "date": "2026-06-15",
+            "count": 0
+          },
+          {
+            "date": "2026-06-16",
+            "count": 0
+          },
+          {
+            "date": "2026-06-17",
+            "count": 0
+          },
+          {
+            "date": "2026-06-18",
+            "count": 0
+          },
+          {
+            "date": "2026-06-19",
+            "count": 0
+          },
+          {
+            "date": "2026-06-20",
+            "count": 0
+          },
+          {
+            "date": "2026-06-21",
+            "count": 0
+          },
+          {
+            "date": "2026-06-22",
+            "count": 0
+          },
+          {
+            "date": "2026-06-23",
+            "count": 0
+          },
+          {
+            "date": "2026-06-24",
+            "count": 0
+          },
+          {
+            "date": "2026-06-25",
+            "count": 0
+          },
+          {
+            "date": "2026-06-26",
+            "count": 0
+          },
+          {
+            "date": "2026-06-27",
+            "count": 0
+          },
+          {
+            "date": "2026-06-28",
+            "count": 0
+          },
+          {
+            "date": "2026-06-29",
+            "count": 0
+          },
+          {
+            "date": "2026-06-30",
+            "count": 0
+          },
+          {
+            "date": "2026-07-01",
+            "count": 0
+          },
+          {
+            "date": "2026-07-02",
+            "count": 0
+          },
+          {
+            "date": "2026-07-03",
+            "count": 0
+          },
+          {
+            "date": "2026-07-04",
+            "count": 0
+          },
+          {
+            "date": "2026-07-05",
+            "count": 0
+          },
+          {
+            "date": "2026-07-06",
+            "count": 0
+          },
+          {
+            "date": "2026-07-07",
+            "count": 0
+          },
+          {
+            "date": "2026-07-08",
+            "count": 0
+          },
+          {
+            "date": "2026-07-09",
+            "count": 0
+          },
+          {
+            "date": "2026-07-10",
+            "count": 0
+          },
+          {
+            "date": "2026-07-11",
+            "count": 33
+          }
+        ]
+      },
+      "notes": "Counters reset on service restart. Phase 2 will move usage tracking to a durable store."
+    },
+    "checked_at": "2026-07-11T23:25:19+00:00"
+  }
+}

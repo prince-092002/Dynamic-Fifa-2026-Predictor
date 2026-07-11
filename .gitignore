@@ -24,3 +24,10 @@ data/backups/
 
 # Raw provider API snapshots (sanitized but bulky; apps read normalized CSVs, not these)
 outputs/live_state/provider_snapshots/
+
+# Zafronix raw API snapshots (sanitized but bulky; pipeline reads normalized CSVs under data/processed/zafronix/)
+data/raw/zafronix/
+# Zafronix challenger model binaries (bulky; metrics/decisions are tracked as JSON/CSV)
+outputs/models/phase5h_zafronix/*.joblib
+# Per-match Zafronix feature values (7.8MB, regenerable via build-zafronix-features; normalized tables + coverage are tracked)
+data/features/zafronix/zafronix_feature_values.csv

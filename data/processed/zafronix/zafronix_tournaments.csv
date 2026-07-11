@@ -1,0 +1,24 @@
+year,edition,host,start_date,end_date,teams_count,matches_count,champion,runner_up,third_place,total_goals,is_completed
+1930,1,Uruguay,1930-07-13,1930-07-30,13,18,Uruguay,Argentina,United States,70.0,True
+1934,2,Italy,1934-05-27,1934-06-10,16,17,Italy,Czechoslovakia,Germany,70.0,True
+1938,3,France,1938-06-04,1938-06-19,15,18,Italy,Hungary,Brazil,84.0,True
+1950,4,Brazil,1950-06-24,1950-07-16,13,22,Uruguay,Brazil,Sweden,88.0,True
+1954,5,Switzerland,1954-06-16,1954-07-04,16,26,West Germany,Hungary,Austria,140.0,True
+1958,6,Sweden,1958-06-08,1958-06-29,16,35,Brazil,Sweden,France,126.0,True
+1962,7,Chile,1962-05-30,1962-06-17,16,32,Brazil,Czechoslovakia,Chile,89.0,True
+1966,8,England,1966-07-11,1966-07-30,16,32,England,West Germany,Portugal,89.0,True
+1970,9,Mexico,1970-05-31,1970-06-21,16,32,Brazil,Italy,West Germany,95.0,True
+1974,10,West Germany,1974-06-13,1974-07-07,16,38,West Germany,Netherlands,Poland,97.0,True
+1978,11,Argentina,1978-06-01,1978-06-25,16,38,Argentina,Netherlands,Brazil,102.0,True
+1982,12,Spain,1982-06-13,1982-07-11,24,52,Italy,West Germany,Poland,146.0,True
+1986,13,Mexico,1986-05-31,1986-06-29,24,52,Argentina,West Germany,France,132.0,True
+1990,14,Italy,1990-06-08,1990-07-08,24,52,West Germany,Argentina,Italy,115.0,True
+1994,15,United States,1994-06-17,1994-07-17,24,52,Brazil,Italy,Sweden,141.0,True
+1998,16,France,1998-06-10,1998-07-12,32,64,France,Brazil,Croatia,171.0,True
+2002,17,South Korea; Japan,2002-05-31,2002-06-30,32,64,Brazil,Germany,Turkey,161.0,True
+2006,18,Germany,2006-06-09,2006-07-09,32,64,Italy,France,Germany,147.0,True
+2010,19,South Africa,2010-06-11,2010-07-11,32,64,Spain,Netherlands,Germany,145.0,True
+2014,20,Brazil,2014-06-12,2014-07-13,32,64,Germany,Argentina,Netherlands,171.0,True
+2018,21,Russia,2018-06-14,2018-07-15,32,64,France,Croatia,Belgium,169.0,True
+2022,22,Qatar,2022-11-20,2022-12-18,32,64,Argentina,France,Croatia,172.0,True
+2026,23,United States; Canada; Mexico,2026-06-11,2026-07-19,48,104,,,,,False

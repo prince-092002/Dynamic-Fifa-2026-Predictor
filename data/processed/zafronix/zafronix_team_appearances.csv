@@ -1,0 +1,538 @@
+year,team_raw,code,iso,confederation,final_position,is_champion,is_runner_up,reached_final,reached_semi,reached_quarter,reached_r16,reached_r32,grp_played,grp_won,grp_drawn,grp_lost,grp_gf,grp_ga,grp_pts,ko_matches,ko_wins,ko_gf,ko_ga,tourn_gf,tourn_ga,squad_size,squad_is_preliminary
+1930,Argentina,ARG,ar,CONMEBOL,2.0,False,True,True,True,True,True,True,3.0,3.0,0.0,0.0,,,,2,1,8.0,5.0,,,22,False
+1930,Belgium,BEL,be,UEFA,11.0,False,False,False,False,False,False,False,2.0,0.0,0.0,2.0,,,,0,0,,,,,16,False
+1930,Bolivia,BOL,bo,CONMEBOL,12.0,False,False,False,False,False,False,False,2.0,0.0,0.0,2.0,,,,0,0,,,,,17,False
+1930,Brazil,BRA,br,CONMEBOL,6.0,False,False,False,False,False,False,False,2.0,1.0,0.0,1.0,,,,0,0,,,,,22,False
+1930,Chile,CHI,cl,CONMEBOL,5.0,False,False,False,False,False,False,False,3.0,2.0,0.0,1.0,,,,0,0,,,,,19,False
+1930,France,FRA,fr,UEFA,7.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,,,,0,0,,,,,16,False
+1930,Mexico,MEX,mx,Concacaf,13.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,,,,0,0,,,,,17,False
+1930,Paraguay,PAR,py,CONMEBOL,9.0,False,False,False,False,False,False,False,2.0,1.0,0.0,1.0,,,,0,0,,,,,22,False
+1930,Peru,PER,pe,CONMEBOL,10.0,False,False,False,False,False,False,False,2.0,0.0,0.0,2.0,,,,0,0,,,,,20,False
+1930,Romania,ROU,ro,UEFA,8.0,False,False,False,False,False,False,False,2.0,1.0,0.0,1.0,,,,0,0,,,,,15,False
+1930,United States,USA,us,Concacaf,3.0,False,False,False,True,True,True,True,2.0,2.0,0.0,0.0,,,,1,0,1.0,6.0,,,16,False
+1930,Uruguay,URU,uy,CONMEBOL,1.0,True,False,True,True,True,True,True,2.0,2.0,0.0,0.0,,,,2,2,10.0,3.0,,,22,False
+1930,Yugoslavia,YUG,yu,UEFA,4.0,False,False,False,True,True,True,True,2.0,2.0,0.0,0.0,,,,1,0,1.0,6.0,,,17,False
+1934,Argentina,ARG,ar,CONMEBOL,9.0,False,False,False,False,False,True,True,,,,,,,,1,0,2.0,3.0,,,18,False
+1934,Austria,AUT,at,UEFA,4.0,False,False,False,True,True,True,True,,,,,,,,4,2,7.0,7.0,,,22,False
+1934,Belgium,BEL,be,UEFA,15.0,False,False,False,False,False,True,True,,,,,,,,1,0,2.0,5.0,,,22,False
+1934,Brazil,BRA,br,CONMEBOL,14.0,False,False,False,False,False,True,True,,,,,,,,1,0,1.0,3.0,,,22,False
+1934,Czechoslovakia,TCH,cz,UEFA,2.0,False,True,True,True,True,True,True,,,,,,,,4,3,9.0,6.0,,,22,False
+1934,Egypt,EGY,eg,CAF,13.0,False,False,False,False,False,True,True,,,,,,,,1,0,2.0,4.0,,,20,False
+1934,France,FRA,fr,UEFA,10.0,False,False,False,False,False,True,True,,,,,,,,1,0,2.0,3.0,,,22,False
+1934,Germany,GER,de,UEFA,3.0,False,False,False,True,True,True,True,,,,,,,,4,3,11.0,8.0,,,22,False
+1934,Hungary,HUN,hu,UEFA,6.0,False,False,False,False,True,True,True,,,,,,,,2,1,5.0,4.0,,,22,False
+1934,Italy,ITA,it,UEFA,1.0,True,False,True,True,True,True,True,,,,,,,,4,4,11.0,3.0,,,22,False
+1934,Netherlands,NED,nl,UEFA,11.0,False,False,False,False,False,True,True,,,,,,,,1,0,2.0,3.0,,,22,False
+1934,Romania,ROU,ro,UEFA,12.0,False,False,False,False,False,True,True,,,,,,,,1,0,1.0,2.0,,,22,False
+1934,Spain,ESP,es,UEFA,5.0,False,False,False,False,True,True,True,,,,,,,,2,1,4.0,2.0,,,22,False
+1934,Sweden,SWE,se,UEFA,8.0,False,False,False,False,True,True,True,,,,,,,,2,1,4.0,4.0,,,21,False
+1934,Switzerland,SUI,ch,UEFA,7.0,False,False,False,False,True,True,True,,,,,,,,2,1,5.0,5.0,,,22,False
+1934,United States,USA,us,Concacaf,16.0,False,False,False,False,False,True,True,,,,,,,,1,0,1.0,7.0,,,19,False
+1938,Belgium,BEL,be,UEFA,13.0,False,False,False,False,False,True,True,,,,,,,,1,0,1.0,3.0,,,22,False
+1938,Brazil,BRA,br,CONMEBOL,3.0,False,False,False,True,True,True,True,,,,,,,,4,3,12.0,10.0,,,22,False
+1938,Cuba,CUB,cu,Concacaf,8.0,False,False,False,False,True,True,True,,,,,,,,2,1,3.0,11.0,,,15,False
+1938,Czechoslovakia,TCH,cz,UEFA,5.0,False,False,False,False,True,True,True,,,,,,,,2,1,4.0,1.0,,,22,False
+1938,Dutch East Indies,NEI,id,AFC,15.0,False,False,False,False,False,True,True,,,,,,,,1,0,0.0,6.0,,,17,False
+1938,France,FRA,fr,UEFA,7.0,False,False,False,False,True,True,True,,,,,,,,2,1,4.0,4.0,,,22,False
+1938,Germany,GER,de,UEFA,10.0,False,False,False,False,False,True,True,,,,,,,,1,0,1.0,1.0,,,22,False
+1938,Hungary,HUN,hu,UEFA,2.0,False,True,True,True,True,True,True,,,,,,,,4,3,15.0,5.0,,,22,False
+1938,Italy,ITA,it,UEFA,1.0,True,False,True,True,True,True,True,,,,,,,,4,4,11.0,5.0,,,22,False
+1938,Netherlands,NED,nl,UEFA,14.0,False,False,False,False,False,True,True,,,,,,,,1,0,0.0,3.0,,,22,False
+1938,Norway,NOR,no,UEFA,12.0,False,False,False,False,False,True,True,,,,,,,,1,0,1.0,2.0,,,22,False
+1938,Poland,POL,pl,UEFA,11.0,False,False,False,False,False,True,True,,,,,,,,1,0,5.0,6.0,,,22,False
+1938,Romania,ROU,ro,UEFA,9.0,False,False,False,False,False,True,True,,,,,,,,1,0,3.0,3.0,,,22,False
+1938,Sweden,SWE,se,UEFA,4.0,False,False,False,True,True,True,True,,,,,,,,4,2,11.0,9.0,,,22,False
+1938,Switzerland,SUI,ch,UEFA,6.0,False,False,False,False,True,True,True,,,,,,,,2,1,1.0,3.0,,,22,False
+1950,Bolivia,BOL,bo,CONMEBOL,13.0,False,False,False,False,False,False,False,1.0,0.0,0.0,1.0,0.0,8.0,0.0,0,0,,,0.0,8.0,20,False
+1950,Brazil,BRA,br,CONMEBOL,2.0,False,True,True,True,True,True,True,3.0,2.0,1.0,0.0,8.0,2.0,5.0,3,2,14.0,4.0,22.0,6.0,22,False
+1950,Chile,CHI,cl,CONMEBOL,9.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,5.0,6.0,2.0,0,0,,,5.0,6.0,22,False
+1950,England,ENG,gb-eng,UEFA,8.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,2.0,2.0,0,0,,,2.0,2.0,21,False
+1950,Italy,ITA,it,UEFA,7.0,False,False,False,False,False,False,False,2.0,1.0,0.0,1.0,4.0,3.0,2.0,0,0,,,4.0,3.0,22,False
+1950,Mexico,MEX,mx,Concacaf,12.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,10.0,0.0,0,0,,,2.0,10.0,22,False
+1950,Paraguay,PAR,py,CONMEBOL,11.0,False,False,False,False,False,False,False,2.0,0.0,1.0,1.0,2.0,4.0,1.0,0,0,,,2.0,4.0,22,False
+1950,Spain,ESP,es,UEFA,4.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,6.0,1.0,6.0,3,0,5.0,11.0,11.0,12.0,22,False
+1950,Sweden,SWE,se,UEFA,3.0,False,False,False,True,True,True,True,2.0,1.0,1.0,0.0,5.0,4.0,3.0,3,1,6.0,12.0,11.0,16.0,21,False
+1950,Switzerland,SUI,ch,UEFA,6.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,4.0,6.0,3.0,0,0,,,4.0,6.0,22,False
+1950,United States,USA,us,Concacaf,10.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,8.0,2.0,0,0,,,4.0,8.0,18,False
+1950,Uruguay,URU,uy,CONMEBOL,1.0,True,False,True,True,True,True,True,1.0,1.0,0.0,0.0,8.0,0.0,2.0,3,2,7.0,5.0,15.0,5.0,22,False
+1950,Yugoslavia,YUG,yu,UEFA,5.0,False,False,False,False,False,False,False,3.0,2.0,0.0,1.0,7.0,3.0,4.0,0,0,,,7.0,3.0,22,False
+1954,Austria,AUT,at,UEFA,3.0,False,False,False,True,True,True,True,2.0,2.0,0.0,0.0,6.0,0.0,4.0,3,2,11.0,12.0,17.0,12.0,22,False
+1954,Belgium,BEL,be,UEFA,12.0,False,False,False,False,False,False,False,2.0,0.0,1.0,1.0,5.0,8.0,1.0,0,0,,,5.0,8.0,22,False
+1954,Brazil,BRA,br,CONMEBOL,6.0,False,False,False,False,True,True,True,2.0,1.0,1.0,0.0,6.0,1.0,3.0,1,0,2.0,4.0,8.0,5.0,22,False
+1954,Czechoslovakia,TCH,cz,UEFA,14.0,False,False,False,False,False,False,False,2.0,0.0,0.0,2.0,0.0,7.0,0.0,0,0,,,0.0,7.0,22,False
+1954,England,ENG,gb-eng,UEFA,7.0,False,False,False,False,True,True,True,2.0,1.0,1.0,0.0,6.0,4.0,3.0,1,0,2.0,4.0,8.0,8.0,22,False
+1954,France,FRA,fr,UEFA,11.0,False,False,False,False,False,False,False,2.0,1.0,0.0,1.0,3.0,3.0,2.0,0,0,,,3.0,3.0,22,False
+1954,Hungary,HUN,hu,UEFA,2.0,False,True,True,True,True,True,True,2.0,2.0,0.0,0.0,17.0,3.0,4.0,3,2,10.0,7.0,27.0,10.0,22,False
+1954,Italy,ITA,it,UEFA,10.0,False,False,False,False,False,False,False,2.0,1.0,0.0,1.0,5.0,3.0,2.0,0,0,,,5.0,3.0,22,False
+1954,Mexico,MEX,mx,Concacaf,13.0,False,False,False,False,False,False,False,2.0,0.0,0.0,2.0,2.0,8.0,0.0,0,0,,,2.0,8.0,22,False
+1954,Scotland,SCO,gb-sct,UEFA,15.0,False,False,False,False,False,False,False,2.0,0.0,0.0,2.0,0.0,8.0,0.0,0,0,,,0.0,8.0,22,False
+1954,South Korea,KOR,kr,AFC,16.0,False,False,False,False,False,False,False,2.0,0.0,0.0,2.0,0.0,16.0,0.0,0,0,,,0.0,16.0,20,False
+1954,Switzerland,SUI,ch,UEFA,5.0,False,False,False,False,True,True,True,2.0,1.0,0.0,1.0,2.0,3.0,2.0,1,0,5.0,7.0,7.0,10.0,22,False
+1954,Turkey,TUR,tr,UEFA,9.0,False,False,False,False,False,False,False,2.0,1.0,0.0,1.0,8.0,4.0,2.0,0,0,,,8.0,4.0,22,False
+1954,Uruguay,URU,uy,CONMEBOL,4.0,False,False,False,True,True,True,True,2.0,2.0,0.0,0.0,9.0,0.0,4.0,3,1,7.0,9.0,16.0,9.0,22,False
+1954,West Germany,FRG,de,UEFA,1.0,True,False,True,True,True,True,True,2.0,1.0,0.0,1.0,7.0,9.0,2.0,3,3,11.0,3.0,18.0,12.0,22,False
+1954,Yugoslavia,YUG,yu,UEFA,8.0,False,False,False,False,True,True,True,2.0,1.0,1.0,0.0,2.0,1.0,3.0,1,0,0.0,2.0,2.0,3.0,22,False
+1958,Argentina,ARG,ar,CONMEBOL,13.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,5.0,10.0,2.0,0,0,,,5.0,10.0,22,False
+1958,Austria,AUT,at,UEFA,16.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,7.0,1.0,0,0,,,2.0,7.0,22,False
+1958,Brazil,BRA,br,CONMEBOL,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,5.0,0.0,5.0,3,3,11.0,4.0,16.0,4.0,22,False
+1958,Czechoslovakia,TCH,cz,UEFA,9.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,8.0,4.0,3.0,0,0,,,8.0,4.0,22,False
+1958,England,ENG,gb-eng,UEFA,12.0,False,False,False,False,False,False,False,3.0,0.0,3.0,0.0,4.0,4.0,3.0,0,0,,,4.0,4.0,22,False
+1958,France,FRA,fr,UEFA,3.0,False,False,False,True,True,True,True,3.0,2.0,0.0,1.0,11.0,7.0,4.0,3,2,12.0,8.0,23.0,15.0,22,False
+1958,Hungary,HUN,hu,UEFA,10.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,6.0,3.0,3.0,0,0,,,6.0,3.0,22,False
+1958,Mexico,MEX,mx,Concacaf,15.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,8.0,1.0,0,0,,,1.0,8.0,22,False
+1958,Northern Ireland,NIR,gb-nir,UEFA,8.0,False,False,False,False,True,True,True,3.0,1.0,1.0,1.0,4.0,5.0,3.0,1,0,0.0,4.0,4.0,9.0,22,False
+1958,Paraguay,PAR,py,CONMEBOL,11.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,9.0,12.0,3.0,0,0,,,9.0,12.0,22,False
+1958,Scotland,SCO,gb-sct,UEFA,14.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,4.0,6.0,1.0,0,0,,,4.0,6.0,22,False
+1958,Soviet Union,URS,su,UEFA,6.0,False,False,False,False,True,True,True,3.0,1.0,1.0,1.0,4.0,4.0,3.0,1,0,0.0,2.0,4.0,6.0,22,False
+1958,Sweden,SWE,se,UEFA,2.0,False,True,True,True,True,True,True,3.0,2.0,1.0,0.0,5.0,1.0,5.0,3,2,7.0,6.0,12.0,7.0,22,False
+1958,Wales,WAL,gb-wls,UEFA,7.0,False,False,False,False,True,True,True,3.0,0.0,3.0,0.0,2.0,2.0,3.0,1,0,0.0,1.0,2.0,3.0,22,False
+1958,West Germany,FRG,de,UEFA,4.0,False,False,False,True,True,True,True,3.0,1.0,2.0,0.0,7.0,5.0,4.0,3,1,5.0,9.0,12.0,14.0,22,False
+1958,Yugoslavia,YUG,yu,UEFA,5.0,False,False,False,False,True,True,True,3.0,1.0,2.0,0.0,7.0,6.0,4.0,1,0,0.0,1.0,7.0,7.0,22,False
+1962,Argentina,ARG,ar,CONMEBOL,10.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,3.0,3.0,0,0,,,2.0,3.0,22,False
+1962,Brazil,BRA,br,CONMEBOL,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,4.0,1.0,5.0,3,3,10.0,4.0,14.0,5.0,22,False
+1962,Bulgaria,BUL,bg,UEFA,15.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,7.0,1.0,0,0,,,1.0,7.0,22,False
+1962,Chile,CHI,cl,CONMEBOL,3.0,False,False,False,True,True,True,True,3.0,2.0,0.0,1.0,5.0,3.0,4.0,3,2,5.0,5.0,10.0,8.0,22,False
+1962,Colombia,COL,co,CONMEBOL,14.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,5.0,11.0,1.0,0,0,,,5.0,11.0,22,False
+1962,Czechoslovakia,TCH,cz,UEFA,2.0,False,True,True,True,True,True,True,3.0,1.0,1.0,1.0,2.0,3.0,3.0,3,2,5.0,4.0,7.0,7.0,22,False
+1962,England,ENG,gb-eng,UEFA,8.0,False,False,False,False,True,True,True,3.0,1.0,1.0,1.0,4.0,3.0,3.0,1,0,1.0,3.0,5.0,6.0,22,False
+1962,Hungary,HUN,hu,UEFA,5.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,8.0,2.0,5.0,1,0,0.0,1.0,8.0,3.0,22,False
+1962,Italy,ITA,it,UEFA,9.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,3.0,2.0,3.0,0,0,,,3.0,2.0,22,False
+1962,Mexico,MEX,mx,Concacaf,11.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,4.0,2.0,0,0,,,3.0,4.0,22,False
+1962,Soviet Union,URS,su,UEFA,7.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,8.0,5.0,5.0,1,0,1.0,2.0,9.0,7.0,22,False
+1962,Spain,ESP,es,UEFA,12.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,3.0,2.0,0,0,,,2.0,3.0,22,False
+1962,Switzerland,SUI,ch,UEFA,16.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,8.0,0.0,0,0,,,2.0,8.0,22,False
+1962,Uruguay,URU,uy,CONMEBOL,13.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,6.0,2.0,0,0,,,4.0,6.0,22,False
+1962,West Germany,FRG,de,UEFA,6.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,4.0,1.0,5.0,1,0,0.0,1.0,4.0,2.0,22,False
+1962,Yugoslavia,YUG,yu,UEFA,4.0,False,False,False,True,True,True,True,3.0,2.0,0.0,1.0,8.0,3.0,4.0,3,1,2.0,4.0,10.0,7.0,22,False
+1966,Argentina,ARG,ar,CONMEBOL,6.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,4.0,1.0,5.0,1,0,0.0,1.0,4.0,2.0,22,False
+1966,Brazil,BRA,br,CONMEBOL,10.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,6.0,2.0,0,0,,,4.0,6.0,22,False
+1966,Bulgaria,BUL,bg,UEFA,15.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,8.0,0.0,0,0,,,1.0,8.0,22,False
+1966,Chile,CHI,cl,CONMEBOL,14.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,5.0,1.0,0,0,,,2.0,5.0,22,False
+1966,England,ENG,gb-eng,UEFA,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,4.0,0.0,5.0,3,3,7.0,3.0,11.0,3.0,22,False
+1966,France,FRA,fr,UEFA,13.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,5.0,1.0,0,0,,,2.0,5.0,22,False
+1966,Hungary,HUN,hu,UEFA,5.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,7.0,5.0,4.0,1,0,1.0,2.0,8.0,7.0,22,False
+1966,Italy,ITA,it,UEFA,11.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,2.0,2.0,0,0,,,2.0,2.0,22,False
+1966,Mexico,MEX,mx,Concacaf,12.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,1.0,3.0,2.0,0,0,,,1.0,3.0,22,False
+1966,North Korea,PRK,kp,AFC,8.0,False,False,False,False,True,True,True,3.0,1.0,1.0,1.0,2.0,4.0,3.0,1,0,3.0,5.0,5.0,9.0,22,False
+1966,Portugal,POR,pt,UEFA,3.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,9.0,2.0,6.0,3,2,8.0,6.0,17.0,8.0,22,False
+1966,Soviet Union,URS,su,UEFA,4.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,6.0,1.0,6.0,3,1,4.0,5.0,10.0,6.0,22,False
+1966,Spain,ESP,es,UEFA,9.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,5.0,2.0,0,0,,,4.0,5.0,22,False
+1966,Switzerland,SUI,ch,UEFA,16.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,9.0,0.0,0,0,,,1.0,9.0,22,False
+1966,Uruguay,URU,uy,CONMEBOL,7.0,False,False,False,False,True,True,True,3.0,1.0,2.0,0.0,2.0,1.0,4.0,1,0,0.0,4.0,2.0,5.0,22,False
+1966,West Germany,FRG,de,UEFA,2.0,False,True,True,True,True,True,True,3.0,2.0,1.0,0.0,7.0,1.0,5.0,3,2,8.0,5.0,15.0,6.0,22,False
+1970,Belgium,BEL,be,UEFA,10.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,5.0,2.0,0,0,,,4.0,5.0,22,False
+1970,Brazil,BRA,br,CONMEBOL,1.0,True,False,True,True,True,True,True,3.0,3.0,0.0,0.0,8.0,3.0,6.0,3,3,11.0,4.0,19.0,7.0,22,False
+1970,Bulgaria,BUL,bg,UEFA,13.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,5.0,9.0,1.0,0,0,,,5.0,9.0,22,False
+1970,Czechoslovakia,TCH,cz,UEFA,15.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,7.0,0.0,0,0,,,2.0,7.0,22,False
+1970,El Salvador,SLV,sv,Concacaf,16.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,0.0,9.0,0.0,0,0,,,0.0,9.0,22,False
+1970,England,ENG,gb-eng,UEFA,8.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,2.0,1.0,4.0,1,0,2.0,3.0,4.0,4.0,22,False
+1970,Israel,ISR,il,AFC,12.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,1.0,3.0,2.0,0,0,,,1.0,3.0,22,False
+1970,Italy,ITA,it,UEFA,2.0,False,True,True,True,True,True,True,3.0,1.0,2.0,0.0,1.0,0.0,4.0,3,2,9.0,8.0,10.0,8.0,22,False
+1970,Mexico,MEX,mx,Concacaf,6.0,False,False,False,False,True,True,True,3.0,1.0,2.0,0.0,5.0,0.0,4.0,1,0,1.0,4.0,6.0,4.0,22,False
+1970,Morocco,MAR,ma,CAF,14.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,6.0,1.0,0,0,,,2.0,6.0,19,False
+1970,Peru,PER,pe,CONMEBOL,7.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,7.0,5.0,4.0,1,0,2.0,4.0,9.0,9.0,22,False
+1970,Romania,ROU,ro,UEFA,11.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,5.0,2.0,0,0,,,4.0,5.0,22,False
+1970,Soviet Union,URS,su,UEFA,5.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,6.0,1.0,5.0,1,0,0.0,1.0,6.0,2.0,22,False
+1970,Sweden,SWE,se,UEFA,9.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,2.0,3.0,0,0,,,2.0,2.0,22,False
+1970,Uruguay,URU,uy,CONMEBOL,4.0,False,False,False,True,True,True,True,3.0,1.0,1.0,1.0,2.0,1.0,3.0,3,1,2.0,4.0,4.0,5.0,22,False
+1970,West Germany,FRG,de,UEFA,3.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,10.0,4.0,6.0,3,2,7.0,6.0,17.0,10.0,22,False
+1974,Argentina,ARG,ar,CONMEBOL,8.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,7.0,5.0,3.0,3,0,2.0,7.0,9.0,12.0,22,False
+1974,Australia,AUS,au,AFC,14.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,0.0,5.0,1.0,0,0,,,0.0,5.0,22,False
+1974,Brazil,BRA,br,CONMEBOL,4.0,False,False,False,True,True,True,True,3.0,1.0,2.0,0.0,3.0,0.0,4.0,4,2,3.0,4.0,6.0,4.0,22,False
+1974,Bulgaria,BUL,bg,UEFA,12.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,2.0,5.0,2.0,0,0,,,2.0,5.0,22,False
+1974,Chile,CHI,cl,CONMEBOL,11.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,1.0,2.0,2.0,0,0,,,1.0,2.0,22,False
+1974,East Germany,GDR,dd,UEFA,6.0,False,False,False,False,False,False,False,3.0,2.0,1.0,0.0,4.0,1.0,5.0,3,0,1.0,4.0,5.0,5.0,22,False
+1974,Haiti,HAI,ht,Concacaf,15.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,14.0,0.0,0,0,,,2.0,14.0,22,False
+1974,Italy,ITA,it,UEFA,10.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,5.0,4.0,3.0,0,0,,,5.0,4.0,22,False
+1974,Netherlands,NED,nl,UEFA,2.0,False,True,True,True,True,True,True,3.0,2.0,1.0,0.0,6.0,1.0,5.0,4,3,9.0,2.0,15.0,3.0,22,False
+1974,Poland,POL,pl,UEFA,3.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,12.0,3.0,6.0,4,3,4.0,2.0,16.0,5.0,22,False
+1974,Scotland,SCO,gb-sct,UEFA,9.0,False,False,False,False,False,False,False,3.0,1.0,2.0,0.0,3.0,1.0,4.0,0,0,,,3.0,1.0,22,False
+1974,Sweden,SWE,se,UEFA,5.0,False,False,False,False,False,False,False,3.0,1.0,2.0,0.0,3.0,0.0,4.0,3,1,4.0,6.0,7.0,6.0,22,False
+1974,Uruguay,URU,uy,CONMEBOL,13.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,5.0,1.0,0,0,,,1.0,5.0,22,False
+1974,West Germany,FRG,de,UEFA,1.0,True,False,True,True,True,True,True,3.0,2.0,0.0,1.0,4.0,1.0,4.0,4,4,9.0,3.0,13.0,4.0,22,False
+1974,Yugoslavia,YUG,yu,UEFA,7.0,False,False,False,False,False,False,False,3.0,1.0,2.0,0.0,10.0,1.0,4.0,3,0,2.0,6.0,12.0,7.0,22,False
+1974,Zaire,ZAI,cd,CAF,16.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,0.0,14.0,0.0,0,0,,,0.0,14.0,22,False
+1978,Argentina,ARG,ar,CONMEBOL,1.0,True,False,True,True,True,True,True,3.0,2.0,0.0,1.0,4.0,3.0,4.0,4,3,11.0,1.0,15.0,4.0,22,False
+1978,Austria,AUT,at,UEFA,7.0,False,False,False,False,False,False,False,3.0,2.0,0.0,1.0,3.0,2.0,4.0,3,1,4.0,8.0,7.0,10.0,22,False
+1978,Brazil,BRA,br,CONMEBOL,3.0,False,False,False,True,True,True,True,3.0,1.0,2.0,0.0,2.0,1.0,4.0,4,3,8.0,2.0,10.0,3.0,22,False
+1978,France,FRA,fr,UEFA,12.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,5.0,5.0,2.0,0,0,,,5.0,5.0,22,False
+1978,Hungary,HUN,hu,UEFA,15.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,3.0,8.0,0.0,0,0,,,3.0,8.0,22,False
+1978,Iran,IRN,ir,AFC,14.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,8.0,1.0,0,0,,,2.0,8.0,22,False
+1978,Italy,ITA,it,UEFA,4.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,6.0,2.0,6.0,4,1,3.0,4.0,9.0,6.0,22,False
+1978,Mexico,MEX,mx,Concacaf,16.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,12.0,0.0,0,0,,,2.0,12.0,22,False
+1978,Netherlands,NED,nl,UEFA,2.0,False,True,True,True,True,True,True,3.0,1.0,1.0,1.0,5.0,3.0,3.0,4,2,10.0,7.0,15.0,10.0,22,False
+1978,Peru,PER,pe,CONMEBOL,8.0,False,False,False,False,False,False,False,3.0,2.0,1.0,0.0,7.0,2.0,5.0,3,0,0.0,10.0,7.0,12.0,22,False
+1978,Poland,POL,pl,UEFA,5.0,False,False,False,False,False,False,False,3.0,2.0,1.0,0.0,4.0,1.0,5.0,3,1,2.0,5.0,6.0,6.0,22,False
+1978,Scotland,SCO,gb-sct,UEFA,11.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,5.0,6.0,3.0,0,0,,,5.0,6.0,22,False
+1978,Spain,ESP,es,UEFA,10.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,2.0,3.0,0,0,,,2.0,2.0,22,False
+1978,Sweden,SWE,se,UEFA,13.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,3.0,1.0,0,0,,,1.0,3.0,22,False
+1978,Tunisia,TUN,tn,CAF,9.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,3.0,2.0,3.0,0,0,,,3.0,2.0,22,False
+1978,West Germany,FRG,de,UEFA,6.0,False,False,False,False,False,False,False,3.0,1.0,2.0,0.0,6.0,0.0,4.0,3,0,4.0,5.0,10.0,5.0,22,False
+1982,Algeria,ALG,dz,CAF,14.0,False,False,False,False,False,False,False,3.0,2.0,0.0,1.0,5.0,5.0,4.0,0,0,,,5.0,5.0,22,False
+1982,Argentina,ARG,ar,CONMEBOL,10.0,False,False,False,False,False,False,False,3.0,2.0,0.0,1.0,6.0,2.0,4.0,2,0,2.0,5.0,8.0,7.0,22,False
+1982,Austria,AUT,at,UEFA,8.0,False,False,False,False,False,False,False,3.0,2.0,0.0,1.0,3.0,1.0,4.0,2,0,2.0,3.0,5.0,4.0,22,False
+1982,Belgium,BEL,be,UEFA,11.0,False,False,False,False,False,False,False,3.0,2.0,1.0,0.0,3.0,1.0,5.0,2,0,0.0,4.0,3.0,5.0,22,False
+1982,Brazil,BRA,br,CONMEBOL,5.0,False,False,False,False,False,False,False,3.0,3.0,0.0,0.0,10.0,2.0,6.0,2,1,5.0,4.0,15.0,6.0,22,False
+1982,Cameroon,CMR,cm,CAF,16.0,False,False,False,False,False,False,False,3.0,0.0,3.0,0.0,1.0,1.0,3.0,0,0,,,1.0,1.0,22,False
+1982,Chile,CHI,cl,CONMEBOL,23.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,3.0,8.0,0.0,0,0,,,3.0,8.0,22,False
+1982,Czechoslovakia,TCH,cz,UEFA,17.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,2.0,4.0,2.0,0,0,,,2.0,4.0,22,False
+1982,El Salvador,SLV,sv,Concacaf,24.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,13.0,0.0,0,0,,,1.0,13.0,20,False
+1982,England,ENG,gb-eng,UEFA,6.0,False,False,False,False,False,False,False,3.0,3.0,0.0,0.0,6.0,1.0,6.0,2,0,0.0,0.0,6.0,1.0,22,False
+1982,France,FRA,fr,UEFA,4.0,False,False,False,True,True,True,True,3.0,1.0,1.0,1.0,6.0,5.0,3.0,4,2,10.0,7.0,16.0,12.0,22,False
+1982,Honduras,HON,hn,Concacaf,19.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,2.0,3.0,2.0,0,0,,,2.0,3.0,22,False
+1982,Hungary,HUN,hu,UEFA,15.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,12.0,6.0,3.0,0,0,,,12.0,6.0,22,False
+1982,Italy,ITA,it,UEFA,1.0,True,False,True,True,True,True,True,3.0,0.0,3.0,0.0,2.0,2.0,3.0,4,4,10.0,4.0,12.0,6.0,22,False
+1982,Kuwait,KUW,kw,AFC,21.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,6.0,1.0,0,0,,,2.0,6.0,22,False
+1982,New Zealand,NZL,nz,OFC,22.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,12.0,0.0,0,0,,,2.0,12.0,22,False
+1982,Northern Ireland,NIR,gb-nir,UEFA,9.0,False,False,False,False,False,False,False,3.0,1.0,2.0,0.0,2.0,1.0,4.0,2,0,3.0,6.0,5.0,7.0,22,False
+1982,Peru,PER,pe,CONMEBOL,20.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,2.0,6.0,2.0,0,0,,,2.0,6.0,22,False
+1982,Poland,POL,pl,UEFA,3.0,False,False,False,True,True,True,True,3.0,1.0,2.0,0.0,5.0,1.0,4.0,4,2,6.0,4.0,11.0,5.0,22,False
+1982,Scotland,SCO,gb-sct,UEFA,18.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,8.0,8.0,3.0,0,0,,,8.0,8.0,22,False
+1982,Soviet Union,URS,su,UEFA,7.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,6.0,4.0,3.0,2,1,1.0,0.0,7.0,4.0,22,False
+1982,Spain,ESP,es,UEFA,12.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,3.0,3.0,3.0,2,0,1.0,2.0,4.0,5.0,22,False
+1982,West Germany,FRG,de,UEFA,2.0,False,True,True,True,True,True,True,3.0,2.0,0.0,1.0,6.0,3.0,4.0,4,2,6.0,7.0,12.0,10.0,22,False
+1982,Yugoslavia,YUG,yu,UEFA,13.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,2.0,3.0,0,0,,,2.0,2.0,22,False
+1986,Algeria,ALG,dz,CAF,22.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,5.0,1.0,0,0,,,1.0,5.0,22,False
+1986,Argentina,ARG,ar,CONMEBOL,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,6.0,2.0,5.0,4,4,8.0,3.0,14.0,5.0,22,False
+1986,Belgium,BEL,be,UEFA,4.0,False,False,False,True,True,True,True,3.0,1.0,1.0,1.0,5.0,5.0,3.0,4,2,7.0,10.0,12.0,15.0,22,False
+1986,Brazil,BRA,br,CONMEBOL,5.0,False,False,False,False,True,True,True,3.0,3.0,0.0,0.0,5.0,0.0,6.0,2,1,5.0,1.0,10.0,1.0,22,False
+1986,Bulgaria,BUL,bg,UEFA,15.0,False,False,False,False,False,True,True,3.0,0.0,2.0,1.0,2.0,4.0,2.0,1,0,0.0,2.0,2.0,6.0,22,False
+1986,Canada,CAN,ca,Concacaf,24.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,0.0,5.0,0.0,0,0,,,0.0,5.0,22,False
+1986,Denmark,DEN,dk,UEFA,9.0,False,False,False,False,False,True,True,3.0,3.0,0.0,0.0,9.0,1.0,6.0,1,0,1.0,5.0,10.0,6.0,22,False
+1986,England,ENG,gb-eng,UEFA,8.0,False,False,False,False,True,True,True,3.0,1.0,1.0,1.0,3.0,1.0,3.0,2,1,4.0,2.0,7.0,3.0,22,False
+1986,France,FRA,fr,UEFA,3.0,False,False,False,True,True,True,True,3.0,2.0,1.0,0.0,5.0,1.0,5.0,4,3,7.0,5.0,12.0,6.0,22,False
+1986,Hungary,HUN,hu,UEFA,17.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,9.0,2.0,0,0,,,2.0,9.0,22,False
+1986,Iraq,IRQ,iq,AFC,23.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,4.0,0.0,0,0,,,1.0,4.0,22,False
+1986,Italy,ITA,it,UEFA,12.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,5.0,4.0,4.0,1,0,0.0,2.0,5.0,6.0,22,False
+1986,Mexico,MEX,mx,Concacaf,6.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,4.0,2.0,5.0,2,1,2.0,0.0,6.0,2.0,22,False
+1986,Morocco,MAR,ma,CAF,11.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,3.0,1.0,4.0,1,0,0.0,1.0,3.0,2.0,22,False
+1986,Northern Ireland,NIR,gb-nir,UEFA,19.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,6.0,1.0,0,0,,,2.0,6.0,22,False
+1986,Paraguay,PAR,py,CONMEBOL,13.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,4.0,3.0,4.0,1,0,0.0,3.0,4.0,6.0,22,False
+1986,Poland,POL,pl,UEFA,14.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,1.0,3.0,3.0,1,0,0.0,4.0,1.0,7.0,22,False
+1986,Portugal,POR,pt,UEFA,18.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,4.0,2.0,0,0,,,2.0,4.0,22,False
+1986,Scotland,SCO,gb-sct,UEFA,21.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,3.0,1.0,0,0,,,1.0,3.0,22,False
+1986,South Korea,KOR,kr,AFC,20.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,4.0,7.0,1.0,0,0,,,4.0,7.0,22,False
+1986,Soviet Union,URS,su,UEFA,10.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,9.0,1.0,5.0,1,0,3.0,4.0,12.0,5.0,22,False
+1986,Spain,ESP,es,UEFA,7.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,5.0,2.0,4.0,2,1,6.0,2.0,11.0,4.0,22,False
+1986,Uruguay,URU,uy,CONMEBOL,16.0,False,False,False,False,False,True,True,3.0,0.0,2.0,1.0,2.0,7.0,2.0,1,0,0.0,1.0,2.0,8.0,22,False
+1986,West Germany,FRG,de,UEFA,2.0,False,True,True,True,True,True,True,3.0,1.0,1.0,1.0,3.0,4.0,3.0,4,3,5.0,3.0,8.0,7.0,22,False
+1990,Argentina,ARG,ar,CONMEBOL,2.0,False,True,True,True,True,True,True,3.0,1.0,1.0,1.0,3.0,2.0,3.0,4,3,2.0,2.0,5.0,4.0,23,False
+1990,Austria,AUT,at,UEFA,21.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,3.0,2.0,0,0,,,2.0,3.0,22,False
+1990,Belgium,BEL,be,UEFA,13.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,6.0,3.0,4.0,1,0,0.0,1.0,6.0,4.0,22,False
+1990,Brazil,BRA,br,CONMEBOL,9.0,False,False,False,False,False,True,True,3.0,3.0,0.0,0.0,4.0,1.0,6.0,1,0,0.0,1.0,4.0,2.0,22,False
+1990,Cameroon,CMR,cm,CAF,7.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,3.0,5.0,4.0,2,1,4.0,4.0,7.0,9.0,22,False
+1990,Colombia,COL,co,CONMEBOL,14.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,3.0,2.0,3.0,1,0,1.0,2.0,4.0,4.0,22,False
+1990,Costa Rica,CRC,cr,Concacaf,15.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,3.0,2.0,4.0,1,0,1.0,4.0,4.0,6.0,22,False
+1990,Czechoslovakia,TCH,cz,UEFA,6.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,6.0,3.0,4.0,2,1,4.0,2.0,10.0,5.0,22,False
+1990,Egypt,EGY,eg,CAF,17.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,1.0,2.0,2.0,0,0,,,1.0,2.0,22,False
+1990,England,ENG,gb-eng,UEFA,4.0,False,False,False,True,True,True,True,3.0,1.0,2.0,0.0,2.0,1.0,4.0,4,2,6.0,5.0,8.0,6.0,23,False
+1990,Italy,ITA,it,UEFA,3.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,4.0,0.0,6.0,4,3,6.0,2.0,10.0,2.0,22,False
+1990,Netherlands,NED,nl,UEFA,12.0,False,False,False,False,False,True,True,3.0,0.0,3.0,0.0,2.0,2.0,3.0,1,0,1.0,2.0,3.0,4.0,22,False
+1990,Republic of Ireland,IRL,ie,UEFA,8.0,False,False,False,False,True,True,True,3.0,0.0,3.0,0.0,2.0,2.0,3.0,2,1,0.0,1.0,2.0,3.0,22,False
+1990,Romania,ROU,ro,UEFA,11.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,4.0,3.0,3.0,1,0,0.0,0.0,4.0,3.0,22,False
+1990,Scotland,SCO,gb-sct,UEFA,20.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,3.0,2.0,0,0,,,2.0,3.0,22,False
+1990,South Korea,KOR,kr,AFC,23.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,6.0,0.0,0,0,,,1.0,6.0,22,False
+1990,Soviet Union,URS,su,UEFA,19.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,4.0,2.0,0,0,,,4.0,4.0,22,False
+1990,Spain,ESP,es,UEFA,10.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,6.0,2.0,5.0,1,0,1.0,2.0,7.0,4.0,22,False
+1990,Sweden,SWE,se,UEFA,18.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,3.0,6.0,0.0,0,0,,,3.0,6.0,22,False
+1990,United Arab Emirates,UAE,ae,AFC,24.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,11.0,0.0,0,0,,,2.0,11.0,22,False
+1990,United States,USA,us,Concacaf,22.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,8.0,0.0,0,0,,,2.0,8.0,22,False
+1990,Uruguay,URU,uy,CONMEBOL,16.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,2.0,3.0,3.0,1,0,0.0,2.0,2.0,5.0,22,False
+1990,West Germany,FRG,de,UEFA,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,10.0,3.0,5.0,4,4,5.0,2.0,15.0,5.0,22,False
+1990,Yugoslavia,YUG,yu,UEFA,5.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,6.0,5.0,4.0,2,1,2.0,1.0,8.0,6.0,22,False
+1994,Argentina,ARG,ar,CONMEBOL,10.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,6.0,3.0,6.0,1,0,2.0,3.0,8.0,6.0,22,False
+1994,Belgium,BEL,be,UEFA,11.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,2.0,1.0,6.0,1,0,2.0,3.0,4.0,4.0,22,False
+1994,Bolivia,BOL,bo,CONMEBOL,22.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,4.0,1.0,0,0,,,1.0,4.0,22,False
+1994,Brazil,BRA,br,CONMEBOL,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,6.0,1.0,7.0,4,4,5.0,2.0,11.0,3.0,22,False
+1994,Bulgaria,BUL,bg,UEFA,4.0,False,False,False,True,True,True,True,3.0,2.0,0.0,1.0,6.0,3.0,6.0,4,2,4.0,8.0,10.0,11.0,22,False
+1994,Cameroon,CMR,cm,CAF,20.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,3.0,11.0,1.0,0,0,,,3.0,11.0,22,False
+1994,Colombia,COL,co,CONMEBOL,19.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,5.0,3.0,0,0,,,4.0,5.0,22,False
+1994,Germany,GER,de,UEFA,5.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,5.0,3.0,7.0,2,1,4.0,4.0,9.0,7.0,22,False
+1994,Greece,GRE,gr,UEFA,24.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,0.0,10.0,0.0,0,0,,,0.0,10.0,22,False
+1994,Italy,ITA,it,UEFA,2.0,False,True,True,True,True,True,True,3.0,1.0,1.0,1.0,2.0,2.0,4.0,4,3,6.0,3.0,8.0,5.0,22,False
+1994,Mexico,MEX,mx,Concacaf,12.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,3.0,3.0,4.0,1,0,1.0,1.0,4.0,4.0,22,False
+1994,Morocco,MAR,ma,CAF,23.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,5.0,0.0,0,0,,,2.0,5.0,22,False
+1994,Netherlands,NED,nl,UEFA,7.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,4.0,3.0,6.0,2,1,4.0,3.0,8.0,6.0,22,False
+1994,Nigeria,NGA,ng,CAF,9.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,6.0,2.0,6.0,1,0,1.0,2.0,7.0,4.0,22,False
+1994,Norway,NOR,no,UEFA,17.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,1.0,1.0,4.0,0,0,,,1.0,1.0,22,False
+1994,Republic of Ireland,IRL,ie,UEFA,15.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,2.0,2.0,4.0,1,0,0.0,2.0,2.0,4.0,22,False
+1994,Romania,ROU,ro,UEFA,6.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,5.0,5.0,6.0,2,1,5.0,4.0,10.0,9.0,22,False
+1994,Russia,RUS,ru,UEFA,18.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,7.0,6.0,3.0,0,0,,,7.0,6.0,22,False
+1994,Saudi Arabia,KSA,sa,AFC,14.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,4.0,3.0,6.0,1,0,1.0,3.0,5.0,6.0,22,False
+1994,South Korea,KOR,kr,AFC,21.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,4.0,5.0,2.0,0,0,,,4.0,5.0,22,False
+1994,Spain,ESP,es,UEFA,8.0,False,False,False,False,True,True,True,3.0,1.0,2.0,0.0,6.0,4.0,5.0,2,1,4.0,2.0,10.0,6.0,22,False
+1994,Sweden,SWE,se,UEFA,3.0,False,False,False,True,True,True,True,3.0,1.0,2.0,0.0,6.0,4.0,5.0,4,3,9.0,4.0,15.0,8.0,22,False
+1994,Switzerland,SUI,ch,UEFA,16.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,5.0,4.0,4.0,1,0,0.0,3.0,5.0,7.0,22,False
+1994,United States,USA,us,Concacaf,13.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,3.0,3.0,4.0,1,0,0.0,1.0,3.0,4.0,22,False
+1998,Argentina,ARG,ar,CONMEBOL,6.0,False,False,False,False,True,True,True,3.0,3.0,0.0,0.0,7.0,0.0,9.0,2,1,3.0,4.0,10.0,4.0,22,False
+1998,Austria,AUT,at,UEFA,23.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,3.0,4.0,2.0,0,0,,,3.0,4.0,22,False
+1998,Belgium,BEL,be,UEFA,19.0,False,False,False,False,False,False,False,3.0,0.0,3.0,0.0,3.0,3.0,3.0,0,0,,,3.0,3.0,22,False
+1998,Brazil,BRA,br,CONMEBOL,2.0,False,True,True,True,True,True,True,3.0,2.0,0.0,1.0,6.0,3.0,6.0,4,3,8.0,7.0,14.0,10.0,22,False
+1998,Bulgaria,BUL,bg,UEFA,27.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,7.0,1.0,0,0,,,1.0,7.0,22,False
+1998,Cameroon,CMR,cm,CAF,31.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,2.0,5.0,2.0,0,0,,,2.0,5.0,22,False
+1998,Chile,CHI,cl,CONMEBOL,16.0,False,False,False,False,False,True,True,3.0,0.0,3.0,0.0,4.0,4.0,3.0,1,0,1.0,4.0,5.0,8.0,22,False
+1998,Colombia,COL,co,CONMEBOL,21.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,1.0,3.0,3.0,0,0,,,1.0,3.0,22,False
+1998,Croatia,CRO,hr,UEFA,3.0,False,False,False,True,True,True,True,3.0,2.0,0.0,1.0,4.0,2.0,6.0,4,3,7.0,3.0,11.0,5.0,22,False
+1998,Denmark,DEN,dk,UEFA,7.0,False,False,False,False,True,True,True,3.0,1.0,1.0,1.0,3.0,3.0,4.0,2,1,6.0,4.0,9.0,7.0,22,False
+1998,England,ENG,gb-eng,UEFA,9.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,5.0,2.0,6.0,1,0,2.0,2.0,7.0,4.0,22,False
+1998,FR Yugoslavia,YUG,rs,UEFA,13.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,4.0,2.0,7.0,1,0,1.0,2.0,5.0,4.0,22,False
+1998,France,FRA,fr,UEFA,1.0,True,False,True,True,True,True,True,3.0,3.0,0.0,0.0,9.0,1.0,9.0,4,4,6.0,1.0,15.0,2.0,22,False
+1998,Germany,GER,de,UEFA,8.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,6.0,2.0,7.0,2,1,2.0,4.0,8.0,6.0,22,False
+1998,Iran,IRN,ir,AFC,20.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,4.0,3.0,0,0,,,2.0,4.0,22,False
+1998,Italy,ITA,it,UEFA,5.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,7.0,3.0,7.0,2,1,1.0,0.0,8.0,3.0,22,False
+1998,Jamaica,JAM,jm,Concacaf,22.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,9.0,3.0,0,0,,,3.0,9.0,22,False
+1998,Japan,JPN,jp,AFC,32.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,4.0,0.0,0,0,,,1.0,4.0,22,False
+1998,Mexico,MEX,mx,Concacaf,12.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,7.0,5.0,5.0,1,0,1.0,2.0,8.0,7.0,22,False
+1998,Morocco,MAR,ma,CAF,18.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,5.0,5.0,4.0,0,0,,,5.0,5.0,22,False
+1998,Netherlands,NED,nl,UEFA,4.0,False,False,False,True,True,True,True,3.0,1.0,2.0,0.0,7.0,2.0,5.0,4,2,6.0,5.0,13.0,7.0,22,False
+1998,Nigeria,NGA,ng,CAF,14.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,5.0,5.0,6.0,1,0,1.0,4.0,6.0,9.0,22,False
+1998,Norway,NOR,no,UEFA,11.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,5.0,4.0,5.0,1,0,0.0,1.0,5.0,5.0,22,False
+1998,Paraguay,PAR,py,CONMEBOL,15.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,3.0,1.0,5.0,1,0,0.0,1.0,3.0,2.0,22,False
+1998,Romania,ROU,ro,UEFA,10.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,4.0,2.0,7.0,1,0,0.0,1.0,4.0,3.0,22,False
+1998,Saudi Arabia,KSA,sa,AFC,28.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,7.0,1.0,0,0,,,2.0,7.0,22,False
+1998,Scotland,SCO,gb-sct,UEFA,25.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,6.0,1.0,0,0,,,2.0,6.0,22,False
+1998,South Africa,RSA,za,CAF,24.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,3.0,6.0,2.0,0,0,,,3.0,6.0,23,False
+1998,South Korea,KOR,kr,AFC,30.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,9.0,1.0,0,0,,,2.0,9.0,22,False
+1998,Spain,ESP,es,UEFA,17.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,8.0,4.0,4.0,0,0,,,8.0,4.0,22,False
+1998,Tunisia,TUN,tn,CAF,26.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,4.0,1.0,0,0,,,1.0,4.0,22,False
+1998,United States,USA,us,Concacaf,29.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,5.0,0.0,0,0,,,1.0,5.0,22,False
+2002,Argentina,ARG,ar,CONMEBOL,17.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,2.0,4.0,0,0,,,2.0,2.0,23,False
+2002,Belgium,BEL,be,UEFA,13.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,6.0,5.0,5.0,1,0,0.0,2.0,6.0,7.0,23,False
+2002,Brazil,BRA,br,CONMEBOL,1.0,True,False,True,True,True,True,True,3.0,3.0,0.0,0.0,11.0,3.0,9.0,4,4,7.0,1.0,18.0,4.0,23,False
+2002,Cameroon,CMR,cm,CAF,21.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,3.0,4.0,0,0,,,2.0,3.0,23,False
+2002,China PR,CHN,cn,AFC,31.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,0.0,9.0,0.0,0,0,,,0.0,9.0,23,False
+2002,Costa Rica,CRC,cr,Concacaf,18.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,5.0,6.0,4.0,0,0,,,5.0,6.0,23,False
+2002,Croatia,CRO,hr,UEFA,23.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,3.0,3.0,0,0,,,2.0,3.0,23,False
+2002,Denmark,DEN,dk,UEFA,16.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,5.0,2.0,7.0,1,0,0.0,3.0,5.0,5.0,23,False
+2002,Ecuador,ECU,ec,CONMEBOL,24.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,4.0,3.0,0,0,,,2.0,4.0,23,False
+2002,England,ENG,gb-eng,UEFA,6.0,False,False,False,False,True,True,True,3.0,1.0,2.0,0.0,2.0,1.0,5.0,2,1,4.0,2.0,6.0,3.0,23,False
+2002,France,FRA,fr,UEFA,27.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,0.0,3.0,1.0,0,0,,,0.0,3.0,23,False
+2002,Germany,GER,de,UEFA,2.0,False,True,True,True,True,True,True,3.0,2.0,1.0,0.0,11.0,1.0,7.0,4,3,3.0,2.0,14.0,3.0,23,False
+2002,Italy,ITA,it,UEFA,14.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,4.0,3.0,4.0,1,0,1.0,2.0,5.0,5.0,23,False
+2002,Japan,JPN,jp,AFC,9.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,5.0,2.0,7.0,1,0,0.0,1.0,5.0,3.0,23,False
+2002,Mexico,MEX,mx,Concacaf,10.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,4.0,2.0,7.0,1,0,0.0,2.0,4.0,4.0,23,False
+2002,Nigeria,NGA,ng,CAF,28.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,3.0,1.0,0,0,,,1.0,3.0,23,False
+2002,Paraguay,PAR,py,CONMEBOL,15.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,6.0,6.0,4.0,1,0,0.0,1.0,6.0,7.0,23,False
+2002,Poland,POL,pl,UEFA,26.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,7.0,3.0,0,0,,,3.0,7.0,23,False
+2002,Portugal,POR,pt,UEFA,19.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,6.0,4.0,3.0,0,0,,,6.0,4.0,23,False
+2002,Republic of Ireland,IRL,ie,UEFA,11.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,5.0,2.0,5.0,1,0,1.0,1.0,6.0,3.0,23,False
+2002,Russia,RUS,ru,UEFA,22.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,4.0,3.0,0,0,,,4.0,4.0,23,False
+2002,Saudi Arabia,KSA,sa,AFC,32.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,0.0,12.0,0.0,0,0,,,0.0,12.0,23,False
+2002,Senegal,SEN,sn,CAF,7.0,False,False,False,False,True,True,True,3.0,1.0,2.0,0.0,5.0,4.0,5.0,2,1,2.0,2.0,7.0,6.0,23,False
+2002,Slovenia,SVN,si,UEFA,29.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,7.0,0.0,0,0,,,2.0,7.0,23,False
+2002,South Africa,RSA,za,CAF,20.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,5.0,5.0,4.0,0,0,,,5.0,5.0,23,False
+2002,South Korea,KOR,kr,AFC,4.0,False,False,False,True,True,True,True,3.0,2.0,1.0,0.0,4.0,1.0,7.0,4,2,4.0,5.0,8.0,6.0,23,False
+2002,Spain,ESP,es,UEFA,5.0,False,False,False,False,True,True,True,3.0,3.0,0.0,0.0,9.0,4.0,9.0,2,1,1.0,1.0,10.0,5.0,23,False
+2002,Sweden,SWE,se,UEFA,12.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,4.0,3.0,5.0,1,0,1.0,2.0,5.0,5.0,23,False
+2002,Tunisia,TUN,tn,CAF,30.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,5.0,1.0,0,0,,,1.0,5.0,23,False
+2002,Turkey,TUR,tr,UEFA,3.0,False,False,False,True,True,True,True,3.0,1.0,1.0,1.0,5.0,3.0,4.0,4,3,5.0,3.0,10.0,6.0,23,False
+2002,United States,USA,us,Concacaf,8.0,False,False,False,False,True,True,True,3.0,1.0,1.0,1.0,5.0,6.0,4.0,2,1,2.0,1.0,7.0,7.0,23,False
+2002,Uruguay,URU,uy,CONMEBOL,25.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,4.0,5.0,2.0,0,0,,,4.0,5.0,23,False
+2006,Angola,ANG,ao,CAF,23.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,1.0,2.0,2.0,0,0,,,1.0,2.0,23,False
+2006,Argentina,ARG,ar,CONMEBOL,6.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,8.0,1.0,7.0,2,1,3.0,2.0,11.0,3.0,23,False
+2006,Australia,AUS,au,AFC,15.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,5.0,5.0,4.0,1,0,0.0,1.0,5.0,6.0,23,False
+2006,Brazil,BRA,br,CONMEBOL,5.0,False,False,False,False,True,True,True,3.0,3.0,0.0,0.0,7.0,1.0,9.0,2,1,3.0,1.0,10.0,2.0,23,False
+2006,Costa Rica,CRC,cr,Concacaf,30.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,3.0,9.0,0.0,0,0,,,3.0,9.0,23,False
+2006,Croatia,CRO,hr,UEFA,22.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,2.0,3.0,2.0,0,0,,,2.0,3.0,23,False
+2006,Czech Republic,CZE,cz,UEFA,20.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,4.0,3.0,0,0,,,3.0,4.0,23,False
+2006,Ecuador,ECU,ec,CONMEBOL,12.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,5.0,3.0,6.0,1,0,0.0,1.0,5.0,4.0,23,False
+2006,England,ENG,gb-eng,UEFA,8.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,5.0,2.0,7.0,2,1,1.0,0.0,6.0,2.0,23,False
+2006,France,FRA,fr,UEFA,2.0,False,True,True,True,True,True,True,3.0,1.0,2.0,0.0,3.0,1.0,5.0,4,3,6.0,2.0,9.0,3.0,23,False
+2006,Germany,GER,de,UEFA,3.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,8.0,2.0,9.0,4,3,6.0,4.0,14.0,6.0,23,False
+2006,Ghana,GHA,gh,CAF,13.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,4.0,3.0,6.0,1,0,0.0,3.0,4.0,6.0,23,False
+2006,Iran,IRN,ir,AFC,27.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,6.0,1.0,0,0,,,2.0,6.0,23,False
+2006,Italy,ITA,it,UEFA,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,5.0,1.0,7.0,4,4,7.0,1.0,12.0,2.0,23,False
+2006,Ivory Coast,CIV,ci,CAF,19.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,5.0,6.0,3.0,0,0,,,5.0,6.0,23,False
+2006,Japan,JPN,jp,AFC,26.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,7.0,1.0,0,0,,,2.0,7.0,23,False
+2006,Mexico,MEX,mx,Concacaf,16.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,4.0,3.0,4.0,1,0,1.0,2.0,5.0,5.0,23,False
+2006,Netherlands,NED,nl,UEFA,10.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,3.0,1.0,7.0,1,0,0.0,1.0,3.0,2.0,23,False
+2006,Paraguay,PAR,py,CONMEBOL,18.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,2.0,3.0,0,0,,,2.0,2.0,23,False
+2006,Poland,POL,pl,UEFA,21.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,4.0,3.0,0,0,,,2.0,4.0,23,False
+2006,Portugal,POR,pt,UEFA,4.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,5.0,1.0,9.0,4,2,2.0,4.0,7.0,5.0,23,False
+2006,Saudi Arabia,KSA,sa,AFC,29.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,7.0,1.0,0,0,,,2.0,7.0,23,False
+2006,Serbia and Montenegro,SCG,rs,UEFA,31.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,10.0,0.0,0,0,,,2.0,10.0,23,False
+2006,South Korea,KOR,kr,AFC,17.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,3.0,4.0,4.0,0,0,,,3.0,4.0,23,False
+2006,Spain,ESP,es,UEFA,9.0,False,False,False,False,False,True,True,3.0,3.0,0.0,0.0,8.0,1.0,9.0,1,0,1.0,3.0,9.0,4.0,23,False
+2006,Sweden,SWE,se,UEFA,14.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,3.0,2.0,5.0,1,0,0.0,2.0,3.0,4.0,23,False
+2006,Switzerland,SUI,ch,UEFA,11.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,4.0,0.0,7.0,1,0,0.0,0.0,4.0,0.0,23,False
+2006,Togo,TOG,tg,CAF,32.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,6.0,0.0,0,0,,,1.0,6.0,23,False
+2006,Trinidad and Tobago,TRI,tt,Concacaf,28.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,0.0,4.0,1.0,0,0,,,0.0,4.0,23,False
+2006,Tunisia,TUN,tn,CAF,24.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,3.0,6.0,1.0,0,0,,,3.0,6.0,23,False
+2006,Ukraine,UKR,ua,UEFA,7.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,5.0,4.0,6.0,2,1,0.0,3.0,5.0,7.0,23,False
+2006,United States,USA,us,Concacaf,25.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,6.0,1.0,0,0,,,2.0,6.0,23,False
+2010,Algeria,ALG,dz,CAF,29.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,0.0,2.0,1.0,0,0,,,0.0,2.0,23,False
+2010,Argentina,ARG,ar,CONMEBOL,5.0,False,False,False,False,True,True,True,3.0,3.0,0.0,0.0,7.0,1.0,9.0,2,1,3.0,5.0,10.0,6.0,23,False
+2010,Australia,AUS,au,AFC,21.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,3.0,6.0,4.0,0,0,,,3.0,6.0,23,False
+2010,Brazil,BRA,br,CONMEBOL,6.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,5.0,2.0,7.0,2,1,4.0,2.0,9.0,4.0,23,False
+2010,Cameroon,CMR,cm,CAF,31.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,5.0,0.0,0,0,,,2.0,5.0,23,False
+2010,Chile,CHI,cl,CONMEBOL,10.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,3.0,2.0,6.0,1,0,0.0,3.0,3.0,5.0,23,False
+2010,Denmark,DEN,dk,UEFA,24.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,6.0,3.0,0,0,,,3.0,6.0,23,False
+2010,England,ENG,gb-eng,UEFA,13.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,2.0,1.0,5.0,1,0,1.0,4.0,3.0,5.0,23,False
+2010,France,FRA,fr,UEFA,27.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,4.0,1.0,0,0,,,1.0,4.0,23,False
+2010,Germany,GER,de,UEFA,3.0,False,False,False,True,True,True,True,3.0,2.0,0.0,1.0,5.0,1.0,6.0,4,3,11.0,4.0,16.0,5.0,23,False
+2010,Ghana,GHA,gh,CAF,7.0,False,False,False,False,True,True,True,3.0,1.0,1.0,1.0,2.0,2.0,4.0,2,1,3.0,2.0,5.0,4.0,23,False
+2010,Greece,GRE,gr,UEFA,25.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,5.0,3.0,0,0,,,2.0,5.0,23,False
+2010,Honduras,HON,hn,Concacaf,30.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,0.0,3.0,1.0,0,0,,,0.0,3.0,23,False
+2010,Italy,ITA,it,UEFA,26.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,4.0,5.0,2.0,0,0,,,4.0,5.0,23,False
+2010,Ivory Coast,CIV,ci,CAF,17.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,4.0,3.0,4.0,0,0,,,4.0,3.0,23,False
+2010,Japan,JPN,jp,AFC,9.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,4.0,2.0,6.0,1,0,0.0,0.0,4.0,2.0,23,False
+2010,Mexico,MEX,mx,Concacaf,14.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,3.0,2.0,4.0,1,0,1.0,3.0,4.0,5.0,23,False
+2010,Netherlands,NED,nl,UEFA,2.0,False,True,True,True,True,True,True,3.0,3.0,0.0,0.0,5.0,1.0,9.0,4,3,7.0,5.0,12.0,6.0,23,False
+2010,New Zealand,NZL,nz,OFC,22.0,False,False,False,False,False,False,False,3.0,0.0,3.0,0.0,2.0,2.0,3.0,0,0,,,2.0,2.0,23,False
+2010,Nigeria,NGA,ng,CAF,28.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,3.0,5.0,1.0,0,0,,,3.0,5.0,23,False
+2010,North Korea,PRK,kp,AFC,32.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,12.0,0.0,0,0,,,1.0,12.0,23,False
+2010,Paraguay,PAR,py,CONMEBOL,8.0,False,False,False,False,True,True,True,3.0,1.0,2.0,0.0,3.0,1.0,5.0,2,1,0.0,1.0,3.0,2.0,23,False
+2010,Portugal,POR,pt,UEFA,11.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,7.0,0.0,5.0,1,0,0.0,1.0,7.0,1.0,23,False
+2010,Serbia,SRB,rs,UEFA,23.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,3.0,3.0,0,0,,,2.0,3.0,23,False
+2010,Slovakia,SVK,sk,UEFA,16.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,4.0,5.0,4.0,1,0,1.0,2.0,5.0,7.0,23,False
+2010,Slovenia,SVN,si,UEFA,18.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,3.0,3.0,4.0,0,0,,,3.0,3.0,23,False
+2010,South Africa,RSA,za,CAF,20.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,3.0,5.0,4.0,0,0,,,3.0,5.0,23,False
+2010,South Korea,KOR,kr,AFC,15.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,5.0,6.0,4.0,1,0,1.0,2.0,6.0,8.0,23,False
+2010,Spain,ESP,es,UEFA,1.0,True,False,True,True,True,True,True,3.0,2.0,0.0,1.0,4.0,2.0,6.0,4,4,4.0,0.0,8.0,2.0,23,False
+2010,Switzerland,SUI,ch,UEFA,19.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,1.0,1.0,4.0,0,0,,,1.0,1.0,23,False
+2010,United States,USA,us,Concacaf,12.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,4.0,3.0,5.0,1,0,1.0,2.0,5.0,5.0,23,False
+2010,Uruguay,URU,uy,CONMEBOL,4.0,False,False,False,True,True,True,True,3.0,2.0,1.0,0.0,4.0,0.0,7.0,4,2,7.0,8.0,11.0,8.0,23,False
+2014,Algeria,ALG,dz,CAF,12.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,7.0,6.0,4.0,1,0,1.0,2.0,8.0,8.0,23,False
+2014,Argentina,ARG,ar,CONMEBOL,2.0,False,True,True,True,True,True,True,3.0,3.0,0.0,0.0,6.0,3.0,9.0,4,3,2.0,1.0,8.0,4.0,23,False
+2014,Australia,AUS,au,AFC,30.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,3.0,9.0,0.0,0,0,,,3.0,9.0,23,False
+2014,Belgium,BEL,be,UEFA,6.0,False,False,False,False,True,True,True,3.0,3.0,0.0,0.0,4.0,1.0,9.0,2,1,2.0,2.0,6.0,3.0,23,False
+2014,Bosnia and Herzegovina,BIH,ba,UEFA,20.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,4.0,3.0,0,0,,,4.0,4.0,23,False
+2014,Brazil,BRA,br,CONMEBOL,4.0,False,False,False,True,True,True,True,3.0,2.0,1.0,0.0,7.0,2.0,7.0,4,2,4.0,12.0,11.0,14.0,23,False
+2014,Cameroon,CMR,cm,CAF,32.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,9.0,0.0,0,0,,,1.0,9.0,23,False
+2014,Chile,CHI,cl,CONMEBOL,9.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,5.0,3.0,6.0,1,0,1.0,1.0,6.0,4.0,23,False
+2014,Colombia,COL,co,CONMEBOL,5.0,False,False,False,False,True,True,True,3.0,3.0,0.0,0.0,9.0,2.0,9.0,2,1,3.0,2.0,12.0,4.0,23,False
+2014,Costa Rica,CRC,cr,Concacaf,8.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,4.0,1.0,7.0,2,1,1.0,1.0,5.0,2.0,23,False
+2014,Croatia,CRO,hr,UEFA,19.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,6.0,6.0,3.0,0,0,,,6.0,6.0,23,False
+2014,Ecuador,ECU,ec,CONMEBOL,17.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,3.0,3.0,4.0,0,0,,,3.0,3.0,23,False
+2014,England,ENG,gb-eng,UEFA,26.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,4.0,1.0,0,0,,,2.0,4.0,23,False
+2014,France,FRA,fr,UEFA,7.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,8.0,2.0,7.0,2,1,2.0,1.0,10.0,3.0,23,False
+2014,Germany,GER,de,UEFA,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,7.0,2.0,7.0,4,4,11.0,2.0,18.0,4.0,23,False
+2014,Ghana,GHA,gh,CAF,25.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,4.0,6.0,1.0,0,0,,,4.0,6.0,23,False
+2014,Greece,GRE,gr,UEFA,14.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,2.0,4.0,4.0,1,0,1.0,1.0,3.0,5.0,23,False
+2014,Honduras,HON,hn,Concacaf,31.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,8.0,0.0,0,0,,,1.0,8.0,23,False
+2014,Iran,IRN,ir,AFC,28.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,4.0,1.0,0,0,,,1.0,4.0,23,False
+2014,Italy,ITA,it,UEFA,22.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,3.0,3.0,0,0,,,2.0,3.0,23,False
+2014,Ivory Coast,CIV,ci,CAF,21.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,5.0,3.0,0,0,,,4.0,5.0,23,False
+2014,Japan,JPN,jp,AFC,29.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,6.0,1.0,0,0,,,2.0,6.0,23,False
+2014,Mexico,MEX,mx,Concacaf,10.0,False,False,False,False,False,True,True,3.0,2.0,1.0,0.0,4.0,1.0,7.0,1,0,1.0,2.0,5.0,3.0,23,False
+2014,Netherlands,NED,nl,UEFA,3.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,10.0,3.0,9.0,4,3,5.0,1.0,15.0,4.0,23,False
+2014,Nigeria,NGA,ng,CAF,16.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,3.0,3.0,4.0,1,0,0.0,2.0,3.0,5.0,23,False
+2014,Portugal,POR,pt,UEFA,18.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,4.0,7.0,4.0,0,0,,,4.0,7.0,23,False
+2014,Russia,RUS,ru,UEFA,24.0,False,False,False,False,False,False,False,3.0,0.0,2.0,1.0,2.0,3.0,2.0,0,0,,,2.0,3.0,23,False
+2014,South Korea,KOR,kr,AFC,27.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,3.0,6.0,1.0,0,0,,,3.0,6.0,23,False
+2014,Spain,ESP,es,UEFA,23.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,7.0,3.0,0,0,,,4.0,7.0,23,False
+2014,Switzerland,SUI,ch,UEFA,11.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,7.0,6.0,6.0,1,0,0.0,1.0,7.0,7.0,23,False
+2014,United States,USA,us,Concacaf,13.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,2.0,2.0,4.0,1,0,1.0,2.0,3.0,4.0,23,False
+2014,Uruguay,URU,uy,CONMEBOL,15.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,4.0,4.0,6.0,1,0,0.0,2.0,4.0,6.0,23,False
+2018,Argentina,ARG,ar,CONMEBOL,16.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,3.0,5.0,4.0,1,0,3.0,4.0,6.0,9.0,23,False
+2018,Australia,AUS,au,AFC,27.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,5.0,1.0,0,0,,,2.0,5.0,23,False
+2018,Belgium,BEL,be,UEFA,3.0,False,False,False,True,True,True,True,3.0,3.0,0.0,0.0,9.0,2.0,9.0,4,3,7.0,4.0,16.0,6.0,23,False
+2018,Brazil,BRA,br,CONMEBOL,6.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,5.0,1.0,7.0,2,1,3.0,2.0,8.0,3.0,23,False
+2018,Colombia,COL,co,CONMEBOL,9.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,5.0,2.0,6.0,1,0,1.0,1.0,6.0,3.0,23,False
+2018,Costa Rica,CRC,cr,Concacaf,25.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,5.0,1.0,0,0,,,2.0,5.0,23,False
+2018,Croatia,CRO,hr,UEFA,2.0,False,True,True,True,True,True,True,3.0,3.0,0.0,0.0,7.0,1.0,9.0,4,3,7.0,8.0,14.0,9.0,23,False
+2018,Denmark,DEN,dk,UEFA,11.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,2.0,1.0,5.0,1,0,1.0,1.0,3.0,2.0,23,False
+2018,Egypt,EGY,eg,CAF,30.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,6.0,0.0,0,0,,,2.0,6.0,23,False
+2018,England,ENG,gb-eng,UEFA,4.0,False,False,False,True,True,True,True,3.0,2.0,0.0,1.0,8.0,3.0,6.0,4,2,4.0,5.0,12.0,8.0,23,False
+2018,France,FRA,fr,UEFA,1.0,True,False,True,True,True,True,True,3.0,2.0,1.0,0.0,3.0,1.0,7.0,4,4,11.0,5.0,14.0,6.0,23,False
+2018,Germany,GER,de,UEFA,21.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,4.0,3.0,0,0,,,2.0,4.0,23,False
+2018,Iceland,ISL,is,UEFA,23.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,5.0,1.0,0,0,,,2.0,5.0,23,False
+2018,Iran,IRN,ir,AFC,18.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,2.0,4.0,0,0,,,2.0,2.0,23,False
+2018,Japan,JPN,jp,AFC,15.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,4.0,4.0,4.0,1,0,2.0,3.0,6.0,7.0,23,False
+2018,Mexico,MEX,mx,Concacaf,12.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,3.0,4.0,6.0,1,0,0.0,2.0,3.0,6.0,23,False
+2018,Morocco,MAR,ma,CAF,26.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,2.0,4.0,1.0,0,0,,,2.0,4.0,23,False
+2018,Nigeria,NGA,ng,CAF,19.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,4.0,3.0,0,0,,,3.0,4.0,23,False
+2018,Panama,PAN,pa,Concacaf,32.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,11.0,0.0,0,0,,,2.0,11.0,23,False
+2018,Peru,PER,pe,CONMEBOL,28.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,2.0,3.0,0,0,,,2.0,2.0,23,False
+2018,Poland,POL,pl,UEFA,31.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,5.0,3.0,0,0,,,2.0,5.0,23,False
+2018,Portugal,POR,pt,UEFA,13.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,5.0,4.0,5.0,1,0,1.0,2.0,6.0,6.0,23,False
+2018,Russia,RUS,ru,UEFA,8.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,8.0,4.0,6.0,2,1,3.0,3.0,11.0,7.0,23,False
+2018,Saudi Arabia,KSA,sa,AFC,29.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,7.0,3.0,0,0,,,2.0,7.0,23,False
+2018,Senegal,SEN,sn,CAF,17.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,4.0,4.0,4.0,0,0,,,4.0,4.0,23,False
+2018,Serbia,SRB,rs,UEFA,20.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,2.0,4.0,3.0,0,0,,,2.0,4.0,23,False
+2018,South Korea,KOR,kr,AFC,22.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,3.0,3.0,0,0,,,3.0,3.0,23,False
+2018,Spain,ESP,es,UEFA,10.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,6.0,5.0,5.0,1,0,1.0,1.0,7.0,6.0,23,False
+2018,Sweden,SWE,se,UEFA,7.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,5.0,2.0,6.0,2,1,1.0,2.0,6.0,4.0,23,False
+2018,Switzerland,SUI,ch,UEFA,14.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,5.0,4.0,5.0,1,0,0.0,1.0,5.0,5.0,23,False
+2018,Tunisia,TUN,tn,CAF,24.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,5.0,8.0,3.0,0,0,,,5.0,8.0,23,False
+2018,Uruguay,URU,uy,CONMEBOL,5.0,False,False,False,False,True,True,True,3.0,3.0,0.0,0.0,5.0,0.0,9.0,2,1,2.0,3.0,7.0,3.0,23,False
+2022,Argentina,ARG,ar,CONMEBOL,1.0,True,False,True,True,True,True,True,3.0,2.0,0.0,1.0,5.0,2.0,6.0,4,4,10.0,6.0,15.0,8.0,26,False
+2022,Australia,AUS,au,AFC,12.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,3.0,4.0,6.0,1,0,1.0,2.0,4.0,6.0,26,False
+2022,Belgium,BEL,be,UEFA,26.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,1.0,2.0,4.0,0,0,,,1.0,2.0,26,False
+2022,Brazil,BRA,br,CONMEBOL,6.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,3.0,1.0,6.0,2,1,5.0,2.0,8.0,3.0,26,False
+2022,Cameroon,CMR,cm,CAF,20.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,4.0,4.0,4.0,0,0,,,4.0,4.0,26,False
+2022,Canada,CAN,ca,Concacaf,31.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,2.0,7.0,0.0,0,0,,,2.0,7.0,26,False
+2022,Costa Rica,CRC,cr,Concacaf,25.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,11.0,3.0,0,0,,,3.0,11.0,26,False
+2022,Croatia,CRO,hr,UEFA,3.0,False,False,False,True,True,True,True,3.0,1.0,2.0,0.0,4.0,1.0,5.0,4,3,4.0,6.0,8.0,7.0,26,False
+2022,Denmark,DEN,dk,UEFA,30.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,3.0,1.0,0,0,,,1.0,3.0,26,False
+2022,Ecuador,ECU,ec,CONMEBOL,18.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,4.0,3.0,4.0,0,0,,,4.0,3.0,26,False
+2022,England,ENG,gb-eng,UEFA,8.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,9.0,2.0,7.0,2,1,4.0,2.0,13.0,4.0,26,False
+2022,France,FRA,fr,UEFA,2.0,False,True,True,True,True,True,True,3.0,2.0,0.0,1.0,6.0,3.0,6.0,4,3,10.0,5.0,16.0,8.0,26,False
+2022,Germany,GER,de,UEFA,22.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,6.0,5.0,4.0,0,0,,,6.0,5.0,26,False
+2022,Ghana,GHA,gh,CAF,27.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,5.0,7.0,3.0,0,0,,,5.0,7.0,26,False
+2022,Iran,IRN,ir,AFC,23.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,4.0,7.0,3.0,0,0,,,4.0,7.0,25,False
+2022,Japan,JPN,jp,AFC,9.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,4.0,3.0,6.0,1,0,1.0,1.0,5.0,4.0,26,False
+2022,Mexico,MEX,mx,Concacaf,17.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,3.0,4.0,0,0,,,2.0,3.0,26,False
+2022,Morocco,MAR,ma,CAF,4.0,False,False,False,True,True,True,True,3.0,2.0,1.0,0.0,4.0,1.0,7.0,4,2,2.0,4.0,6.0,5.0,26,False
+2022,Netherlands,NED,nl,UEFA,5.0,False,False,False,False,True,True,True,3.0,2.0,1.0,0.0,5.0,1.0,7.0,2,1,5.0,3.0,10.0,4.0,26,False
+2022,Poland,POL,pl,UEFA,16.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,2.0,2.0,4.0,1,0,1.0,3.0,3.0,5.0,26,False
+2022,Portugal,POR,pt,UEFA,7.0,False,False,False,False,True,True,True,3.0,2.0,0.0,1.0,6.0,4.0,6.0,2,1,6.0,2.0,12.0,6.0,26,False
+2022,Qatar,QAT,qa,AFC,32.0,False,False,False,False,False,False,False,3.0,0.0,0.0,3.0,1.0,7.0,0.0,0,0,,,1.0,7.0,26,False
+2022,Saudi Arabia,KSA,sa,AFC,24.0,False,False,False,False,False,False,False,3.0,1.0,0.0,2.0,3.0,5.0,3.0,0,0,,,3.0,5.0,26,False
+2022,Senegal,SEN,sn,CAF,10.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,5.0,4.0,6.0,1,0,0.0,3.0,5.0,7.0,26,False
+2022,Serbia,SRB,rs,UEFA,28.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,5.0,8.0,1.0,0,0,,,5.0,8.0,26,False
+2022,South Korea,KOR,kr,AFC,15.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,4.0,4.0,4.0,1,0,1.0,4.0,5.0,8.0,26,False
+2022,Spain,ESP,es,UEFA,13.0,False,False,False,False,False,True,True,3.0,1.0,1.0,1.0,9.0,3.0,4.0,1,0,0.0,0.0,9.0,3.0,26,False
+2022,Switzerland,SUI,ch,UEFA,14.0,False,False,False,False,False,True,True,3.0,2.0,0.0,1.0,4.0,3.0,6.0,1,0,1.0,6.0,5.0,9.0,26,False
+2022,Tunisia,TUN,tn,CAF,19.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,1.0,1.0,4.0,0,0,,,1.0,1.0,26,False
+2022,United States,USA,us,Concacaf,11.0,False,False,False,False,False,True,True,3.0,1.0,2.0,0.0,2.0,1.0,5.0,1,0,1.0,3.0,3.0,4.0,26,False
+2022,Uruguay,URU,uy,CONMEBOL,21.0,False,False,False,False,False,False,False,3.0,1.0,1.0,1.0,2.0,2.0,4.0,0,0,,,2.0,2.0,26,False
+2022,Wales,WAL,gb-wls,UEFA,29.0,False,False,False,False,False,False,False,3.0,0.0,1.0,2.0,1.0,6.0,1.0,0,0,,,1.0,6.0,26,False
+2026,Algeria,ALG,dz,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Argentina,ARG,ar,CONMEBOL,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,True
+2026,Australia,AUS,au,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Austria,AUT,at,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Belgium,BEL,be,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Bosnia and Herzegovina,BIH,ba,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Brazil,BRA,br,CONMEBOL,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Canada,CAN,ca,Concacaf,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,32,False
+2026,Cape Verde,CPV,cv,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Colombia,COL,co,CONMEBOL,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Croatia,CRO,hr,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Curaçao,CUW,cw,Concacaf,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Czech Republic,CZE,cz,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,DR Congo,COD,cd,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Ecuador,ECU,ec,CONMEBOL,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Egypt,EGY,eg,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,England,ENG,gb-eng,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,France,FRA,fr,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Germany,GER,de,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Ghana,GHA,gh,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Haiti,HAI,ht,Concacaf,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Iran,IRN,ir,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Iraq,IRQ,iq,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Ivory Coast,CIV,ci,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Japan,JPN,jp,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Jordan,JOR,jo,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Mexico,MEX,mx,Concacaf,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Morocco,MAR,ma,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Netherlands,NED,nl,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,New Zealand,NZL,nz,OFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Norway,NOR,no,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Panama,PAN,pa,Concacaf,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Paraguay,PAR,py,CONMEBOL,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Portugal,POR,pt,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Qatar,QAT,qa,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Saudi Arabia,KSA,sa,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Scotland,SCO,gb-sct,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Senegal,SEN,sn,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,South Africa,RSA,za,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,South Korea,KOR,kr,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Spain,ESP,es,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Sweden,SWE,se,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Switzerland,SUI,ch,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Tunisia,TUN,tn,CAF,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Turkey,TUR,tr,UEFA,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,United States,USA,us,Concacaf,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Uruguay,URU,uy,CONMEBOL,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False
+2026,Uzbekistan,UZB,uz,AFC,,False,False,False,False,False,False,False,0.0,0.0,0.0,0.0,,,,0,0,,,,,26,False

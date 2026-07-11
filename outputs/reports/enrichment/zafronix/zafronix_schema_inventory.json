@@ -1,0 +1,71 @@
+{
+  "endpoints": {
+    "tournaments/{year}": {
+      "top_level_fields": [
+        "schemaVersion",
+        "teams",
+        "tournament"
+      ],
+      "tournament_fields": [
+        "ballName",
+        "bestGoalkeeper",
+        "bestPlayer",
+        "bestYoungPlayer",
+        "champion",
+        "datesIso",
+        "edition",
+        "host",
+        "mascot",
+        "matchesCount",
+        "notes",
+        "runnerUp",
+        "stadiumIds",
+        "teamsCount",
+        "thirdPlace",
+        "topScorer",
+        "totalAttendance",
+        "totalGoals",
+        "year"
+      ],
+      "team_fields": [
+        "captain",
+        "coach",
+        "code",
+        "confederation",
+        "finalPosition",
+        "flag",
+        "groupStage",
+        "iso",
+        "knockoutPath",
+        "name",
+        "squad"
+      ],
+      "player_fields": [
+        "ageAtTournament",
+        "birthCountry",
+        "born",
+        "captain",
+        "club",
+        "fullName",
+        "goals",
+        "heightCm",
+        "jersey",
+        "name",
+        "notes",
+        "position",
+        "professional",
+        "redCards",
+        "weightKg"
+      ]
+    },
+    "tournaments": {
+      "item_fields": [
+        "champion",
+        "file",
+        "host",
+        "year"
+      ]
+    }
+  },
+  "generated_at": "2026-07-11T23:25:19+00:00"
+}

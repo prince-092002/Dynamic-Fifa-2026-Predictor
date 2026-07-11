@@ -1,0 +1,38 @@
+{
+  "phase": "Phase 5H-A \u2014 Zafronix World Cup, Squad & Historical Intelligence Enrichment",
+  "generated_at": "2026-07-11T23:18:51+00:00",
+  "random_seed": 42,
+  "python": "3.12.2",
+  "numpy": "2.4.2",
+  "seconds": 229.6,
+  "split": {
+    "train": 34712,
+    "val": 7438,
+    "test": 7439
+  },
+  "baseline_features": 25,
+  "zafronix_features": 17,
+  "selected_challenger": "E3_base_plus_player_experience",
+  "promote": false,
+  "artifacts": [
+    "zafronix_challenger_model_comparison.csv",
+    "zafronix_chronological_cv_results.csv",
+    "zafronix_coverage_by_feature.csv",
+    "zafronix_coverage_by_tournament.csv",
+    "zafronix_coverage_by_year.csv",
+    "zafronix_coverage_report.json",
+    "zafronix_entity_resolution_report.csv",
+    "zafronix_feature_coverage.csv",
+    "zafronix_feature_experiment_results.csv",
+    "zafronix_feature_importance.csv",
+    "zafronix_feature_registry.json",
+    "zafronix_fetch_summary.json",
+    "zafronix_promotion_decision.json",
+    "zafronix_provider_diagnostic.json",
+    "zafronix_provider_diagnostic.md",
+    "zafronix_schema_inventory.json",
+    "zafronix_team_aliases.json",
+    "zafronix_unresolved_entities.csv",
+    "zafronix_world_cup_subset_metrics.csv"
+  ]
+}
