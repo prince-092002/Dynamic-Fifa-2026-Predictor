@@ -5,7 +5,14 @@ Scope: attempt to deploy the completed Phase 6/6B portfolio system to GitHub, Ve
 
 ## Outcome in one line
 
-**GitHub is deployed:** repository live at https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor with `main` pushed and verified. Vercel and Streamlit Cloud remain user browser/account steps. `gh` could not be authenticated in the tool environment, so the push used the machine's cached git credential (Windows Credential Manager); setting Actions secrets and monitoring workflow runs still require the user's authenticated `gh` terminal or the web UI.
+**GitHub + Vercel are deployed and live.** Repo: https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor · Website: https://dynamic-fifa-2026-predictor.vercel.app (Vercel Git integration, auto-redeploys from `main`). Only Streamlit Cloud remains — a browser-only action (no deploy CLI/API exists).
+
+## Vercel deployment (completed 2026-07-11)
+
+- The Vercel project `dynamic-fifa-2026-predictor` (team `prince-092002's projects`) is connected to the GitHub repo via **Git integration** (source: git, Root Directory `website`, framework Next.js, Node 24.x). Every push to `main` auto-builds a production deployment — verified across 4 successive pushes (commits `2a24ef6`, `4e4eca6`, `2dda7e8` all produced READY production builds).
+- Production URL: **https://dynamic-fifa-2026-predictor.vercel.app** (public alias). Verified live via WebFetch/curl: homepage snapshot (Spain 31.62%, 98 completed, Argentina vs Spain final), knockout bracket, champion forecast, `/team/spain` page (record, journey, forecast), FIFA disclaimer, and the GitHub "View Source Code" link (added via committed `website/.env.production` → `NEXT_PUBLIC_GITHUB_URL`, a public non-secret value).
+- No provider API key is set on Vercel (the static site needs none). `NEXT_PUBLIC_DASHBOARD_URL` intentionally unset until Streamlit is deployed.
+- Deployed/verified using the authenticated Vercel connector (MCP), not the CLI; the CLI was installed but its `whoami` pointed to the connector plugin.
 
 ## GitHub deployment (completed 2026-07-10)
 

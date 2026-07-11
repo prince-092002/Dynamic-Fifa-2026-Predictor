@@ -4,10 +4,11 @@ Project: Dynamic FIFA 2026 Tournament Outcome Predictor
 Saved: 2026-07-10 (post Phase 6B; deployment-ready, not yet deployed)  
 Scope: current state snapshot for next session. No secrets are included.
 
-## Deployment status (2026-07-10)
+## Deployment status (2026-07-11)
 
-- **GitHub: DEPLOYED.** Repository live at **https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor** (public). `origin/main` verified identical to local HEAD; both GitHub Actions workflows present on the remote.
-- **Vercel + Streamlit Cloud: not yet deployed** (browser/account steps — see below).
+- **GitHub: DEPLOYED.** Repository live at **https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor** (public). Both GitHub Actions workflows present on the remote.
+- **Vercel: DEPLOYED.** Website live at **https://dynamic-fifa-2026-predictor.vercel.app** — Git integration connected (Root Directory `website`, framework Next.js, Node 24.x), **auto-redeploys production from `main` on every push** (verified: 4 deployments across pushes). Live site verified rendering current data (Spain 31.62% champion, France vs Spain SF, team pages, disclaimer, GitHub link). No provider secret needed.
+- **Streamlit Cloud: not yet deployed** — no deploy CLI/API exists; it is a browser-only action at share.streamlit.io (repo `Dynamic-Fifa-2026-Predictor`, branch `main`, file `dashboard/app.py`, no secrets). Until deployed, `NEXT_PUBLIC_DASHBOARD_URL` is unset so the website's Dashboard button stays hidden (honest).
 - Re-verified this session: pytest 16/16; `validate` no failures; `validate-features/-simulation/-bracket/-live-forecast` pass; `validate-public-exports` 31/31; `validate-dashboard` 10/10; `validate-deployment-readiness` ready (8/8); website `npm ci`+lint+build clean (55 static pages); Streamlit headless health OK; secret scan 0 hits.
 - Pre-release change (commit `df0cf8b`): untracked 1.4 MB of raw `provider_snapshots/` (sanitized, no secrets, unread by apps) and gitignored them. Normalized CSVs the apps consume stay tracked.
 - Remaining user steps: (1) set the `FOOTBALL_DATA_ORG_KEY` GitHub Actions secret; (2) confirm the auto-triggered **Validate** workflow is green; (3) Vercel New Project → Root Directory `website` → deploy; (4) Streamlit Cloud → `dashboard/app.py` → deploy; (5) put real URLs into `NEXT_PUBLIC_*` env vars + README. Full details: `handoff/deployment_status_handoff.md`.
