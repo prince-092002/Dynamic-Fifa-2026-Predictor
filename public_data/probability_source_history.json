@@ -118,10 +118,27 @@
    "total_simulated_decisions": 70000,
    "model_driven_pct": 0.435571,
    "fallback_pct": 0.421571
+  },
+  {
+   "run_id": "2026-07-11T000104Z-9ca35133",
+   "timestamp": "2026-07-11T00:02:43+00:00",
+   "tournament_phase": "quarterfinal",
+   "simulation_count": 10000,
+   "known_remaining_matchups": 3,
+   "live_model_predictions_available": 3,
+   "live_model_exact": 30000,
+   "live_model_reversed": 0,
+   "model_exact": 0,
+   "model_reversed": 438,
+   "elo_fallback": 19562,
+   "neutral_fallback": 0,
+   "total_simulated_decisions": 70000,
+   "model_driven_pct": 0.434829,
+   "fallback_pct": 0.279457
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-10T06:52:42+00:00",
+  "generated_at": "2026-07-11T00:02:43+00:00",
   "source_files": [
    "outputs/live_state/probability_source_history.csv"
   ]

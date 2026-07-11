@@ -220,16 +220,16 @@
   "belgium": {
    "team": "Belgium",
    "slug": "belgium",
-   "played": 5,
+   "played": 6,
    "wins": 3,
    "draws": 2,
-   "losses": 0,
-   "goals_for": 13,
-   "goals_against": 5,
+   "losses": 1,
+   "goals_for": 14,
+   "goals_against": 7,
    "clean_sheets": 1,
-   "goal_difference": 8,
-   "avg_goals_for": 2.6,
-   "avg_goals_against": 1.0,
+   "goal_difference": 7,
+   "avg_goals_for": 2.33,
+   "avg_goals_against": 1.17,
    "matches": [
     {
      "date": "2026-06-15",
@@ -275,6 +275,15 @@
      "goals_against": 1,
      "result": "W",
      "score": "4-1"
+    },
+    {
+     "date": "2026-07-10",
+     "stage": "Quarterfinal",
+     "opponent": "Spain",
+     "goals_for": 1,
+     "goals_against": 2,
+     "result": "L",
+     "score": "1-2"
     }
    ]
   },
@@ -2110,16 +2119,16 @@
   "spain": {
    "team": "Spain",
    "slug": "spain",
-   "played": 5,
-   "wins": 4,
+   "played": 6,
+   "wins": 5,
    "draws": 1,
    "losses": 0,
-   "goals_for": 9,
-   "goals_against": 0,
+   "goals_for": 11,
+   "goals_against": 1,
    "clean_sheets": 5,
-   "goal_difference": 9,
-   "avg_goals_for": 1.8,
-   "avg_goals_against": 0.0,
+   "goal_difference": 10,
+   "avg_goals_for": 1.83,
+   "avg_goals_against": 0.17,
    "matches": [
     {
      "date": "2026-06-15",
@@ -2165,6 +2174,15 @@
      "goals_against": 0,
      "result": "W",
      "score": "1-0"
+    },
+    {
+     "date": "2026-07-10",
+     "stage": "Quarterfinal",
+     "opponent": "Belgium",
+     "goals_for": 2,
+     "goals_against": 1,
+     "result": "W",
+     "score": "2-1"
     }
    ]
   },
@@ -2516,13 +2534,13 @@
   }
  },
  "_meta": {
-  "generated_at": "2026-07-10T06:52:42+00:00",
+  "generated_at": "2026-07-11T00:02:43+00:00",
   "source_files": [
    "outputs/live_state/football_data_org_fixtures_normalized.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "quarterfinal",
-  "run_id": "2026-07-10T065046Z-a7edab47"
+  "run_id": "2026-07-11T000104Z-9ca35133"
  }
 }

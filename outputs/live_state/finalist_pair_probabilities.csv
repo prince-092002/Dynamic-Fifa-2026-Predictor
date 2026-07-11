@@ -1,13 +1,9 @@
 finalist_team_1,finalist_team_2,finalist_pair_key,count,probability
-Argentina,France,Argentina vs France,2607,0.2607
-Argentina,Spain,Argentina vs Spain,1824,0.1824
-England,France,England vs France,1689,0.1689
-England,Spain,England vs Spain,1195,0.1195
-France,Switzerland,France vs Switzerland,507,0.0507
-France,Norway,France vs Norway,490,0.049
-Argentina,Belgium,Argentina vs Belgium,461,0.0461
-Spain,Switzerland,Spain vs Switzerland,368,0.0368
-Norway,Spain,Norway vs Spain,360,0.036
-Belgium,England,Belgium vs England,305,0.0305
-Belgium,Switzerland,Belgium vs Switzerland,107,0.0107
-Belgium,Norway,Belgium vs Norway,87,0.0087
+Argentina,Spain,Argentina vs Spain,2674,0.2674
+Argentina,France,Argentina vs France,2066,0.2066
+England,Spain,England vs Spain,1782,0.1782
+England,France,England vs France,1420,0.142
+Norway,Spain,Norway vs Spain,594,0.0594
+Spain,Switzerland,Spain vs Switzerland,577,0.0577
+France,Switzerland,France vs Switzerland,449,0.0449
+France,Norway,France vs Norway,438,0.0438

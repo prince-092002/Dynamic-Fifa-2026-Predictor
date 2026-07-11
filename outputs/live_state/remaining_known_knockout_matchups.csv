@@ -1,4 +1,4 @@
 fixture_id,match_id,stage,round,team_a,team_b,date,provider
-537384,football_data_org_537384,Quarterfinal,QUARTER_FINALS,Spain,Belgium,2026-07-10T19:00:00Z,football_data_org
 537385,football_data_org_537385,Quarterfinal,QUARTER_FINALS,Norway,England,2026-07-11T21:00:00Z,football_data_org
 537386,football_data_org_537386,Quarterfinal,QUARTER_FINALS,Argentina,Switzerland,2026-07-12T01:00:00Z,football_data_org
+537387,football_data_org_537387,Semifinal,SEMI_FINALS,France,Spain,2026-07-14T19:00:00Z,football_data_org

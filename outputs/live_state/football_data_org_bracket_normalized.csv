@@ -24,7 +24,7 @@ fixture_id,match_id,round,stage,team_a,team_b,winner,status,is_completed,is_live
 537381,football_data_org_537381,LAST_16,Round of 16,Argentina,Egypt,Argentina,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
 537382,football_data_org_537382,LAST_16,Round of 16,Switzerland,Colombia,Switzerland,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
 537383,football_data_org_537383,QUARTER_FINALS,Quarterfinal,France,Morocco,France,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537384,football_data_org_537384,QUARTER_FINALS,Quarterfinal,Spain,Belgium,,TIMED,False,False,True,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
+537384,football_data_org_537384,QUARTER_FINALS,Quarterfinal,Spain,Belgium,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T22:25:01Z
 537385,football_data_org_537385,QUARTER_FINALS,Quarterfinal,Norway,England,,TIMED,False,False,True,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
 537386,football_data_org_537386,QUARTER_FINALS,Quarterfinal,Argentina,Switzerland,,TIMED,False,False,True,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
 537387,football_data_org_537387,SEMI_FINALS,Semifinal,France,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-10T05:20:09Z

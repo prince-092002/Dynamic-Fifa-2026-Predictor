@@ -152,7 +152,7 @@
  ],
  "importance_note": "Global feature importance shows which features are influential across the model overall. It does not by itself explain a specific matchup.",
  "_meta": {
-  "generated_at": "2026-07-10T06:52:42+00:00",
+  "generated_at": "2026-07-11T00:02:43+00:00",
   "source_files": [
    "outputs/models/model_registry.json",
    "outputs/models/selected_model.joblib"
