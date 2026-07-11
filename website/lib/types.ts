@@ -144,6 +144,14 @@ export interface ModelInsights {
   selected_feature_columns: string[];
   global_feature_importance: { feature: string; importance: number }[] | null;
   importance_note: string;
+  diagnostics?: {
+    evaluation: string;
+    per_class: Record<string, { precision: number | null; recall: number | null; f1: number | null }>;
+    actual_distribution: Record<string, number>;
+    predicted_distribution: Record<string, number>;
+    calibration_ece: number | null;
+    macro_f1_note: string;
+  } | null;
 }
 
 export const formatPct = (value: number | null | undefined, digits = 2) =>

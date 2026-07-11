@@ -31,6 +31,15 @@ Scope: current state snapshot for next session. No secrets are included.
 - Phase 6: Public website (Next.js/Vercel-ready), Streamlit dashboard, public data exports, GitHub repository readiness
 - Phase 6B: GitHub automation and matchday deployment workflow
 - Deployment prep: repository made public-ready (raw snapshots untracked); GitHub/Vercel/Streamlit deployment pending user's authenticated accounts
+- Phase 5G (model diagnostics): leakage-safe model diagnostics, feature/hyperparameter experiments, challenger evaluation
+
+## Phase 5G model diagnostics (2026-07-11)
+
+- **Production XGBoost retained** — no challenger beat it (best tuned: test acc 0.6069 vs baseline 0.6075; 95% bootstrap CI on the diff [−0.0023, +0.0012] includes zero). Honest no-promotion outcome. Production model/registry artifacts UNCHANGED; no downstream regeneration.
+- **Low XGBoost macro-F1 explained (evidence, not speculation):** draws are the minority class (23%); XGBoost argmax-predicts "draw" only 46/7,439 times (recall 0.012) because a draw is rarely the most likely 3-way outcome, collapsing macro-F1 to 0.451. Logistic Regression's `class_weight="balanced"` predicts ~1,658 draws (macro-F1 0.527) but at the cost of accuracy, log loss, Brier, and 9× worse calibration (ECE 0.046 vs 0.0053). Macro-F1 is a hard-class artifact; the simulator samples calibrated probabilities, so XGBoost is correctly selected.
+- Harness `src/modeling/phase5g_diagnostics.py` (no new deps); 14 artifacts + full report under `outputs/reports/modeling/phase5g/`; 8 new tests (24/24 pass); diagnostics panel added to website + Streamlit methodology pages.
+- Class-weighting experiments quantified the tradeoff (macro-F1 0.43→0.51 but accuracy −0.047, log loss +0.037) → correctly rejected. Recency weighting offered no benefit (no era decay). Full feature set justified by ablation.
+- See `handoff/phase5g_model_diagnostics_handoff.md`. Recommended next: Phase 5H — Player, Squad & Tactical Intelligence.
 
 ## Phase 6B verified state (2026-07-10)
 

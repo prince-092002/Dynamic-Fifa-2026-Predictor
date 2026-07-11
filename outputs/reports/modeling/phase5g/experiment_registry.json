@@ -1,0 +1,247 @@
+{
+  "phase": "5G_model_diagnostics",
+  "generated_at": "2026-07-11T06:57:18+00:00",
+  "dataset_fingerprint": "rows=49589;cols=88;min=1872-11-30;max=2026-07-04",
+  "random_seed": 42,
+  "features": [
+    "team_a_pre_match_elo",
+    "team_b_pre_match_elo",
+    "elo_difference",
+    "elo_expected_score_team_a",
+    "form_points_last_5_diff",
+    "win_rate_last_5_diff",
+    "loss_rate_last_5_diff",
+    "goals_for_avg_last_5_diff",
+    "goals_against_avg_last_5_diff",
+    "goal_diff_avg_last_5_diff",
+    "clean_sheet_rate_last_5_diff",
+    "h2h_matches_last_10",
+    "h2h_team_a_win_rate_last_10",
+    "h2h_goal_diff_team_a_last_10",
+    "is_world_cup_match",
+    "is_friendly",
+    "is_qualifier",
+    "is_neutral",
+    "tournament_importance_score",
+    "team_a_days_since_last_match",
+    "team_b_days_since_last_match",
+    "rest_days_diff",
+    "team_a_matches_last_30_days",
+    "team_b_matches_last_30_days",
+    "match_congestion_diff"
+  ],
+  "feature_count": 25,
+  "split": {
+    "train_rows": 34712,
+    "val_rows": 7438,
+    "test_rows": 7439,
+    "train_dates": [
+      "1872-11-30",
+      "2011-03-26"
+    ],
+    "val_dates": [
+      "2011-03-26",
+      "2018-11-15"
+    ],
+    "test_dates": [
+      "2018-11-15",
+      "2026-07-04"
+    ],
+    "fractions": [
+      0.7,
+      0.15,
+      0.15000000000000005
+    ]
+  },
+  "experiments": [
+    {
+      "experiment_id": "E0_baseline",
+      "family": "baseline",
+      "n_features": 25,
+      "val_accuracy": 0.5824146275880613,
+      "val_macro_f1": 0.4301344951518131,
+      "val_log_loss": 0.897823061908177,
+      "val_brier": 0.529260769097607,
+      "val_draw_recall": 0.010338885697874785,
+      "val_draw_f1": 0.020055710306406686,
+      "note": "production features + params"
+    },
+    {
+      "experiment_id": "A_multiwindow",
+      "family": "feature",
+      "n_features": 36,
+      "val_accuracy": 0.5820112933584297,
+      "val_macro_f1": 0.42826721493116277,
+      "val_log_loss": 0.8974492557243298,
+      "val_brier": 0.5289320482594976,
+      "val_draw_recall": 0.0080413555427915,
+      "val_draw_f1": 0.01569506726457399,
+      "note": "added 11 last_3/last_10 + draw_rate diffs"
+    },
+    {
+      "experiment_id": "D_recency_hl8",
+      "family": "recency_weight",
+      "n_features": 25,
+      "val_accuracy": 0.5810701801559559,
+      "val_macro_f1": 0.4431959082817151,
+      "val_log_loss": 0.9014582508369271,
+      "val_brier": 0.5308426421576049,
+      "val_draw_recall": 0.03331418724870764,
+      "val_draw_f1": 0.060291060291060294,
+      "note": "half-life 8.0y"
+    },
+    {
+      "experiment_id": "D_recency_hl4",
+      "family": "recency_weight",
+      "n_features": 25,
+      "val_accuracy": 0.5771712826028502,
+      "val_macro_f1": 0.44808934369817743,
+      "val_log_loss": 0.9032145863001186,
+      "val_brier": 0.5319158788810053,
+      "val_draw_recall": 0.04767375071797817,
+      "val_draw_f1": 0.08295852073963018,
+      "note": "half-life 4.0y"
+    },
+    {
+      "experiment_id": "D_recency_hl2",
+      "family": "recency_weight",
+      "n_features": 25,
+      "val_accuracy": 0.5786501747781662,
+      "val_macro_f1": 0.45860198299444543,
+      "val_log_loss": 0.9089753099158772,
+      "val_brier": 0.5352321786853496,
+      "val_draw_recall": 0.06662837449741528,
+      "val_draw_f1": 0.1122942884801549,
+      "note": "half-life 2.0y"
+    },
+    {
+      "experiment_id": "G_balanced_weight",
+      "family": "class_weight",
+      "n_features": 25,
+      "val_accuracy": 0.5353589674643722,
+      "val_macro_f1": 0.5126877955519471,
+      "val_log_loss": 0.9348412226521643,
+      "val_brier": 0.554612093699,
+      "val_draw_recall": 0.3900057438253877,
+      "val_draw_f1": 0.3395,
+      "note": "inverse-frequency class weights"
+    },
+    {
+      "experiment_id": "G_draw_boost",
+      "family": "class_weight",
+      "n_features": 25,
+      "val_accuracy": 0.5406023124495832,
+      "val_macro_f1": 0.5013846710531408,
+      "val_log_loss": 0.9257149567239576,
+      "val_brier": 0.5487357415491011,
+      "val_draw_recall": 0.44514646754738657,
+      "val_draw_f1": 0.35854730511219063,
+      "note": "draw x1.8"
+    },
+    {
+      "experiment_id": "F_tuned_best",
+      "family": "hyperparameter",
+      "n_features": 25,
+      "val_accuracy": 0.5826835170744824,
+      "val_macro_f1": 0.43025049274333876,
+      "val_log_loss": 0.8978465074339191,
+      "val_brier": 0.5292861886094726,
+      "val_draw_recall": NaN,
+      "val_draw_f1": NaN,
+      "note": "best of 30 randomized configs"
+    }
+  ],
+  "ablation": [
+    {
+      "config": "elo_only",
+      "n_features": 4,
+      "val_accuracy": 0.576364614143587,
+      "val_macro_f1": 0.42016718797642527,
+      "val_log_loss": 0.9175798948430407,
+      "val_brier": 0.5410851033094624,
+      "val_draw_recall": 0.0034462952326249283
+    },
+    {
+      "config": "elo+form",
+      "n_features": 7,
+      "val_accuracy": 0.5755579456843237,
+      "val_macro_f1": 0.41879026816681914,
+      "val_log_loss": 0.9177212153179268,
+      "val_brier": 0.5413789708396702,
+      "val_draw_recall": 0.0022975301550832855
+    },
+    {
+      "config": "elo+goals",
+      "n_features": 8,
+      "val_accuracy": 0.5754235009411132,
+      "val_macro_f1": 0.4183379611939794,
+      "val_log_loss": 0.9113742696452063,
+      "val_brier": 0.5377648303057885,
+      "val_draw_recall": 0.0017231476163124641
+    },
+    {
+      "config": "elo+h2h",
+      "n_features": 7,
+      "val_accuracy": 0.5779779510621135,
+      "val_macro_f1": 0.4216791791527645,
+      "val_log_loss": 0.9103771378090276,
+      "val_brier": 0.5371795218137427,
+      "val_draw_recall": 0.00402067777139575
+    },
+    {
+      "config": "elo+tournament",
+      "n_features": 9,
+      "val_accuracy": 0.5766335036300081,
+      "val_macro_f1": 0.42362376921148903,
+      "val_log_loss": 0.9105915316115402,
+      "val_brier": 0.5365118028597509,
+      "val_draw_recall": 0.0068925904652498565
+    },
+    {
+      "config": "elo+schedule",
+      "n_features": 10,
+      "val_accuracy": 0.5754235009411132,
+      "val_macro_f1": 0.4223313689861969,
+      "val_log_loss": 0.9142396641629951,
+      "val_brier": 0.539471208851859,
+      "val_draw_recall": 0.0068925904652498565
+    },
+    {
+      "config": "full_production",
+      "n_features": 25,
+      "val_accuracy": 0.5824146275880613,
+      "val_macro_f1": 0.4301344951518131,
+      "val_log_loss": 0.897823061908177,
+      "val_brier": 0.529260769097607,
+      "val_draw_recall": 0.010338885697874785
+    }
+  ],
+  "cv_baseline": {
+    "folds": 4,
+    "mean_accuracy": 0.5843418953973998,
+    "std_accuracy": 0.003702514443960541,
+    "mean_log_loss": 0.8935892192374757,
+    "mean_macro_f1": 0.4298070500464825
+  },
+  "cv_tuned": {
+    "folds": 4,
+    "mean_accuracy": 0.5837725904428318,
+    "std_accuracy": 0.0046296855193417065,
+    "mean_log_loss": 0.8935981526539591,
+    "mean_macro_f1": 0.4281766694469749
+  },
+  "challenger_params": {
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "n_estimators": 500,
+    "min_child_weight": 1,
+    "subsample": 0.9,
+    "colsample_bytree": 0.7,
+    "gamma": 0.0,
+    "reg_lambda": 2.0,
+    "reg_alpha": 1.0
+  },
+  "promotion": {
+    "promote": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-07-11T06:57:18+00:00",
+  "promote": false,
+  "production_model_unchanged": true,
+  "baseline_test": {
+    "accuracy": 0.6074741228659766,
+    "macro_f1": 0.4510675043406742,
+    "log_loss": 0.8607220399132883,
+    "brier_score": 0.5055903524650359,
+    "ece": 0.005348774672213715
+  },
+  "challenger_test": {
+    "accuracy": 0.6069364161849711,
+    "macro_f1": 0.45101903743632893,
+    "log_loss": 0.8613389010410301,
+    "brier_score": 0.5059854568374289,
+    "ece": 0.004826456635080951
+  },
+  "challenger_params": {
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "n_estimators": 500,
+    "min_child_weight": 1,
+    "subsample": 0.9,
+    "colsample_bytree": 0.7,
+    "gamma": 0.0,
+    "reg_lambda": 2.0,
+    "reg_alpha": 1.0
+  },
+  "test_accuracy_gain": -0.0005377066810055009,
+  "bootstrap_acc_diff_95ci": [
+    -0.0022852533942734343,
+    0.0012098400322624325
+  ],
+  "ci_excludes_zero": false,
+  "log_loss_change": 0.0006168611277417302,
+  "brier_change": 0.0003951043723929848,
+  "cv_baseline": {
+    "folds": 4,
+    "mean_accuracy": 0.5843418953973998,
+    "std_accuracy": 0.003702514443960541,
+    "mean_log_loss": 0.8935892192374757,
+    "mean_macro_f1": 0.4298070500464825
+  },
+  "cv_tuned": {
+    "folds": 4,
+    "mean_accuracy": 0.5837725904428318,
+    "std_accuracy": 0.0046296855193417065,
+    "mean_log_loss": 0.8935981526539591,
+    "mean_macro_f1": 0.4281766694469749
+  },
+  "rules": {
+    "meaningful_accuracy_gain(>=0.005 & CI>0)": false,
+    "probability_quality_preserved(logloss&brier not worse >0.002)": true,
+    "cv_stable": true
+  },
+  "rationale": "Challenger REJECTED \u2014 production XGBoost retained. The tuned challenger did not clear all gates (meaningful+significant accuracy gain AND preserved log loss/Brier AND CV stability). Per Phase 5G rules, no model change is forced."
+}

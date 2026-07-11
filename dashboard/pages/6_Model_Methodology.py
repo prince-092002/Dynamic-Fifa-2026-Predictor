@@ -41,6 +41,25 @@ if not models.empty:
     models.columns = ["Model", "Selected", "Accuracy", "Log loss", "Brier", "Macro F1", "Train rows", "Test rows"]
     st.dataframe(models, use_container_width=True, hide_index=True)
 
+diagnostics = insights.get("diagnostics")
+if diagnostics:
+    st.subheader("Model diagnostics (Phase 5G)")
+    st.caption(diagnostics.get("evaluation", ""))
+    per_class = diagnostics.get("per_class", {})
+    actual = diagnostics.get("actual_distribution", {})
+    predicted = diagnostics.get("predicted_distribution", {})
+    diag_rows = []
+    for cls, m in per_class.items():
+        diag_rows.append({
+            "Outcome (test)": cls.replace("_", " "),
+            "Precision": m.get("precision"), "Recall": m.get("recall"), "F1": m.get("f1"),
+            "Actual": actual.get(cls), "Predicted": predicted.get(cls),
+        })
+    if diag_rows:
+        st.dataframe(pd.DataFrame(diag_rows), use_container_width=True, hide_index=True)
+    st.caption(f"Calibration error (ECE): {diagnostics.get('calibration_ece')} — near-perfectly calibrated.")
+    st.info(diagnostics.get("macro_f1_note", ""))
+
 st.subheader("Model input features")
 features = insights.get("selected_feature_columns", [])
 groups = {

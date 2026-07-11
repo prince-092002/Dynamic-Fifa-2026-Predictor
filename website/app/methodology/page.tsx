@@ -86,6 +86,41 @@ Champion & finalist forecasts  →  validation + audit manifest  →  this websi
         )}
       </section>
 
+      {insights?.diagnostics && (
+        <section aria-labelledby="diagnostics-heading">
+          <h2 id="diagnostics-heading" className="mb-3 text-xl font-bold">Model diagnostics (Phase 5G)</h2>
+          <p className="mb-3 max-w-3xl text-sm text-fg2">{insights.diagnostics.evaluation}.</p>
+          <div className="card overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-line text-left text-fg2">
+                  <th className="p-3">Outcome class (test)</th>
+                  <th className="p-3">Precision</th>
+                  <th className="p-3">Recall</th>
+                  <th className="p-3">F1</th>
+                  <th className="p-3">Actual</th>
+                  <th className="p-3">Predicted</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(insights.diagnostics.per_class).map(([cls, m]) => (
+                  <tr key={cls} className="border-b border-line/50">
+                    <td className="p-3 font-semibold">{cls.replace(/_/g, " ")}</td>
+                    <td className="p-3 font-mono">{m.precision ?? "—"}</td>
+                    <td className="p-3 font-mono">{m.recall ?? "—"}</td>
+                    <td className="p-3 font-mono">{m.f1 ?? "—"}</td>
+                    <td className="p-3 font-mono">{insights.diagnostics!.actual_distribution[cls] ?? "—"}</td>
+                    <td className="p-3 font-mono">{insights.diagnostics!.predicted_distribution[cls] ?? "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-2 text-xs text-fg2">Calibration error (ECE): <span className="font-mono text-fg">{insights.diagnostics.calibration_ece ?? "—"}</span> — near-perfectly calibrated.</p>
+          <p className="mt-3 max-w-3xl text-sm text-fg2">{insights.diagnostics.macro_f1_note}</p>
+        </section>
+      )}
+
       <section aria-labelledby="features-heading">
         <h2 id="features-heading" className="mb-3 text-xl font-bold">Model input features ({insights?.selected_feature_columns?.length ?? 0})</h2>
         <div className="grid gap-3 md:grid-cols-3">

@@ -1,0 +1,27 @@
+{
+  "phase": "Phase 5G \u2014 Leakage-Safe Model Diagnostics, Feature Optimization & Challenger Evaluation",
+  "generated_at": "2026-07-11T06:57:18+00:00",
+  "dataset_fingerprint": "rows=49589;cols=88;min=1872-11-30;max=2026-07-04",
+  "random_seed": 42,
+  "python": "3.12.2",
+  "numpy": "2.4.2",
+  "seconds": 418.2,
+  "artifacts": [
+    "baseline_model_metrics.json",
+    "challenger_model_comparison.csv",
+    "chronological_cv_results.csv",
+    "classification_reports.json",
+    "confusion_matrices.json",
+    "diagnostic_metrics.json",
+    "experiment_registry.json",
+    "feature_ablation_results.csv",
+    "feature_experiment_results.csv",
+    "hyperparameter_search_results.csv",
+    "promotion_decision.json",
+    "segmented_performance.csv"
+  ],
+  "promotion": {
+    "promote": false,
+    "production_model": "xgboost (unchanged)"
+  }
+}

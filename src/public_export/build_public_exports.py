@@ -506,12 +506,31 @@ def _build_model_insights() -> dict | None:
                 importances = [{"feature": feature, "importance": _num(value)} for feature, value in pairs]
     except Exception:
         importances = None
+    diagnostics = None
+    diag_path = REPORTS_DIR / "modeling" / "phase5g" / "diagnostic_metrics.json"
+    diag = _read_json(diag_path)
+    if diag.get("models", {}).get("xgboost"):
+        test = diag["models"]["xgboost"]["test"]
+        diagnostics = {
+            "evaluation": "chronological 70/15/15 split; leakage-safe (shift-before-rolling, pre-match Elo); test set 7,439 matches",
+            "per_class": {cls: {"precision": _num(test["precision"][cls]), "recall": _num(test["recall"][cls]), "f1": _num(test["f1"][cls])} for cls in test["precision"]},
+            "actual_distribution": test["actual_distribution"],
+            "predicted_distribution": test["predicted_distribution"],
+            "calibration_ece": _num(test.get("ece")),
+            "macro_f1_note": (
+                "XGBoost's lower macro-F1 vs Logistic Regression is a draw-class argmax artifact, not a defect: draws are the "
+                "minority outcome (23%) and rarely the single most likely result, so a calibrated model seldom argmax-predicts them. "
+                "XGBoost is chosen for its superior calibration (ECE 0.005) and log loss because the Monte Carlo simulator samples "
+                "from probabilities — it never needs the model to hard-predict a draw. Full analysis: Phase 5G report."
+            ),
+        }
     return {
         "models": rows,
         "selected_feature_columns": selected_features,
         "global_feature_importance": importances,
         "importance_note": "Global feature importance shows which features are influential across the model overall. It does not by itself explain a specific matchup.",
-        "_meta": _meta([PROJECT_ROOT / "outputs" / "models" / "model_registry.json", PROJECT_ROOT / "outputs" / "models" / "selected_model.joblib"]),
+        "diagnostics": diagnostics,
+        "_meta": _meta([PROJECT_ROOT / "outputs" / "models" / "model_registry.json", PROJECT_ROOT / "outputs" / "models" / "selected_model.joblib", diag_path]),
     }
 
 
