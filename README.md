@@ -8,7 +8,7 @@ A live machine-learning forecasting system that combines **real FIFA World Cup 2
 
 - **Website (Vercel):** https://dynamic-fifa-2026-predictor.vercel.app — auto-redeploys from `main` on every matchday push
 - **Source (GitHub):** https://github.com/prince-092002/Dynamic-Fifa-2026-Predictor
-- **Interactive dashboard (Streamlit):** _pending — deploy `dashboard/app.py` on Streamlit Community Cloud_
+- **Interactive dashboard (Streamlit):** https://dynamic-fifa-2026-predictor-aacmn59qg3ueeusybvx9xw.streamlit.app
 
 ## Architecture
 
