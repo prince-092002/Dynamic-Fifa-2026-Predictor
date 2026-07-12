@@ -1,5 +1,5 @@
 {
-  "refresh_timestamp": "2026-07-10T06:50:28+00:00",
+  "refresh_timestamp": "2026-07-12T05:05:10+00:00",
   "mode": "matchday",
   "force": false,
   "source_used": "existing_processed_csv",
@@ -19,7 +19,7 @@
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\data_validation_report.csv",
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\end_of_matchday_update_summary.md"
   ],
-  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260710_015029",
+  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260712_000511",
   "validation_status": "passed",
   "warnings": [
     "API-Football returned 0 fixture rows; using existing processed CSVs."
@@ -28,39 +28,37 @@
   "next_recommended_action": "Data refresh complete. Ready for the next modeling phase when needed.",
   "live_forecast": {
     "status": "success",
-    "current_phase": "quarterfinal",
+    "current_phase": "semifinal",
     "finalist_prediction_active": true,
-    "top_finalist_pair": "Argentina vs France",
-    "top_finalist_pair_probability": 0.2607,
-    "top_champion": "France",
-    "top_champion_probability": 0.2949,
-    "fallback_bracket_usage": 0.0967741935483871,
+    "top_finalist_pair": "Argentina vs Spain",
+    "top_finalist_pair_probability": 0.3466,
+    "top_champion": "Argentina",
+    "top_champion_probability": 0.3157,
+    "fallback_bracket_usage": 0.03225806451612903,
     "forecast_mode": "true_live_forecast",
     "public_label": "True live forecast from current tournament state",
     "source_quality_score": 100,
     "forecast_ran": true,
     "live_matchup_prediction_status": "success",
     "live_matchups_predicted": 3,
-    "live_model_probability_uses": 30000,
+    "live_model_probability_uses": 20000,
     "probability_source_counts": {
-      "completed_result": 10000,
-      "live_model_exact": 30000,
-      "elo_fallback": 29510,
-      "model_reversed": 490
+      "live_model_exact": 20000,
+      "elo_fallback": 10000
     },
-    "run_id": "2026-07-10T065046Z-a7edab47",
+    "run_id": "2026-07-12T050551Z-661c5ffe",
     "phase_transition": {
       "previous_phase": "quarterfinal",
-      "current_phase": "quarterfinal",
-      "phase_changed": false,
-      "detected_at": "2026-07-10T06:52:42+00:00",
-      "newly_resolved_matchups": 0,
-      "newly_completed_matches": 0,
-      "completed_match_count": 97,
+      "current_phase": "semifinal",
+      "phase_changed": true,
+      "detected_at": "2026-07-12T05:08:42+00:00",
+      "newly_resolved_matchups": 2,
+      "newly_completed_matches": 1,
+      "completed_match_count": 99,
       "resolved_matchup_ids": [
-        "football_data_org_537384",
-        "football_data_org_537385",
-        "football_data_org_537386"
+        "football_data_org_537378",
+        "football_data_org_537387",
+        "football_data_org_537388"
       ],
       "first_recorded_run": false
     },

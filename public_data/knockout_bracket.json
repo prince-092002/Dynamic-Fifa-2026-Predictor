@@ -240,13 +240,15 @@
      "fixture_id": 537378,
      "stage": "Round of 16",
      "date": "2026-07-06T01:00:00Z",
-     "state": "completed",
+     "state": "scheduled_known",
      "team_a": "Mexico",
      "team_b": "England",
-     "score": "2-3",
-     "winner": "England",
-     "source": "completed_result",
-     "source_label": "Completed real result"
+     "team_a_advance_probability": 0.51331,
+     "team_b_advance_probability": 0.48669,
+     "predicted_favorite": "Mexico",
+     "source": "live_model",
+     "source_label": "Live XGBoost prediction",
+     "model": "xgboost"
     },
     {
      "fixture_id": 537379,
@@ -329,29 +331,25 @@
      "fixture_id": 537385,
      "stage": "Quarterfinal",
      "date": "2026-07-11T21:00:00Z",
-     "state": "scheduled_known",
+     "state": "completed",
      "team_a": "Norway",
      "team_b": "England",
-     "team_a_advance_probability": 0.361887,
-     "team_b_advance_probability": 0.638113,
-     "predicted_favorite": "England",
-     "source": "live_model",
-     "source_label": "Live XGBoost prediction",
-     "model": "xgboost"
+     "score": "1-2",
+     "winner": "England",
+     "source": "completed_result",
+     "source_label": "Completed real result"
     },
     {
      "fixture_id": 537386,
      "stage": "Quarterfinal",
      "date": "2026-07-12T01:00:00Z",
-     "state": "scheduled_known",
+     "state": "completed",
      "team_a": "Argentina",
      "team_b": "Switzerland",
-     "team_a_advance_probability": 0.768798,
-     "team_b_advance_probability": 0.231202,
-     "predicted_favorite": "Argentina",
-     "source": "live_model",
-     "source_label": "Live XGBoost prediction",
-     "model": "xgboost"
+     "score": "3-1",
+     "winner": "Argentina",
+     "source": "completed_result",
+     "source_label": "Completed real result"
     }
    ]
   },
@@ -376,12 +374,15 @@
      "fixture_id": 537388,
      "stage": "Semifinal",
      "date": "2026-07-15T19:00:00Z",
-     "state": "tbd",
-     "team_a": null,
-     "team_b": null,
-     "placeholder": "Winners of earlier rounds",
-     "source": "unresolved_tbd",
-     "source_label": "Awaiting real participants"
+     "state": "scheduled_known",
+     "team_a": "England",
+     "team_b": "Argentina",
+     "team_a_advance_probability": 0.378102,
+     "team_b_advance_probability": 0.621898,
+     "predicted_favorite": "Argentina",
+     "source": "live_model",
+     "source_label": "Live XGBoost prediction",
+     "model": "xgboost"
     }
    ]
   },
@@ -410,9 +411,9 @@
   "neutral_fallback": "Neutral fallback",
   "unresolved_tbd": "Awaiting real participants"
  },
- "current_phase": "quarterfinal",
+ "current_phase": "semifinal",
  "_meta": {
-  "generated_at": "2026-07-11T00:02:43+00:00",
+  "generated_at": "2026-07-12T05:08:43+00:00",
   "source_files": [
    "outputs/live_state/merged_bracket_state.csv",
    "outputs/live_state/football_data_org_fixtures_normalized.csv",
@@ -420,7 +421,7 @@
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "quarterfinal",
-  "run_id": "2026-07-11T000104Z-9ca35133"
+  "current_phase": "semifinal",
+  "run_id": "2026-07-12T050551Z-661c5ffe"
  }
 }

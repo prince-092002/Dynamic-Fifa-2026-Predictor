@@ -1,45 +1,35 @@
 {
  "entries": [
   {
+   "team": "Argentina",
+   "champion_probability": 0.3157,
+   "slug": "argentina"
+  },
+  {
    "team": "Spain",
-   "champion_probability": 0.3162,
+   "champion_probability": 0.2862,
    "slug": "spain"
   },
   {
    "team": "France",
-   "champion_probability": 0.2442,
+   "champion_probability": 0.2282,
    "slug": "france"
   },
   {
-   "team": "Argentina",
-   "champion_probability": 0.239,
-   "slug": "argentina"
-  },
-  {
    "team": "England",
-   "champion_probability": 0.1455,
+   "champion_probability": 0.1699,
    "slug": "england"
-  },
-  {
-   "team": "Switzerland",
-   "champion_probability": 0.0305,
-   "slug": "switzerland"
-  },
-  {
-   "team": "Norway",
-   "champion_probability": 0.0246,
-   "slug": "norway"
   }
  ],
  "simulations": 10000,
  "_meta": {
-  "generated_at": "2026-07-11T00:02:43+00:00",
+  "generated_at": "2026-07-12T05:08:43+00:00",
   "source_files": [
    "outputs/live_state/live_champion_probabilities.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "quarterfinal",
-  "run_id": "2026-07-11T000104Z-9ca35133"
+  "current_phase": "semifinal",
+  "run_id": "2026-07-12T050551Z-661c5ffe"
  }
 }
