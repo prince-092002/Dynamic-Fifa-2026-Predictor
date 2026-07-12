@@ -21,7 +21,6 @@ import streamlit as st
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 FLAG_DIR = Path(__file__).resolve().parent / "assets" / "flags"
-WORLD_CUP_LOGO = PROJECT_ROOT / "website" / "public" / "images" / "fifa-world-cup-26-emblem.png"
 
 # palette (mirrors website/app/globals.css)
 BG = "#05080f"
@@ -92,10 +91,40 @@ def flag_uri(code: str | None) -> str:
     return _asset_data_uri(str(FLAG_DIR / f"{str(code).lower()}.svg"), "image/svg+xml")
 
 
+def crest_svg(size: int = 52) -> str:
+    """Original WC26 crest (medallion) — trophy, star & pitch arc, matching the website
+    logo mark (website/components/Crest.tsx). In-repo SVG; not a FIFA logo/emblem."""
+    return (
+        f'<svg class="sk-brand-logo" width="{size}" height="{size}" viewBox="0 0 64 64" '
+        'fill="none" role="img" aria-label="WC26 crest">'
+        '<defs>'
+        '<linearGradient id="wc26-gold" x1="0" y1="0" x2="0" y2="1">'
+        '<stop offset="0" stop-color="#fbe6a3"/><stop offset=".5" stop-color="#f5c451"/>'
+        '<stop offset="1" stop-color="#d99a2f"/></linearGradient>'
+        '<radialGradient id="wc26-field" cx=".5" cy=".36" r=".78">'
+        '<stop offset="0" stop-color="#182742"/><stop offset="1" stop-color="#060a13"/></radialGradient>'
+        '<linearGradient id="wc26-pitch" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#29d17f"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>'
+        '</defs>'
+        '<circle cx="32" cy="32" r="30" fill="url(#wc26-field)" stroke="url(#wc26-gold)" stroke-width="2.5"/>'
+        '<circle cx="32" cy="32" r="25.5" fill="none" stroke="#38bdf8" stroke-opacity=".32" stroke-width="1"/>'
+        '<path d="M32 6.4 33.47 9.98 37.33 10.27 34.38 12.77 35.29 16.53 32 14.5 28.71 16.53 29.62 12.77 '
+        '26.67 10.27 30.53 9.98Z" fill="url(#wc26-gold)"/>'
+        '<path d="M23 19C17.4 19 17.4 28 23 28" fill="none" stroke="url(#wc26-gold)" stroke-width="2"/>'
+        '<path d="M41 19C46.6 19 46.6 28 41 28" fill="none" stroke="url(#wc26-gold)" stroke-width="2"/>'
+        '<path d="M22.5 18h19v3.6c0 7.4-4 11.6-9.5 11.6s-9.5-4.2-9.5-11.6z" fill="url(#wc26-gold)"/>'
+        '<rect x="30.3" y="33.2" width="3.4" height="3.4" fill="url(#wc26-gold)"/>'
+        '<path d="M27.4 40 28.8 36.6h6.4L36.6 40z" fill="url(#wc26-gold)"/>'
+        '<rect x="25.8" y="40" width="12.4" height="2.3" rx="1.1" fill="url(#wc26-gold)"/>'
+        '<path d="M18 46.2C24.5 50.8 39.5 50.8 46 46.2" fill="none" stroke="url(#wc26-pitch)" '
+        'stroke-width="2" stroke-linecap="round"/>'
+        '<circle cx="32" cy="48.1" r="1.15" fill="url(#wc26-pitch)"/>'
+        '</svg>'
+    )
+
+
 def brand_header() -> None:
-    logo = _asset_data_uri(str(WORLD_CUP_LOGO), "image/png")
-    logo_html = (f'<img class="sk-brand-logo" src="{logo}" alt="FIFA World Cup 26 official emblem">'
-                 if logo else f'<span class="sk-brand-logo">{icon("trophy", GOLD, 28)}</span>')
+    logo_html = crest_svg(52)
     st.markdown(
         f'''<div class="sk-brand">
           <div class="sk-brand-main">
@@ -203,7 +232,7 @@ def inject_theme() -> None:
         /* custom components */
         .sk-brand {{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.3rem 0 .7rem; }}
         .sk-brand-main {{ display:flex; align-items:center; gap:.85rem; min-width:0; }}
-        .sk-brand-logo {{ width:3.25rem; height:3.25rem; flex:0 0 auto; object-fit:cover; border-radius:8px; border:1px solid rgba(245,196,81,.32); box-shadow:0 14px 34px -20px rgba(245,196,81,.7); }}
+        .sk-brand-logo {{ width:3.25rem; height:3.25rem; flex:0 0 auto; filter: drop-shadow(0 12px 26px rgba(245,196,81,.4)); }}
         .sk-brand-name {{ font-family:'Space Grotesk'; font-size:1.45rem; line-height:1; font-weight:700; color:{FG}; }}
         .sk-brand-name span {{ color:{FG3}; font-weight:600; }}
         .sk-brand-sub {{ margin-top:.35rem; color:{FG2}; font-size:.78rem; }}
