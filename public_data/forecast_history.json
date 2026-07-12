@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-07-12T05:08:43+00:00",
+  "generated_at": "2026-07-12T06:35:46+00:00",
   "source_files": [
    "outputs/live_state/champion_probability_history.csv",
    "outputs/live_state/finalist_probability_history.csv",
@@ -9,7 +9,7 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T050551Z-661c5ffe"
+  "run_id": "2026-07-12T063403Z-bf041d71"
  },
  "champion": [
   {
@@ -251,6 +251,46 @@
    "forecast_mode": "true_live_forecast",
    "team": "England",
    "champion_probability": 0.1699
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Argentina",
+   "champion_probability": 0.3074
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "champion_probability": 0.2867
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "France",
+   "champion_probability": 0.2285
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "England",
+   "champion_probability": 0.1774
   }
  ],
  "finalist": [
@@ -493,6 +533,46 @@
    "forecast_mode": "true_live_forecast",
    "team": "England",
    "reach_final_probability": 0.3761
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Argentina",
+   "reach_final_probability": 0.6097
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "reach_final_probability": 0.5565
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "France",
+   "reach_final_probability": 0.4435
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "England",
+   "reach_final_probability": 0.3903
   }
  ],
  "finalist_pair": [
@@ -891,6 +971,50 @@
    "finalist_team_1": "England",
    "finalist_team_2": "France",
    "probability": 0.1662
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Argentina",
+   "finalist_team_2": "Spain",
+   "probability": 0.3379
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Argentina",
+   "finalist_team_2": "France",
+   "probability": 0.2718
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "England",
+   "finalist_team_2": "Spain",
+   "probability": 0.2186
+  },
+  {
+   "run_id": "2026-07-12T063403Z-bf041d71",
+   "timestamp": "2026-07-12T06:35:46+00:00",
+   "phase": "semifinal",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "England",
+   "finalist_team_2": "France",
+   "probability": 0.1717
   }
  ]
 }

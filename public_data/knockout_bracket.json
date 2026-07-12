@@ -240,15 +240,13 @@
      "fixture_id": 537378,
      "stage": "Round of 16",
      "date": "2026-07-06T01:00:00Z",
-     "state": "scheduled_known",
+     "state": "completed",
      "team_a": "Mexico",
      "team_b": "England",
-     "team_a_advance_probability": 0.51331,
-     "team_b_advance_probability": 0.48669,
-     "predicted_favorite": "Mexico",
-     "source": "live_model",
-     "source_label": "Live XGBoost prediction",
-     "model": "xgboost"
+     "score": "2-3",
+     "winner": "England",
+     "source": "completed_result",
+     "source_label": "Completed real result"
     },
     {
      "fixture_id": 537379,
@@ -377,8 +375,8 @@
      "state": "scheduled_known",
      "team_a": "England",
      "team_b": "Argentina",
-     "team_a_advance_probability": 0.378102,
-     "team_b_advance_probability": 0.621898,
+     "team_a_advance_probability": 0.393317,
+     "team_b_advance_probability": 0.606683,
      "predicted_favorite": "Argentina",
      "source": "live_model",
      "source_label": "Live XGBoost prediction",
@@ -413,7 +411,7 @@
  },
  "current_phase": "semifinal",
  "_meta": {
-  "generated_at": "2026-07-12T05:08:43+00:00",
+  "generated_at": "2026-07-12T06:35:46+00:00",
   "source_files": [
    "outputs/live_state/merged_bracket_state.csv",
    "outputs/live_state/football_data_org_fixtures_normalized.csv",
@@ -422,6 +420,6 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T050551Z-661c5ffe"
+  "run_id": "2026-07-12T063403Z-bf041d71"
  }
 }

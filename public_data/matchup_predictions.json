@@ -1,24 +1,6 @@
 {
  "matchups": [
   {
-   "stage": "Round of 16",
-   "team_a": "Mexico",
-   "team_b": "England",
-   "team_a_slug": "mexico",
-   "team_b_slug": "england",
-   "team_a_advance_probability": 0.51331,
-   "team_b_advance_probability": 0.48669,
-   "prob_team_a_win": 0.368297,
-   "prob_draw": 0.290026,
-   "prob_team_a_loss": 0.341676,
-   "favorite": "Mexico",
-   "model": "xgboost",
-   "prediction_status": "predicted",
-   "probability_source": "live_model",
-   "source_label": "Live XGBoost prediction",
-   "generated_at": "2026-07-12T05:06:33+00:00"
-  },
-  {
    "stage": "Semifinal",
    "team_a": "France",
    "team_b": "Spain",
@@ -34,7 +16,7 @@
    "prediction_status": "predicted",
    "probability_source": "live_model",
    "source_label": "Live XGBoost prediction",
-   "generated_at": "2026-07-12T05:06:33+00:00"
+   "generated_at": "2026-07-12T06:34:30+00:00"
   },
   {
    "stage": "Semifinal",
@@ -42,27 +24,27 @@
    "team_b": "Argentina",
    "team_a_slug": "england",
    "team_b_slug": "argentina",
-   "team_a_advance_probability": 0.378102,
-   "team_b_advance_probability": 0.621898,
-   "prob_team_a_win": 0.273481,
-   "prob_draw": 0.209242,
-   "prob_team_a_loss": 0.517277,
+   "team_a_advance_probability": 0.393317,
+   "team_b_advance_probability": 0.606683,
+   "prob_team_a_win": 0.286883,
+   "prob_draw": 0.212869,
+   "prob_team_a_loss": 0.500249,
    "favorite": "Argentina",
    "model": "xgboost",
    "prediction_status": "predicted",
    "probability_source": "live_model",
    "source_label": "Live XGBoost prediction",
-   "generated_at": "2026-07-12T05:06:33+00:00"
+   "generated_at": "2026-07-12T06:34:30+00:00"
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-12T05:08:43+00:00",
+  "generated_at": "2026-07-12T06:35:46+00:00",
   "source_files": [
    "outputs/live_state/live_knockout_match_predictions.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T050551Z-661c5ffe"
+  "run_id": "2026-07-12T063403Z-bf041d71"
  }
 }

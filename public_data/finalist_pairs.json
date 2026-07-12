@@ -4,36 +4,36 @@
    "finalist_team_1": "Argentina",
    "finalist_team_2": "Spain",
    "finalist_pair_key": "Argentina vs Spain",
-   "probability": 0.3466
+   "probability": 0.3379
   },
   {
    "finalist_team_1": "Argentina",
    "finalist_team_2": "France",
    "finalist_pair_key": "Argentina vs France",
-   "probability": 0.2773
+   "probability": 0.2718
   },
   {
    "finalist_team_1": "England",
    "finalist_team_2": "Spain",
    "finalist_pair_key": "England vs Spain",
-   "probability": 0.2099
+   "probability": 0.2186
   },
   {
    "finalist_team_1": "England",
    "finalist_team_2": "France",
    "finalist_pair_key": "England vs France",
-   "probability": 0.1662
+   "probability": 0.1717
   }
  ],
  "simulations": 10000,
  "_meta": {
-  "generated_at": "2026-07-12T05:08:43+00:00",
+  "generated_at": "2026-07-12T06:35:46+00:00",
   "source_files": [
    "outputs/live_state/finalist_pair_probabilities.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T050551Z-661c5ffe"
+  "run_id": "2026-07-12T063403Z-bf041d71"
  }
 }

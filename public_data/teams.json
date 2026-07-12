@@ -47,13 +47,13 @@
    "goals_for": 17,
    "goals_against": 6,
    "goal_difference": 11,
-   "champion_probability": 0.3157,
-   "reach_final_probability": 0.6239,
+   "champion_probability": 0.3074,
+   "reach_final_probability": 0.6097,
    "next_matchup": {
     "opponent": "England",
     "stage": "Semifinal",
     "date": "2026-07-15T19:00:00Z",
-    "advance_probability": 0.621898,
+    "advance_probability": 0.606683,
     "source_label": "Live XGBoost prediction"
    },
    "latest_result": {
@@ -496,20 +496,20 @@
    "stage_reached": "Semifinal",
    "eliminated_by": null,
    "eliminated_in": null,
-   "played": 5,
-   "wins": 4,
+   "played": 6,
+   "wins": 5,
    "draws": 1,
    "losses": 0,
-   "goals_for": 10,
-   "goals_against": 4,
-   "goal_difference": 6,
-   "champion_probability": 0.1699,
-   "reach_final_probability": 0.3761,
+   "goals_for": 13,
+   "goals_against": 6,
+   "goal_difference": 7,
+   "champion_probability": 0.1774,
+   "reach_final_probability": 0.3903,
    "next_matchup": {
     "opponent": "Argentina",
     "stage": "Semifinal",
     "date": "2026-07-15T19:00:00Z",
-    "advance_probability": 0.378102,
+    "advance_probability": 0.393317,
     "source_label": "Live XGBoost prediction"
    },
    "latest_result": {
@@ -539,7 +539,7 @@
    "goals_for": 16,
    "goals_against": 2,
    "goal_difference": 14,
-   "champion_probability": 0.2282,
+   "champion_probability": 0.2285,
    "reach_final_probability": 0.4435,
    "next_matchup": {
     "opponent": "Spain",
@@ -804,34 +804,28 @@
    "code": "MX",
    "flag": "\ud83c\uddf2\ud83c\uddfd",
    "group": "A",
-   "status": "alive",
+   "status": "eliminated",
    "stage_reached": "Round of 16",
-   "eliminated_by": null,
-   "eliminated_in": null,
-   "played": 4,
+   "eliminated_by": "England",
+   "eliminated_in": "Round of 16",
+   "played": 5,
    "wins": 4,
    "draws": 0,
-   "losses": 0,
-   "goals_for": 8,
-   "goals_against": 0,
-   "goal_difference": 8,
-   "champion_probability": null,
-   "reach_final_probability": null,
-   "next_matchup": {
-    "opponent": "England",
-    "stage": "Round of 16",
-    "date": "2026-07-06T01:00:00Z",
-    "advance_probability": 0.51331,
-    "source_label": "Live XGBoost prediction"
-   },
+   "losses": 1,
+   "goals_for": 10,
+   "goals_against": 3,
+   "goal_difference": 7,
+   "champion_probability": 0.0,
+   "reach_final_probability": 0.0,
+   "next_matchup": null,
    "latest_result": {
-    "date": "2026-07-01",
-    "stage": "Round of 32",
-    "opponent": "Ecuador",
+    "date": "2026-07-06",
+    "stage": "Round of 16",
+    "opponent": "England",
     "goals_for": 2,
-    "goals_against": 0,
-    "result": "W",
-    "score": "2-0"
+    "goals_against": 3,
+    "result": "L",
+    "score": "2-3"
    }
   },
   {
@@ -1241,7 +1235,7 @@
    "goals_for": 11,
    "goals_against": 1,
    "goal_difference": 10,
-   "champion_probability": 0.2862,
+   "champion_probability": 0.2867,
    "reach_final_probability": 0.5565,
    "next_matchup": {
     "opponent": "France",
@@ -1472,7 +1466,7 @@
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-12T05:08:42+00:00",
+  "generated_at": "2026-07-12T06:35:46+00:00",
   "source_files": [
    "outputs/live_state/football_data_org_teams_normalized.csv",
    "outputs/live_state/merged_bracket_state.csv",
@@ -1481,6 +1475,6 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T050551Z-661c5ffe"
+  "run_id": "2026-07-12T063403Z-bf041d71"
  }
 }

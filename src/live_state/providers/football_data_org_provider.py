@@ -201,6 +201,11 @@ class FootballDataOrgProvider:
             full_time = score.get("fullTime") or {}
             penalties = score.get("penalties") or {}
             status = str(match.get("status") or "UNKNOWN").upper()
+            # Recover from a malformed/missing provider status (e.g. a timestamp returned in
+            # the status field): a match carrying a decisive full-time result is finished, so
+            # normalize it to FINISHED rather than treating a completed match as unplayed.
+            if status not in COMPLETED and status not in LIVE and _result_is_decided(score, full_time, penalties):
+                status = "FINISHED"
             stage_raw = str(match.get("stage") or "UNKNOWN").upper()
             stage = STAGE_MAP.get(stage_raw, "Unknown" if stage_raw == "UNKNOWN" else stage_raw.replace("_", " ").title())
             winner = self._winner(match, home, away, full_time, penalties, status)
@@ -576,6 +581,17 @@ class FootballDataOrgProvider:
                 f"football_data_org_matches_{stage.lower()}_2026.json",
                 {"season": self.season, "stage": stage},
             )
+
+
+def _result_is_decided(score: dict, full_time: dict, penalties: dict) -> bool:
+    """True when a match carries a decisive final result, regardless of its status string."""
+    if (score or {}).get("winner") in {"HOME_TEAM", "AWAY_TEAM", "DRAW"}:
+        return True
+    if full_time.get("home") is not None and full_time.get("away") is not None:
+        return True
+    if penalties.get("home") is not None and penalties.get("away") is not None:
+        return True
+    return False
 
 
 def _sanitize(payload: Any) -> Any:
