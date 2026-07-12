@@ -9,9 +9,8 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from data.loaders import PUBLIC_DATA, load_json, missing, source_label  # noqa: E402
-
-st.set_page_config(page_title="Technical Audit", page_icon="🔍", layout="wide")
-st.title("🔍 Technical Audit")
+from theme import header, flag_html  # noqa: E402
+header("Technical Audit", "Run manifest · reproducibility", "The complete audit manifest of the latest forecast run, with public-artifact downloads.", icon_name="lock")
 
 manifest = load_json("latest_run_manifest.json")
 if not manifest:
@@ -42,8 +41,20 @@ else:
     missing("No probability-source counts in the manifest.")
 
 st.subheader("Top results (latest run)")
-st.markdown(f"- Top champion: **{manifest.get('top_champion', '—')}**")
-st.markdown(f"- Top finalist pair: **{manifest.get('top_finalist_pair', '—')}**")
+team_codes = {team["team"]: team.get("code") for team in load_json("teams.json").get("teams", [])}
+top_champion = manifest.get("top_champion", "—")
+st.markdown(
+    f'<div class="sk-team-row">{flag_html(team_codes.get(top_champion), top_champion, 28)}'
+    f'<span class="name">Top champion: <b>{top_champion}</b></span></div>',
+    unsafe_allow_html=True,
+)
+pair = str(manifest.get("top_finalist_pair", "—"))
+pair_teams = pair.split(" vs ") if " vs " in pair else []
+pair_flags = "".join(flag_html(team_codes.get(team), team, 24) for team in pair_teams)
+st.markdown(
+    f'<div class="sk-team-row">{pair_flags}<span class="name">Top finalist pair: <b>{pair}</b></span></div>',
+    unsafe_allow_html=True,
+)
 transition = manifest.get("phase_transition") or {}
 st.markdown(f"- Phase: **{transition.get('previous_phase') or '—'} → {transition.get('current_phase') or '—'}** (changed: {transition.get('phase_changed', '—')})")
 

@@ -9,9 +9,8 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from data.loaders import load_json, missing  # noqa: E402
-
-st.set_page_config(page_title="Model & Methodology", page_icon="🧠", layout="wide")
-st.title("🧠 Model & Methodology")
+from theme import header, apply_plotly  # noqa: E402
+header("Inside the Prediction Engine", "Analytics Lab", "The model, its Phase 5G diagnostics, the features that matter, and the validation that keeps it honest.", icon_name="lab")
 
 st.markdown(
     """
@@ -84,7 +83,7 @@ if importance:
     frame = pd.DataFrame(importance[:10]).sort_values("importance")
     figure = px.bar(frame, x="importance", y="feature", orientation="h", title="Top 10 global XGBoost feature importances")
     figure.update_layout(height=380)
-    st.plotly_chart(figure, use_container_width=True)
+    st.plotly_chart(apply_plotly(figure), use_container_width=True)
     st.info(insights.get("importance_note", ""))
 else:
     missing("Global feature importance could not be extracted from the selected model artifact.")

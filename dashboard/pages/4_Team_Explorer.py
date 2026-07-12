@@ -8,9 +8,8 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from data.loaders import load_json, missing, pct  # noqa: E402
-
-st.set_page_config(page_title="Team Explorer", page_icon="🌍", layout="wide")
-st.title("🌍 Team Explorer")
+from theme import header, apply_plotly, flag_html, flag_uri  # noqa: E402
+header("Team Intelligence", "Team dossiers", "Every real tournament team — records, live status, and current odds.", icon_name="team")
 
 teams_payload = load_json("teams.json")
 stats_payload = load_json("team_stats.json")
@@ -47,11 +46,18 @@ sort_map = {
 column, ascending = sort_map[sort_by]
 filtered = filtered.sort_values(column, ascending=ascending, na_position="last")
 
-display = filtered[["flag", "team", "group", "status", "stage_reached", "played", "wins", "draws", "losses", "goals_for", "goals_against", "goal_difference", "champion_probability", "reach_final_probability"]].copy()
+display = filtered[["code", "team", "group", "status", "stage_reached", "played", "wins", "draws", "losses", "goals_for", "goals_against", "goal_difference", "champion_probability", "reach_final_probability"]].copy()
+display["code"] = display["code"].map(flag_uri)
 display["champion_probability"] = display["champion_probability"].map(lambda v: f"{v:.2%}" if pd.notna(v) else "—")
 display["reach_final_probability"] = display["reach_final_probability"].map(lambda v: f"{v:.2%}" if pd.notna(v) else "—")
-display.columns = ["", "Team", "Group", "Status", "Stage reached", "P", "W", "D", "L", "GF", "GA", "GD", "Champion", "Finalist"]
-st.dataframe(display, use_container_width=True, hide_index=True, height=420)
+display.columns = ["Flag", "Team", "Group", "Status", "Stage reached", "P", "W", "D", "L", "GF", "GA", "GD", "Champion", "Finalist"]
+st.dataframe(
+    display,
+    use_container_width=True,
+    hide_index=True,
+    height=420,
+    column_config={"Flag": st.column_config.ImageColumn("", width="small")},
+)
 
 st.divider()
 st.subheader("Team detail")
@@ -61,8 +67,12 @@ stats = (stats_payload.get("team_stats") or {}).get(team["slug"], {})
 
 left, right = st.columns([1, 2])
 with left:
-    st.markdown(f"## {team.get('flag') or ''} {team['team']}")
-    st.markdown(f"**Group {team.get('group', '—')}** · code {team.get('code') or '—'}")
+    st.markdown(
+        f'<div class="sk-team-row" style="font-family:Space Grotesk;font-size:1.65rem">'
+        f'{flag_html(team.get("code"), team["team"], 42)}<span class="name">{team["team"]}</span></div>',
+        unsafe_allow_html=True,
+    )
+    st.markdown(f"**Group {team.get('group', '—')}** · {team.get('stage_reached', '—')}")
     status = team["status"]
     if status in {"alive", "champion", "runner_up"}:
         st.success(f"Status: {status.replace('_', ' ').title()} · reached {team['stage_reached']}")
@@ -88,8 +98,15 @@ with right:
     if matches:
         st.markdown("#### Tournament journey")
         journey = pd.DataFrame(matches)[["date", "stage", "opponent", "score", "result"]]
-        journey.columns = ["Date", "Stage", "Opponent", "Score", "Result"]
-        st.dataframe(journey, use_container_width=True, hide_index=True)
+        code_by_team = dict(zip(frame["team"], frame["code"]))
+        journey.insert(2, "flag", journey["opponent"].map(lambda name: flag_uri(code_by_team.get(name))))
+        journey.columns = ["Date", "Stage", "Flag", "Opponent", "Score", "Result"]
+        st.dataframe(
+            journey,
+            use_container_width=True,
+            hide_index=True,
+            column_config={"Flag": st.column_config.ImageColumn("", width="small")},
+        )
     else:
         missing("No completed matches recorded for this team.")
 
@@ -101,7 +118,7 @@ if not champion_history.empty and (champion_history["team"] == selected_name).su
     team_history = champion_history[champion_history["team"] == selected_name]
     figure = px.line(team_history, x="timestamp", y="champion_probability", title=f"{selected_name} — champion probability over recorded runs", markers=True)
     figure.update_layout(yaxis_tickformat=".0%", height=320)
-    st.plotly_chart(figure, use_container_width=True)
+    st.plotly_chart(apply_plotly(figure), use_container_width=True)
 else:
     st.caption("Forecast history will appear after additional recorded forecast runs.")
 st.caption("Player-level statistics are not currently part of the verified data pipeline.")

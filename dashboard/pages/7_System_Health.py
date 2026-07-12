@@ -7,9 +7,8 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from data.loaders import load_json, missing  # noqa: E402
-
-st.set_page_config(page_title="System Health", page_icon="🩺", layout="wide")
-st.title("🩺 Data Quality & System Health")
+from theme import header  # noqa: E402
+header("Data Quality & System Health", "Live provider · quality gate · validation", "Provider freshness, forecast quality gate, and validation status.", icon_name="signal")
 
 health = load_json("system_health.json")
 if not health:

@@ -9,9 +9,8 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from data.loaders import load_json, missing  # noqa: E402
-
-st.set_page_config(page_title="Forecast Evolution", page_icon="📈", layout="wide")
-st.title("📈 Forecast Evolution")
+from theme import header, apply_plotly, flag_html  # noqa: E402
+header("Forecast Evolution", "How the odds moved", "Championship and finalist probabilities across recorded forecast runs, and the probability-source mix.", icon_name="chart")
 
 history = load_json("forecast_history.json")
 champion_history = pd.DataFrame(history.get("champion", []))
@@ -19,16 +18,23 @@ if champion_history.empty or champion_history["run_id"].nunique() < 2:
     missing("Forecast history will appear after additional recorded forecast runs.")
 else:
     top_teams = champion_history.groupby("team")["champion_probability"].max().nlargest(8).index
+    team_codes = {team["team"]: team.get("code") for team in load_json("teams.json").get("teams", [])}
+    chips = "".join(
+        f'<div class="sk-team-chip">{flag_html(team_codes.get(team), team, 26)}'
+        f'<div class="meta"><div class="team">{team}</div></div></div>'
+        for team in top_teams
+    )
+    st.markdown(f'<div class="sk-team-strip">{chips}</div>', unsafe_allow_html=True)
     frame = champion_history[champion_history["team"].isin(top_teams)]
     figure = px.line(frame, x="timestamp", y="champion_probability", color="team", markers=True, title="Champion probability over recorded forecast runs")
     figure.update_layout(yaxis_tickformat=".0%", height=420)
-    st.plotly_chart(figure, use_container_width=True)
+    st.plotly_chart(apply_plotly(figure), use_container_width=True)
     finalist_history = pd.DataFrame(history.get("finalist", []))
     if not finalist_history.empty and finalist_history["run_id"].nunique() >= 2:
         frame = finalist_history[finalist_history["team"].isin(top_teams)]
         figure = px.line(frame, x="timestamp", y="reach_final_probability", color="team", markers=True, title="Reach-final probability over recorded runs")
         figure.update_layout(yaxis_tickformat=".0%", height=380)
-        st.plotly_chart(figure, use_container_width=True)
+        st.plotly_chart(apply_plotly(figure), use_container_width=True)
 
 st.divider()
 st.subheader("Probability-source progression")
@@ -43,7 +49,7 @@ else:
     melted["source"] = melted["source"].map(label_map)
     figure = px.area(melted, x="timestamp", y="decisions", color="source", title="Simulation decisions by probability source (per recorded run)", groupnorm="fraction")
     figure.update_layout(yaxis_tickformat=".0%", height=420)
-    st.plotly_chart(figure, use_container_width=True)
+    st.plotly_chart(apply_plotly(figure), use_container_width=True)
     st.info("Probability-source usage measures which probability engine supplied simulation decisions. It is not an accuracy metric.")
     st.dataframe(runs[["timestamp", "tournament_phase", "simulation_count", "known_remaining_matchups", "model_driven_pct", "fallback_pct"]], use_container_width=True, hide_index=True)
 

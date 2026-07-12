@@ -3,61 +3,62 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Trophy, Team, Lab, Globe, Github, Arrow } from "./icons";
 
 const LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/#forecast", label: "Live Forecast" },
-  { href: "/#bracket", label: "Bracket" },
-  { href: "/teams", label: "Teams" },
-  { href: "/methodology", label: "Methodology" },
-  { href: "/about", label: "About" },
+  { href: "/", label: "Home", icon: <Trophy width={16} height={16} /> },
+  { href: "/#bracket", label: "Bracket", icon: <Route16 /> },
+  { href: "/teams", label: "Teams", icon: <Team width={16} height={16} /> },
+  { href: "/methodology", label: "Analytics Lab", icon: <Lab width={16} height={16} /> },
+  { href: "/about", label: "About", icon: <Globe width={16} height={16} /> },
 ];
 
-export const DASHBOARD_URL = process.env.NEXT_PUBLIC_DASHBOARD_URL || "";
-export const GITHUB_URL = process.env.NEXT_PUBLIC_GITHUB_URL || "";
+function Route16() {
+  return <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round"><circle cx="6" cy="18" r="2.2" /><circle cx="18" cy="6" r="2.2" /><path d="M8 18h6a3 3 0 0 0 3-3V9" /></svg>;
+}
 
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const dashboard = process.env.NEXT_PUBLIC_DASHBOARD_URL || "";
+  const github = process.env.NEXT_PUBLIC_GITHUB_URL || "";
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-bg/90 backdrop-blur">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3" aria-label="Main navigation">
-        <Link href="/" className="flex items-center gap-2 font-bold tracking-tight">
-          <span aria-hidden>⚽</span>
-          <span className="bg-gradient-to-r from-cyan to-magenta bg-clip-text text-transparent">FIFA 2026 Predictor</span>
+    <header className="sticky top-0 z-50 border-b border-line/70 bg-bg/80 backdrop-blur-xl">
+      <nav className="mx-auto flex max-w-[78rem] items-center justify-between px-4 py-3" aria-label="Main">
+        <Link href="/" className="group flex items-center gap-2.5">
+          <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-line-strong bg-gradient-to-br from-surface to-bg2 text-gold shadow-[0_8px_20px_-12px_rgba(245,196,81,0.8)]" aria-hidden>
+            <Trophy width={20} height={20} />
+          </span>
+          <span className="font-display text-sm font-bold tracking-tight">
+            FIFA 2026 <span className="text-fg3">Intelligence</span>
+          </span>
         </Link>
-        <button
-          className="rounded border border-line px-3 py-1 text-sm md:hidden"
-          onClick={() => setOpen(!open)}
-          aria-expanded={open}
-          aria-label="Toggle navigation menu"
-        >
-          Menu
-        </button>
-        <ul className={`${open ? "flex" : "hidden"} absolute left-0 top-full w-full flex-col gap-1 border-b border-line bg-bg2 p-4 md:static md:flex md:w-auto md:flex-row md:items-center md:gap-5 md:border-0 md:bg-transparent md:p-0`}>
-          {LINKS.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                onClick={() => setOpen(false)}
-                aria-current={pathname === link.href ? "page" : undefined}
-                className={`text-sm transition-colors hover:text-cyan ${pathname === link.href ? "font-semibold text-cyan" : "text-fg2"}`}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-          {DASHBOARD_URL && (
-            <li>
-              <a href={DASHBOARD_URL} target="_blank" rel="noreferrer" className="rounded bg-cyan/15 px-3 py-1.5 text-sm font-semibold text-cyan hover:bg-cyan/25">
-                Dashboard ↗
+
+        <button className="rounded-lg border border-line-strong px-3 py-1.5 text-sm md:hidden" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Toggle menu">Menu</button>
+
+        <ul className={`${open ? "flex" : "hidden"} absolute left-0 top-full w-full flex-col gap-1 border-b border-line bg-bg2 p-4 md:static md:flex md:w-auto md:flex-row md:items-center md:gap-1 md:border-0 md:bg-transparent md:p-0`}>
+          {LINKS.map((l) => {
+            const active = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href.split("#")[0]) && l.href !== "/#bracket");
+            return (
+              <li key={l.label}>
+                <Link href={l.href} onClick={() => setOpen(false)} aria-current={active ? "page" : undefined}
+                  className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors ${active ? "bg-surface text-fg" : "text-fg2 hover:bg-surface/60 hover:text-fg"}`}>
+                  <span className={active ? "text-cyan" : "text-fg3"}>{l.icon}</span>{l.label}
+                </Link>
+              </li>
+            );
+          })}
+          {dashboard && (
+            <li className="md:ml-2">
+              <a href={dashboard} target="_blank" rel="noreferrer" className="btn btn-primary !py-2 !px-3.5 text-sm">
+                Live Dashboard <Arrow width={15} height={15} />
               </a>
             </li>
           )}
-          {GITHUB_URL && (
+          {github && (
             <li>
-              <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="text-sm text-fg2 hover:text-cyan">
-                GitHub ↗
+              <a href={github} target="_blank" rel="noreferrer" aria-label="GitHub repository" className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-fg2 hover:text-fg md:px-2">
+                <Github width={17} height={17} />
               </a>
             </li>
           )}

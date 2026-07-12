@@ -1,68 +1,154 @@
 @import "tailwindcss";
 
-/* FIFA-2026-inspired design tokens — independent project, no official branding */
+/* ============================================================
+   Dynamic FIFA 2026 — "Floodlit Night Stadium" design system
+   Football-tournament-inspired visual system for an independent analytics project.
+   ============================================================ */
 :root {
-  --background-primary: #070b18;
-  --background-secondary: #0b1226;
-  --surface: #111a33;
-  --surface-elevated: #182448;
-  --border: #223055;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --accent-blue: #3b82f6;
-  --accent-cyan: #22d3ee;
-  --accent-magenta: #e94fd0;
-  --accent-red: #fb5d3f;
-  --accent-green: #34d399;
-  --status-success: #34d399;
-  --status-warning: #fbbf24;
-  --status-error: #f87171;
+  /* canvas */
+  --bg: #05080f;
+  --bg-2: #080d18;
+  --surface: #0e1626;
+  --surface-solid: #131f31;
+  --surface-elev: #1a2942;
+  --line: #223049;
+  --line-strong: #33456a;
+  /* text */
+  --fg: #eef4fd;
+  --fg-2: #9db0cc;
+  --fg-3: #61728e;
+  /* semantic accents */
+  --pitch: #29d17f;   /* positive / qualify / winning form */
+  --gold-c: #f5c451;  /* championship / prestige */
+  --cyan: #38bdf8;    /* data / model intelligence */
+  --amber: #fbbf24;   /* caution */
+  --crimson: #f4515f; /* elimination / danger */
+  --blue: #4f8cff;
+  --magenta: #e94fd0;
 }
 
 @theme inline {
-  --color-bg: var(--background-primary);
-  --color-bg2: var(--background-secondary);
-  --color-surface: var(--surface);
-  --color-surface2: var(--surface-elevated);
-  --color-line: var(--border);
-  --color-fg: var(--text-primary);
-  --color-fg2: var(--text-secondary);
-  --color-blue: var(--accent-blue);
-  --color-cyan: var(--accent-cyan);
-  --color-magenta: var(--accent-magenta);
-  --color-hot: var(--accent-red);
-  --color-green: var(--accent-green);
-  --color-warn: var(--status-warning);
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg-2);
+  --color-surface: var(--surface-solid);
+  --color-surface2: var(--surface-elev);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-fg: var(--fg);
+  --color-fg2: var(--fg-2);
+  --color-fg3: var(--fg-3);
+  --color-pitch: var(--pitch);
+  --color-gold: var(--gold-c);
+  --color-cyan: var(--cyan);
+  --color-amber: var(--amber);
+  --color-crimson: var(--crimson);
+  --color-blue: var(--blue);
+  --color-magenta: var(--magenta);
+  --color-green: var(--pitch);
+  --color-hot: var(--crimson);
+  --color-warn: var(--amber);
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+* { border-color: var(--line); }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
 }
+main { max-width: 78rem; margin: 0 auto; padding: 0 1.1rem; }
+
+/* ---- atmospheric floodlit-stadium canvas (fixed, behind everything) ---- */
+.bg-stadium {
+  position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    radial-gradient(60% 42% at 18% -8%, rgba(80,140,255,0.16), transparent 60%),
+    radial-gradient(55% 40% at 84% -6%, rgba(245,196,81,0.10), transparent 60%),
+    radial-gradient(80% 55% at 50% 118%, rgba(41,209,127,0.10), transparent 60%),
+    linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 60%);
+}
+.bg-stadium::after { /* pitch-line geometry + faint grid, pure SVG data-uri */
+  content: ""; position: absolute; inset: 0; opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='1200' viewBox='0 0 1200 1200'%3E%3Cg fill='none' stroke='%23223049' stroke-width='1.1' opacity='0.5'%3E%3Cpath d='M0 300H1200M0 900H1200M600 0V1200'/%3E%3Ccircle cx='600' cy='600' r='120'/%3E%3Crect x='420' y='0' width='360' height='150'/%3E%3Crect x='420' y='1050' width='360' height='150'/%3E%3C/g%3E%3Cg fill='%23223049' opacity='0.18'%3E%3Ccircle cx='600' cy='600' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center top; background-repeat: no-repeat; background-size: 130% auto;
+  -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.9), transparent 70%);
+  mask-image: linear-gradient(180deg, rgba(0,0,0,0.9), transparent 70%);
+}
+
+/* ---- section atmosphere helpers ---- */
+.bg-grid { background-image:
+  linear-gradient(rgba(51,69,106,0.16) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(51,69,106,0.16) 1px, transparent 1px);
+  background-size: 42px 42px; }
+.bg-floodlight { background:
+  radial-gradient(70% 90% at 50% -20%, rgba(245,196,81,0.14), transparent 62%),
+  radial-gradient(60% 70% at 12% 0%, rgba(79,140,255,0.14), transparent 60%); }
+.bg-pitch-glow { background: radial-gradient(80% 120% at 50% 130%, rgba(41,209,127,0.16), transparent 60%); }
+
+/* ---- typography ---- */
+.font-display { font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif; }
+.kicker { font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--fg-3); font-weight: 600; }
+.display { font-family: var(--font-display); font-weight: 700; line-height: 0.98; letter-spacing: -0.02em; }
+.stat-num { font-family: var(--font-display); font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.text-gradient { background: linear-gradient(100deg, #eaf2ff 10%, var(--cyan) 55%, var(--pitch) 95%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.text-gold-grad { background: linear-gradient(100deg, #fff0c2, var(--gold-c) 70%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* ---- card system ---- */
+.card { position: relative; background: linear-gradient(180deg, rgba(20,32,50,0.9), rgba(14,22,38,0.9)); border: 1px solid var(--line); border-radius: 1rem; }
+.card-hover { transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.card-hover:hover { transform: translateY(-3px); border-color: var(--line-strong); box-shadow: 0 14px 40px -20px rgba(0,0,0,0.9); }
+.card-glass { background: rgba(18,29,48,0.55); backdrop-filter: blur(10px); border: 1px solid rgba(51,69,106,0.5); border-radius: 1rem; }
+.card-elev { background: linear-gradient(180deg, var(--surface-elev), var(--surface)); border: 1px solid var(--line-strong); border-radius: 1.1rem; box-shadow: 0 24px 60px -30px rgba(0,0,0,0.95); }
+.card-feature { position: relative; overflow: hidden; border-radius: 1.25rem; border: 1px solid rgba(245,196,81,0.28);
+  background: linear-gradient(160deg, rgba(33,44,66,0.95), rgba(12,19,32,0.96)); box-shadow: 0 30px 80px -40px rgba(245,196,81,0.25); }
+.hairline { height: 1px; background: linear-gradient(90deg, transparent, var(--line-strong), transparent); }
+
+/* accent left-rail for insight cards */
+.rail { position: relative; }
+.rail::before { content:""; position:absolute; left:0; top:14%; bottom:14%; width:3px; border-radius: 3px; background: var(--accent, var(--cyan)); }
+
+/* ---- pills / chips / badges ---- */
+.chip { display:inline-flex; align-items:center; gap:.4rem; padding:.32rem .7rem; border-radius:999px; font-size:.78rem; font-weight:600;
+  border:1px solid var(--line-strong); color: var(--fg-2); background: rgba(20,32,50,0.6); transition: all .15s ease; cursor: default; }
+.chip-active { color: var(--bg); background: var(--cyan); border-color: transparent; }
+.chip-btn { cursor: pointer; }
+.chip-btn:hover { border-color: var(--cyan); color: var(--fg); }
+.badge-live { display:inline-flex; align-items:center; gap:.45rem; padding:.3rem .65rem; border-radius:999px; font-size:.7rem; font-weight:700; letter-spacing:.08em;
+  color:#c9ffe4; background: rgba(41,209,127,0.12); border:1px solid rgba(41,209,127,0.4); }
+.dot-live { width:.5rem; height:.5rem; border-radius:999px; background: var(--pitch); box-shadow: 0 0 0 0 rgba(41,209,127,0.6); animation: pulse 2s infinite; }
+
+/* ---- buttons ---- */
+.btn { display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1.15rem; border-radius:.7rem; font-weight:600; font-size:.92rem; transition: all .16s ease; }
+.btn-primary { color:#04140b; background: linear-gradient(180deg, #46e39a, var(--pitch)); box-shadow: 0 12px 30px -14px rgba(41,209,127,0.7); }
+.btn-primary:hover { filter: brightness(1.06); transform: translateY(-1px); }
+.btn-gold { color:#241a00; background: linear-gradient(180deg, #ffd873, var(--gold-c)); box-shadow: 0 12px 30px -14px rgba(245,196,81,0.6); }
+.btn-ghost { color: var(--fg); border:1px solid var(--line-strong); background: rgba(20,32,50,0.5); }
+.btn-ghost:hover { border-color: var(--cyan); background: rgba(20,32,50,0.85); }
+
+/* ---- probability bar ---- */
+.meter { height:.55rem; border-radius:999px; background: rgba(51,69,106,0.35); overflow:hidden; }
+.meter > span { display:block; height:100%; border-radius:999px; }
+
+/* ---- form result chips (W/D/L) ---- */
+.res { width:1.6rem; height:1.6rem; display:inline-grid; place-items:center; border-radius:.4rem; font-family:var(--font-display); font-weight:700; font-size:.8rem; }
+.res-w { color:#031b0f; background: var(--pitch); }
+.res-d { color:#211900; background: var(--amber); }
+.res-l { color:#2a0409; background: var(--crimson); }
+
+/* ---- motion (respecting reduced-motion) ---- */
+@keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(41,209,127,0.55)} 70%{box-shadow:0 0 0 7px rgba(41,209,127,0)} 100%{box-shadow:0 0 0 0 rgba(41,209,127,0)} }
+@keyframes riseIn { from { opacity:0; transform: translateY(14px); } to { opacity:1; transform:none; } }
+.reveal { animation: riseIn .6s cubic-bezier(.2,.7,.2,1) both; }
+.reveal-2 { animation-delay: .08s; } .reveal-3 { animation-delay: .16s; } .reveal-4 { animation-delay: .24s; }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
 }
 
-body {
-  background: var(--background-primary);
-  color: var(--text-primary);
-}
-
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--accent-cyan);
-  outline-offset: 2px;
-  border-radius: 0.25rem;
+/* ---- a11y focus ---- */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--cyan); outline-offset: 2px; border-radius: .35rem;
 }
