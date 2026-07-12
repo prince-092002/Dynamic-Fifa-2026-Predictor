@@ -8,7 +8,7 @@ This redesign uses **no stock photographs and no official FIFA/World Cup artwork
 - **Minimal external footprint** — atmosphere is CSS/SVG; flags ship with the app (no runtime CDN).
 - **Fully brand-safe** — football-tournament-*inspired*, never implying official affiliation.
 
-> **Governance note:** an official FIFA World Cup 2026 emblem PNG was present in an earlier working draft and was **removed** before publication (it violated the no-official-artwork rule). The site logo mark is the in-repo `Trophy` SVG icon.
+> **Governance note:** an official FIFA World Cup 2026 emblem PNG was present in an earlier working draft and was **removed** before publication (it violated the no-official-artwork rule). The site logo mark is an **original in-repo WC26 crest** (`website/components/Crest.tsx`) — a trophy/star/pitch-arc badge drawn as inline SVG in the project palette. No trademarked artwork.
 
 | Asset | Type | Location | Purpose | Source | License |
 |---|---|---|---|---|---|

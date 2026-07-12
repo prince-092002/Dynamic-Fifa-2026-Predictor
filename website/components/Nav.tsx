@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Trophy, Team, Lab, Globe, Github, Arrow } from "./icons";
+import Crest from "./Crest";
 
 const LINKS = [
   { href: "/", label: "Home", icon: <Trophy width={16} height={16} /> },
@@ -26,9 +27,7 @@ export default function Nav() {
     <header className="sticky top-0 z-50 border-b border-line/70 bg-bg/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-[78rem] items-center justify-between px-4 py-3" aria-label="Main">
         <Link href="/" className="group flex items-center gap-2.5">
-          <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-line-strong bg-gradient-to-br from-surface to-bg2 text-gold shadow-[0_8px_20px_-12px_rgba(245,196,81,0.8)]" aria-hidden>
-            <Trophy width={20} height={20} />
-          </span>
+          <Crest width={40} height={40} className="shrink-0 drop-shadow-[0_8px_20px_rgba(245,196,81,0.35)]" />
           <span className="font-display text-sm font-bold tracking-tight">
             FIFA 2026 <span className="text-fg3">Intelligence</span>
           </span>
