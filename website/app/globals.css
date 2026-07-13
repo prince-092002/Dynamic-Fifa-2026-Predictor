@@ -154,7 +154,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Scenario Lab: isolated browser-simulation controls and comparisons. */
-.scenario-notice { border:1px solid rgba(245,196,81,.3); border-left:3px solid var(--gold); border-radius:.8rem; background:rgba(245,196,81,.07); padding:1rem; }
+.scenario-notice { border:1px solid rgba(245,196,81,.3); border-left:3px solid var(--gold-c); border-radius:.8rem; background:rgba(245,196,81,.07); padding:1rem; }
 .scenario-match { overflow:hidden; }
 .scenario-choice { position:relative; display:block; cursor:pointer; }
 .scenario-choice input { position:absolute; width:1px; height:1px; opacity:0; }
@@ -162,7 +162,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .scenario-choice strong { color:var(--fg); font-family:var(--font-display); font-size:.78rem; line-height:1.25; }
 .scenario-choice small { margin-top:.28rem; color:var(--fg3); font-size:.68rem; }
 .scenario-choice:hover > span { border-color:var(--line-strong); transform:translateY(-1px); }
-.scenario-choice input:checked + span { border-color:var(--gold); background:rgba(245,196,81,.11); box-shadow:inset 0 0 0 1px rgba(245,196,81,.16); }
+.scenario-choice input:checked + span { border-color:var(--gold-c); background:rgba(245,196,81,.11); box-shadow:inset 0 0 0 1px rgba(245,196,81,.16); }
 .scenario-choice input:focus-visible + span { outline:2px solid var(--cyan); outline-offset:3px; }
 .scenario-choice input:disabled + span { cursor:not-allowed; opacity:.58; }
 .scenario-count { position:relative; cursor:pointer; }
@@ -178,7 +178,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .scenario-bar { height:.42rem; overflow:hidden; border-radius:999px; background:rgba(51,69,106,.28); }
 .scenario-bar > span { display:block; height:100%; border-radius:inherit; transition:width .35s ease; }
 .scenario-bar-official { background:var(--cyan); }
-.scenario-bar-user { background:var(--gold); }
+.scenario-bar-user { background:var(--gold-c); }
 @keyframes scenario-spin { to { transform:rotate(360deg); } }
 
 /* ============================================================
