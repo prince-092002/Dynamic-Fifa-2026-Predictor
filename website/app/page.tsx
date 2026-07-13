@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Bracket from "@/components/Bracket";
+import HeroBackdrop from "@/components/HeroBackdrop";
 import { Section, SectionHead, StatCard, ProbRing, Meter, Disclaimer } from "@/components/ui";
 import { Trophy, Pitch, Chart, Shield, Lock, Sim, Signal, Gauge, Database, Network, Team, Lab, Arrow, Check, Route } from "@/components/icons";
 import CountryFlag from "@/components/CountryFlag";
@@ -32,43 +33,41 @@ export default function Home() {
 
   return (
     <>
-      {/* ============ HERO ============ */}
-      <section className="relative overflow-hidden">
-        <div className="bg-floodlight bg-grid absolute inset-0 opacity-90" aria-hidden />
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-line-strong to-transparent" aria-hidden />
-        <div className="relative mx-auto max-w-[78rem] px-4 pb-16 pt-16 md:pt-24">
-          <div className="reveal flex flex-wrap items-center gap-3">
-            {live && <span className="badge-live"><span className="dot-live" /> LIVE FORECAST ACTIVE</span>}
-            <span className="chip"><Pitch width={14} height={14} /> {formatPhase(overview?.current_phase)}</span>
-            <span className="chip"><Lock width={14} height={14} /> {overview?.completed_matches ?? "—"} matches locked</span>
-            {overview?.simulations && <span className="chip"><Sim width={14} height={14} /> {overview.simulations.toLocaleString()} simulations</span>}
-          </div>
-
-          <h1 className="reveal reveal-2 display mt-6 max-w-4xl text-[2.6rem] leading-[0.98] md:text-[4.3rem]">
-            <span className="text-gradient">Dynamic FIFA 2026</span>
-            <br />
-            <span className="text-fg">Tournament Intelligence</span>
-          </h1>
-          <p className="reveal reveal-3 mt-5 max-w-2xl text-lg text-fg2">
-            A live football intelligence platform that fuses historical match data, Elo ratings, XGBoost matchup
-            probabilities, and Monte Carlo simulation to forecast every result on the road to the title.
-          </p>
-
-          <div className="reveal reveal-3 mt-8 flex flex-wrap gap-3">
-            {process.env.NEXT_PUBLIC_DASHBOARD_URL && (
-              <a href={process.env.NEXT_PUBLIC_DASHBOARD_URL} target="_blank" rel="noreferrer" className="btn btn-primary">
-                Explore Live Dashboard <Arrow width={16} height={16} />
-              </a>
-            )}
-            <a href="#engine" className="btn btn-ghost">See How It Works</a>
-            <Link href="/methodology" className="btn btn-ghost">Technical Methodology</Link>
-          </div>
-
-          <ul className="reveal reveal-4 mt-9 flex flex-wrap gap-2">
-            {BADGES.map((b) => <li key={b} className="chip">{b}</li>)}
-          </ul>
-          <Disclaimer className="mt-6" />
+      {/* ============ HERO (fixed poster) ============ */}
+      <HeroBackdrop />
+      <section className="relative flex min-h-[86vh] flex-col items-center justify-center px-4 pb-20 pt-16 text-center md:min-h-[90vh]">
+        <div className="reveal flex flex-wrap items-center justify-center gap-2.5">
+          {live && <span className="badge-live"><span className="dot-live" /> LIVE FORECAST ACTIVE</span>}
+          <span className="chip"><Pitch width={14} height={14} /> {formatPhase(overview?.current_phase)}</span>
+          <span className="chip"><Lock width={14} height={14} /> {overview?.completed_matches ?? "—"} matches locked</span>
+          {overview?.simulations && <span className="chip"><Sim width={14} height={14} /> {overview.simulations.toLocaleString()} simulations</span>}
         </div>
+
+        <p className="reveal reveal-2 kicker mt-7 text-cyan">Dynamic Tournament Intelligence</p>
+        <h1 className="reveal reveal-2 poster-title mt-2">FIFA 2026</h1>
+        <p className="reveal reveal-3 poster-sub mt-3 text-lg text-fg2 md:text-2xl">
+          Live finalist &amp; champion forecasting — <span className="text-fg">powered by machine learning</span>
+        </p>
+        <p className="reveal reveal-3 mx-auto mt-4 max-w-2xl text-[0.98rem] text-fg2 md:text-lg">
+          ~50,000 historical matches · Elo ratings · XGBoost matchup probabilities · Monte Carlo simulation —
+          fused into one forecast that updates the moment a real match ends.
+        </p>
+
+        <div className="reveal reveal-3 mt-8 flex flex-wrap items-center justify-center gap-3">
+          {process.env.NEXT_PUBLIC_DASHBOARD_URL && (
+            <a href={process.env.NEXT_PUBLIC_DASHBOARD_URL} target="_blank" rel="noreferrer" className="btn btn-primary">
+              Explore Live Dashboard <Arrow width={16} height={16} />
+            </a>
+          )}
+          <a href="#snapshot" className="btn btn-ghost">See the Forecast</a>
+          <Link href="/about" className="btn btn-ghost">How It Works</Link>
+        </div>
+
+        <ul className="reveal reveal-4 mt-9 flex max-w-2xl flex-wrap justify-center gap-2">
+          {BADGES.map((b) => <li key={b} className="chip">{b}</li>)}
+        </ul>
+        <Disclaimer className="mt-7" />
+        <a href="#snapshot" aria-label="Scroll to forecast" className="reveal reveal-4 mt-10 hidden md:block"><span className="scroll-cue mx-auto block" /></a>
       </section>
 
       <div className="mx-auto max-w-[78rem] px-4">
