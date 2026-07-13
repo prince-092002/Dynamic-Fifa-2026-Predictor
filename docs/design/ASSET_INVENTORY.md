@@ -18,10 +18,10 @@ This redesign uses **no stock photographs and no official FIFA/World Cup artwork
 | Dashboard stadium canvas | CSS gradients | `dashboard/theme.py` `inject_theme()` | Dashboard atmosphere | Authored in-repo | Project-owned |
 | Country flags (website) | SVG via `flag-icons` CSS | `website/components/CountryFlag.tsx` (ISO code → flag) | Team identity | [flag-icons](https://github.com/lipis/flag-icons) | MIT (public-domain flags) |
 | Country flags (dashboard) | SVG files | `dashboard/assets/flags/*.svg` | Team identity | Public-domain national flags | Public domain |
-| Hero player silhouettes | Inline SVG | `website/components/HeroBackdrop.tsx` | Fixed poster hero (homepage) | Authored in-repo | Project-owned |
+| Hero player figures | Inline SVG | `website/components/HeroBackdrop.tsx` | Fixed "semifinal poster" hero (homepage) | Authored in-repo | Project-owned |
 | Fonts: Space Grotesk, Inter | Web fonts | `next/font/google` (website), Google Fonts `@import` (dashboard) | Typography | Google Fonts | SIL Open Font License (freely usable; not redistributed as files) |
 
-> **Hero imagery note:** the homepage fixed hero (`HeroBackdrop.tsx`) uses **original, generic footballer silhouettes** — abstract SVG figures in a floodlit walkout line. They are **not photographs and not the likeness of any identifiable real person** (no specific players are depicted), and no FIFA/club artwork is used. This intentionally avoids the copyright and publicity/likeness issues that real player photos of Messi, Mbappé, Lamine Yamal, Kane, etc. would create.
+> **Hero imagery note:** the homepage fixed hero (`HeroBackdrop.tsx`) is a "semifinal poster" of four **original, generic footballer figures** rendered in the four semifinal nations' **kit colours** (Argentina, France, Spain, England), each with a shirt number, and named via a nameplate strip (Messi · Mbappé · Yamal · Kane) with public-domain flags. **No facial features are drawn, so no real person's likeness is reproduced**, and **no photograph or copyrighted image is used** — the players are identified factually the way a broadcast lineup graphic does (nation + number + name), which these four genuinely are in the semifinals. No FIFA/club artwork; the "independent — not affiliated with FIFA" disclaimer is retained on the hero.
 
 ## Optional licensed-photo slot (documented, not required)
 
