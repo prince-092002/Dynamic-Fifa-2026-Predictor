@@ -8,14 +8,6 @@ import { formatPct, formatPhase, getBracket, getChampionForecast, getFinalistPai
 
 const BADGES = ["Python", "XGBoost", "Monte Carlo", "Elo", "football-data.org", "Next.js", "Streamlit"];
 
-// Semifinal stars — named factually (these four are in the semifinals). No likeness/photo used.
-const SF_STARS = [
-  { name: "Messi", num: "10", code: "ar", country: "Argentina" },
-  { name: "Mbappé", num: "10", code: "fr", country: "France" },
-  { name: "Yamal", num: "19", code: "es", country: "Spain" },
-  { name: "Kane", num: "9", code: "gb-eng", country: "England" },
-];
-
 const PIPELINE = [
   { icon: <Database width={18} height={18} />, t: "Historical Data", d: "~50k international matches" },
   { icon: <Shield width={18} height={18} />, t: "Leakage-Safe Features", d: "shift-before-rolling, pre-match only" },
@@ -71,18 +63,7 @@ export default function Home() {
           <Link href="/about" className="btn btn-ghost">How It Works</Link>
         </div>
 
-        <div className="reveal reveal-4 sf-stars mt-9">
-          <span className="sf-label">Semifinal stars</span>
-          {SF_STARS.map((s) => (
-            <span key={s.name} className="np">
-              <CountryFlag code={s.code} country={s.country} size="sm" />
-              <span className="np-name">{s.name}</span>
-              <span className="np-num">#{s.num}</span>
-            </span>
-          ))}
-        </div>
-
-        <ul className="reveal reveal-4 mt-6 flex max-w-2xl flex-wrap justify-center gap-2">
+        <ul className="reveal reveal-4 mt-9 flex max-w-2xl flex-wrap justify-center gap-2">
           {BADGES.map((b) => <li key={b} className="chip">{b}</li>)}
         </ul>
         <Disclaimer className="mt-7" />
