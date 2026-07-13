@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Space_Grotesk, Inter, Anton } from "next/font/google";
 import "flag-icons/css/flag-icons.min.css";
 import "./globals.css";
 import Nav from "@/components/Nav";
@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 
 const display = Space_Grotesk({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-display" });
 const body = Inter({ subsets: ["latin"], variable: "--font-body" });
+// Tall, geometric, high-impact display face used only for the hero "FIFA 2026" title.
+const poster = Anton({ subsets: ["latin"], weight: "400", variable: "--font-poster" });
 
 export const metadata: Metadata = {
   title: "Dynamic FIFA 2026 — Tournament Intelligence Platform",
@@ -16,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" className={`${display.variable} ${body.variable} ${poster.variable}`}>
       <body className="min-h-screen antialiased">
         <div className="bg-stadium" aria-hidden />
         <Nav />

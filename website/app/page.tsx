@@ -43,12 +43,12 @@ export default function Home() {
           {overview?.simulations && <span className="chip"><Sim width={14} height={14} /> {overview.simulations.toLocaleString()} simulations</span>}
         </div>
 
-        <p className="reveal reveal-2 kicker mt-7 text-cyan">Dynamic Tournament Intelligence</p>
+        <p className="reveal reveal-2 kicker hero-copy mt-7 text-cyan">Dynamic Tournament Intelligence</p>
         <h1 className="reveal reveal-2 poster-title mt-2">FIFA 2026</h1>
-        <p className="reveal reveal-3 poster-sub mt-3 text-lg text-fg2 md:text-2xl">
+        <p className="reveal reveal-3 poster-sub hero-copy mt-3 text-lg text-fg2 md:text-2xl">
           Live finalist &amp; champion forecasting — <span className="text-fg">powered by machine learning</span>
         </p>
-        <p className="reveal reveal-3 mx-auto mt-4 max-w-2xl text-[0.98rem] text-fg2 md:text-lg">
+        <p className="reveal reveal-3 hero-copy mx-auto mt-4 max-w-2xl text-[0.98rem] text-fg2 md:text-lg">
           ~50,000 historical matches · Elo ratings · XGBoost matchup probabilities · Monte Carlo simulation —
           fused into one forecast that updates the moment a real match ends.
         </p>
@@ -66,7 +66,7 @@ export default function Home() {
         <ul className="reveal reveal-4 mt-9 flex max-w-2xl flex-wrap justify-center gap-2">
           {BADGES.map((b) => <li key={b} className="chip">{b}</li>)}
         </ul>
-        <Disclaimer className="mt-7" />
+        <Disclaimer className="hero-copy mt-7" />
         <a href="#snapshot" aria-label="Scroll to forecast" className="reveal reveal-4 mt-10 hidden md:block"><span className="scroll-cue mx-auto block" /></a>
       </section>
 
