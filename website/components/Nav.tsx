@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Trophy, Team, Lab, Globe, Github, Arrow } from "./icons";
+import { Trophy, Team, Lab, Globe, Github, Arrow, Sim } from "./icons";
 import Crest from "./Crest";
 
 const LINKS = [
   { href: "/", label: "Home", icon: <Trophy width={16} height={16} /> },
   { href: "/#bracket", label: "Bracket", icon: <Route16 /> },
   { href: "/teams", label: "Teams", icon: <Team width={16} height={16} /> },
+  { href: "/scenario-lab", label: "Scenario Lab", icon: <Sim width={16} height={16} /> },
   { href: "/methodology", label: "Analytics Lab", icon: <Lab width={16} height={16} /> },
   { href: "/about", label: "About", icon: <Globe width={16} height={16} /> },
 ];

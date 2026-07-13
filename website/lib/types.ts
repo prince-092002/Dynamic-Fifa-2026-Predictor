@@ -54,6 +54,12 @@ export interface ChampionEntry {
   champion_probability: number;
 }
 
+export interface FinalistEntry {
+  team: string;
+  slug: string;
+  reach_final_probability: number;
+}
+
 export interface FinalistPairEntry {
   finalist_team_1: string;
   finalist_team_2: string;

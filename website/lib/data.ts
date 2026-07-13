@@ -16,11 +16,12 @@ function readJson<T>(name: string): T | null {
 }
 
 export * from "./types";
-import type { Overview, Bracket, ChampionEntry, FinalistPairEntry, Team, TeamStats, MatchupPrediction, ModelInsights } from "./types";
+import type { Overview, Bracket, ChampionEntry, FinalistEntry, FinalistPairEntry, Team, TeamStats, MatchupPrediction, ModelInsights } from "./types";
 
 export const getOverview = () => readJson<Overview>("latest_overview.json");
 export const getBracket = () => readJson<Bracket>("knockout_bracket.json");
 export const getChampionForecast = () => readJson<{ entries: ChampionEntry[]; simulations: number | null }>("champion_forecast.json");
+export const getFinalistForecast = () => readJson<{ entries: FinalistEntry[]; simulations: number | null }>("finalist_forecast.json");
 export const getFinalistPairs = () => readJson<{ entries: FinalistPairEntry[] }>("finalist_pairs.json");
 export const getTeams = () => readJson<{ teams: Team[] }>("teams.json");
 export const getTeamStats = () => readJson<{ team_stats: Record<string, TeamStats> }>("team_stats.json");

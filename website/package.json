@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test:scenario": "tsc -p tsconfig.scenario-tests.json && node --test .next/scenario-tests/tests/simulation.test.js"
   },
   "dependencies": {
     "flag-icons": "^7.5.0",

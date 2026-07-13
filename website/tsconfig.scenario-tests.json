@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": ".next/scenario-tests",
+    "rootDir": "features/scenario-lab",
+    "types": ["node"]
+  },
+  "include": ["features/scenario-lab/**/*.ts"],
+  "exclude": ["node_modules", "features/scenario-lab/components/**/*.tsx"]
+}
