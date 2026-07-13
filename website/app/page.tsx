@@ -43,12 +43,12 @@ export default function Home() {
           {overview?.simulations && <span className="chip"><Sim width={14} height={14} /> {overview.simulations.toLocaleString()} simulations</span>}
         </div>
 
-        <p className="reveal reveal-2 kicker hero-copy mt-7 text-cyan">Dynamic Tournament Intelligence</p>
+        <p className="reveal reveal-2 kicker hero-copy mt-7">Dynamic Tournament Intelligence</p>
         <h1 className="reveal reveal-2 poster-title mt-2">FIFA 2026</h1>
-        <p className="reveal reveal-3 poster-sub hero-copy mt-3 text-lg text-fg2 md:text-2xl">
-          Live finalist &amp; champion forecasting — <span className="text-fg">powered by machine learning</span>
+        <p className="reveal reveal-3 poster-sub hero-copy mt-3 text-lg text-white md:text-2xl">
+          Live finalist &amp; champion forecasting — <span className="text-white">powered by machine learning</span>
         </p>
-        <p className="reveal reveal-3 hero-copy mx-auto mt-4 max-w-2xl text-[0.98rem] text-fg2 md:text-lg">
+        <p className="reveal reveal-3 hero-copy mx-auto mt-4 max-w-2xl text-[0.98rem] text-white md:text-lg">
           ~50,000 historical matches · Elo ratings · XGBoost matchup probabilities · Monte Carlo simulation —
           fused into one forecast that updates the moment a real match ends.
         </p>
