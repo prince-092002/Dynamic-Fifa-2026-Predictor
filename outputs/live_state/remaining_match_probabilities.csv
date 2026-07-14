@@ -1,105 +1,105 @@
 match_id,fixture_id,stage,team_a,team_b,prob_team_a_loss,prob_draw,prob_team_a_win,prob_team_a_advance,prob_team_b_advance,probability_source,is_completed,is_simulated,last_updated
-football_data_org_537327,537327,Group Stage,Mexico,South Africa,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537328,537328,Group Stage,South Korea,Czechia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537333,537333,Group Stage,Canada,Bosnia-Herzegovina,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537345,537345,Group Stage,United States,Paraguay,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537334,537334,Group Stage,Qatar,Switzerland,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537339,537339,Group Stage,Brazil,Morocco,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537340,537340,Group Stage,Haiti,Scotland,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537346,537346,Group Stage,Australia,Turkey,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537351,537351,Group Stage,Germany,Curaçao,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537357,537357,Group Stage,Netherlands,Japan,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537352,537352,Group Stage,Ivory Coast,Ecuador,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537358,537358,Group Stage,Sweden,Tunisia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537369,537369,Group Stage,Spain,Cape Verde Islands,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537363,537363,Group Stage,Belgium,Egypt,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537370,537370,Group Stage,Saudi Arabia,Uruguay,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537364,537364,Group Stage,Iran,New Zealand,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537391,537391,Group Stage,France,Senegal,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537392,537392,Group Stage,Iraq,Norway,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537397,537397,Group Stage,Argentina,Algeria,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537398,537398,Group Stage,Austria,Jordan,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537403,537403,Group Stage,Portugal,Congo DR,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537409,537409,Group Stage,England,Croatia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537410,537410,Group Stage,Ghana,Panama,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537404,537404,Group Stage,Uzbekistan,Colombia,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537329,537329,Group Stage,Czechia,South Africa,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537335,537335,Group Stage,Switzerland,Bosnia-Herzegovina,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537336,537336,Group Stage,Canada,Qatar,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537330,537330,Group Stage,Mexico,South Korea,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537348,537348,Group Stage,United States,Australia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537342,537342,Group Stage,Scotland,Morocco,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537341,537341,Group Stage,Brazil,Haiti,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537347,537347,Group Stage,Turkey,Paraguay,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537359,537359,Group Stage,Netherlands,Sweden,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537353,537353,Group Stage,Germany,Ivory Coast,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537354,537354,Group Stage,Ecuador,Curaçao,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537360,537360,Group Stage,Tunisia,Japan,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537371,537371,Group Stage,Spain,Saudi Arabia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537365,537365,Group Stage,Belgium,Iran,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537372,537372,Group Stage,Uruguay,Cape Verde Islands,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537366,537366,Group Stage,New Zealand,Egypt,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537399,537399,Group Stage,Argentina,Austria,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537393,537393,Group Stage,France,Iraq,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537394,537394,Group Stage,Norway,Senegal,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537400,537400,Group Stage,Jordan,Algeria,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537405,537405,Group Stage,Portugal,Uzbekistan,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537411,537411,Group Stage,England,Ghana,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537412,537412,Group Stage,Panama,Croatia,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537406,537406,Group Stage,Colombia,Congo DR,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537337,537337,Group Stage,Switzerland,Canada,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537338,537338,Group Stage,Bosnia-Herzegovina,Qatar,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537344,537344,Group Stage,Morocco,Haiti,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537343,537343,Group Stage,Scotland,Brazil,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537331,537331,Group Stage,Czechia,Mexico,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537332,537332,Group Stage,South Africa,South Korea,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537355,537355,Group Stage,Ecuador,Germany,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537356,537356,Group Stage,Curaçao,Ivory Coast,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537361,537361,Group Stage,Tunisia,Netherlands,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537362,537362,Group Stage,Japan,Sweden,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537349,537349,Group Stage,Turkey,United States,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537350,537350,Group Stage,Paraguay,Australia,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537395,537395,Group Stage,Norway,France,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537396,537396,Group Stage,Senegal,Iraq,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537373,537373,Group Stage,Uruguay,Spain,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537374,537374,Group Stage,Cape Verde Islands,Saudi Arabia,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537367,537367,Group Stage,New Zealand,Belgium,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537368,537368,Group Stage,Egypt,Iran,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537413,537413,Group Stage,Panama,England,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537414,537414,Group Stage,Croatia,Ghana,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537407,537407,Group Stage,Colombia,Portugal,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537408,537408,Group Stage,Congo DR,Uzbekistan,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537401,537401,Group Stage,Jordan,Argentina,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537402,537402,Group Stage,Algeria,Austria,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537417,537417,Round of 32,South Africa,Canada,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537423,537423,Round of 32,Brazil,Japan,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537415,537415,Round of 32,Germany,Paraguay,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537418,537418,Round of 32,Netherlands,Morocco,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537424,537424,Round of 32,Ivory Coast,Norway,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537416,537416,Round of 32,France,Sweden,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537425,537425,Round of 32,Mexico,Ecuador,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537426,537426,Round of 32,England,Congo DR,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537422,537422,Round of 32,Belgium,Senegal,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537421,537421,Round of 32,United States,Bosnia-Herzegovina,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537420,537420,Round of 32,Spain,Austria,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537419,537419,Round of 32,Portugal,Croatia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537429,537429,Round of 32,Switzerland,Algeria,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537428,537428,Round of 32,Australia,Egypt,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537427,537427,Round of 32,Argentina,Cape Verde Islands,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537430,537430,Round of 32,Colombia,Ghana,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537376,537376,Round of 16,Canada,Morocco,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537375,537375,Round of 16,Paraguay,France,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537377,537377,Round of 16,Brazil,Norway,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537378,537378,Round of 16,Mexico,England,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537379,537379,Round of 16,Portugal,Spain,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537380,537380,Round of 16,United States,Belgium,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537381,537381,Round of 16,Argentina,Egypt,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537382,537382,Round of 16,Switzerland,Colombia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537383,537383,Quarterfinal,France,Morocco,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-10T06:51:08+00:00
-football_data_org_537384,537384,Quarterfinal,Spain,Belgium,0.1627114439414656,0.1946353196298378,0.6426532364286964,0.7399708962436153,0.2600291037563845,live_model_exact,False,True,2026-07-10T06:51:08+00:00
-football_data_org_537385,537385,Quarterfinal,Norway,England,0.5105928030433415,0.2550395651149879,0.2343676318416705,0.36188741439916444,0.6381125856008355,live_model_exact,False,True,2026-07-10T06:51:08+00:00
-football_data_org_537386,537386,Quarterfinal,Argentina,Switzerland,0.145801156759262,0.1708018481731414,0.6833969950675964,0.7687979191541672,0.2312020808458327,live_model_exact,False,True,2026-07-10T06:51:08+00:00
-football_data_org_537387,537387,Semifinal,France,,,,,,,unresolved_tbd,False,False,2026-07-10T06:51:08+00:00
-football_data_org_537388,537388,Semifinal,,,,,,,,unresolved_tbd,False,False,2026-07-10T06:51:08+00:00
-football_data_org_537389,537389,Third Place Playoff,,,,,,,,unresolved_tbd,False,False,2026-07-10T06:51:08+00:00
-football_data_org_537390,537390,Final,,,,,,,,unresolved_tbd,False,False,2026-07-10T06:51:08+00:00
+football_data_org_537327,537327,Group Stage,Mexico,South Africa,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537328,537328,Group Stage,South Korea,Czechia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537333,537333,Group Stage,Canada,Bosnia-Herzegovina,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537345,537345,Group Stage,United States,Paraguay,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537334,537334,Group Stage,Qatar,Switzerland,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537339,537339,Group Stage,Brazil,Morocco,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537340,537340,Group Stage,Haiti,Scotland,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537346,537346,Group Stage,Australia,Turkey,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537351,537351,Group Stage,Germany,Curaçao,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537357,537357,Group Stage,Netherlands,Japan,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537352,537352,Group Stage,Ivory Coast,Ecuador,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537358,537358,Group Stage,Sweden,Tunisia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537369,537369,Group Stage,Spain,Cape Verde Islands,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537363,537363,Group Stage,Belgium,Egypt,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537370,537370,Group Stage,Saudi Arabia,Uruguay,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537364,537364,Group Stage,Iran,New Zealand,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537391,537391,Group Stage,France,Senegal,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537392,537392,Group Stage,Iraq,Norway,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537397,537397,Group Stage,Argentina,Algeria,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537398,537398,Group Stage,Austria,Jordan,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537403,537403,Group Stage,Portugal,Congo DR,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537409,537409,Group Stage,England,Croatia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537410,537410,Group Stage,Ghana,Panama,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537404,537404,Group Stage,Uzbekistan,Colombia,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537329,537329,Group Stage,Czechia,South Africa,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537335,537335,Group Stage,Switzerland,Bosnia-Herzegovina,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537336,537336,Group Stage,Canada,Qatar,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537330,537330,Group Stage,Mexico,South Korea,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537348,537348,Group Stage,United States,Australia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537342,537342,Group Stage,Scotland,Morocco,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537341,537341,Group Stage,Brazil,Haiti,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537347,537347,Group Stage,Turkey,Paraguay,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537359,537359,Group Stage,Netherlands,Sweden,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537353,537353,Group Stage,Germany,Ivory Coast,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537354,537354,Group Stage,Ecuador,Curaçao,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537360,537360,Group Stage,Tunisia,Japan,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537371,537371,Group Stage,Spain,Saudi Arabia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537365,537365,Group Stage,Belgium,Iran,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537372,537372,Group Stage,Uruguay,Cape Verde Islands,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537366,537366,Group Stage,New Zealand,Egypt,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537399,537399,Group Stage,Argentina,Austria,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537393,537393,Group Stage,France,Iraq,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537394,537394,Group Stage,Norway,Senegal,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537400,537400,Group Stage,Jordan,Algeria,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537405,537405,Group Stage,Portugal,Uzbekistan,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537411,537411,Group Stage,England,Ghana,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537412,537412,Group Stage,Panama,Croatia,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537406,537406,Group Stage,Colombia,Congo DR,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537337,537337,Group Stage,Switzerland,Canada,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537338,537338,Group Stage,Bosnia-Herzegovina,Qatar,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537344,537344,Group Stage,Morocco,Haiti,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537343,537343,Group Stage,Scotland,Brazil,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537331,537331,Group Stage,Czechia,Mexico,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537332,537332,Group Stage,South Africa,South Korea,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537355,537355,Group Stage,Ecuador,Germany,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537356,537356,Group Stage,Curaçao,Ivory Coast,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537361,537361,Group Stage,Tunisia,Netherlands,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537362,537362,Group Stage,Japan,Sweden,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537349,537349,Group Stage,Turkey,United States,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537350,537350,Group Stage,Paraguay,Australia,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537395,537395,Group Stage,Norway,France,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537396,537396,Group Stage,Senegal,Iraq,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537373,537373,Group Stage,Uruguay,Spain,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537374,537374,Group Stage,Cape Verde Islands,Saudi Arabia,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537367,537367,Group Stage,New Zealand,Belgium,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537368,537368,Group Stage,Egypt,Iran,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537413,537413,Group Stage,Panama,England,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537414,537414,Group Stage,Croatia,Ghana,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537407,537407,Group Stage,Colombia,Portugal,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537408,537408,Group Stage,Congo DR,Uzbekistan,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537401,537401,Group Stage,Jordan,Argentina,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537402,537402,Group Stage,Algeria,Austria,0.0,1.0,0.0,0.5,0.5,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537417,537417,Round of 32,South Africa,Canada,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537423,537423,Round of 32,Brazil,Japan,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537415,537415,Round of 32,Germany,Paraguay,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537418,537418,Round of 32,Netherlands,Morocco,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537424,537424,Round of 32,Ivory Coast,Norway,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537416,537416,Round of 32,France,Sweden,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537425,537425,Round of 32,Mexico,Ecuador,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537426,537426,Round of 32,England,Congo DR,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537422,537422,Round of 32,Belgium,Senegal,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537421,537421,Round of 32,United States,Bosnia-Herzegovina,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537420,537420,Round of 32,Spain,Austria,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537419,537419,Round of 32,Portugal,Croatia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537429,537429,Round of 32,Switzerland,Algeria,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537428,537428,Round of 32,Australia,Egypt,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537427,537427,Round of 32,Argentina,Cape Verde Islands,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537430,537430,Round of 32,Colombia,Ghana,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537376,537376,Round of 16,Canada,Morocco,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537375,537375,Round of 16,Paraguay,France,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537377,537377,Round of 16,Brazil,Norway,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537378,537378,Round of 16,Mexico,England,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537379,537379,Round of 16,Portugal,Spain,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537380,537380,Round of 16,United States,Belgium,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537381,537381,Round of 16,Argentina,Egypt,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537382,537382,Round of 16,Switzerland,Colombia,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537383,537383,Quarterfinal,France,Morocco,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537384,537384,Quarterfinal,Spain,Belgium,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537385,537385,Quarterfinal,Norway,England,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537386,537386,Quarterfinal,Argentina,Switzerland,0.0,0.0,1.0,1.0,0.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537387,537387,Semifinal,France,Spain,1.0,0.0,0.0,0.0,1.0,completed_result,True,False,2026-07-14T21:06:16+00:00
+football_data_org_537388,537388,Semifinal,England,Argentina,0.5002489686012268,0.2128685116767883,0.2868825197219848,0.393316775560379,0.606683224439621,live_model_exact,False,True,2026-07-14T21:06:16+00:00
+football_data_org_537389,537389,Third Place Playoff,,,,,,,,unresolved_tbd,False,False,2026-07-14T21:06:16+00:00
+football_data_org_537390,537390,Final,,,,,,,,unresolved_tbd,False,False,2026-07-14T21:06:16+00:00

@@ -1,15 +1,13 @@
 {
   "previous_phase": "quarterfinal",
-  "current_phase": "quarterfinal",
-  "phase_changed": false,
-  "detected_at": "2026-07-11T00:02:43+00:00",
+  "current_phase": "semifinal",
+  "phase_changed": true,
+  "detected_at": "2026-07-14T21:07:08+00:00",
   "newly_resolved_matchups": 1,
-  "newly_completed_matches": 1,
-  "completed_match_count": 98,
+  "newly_completed_matches": 3,
+  "completed_match_count": 101,
   "resolved_matchup_ids": [
-    "football_data_org_537385",
-    "football_data_org_537386",
-    "football_data_org_537387"
+    "football_data_org_537388"
   ],
   "first_recorded_run": false
 }

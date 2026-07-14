@@ -32,6 +32,15 @@ Scope: current state snapshot for next session. No secrets are included.
 - Phase 6B: GitHub automation and matchday deployment workflow
 - Deployment prep: repository made public-ready (raw snapshots untracked); GitHub/Vercel/Streamlit deployment pending user's authenticated accounts
 - Phase 5G (model diagnostics): leakage-safe model diagnostics, feature/hyperparameter experiments, challenger evaluation
+- Phase 6C (visual redesign): premium "Floodlit Night Stadium" redesign of website + dashboard — LOCAL commit only, NOT pushed (awaiting review)
+
+## Phase 6C visual redesign (2026-07-11) — NOT PUSHED
+
+- Premium football-tournament redesign of the **website** (all 5 routes + Nav/Footer/Bracket/TeamExplorer + new design system) and the **Streamlit dashboard** (shared `dashboard/theme.py` applied to app.py + 8 pages). Shared "Floodlit Night Stadium" identity: midnight canvas, CSS/SVG floodlit atmosphere (no stock photos → zero licensing risk), pitch-green/gold/cyan/crimson semantic palette, Space Grotesk + Inter, multi-variant cards, inline-SVG icons (no emoji), probability rings/meters, chips, dark Plotly template.
+- Analytics/model/simulation/live pipeline/deployment **unchanged** (`src/`, `main.py`, `outputs/models/` untouched, git-verified). Presentation-only.
+- Verified: website `npm run lint` clean + `npm run build` 55/55 pages; dashboard Streamlit AppTest 9/9 pages render (0 failures) + healthy startup; `pytest` 24 passed; validate-public-exports/dashboard/live-forecast pass. No new Python deps.
+- Docs: `docs/design/UI_AUDIT.md`, `DESIGN_SYSTEM.md`, `ASSET_INVENTORY.md`; `handoff/phase6c_visual_redesign_handoff.md` (before/after).
+- **Local restore-point commit only — nothing pushed, nothing deployed.** User to review screenshots (`npm run dev`, `streamlit run dashboard/app.py`) then approve push.
 
 ## Phase 5G model diagnostics (2026-07-11)
 

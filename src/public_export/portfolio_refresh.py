@@ -47,8 +47,9 @@ def _snapshot_state() -> dict:
     }
 
 
-def run_portfolio_refresh(n_simulations: int = 10000, no_retrain: bool = True, allow_fallback_forecast: bool = False) -> dict:
+def run_portfolio_refresh(n_simulations: int = 10000, no_retrain: bool = True, allow_fallback_forecast: bool = False, dry_run: bool = False) -> dict:
     """One-command matchday refresh with fail-closed publication gating."""
+    from src.prediction_history.snapshot import archive_current_forecast
     from src.public_export.deployment_readiness import validate_deployment_readiness
     from src.public_export.export_validation import validate_dashboard, validate_public_exports
     from src.update.update_runner import run_update
@@ -59,6 +60,17 @@ def run_portfolio_refresh(n_simulations: int = 10000, no_retrain: bool = True, a
     commit_before = _git_commit()
     state_before = _snapshot_state()
     warnings: list[str] = []
+
+    # Preserve the currently-published forecast as a history snapshot BEFORE the update can
+    # overwrite it (idempotent: a no-op if that state is already archived). Archival never
+    # blocks the refresh.
+    pre_archive = {"archived": False, "reason": "not_run"}
+    try:
+        pre_archive = archive_current_forecast(
+            provenance={"refresh_id": refresh_id, "git_commit": commit_before, "stage": "pre_refresh"},
+            dry_run=dry_run)
+    except Exception as exc:  # pragma: no cover - defensive
+        warnings.append(f"pre-refresh snapshot archival failed: {str(exc)[:120]}")
 
     update_result = run_update(mode="matchday", force=False, run_live_forecast=True, n_simulations=n_simulations, no_retrain=no_retrain, allow_fallback_forecast=allow_fallback_forecast)
     live = update_result.get("live_forecast") or {}
@@ -78,6 +90,18 @@ def run_portfolio_refresh(n_simulations: int = 10000, no_retrain: bool = True, a
     live_ok = live.get("status") == "success" and live.get("forecast_ran") is True
     publication_ok = publication.get("published") is True
     eligible = bool(live_ok and publication_ok and export_validation["status"] == "pass" and dashboard_validation["status"] == "pass")
+
+    # Archive the newly-published forecast so the latest production forecast is captured in
+    # the audit trail (idempotent; only when the refresh actually published a valid forecast).
+    post_archive = {"archived": False, "reason": "not_eligible"}
+    if eligible:
+        try:
+            post_archive = archive_current_forecast(
+                provenance={"refresh_id": refresh_id, "git_commit": _git_commit(), "stage": "post_refresh"},
+                dry_run=dry_run)
+        except Exception as exc:  # pragma: no cover - defensive
+            warnings.append(f"post-refresh snapshot archival failed: {str(exc)[:120]}")
+
     manifest = {
         "refresh_id": refresh_id,
         "started_at": started_at,
@@ -103,6 +127,7 @@ def run_portfolio_refresh(n_simulations: int = 10000, no_retrain: bool = True, a
         "changed_public_files": publication.get("changed_files", []),
         "warnings": warnings,
         "eligible_for_publication": eligible,
+        "prediction_history": {"pre_refresh": pre_archive, "post_refresh": post_archive, "dry_run": dry_run},
     }
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     return manifest

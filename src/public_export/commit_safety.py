@@ -35,6 +35,8 @@ COMMIT_ALLOWLIST = [
     "outputs/live_state/football_data_org_*_normalized.csv",
     "outputs/live_state/merged_bracket_state.csv",
     "outputs/reports/portfolio/latest_portfolio_refresh_manifest.json",
+    "data/prediction_history/manifest.json",
+    "data/prediction_history/snapshots/*.json",
 ]
 
 # Generated locations where changes are expected during a refresh but are

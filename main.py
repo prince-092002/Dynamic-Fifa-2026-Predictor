@@ -159,6 +159,10 @@ def build_parser() -> argparse.ArgumentParser:
     refresh_parser.add_argument("--n-simulations", type=int, default=10000, help="Monte Carlo simulation count")
     refresh_parser.add_argument("--no-retrain", action="store_true", default=True, help="Use the existing selected model (default and recommended)")
     refresh_parser.add_argument("--allow-fallback-forecast", action="store_true", help="Explicitly allow fallback-only forecast output (testing only)")
+    refresh_parser.add_argument("--dry-run", action="store_true", help="Run everything but do not archive a production prediction-history snapshot")
+    subparsers.add_parser("archive-prediction-snapshot", help="Archive the currently-published forecast as a prediction-history snapshot")
+    subparsers.add_parser("backfill-prediction-history", help="Recover genuine historical forecasts from committed public_data outputs in Git")
+    subparsers.add_parser("prediction-history-summary", help="Summarize archived prediction-history snapshots")
     commit_check_parser = subparsers.add_parser("check-commit-safety", help="Classify changed files against the automation commit allowlist")
     commit_check_parser.add_argument("--json", action="store_true", help="Print machine-readable JSON")
     subparsers.add_parser("validate-live-forecast", help="Validate live finalist forecast outputs")
@@ -495,8 +499,10 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == "refresh-portfolio":
             from src.public_export.portfolio_refresh import MANIFEST_PATH, run_portfolio_refresh
 
-            manifest = run_portfolio_refresh(n_simulations=args.n_simulations, no_retrain=args.no_retrain, allow_fallback_forecast=args.allow_fallback_forecast)
+            manifest = run_portfolio_refresh(n_simulations=args.n_simulations, no_retrain=args.no_retrain, allow_fallback_forecast=args.allow_fallback_forecast, dry_run=getattr(args, "dry_run", False))
             print("Portfolio refresh completed.")
+            ph = manifest.get("prediction_history", {})
+            print(f"  prediction_history: pre={ph.get('pre_refresh', {}).get('archived')} post={ph.get('post_refresh', {}).get('archived')} (dry_run={ph.get('dry_run')})")
             for key in ["refresh_id", "phase_before", "phase_after", "provider", "provider_mode", "completed_matches_after", "newly_completed_matches", "newly_predicted_matchups", "live_forecast_status", "public_export_publication", "public_export_validation", "dashboard_validation", "deployment_readiness", "eligible_for_publication"]:
                 print(f"  {key}: {manifest.get(key)}")
             if manifest.get("warnings"):
@@ -506,6 +512,35 @@ def main(argv: list[str] | None = None) -> int:
             if not manifest.get("eligible_for_publication"):
                 print("NOT eligible for publication — do not commit/push public updates from this run.")
                 return 1
+        elif args.command == "archive-prediction-snapshot":
+            from src.prediction_history.snapshot import archive_current_forecast
+
+            result = archive_current_forecast()
+            print(f"Prediction snapshot: {'archived' if result.get('archived') else 'skipped'} "
+                  f"({result.get('snapshot_id') or result.get('reason')})")
+        elif args.command == "backfill-prediction-history":
+            from src.prediction_history.backfill import backfill_from_git
+
+            result = backfill_from_git()
+            print("Prediction-history backfill completed.")
+            print(f"  commits scanned: {result['commits_scanned']} | archived: {result['archived']} | "
+                  f"skipped (duplicate): {result['skipped_duplicate']} | no forecast: {result['no_forecast_in_commit']}")
+            for a in result["archived_detail"]:
+                print(f"  + {a['commit']} {a['phase']} completed={a['completed']} -> {a['snapshot_id']}")
+        elif args.command == "prediction-history-summary":
+            from src.prediction_history.snapshot import enrich_snapshot, load_all_snapshots
+
+            snaps = load_all_snapshots()
+            print(f"Archived prediction-history snapshots: {len(snaps)}")
+            resolved = correct = 0
+            for s in snaps:
+                for m in enrich_snapshot(s).get("matchday_predictions", []):
+                    if m["prediction_outcome"] in ("correct", "incorrect"):
+                        resolved += 1
+                        correct += m["prediction_outcome"] == "correct"
+                print(f"  {s.get('display_date')} · {s.get('tournament_phase'):12s} · completed={s.get('completed_matches')} · {s.get('record_class')}")
+            if resolved:
+                print(f"Resolved historical match predictions: {correct}/{resolved} correct ({correct/resolved*100:.0f}%)")
         elif args.command == "check-commit-safety":
             import json as json_module
 

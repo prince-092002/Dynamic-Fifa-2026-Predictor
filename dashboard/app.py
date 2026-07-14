@@ -23,6 +23,7 @@ PAGES = [
     st.Page("pages/3_Matchup_Predictions.py", title="Matchups", icon=":material/bolt:", url_path="matchups"),
     st.Page("pages/4_Team_Explorer.py", title="Teams", icon=":material/groups:", url_path="teams"),
     st.Page("pages/5_Forecast_Evolution.py", title="Evolution", icon=":material/monitoring:", url_path="evolution"),
+    st.Page("pages/9_Prediction_History.py", title="Prediction History", icon=":material/history:", url_path="history"),
     st.Page("pages/6_Model_Methodology.py", title="Analytics Lab", icon=":material/science:", url_path="analytics"),
     st.Page("pages/7_System_Health.py", title="System Health", icon=":material/vital_signs:", url_path="health"),
     st.Page("pages/8_Technical_Audit.py", title="Audit", icon=":material/fact_check:", url_path="audit"),

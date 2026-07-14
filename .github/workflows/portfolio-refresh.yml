@@ -45,7 +45,7 @@ jobs:
         env:
           FOOTBALL_DATA_ORG_KEY: ${{ secrets.FOOTBALL_DATA_ORG_KEY }}
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: python main.py refresh-portfolio --n-simulations "${{ inputs.n_simulations }}" --no-retrain
+        run: python main.py refresh-portfolio --n-simulations "${{ inputs.n_simulations }}" --no-retrain ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}
 
       - name: Check publication eligibility
         id: eligibility

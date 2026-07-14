@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": ".next/prediction-history-tests",
+    "rootDir": "features/prediction-history",
+    "types": ["node"]
+  },
+  "include": ["features/prediction-history/**/*.ts"],
+  "exclude": ["node_modules", "features/prediction-history/components/**/*.tsx"]
+}

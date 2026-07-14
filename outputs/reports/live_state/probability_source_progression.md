@@ -1,6 +1,6 @@
 # Probability Source Progression
 
-- Generated: 2026-07-10T06:52:42+00:00
+- Generated: 2026-07-14T21:07:08+00:00
 
 Model coverage per live forecast run. The fallback share is expected to shrink
 as real knockout rounds resolve and more matchups receive live model predictions.
@@ -14,13 +14,15 @@ as real knockout rounds resolve and more matchups receive live model predictions
 | 2026-07-10T00:55:19+00:00 | quarterfinal | 1000 | 3 | 3 | 43.64% | 42.07% |
 | 2026-07-10T06:08:19+00:00 | quarterfinal | 10000 | 3 | 3 | 43.56% | 42.16% |
 | 2026-07-10T06:52:42+00:00 | quarterfinal | 10000 | 3 | 3 | 43.56% | 42.16% |
+| 2026-07-11T00:02:43+00:00 | quarterfinal | 10000 | 3 | 3 | 43.48% | 27.95% |
+| 2026-07-14T21:07:08+00:00 | semifinal | 10000 | 1 | 1 | 33.33% | 33.33% |
 
 ## Previous vs Current Run
 
-- Phase: quarterfinal -> quarterfinal
-- Model-driven share: 43.56% -> 43.56%
-- Fallback share: 42.16% -> 42.16%
-- Live model predictions available: 3 -> 3
+- Phase: quarterfinal -> semifinal
+- Model-driven share: 43.48% -> 33.33%
+- Fallback share: 27.95% -> 33.33%
+- Live model predictions available: 3 -> 1
 
 ## Reference Baseline
 

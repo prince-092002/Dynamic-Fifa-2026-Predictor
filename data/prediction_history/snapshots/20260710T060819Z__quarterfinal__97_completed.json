@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "20260710T060819Z__quarterfinal__97_completed",
+  "generated_at": "2026-07-10T06:08:19+00:00",
+  "display_date": "2026-07-10",
+  "timezone": "UTC",
+  "tournament_phase": "quarterfinal",
+  "completed_matches": 97,
+  "remaining_matches": 3,
+  "teams_alive": 7,
+  "teams_eliminated": 41,
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "source_quality_score": 100,
+  "simulation_count": 10000,
+  "seed": 42,
+  "selected_model": "xgboost",
+  "run_id": "2026-07-10T060556Z-428e59f3",
+  "record_class": "recovered_from_committed_output",
+  "provenance": {
+    "git_commit": "3e240d488",
+    "commit_date": "2026-07-10T01:23:06-05:00",
+    "commit_subject": "Phase 6: public website, Streamlit dashboard, public data exports, deployment readiness"
+  },
+  "main_forecast": {
+    "most_likely_champion": {
+      "team": "France",
+      "probability": 0.2949
+    },
+    "second_most_likely_champion": {
+      "team": "Argentina",
+      "probability": 0.2517
+    },
+    "champion_probabilities": [
+      {
+        "team": "France",
+        "probability": 0.2949
+      },
+      {
+        "team": "Argentina",
+        "probability": 0.2517
+      },
+      {
+        "team": "Spain",
+        "probability": 0.2086
+      },
+      {
+        "team": "England",
+        "probability": 0.151
+      },
+      {
+        "team": "Belgium",
+        "probability": 0.0417
+      },
+      {
+        "team": "Switzerland",
+        "probability": 0.0298
+      },
+      {
+        "team": "Norway",
+        "probability": 0.0223
+      }
+    ],
+    "most_likely_final": {
+      "team_1": "Argentina",
+      "team_2": "France",
+      "pair_key": "Argentina vs France",
+      "probability": 0.2607
+    },
+    "finalist_probabilities": [
+      {
+        "team": "France",
+        "probability": 0.5293
+      },
+      {
+        "team": "Argentina",
+        "probability": 0.4892
+      },
+      {
+        "team": "Spain",
+        "probability": 0.3747
+      },
+      {
+        "team": "England",
+        "probability": 0.3189
+      },
+      {
+        "team": "Switzerland",
+        "probability": 0.0982
+      },
+      {
+        "team": "Belgium",
+        "probability": 0.096
+      },
+      {
+        "team": "Norway",
+        "probability": 0.0937
+      }
+    ],
+    "predicted_final_winner": null
+  },
+  "matchday_predictions": [
+    {
+      "match_id": 537384,
+      "stage": "Quarterfinal",
+      "scheduled_at": "2026-07-10T19:00:00Z",
+      "team_a": "Spain",
+      "team_b": "Belgium",
+      "team_a_win_probability": 0.739971,
+      "team_b_win_probability": 0.260029,
+      "draw_probability": null,
+      "regulation": {
+        "team_a_win": 0.642653,
+        "draw": 0.194635,
+        "team_a_loss": 0.162711
+      },
+      "predicted_winner": "Spain",
+      "prediction_method": "XGBoost",
+      "status_at_snapshot": "scheduled",
+      "confidence": null,
+      "actual_winner": null,
+      "actual_score": null,
+      "prediction_outcome": "pending"
+    },
+    {
+      "match_id": 537385,
+      "stage": "Quarterfinal",
+      "scheduled_at": "2026-07-11T21:00:00Z",
+      "team_a": "Norway",
+      "team_b": "England",
+      "team_a_win_probability": 0.361887,
+      "team_b_win_probability": 0.638113,
+      "draw_probability": null,
+      "regulation": {
+        "team_a_win": 0.234368,
+        "draw": 0.25504,
+        "team_a_loss": 0.510593
+      },
+      "predicted_winner": "England",
+      "prediction_method": "XGBoost",
+      "status_at_snapshot": "scheduled",
+      "confidence": null,
+      "actual_winner": null,
+      "actual_score": null,
+      "prediction_outcome": "pending"
+    },
+    {
+      "match_id": 537386,
+      "stage": "Quarterfinal",
+      "scheduled_at": "2026-07-12T01:00:00Z",
+      "team_a": "Argentina",
+      "team_b": "Switzerland",
+      "team_a_win_probability": 0.768798,
+      "team_b_win_probability": 0.231202,
+      "draw_probability": null,
+      "regulation": {
+        "team_a_win": 0.683397,
+        "draw": 0.170802,
+        "team_a_loss": 0.145801
+      },
+      "predicted_winner": "Argentina",
+      "prediction_method": "XGBoost",
+      "status_at_snapshot": "scheduled",
+      "confidence": null,
+      "actual_winner": null,
+      "actual_score": null,
+      "prediction_outcome": "pending"
+    }
+  ],
+  "state_hash": "25456edbce22f06f"
+}

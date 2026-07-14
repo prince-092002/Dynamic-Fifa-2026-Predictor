@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "20260712T063546Z__semifinal__100_completed",
+  "generated_at": "2026-07-12T06:35:46+00:00",
+  "display_date": "2026-07-12",
+  "timezone": "UTC",
+  "tournament_phase": "semifinal",
+  "completed_matches": 100,
+  "remaining_matches": 2,
+  "teams_alive": 4,
+  "teams_eliminated": 44,
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "source_quality_score": 100,
+  "simulation_count": 10000,
+  "seed": 42,
+  "selected_model": "xgboost",
+  "run_id": "2026-07-12T063403Z-bf041d71",
+  "record_class": "recovered_from_committed_output",
+  "provenance": {
+    "git_commit": "56fd78661",
+    "commit_date": "2026-07-12T01:37:28-05:00",
+    "commit_subject": "Fix: recover finished matches with malformed provider status (drops stale Mexico-England matchup)"
+  },
+  "main_forecast": {
+    "most_likely_champion": {
+      "team": "Argentina",
+      "probability": 0.3074
+    },
+    "second_most_likely_champion": {
+      "team": "Spain",
+      "probability": 0.2867
+    },
+    "champion_probabilities": [
+      {
+        "team": "Argentina",
+        "probability": 0.3074
+      },
+      {
+        "team": "Spain",
+        "probability": 0.2867
+      },
+      {
+        "team": "France",
+        "probability": 0.2285
+      },
+      {
+        "team": "England",
+        "probability": 0.1774
+      }
+    ],
+    "most_likely_final": {
+      "team_1": "Argentina",
+      "team_2": "Spain",
+      "pair_key": "Argentina vs Spain",
+      "probability": 0.3379
+    },
+    "finalist_probabilities": [
+      {
+        "team": "Argentina",
+        "probability": 0.6097
+      },
+      {
+        "team": "Spain",
+        "probability": 0.5565
+      },
+      {
+        "team": "France",
+        "probability": 0.4435
+      },
+      {
+        "team": "England",
+        "probability": 0.3903
+      }
+    ],
+    "predicted_final_winner": null
+  },
+  "matchday_predictions": [
+    {
+      "match_id": 537387,
+      "stage": "Semifinal",
+      "scheduled_at": "2026-07-14T19:00:00Z",
+      "team_a": "France",
+      "team_b": "Spain",
+      "team_a_win_probability": 0.446075,
+      "team_b_win_probability": 0.553925,
+      "draw_probability": null,
+      "regulation": {
+        "team_a_win": 0.333226,
+        "draw": 0.225697,
+        "team_a_loss": 0.441077
+      },
+      "predicted_winner": "Spain",
+      "prediction_method": "XGBoost",
+      "status_at_snapshot": "scheduled",
+      "confidence": null,
+      "actual_winner": null,
+      "actual_score": null,
+      "prediction_outcome": "pending"
+    },
+    {
+      "match_id": 537388,
+      "stage": "Semifinal",
+      "scheduled_at": "2026-07-15T19:00:00Z",
+      "team_a": "England",
+      "team_b": "Argentina",
+      "team_a_win_probability": 0.393317,
+      "team_b_win_probability": 0.606683,
+      "draw_probability": null,
+      "regulation": {
+        "team_a_win": 0.286883,
+        "draw": 0.212869,
+        "team_a_loss": 0.500249
+      },
+      "predicted_winner": "Argentina",
+      "prediction_method": "XGBoost",
+      "status_at_snapshot": "scheduled",
+      "confidence": null,
+      "actual_winner": null,
+      "actual_score": null,
+      "prediction_outcome": "pending"
+    }
+  ],
+  "state_hash": "4e8d06431f6817a3"
+}

@@ -1,25 +1,24 @@
 {
   "simulations": 10000,
   "top_finalist_pair": "Argentina vs Spain",
-  "top_finalist_pair_probability": 0.2674,
+  "top_finalist_pair_probability": 0.6081,
   "top_champion": "Spain",
-  "top_champion_probability": 0.3162,
+  "top_champion_probability": 0.5152,
   "fallback_mapping_used": true,
   "status": "success",
   "forecast_ran": true,
   "forecast_mode": "true_live_forecast",
   "public_label": "True live forecast from current tournament state",
-  "current_phase": "quarterfinal",
+  "current_phase": "semifinal",
   "finalist_prediction_active": true,
-  "fallback_bracket_usage": 0.06451612903225806,
+  "fallback_bracket_usage": 0.03225806451612903,
   "source_quality_score": 100,
   "live_matchup_prediction_status": "success",
-  "live_matchups_predicted": 3,
-  "live_model_probability_uses": 30000,
+  "live_matchups_predicted": 1,
+  "live_model_probability_uses": 10000,
   "probability_source_counts": {
-    "completed_result": 20000,
-    "live_model_exact": 30000,
-    "elo_fallback": 19562,
-    "model_reversed": 438
+    "completed_result": 10000,
+    "live_model_exact": 10000,
+    "elo_fallback": 10000
   }
 }

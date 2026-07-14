@@ -1,14 +1,14 @@
 {
-  "current_phase": "quarterfinal",
-  "completed_matches": 97,
-  "scheduled_matches": 7,
+  "current_phase": "semifinal",
+  "completed_matches": 101,
+  "scheduled_matches": 3,
   "live_matches": 0,
   "teams": [
     {
       "team": "Algeria",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 1,
       "goal_difference": 0,
@@ -16,13 +16,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Argentina",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 2,
@@ -30,13 +30,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Australia",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -2,
@@ -44,13 +44,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Austria",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -2,
@@ -58,13 +58,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Belgium",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 2,
       "goal_difference": 0,
@@ -72,13 +72,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Bosnia-Herzegovina",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -3,
@@ -86,13 +86,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Brazil",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 3,
@@ -100,13 +100,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Canada",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 0,
       "goal_difference": -1,
@@ -114,13 +114,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Cape Verde Islands",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 1,
       "goal_difference": 0,
@@ -128,13 +128,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Colombia",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 2,
@@ -142,13 +142,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Congo DR",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -1,
@@ -156,13 +156,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Croatia",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 3,
       "goal_difference": -1,
@@ -170,13 +170,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Cura\u00e7ao",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 0,
       "goal_difference": -2,
@@ -184,13 +184,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Czechia",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 0,
       "goal_difference": -1,
@@ -198,13 +198,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Ecuador",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 0,
       "goal_difference": -1,
@@ -212,13 +212,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Egypt",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 1,
       "goal_difference": 0,
@@ -226,13 +226,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "England",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 2,
@@ -240,13 +240,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "France",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 3,
@@ -254,13 +254,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Germany",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 0,
       "goal_difference": -1,
@@ -268,13 +268,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Ghana",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -1,
@@ -282,13 +282,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Haiti",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 3,
       "points": 0,
       "goal_difference": -6,
@@ -296,13 +296,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Iran",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 1,
       "goal_difference": 0,
@@ -310,13 +310,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Iraq",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 3,
       "points": 0,
       "goal_difference": -11,
@@ -324,13 +324,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Ivory Coast",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 1,
@@ -338,13 +338,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Japan",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 1,
       "goal_difference": 0,
@@ -352,13 +352,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Jordan",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 3,
       "points": 0,
       "goal_difference": -5,
@@ -366,13 +366,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Mexico",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 3,
@@ -380,13 +380,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Morocco",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 2,
@@ -394,13 +394,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Netherlands",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 2,
@@ -408,13 +408,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "New Zealand",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 0,
       "goal_difference": -6,
@@ -422,13 +422,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Norway",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 3,
       "goal_difference": -2,
@@ -436,13 +436,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Panama",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 3,
       "points": 0,
       "goal_difference": -4,
@@ -450,13 +450,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Paraguay",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 1,
       "goal_difference": 0,
@@ -464,13 +464,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Portugal",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 1,
       "goal_difference": 0,
@@ -478,13 +478,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Qatar",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 0,
       "goal_difference": -8,
@@ -492,13 +492,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Saudi Arabia",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -4,
@@ -506,13 +506,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Scotland",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 0,
       "goal_difference": -4,
@@ -520,13 +520,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Senegal",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 0,
       "goal_difference": -3,
@@ -534,13 +534,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "South Africa",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -2,
@@ -548,13 +548,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "South Korea",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 0,
       "goal_difference": -2,
@@ -562,13 +562,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Spain",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 3,
       "goal_difference": 1,
@@ -576,13 +576,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Sweden",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -4,
@@ -590,13 +590,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Switzerland",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 1,
       "goal_difference": 0,
@@ -604,13 +604,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Tunisia",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 3,
       "points": 0,
       "goal_difference": -10,
@@ -618,13 +618,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Turkey",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 0,
       "goal_difference": -2,
@@ -632,13 +632,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "United States",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 1,
       "points": 0,
       "goal_difference": -1,
@@ -646,13 +646,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Uruguay",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 2,
       "points": 1,
       "goal_difference": -1,
@@ -660,13 +660,13 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     },
     {
       "team": "Uzbekistan",
       "group": "STAGE",
       "current_status": "still_alive",
-      "current_stage": "quarterfinal",
+      "current_stage": "semifinal",
       "matches_played": 3,
       "points": 0,
       "goal_difference": -9,
@@ -674,7 +674,7 @@
       "eliminated": false,
       "still_alive": true,
       "source": "live_state_builder",
-      "last_updated": "2026-07-10T06:51:00+00:00"
+      "last_updated": "2026-07-14T21:06:02+00:00"
     }
   ]
 }

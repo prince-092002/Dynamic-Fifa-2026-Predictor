@@ -4,7 +4,7 @@
 
 | Source | Share |
 |---|---:|
-| football_data_org_live | 90.32% |
-| fallback_template | 9.68% |
+| football_data_org_live | 96.77% |
+| fallback_template | 3.23% |
 
 Fallback rows are not official FIFA bracket mapping.

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "snapshots": [
+    {
+      "snapshot_id": "20260710T060819Z__quarterfinal__97_completed",
+      "generated_at": "2026-07-10T06:08:19+00:00",
+      "display_date": "2026-07-10",
+      "tournament_phase": "quarterfinal",
+      "completed_matches": 97,
+      "state_hash": "25456edbce22f06f",
+      "record_class": "recovered_from_committed_output",
+      "git_commit": "3e240d488",
+      "file": "snapshots/20260710T060819Z__quarterfinal__97_completed.json"
+    },
+    {
+      "snapshot_id": "20260711T000243Z__quarterfinal__98_completed",
+      "generated_at": "2026-07-11T00:02:43+00:00",
+      "display_date": "2026-07-11",
+      "tournament_phase": "quarterfinal",
+      "completed_matches": 98,
+      "state_hash": "4907fe9260529eeb",
+      "record_class": "recovered_from_committed_output",
+      "git_commit": "4e4eca66c",
+      "file": "snapshots/20260711T000243Z__quarterfinal__98_completed.json"
+    },
+    {
+      "snapshot_id": "20260712T050843Z__semifinal__99_completed",
+      "generated_at": "2026-07-12T05:08:43+00:00",
+      "display_date": "2026-07-12",
+      "tournament_phase": "semifinal",
+      "completed_matches": 99,
+      "state_hash": "751bdf33e3498bc5",
+      "record_class": "recovered_from_committed_output",
+      "git_commit": "1d1233729",
+      "file": "snapshots/20260712T050843Z__semifinal__99_completed.json"
+    },
+    {
+      "snapshot_id": "20260712T063546Z__semifinal__100_completed",
+      "generated_at": "2026-07-12T06:35:46+00:00",
+      "display_date": "2026-07-12",
+      "tournament_phase": "semifinal",
+      "completed_matches": 100,
+      "state_hash": "4e8d06431f6817a3",
+      "record_class": "recovered_from_committed_output",
+      "git_commit": "56fd78661",
+      "file": "snapshots/20260712T063546Z__semifinal__100_completed.json"
+    },
+    {
+      "snapshot_id": "20260714T210709Z__semifinal__101_completed",
+      "generated_at": "2026-07-14T21:07:09+00:00",
+      "display_date": "2026-07-14",
+      "tournament_phase": "semifinal",
+      "completed_matches": 101,
+      "state_hash": "8f488b093bb9ce63",
+      "record_class": "recovered_from_committed_output",
+      "git_commit": "576428727",
+      "file": "snapshots/20260714T210709Z__semifinal__101_completed.json"
+    }
+  ]
+}

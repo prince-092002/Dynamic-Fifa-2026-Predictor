@@ -1,6 +1,6 @@
 # Public Export Validation
 
-- Generated: 2026-07-10T06:52:43+00:00
+- Generated: 2026-07-14T22:22:08+00:00
 
 | Check | Status | Message |
 |---|---|---|
@@ -29,9 +29,9 @@
 | bracket:tbd_not_named | pass | TBD matches carry no team names |
 | matchups:xgboost_backed | pass | all predicted matchups carry model name and live_model source |
 | matchups:advance_sums_to_one | pass | max deviation 0.00000 |
-| overview:phase_matches_manifest | pass | overview=quarterfinal manifest=quarterfinal |
+| overview:phase_matches_manifest | pass | overview=semifinal manifest=semifinal |
 | overview:provider_matches_manifest | pass | overview=football_data_org manifest=football_data_org |
 | overview:forecast_mode_matches_manifest | pass | overview=true_live_forecast manifest=true_live_forecast |
 | exports:timestamps_parseable | pass | all _meta.generated_at timestamps parse |
-| exports:no_secret_values | pass | 4 secret values checked, 0 hits |
+| exports:no_secret_values | pass | 5 secret values checked, 0 hits |
 | exports:no_private_local_paths | pass | no private local paths in exports |

@@ -1,33 +1,33 @@
 fixture_id,match_id,round,stage,team_a,team_b,winner,status,is_completed,is_live,is_scheduled,is_tbd,bracket_source,provider,last_updated
-537417,football_data_org_537417,LAST_32,Round of 32,South Africa,Canada,Canada,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537423,football_data_org_537423,LAST_32,Round of 32,Brazil,Japan,Brazil,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537415,football_data_org_537415,LAST_32,Round of 32,Germany,Paraguay,Paraguay,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537418,football_data_org_537418,LAST_32,Round of 32,Netherlands,Morocco,Morocco,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537424,football_data_org_537424,LAST_32,Round of 32,Ivory Coast,Norway,Norway,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537416,football_data_org_537416,LAST_32,Round of 32,France,Sweden,France,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537425,football_data_org_537425,LAST_32,Round of 32,Mexico,Ecuador,Mexico,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537426,football_data_org_537426,LAST_32,Round of 32,England,Congo DR,England,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537422,football_data_org_537422,LAST_32,Round of 32,Belgium,Senegal,Belgium,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537421,football_data_org_537421,LAST_32,Round of 32,United States,Bosnia-Herzegovina,United States,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537420,football_data_org_537420,LAST_32,Round of 32,Spain,Austria,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537419,football_data_org_537419,LAST_32,Round of 32,Portugal,Croatia,Portugal,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537429,football_data_org_537429,LAST_32,Round of 32,Switzerland,Algeria,Switzerland,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537428,football_data_org_537428,LAST_32,Round of 32,Australia,Egypt,Egypt,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537427,football_data_org_537427,LAST_32,Round of 32,Argentina,Cape Verde Islands,Argentina,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537430,football_data_org_537430,LAST_32,Round of 32,Colombia,Ghana,Colombia,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537376,football_data_org_537376,LAST_16,Round of 16,Canada,Morocco,Morocco,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537375,football_data_org_537375,LAST_16,Round of 16,Paraguay,France,France,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537377,football_data_org_537377,LAST_16,Round of 16,Brazil,Norway,Norway,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537378,football_data_org_537378,LAST_16,Round of 16,Mexico,England,England,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537379,football_data_org_537379,LAST_16,Round of 16,Portugal,Spain,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537380,football_data_org_537380,LAST_16,Round of 16,United States,Belgium,Belgium,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537381,football_data_org_537381,LAST_16,Round of 16,Argentina,Egypt,Argentina,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537382,football_data_org_537382,LAST_16,Round of 16,Switzerland,Colombia,Switzerland,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537383,football_data_org_537383,QUARTER_FINALS,Quarterfinal,France,Morocco,France,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537384,football_data_org_537384,QUARTER_FINALS,Quarterfinal,Spain,Belgium,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-10T22:25:01Z
-537385,football_data_org_537385,QUARTER_FINALS,Quarterfinal,Norway,England,,TIMED,False,False,True,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537386,football_data_org_537386,QUARTER_FINALS,Quarterfinal,Argentina,Switzerland,,TIMED,False,False,True,False,football_data_org_live,football_data_org,2026-07-10T05:20:09Z
-537387,football_data_org_537387,SEMI_FINALS,Semifinal,France,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-10T05:20:09Z
-537388,football_data_org_537388,SEMI_FINALS,Semifinal,,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-10T05:20:09Z
-537389,football_data_org_537389,THIRD_PLACE,Third Place Playoff,,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-10T05:20:09Z
-537390,football_data_org_537390,FINAL,Final,,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-10T05:20:09Z
+537417,football_data_org_537417,LAST_32,Round of 32,South Africa,Canada,Canada,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537423,football_data_org_537423,LAST_32,Round of 32,Brazil,Japan,Brazil,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537415,football_data_org_537415,LAST_32,Round of 32,Germany,Paraguay,Paraguay,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537418,football_data_org_537418,LAST_32,Round of 32,Netherlands,Morocco,Morocco,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537424,football_data_org_537424,LAST_32,Round of 32,Ivory Coast,Norway,Norway,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537416,football_data_org_537416,LAST_32,Round of 32,France,Sweden,France,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537425,football_data_org_537425,LAST_32,Round of 32,Mexico,Ecuador,Mexico,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537426,football_data_org_537426,LAST_32,Round of 32,England,Congo DR,England,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537422,football_data_org_537422,LAST_32,Round of 32,Belgium,Senegal,Belgium,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537421,football_data_org_537421,LAST_32,Round of 32,United States,Bosnia-Herzegovina,United States,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537420,football_data_org_537420,LAST_32,Round of 32,Spain,Austria,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537419,football_data_org_537419,LAST_32,Round of 32,Portugal,Croatia,Portugal,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537429,football_data_org_537429,LAST_32,Round of 32,Switzerland,Algeria,Switzerland,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537428,football_data_org_537428,LAST_32,Round of 32,Australia,Egypt,Egypt,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537427,football_data_org_537427,LAST_32,Round of 32,Argentina,Cape Verde Islands,Argentina,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537430,football_data_org_537430,LAST_32,Round of 32,Colombia,Ghana,Colombia,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537376,football_data_org_537376,LAST_16,Round of 16,Canada,Morocco,Morocco,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537375,football_data_org_537375,LAST_16,Round of 16,Paraguay,France,France,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537377,football_data_org_537377,LAST_16,Round of 16,Brazil,Norway,Norway,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537378,football_data_org_537378,LAST_16,Round of 16,Mexico,England,England,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537379,football_data_org_537379,LAST_16,Round of 16,Portugal,Spain,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537380,football_data_org_537380,LAST_16,Round of 16,United States,Belgium,Belgium,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537381,football_data_org_537381,LAST_16,Round of 16,Argentina,Egypt,Argentina,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537382,football_data_org_537382,LAST_16,Round of 16,Switzerland,Colombia,Switzerland,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537383,football_data_org_537383,QUARTER_FINALS,Quarterfinal,France,Morocco,France,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537384,football_data_org_537384,QUARTER_FINALS,Quarterfinal,Spain,Belgium,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537385,football_data_org_537385,QUARTER_FINALS,Quarterfinal,Norway,England,England,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537386,football_data_org_537386,QUARTER_FINALS,Quarterfinal,Argentina,Switzerland,Argentina,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537387,football_data_org_537387,SEMI_FINALS,Semifinal,France,Spain,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T21:04:16Z
+537388,football_data_org_537388,SEMI_FINALS,Semifinal,England,Argentina,,TIMED,False,False,True,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
+537389,football_data_org_537389,THIRD_PLACE,Third Place Playoff,,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-14T05:20:10Z
+537390,football_data_org_537390,FINAL,Final,,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-14T05:20:10Z

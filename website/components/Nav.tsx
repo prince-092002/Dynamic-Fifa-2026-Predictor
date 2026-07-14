@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Trophy, Team, Lab, Globe, Github, Arrow, Sim } from "./icons";
+import { Trophy, Team, Lab, Globe, Github, Arrow, Sim, Chart } from "./icons";
 import Crest from "./Crest";
 
 const LINKS = [
   { href: "/", label: "Home", icon: <Trophy width={16} height={16} /> },
   { href: "/#bracket", label: "Bracket", icon: <Route16 /> },
+  { href: "/prediction-history", label: "Prediction History", icon: <Chart width={16} height={16} /> },
   { href: "/teams", label: "Teams", icon: <Team width={16} height={16} /> },
   { href: "/scenario-lab", label: "Scenario Lab", icon: <Sim width={16} height={16} /> },
   { href: "/methodology", label: "Analytics Lab", icon: <Lab width={16} height={16} /> },
@@ -34,9 +35,9 @@ export default function Nav() {
           </span>
         </Link>
 
-        <button className="rounded-lg border border-line-strong px-3 py-1.5 text-sm md:hidden" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Toggle menu">Menu</button>
+        <button className="rounded-lg border border-line-strong px-3 py-1.5 text-sm xl:hidden" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Toggle menu">Menu</button>
 
-        <ul className={`${open ? "flex" : "hidden"} absolute left-0 top-full w-full flex-col gap-1 border-b border-line bg-bg2 p-4 md:static md:flex md:w-auto md:flex-row md:items-center md:gap-1 md:border-0 md:bg-transparent md:p-0`}>
+        <ul className={`${open ? "flex" : "hidden"} absolute left-0 top-full w-full flex-col gap-1 border-b border-line bg-bg2 p-4 xl:static xl:flex xl:w-auto xl:flex-row xl:items-center xl:gap-1 xl:border-0 xl:bg-transparent xl:p-0`}>
           {LINKS.map((l) => {
             const active = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href.split("#")[0]) && l.href !== "/#bracket");
             return (
@@ -49,7 +50,7 @@ export default function Nav() {
             );
           })}
           {dashboard && (
-            <li className="md:ml-2">
+            <li className="xl:ml-2">
               <a href={dashboard} target="_blank" rel="noreferrer" className="btn btn-primary !py-2 !px-3.5 text-sm">
                 Live Dashboard <Arrow width={15} height={15} />
               </a>
@@ -57,7 +58,7 @@ export default function Nav() {
           )}
           {github && (
             <li>
-              <a href={github} target="_blank" rel="noreferrer" aria-label="GitHub repository" className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-fg2 hover:text-fg md:px-2">
+              <a href={github} target="_blank" rel="noreferrer" aria-label="GitHub repository" className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-fg2 hover:text-fg xl:px-2">
                 <Github width={17} height={17} />
               </a>
             </li>

@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "20260714T210709Z__semifinal__101_completed",
+  "generated_at": "2026-07-14T21:07:09+00:00",
+  "display_date": "2026-07-14",
+  "timezone": "UTC",
+  "tournament_phase": "semifinal",
+  "completed_matches": 101,
+  "remaining_matches": 1,
+  "teams_alive": 3,
+  "teams_eliminated": 45,
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "source_quality_score": 100,
+  "simulation_count": 10000,
+  "seed": 42,
+  "selected_model": "xgboost",
+  "run_id": "2026-07-14T210550Z-f6872a12",
+  "record_class": "recovered_from_committed_output",
+  "provenance": {
+    "git_commit": "576428727",
+    "commit_date": "2026-07-14T16:08:31-05:00",
+    "commit_subject": "Matchday: lock France 0-2 Spain (semifinal), Spain into the Final"
+  },
+  "main_forecast": {
+    "most_likely_champion": {
+      "team": "Spain",
+      "probability": 0.5152
+    },
+    "second_most_likely_champion": {
+      "team": "Argentina",
+      "probability": 0.3028
+    },
+    "champion_probabilities": [
+      {
+        "team": "Spain",
+        "probability": 0.5152
+      },
+      {
+        "team": "Argentina",
+        "probability": 0.3028
+      },
+      {
+        "team": "England",
+        "probability": 0.182
+      }
+    ],
+    "most_likely_final": {
+      "team_1": "Argentina",
+      "team_2": "Spain",
+      "pair_key": "Argentina vs Spain",
+      "probability": 0.6081
+    },
+    "finalist_probabilities": [
+      {
+        "team": "Spain",
+        "probability": 1.0
+      },
+      {
+        "team": "Argentina",
+        "probability": 0.6081
+      },
+      {
+        "team": "England",
+        "probability": 0.3919
+      }
+    ],
+    "predicted_final_winner": null
+  },
+  "matchday_predictions": [
+    {
+      "match_id": 537388,
+      "stage": "Semifinal",
+      "scheduled_at": "2026-07-15T19:00:00Z",
+      "team_a": "England",
+      "team_b": "Argentina",
+      "team_a_win_probability": 0.393317,
+      "team_b_win_probability": 0.606683,
+      "draw_probability": null,
+      "regulation": {
+        "team_a_win": 0.286883,
+        "draw": 0.212869,
+        "team_a_loss": 0.500249
+      },
+      "predicted_winner": "Argentina",
+      "prediction_method": "XGBoost",
+      "status_at_snapshot": "scheduled",
+      "confidence": null,
+      "actual_winner": null,
+      "actual_score": null,
+      "prediction_outcome": "pending"
+    }
+  ],
+  "state_hash": "8f488b093bb9ce63"
+}

@@ -5,7 +5,7 @@ dashboard_input:live_provider_freshness.json,pass,readable
 dashboard_input:probability_source_history.csv,pass,readable
 team_stats:only_completed_matches,pass,team stats contain only completed (non-future) matches
 team_stats:no_duplicate_identities,pass,48 unique team identities
-history:champion_probability_history.csv:no_duplicate_run_entries,pass,"14 rows, no duplicate ['run_id', 'team'] entries"
-history:finalist_probability_history.csv:no_duplicate_run_entries,pass,"14 rows, no duplicate ['run_id', 'team'] entries"
-history:finalist_pair_probability_history.csv:no_duplicate_run_entries,pass,"24 rows, no duplicate ['run_id', 'finalist_team_1', 'finalist_team_2'] entries"
-history:probability_source_history.csv:no_duplicate_run_entries,pass,"7 rows, no duplicate ['run_id'] entries"
+history:champion_probability_history.csv:no_duplicate_run_entries,pass,"23 rows, no duplicate ['run_id', 'team'] entries"
+history:finalist_probability_history.csv:no_duplicate_run_entries,pass,"23 rows, no duplicate ['run_id', 'team'] entries"
+history:finalist_pair_probability_history.csv:no_duplicate_run_entries,pass,"34 rows, no duplicate ['run_id', 'finalist_team_1', 'finalist_team_2'] entries"
+history:probability_source_history.csv:no_duplicate_run_entries,pass,"9 rows, no duplicate ['run_id'] entries"

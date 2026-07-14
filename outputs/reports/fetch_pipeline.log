@@ -820,3 +820,16 @@ TypeError: Invalid value 'FINISHED' for dtype 'float64'
 2026-07-10 01:50:33 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
 2026-07-10 01:50:39 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
 2026-07-10 01:50:46 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-14 16:05:40 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-14 16:05:41 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-14 16:05:41 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-14 16:05:41 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-14 16:05:41 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-14 16:05:41 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_results_2026_template.csv
+2026-07-14 16:05:41 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-14 16:05:41 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-14 16:05:41 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\Fifa Project\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-14 16:05:41 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-14 16:05:42 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\unmapped_team_names.csv
+2026-07-14 16:05:46 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Fifa Project\data\processed\matches_master.csv
+2026-07-14 16:05:50 | INFO | src.validation.validate_data | Validation completed with no failures.
