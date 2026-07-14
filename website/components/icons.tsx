@@ -27,3 +27,5 @@ export const Check = (p: P) => (<svg {...base(p)}><path d="m5 12 4.5 4.5L19 7"/>
 export const Lock = (p: P) => (<svg {...base(p)}><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>);
 export const Signal = (p: P) => (<svg {...base(p)}><path d="M5 20v-4M10 20v-8M15 20v-12M20 20V6"/></svg>);
 export const Github = (p: P) => (<svg {...base(p)}><path d="M9 19c-4 1.2-4-2-6-2m12 4v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.9 1 5.9 1.3 5.9 1.3a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.5 7.7c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V19"/></svg>);
+export const Menu = (p: P) => (<svg {...base(p)}><path d="M4 7h16M4 12h16M4 17h16"/></svg>);
+export const Close = (p: P) => (<svg {...base(p)}><path d="m6 6 12 12M18 6 6 18"/></svg>);
