@@ -358,15 +358,13 @@
      "fixture_id": 537387,
      "stage": "Semifinal",
      "date": "2026-07-14T19:00:00Z",
-     "state": "scheduled_known",
+     "state": "completed",
      "team_a": "France",
      "team_b": "Spain",
-     "team_a_advance_probability": 0.446075,
-     "team_b_advance_probability": 0.553925,
-     "predicted_favorite": "Spain",
-     "source": "live_model",
-     "source_label": "Live XGBoost prediction",
-     "model": "xgboost"
+     "score": "0-2",
+     "winner": "Spain",
+     "source": "completed_result",
+     "source_label": "Completed real result"
     },
     {
      "fixture_id": 537388,
@@ -411,7 +409,7 @@
  },
  "current_phase": "semifinal",
  "_meta": {
-  "generated_at": "2026-07-12T06:35:46+00:00",
+  "generated_at": "2026-07-14T21:07:09+00:00",
   "source_files": [
    "outputs/live_state/merged_bracket_state.csv",
    "outputs/live_state/football_data_org_fixtures_normalized.csv",
@@ -420,6 +418,6 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T063403Z-bf041d71"
+  "run_id": "2026-07-14T210550Z-f6872a12"
  }
 }

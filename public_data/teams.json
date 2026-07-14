@@ -47,8 +47,8 @@
    "goals_for": 17,
    "goals_against": 6,
    "goal_difference": 11,
-   "champion_probability": 0.3074,
-   "reach_final_probability": 0.6097,
+   "champion_probability": 0.3028,
+   "reach_final_probability": 0.6081,
    "next_matchup": {
     "opponent": "England",
     "stage": "Semifinal",
@@ -503,8 +503,8 @@
    "goals_for": 13,
    "goals_against": 6,
    "goal_difference": 7,
-   "champion_probability": 0.1774,
-   "reach_final_probability": 0.3903,
+   "champion_probability": 0.182,
+   "reach_final_probability": 0.3919,
    "next_matchup": {
     "opponent": "Argentina",
     "stage": "Semifinal",
@@ -528,34 +528,28 @@
    "code": "FR",
    "flag": "\ud83c\uddeb\ud83c\uddf7",
    "group": "I",
-   "status": "alive",
+   "status": "eliminated",
    "stage_reached": "Semifinal",
-   "eliminated_by": null,
-   "eliminated_in": null,
-   "played": 6,
+   "eliminated_by": "Spain",
+   "eliminated_in": "Semifinal",
+   "played": 7,
    "wins": 6,
    "draws": 0,
-   "losses": 0,
+   "losses": 1,
    "goals_for": 16,
-   "goals_against": 2,
-   "goal_difference": 14,
-   "champion_probability": 0.2285,
-   "reach_final_probability": 0.4435,
-   "next_matchup": {
-    "opponent": "Spain",
-    "stage": "Semifinal",
-    "date": "2026-07-14T19:00:00Z",
-    "advance_probability": 0.446075,
-    "source_label": "Live XGBoost prediction"
-   },
+   "goals_against": 4,
+   "goal_difference": 12,
+   "champion_probability": 0.0,
+   "reach_final_probability": 0.0,
+   "next_matchup": null,
    "latest_result": {
-    "date": "2026-07-09",
-    "stage": "Quarterfinal",
-    "opponent": "Morocco",
-    "goals_for": 2,
-    "goals_against": 0,
-    "result": "W",
-    "score": "2-0"
+    "date": "2026-07-14",
+    "stage": "Semifinal",
+    "opponent": "Spain",
+    "goals_for": 0,
+    "goals_against": 2,
+    "result": "L",
+    "score": "0-2"
    }
   },
   {
@@ -1225,33 +1219,27 @@
    "flag": "\ud83c\uddea\ud83c\uddf8",
    "group": "H",
    "status": "alive",
-   "stage_reached": "Semifinal",
+   "stage_reached": "Final",
    "eliminated_by": null,
    "eliminated_in": null,
-   "played": 6,
-   "wins": 5,
+   "played": 7,
+   "wins": 6,
    "draws": 1,
    "losses": 0,
-   "goals_for": 11,
+   "goals_for": 13,
    "goals_against": 1,
-   "goal_difference": 10,
-   "champion_probability": 0.2867,
-   "reach_final_probability": 0.5565,
-   "next_matchup": {
-    "opponent": "France",
-    "stage": "Semifinal",
-    "date": "2026-07-14T19:00:00Z",
-    "advance_probability": 0.553925,
-    "source_label": "Live XGBoost prediction"
-   },
+   "goal_difference": 12,
+   "champion_probability": 0.5152,
+   "reach_final_probability": 1.0,
+   "next_matchup": null,
    "latest_result": {
-    "date": "2026-07-10",
-    "stage": "Quarterfinal",
-    "opponent": "Belgium",
+    "date": "2026-07-14",
+    "stage": "Semifinal",
+    "opponent": "France",
     "goals_for": 2,
-    "goals_against": 1,
+    "goals_against": 0,
     "result": "W",
-    "score": "2-1"
+    "score": "2-0"
    }
   },
   {
@@ -1466,7 +1454,7 @@
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-12T06:35:46+00:00",
+  "generated_at": "2026-07-14T21:07:09+00:00",
   "source_files": [
    "outputs/live_state/football_data_org_teams_normalized.csv",
    "outputs/live_state/merged_bracket_state.csv",
@@ -1475,6 +1463,6 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T063403Z-bf041d71"
+  "run_id": "2026-07-14T210550Z-f6872a12"
  }
 }

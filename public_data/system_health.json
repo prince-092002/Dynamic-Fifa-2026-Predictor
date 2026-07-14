@@ -1,15 +1,15 @@
 {
  "provider_freshness": {
   "provider": "football_data_org",
-  "request_status": "200",
-  "data_source_mode": "fresh_api",
-  "fetched_at": "2026-07-12T06:34:24+00:00",
-  "normalized_at": "2026-07-12T06:34:23+00:00",
+  "request_status": "429",
+  "data_source_mode": "cached_normalized",
+  "fetched_at": null,
+  "normalized_at": "2026-07-14T21:05:25+00:00",
   "fixture_row_count": 104,
-  "completed_fixture_count": 100,
-  "cache_used": false,
+  "completed_fixture_count": 101,
+  "cache_used": true,
   "snapshot_used": false,
-  "data_age_minutes": 0.0,
+  "data_age_minutes": 0.6,
   "rate_limited": true,
   "provider_status": "available_true_live"
  },
@@ -18,7 +18,7 @@
   "public_label": "True live forecast from current tournament state",
   "source_quality_score": 100,
   "current_phase": "semifinal",
-  "completed_result_count": 100,
+  "completed_result_count": 101,
   "fallback_usage_rate": 0.0323,
   "finalist_prediction_allowed": true
  },
@@ -35,7 +35,7 @@
   }
  },
  "_meta": {
-  "generated_at": "2026-07-12T06:35:46+00:00",
+  "generated_at": "2026-07-14T21:07:09+00:00",
   "source_files": [
    "outputs/live_state/live_provider_freshness.json",
    "outputs/live_state/live_forecast_quality_gate.json",

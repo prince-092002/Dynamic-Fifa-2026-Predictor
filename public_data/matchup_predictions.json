@@ -2,24 +2,6 @@
  "matchups": [
   {
    "stage": "Semifinal",
-   "team_a": "France",
-   "team_b": "Spain",
-   "team_a_slug": "france",
-   "team_b_slug": "spain",
-   "team_a_advance_probability": 0.446075,
-   "team_b_advance_probability": 0.553925,
-   "prob_team_a_win": 0.333226,
-   "prob_draw": 0.225697,
-   "prob_team_a_loss": 0.441077,
-   "favorite": "Spain",
-   "model": "xgboost",
-   "prediction_status": "predicted",
-   "probability_source": "live_model",
-   "source_label": "Live XGBoost prediction",
-   "generated_at": "2026-07-12T06:34:30+00:00"
-  },
-  {
-   "stage": "Semifinal",
    "team_a": "England",
    "team_b": "Argentina",
    "team_a_slug": "england",
@@ -34,17 +16,17 @@
    "prediction_status": "predicted",
    "probability_source": "live_model",
    "source_label": "Live XGBoost prediction",
-   "generated_at": "2026-07-12T06:34:30+00:00"
+   "generated_at": "2026-07-14T21:06:14+00:00"
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-12T06:35:46+00:00",
+  "generated_at": "2026-07-14T21:07:09+00:00",
   "source_files": [
    "outputs/live_state/live_knockout_match_predictions.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T063403Z-bf041d71"
+  "run_id": "2026-07-14T210550Z-f6872a12"
  }
 }

@@ -1,35 +1,30 @@
 {
  "entries": [
   {
-   "team": "Argentina",
-   "reach_final_probability": 0.6097,
-   "slug": "argentina"
-  },
-  {
    "team": "Spain",
-   "reach_final_probability": 0.5565,
+   "reach_final_probability": 1.0,
    "slug": "spain"
   },
   {
-   "team": "France",
-   "reach_final_probability": 0.4435,
-   "slug": "france"
+   "team": "Argentina",
+   "reach_final_probability": 0.6081,
+   "slug": "argentina"
   },
   {
    "team": "England",
-   "reach_final_probability": 0.3903,
+   "reach_final_probability": 0.3919,
    "slug": "england"
   }
  ],
  "simulations": 10000,
  "_meta": {
-  "generated_at": "2026-07-12T06:35:46+00:00",
+  "generated_at": "2026-07-14T21:07:09+00:00",
   "source_files": [
    "outputs/live_state/team_reach_final_probabilities.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-12T063403Z-bf041d71"
+  "run_id": "2026-07-14T210550Z-f6872a12"
  }
 }
