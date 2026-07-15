@@ -3,7 +3,6 @@
 | Check | Status | Message | Rows affected |
 |---|---|---|---:|
 | live_quality_gate_exists | pass | C:\Users\abelp\Desktop\Fifa Project\outputs\live_state\live_forecast_quality_gate.json | 0 |
-| forecast_mode_clear | pass | mode=true_live_forecast; label=True live forecast from current tournament state | 0 |
 | live_fixtures_file_exists | pass | C:\Users\abelp\Desktop\Fifa Project\outputs\live_state\live_fixtures_normalized.csv | 0 |
 | current_state_exists | pass | C:\Users\abelp\Desktop\Fifa Project\outputs\live_state\current_tournament_state.csv | 0 |
 | remaining_matches_have_probabilities | pass | 0 simulated rows missing probabilities | 0 |
@@ -19,5 +18,5 @@
 | no_eliminated_team_as_finalist | pass | all finalist teams are in the surviving bracket | 0 |
 | no_placeholder_teams_in_outputs | pass | no TBD/placeholder team appears in forecast outputs | 0 |
 | probabilities_numerically_valid | pass | champion probabilities within [0, 1] | 0 |
-| forecast_mode_agrees_with_gate | pass | summary=true_live_forecast gate=true_live_forecast | 0 |
-| provider_freshness_disclosed | pass | data_source_mode=cached_normalized, cache_used=True, snapshot_used=False | 0 |
+| forecast_mode_agrees_with_gate | warn | summary not enriched with forecast_mode yet (validation ran mid-pipeline); rerun validate-live-forecast after the run to cross-check | 0 |
+| provider_freshness_disclosed | pass | data_source_mode=fresh_api, cache_used=False, snapshot_used=False | 0 |

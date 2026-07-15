@@ -16,17 +16,17 @@
    "prediction_status": "predicted",
    "probability_source": "live_model",
    "source_label": "Live XGBoost prediction",
-   "generated_at": "2026-07-14T21:06:14+00:00"
+   "generated_at": "2026-07-14T23:56:40+00:00"
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-14T21:07:09+00:00",
+  "generated_at": "2026-07-14T23:57:47+00:00",
   "source_files": [
    "outputs/live_state/live_knockout_match_predictions.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "semifinal",
-  "run_id": "2026-07-14T210550Z-f6872a12"
+  "run_id": "2026-07-14T235611Z-10c659fc"
  }
 }

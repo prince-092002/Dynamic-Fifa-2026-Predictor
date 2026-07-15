@@ -1,2 +1,2 @@
 fixture_id,match_id,stage,team_a,team_b,prob_team_a_loss,prob_draw,prob_team_a_win,prob_team_a_advance,prob_team_b_advance,predicted_result_label,confidence,model_name,prediction_status,probability_source,generated_at
-537388,football_data_org_537388,Semifinal,England,Argentina,0.5002489686012268,0.21286851167678833,0.28688251972198486,0.39331677556037903,0.606683224439621,team_a_loss,0.5002489686012268,xgboost,predicted,live_model,2026-07-14T21:06:14+00:00
+537388,football_data_org_537388,Semifinal,England,Argentina,0.5002489686012268,0.21286851167678833,0.28688251972198486,0.39331677556037903,0.606683224439621,team_a_loss,0.5002489686012268,xgboost,predicted,live_model,2026-07-14T23:56:40+00:00

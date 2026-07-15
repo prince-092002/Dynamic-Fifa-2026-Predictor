@@ -99,7 +99,7 @@ fixture_id,match_id,date,round,stage,group,team_a,team_b,team_a_id,team_b_id,tea
 537384,football_data_org_537384,2026-07-10T19:00:00Z,QUARTER_FINALS,Quarterfinal,,Spain,Belgium,760.0,805.0,2.0,1.0,,,Spain,FINISHED,FINISHED,,True,False,False,True,,,,football_data_org,football_data_org,2026-07-14T05:20:10Z
 537385,football_data_org_537385,2026-07-11T21:00:00Z,QUARTER_FINALS,Quarterfinal,,Norway,England,8872.0,770.0,1.0,2.0,,,England,FINISHED,FINISHED,,True,False,False,True,,,,football_data_org,football_data_org,2026-07-14T05:20:10Z
 537386,football_data_org_537386,2026-07-12T01:00:00Z,QUARTER_FINALS,Quarterfinal,,Argentina,Switzerland,762.0,788.0,3.0,1.0,,,Argentina,FINISHED,FINISHED,,True,False,False,True,,,,football_data_org,football_data_org,2026-07-14T05:20:10Z
-537387,football_data_org_537387,2026-07-14T19:00:00Z,SEMI_FINALS,Semifinal,,France,Spain,773.0,760.0,0.0,2.0,,,Spain,FINISHED,FINISHED,,True,False,False,True,,,,football_data_org,football_data_org,2026-07-14T21:04:16Z
+537387,football_data_org_537387,2026-07-14T19:00:00Z,SEMI_FINALS,Semifinal,,France,Spain,773.0,760.0,0.0,2.0,,,Spain,FINISHED,FINISHED,,True,False,False,True,,,,football_data_org,football_data_org,2026-07-14T22:25:01Z
 537388,football_data_org_537388,2026-07-15T19:00:00Z,SEMI_FINALS,Semifinal,,England,Argentina,770.0,762.0,,,,,,TIMED,TIMED,,False,False,True,True,,,,football_data_org,football_data_org,2026-07-14T05:20:10Z
 537389,football_data_org_537389,2026-07-18T21:00:00Z,THIRD_PLACE,Third Place Playoff,,,,,,,,,,,TIMED,TIMED,,False,False,True,True,,,,football_data_org,football_data_org,2026-07-14T05:20:10Z
 537390,football_data_org_537390,2026-07-19T19:00:00Z,FINAL,Final,,,,,,,,,,,TIMED,TIMED,,False,False,True,True,,,,football_data_org,football_data_org,2026-07-14T05:20:10Z

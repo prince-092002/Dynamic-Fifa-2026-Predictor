@@ -27,7 +27,7 @@ fixture_id,match_id,round,stage,team_a,team_b,winner,status,is_completed,is_live
 537384,football_data_org_537384,QUARTER_FINALS,Quarterfinal,Spain,Belgium,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
 537385,football_data_org_537385,QUARTER_FINALS,Quarterfinal,Norway,England,England,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
 537386,football_data_org_537386,QUARTER_FINALS,Quarterfinal,Argentina,Switzerland,Argentina,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
-537387,football_data_org_537387,SEMI_FINALS,Semifinal,France,Spain,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T21:04:16Z
+537387,football_data_org_537387,SEMI_FINALS,Semifinal,France,Spain,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-14T22:25:01Z
 537388,football_data_org_537388,SEMI_FINALS,Semifinal,England,Argentina,,TIMED,False,False,True,False,football_data_org_live,football_data_org,2026-07-14T05:20:10Z
 537389,football_data_org_537389,THIRD_PLACE,Third Place Playoff,,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-14T05:20:10Z
 537390,football_data_org_537390,FINAL,Final,,,,TIMED,False,False,True,True,football_data_org_scheduled_tbd,football_data_org,2026-07-14T05:20:10Z

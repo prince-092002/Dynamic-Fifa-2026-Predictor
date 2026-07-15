@@ -159,3 +159,7 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='v3.football.api-s
 2026-07-14 16:05:39 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
 2026-07-14 16:05:39 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260714_160539
 2026-07-14 16:07:09 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-14 18:55:55 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=True | api_key_available=True
+2026-07-14 18:55:56 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-14 18:55:56 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260714_185556
+2026-07-14 18:57:47 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json

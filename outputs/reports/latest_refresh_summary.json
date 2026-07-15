@@ -1,7 +1,7 @@
 {
-  "refresh_timestamp": "2026-07-14T21:05:38+00:00",
+  "refresh_timestamp": "2026-07-14T23:55:55+00:00",
   "mode": "matchday",
-  "force": false,
+  "force": true,
   "source_used": "existing_processed_csv",
   "api_key_available": true,
   "fixtures_fetched": 104,
@@ -19,7 +19,7 @@
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\data_validation_report.csv",
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\end_of_matchday_update_summary.md"
   ],
-  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260714_160539",
+  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260714_185556",
   "validation_status": "passed",
   "warnings": [
     "API-Football returned 0 fixture rows; using existing processed CSVs."
@@ -47,14 +47,14 @@
       "live_model_exact": 10000,
       "elo_fallback": 10000
     },
-    "run_id": "2026-07-14T210550Z-f6872a12",
+    "run_id": "2026-07-14T235611Z-10c659fc",
     "phase_transition": {
-      "previous_phase": "quarterfinal",
+      "previous_phase": "semifinal",
       "current_phase": "semifinal",
-      "phase_changed": true,
-      "detected_at": "2026-07-14T21:07:08+00:00",
-      "newly_resolved_matchups": 1,
-      "newly_completed_matches": 3,
+      "phase_changed": false,
+      "detected_at": "2026-07-14T23:57:46+00:00",
+      "newly_resolved_matchups": 0,
+      "newly_completed_matches": 0,
       "completed_match_count": 101,
       "resolved_matchup_ids": [
         "football_data_org_537388"

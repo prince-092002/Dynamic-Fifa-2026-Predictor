@@ -1,6 +1,6 @@
 # End-of-Matchday Update Summary
 
-- Refresh timestamp: 2026-07-14T21:07:09+00:00
+- Refresh timestamp: 2026-07-14T23:57:47+00:00
 - Update status: passed
 - New completed matches detected: 0
 - Live forecast status: success
@@ -12,11 +12,11 @@
 - Fallback usage: 3.23%
 - Live matchup predictions: success (1 matchups predicted by the model)
 - Live model probability uses in simulation: 10000
-- Tournament phase before update: quarterfinal
+- Tournament phase before update: semifinal
 - Tournament phase after update: semifinal
-- Phase transition detected: True
-- Newly completed matches (since last forecast run): 3
-- Newly resolved knockout matchups: 1
+- Phase transition detected: False
+- Newly completed matches (since last forecast run): 0
+- Newly resolved knockout matchups: 0
 - New XGBoost predictions generated: 1
 - Why or why not: forecast ran or no blocking reason reported
 - Top finalist pair: Argentina vs Spain
