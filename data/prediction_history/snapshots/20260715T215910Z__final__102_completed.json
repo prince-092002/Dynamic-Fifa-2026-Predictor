@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "20260715T215910Z__final__102_completed",
+  "generated_at": "2026-07-15T21:59:10+00:00",
+  "display_date": "2026-07-15",
+  "timezone": "UTC",
+  "tournament_phase": "final",
+  "completed_matches": 102,
+  "remaining_matches": 1,
+  "teams_alive": 2,
+  "teams_eliminated": 46,
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "source_quality_score": 100,
+  "simulation_count": 10000,
+  "seed": 42,
+  "selected_model": "xgboost",
+  "run_id": "2026-07-15T215633Z-91cbff83",
+  "record_class": "genuine_archived_forecast",
+  "provenance": {
+    "refresh_id": "refresh-2026-07-15T215551Z-4fafcf",
+    "git_commit": "a44ab04",
+    "stage": "post_refresh"
+  },
+  "main_forecast": {
+    "most_likely_champion": {
+      "team": "Spain",
+      "probability": 0.5223
+    },
+    "second_most_likely_champion": {
+      "team": "Argentina",
+      "probability": 0.4777
+    },
+    "champion_probabilities": [
+      {
+        "team": "Spain",
+        "probability": 0.5223
+      },
+      {
+        "team": "Argentina",
+        "probability": 0.4777
+      }
+    ],
+    "most_likely_final": {
+      "team_1": "Argentina",
+      "team_2": "Spain",
+      "pair_key": "Argentina vs Spain",
+      "probability": 1.0
+    },
+    "finalist_probabilities": [
+      {
+        "team": "Spain",
+        "probability": 1.0
+      },
+      {
+        "team": "Argentina",
+        "probability": 1.0
+      }
+    ],
+    "predicted_final_winner": null
+  },
+  "matchday_predictions": [
+    {
+      "match_id": 537390,
+      "stage": "Final",
+      "scheduled_at": "2026-07-19T19:00:00Z",
+      "team_a": "Spain",
+      "team_b": "Argentina",
+      "team_a_win_probability": 0.519471,
+      "team_b_win_probability": 0.480529,
+      "draw_probability": null,
+      "regulation": {
+        "team_a_win": 0.407867,
+        "draw": 0.223209,
+        "team_a_loss": 0.368924
+      },
+      "predicted_winner": "Spain",
+      "prediction_method": "XGBoost",
+      "status_at_snapshot": "scheduled",
+      "confidence": null,
+      "actual_winner": null,
+      "actual_score": null,
+      "prediction_outcome": "pending"
+    }
+  ],
+  "state_hash": "db63d1ac71e141cf"
+}
