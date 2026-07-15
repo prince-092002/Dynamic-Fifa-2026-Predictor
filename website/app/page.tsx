@@ -95,7 +95,7 @@ export default function Home() {
                     <span className="display text-3xl md:text-4xl text-fg">{overview.top_champion}</span>
                   </div>
                   <p className="mt-2 max-w-md text-sm text-fg2">
-                    Highest championship probability across {overview.simulations?.toLocaleString()} Monte Carlo simulations of the remaining bracket. Most likely final:{" "}
+                    Highest championship probability across {overview.simulations?.toLocaleString()} Monte Carlo simulations of the remaining bracket. Final:{" "}
                     <span className="text-fg">{overview.top_finalist_pair}</span> ({formatPct(overview.top_finalist_pair_probability)}).
                   </p>
                 </div>
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
             {pairs?.entries?.length ? (
               <div className="card mt-4 p-5">
-                <span className="kicker inline-flex items-center gap-2"><Route width={14} height={14} /> Most likely finals</span>
+                <span className="kicker inline-flex items-center gap-2"><Route width={14} height={14} /> Finals</span>
                 <div className="mt-3 space-y-2.5">
                   {pairs.entries.slice().sort((a, b) => b.probability - a.probability).slice(0, 5).map((p) => (
                     <div key={p.finalist_pair_key} className="flex items-center gap-3">

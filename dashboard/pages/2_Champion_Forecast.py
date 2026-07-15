@@ -48,7 +48,7 @@ with right:
     else:
         missing("Finalist forecast unavailable.")
 
-st.subheader("Most likely finals")
+st.subheader("Finals")
 if pairs.get("entries"):
     frame = pd.DataFrame(pairs["entries"]).nlargest(10, "probability")
     pair_chips = "".join(

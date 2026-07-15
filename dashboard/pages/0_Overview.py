@@ -46,7 +46,7 @@ with left:
                 <span style="font-family:'Space Grotesk';font-weight:700;font-size:2.3rem;color:#eef4fd">{overview["top_champion"]}</span>
               </div>
               <div style="font-family:'Space Grotesk';font-weight:700;font-size:2.6rem;color:{GOLD};margin-top:.3rem">{pct(prob)}</div>
-              <div style="color:{FG2};font-size:.85rem;margin-top:.4rem">Most likely final: {overview.get("top_finalist_pair","—")} ({pct(overview.get("top_finalist_pair_probability"))})</div>
+              <div style="color:{FG2};font-size:.85rem;margin-top:.4rem">Final: {overview.get("top_finalist_pair","—")} ({pct(overview.get("top_finalist_pair_probability"))})</div>
             </div>''',
             unsafe_allow_html=True,
         )
