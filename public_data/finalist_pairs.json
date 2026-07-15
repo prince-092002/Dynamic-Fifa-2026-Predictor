@@ -4,24 +4,18 @@
    "finalist_team_1": "Argentina",
    "finalist_team_2": "Spain",
    "finalist_pair_key": "Argentina vs Spain",
-   "probability": 0.6081
-  },
-  {
-   "finalist_team_1": "England",
-   "finalist_team_2": "Spain",
-   "finalist_pair_key": "England vs Spain",
-   "probability": 0.3919
+   "probability": 1.0
   }
  ],
  "simulations": 10000,
  "_meta": {
-  "generated_at": "2026-07-14T23:57:47+00:00",
+  "generated_at": "2026-07-15T21:59:10+00:00",
   "source_files": [
    "outputs/live_state/finalist_pair_probabilities.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "semifinal",
-  "run_id": "2026-07-14T235611Z-10c659fc"
+  "current_phase": "final",
+  "run_id": "2026-07-15T215633Z-91cbff83"
  }
 }

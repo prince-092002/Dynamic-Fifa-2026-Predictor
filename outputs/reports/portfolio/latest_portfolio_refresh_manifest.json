@@ -1,17 +1,17 @@
 {
-  "refresh_id": "refresh-2026-07-14T210538Z-c8ba6f",
-  "started_at": "2026-07-14T21:05:38+00:00",
-  "completed_at": "2026-07-14T21:07:10+00:00",
-  "git_commit_before_refresh": "004822b",
-  "phase_before": "quarterfinal",
-  "phase_after": "semifinal",
+  "refresh_id": "refresh-2026-07-15T215551Z-4fafcf",
+  "started_at": "2026-07-15T21:55:51+00:00",
+  "completed_at": "2026-07-15T21:59:11+00:00",
+  "git_commit_before_refresh": "a44ab04",
+  "phase_before": "semifinal",
+  "phase_after": "final",
   "provider": "football_data_org",
-  "provider_mode": "cached_normalized",
-  "completed_matches_before": 98,
-  "completed_matches_after": 101,
-  "teams_alive": 3,
-  "teams_eliminated": 45,
-  "newly_completed_matches": 3,
+  "provider_mode": "fresh_api",
+  "completed_matches_before": 101,
+  "completed_matches_after": 102,
+  "teams_alive": 2,
+  "teams_eliminated": 46,
+  "newly_completed_matches": 1,
   "newly_predicted_matchups": 1,
   "simulation_count": 10000,
   "live_forecast_status": "success",
@@ -19,7 +19,7 @@
   "public_export_publication": "published",
   "public_export_validation": "pass",
   "dashboard_validation": "pass",
-  "deployment_readiness": "not_ready",
+  "deployment_readiness": "ready",
   "changed_public_files": [
     "champion_forecast.json",
     "finalist_forecast.json",
@@ -38,5 +38,18 @@
   "warnings": [
     "API-Football returned 0 fixture rows; using existing processed CSVs."
   ],
-  "eligible_for_publication": true
+  "eligible_for_publication": true,
+  "prediction_history": {
+    "pre_refresh": {
+      "archived": false,
+      "reason": "duplicate_state",
+      "state_hash": "8f488b093bb9ce63"
+    },
+    "post_refresh": {
+      "archived": true,
+      "snapshot_id": "20260715T215910Z__final__102_completed",
+      "state_hash": "db63d1ac71e141cf"
+    },
+    "dry_run": false
+  }
 }

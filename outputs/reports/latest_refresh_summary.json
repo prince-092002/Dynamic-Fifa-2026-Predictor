@@ -1,7 +1,7 @@
 {
-  "refresh_timestamp": "2026-07-14T23:55:55+00:00",
+  "refresh_timestamp": "2026-07-15T21:55:51+00:00",
   "mode": "matchday",
-  "force": true,
+  "force": false,
   "source_used": "existing_processed_csv",
   "api_key_available": true,
   "fixtures_fetched": 104,
@@ -19,7 +19,7 @@
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\data_validation_report.csv",
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\end_of_matchday_update_summary.md"
   ],
-  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260714_185556",
+  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260715_165552",
   "validation_status": "passed",
   "warnings": [
     "API-Football returned 0 fixture rows; using existing processed CSVs."
@@ -28,13 +28,13 @@
   "next_recommended_action": "Data refresh complete. Ready for the next modeling phase when needed.",
   "live_forecast": {
     "status": "success",
-    "current_phase": "semifinal",
-    "finalist_prediction_active": true,
+    "current_phase": "final",
+    "finalist_prediction_active": false,
     "top_finalist_pair": "Argentina vs Spain",
-    "top_finalist_pair_probability": 0.6081,
+    "top_finalist_pair_probability": 1.0,
     "top_champion": "Spain",
-    "top_champion_probability": 0.5152,
-    "fallback_bracket_usage": 0.03225806451612903,
+    "top_champion_probability": 0.5223,
+    "fallback_bracket_usage": 0.0,
     "forecast_mode": "true_live_forecast",
     "public_label": "True live forecast from current tournament state",
     "source_quality_score": 100,
@@ -43,21 +43,19 @@
     "live_matchups_predicted": 1,
     "live_model_probability_uses": 10000,
     "probability_source_counts": {
-      "completed_result": 10000,
-      "live_model_exact": 10000,
-      "elo_fallback": 10000
+      "live_model_exact": 10000
     },
-    "run_id": "2026-07-14T235611Z-10c659fc",
+    "run_id": "2026-07-15T215633Z-91cbff83",
     "phase_transition": {
       "previous_phase": "semifinal",
-      "current_phase": "semifinal",
-      "phase_changed": false,
-      "detected_at": "2026-07-14T23:57:46+00:00",
-      "newly_resolved_matchups": 0,
-      "newly_completed_matches": 0,
-      "completed_match_count": 101,
+      "current_phase": "final",
+      "phase_changed": true,
+      "detected_at": "2026-07-15T21:59:09+00:00",
+      "newly_resolved_matchups": 1,
+      "newly_completed_matches": 1,
+      "completed_match_count": 102,
       "resolved_matchup_ids": [
-        "football_data_org_537388"
+        "football_data_org_537390"
       ],
       "first_recorded_run": false
     },

@@ -37,33 +37,33 @@
    "flag": "\ud83c\udde6\ud83c\uddf7",
    "group": "J",
    "status": "alive",
-   "stage_reached": "Semifinal",
+   "stage_reached": "Final",
    "eliminated_by": null,
    "eliminated_in": null,
-   "played": 6,
-   "wins": 6,
+   "played": 7,
+   "wins": 7,
    "draws": 0,
    "losses": 0,
-   "goals_for": 17,
-   "goals_against": 6,
-   "goal_difference": 11,
-   "champion_probability": 0.3028,
-   "reach_final_probability": 0.6081,
+   "goals_for": 19,
+   "goals_against": 7,
+   "goal_difference": 12,
+   "champion_probability": 0.4777,
+   "reach_final_probability": 1.0,
    "next_matchup": {
-    "opponent": "England",
-    "stage": "Semifinal",
-    "date": "2026-07-15T19:00:00Z",
-    "advance_probability": 0.606683,
+    "opponent": "Spain",
+    "stage": "Final",
+    "date": "2026-07-19T19:00:00Z",
+    "advance_probability": 0.480529,
     "source_label": "Live XGBoost prediction"
    },
    "latest_result": {
-    "date": "2026-07-12",
-    "stage": "Quarterfinal",
-    "opponent": "Switzerland",
-    "goals_for": 3,
+    "date": "2026-07-15",
+    "stage": "Semifinal",
+    "opponent": "England",
+    "goals_for": 2,
     "goals_against": 1,
     "result": "W",
-    "score": "3-1"
+    "score": "2-1"
    }
   },
   {
@@ -492,34 +492,28 @@
    "code": "GB-ENG",
    "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
    "group": "L",
-   "status": "alive",
+   "status": "eliminated",
    "stage_reached": "Semifinal",
-   "eliminated_by": null,
-   "eliminated_in": null,
-   "played": 6,
+   "eliminated_by": "Argentina",
+   "eliminated_in": "Semifinal",
+   "played": 7,
    "wins": 5,
    "draws": 1,
-   "losses": 0,
-   "goals_for": 13,
-   "goals_against": 6,
-   "goal_difference": 7,
-   "champion_probability": 0.182,
-   "reach_final_probability": 0.3919,
-   "next_matchup": {
-    "opponent": "Argentina",
-    "stage": "Semifinal",
-    "date": "2026-07-15T19:00:00Z",
-    "advance_probability": 0.393317,
-    "source_label": "Live XGBoost prediction"
-   },
+   "losses": 1,
+   "goals_for": 14,
+   "goals_against": 8,
+   "goal_difference": 6,
+   "champion_probability": 0.0,
+   "reach_final_probability": 0.0,
+   "next_matchup": null,
    "latest_result": {
-    "date": "2026-07-11",
-    "stage": "Quarterfinal",
-    "opponent": "Norway",
-    "goals_for": 2,
-    "goals_against": 1,
-    "result": "W",
-    "score": "2-1"
+    "date": "2026-07-15",
+    "stage": "Semifinal",
+    "opponent": "Argentina",
+    "goals_for": 1,
+    "goals_against": 2,
+    "result": "L",
+    "score": "1-2"
    }
   },
   {
@@ -1229,9 +1223,15 @@
    "goals_for": 13,
    "goals_against": 1,
    "goal_difference": 12,
-   "champion_probability": 0.5152,
+   "champion_probability": 0.5223,
    "reach_final_probability": 1.0,
-   "next_matchup": null,
+   "next_matchup": {
+    "opponent": "Argentina",
+    "stage": "Final",
+    "date": "2026-07-19T19:00:00Z",
+    "advance_probability": 0.519471,
+    "source_label": "Live XGBoost prediction"
+   },
    "latest_result": {
     "date": "2026-07-14",
     "stage": "Semifinal",
@@ -1454,7 +1454,7 @@
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-14T23:57:47+00:00",
+  "generated_at": "2026-07-15T21:59:10+00:00",
   "source_files": [
    "outputs/live_state/football_data_org_teams_normalized.csv",
    "outputs/live_state/merged_bracket_state.csv",
@@ -1462,7 +1462,7 @@
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "semifinal",
-  "run_id": "2026-07-14T235611Z-10c659fc"
+  "current_phase": "final",
+  "run_id": "2026-07-15T215633Z-91cbff83"
  }
 }

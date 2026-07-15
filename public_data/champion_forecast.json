@@ -2,29 +2,24 @@
  "entries": [
   {
    "team": "Spain",
-   "champion_probability": 0.5152,
+   "champion_probability": 0.5223,
    "slug": "spain"
   },
   {
    "team": "Argentina",
-   "champion_probability": 0.3028,
+   "champion_probability": 0.4777,
    "slug": "argentina"
-  },
-  {
-   "team": "England",
-   "champion_probability": 0.182,
-   "slug": "england"
   }
  ],
  "simulations": 10000,
  "_meta": {
-  "generated_at": "2026-07-14T23:57:47+00:00",
+  "generated_at": "2026-07-15T21:59:10+00:00",
   "source_files": [
    "outputs/live_state/live_champion_probabilities.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "semifinal",
-  "run_id": "2026-07-14T235611Z-10c659fc"
+  "current_phase": "final",
+  "run_id": "2026-07-15T215633Z-91cbff83"
  }
 }
