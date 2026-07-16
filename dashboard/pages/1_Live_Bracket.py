@@ -64,6 +64,8 @@ for round_ in bracket["rounds"]:
                             unsafe_allow_html=True,
                         )
                         st.caption(f"Favorite: {match.get('predicted_favorite')} · {match.get('source_label')} ({match.get('model', '')})")
+                        if str(match.get("stage", "")).lower() == "final":
+                            st.caption("Final Prediction · probability of winning the final and championship · result pending")
                     else:
                         st.caption(f"Source: {match.get('source_label')}")
                     st.caption(f"Scheduled: {str(match.get('date', ''))[:16].replace('T', ' ')} UTC")

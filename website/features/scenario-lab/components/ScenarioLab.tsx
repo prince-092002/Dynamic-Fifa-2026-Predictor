@@ -278,6 +278,7 @@ function ScenarioResults({ snapshot, result, runTimestamp, codeFor }: {
   const officialMap = new Map(snapshot.officialProbabilities.map((entry) => [entry.team, entry]));
   const championRows = result.championProbabilities.map((entry) => ({ ...entry, official: officialMap.get(entry.team)?.championProbability ?? 0 }));
   const finalistRows = result.finalistProbabilities.map((entry) => ({ ...entry, official: officialMap.get(entry.team)?.finalistProbability ?? 0 }));
+  const finalStage = snapshot.currentPhase.toLowerCase() === "final";
 
   return (
     <section className="mt-12 space-y-10" aria-labelledby="scenario-results-title">
@@ -287,19 +288,19 @@ function ScenarioResults({ snapshot, result, runTimestamp, codeFor }: {
       </div>
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <ResultCard label="Most likely champion" value={<TeamName team={champion.team} code={codeFor(champion.team)} />} hint={pct(champion.probability)} />
-        <ResultCard label="Most likely final" value={`${finalPair.teamA} vs ${finalPair.teamB}`} hint={pct(finalPair.probability)} />
+        <ResultCard label="Scenario champion estimate" value={<TeamName team={champion.team} code={codeFor(champion.team)} />} hint={pct(champion.probability)} />
+        <ResultCard label={finalStage ? "Confirmed final" : "Most likely final"} value={`${finalPair.teamA} vs ${finalPair.teamB}`} hint={finalStage ? "Official matchup" : pct(finalPair.probability)} />
         <ResultCard label="Forced outcomes" value={result.forcedOutcomeCount.toString()} hint={`${result.simulations.toLocaleString()} simulations`} />
         <ResultCard label="Random seed" value={result.seed.toString()} hint="Reproducible run" />
       </div>
 
-      <ComparisonSection title="Champion probability comparison" rows={championRows} codeFor={codeFor} />
-      <ComparisonSection title="Finalist probability comparison" rows={finalistRows} codeFor={codeFor} />
+      <ComparisonSection title="Scenario vs official champion probability" rows={championRows} codeFor={codeFor} />
+      {!finalStage && <ComparisonSection title="Finalist probability comparison" rows={finalistRows} codeFor={codeFor} />}
 
       <section aria-labelledby="likely-finals-title">
-        <SectionHead icon={<Route width={15} height={15} />} kicker="Scenario pairings" title="Most likely finals" id="likely-finals-title" />
+        <SectionHead icon={<Route width={15} height={15} />} kicker={finalStage ? "Official matchup" : "Scenario pairings"} title={finalStage ? "Confirmed finalists" : "Most likely finals"} id="likely-finals-title" />
         <div className="grid gap-3 md:grid-cols-2">
-          {result.finalPairProbabilities.slice(0, 6).map((pair, index) => (
+          {result.finalPairProbabilities.slice(0, finalStage ? 1 : 6).map((pair, index) => (
             <div key={`${pair.teamA}-${pair.teamB}`} className="card flex items-center justify-between gap-4 p-4">
               <div className="flex min-w-0 items-center gap-3">
                 <span className="stat-num text-sm text-fg3">{String(index + 1).padStart(2, "0")}</span>
@@ -309,7 +310,7 @@ function ScenarioResults({ snapshot, result, runTimestamp, codeFor }: {
                   <TeamName team={pair.teamB} code={codeFor(pair.teamB)} />
                 </div>
               </div>
-              <strong className="stat-num shrink-0 text-gold">{pct(pair.probability)}</strong>
+              <strong className="stat-num shrink-0 text-gold">{finalStage ? "Confirmed" : pct(pair.probability)}</strong>
             </div>
           ))}
         </div>

@@ -9,7 +9,10 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from data.loaders import load_json, missing, pct  # noqa: E402
 from theme import header, apply_plotly, flag_html, flag_uri  # noqa: E402
-header("Team Intelligence", "Team dossiers", "Every real tournament team — records, live status, and current odds.", icon_name="team")
+
+overview = load_json("latest_overview.json")
+is_final = overview.get("current_phase") == "final"
+header("Team Intelligence", "Team dossiers", "Every real tournament team - records, live status, and current championship odds.", icon_name="team")
 
 teams_payload = load_json("teams.json")
 stats_payload = load_json("team_stats.json")
@@ -24,7 +27,10 @@ search = left.text_input("Search team")
 status_filter = mid.selectbox("Status", ["All", "Still alive", "Eliminated"])
 groups = sorted(g for g in frame["group"].dropna().unique())
 group_filter = right.selectbox("Group", ["All"] + groups)
-sort_by = far.selectbox("Sort by", ["Championship probability", "Finalist probability", "Goals scored", "Goal difference", "Matches won", "Alphabetical"])
+sort_options = ["Championship probability", "Goals scored", "Goal difference", "Matches won", "Alphabetical"]
+if not is_final:
+    sort_options.insert(1, "Finalist probability")
+sort_by = far.selectbox("Sort by", sort_options)
 
 filtered = frame.copy()
 if search:
@@ -46,14 +52,18 @@ sort_map = {
 column, ascending = sort_map[sort_by]
 filtered = filtered.sort_values(column, ascending=ascending, na_position="last")
 
-display = filtered[["code", "team", "group", "status", "stage_reached", "played", "wins", "draws", "losses", "goals_for", "goals_against", "goal_difference", "champion_probability", "reach_final_probability"]].copy()
+display_columns = ["code", "team", "group", "status", "stage_reached", "played", "wins", "draws", "losses", "goals_for", "goals_against", "goal_difference", "champion_probability"]
+if not is_final:
+    display_columns.append("reach_final_probability")
+display = filtered[display_columns].copy()
 display["code"] = display["code"].map(flag_uri)
 display["champion_probability"] = display["champion_probability"].map(lambda v: f"{v:.2%}" if pd.notna(v) else "—")
-display["reach_final_probability"] = display["reach_final_probability"].map(lambda v: f"{v:.2%}" if pd.notna(v) else "—")
-display.columns = ["Flag", "Team", "Group", "Status", "Stage reached", "P", "W", "D", "L", "GF", "GA", "GD", "Champion", "Finalist"]
+if not is_final:
+    display["reach_final_probability"] = display["reach_final_probability"].map(lambda v: f"{v:.2%}" if pd.notna(v) else "—")
+display.columns = ["Flag", "Team", "Group", "Status", "Stage reached", "P", "W", "D", "L", "GF", "GA", "GD", "Champion"] + ([] if is_final else ["Finalist"])
 st.dataframe(
     display,
-    use_container_width=True,
+    width="stretch",
     hide_index=True,
     height=420,
     column_config={"Flag": st.column_config.ImageColumn("", width="small")},
@@ -79,12 +89,16 @@ with left:
     else:
         st.error(f"Eliminated in {team.get('eliminated_in') or team['stage_reached']}" + (f" by {team['eliminated_by']}" if team.get("eliminated_by") else ""))
     st.metric("Champion probability", pct(team.get("champion_probability")))
-    st.metric("Reach-final probability", pct(team.get("reach_final_probability")))
+    if is_final and status in {"alive", "champion", "runner_up"}:
+        st.metric("Finalist status", "Confirmed")
+    elif not is_final:
+        st.metric("Reach-final probability", pct(team.get("reach_final_probability")))
     next_matchup = team.get("next_matchup")
     if isinstance(next_matchup, dict):
         st.markdown(f"**Next:** vs {next_matchup.get('opponent')} ({next_matchup.get('stage')})")
         if next_matchup.get("advance_probability") is not None:
-            st.caption(f"Advance probability {pct(next_matchup['advance_probability'])} · {next_matchup.get('source_label', '')}")
+            label = "Probability of winning final/championship" if is_final else "Advance probability"
+            st.caption(f"{label} {pct(next_matchup['advance_probability'])} · {next_matchup.get('source_label', '')}")
 with right:
     st.markdown("#### Tournament record (completed matches only)")
     record_cols = st.columns(6)
@@ -103,7 +117,7 @@ with right:
         journey.columns = ["Date", "Stage", "Flag", "Opponent", "Score", "Result"]
         st.dataframe(
             journey,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={"Flag": st.column_config.ImageColumn("", width="small")},
         )
@@ -118,7 +132,7 @@ if not champion_history.empty and (champion_history["team"] == selected_name).su
     team_history = champion_history[champion_history["team"] == selected_name]
     figure = px.line(team_history, x="timestamp", y="champion_probability", title=f"{selected_name} — champion probability over recorded runs", markers=True)
     figure.update_layout(yaxis_tickformat=".0%", height=320)
-    st.plotly_chart(apply_plotly(figure), use_container_width=True)
+    st.plotly_chart(apply_plotly(figure), width="stretch")
 else:
     st.caption("Forecast history will appear after additional recorded forecast runs.")
 st.caption("Player-level statistics are not currently part of the verified data pipeline.")

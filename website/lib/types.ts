@@ -7,6 +7,9 @@ export interface Overview {
   known_unresolved_matchups: number;
   top_champion: string | null;
   top_champion_probability: number | null;
+  champion_probability_basis?: string | null;
+  monte_carlo_top_champion?: string | null;
+  monte_carlo_top_champion_probability?: number | null;
   top_finalist_pair: string | null;
   top_finalist_pair_probability: number | null;
   forecast_mode: string | null;
@@ -52,6 +55,12 @@ export interface ChampionEntry {
   team: string;
   slug: string;
   champion_probability: number;
+  monte_carlo_champion_probability?: number | null;
+  probability_basis?: string | null;
+  source_match_id?: string | number | null;
+  model_name?: string | null;
+  probability_source?: string | null;
+  prediction_generated_at?: string | null;
 }
 
 export interface FinalistEntry {

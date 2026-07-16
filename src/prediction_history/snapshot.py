@@ -11,8 +11,10 @@ from __future__ import annotations
 import hashlib
 import json
 import subprocess
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 from src.config import PROJECT_ROOT
 from src.prediction_history.config import (
@@ -65,6 +67,17 @@ def _compact_ts(iso: str) -> str:
     return (iso or "").replace(":", "").replace("+0000", "Z").replace("+00:00", "Z").replace("-", "")[:16] or "unknown"
 
 
+def _display_date(iso: str) -> str:
+    """Convert an archival UTC timestamp to the product's Chicago calendar date."""
+    try:
+        value = datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
+        if value.tzinfo is None:
+            value = value.replace(tzinfo=timezone.utc)
+        return value.astimezone(ZoneInfo("America/Chicago")).date().isoformat()
+    except (TypeError, ValueError):
+        return (str(iso) if iso else "")[:10]
+
+
 # --------------------------------------------------------------------------- #
 # snapshot construction (from a set of parsed public_data payloads)
 # --------------------------------------------------------------------------- #
@@ -97,7 +110,16 @@ def build_snapshot(files: dict[str, Any], record_class: str = RECORD_GENUINE,
 
     # ---- main tournament forecast ----
     champ_rows = sorted(
-        [{"team": e.get("team"), "probability": e.get("champion_probability")} for e in _entries(champion) if e.get("team")],
+        [
+            {
+                "team": e.get("team"),
+                "probability": e.get("champion_probability"),
+                **({"probability_basis": e.get("probability_basis")} if e.get("probability_basis") else {}),
+                **({"monte_carlo_probability": e.get("monte_carlo_champion_probability")} if e.get("monte_carlo_champion_probability") is not None else {}),
+            }
+            for e in _entries(champion)
+            if e.get("team")
+        ],
         key=lambda r: (r["probability"] is None, -(r["probability"] or 0)),
     )
     finalist_rows = sorted(
@@ -113,6 +135,7 @@ def build_snapshot(files: dict[str, Any], record_class: str = RECORD_GENUINE,
         "most_likely_champion": champ_rows[0] if champ_rows else None,
         "second_most_likely_champion": champ_rows[1] if len(champ_rows) > 1 else None,
         "champion_probabilities": champ_rows,
+        "champion_probability_basis": overview.get("champion_probability_basis") or (champ_rows[0].get("probability_basis") if champ_rows else None),
         "most_likely_final": pair_rows[0] if pair_rows else None,
         "finalist_probabilities": finalist_rows,
         # The pipeline forecasts champion odds, not a discrete final-winner call; kept null
@@ -159,8 +182,8 @@ def build_snapshot(files: dict[str, Any], record_class: str = RECORD_GENUINE,
         "schema_version": SCHEMA_VERSION,
         "snapshot_id": f"{_compact_ts(generated_at)}__{phase}__{completed if completed is not None else 'na'}_completed",
         "generated_at": generated_at,
-        "display_date": (generated_at or "")[:10],
-        "timezone": "UTC",
+        "display_date": _display_date(generated_at),
+        "timezone": "America/Chicago",
         "tournament_phase": phase,
         "completed_matches": completed,
         "remaining_matches": overview.get("known_unresolved_matchups"),

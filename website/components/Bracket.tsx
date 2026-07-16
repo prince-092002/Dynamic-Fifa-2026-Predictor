@@ -7,12 +7,18 @@ import CountryFlag from "./CountryFlag";
 function MatchCard({ match, isCurrent, teamCodes }: { match: BracketMatch; isCurrent: boolean; teamCodes: Record<string, string | null> }) {
   const completed = match.state === "completed";
   const known = match.state === "scheduled_known";
+  const championshipFinal = known && match.stage.toLowerCase() === "final";
+  const dateLabel = match.date
+    ? championshipFinal
+      ? new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/Chicago", timeZoneName: "short" }).format(new Date(match.date))
+      : match.date.slice(0, 10)
+    : "";
   return (
     <div className={`card w-60 shrink-0 p-3.5 text-sm ${isCurrent && !completed ? "border-cyan/50 shadow-[0_0_0_1px_rgba(56,189,248,0.25)]" : ""} ${completed ? "border-pitch/25" : ""}`}>
       <div className="mb-2 flex items-center justify-between text-[0.68rem] text-fg3">
-        <span>{match.date ? match.date.slice(0, 10) : ""}</span>
+        <span>{dateLabel}</span>
         {completed ? <span className="inline-flex items-center gap-1 text-pitch"><Lock width={11} height={11} /> FINAL</span>
-          : known ? <span className="inline-flex items-center gap-1 text-cyan"><Bolt width={11} height={11} /> LIVE FORECAST</span> : null}
+          : known ? <span className="inline-flex items-center gap-1 text-cyan"><Bolt width={11} height={11} /> {championshipFinal ? "FINAL PREDICTION" : "LIVE FORECAST"}</span> : null}
       </div>
 
       {completed ? (
@@ -25,8 +31,9 @@ function MatchCard({ match, isCurrent, teamCodes }: { match: BracketMatch; isCur
         </>
       ) : known ? (
         <>
-          <Row name={match.team_a} code={match.team_a ? teamCodes[match.team_a] : null} prob={match.team_a_advance_probability} fav={match.predicted_favorite === match.team_a} />
-          <Row name={match.team_b} code={match.team_b ? teamCodes[match.team_b] : null} prob={match.team_b_advance_probability} fav={match.predicted_favorite === match.team_b} />
+          <Row name={match.team_a} code={match.team_a ? teamCodes[match.team_a] : null} prob={match.team_a_advance_probability} fav={match.predicted_favorite === match.team_a} digits={championshipFinal ? 1 : 0} />
+          <Row name={match.team_b} code={match.team_b ? teamCodes[match.team_b] : null} prob={match.team_b_advance_probability} fav={match.predicted_favorite === match.team_b} digits={championshipFinal ? 1 : 0} />
+          {championshipFinal && <p className="mt-2 text-[0.68rem] text-fg3">Probability of winning the final and championship</p>}
         </>
       ) : (
         <p className="py-2 text-fg3 italic">Winners of earlier rounds</p>
@@ -36,25 +43,28 @@ function MatchCard({ match, isCurrent, teamCodes }: { match: BracketMatch; isCur
   );
 }
 
-function Row({ name, code, won, prob, fav }: { name: string | null; code?: string | null; won?: boolean; prob?: number | null; fav?: boolean }) {
+function Row({ name, code, won, prob, fav, digits = 0 }: { name: string | null; code?: string | null; won?: boolean; prob?: number | null; fav?: boolean; digits?: number }) {
   return (
     <div className={`flex items-center justify-between rounded-md px-1.5 py-1 ${won ? "bg-pitch/10" : ""}`}>
       <span className={`flex min-w-0 items-center gap-2 ${won || fav ? "font-semibold text-fg" : "text-fg2"}`}>
         {name && <CountryFlag code={code} country={name} size="sm" />}
         <span className="truncate">{name}</span>
       </span>
-      {prob != null && <span className={`stat-num shrink-0 text-xs ${fav ? "text-cyan" : "text-fg3"}`}>{formatPct(prob, 0)}</span>}
+      {prob != null && <span className={`stat-num shrink-0 text-xs ${fav ? "text-cyan" : "text-fg3"}`}>{formatPct(prob, digits)}</span>}
       {won && <span className="ml-1 shrink-0 text-pitch">•</span>}
     </div>
   );
 }
 
 export default function Bracket({ bracket, teamCodes }: { bracket: BracketData; teamCodes: Record<string, string | null> }) {
+  const orderedRounds = bracket.current_phase === "final"
+    ? [...bracket.rounds].sort((left, right) => Number(right.stage === "Final") - Number(left.stage === "Final"))
+    : bracket.rounds;
   return (
     <div>
       <div className="mb-4"><SourceLegend /></div>
       <div className="-mx-4 flex gap-4 overflow-x-auto px-4 pb-3">
-        {bracket.rounds.map((round) => {
+        {orderedRounds.map((round) => {
           const isCurrent = round.stage.toLowerCase() === String(bracket.current_phase).replace(/_/g, " ").toLowerCase();
           return (
             <section key={round.stage} className="shrink-0" aria-label={round.stage}>

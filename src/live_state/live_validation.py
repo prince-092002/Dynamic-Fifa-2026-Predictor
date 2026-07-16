@@ -6,6 +6,10 @@ import json
 
 import pandas as pd
 
+from src.live_state.final_stage_probability import (
+    FINAL_PROBABILITY_BASIS,
+    canonical_final_champion_probabilities,
+)
 from src.live_state.live_config import LIVE_REPORT_DIR, LIVE_STATE_DIR, coerce_bool_series, ensure_live_directories, phase_prediction_status
 
 
@@ -115,6 +119,25 @@ def _integrity_checks(probabilities: pd.DataFrame, summary: dict, gate: dict, fo
         prob_values = pd.to_numeric(champion.get("champion_probability", pd.Series(dtype=float)), errors="coerce")
         in_range = bool(((prob_values >= 0) & (prob_values <= 1)).all())
         rows.append(_row("probabilities_numerically_valid", "pass" if in_range else "fail", "champion probabilities within [0, 1]" if in_range else "champion probability outside [0, 1]"))
+        bracket_path = LIVE_STATE_DIR / "merged_bracket_state.csv"
+        predictions_path = LIVE_STATE_DIR / "live_knockout_match_predictions.csv"
+        bracket = pd.read_csv(bracket_path) if bracket_path.exists() else pd.DataFrame()
+        predictions = pd.read_csv(predictions_path) if predictions_path.exists() else pd.DataFrame()
+        canonical = canonical_final_champion_probabilities(bracket, predictions)
+        if not canonical.empty:
+            actual = dict(zip(champion["team"].astype(str), pd.to_numeric(champion["champion_probability"], errors="coerce")))
+            expected = dict(zip(canonical["team"].astype(str), canonical["champion_probability"]))
+            differences = {team: abs(float(actual.get(team, float("nan"))) - float(probability)) for team, probability in expected.items()}
+            basis_ok = set(champion.get("probability_basis", pd.Series(dtype=str)).dropna().astype(str)) == {FINAL_PROBABILITY_BASIS}
+            consistent = set(actual) == set(expected) and basis_ok and all(value <= 1e-12 for value in differences.values())
+            rows.append(
+                _row(
+                    "final_stage_champion_matches_final_prediction",
+                    "pass" if consistent else "fail",
+                    f"direct final probabilities are canonical; max difference={max(differences.values(), default=0.0):.12f}; basis={FINAL_PROBABILITY_BASIS}",
+                    0 if consistent else 1,
+                )
+            )
     if summary.get("forecast_mode") and gate.get("forecast_mode"):
         agrees = str(summary.get("forecast_mode")) == str(gate.get("forecast_mode"))
         rows.append(_row("forecast_mode_agrees_with_gate", "pass" if agrees else "fail", f"summary={summary.get('forecast_mode')} gate={gate.get('forecast_mode')}"))

@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   buildPredictionHistoryDataset,
+  historyDisplayDate,
+  isConfirmedFinalSnapshot,
   selectHistorySnapshot,
 } from "../lib/history";
 
@@ -155,6 +157,46 @@ test("selects the nearest previous meaningful snapshot", () => {
   assert.equal(selectHistorySnapshot(dataset, "three").previous?.snapshot_id, "two");
 });
 
+test("previous matchday skips an earlier snapshot from the selected calendar date", () => {
+  const value = fixtureData();
+  const files = value.files as Record<string, ReturnType<typeof snapshot>>;
+  files["snapshots/four.json"] = snapshot(
+    "four",
+    "2026-07-15T23:15:25Z",
+    102,
+    [match(5, "Alpha", "Bravo", "Alpha", 0.52)],
+    0.52,
+  );
+  files["snapshots/five.json"] = snapshot(
+    "five",
+    "2026-07-16T00:15:25Z",
+    102,
+    [match(5, "Alpha", "Bravo", "Alpha", 0.52)],
+    0.52,
+  );
+  value.manifest.snapshots.push(
+    {
+      file: "snapshots/four.json",
+      snapshot_id: "four",
+      generated_at: "2026-07-15T23:15:25Z",
+      completed_matches: 102,
+    },
+    {
+      file: "snapshots/five.json",
+      snapshot_id: "five",
+      generated_at: "2026-07-16T00:15:25Z",
+      completed_matches: 102,
+    },
+  );
+
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  const selection = selectHistorySnapshot(dataset, "five");
+
+  assert.equal(selection.selected?.display_date, "2026-07-15");
+  assert.equal(selection.previous?.snapshot_id, "three");
+  assert.equal(selection.previous?.display_date, "2026-07-14");
+});
+
 test("date navigation uses the newest snapshot when a date has multiple updates", () => {
   const value = fixtureData();
   const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
@@ -162,6 +204,18 @@ test("date navigation uses the newest snapshot when a date has multiple updates"
     { displayDate: "2026-07-14", snapshotId: "three" },
     { displayDate: "2026-07-12", snapshotId: "two" },
   ]);
+});
+
+test("uses the Chicago calendar date when a UTC run crosses midnight", () => {
+  assert.equal(historyDisplayDate("2026-07-16T00:15:25Z"), "2026-07-15");
+
+  const value = fixtureData();
+  value.files["snapshots/three.json"].generated_at = "2026-07-16T00:15:25Z";
+  value.files["snapshots/three.json"].display_date = "2026-07-16";
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+
+  assert.equal(dataset.snapshots.at(-1)?.display_date, "2026-07-15");
+  assert.equal(dataset.dateOptions[0].displayDate, "2026-07-15");
 });
 
 test("renders multiple same-day match predictions", () => {
@@ -243,4 +297,14 @@ test("team flags and current statuses come from published website data", () => {
   const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
   assert.equal(dataset.teamCodes.Alpha, "AR");
   assert.equal(dataset.currentTeamStatuses.Bravo, "eliminated");
+});
+
+test("confirmed-final semantics require a final-stage snapshot with the official final matchup", () => {
+  const value = fixtureData();
+  const raw = value.files["snapshots/three.json"];
+  raw.main_forecast.most_likely_final.probability = 1;
+  raw.matchday_predictions = [{ ...match(5, "Alpha", "Bravo", "Alpha", 0.52), stage: "Final" }];
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  assert.equal(isConfirmedFinalSnapshot(dataset.snapshots.at(-1)!), true);
+  assert.equal(isConfirmedFinalSnapshot(dataset.snapshots[0]), false);
 });

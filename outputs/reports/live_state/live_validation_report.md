@@ -19,5 +19,6 @@
 | no_eliminated_team_as_finalist | pass | all finalist teams are in the surviving bracket | 0 |
 | no_placeholder_teams_in_outputs | pass | no TBD/placeholder team appears in forecast outputs | 0 |
 | probabilities_numerically_valid | pass | champion probabilities within [0, 1] | 0 |
+| final_stage_champion_matches_final_prediction | pass | direct final probabilities are canonical; max difference=0.000000000000; basis=direct_final_matchup_probability | 0 |
 | forecast_mode_agrees_with_gate | pass | summary=true_live_forecast gate=true_live_forecast | 0 |
 | provider_freshness_disclosed | pass | data_source_mode=fresh_api, cache_used=False, snapshot_used=False | 0 |

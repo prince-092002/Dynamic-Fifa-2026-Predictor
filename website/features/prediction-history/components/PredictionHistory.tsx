@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import CountryFlag from "@/components/CountryFlag";
 import { Calendar, Check, Lock, Route, Shield, Signal, Trophy } from "@/components/icons";
-import { selectHistorySnapshot } from "../lib/history";
+import { isConfirmedFinalSnapshot, selectHistorySnapshot } from "../lib/history";
 import type {
   HistoryMatchPrediction,
   HistoryProbability,
@@ -199,6 +199,8 @@ function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, prominent = 
   const forecast = snapshot.main_forecast;
   const champion = forecast.most_likely_champion;
   const final = forecast.most_likely_final;
+  const confirmedFinal = isConfirmedFinalSnapshot(snapshot);
+  const archivedMonteCarloFinal = confirmedFinal && forecast.champion_probability_basis !== "direct_final_matchup_probability";
   const provenance = snapshot.record_class === "genuine_archived_forecast"
     ? "Genuine archived forecast"
     : "Recovered from historical committed output";
@@ -218,6 +220,8 @@ function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, prominent = 
         <span className="chip">Phase: {phaseLabel(snapshot.tournament_phase)}</span>
         <span className="chip">{snapshot.completed_matches ?? "Unknown"} completed</span>
         <span className="chip">{(snapshot.simulation_count ?? 0).toLocaleString()} simulations</span>
+        {forecast.champion_probability_basis === "direct_final_matchup_probability" && <span className="chip">Direct final model probability</span>}
+        {archivedMonteCarloFinal && <span className="chip">Archived Monte Carlo title estimate</span>}
         {snapshot.source_quality_score !== null && <span className="chip">Source quality: {snapshot.source_quality_score}</span>}
       </div>
 
@@ -234,17 +238,22 @@ function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, prominent = 
           )}
         </div>
         <div className="history-headline-card">
-          <span>Projected final</span>
+          <span>{confirmedFinal ? "Confirmed Final" : "Projected final"}</span>
           <strong className="mt-3 block !text-lg">{final ? `${final.team_1} vs ${final.team_2}` : "Unavailable"}</strong>
-          <b className="mt-1 block">{final ? pct(final.probability) : ""}</b>
-          <small>Most likely final pairing at this update</small>
+          {!confirmedFinal && <b className="mt-1 block">{final ? pct(final.probability) : ""}</b>}
+          <small>{confirmedFinal ? "Official final matchup at this update" : "Most likely final pairing at this update"}</small>
         </div>
       </div>
 
       <div className="mt-6 grid gap-5 md:grid-cols-2">
         <ProbabilityList title="Champion probabilities" entries={forecast.champion_probabilities} teamCodes={teamCodes} color="var(--gold-c)" />
-        <ProbabilityList title="Finalist probabilities" entries={forecast.finalist_probabilities} teamCodes={teamCodes} color="var(--cyan)" />
+        {confirmedFinal && final
+          ? <ConfirmedFinalists teams={[final.team_1, final.team_2]} teamCodes={teamCodes} />
+          : <ProbabilityList title="Finalist probabilities" entries={forecast.finalist_probabilities} teamCodes={teamCodes} color="var(--cyan)" />}
       </div>
+      {archivedMonteCarloFinal && (
+        <p className="mt-3 text-xs text-fg3">This preserved update used Monte Carlo winner frequency for title odds; its Final Prediction card retains the direct XGBoost matchup probability.</p>
+      )}
 
       <div className="mt-7">
         <div className="flex items-center justify-between gap-3">
@@ -294,23 +303,42 @@ function ProbabilityList({ title, entries, teamCodes, color }: {
   );
 }
 
+function ConfirmedFinalists({ teams, teamCodes }: { teams: string[]; teamCodes: Record<string, string | null> }) {
+  return (
+    <div>
+      <h3 className="text-xs font-semibold uppercase text-fg3">Confirmed finalists</h3>
+      <div className="mt-3 grid gap-3">
+        {teams.map((team) => (
+          <div key={team} className="card flex items-center gap-3 p-3">
+            <CountryFlag code={teamCodes[team]} country={team} size="md" />
+            <strong className="font-display text-sm text-fg">{team}</strong>
+            <span className="ml-auto text-xs font-semibold uppercase text-pitch">Confirmed</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function MatchCard({ match, teamCodes, predictionLabel }: {
   match: HistoryMatchPrediction;
   teamCodes: Record<string, string | null>;
   predictionLabel: "Current Prediction" | "Historical Prediction";
 }) {
   const outcome = match.prediction_outcome;
+  const isFinal = match.stage.toLowerCase() === "final";
   return (
     <article className="history-match-card">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
-          <span className="kicker">{match.stage}</span>
+          <span className="kicker">{isFinal ? "Final Prediction" : match.stage}</span>
           <p className="mt-1 flex items-center gap-1.5 text-xs text-fg3"><Calendar width={12} height={12} /> {kickoffLabel(match.scheduled_at)}</p>
         </div>
         <span className={`history-prediction-kind ${predictionLabel === "Current Prediction" ? "current" : "historical"}`}>{predictionLabel}</span>
       </div>
 
       <div className="mt-4 space-y-3">
+        {isFinal && <p className="text-xs text-fg3">Probability of winning the final and championship</p>}
         <MatchTeam team={match.team_a} probability={match.team_a_win_probability} winner={match.predicted_winner === match.team_a} code={teamCodes[match.team_a]} />
         <MatchTeam team={match.team_b} probability={match.team_b_win_probability} winner={match.predicted_winner === match.team_b} code={teamCodes[match.team_b]} />
       </div>

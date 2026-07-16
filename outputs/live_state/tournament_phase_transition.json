@@ -1,13 +1,13 @@
 {
-  "previous_phase": "semifinal",
-  "current_phase": "semifinal",
+  "previous_phase": "final",
+  "current_phase": "final",
   "phase_changed": false,
-  "detected_at": "2026-07-14T23:57:46+00:00",
+  "detected_at": "2026-07-16T00:15:25+00:00",
   "newly_resolved_matchups": 0,
   "newly_completed_matches": 0,
-  "completed_match_count": 101,
+  "completed_match_count": 102,
   "resolved_matchup_ids": [
-    "football_data_org_537388"
+    "football_data_org_537390"
   ],
   "first_recorded_run": false
 }

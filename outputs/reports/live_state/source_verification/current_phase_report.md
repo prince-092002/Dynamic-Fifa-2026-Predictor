@@ -1,10 +1,10 @@
 # Current Phase Report
 
-- Current phase: semifinal
-- Completed matches: 101
+- Current phase: final
+- Completed matches: 102
 - Completed group matches: 72
-- Completed knockout matches: 29
-- Latest completed match date: 2026-07-14T19:00:00+00:00
-- Next scheduled match date: 2026-07-15T19:00:00+00:00
+- Completed knockout matches: 30
+- Latest completed match date: 2026-07-15T19:00:00+00:00
+- Next scheduled match date: 2026-07-18T21:00:00+00:00
 - Confidence: high
-- Reason: Semifinals are present or quarterfinals are completed.
+- Reason: Final is live or semifinals are completed.

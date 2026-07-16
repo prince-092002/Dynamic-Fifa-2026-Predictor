@@ -184,7 +184,7 @@
   "macro_f1_note": "XGBoost's lower macro-F1 vs Logistic Regression is a draw-class argmax artifact, not a defect: draws are the minority outcome (23%) and rarely the single most likely result, so a calibrated model seldom argmax-predicts them. XGBoost is chosen for its superior calibration (ECE 0.005) and log loss because the Monte Carlo simulator samples from probabilities \u2014 it never needs the model to hard-predict a draw. Full analysis: Phase 5G report."
  },
  "_meta": {
-  "generated_at": "2026-07-15T21:59:10+00:00",
+  "generated_at": "2026-07-16T00:15:25+00:00",
   "source_files": [
    "outputs/models/model_registry.json",
    "outputs/models/selected_model.joblib",

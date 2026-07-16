@@ -1,6 +1,6 @@
 # End-of-Matchday Update Summary
 
-- Refresh timestamp: 2026-07-14T23:57:47+00:00
+- Refresh timestamp: 2026-07-16T00:15:25+00:00
 - Update status: passed
 - New completed matches detected: 0
 - Live forecast status: success
@@ -8,12 +8,12 @@
 - Forecast mode: true_live_forecast
 - Public label: True live forecast from current tournament state
 - Source quality score: 100
-- Current phase: semifinal
-- Fallback usage: 3.23%
+- Current phase: final
+- Fallback usage: 0.00%
 - Live matchup predictions: success (1 matchups predicted by the model)
 - Live model probability uses in simulation: 10000
-- Tournament phase before update: semifinal
-- Tournament phase after update: semifinal
+- Tournament phase before update: final
+- Tournament phase after update: final
 - Phase transition detected: False
 - Newly completed matches (since last forecast run): 0
 - Newly resolved knockout matchups: 0

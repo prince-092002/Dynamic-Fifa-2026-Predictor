@@ -54,8 +54,9 @@ def write_finalist_prediction_summary() -> str:
     provider = "football_data_org" if gate.get("football_data_org_fixture_rows", 0) > 0 else gate.get("provider", "unknown")
     phase = summary.get("current_phase", "unknown")
     path = LIVE_REPORT_DIR / "finalist_prediction_summary.md"
+    is_final = str(phase).lower() == "final"
     lines = [
-        "# Finalist Prediction Summary",
+        "# Final Prediction Summary" if is_final else "# Finalist Prediction Summary",
         "",
         f"- Current phase: {phase}",
         f"- Selected live provider: {provider}",
@@ -64,22 +65,33 @@ def write_finalist_prediction_summary() -> str:
         f"- Source quality score: {summary.get('source_quality_score', 'unknown')}",
         f"- Forecast ran: {summary.get('forecast_ran', True)}",
         f"- Prediction relevance: {phase_prediction_status(phase)}",
+        f"- Champion probability basis: {summary.get('champion_probability_basis', 'monte_carlo_simulation')}",
+        f"- Monte Carlo diagnostic leader: {summary.get('monte_carlo_top_champion', 'unknown')} ({summary.get('monte_carlo_top_champion_probability', 0):.4f})",
         f"- Live model probability usage: {live_model_uses} of {total_sourced} simulated matches ({live_model_uses / total_sourced:.2%})" if total_sourced else "- Live model probability usage: not recorded",
         f"- Elo fallback probability usage: {elo_uses} of {total_sourced} simulated matches ({elo_uses / total_sourced:.2%})" if total_sourced else "- Elo fallback probability usage: not recorded",
         "",
-        "## Top Finalist Pairs",
-        "",
-        "| Pair | Probability |",
-        "|---|---:|",
     ]
-    for _, row in pair.head(10).iterrows():
-        lines.append(f"| {row['finalist_pair_key']} | {row['probability']:.4f} |")
-    lines.extend(["", "## Top Reach-Final Teams", "", "| Team | Probability |", "|---|---:|"])
-    for _, row in reach.head(10).iterrows():
-        lines.append(f"| {row['team']} | {row['reach_final_probability']:.4f} |")
-    lines.extend(["", "## Top Champion Probabilities", "", "| Team | Probability |", "|---|---:|"])
+    if is_final:
+        lines.extend(["", "## Confirmed Final", "", "| Matchup | Status |", "|---|---|"])
+        for _, row in pair.head(1).iterrows():
+            lines.append(f"| {row['finalist_pair_key']} | Confirmed |")
+        lines.extend(["", "## Confirmed Finalists", ""])
+        for team in sorted(set(reach.get("team", pd.Series(dtype=str)).dropna().astype(str))):
+            lines.append(f"- {team}")
+        lines.extend(["", "## Championship Probabilities", "", "| Team | Canonical direct probability | Monte Carlo diagnostic |", "|---|---:|---:|"])
+    else:
+        lines.extend(["", "## Top Finalist Pairs", "", "| Pair | Probability |", "|---|---:|"])
+        for _, row in pair.head(10).iterrows():
+            lines.append(f"| {row['finalist_pair_key']} | {row['probability']:.4f} |")
+        lines.extend(["", "## Top Reach-Final Teams", "", "| Team | Probability |", "|---|---:|"])
+        for _, row in reach.head(10).iterrows():
+            lines.append(f"| {row['team']} | {row['reach_final_probability']:.4f} |")
+        lines.extend(["", "## Top Champion Probabilities", "", "| Team | Probability |", "|---|---:|"])
     for _, row in champion.head(10).iterrows():
-        lines.append(f"| {row['team']} | {row['champion_probability']:.4f} |")
+        if is_final:
+            lines.append(f"| {row['team']} | {row['champion_probability']:.4f} | {row.get('monte_carlo_champion_probability', row['champion_probability']):.4f} |")
+        else:
+            lines.append(f"| {row['team']} | {row['champion_probability']:.4f} |")
     path.write_text("\n".join(lines), encoding="utf-8")
     return str(path)
 

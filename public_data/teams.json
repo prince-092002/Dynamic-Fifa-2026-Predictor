@@ -47,7 +47,7 @@
    "goals_for": 19,
    "goals_against": 7,
    "goal_difference": 12,
-   "champion_probability": 0.4777,
+   "champion_probability": 0.480529,
    "reach_final_probability": 1.0,
    "next_matchup": {
     "opponent": "Spain",
@@ -1223,7 +1223,7 @@
    "goals_for": 13,
    "goals_against": 1,
    "goal_difference": 12,
-   "champion_probability": 0.5223,
+   "champion_probability": 0.519471,
    "reach_final_probability": 1.0,
    "next_matchup": {
     "opponent": "Argentina",
@@ -1454,7 +1454,7 @@
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-15T21:59:10+00:00",
+  "generated_at": "2026-07-16T00:15:25+00:00",
   "source_files": [
    "outputs/live_state/football_data_org_teams_normalized.csv",
    "outputs/live_state/merged_bracket_state.csv",
@@ -1463,6 +1463,6 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "final",
-  "run_id": "2026-07-15T215633Z-91cbff83"
+  "run_id": "2026-07-16T001427Z-9f49d25b"
  }
 }

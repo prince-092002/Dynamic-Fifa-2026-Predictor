@@ -25,3 +25,7 @@ run_id,timestamp,phase,simulation_count,provider,forecast_mode,team,reach_final_
 2026-07-14T235611Z-10c659fc,2026-07-14T23:57:46+00:00,semifinal,10000,football_data_org,true_live_forecast,Spain,1.0
 2026-07-14T235611Z-10c659fc,2026-07-14T23:57:46+00:00,semifinal,10000,football_data_org,true_live_forecast,Argentina,0.6081
 2026-07-14T235611Z-10c659fc,2026-07-14T23:57:46+00:00,semifinal,10000,football_data_org,true_live_forecast,England,0.3919
+2026-07-15T215633Z-91cbff83,2026-07-15T21:59:09+00:00,final,10000,football_data_org,true_live_forecast,Spain,1.0
+2026-07-15T215633Z-91cbff83,2026-07-15T21:59:09+00:00,final,10000,football_data_org,true_live_forecast,Argentina,1.0
+2026-07-16T001427Z-9f49d25b,2026-07-16T00:15:25+00:00,final,10000,football_data_org,true_live_forecast,Spain,1.0
+2026-07-16T001427Z-9f49d25b,2026-07-16T00:15:25+00:00,final,10000,football_data_org,true_live_forecast,Argentina,1.0

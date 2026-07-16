@@ -38,7 +38,7 @@ models = pd.DataFrame(insights.get("models", []))
 if not models.empty:
     models["selected"] = models["selected"].map({True: "✅ selected", False: ""})
     models.columns = ["Model", "Selected", "Accuracy", "Log loss", "Brier", "Macro F1", "Train rows", "Test rows"]
-    st.dataframe(models, use_container_width=True, hide_index=True)
+    st.dataframe(models, width="stretch", hide_index=True)
 
 diagnostics = insights.get("diagnostics")
 if diagnostics:
@@ -55,7 +55,7 @@ if diagnostics:
             "Actual": actual.get(cls), "Predicted": predicted.get(cls),
         })
     if diag_rows:
-        st.dataframe(pd.DataFrame(diag_rows), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(diag_rows), width="stretch", hide_index=True)
     st.caption(f"Calibration error (ECE): {diagnostics.get('calibration_ece')} — near-perfectly calibrated.")
     st.info(diagnostics.get("macro_f1_note", ""))
 
@@ -83,7 +83,7 @@ if importance:
     frame = pd.DataFrame(importance[:10]).sort_values("importance")
     figure = px.bar(frame, x="importance", y="feature", orientation="h", title="Top 10 global XGBoost feature importances")
     figure.update_layout(height=380)
-    st.plotly_chart(apply_plotly(figure), use_container_width=True)
+    st.plotly_chart(apply_plotly(figure), width="stretch")
     st.info(insights.get("importance_note", ""))
 else:
     missing("Global feature importance could not be extracted from the selected model artifact.")

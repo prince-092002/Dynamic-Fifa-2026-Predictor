@@ -1,6 +1,6 @@
 # Dashboard Validation
 
-- Generated: 2026-07-14T22:22:08+00:00
+- Generated: 2026-07-16T00:24:48+00:00
 
 | Check | Status | Message |
 |---|---|---|
@@ -10,7 +10,7 @@
 | dashboard_input:probability_source_history.csv | pass | readable |
 | team_stats:only_completed_matches | pass | team stats contain only completed (non-future) matches |
 | team_stats:no_duplicate_identities | pass | 48 unique team identities |
-| history:champion_probability_history.csv:no_duplicate_run_entries | pass | 23 rows, no duplicate ['run_id', 'team'] entries |
-| history:finalist_probability_history.csv:no_duplicate_run_entries | pass | 23 rows, no duplicate ['run_id', 'team'] entries |
-| history:finalist_pair_probability_history.csv:no_duplicate_run_entries | pass | 34 rows, no duplicate ['run_id', 'finalist_team_1', 'finalist_team_2'] entries |
-| history:probability_source_history.csv:no_duplicate_run_entries | pass | 9 rows, no duplicate ['run_id'] entries |
+| history:champion_probability_history.csv:no_duplicate_run_entries | pass | 30 rows, no duplicate ['run_id', 'team'] entries |
+| history:finalist_probability_history.csv:no_duplicate_run_entries | pass | 30 rows, no duplicate ['run_id', 'team'] entries |
+| history:finalist_pair_probability_history.csv:no_duplicate_run_entries | pass | 38 rows, no duplicate ['run_id', 'finalist_team_1', 'finalist_team_2'] entries |
+| history:probability_source_history.csv:no_duplicate_run_entries | pass | 12 rows, no duplicate ['run_id'] entries |

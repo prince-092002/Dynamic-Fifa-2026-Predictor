@@ -28,13 +28,13 @@ else:
     frame = champion_history[champion_history["team"].isin(top_teams)]
     figure = px.line(frame, x="timestamp", y="champion_probability", color="team", markers=True, title="Champion probability over recorded forecast runs")
     figure.update_layout(yaxis_tickformat=".0%", height=420)
-    st.plotly_chart(apply_plotly(figure), use_container_width=True)
+    st.plotly_chart(apply_plotly(figure), width="stretch")
     finalist_history = pd.DataFrame(history.get("finalist", []))
     if not finalist_history.empty and finalist_history["run_id"].nunique() >= 2:
         frame = finalist_history[finalist_history["team"].isin(top_teams)]
         figure = px.line(frame, x="timestamp", y="reach_final_probability", color="team", markers=True, title="Reach-final probability over recorded runs")
         figure.update_layout(yaxis_tickformat=".0%", height=380)
-        st.plotly_chart(apply_plotly(figure), use_container_width=True)
+        st.plotly_chart(apply_plotly(figure), width="stretch")
 
 st.divider()
 st.subheader("Probability-source progression")
@@ -49,9 +49,9 @@ else:
     melted["source"] = melted["source"].map(label_map)
     figure = px.area(melted, x="timestamp", y="decisions", color="source", title="Simulation decisions by probability source (per recorded run)", groupnorm="fraction")
     figure.update_layout(yaxis_tickformat=".0%", height=420)
-    st.plotly_chart(apply_plotly(figure), use_container_width=True)
+    st.plotly_chart(apply_plotly(figure), width="stretch")
     st.info("Probability-source usage measures which probability engine supplied simulation decisions. It is not an accuracy metric.")
-    st.dataframe(runs[["timestamp", "tournament_phase", "simulation_count", "known_remaining_matchups", "model_driven_pct", "fallback_pct"]], use_container_width=True, hide_index=True)
+    st.dataframe(runs[["timestamp", "tournament_phase", "simulation_count", "known_remaining_matchups", "model_driven_pct", "fallback_pct"]], width="stretch", hide_index=True)
 
 st.divider()
 st.subheader("Tournament phase transitions")

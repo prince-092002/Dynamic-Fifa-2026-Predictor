@@ -13,13 +13,13 @@
  ],
  "simulations": 10000,
  "_meta": {
-  "generated_at": "2026-07-15T21:59:10+00:00",
+  "generated_at": "2026-07-16T00:15:25+00:00",
   "source_files": [
    "outputs/live_state/team_reach_final_probabilities.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "final",
-  "run_id": "2026-07-15T215633Z-91cbff83"
+  "run_id": "2026-07-16T001427Z-9f49d25b"
  }
 }

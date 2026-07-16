@@ -1,5 +1,5 @@
 {
-  "refresh_timestamp": "2026-07-15T21:55:51+00:00",
+  "refresh_timestamp": "2026-07-16T00:14:12+00:00",
   "mode": "matchday",
   "force": false,
   "source_used": "existing_processed_csv",
@@ -19,7 +19,7 @@
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\data_validation_report.csv",
     "C:\\Users\\abelp\\Desktop\\Fifa Project\\outputs\\reports\\live_state\\end_of_matchday_update_summary.md"
   ],
-  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260715_165552",
+  "backup_folder": "C:\\Users\\abelp\\Desktop\\Fifa Project\\data\\backups\\20260715_191412",
   "validation_status": "passed",
   "warnings": [
     "API-Football returned 0 fixture rows; using existing processed CSVs."
@@ -33,7 +33,7 @@
     "top_finalist_pair": "Argentina vs Spain",
     "top_finalist_pair_probability": 1.0,
     "top_champion": "Spain",
-    "top_champion_probability": 0.5223,
+    "top_champion_probability": 0.5194714075169387,
     "fallback_bracket_usage": 0.0,
     "forecast_mode": "true_live_forecast",
     "public_label": "True live forecast from current tournament state",
@@ -45,14 +45,14 @@
     "probability_source_counts": {
       "live_model_exact": 10000
     },
-    "run_id": "2026-07-15T215633Z-91cbff83",
+    "run_id": "2026-07-16T001427Z-9f49d25b",
     "phase_transition": {
-      "previous_phase": "semifinal",
+      "previous_phase": "final",
       "current_phase": "final",
-      "phase_changed": true,
-      "detected_at": "2026-07-15T21:59:09+00:00",
-      "newly_resolved_matchups": 1,
-      "newly_completed_matches": 1,
+      "phase_changed": false,
+      "detected_at": "2026-07-16T00:15:25+00:00",
+      "newly_resolved_matchups": 0,
+      "newly_completed_matches": 0,
       "completed_match_count": 102,
       "resolved_matchup_ids": [
         "football_data_org_537390"

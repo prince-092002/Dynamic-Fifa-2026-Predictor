@@ -1,7 +1,7 @@
 {
- "run_id": "2026-07-15T215633Z-91cbff83",
- "run_started_at": "2026-07-15T21:56:33+00:00",
- "run_completed_at": "2026-07-15T21:59:09+00:00",
+ "run_id": "2026-07-16T001427Z-9f49d25b",
+ "run_started_at": "2026-07-16T00:14:27+00:00",
+ "run_completed_at": "2026-07-16T00:15:25+00:00",
  "provider": "football_data_org",
  "forecast_mode": "true_live_forecast",
  "source_quality_score": 100,
@@ -15,11 +15,11 @@
  "live_forecast_validation": "pass",
  "live_knockout_prediction_validation": "pass",
  "phase_transition": {
-  "previous_phase": "semifinal",
+  "previous_phase": "final",
   "current_phase": "final",
-  "phase_changed": true,
-  "newly_resolved_matchups": 1,
-  "newly_completed_matches": 1
+  "phase_changed": false,
+  "newly_resolved_matchups": 0,
+  "newly_completed_matches": 0
  },
  "top_finalist_pair": "Argentina vs Spain",
  "top_champion": "Spain",
@@ -31,7 +31,7 @@
  "provider_rate_limited": true,
  "broader_refresh_validation": "pass",
  "_meta": {
-  "generated_at": "2026-07-15T21:59:10+00:00",
+  "generated_at": "2026-07-16T00:15:25+00:00",
   "source_files": [
    "outputs/live_state/latest_live_run_manifest.json"
   ]

@@ -18,12 +18,13 @@ const SORTS: Record<string, (a: Team, b: Team) => number> = {
 };
 const STATUS = ["All", "Still alive", "Eliminated"];
 
-export default function TeamExplorer({ teams }: { teams: Team[] }) {
+export default function TeamExplorer({ teams, finalStage = false }: { teams: Team[]; finalStage?: boolean }) {
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState("All");
   const [group, setGroup] = useState("All");
   const [sort, setSort] = useState("Champion odds");
   const groups = useMemo(() => Array.from(new Set(teams.map((t) => t.group).filter(Boolean))).sort() as string[], [teams]);
+  const sortLabels = finalStage ? Object.keys(SORTS).filter((label) => label !== "Finalist odds") : Object.keys(SORTS);
 
   const filtered = useMemo(() => {
     let list = teams;
@@ -51,7 +52,7 @@ export default function TeamExplorer({ teams }: { teams: Team[] }) {
           </select>
           <span className="ml-auto flex flex-wrap items-center gap-1.5">
             <span className="text-xs text-fg3">Sort</span>
-            {Object.keys(SORTS).map((s) => (
+            {sortLabels.map((s) => (
               <button key={s} onClick={() => setSort(s)} className={`chip chip-btn !py-1 !px-2.5 !text-xs ${sort === s ? "chip-active" : ""}`}>{s}</button>
             ))}
           </span>

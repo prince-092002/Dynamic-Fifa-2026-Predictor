@@ -7,8 +7,9 @@ predicted probabilities are never altered.
 """
 
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import streamlit as st
 
@@ -97,6 +98,28 @@ def fmt_dt(iso: str) -> str:
         return str(iso)
 
 
+def fmt_dt_local(iso: str) -> str:
+    try:
+        value = datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
+        if value.tzinfo is None:
+            value = value.replace(tzinfo=timezone.utc)
+        local = value.astimezone(ZoneInfo("America/Chicago"))
+        return local.strftime("%b %d, %Y at %I:%M %p %Z").replace(" at 0", " at ")
+    except Exception:
+        return fmt_dt(iso)
+
+
+def history_display_date(snapshot: dict) -> str:
+    """Return the update's calendar date in the audience's Chicago timezone."""
+    try:
+        value = datetime.fromisoformat(str(snapshot.get("generated_at", "")).replace("Z", "+00:00"))
+        if value.tzinfo is None:
+            value = value.replace(tzinfo=timezone.utc)
+        return value.astimezone(ZoneInfo("America/Chicago")).date().isoformat()
+    except Exception:
+        return snapshot.get("display_date") or ""
+
+
 def pctf(v, d=1):
     return f"{float(v) * 100:.{d}f}%" if v is not None else "—"
 
@@ -108,7 +131,7 @@ def flag(team, w=24):
 # newest meaningful production snapshot per calendar date
 by_date = {}
 for s in snapshots:
-    by_date[s.get("display_date")] = s   # snapshots sorted ascending -> last write per date wins (latest)
+    by_date[history_display_date(s)] = s  # snapshots sorted ascending -> latest local update per date wins
 dates = sorted(by_date.keys(), reverse=True)
 
 sel_date = st.pills("Prediction date", [fmt_date(d) for d in dates],
@@ -119,7 +142,11 @@ selected = by_date[sel_iso]
 # index for "previous meaningful" relative to the selected snapshot
 order = snapshots  # ascending by (completed, generated_at)
 sel_idx = max(i for i, s in enumerate(order) if s.get("snapshot_id") == selected.get("snapshot_id"))
-previous = order[sel_idx - 1] if sel_idx > 0 else None
+selected_display_date = history_display_date(selected)
+previous = next(
+    (s for s in reversed(order[:sel_idx]) if history_display_date(s) != selected_display_date),
+    None,
+)
 is_latest = sel_idx == len(order) - 1
 
 
@@ -132,13 +159,21 @@ def render_meta(snap, title):
     cls = snap.get("record_class", "")
     cls_kind = "genuine" if cls == "genuine_archived_forecast" else "recovered"
     cls_label = "Genuine archived forecast" if cls_kind == "genuine" else "Recovered from committed output"
+    is_final = str(snap.get("tournament_phase", "")).lower() == "final"
+    if mf.get("champion_probability_basis") == "direct_final_matchup_probability":
+        basis_tag = '<span class="ph-tag">Basis <b>Direct final model probability</b></span>'
+    elif is_final:
+        basis_tag = '<span class="ph-tag">Basis <b>Archived Monte Carlo title estimate</b></span>'
+    else:
+        basis_tag = ""
     st.markdown(f'<div class="ph-sec">{title}</div>', unsafe_allow_html=True)
     st.markdown(
         f'<div class="ph-meta">'
-        f'<span class="ph-tag">Generated <b>{fmt_dt(snap.get("generated_at"))}</b></span>'
+        f'<span class="ph-tag">Generated <b>{fmt_dt_local(snap.get("generated_at"))}</b></span>'
         f'<span class="ph-tag">Phase <b>{str(snap.get("tournament_phase","")).title()}</b></span>'
         f'<span class="ph-tag">Completed <b>{snap.get("completed_matches")}</b></span>'
         f'<span class="ph-tag">Sims <b>{(snap.get("simulation_count") or 0):,}</b></span>'
+        f'{basis_tag}'
         f'<span class="ph-tag">Source quality <b>{snap.get("source_quality_score")}</b></span>'
         f'<span class="ph-class {cls_kind}">{cls_label}</span>'
         f'</div>', unsafe_allow_html=True)
@@ -150,6 +185,8 @@ def render_forecast(snap):
     mf = snap.get("main_forecast", {})
     champ = mf.get("most_likely_champion") or {}
     final = mf.get("most_likely_final") or {}
+    final_match = next((m for m in snap.get("matchday_predictions", []) if str(m.get("stage", "")).lower() == "final"), None)
+    confirmed_final = str(snap.get("tournament_phase", "")).lower() == "final" and final.get("probability", 0) >= 0.999999 and final_match is not None
     html = ['<div class="ph-card">']
     html.append(
         f'<div class="ph-champ">{flag(champ.get("team"), 34)}'
@@ -158,8 +195,8 @@ def render_forecast(snap):
         f'<div class="ph-row" style="color:{FG3}">Most likely champion at this point</div>')
     if final.get("team_1"):
         html.append(
-            f'<div class="ph-row" style="margin-top:.6rem"><span class="t">Projected final</span>'
-            f'<span class="v">{final.get("team_1")} vs {final.get("team_2")} · {pctf(final.get("probability"))}</span></div>')
+            f'<div class="ph-row" style="margin-top:.6rem"><span class="t">{"Confirmed Final" if confirmed_final else "Projected final"}</span>'
+            f'<span class="v">{final.get("team_1")} vs {final.get("team_2")}{" · Official matchup" if confirmed_final else " · " + pctf(final.get("probability"))}</span></div>')
     html.append(f'<div class="ph-row" style="margin-top:.7rem;color:{FG3}">Champion probabilities</div>')
     top = (mf.get("champion_probabilities") or [])[:6]
     mx = max([c.get("probability") or 0 for c in top], default=1) or 1
@@ -195,40 +232,15 @@ def render_matches(snap):
         else:
             foot += '<span class="ph-out pending">PENDING</span>'
         kickoff = (m.get("scheduled_at") or "")[:10]
+        final_label = "Final Prediction · probability of winning the final and championship" if str(m.get("stage", "")).lower() == "final" else m.get("stage", "")
         st.markdown(
-            f'<div class="ph-match"><div class="head">{m.get("stage","")} · {kickoff}'
+            f'<div class="ph-match"><div class="head">{final_label} · {kickoff}'
             f' &nbsp;•&nbsp; predicted winner: <b style="color:{GOLD}">{winner}</b></div>'
             f'<div class="ph-side {"win" if a_win else ""}">{flag(a,22)}<span class="nm">{a}</span>'
             f'<span class="p" style="color:{GOLD if a_win else FG2}">{pctf(pa)}</span></div>'
             f'<div class="ph-side {"win" if not a_win else ""}">{flag(b,22)}<span class="nm">{b}</span>'
             f'<span class="p" style="color:{GOLD if not a_win else FG2}">{pctf(pb)}</span></div>'
             f'<div class="ph-foot">{foot}</div></div>', unsafe_allow_html=True)
-
-
-def render_movement(cur, prev):
-    if not prev:
-        return
-    cur_m, prev_m = champ_prob_map(cur), champ_prob_map(prev)
-    teams_all = list(dict.fromkeys(list(prev_m.keys()) + list(cur_m.keys())))
-    rows = []
-    for t in teams_all:
-        before, after = prev_m.get(t), cur_m.get(t)
-        if after is None:
-            rows.append((t, before, None, "Eliminated"))
-        elif before is None:
-            rows.append((t, None, after, "New"))
-        else:
-            rows.append((t, before, after, f"{(after-before)*100:+.1f} pts"))
-    rows.sort(key=lambda r: -(r[2] or 0))
-    st.markdown(f'<div class="ph-row" style="color:{FG3};margin-top:.2rem">Champion-probability movement vs previous update</div>', unsafe_allow_html=True)
-    for t, before, after, delta in rows[:6]:
-        color = CRIMSON if delta == "Eliminated" else (PITCH if (after or 0) >= (before or 0) else AMBER)
-        b_txt = pctf(before) if before is not None else "—"
-        a_txt = pctf(after) if after is not None else "Eliminated"
-        st.markdown(
-            f'<div class="ph-row">{flag(t,20)}<span class="t" style="min-width:90px">{t}</span>'
-            f'<span style="color:{FG2}">{b_txt} → </span><span class="v" style="color:{color}">{a_txt}</span>'
-            f'<span style="margin-left:.5rem;color:{color};font-size:.8rem">{delta}</span></div>', unsafe_allow_html=True)
 
 
 # ================= layout =================
@@ -240,9 +252,6 @@ col1, col2 = st.columns(2, gap="large")
 with col1:
     render_meta(selected, "Current Update" if is_latest else f"Selected Forecast · {fmt_date(sel_iso)}")
     render_forecast(selected)
-    if previous:
-        st.markdown('<div style="height:.6rem"></div>', unsafe_allow_html=True)
-        render_movement(selected, previous)
 with col2:
     st.markdown('<div class="ph-sec">Matchday Predictions</div>', unsafe_allow_html=True)
     st.caption("What the model predicted for the matches that were upcoming when this forecast was made.")

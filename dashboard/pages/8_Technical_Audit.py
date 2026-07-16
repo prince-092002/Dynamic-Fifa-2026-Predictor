@@ -36,7 +36,7 @@ st.subheader("Probability-source counts (latest run)")
 sources = manifest.get("probability_sources") or {}
 if sources:
     frame = pd.DataFrame([{"Source": key, "Label": source_label(key), "Decisions": value} for key, value in sources.items()]).sort_values("Decisions", ascending=False)
-    st.dataframe(frame, use_container_width=True, hide_index=True)
+    st.dataframe(frame, width="stretch", hide_index=True)
 else:
     missing("No probability-source counts in the manifest.")
 

@@ -1,5 +1,3 @@
 {
-  "completed_result": 10000,
-  "live_model_exact": 10000,
-  "elo_fallback": 10000
+  "live_model_exact": 10000
 }

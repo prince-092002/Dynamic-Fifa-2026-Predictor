@@ -57,6 +57,12 @@ def test_build_preserves_probabilities_exactly():
     assert m["prediction_outcome"] == "pending" and m["actual_winner"] is None
 
 
+def test_display_date_uses_chicago_calendar_date():
+    snap = sn.build_snapshot(make_files(gen="2026-07-16T00:15:25+00:00"))
+    assert snap["display_date"] == "2026-07-15"
+    assert snap["timezone"] == "America/Chicago"
+
+
 def test_champion_probabilities_sum_close_to_one():
     snap = sn.build_snapshot(make_files(champ=[("Spain", 0.5), ("Argentina", 0.3), ("England", 0.2)]))
     total = sum(c["probability"] for c in snap["main_forecast"]["champion_probabilities"])

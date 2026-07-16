@@ -30,6 +30,8 @@ export default function Home() {
   const teamCodes = Object.fromEntries(teams.map((t) => [t.team, t.code]));
   const contenders = (champion?.entries ?? []).slice().sort((a, b) => b.champion_probability - a.champion_probability).slice(0, 5);
   const live = overview?.forecast_mode === "true_live_forecast";
+  const isFinalStage = overview?.current_phase === "final";
+  const confirmedFinal = isFinalStage ? pairs?.entries?.slice().sort((a, b) => b.probability - a.probability)[0] : null;
 
   return (
     <>
@@ -77,7 +79,7 @@ export default function Home() {
             <SectionHead kicker="Live tournament snapshot" title="The state of play" icon={<Signal width={14} height={14} />}
               sub={overview.public_label ?? undefined} />
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              <StatCard icon={<Pitch width={17} height={17} />} label="Current phase" value={formatPhase(overview.current_phase)} accent="var(--cyan)" hint={`${overview.known_unresolved_matchups} matchups unresolved`} />
+              <StatCard icon={<Pitch width={17} height={17} />} label="Current phase" value={formatPhase(overview.current_phase)} accent="var(--cyan)" hint={`${overview.known_unresolved_matchups} ${overview.known_unresolved_matchups === 1 ? "matchup" : "matchups"} unresolved`} />
               <StatCard icon={<Lock width={17} height={17} />} label="Matches complete" value={overview.completed_matches ?? "—"} accent="var(--pitch)" hint="locked · never re-simulated" />
               <StatCard icon={<Team width={17} height={17} />} label="Teams remaining" value={overview.teams_alive} accent="var(--gold-c)" hint={`${overview.teams_eliminated} eliminated`} />
               <StatCard icon={<Signal width={17} height={17} />} label="Source quality" value={`${overview.source_quality_score ?? "—"}/100`} accent="var(--cyan)"
@@ -95,8 +97,9 @@ export default function Home() {
                     <span className="display text-3xl md:text-4xl text-fg">{overview.top_champion}</span>
                   </div>
                   <p className="mt-2 max-w-md text-sm text-fg2">
-                    Highest championship probability across {overview.simulations?.toLocaleString()} Monte Carlo simulations of the remaining bracket. Final:{" "}
-                    <span className="text-fg">{overview.top_finalist_pair}</span> ({formatPct(overview.top_finalist_pair_probability)}).
+                    {isFinalStage
+                      ? <>Direct XGBoost probability of winning the confirmed final and championship. <span className="text-fg">{overview.top_finalist_pair}</span>.</>
+                      : <>Highest championship probability across {overview.simulations?.toLocaleString()} Monte Carlo simulations of the remaining bracket. Projected final: <span className="text-fg">{overview.top_finalist_pair}</span> ({formatPct(overview.top_finalist_pair_probability)}).</>}
                   </p>
                 </div>
                 <div className="relative flex items-center justify-center md:pr-4">
@@ -111,7 +114,7 @@ export default function Home() {
         {contenders.length > 0 && (
           <Section id="forecast">
             <SectionHead kicker="The title race" title="Who will win?" icon={<Trophy width={14} height={14} />}
-              sub={`Championship probability from the current live forecast${champion?.simulations ? ` · ${champion.simulations.toLocaleString()} simulations` : ""}.`} />
+              sub={isFinalStage ? "Direct model probability of winning the confirmed final and championship." : `Championship probability from the current live forecast${champion?.simulations ? ` · ${champion.simulations.toLocaleString()} simulations` : ""}.`} />
             <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
               {contenders.map((c, i) => {
                 const t = teamBy.get(c.team);
@@ -129,7 +132,7 @@ export default function Home() {
                       </div>
                       <ProbRing value={c.champion_probability} size={featured ? 84 : 66} stroke={featured ? 8 : 7} color={RANK_ACCENT[i]} label="champ" />
                     </div>
-                    {t?.reach_final_probability != null && (
+                    {!isFinalStage && t?.reach_final_probability != null && (
                       <div className="mt-4">
                         <div className="mb-1 flex justify-between text-xs text-fg2"><span>Reach final</span><span className="stat-num text-fg">{formatPct(t.reach_final_probability)}</span></div>
                         <Meter value={t.reach_final_probability} color={featured ? "var(--gold-c)" : "var(--cyan)"} />
@@ -143,7 +146,19 @@ export default function Home() {
                 <Arrow width={18} height={18} />
               </Link>
             </div>
-            {pairs?.entries?.length ? (
+            {confirmedFinal ? (
+              <div className="card mt-4 p-5">
+                <span className="kicker inline-flex items-center gap-2 text-pitch"><Route width={14} height={14} /> Confirmed Final</span>
+                <div className="mt-4 flex flex-wrap items-center gap-3 text-lg font-semibold text-fg">
+                  <CountryFlag code={teamBy.get(confirmedFinal.finalist_team_1)?.code} country={confirmedFinal.finalist_team_1} size="lg" />
+                  <span>{confirmedFinal.finalist_team_1}</span>
+                  <span className="text-sm font-normal text-fg3">vs</span>
+                  <CountryFlag code={teamBy.get(confirmedFinal.finalist_team_2)?.code} country={confirmedFinal.finalist_team_2} size="lg" />
+                  <span>{confirmedFinal.finalist_team_2}</span>
+                  <span className="chip ml-auto !border-pitch/35 !text-pitch"><Check width={13} height={13} /> Official matchup</span>
+                </div>
+              </div>
+            ) : pairs?.entries?.length ? (
               <div className="card mt-4 p-5">
                 <span className="kicker inline-flex items-center gap-2"><Route width={14} height={14} /> Finals</span>
                 <div className="mt-3 space-y-2.5">
@@ -207,7 +222,7 @@ export default function Home() {
         {/* ============ BRACKET ============ */}
         <Section id="bracket">
           <SectionHead kicker="Knockout path" title="The road to the final" icon={<Route width={14} height={14} />}
-            sub="Completed results are locked; unresolved matchups show the live XGBoost advance probability." />
+            sub={isFinalStage ? "The finalists are confirmed; the unresolved Final shows each team's probability of winning the championship." : "Completed results are locked; unresolved matchups show the live XGBoost advance probability."} />
           {bracket ? <Bracket bracket={bracket} teamCodes={teamCodes} /> : <div className="card p-6 text-fg2">Bracket data unavailable.</div>}
         </Section>
 

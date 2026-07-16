@@ -22,6 +22,24 @@ const numberOrNull = (value: unknown) =>
 
 const list = (value: unknown): unknown[] => (Array.isArray(value) ? value : []);
 
+const HISTORY_TIME_ZONE = "America/Chicago";
+
+export function historyDisplayDate(generatedAt: string, fallback = ""): string {
+  const date = new Date(generatedAt);
+  if (Number.isNaN(date.getTime())) return fallback;
+
+  const parts = new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    timeZone: HISTORY_TIME_ZONE,
+  }).formatToParts(date);
+  const value = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return value.year && value.month && value.day
+    ? `${value.year}-${value.month}-${value.day}`
+    : fallback;
+}
+
 function pairKey(teamA: string, teamB: string) {
   return [teamA, teamB].sort((left, right) => left.localeCompare(right)).join("\u0000");
 }
@@ -35,7 +53,14 @@ function parseProbability(value: unknown) {
   const item = record(value);
   const probability = numberOrNull(item?.probability);
   const team = text(item?.team);
-  return item && team && probability !== null ? { team, probability } : null;
+  return item && team && probability !== null
+    ? {
+        team,
+        probability,
+        probability_basis: text(item.probability_basis) || null,
+        monte_carlo_probability: numberOrNull(item.monte_carlo_probability),
+      }
+    : null;
 }
 
 function parseSnapshot(value: unknown): PredictionHistorySnapshot | null {
@@ -91,7 +116,10 @@ function parseSnapshot(value: unknown): PredictionHistorySnapshot | null {
     schema_version: text(item.schema_version, "1.0"),
     snapshot_id: snapshotId,
     generated_at: generatedAt,
-    display_date: text(item.display_date, generatedAt.slice(0, 10)),
+    display_date: historyDisplayDate(
+      generatedAt,
+      text(item.display_date, generatedAt.slice(0, 10)),
+    ),
     timezone: text(item.timezone, "UTC"),
     tournament_phase: text(item.tournament_phase, "unknown"),
     completed_matches: numberOrNull(item.completed_matches),
@@ -111,6 +139,7 @@ function parseSnapshot(value: unknown): PredictionHistorySnapshot | null {
       most_likely_champion: likelyChampion,
       second_most_likely_champion: secondChampion,
       champion_probabilities: championProbabilities,
+      champion_probability_basis: text(forecast.champion_probability_basis) || null,
       most_likely_final:
         final && finalTeam1 && finalTeam2 && finalProbability !== null
           ? {
@@ -126,6 +155,19 @@ function parseSnapshot(value: unknown): PredictionHistorySnapshot | null {
     matchday_predictions: matches,
     state_hash: text(item.state_hash),
   };
+}
+
+export function isConfirmedFinalSnapshot(snapshot: PredictionHistorySnapshot): boolean {
+  const final = snapshot.main_forecast.most_likely_final;
+  if (snapshot.tournament_phase.toLowerCase() !== "final" || !final || final.probability < 0.999999) {
+    return false;
+  }
+  const expected = [final.team_1, final.team_2].sort().join("\u0000");
+  return snapshot.matchday_predictions.some(
+    (match) =>
+      match.stage.toLowerCase() === "final" &&
+      [match.team_a, match.team_b].sort().join("\u0000") === expected,
+  );
 }
 
 function completedResults(bracketPayload: unknown) {
@@ -268,9 +310,15 @@ export function selectHistorySnapshot(
     dataset.snapshots.findIndex((snapshot) => snapshot.snapshot_id === snapshotId),
   );
   const selected = dataset.snapshots[selectedIndex] ?? null;
+  const previous = selected
+    ? dataset.snapshots
+        .slice(0, selectedIndex)
+        .reverse()
+        .find((snapshot) => snapshot.display_date !== selected.display_date) ?? null
+    : null;
   return {
     selected,
-    previous: selectedIndex > 0 ? dataset.snapshots[selectedIndex - 1] : null,
+    previous,
     isLatest: Boolean(selected && selected.snapshot_id === dataset.latestSnapshotId),
   };
 }

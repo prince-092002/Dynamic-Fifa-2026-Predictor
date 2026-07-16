@@ -3,6 +3,8 @@ export type PredictionOutcome = "correct" | "incorrect" | "pending";
 export interface HistoryProbability {
   team: string;
   probability: number;
+  probability_basis?: string | null;
+  monte_carlo_probability?: number | null;
 }
 
 export interface HistoryFinalPair {
@@ -16,6 +18,7 @@ export interface HistoryMainForecast {
   most_likely_champion: HistoryProbability | null;
   second_most_likely_champion: HistoryProbability | null;
   champion_probabilities: HistoryProbability[];
+  champion_probability_basis?: string | null;
   most_likely_final: HistoryFinalPair | null;
   finalist_probabilities: HistoryProbability[];
   predicted_final_winner: string | null;
