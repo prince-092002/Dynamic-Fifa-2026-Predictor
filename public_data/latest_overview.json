@@ -22,10 +22,10 @@
  "selected_model": "xgboost",
  "live_forecast_validation": "pass",
  "broader_refresh_validation": "pass",
- "run_id": "2026-07-16T001427Z-9f49d25b",
+ "run_id": "2026-07-16T020349Z-fc367517",
  "seed": 42,
  "_meta": {
-  "generated_at": "2026-07-16T00:15:25+00:00",
+  "generated_at": "2026-07-16T02:05:01+00:00",
   "source_files": [
    "outputs/live_state/live_forecast_summary.json",
    "outputs/live_state/live_forecast_quality_gate.json",

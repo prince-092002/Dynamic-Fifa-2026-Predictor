@@ -1,8 +1,8 @@
 {
-  "refresh_id": "refresh-2026-07-16T001411Z-2e7673",
-  "started_at": "2026-07-16T00:14:11+00:00",
-  "completed_at": "2026-07-16T00:15:26+00:00",
-  "git_commit_before_refresh": "dc36019",
+  "refresh_id": "refresh-2026-07-16T020328Z-083dbf",
+  "started_at": "2026-07-16T02:03:28+00:00",
+  "completed_at": "2026-07-16T02:05:02+00:00",
+  "git_commit_before_refresh": "870b3d2",
   "phase_before": "final",
   "phase_after": "final",
   "provider": "football_data_org",
@@ -43,11 +43,11 @@
     "pre_refresh": {
       "archived": false,
       "reason": "duplicate_state",
-      "state_hash": "db63d1ac71e141cf"
+      "state_hash": "c8dee2c9730f6428"
     },
     "post_refresh": {
-      "archived": true,
-      "snapshot_id": "20260716T001525Z__final__102_completed",
+      "archived": false,
+      "reason": "duplicate_state",
       "state_hash": "c8dee2c9730f6428"
     },
     "dry_run": false

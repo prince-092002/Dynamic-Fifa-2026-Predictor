@@ -1,2 +1,2 @@
 fixture_id,match_id,stage,team_a,team_b,prob_team_a_loss,prob_draw,prob_team_a_win,prob_team_a_advance,prob_team_b_advance,predicted_result_label,confidence,model_name,prediction_status,probability_source,generated_at
-537390,football_data_org_537390,Final,Spain,Argentina,0.36892397311103264,0.22320923874405738,0.40786678814491,0.5194714075169387,0.48052859248306135,team_a_win,0.40786678814491,xgboost,predicted,live_model,2026-07-16T00:14:47+00:00
+537390,football_data_org_537390,Final,Spain,Argentina,0.36892397311103264,0.22320923874405738,0.40786678814491,0.5194714075169387,0.48052859248306135,team_a_win,0.40786678814491,xgboost,predicted,live_model,2026-07-16T02:04:16+00:00

@@ -1,7 +1,7 @@
 {
- "run_id": "2026-07-16T001427Z-9f49d25b",
- "run_started_at": "2026-07-16T00:14:27+00:00",
- "run_completed_at": "2026-07-16T00:15:25+00:00",
+ "run_id": "2026-07-16T020349Z-fc367517",
+ "run_started_at": "2026-07-16T02:03:49+00:00",
+ "run_completed_at": "2026-07-16T02:05:01+00:00",
  "provider": "football_data_org",
  "forecast_mode": "true_live_forecast",
  "source_quality_score": 100,
@@ -31,7 +31,7 @@
  "provider_rate_limited": true,
  "broader_refresh_validation": "pass",
  "_meta": {
-  "generated_at": "2026-07-16T00:15:25+00:00",
+  "generated_at": "2026-07-16T02:05:01+00:00",
   "source_files": [
    "outputs/live_state/latest_live_run_manifest.json"
   ]

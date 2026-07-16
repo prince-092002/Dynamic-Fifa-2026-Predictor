@@ -410,7 +410,7 @@
  },
  "current_phase": "final",
  "_meta": {
-  "generated_at": "2026-07-16T00:15:25+00:00",
+  "generated_at": "2026-07-16T02:05:01+00:00",
   "source_files": [
    "outputs/live_state/merged_bracket_state.csv",
    "outputs/live_state/football_data_org_fixtures_normalized.csv",
@@ -419,6 +419,6 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "final",
-  "run_id": "2026-07-16T001427Z-9f49d25b"
+  "run_id": "2026-07-16T020349Z-fc367517"
  }
 }

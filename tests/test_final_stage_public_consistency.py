@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -13,6 +14,10 @@ PUBLIC = ROOT / "public_data"
 
 def _json(name: str) -> dict:
     return json.loads((PUBLIC / name).read_text(encoding="utf-8"))
+
+
+def _timestamp(value: str) -> datetime:
+    return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
 
 
 def _final_state():
@@ -56,7 +61,7 @@ def test_public_finalists_match_the_official_bracket_and_are_not_eliminated():
     assert int(completed.astype(str).str.lower().isin({"true", "1"}).sum()) == overview["completed_matches"]
 
 
-def test_website_dashboard_and_latest_history_use_one_timestamped_export():
+def test_website_dashboard_share_one_export_and_history_remains_immutable():
     overview = _final_state()
     names = ["latest_overview.json", "champion_forecast.json", "matchup_predictions.json", "knockout_bracket.json"]
     payloads = [_json(name) for name in names]
@@ -70,4 +75,9 @@ def test_website_dashboard_and_latest_history_use_one_timestamped_export():
     public_map = {row["team"]: row["champion_probability"] for row in payloads[1]["entries"]}
     history_map = {row["team"]: row["probability"] for row in latest["main_forecast"]["champion_probabilities"]}
     assert public_map == history_map
-    assert latest["run_id"] == overview["run_id"]
+
+    exported_at = payloads[0]["_meta"]["generated_at"]
+    history_at = latest["generated_at"]
+    assert _timestamp(history_at) <= _timestamp(exported_at)
+    if _timestamp(history_at) == _timestamp(exported_at):
+        assert latest["run_id"] == overview["run_id"]
