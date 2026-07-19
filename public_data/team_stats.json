@@ -898,16 +898,16 @@
   "england": {
    "team": "England",
    "slug": "england",
-   "played": 7,
-   "wins": 5,
+   "played": 8,
+   "wins": 6,
    "draws": 1,
    "losses": 1,
-   "goals_for": 14,
-   "goals_against": 8,
+   "goals_for": 20,
+   "goals_against": 12,
    "clean_sheets": 2,
-   "goal_difference": 6,
-   "avg_goals_for": 2.0,
-   "avg_goals_against": 1.14,
+   "goal_difference": 8,
+   "avg_goals_for": 2.5,
+   "avg_goals_against": 1.5,
    "matches": [
     {
      "date": "2026-06-17",
@@ -971,22 +971,31 @@
      "goals_against": 2,
      "result": "L",
      "score": "1-2"
+    },
+    {
+     "date": "2026-07-18",
+     "stage": "Third Place Playoff",
+     "opponent": "France",
+     "goals_for": 6,
+     "goals_against": 4,
+     "result": "W",
+     "score": "6-4"
     }
    ]
   },
   "france": {
    "team": "France",
    "slug": "france",
-   "played": 7,
+   "played": 8,
    "wins": 6,
    "draws": 0,
-   "losses": 1,
-   "goals_for": 16,
-   "goals_against": 4,
+   "losses": 2,
+   "goals_for": 20,
+   "goals_against": 10,
    "clean_sheets": 4,
-   "goal_difference": 12,
-   "avg_goals_for": 2.29,
-   "avg_goals_against": 0.57,
+   "goal_difference": 10,
+   "avg_goals_for": 2.5,
+   "avg_goals_against": 1.25,
    "matches": [
     {
      "date": "2026-06-16",
@@ -1050,6 +1059,15 @@
      "goals_against": 2,
      "result": "L",
      "score": "0-2"
+    },
+    {
+     "date": "2026-07-18",
+     "stage": "Third Place Playoff",
+     "opponent": "England",
+     "goals_for": 4,
+     "goals_against": 6,
+     "result": "L",
+     "score": "4-6"
     }
    ]
   },
@@ -2606,13 +2624,13 @@
   }
  },
  "_meta": {
-  "generated_at": "2026-07-16T02:05:01+00:00",
+  "generated_at": "2026-07-19T18:07:42+00:00",
   "source_files": [
    "outputs/live_state/football_data_org_fixtures_normalized.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "final",
-  "run_id": "2026-07-16T020349Z-fc367517"
+  "run_id": "2026-07-19T180552Z-3892c2d5"
  }
 }

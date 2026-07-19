@@ -1,12 +1,12 @@
 # Live Knockout Prediction Validation
 
-- Generated: 2026-07-16T00:15:25+00:00
+- Generated: 2026-07-19T18:07:41+00:00
 
 | Check | Status | Message |
 |---|---|---|
-| matchup_file_exists | pass | C:\Users\abelp\Desktop\Fifa Project\outputs\live_state\remaining_known_knockout_matchups.csv |
+| matchup_file_exists | pass | C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\live_state\remaining_known_knockout_matchups.csv |
 | known_unplayed_matchups_detected | pass | 1 matchups |
-| feature_file_exists | pass | C:\Users\abelp\Desktop\Fifa Project\outputs\live_state\live_knockout_match_features.csv |
+| feature_file_exists | pass | C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\live_state\live_knockout_match_features.csv |
 | feature_columns_match_model | pass | all model feature columns present |
 | probabilities_in_range | pass | all probabilities within [0, 1] |
 | probabilities_sum_to_one | pass | max deviation 0.00000 |

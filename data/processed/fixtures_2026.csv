@@ -1,105 +1,105 @@
 match_id,date,stage,group,team_a,team_b,venue,city,country,status,source,last_updated
-1,2026-06-11,Group Stage,Group A,Mexico,South Africa,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-2,2026-06-12,Group Stage,Group A,South Korea,Winner UEFA Playoff D,Estadio Akron,Guadalajara,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-3,2026-06-12,Group Stage,Group B,Canada,Winner UEFA Playoff A,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-4,2026-06-13,Group Stage,Group D,United States,Paraguay,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-5,2026-06-13,Group Stage,Group B,Qatar,Switzerland,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-6,2026-06-13,Group Stage,Group C,Brazil,Morocco,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-7,2026-06-14,Group Stage,Group C,Haiti,Scotland,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-8,2026-06-14,Group Stage,Group D,Australia,Winner UEFA Playoff C,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-9,2026-06-14,Group Stage,Group E,Germany,Curaçao,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-10,2026-06-14,Group Stage,Group F,Netherlands,Japan,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-11,2026-06-14,Group Stage,Group E,Ivory Coast,Ecuador,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-12,2026-06-15,Group Stage,Group F,Winner UEFA Playoff B,Tunisia,Estadio BBVA,Monterrey,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-13,2026-06-15,Group Stage,Group H,Spain,Cabo Verde,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-14,2026-06-15,Group Stage,Group G,Belgium,Egypt,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-15,2026-06-15,Group Stage,Group H,Saudi Arabia,Uruguay,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-16,2026-06-16,Group Stage,Group G,Iran,New Zealand,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-17,2026-06-16,Group Stage,Group I,France,Senegal,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-18,2026-06-16,Group Stage,Group I,Winner FIFA Playoff 2,Norway,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-19,2026-06-17,Group Stage,Group J,Argentina,Algeria,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-20,2026-06-17,Group Stage,Group J,Austria,Jordan,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-21,2026-06-17,Group Stage,Group K,Portugal,Winner FIFA Playoff 1,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-22,2026-06-17,Group Stage,Group L,England,Croatia,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-23,2026-06-17,Group Stage,Group L,Ghana,Panama,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-24,2026-06-18,Group Stage,Group K,Uzbekistan,Colombia,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-25,2026-06-18,Group Stage,Group A,Winner UEFA Playoff D,South Africa,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-26,2026-06-18,Group Stage,Group B,Switzerland,Winner UEFA Playoff A,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-27,2026-06-19,Group Stage,Group B,Canada,Qatar,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-28,2026-06-19,Group Stage,Group A,Mexico,South Korea,Estadio Akron,Guadalajara,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-29,2026-06-19,Group Stage,Group D,United States,Australia,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-30,2026-06-19,Group Stage,Group C,Scotland,Morocco,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-31,2026-06-20,Group Stage,Group C,Brazil,Haiti,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-32,2026-06-20,Group Stage,Group D,Winner UEFA Playoff C,Paraguay,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-33,2026-06-20,Group Stage,Group F,Netherlands,Winner UEFA Playoff B,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-34,2026-06-20,Group Stage,Group E,Germany,Ivory Coast,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-35,2026-06-21,Group Stage,Group E,Ecuador,Curaçao,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-36,2026-06-21,Group Stage,Group F,Tunisia,Japan,Estadio BBVA,Monterrey,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-37,2026-06-21,Group Stage,Group H,Spain,Saudi Arabia,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-38,2026-06-21,Group Stage,Group G,Belgium,Iran,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-39,2026-06-21,Group Stage,Group H,Uruguay,Cabo Verde,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-40,2026-06-22,Group Stage,Group G,New Zealand,Egypt,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-41,2026-06-22,Group Stage,Group J,Argentina,Austria,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-42,2026-06-22,Group Stage,Group I,France,Winner FIFA Playoff 2,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-43,2026-06-23,Group Stage,Group I,Norway,Senegal,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-44,2026-06-23,Group Stage,Group J,Jordan,Algeria,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-45,2026-06-23,Group Stage,Group K,Portugal,Uzbekistan,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-46,2026-06-23,Group Stage,Group L,England,Ghana,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-47,2026-06-23,Group Stage,Group L,Panama,Croatia,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-48,2026-06-24,Group Stage,Group K,Colombia,Winner FIFA Playoff 1,Estadio Akron,Guadalajara,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-49,2026-06-24,Group Stage,Group B,Switzerland,Canada,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-50,2026-06-24,Group Stage,Group B,Winner UEFA Playoff A,Qatar,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-51,2026-06-24,Group Stage,Group C,Scotland,Brazil,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-52,2026-06-24,Group Stage,Group C,Morocco,Haiti,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-53,2026-06-25,Group Stage,Group A,Winner UEFA Playoff D,Mexico,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-54,2026-06-25,Group Stage,Group A,South Africa,South Korea,Estadio BBVA,Monterrey,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-55,2026-06-25,Group Stage,Group E,Curaçao,Ivory Coast,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-56,2026-06-25,Group Stage,Group E,Ecuador,Germany,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-57,2026-06-26,Group Stage,Group F,Japan,Winner UEFA Playoff B,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-58,2026-06-26,Group Stage,Group F,Tunisia,Netherlands,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-59,2026-06-26,Group Stage,Group D,Winner UEFA Playoff C,United States,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-60,2026-06-26,Group Stage,Group D,Paraguay,Australia,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-61,2026-06-26,Group Stage,Group I,Norway,France,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-62,2026-06-26,Group Stage,Group I,Senegal,Winner FIFA Playoff 2,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-63,2026-06-27,Group Stage,Group H,Cabo Verde,Saudi Arabia,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-64,2026-06-27,Group Stage,Group H,Uruguay,Spain,Estadio Akron,Guadalajara,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-65,2026-06-27,Group Stage,Group G,Egypt,Iran,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-66,2026-06-27,Group Stage,Group G,New Zealand,Belgium,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-67,2026-06-27,Group Stage,Group L,Panama,England,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-68,2026-06-27,Group Stage,Group L,Croatia,Ghana,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-69,2026-06-27,Group Stage,Group K,Colombia,Portugal,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-70,2026-06-27,Group Stage,Group K,Winner FIFA Playoff 1,Uzbekistan,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-71,2026-06-28,Group Stage,Group J,Algeria,Austria,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-72,2026-06-28,Group Stage,Group J,Jordan,Argentina,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-73,2026-06-28,Round of 32,2A vs 2B,,,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-74,2026-06-29,Round of 32,1C vs 2F,,,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-75,2026-06-29,Round of 32,1E vs 3ABCDF,,,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-76,2026-06-30,Round of 32,1F vs 2C,,,Estadio BBVA,Monterrey,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-77,2026-06-30,Round of 32,2E vs 2I,,,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-78,2026-06-30,Round of 32,1I vs 3CDFGH,,,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-79,2026-07-01,Round of 32,1A vs 3CEFHI,,,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-80,2026-07-01,Round of 32,1L vs 3EHIJK,,,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-81,2026-07-01,Round of 32,1G vs 3AEHIJ,,,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-82,2026-07-02,Round of 32,1D vs 3BEFIJ,,,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-83,2026-07-02,Round of 32,1H vs 2J,,,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-84,2026-07-02,Round of 32,2K vs 2L,,,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-85,2026-07-03,Round of 32,1B vs 3EFGIJ,,,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-86,2026-07-03,Round of 32,2D vs 2G,,,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-87,2026-07-03,Round of 32,1J vs 2H,,,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-88,2026-07-04,Round of 32,1K vs 3DEIJL,,,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-89,2026-07-04,Round of 16,W73 vs W75,,,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-90,2026-07-04,Round of 16,W74 vs W77,,,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-91,2026-07-05,Round of 16,W76 vs W78,,,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-92,2026-07-06,Round of 16,W79 vs W80,,,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-93,2026-07-06,Round of 16,W83 vs W84,,,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-94,2026-07-07,Round of 16,W81 vs W82,,,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-95,2026-07-07,Round of 16,W86 vs W88,,,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-96,2026-07-07,Round of 16,W85 vs W87,,,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-97,2026-07-09,Quarterfinals,W89 vs W90,,,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-98,2026-07-10,Quarterfinals,W93 vs W94,,,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-99,2026-07-11,Quarterfinals,W91 vs W92,,,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-100,2026-07-12,Quarterfinals,W95 vs W100,,,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-101,2026-07-14,Semifinals,W97 vs W98,,,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-102,2026-07-15,Semifinals,W99 vs W100,,,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-103,2026-07-18,Third Place Playoff,RU101 vs RU102,,,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
-104,2026-07-19,Final,W101 vs W102,,,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-16T00:14:14+00:00
+1,2026-06-11,Group Stage,Group A,Mexico,South Africa,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+2,2026-06-12,Group Stage,Group A,South Korea,Winner UEFA Playoff D,Estadio Akron,Guadalajara,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+3,2026-06-12,Group Stage,Group B,Canada,Winner UEFA Playoff A,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+4,2026-06-13,Group Stage,Group D,United States,Paraguay,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+5,2026-06-13,Group Stage,Group B,Qatar,Switzerland,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+6,2026-06-13,Group Stage,Group C,Brazil,Morocco,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+7,2026-06-14,Group Stage,Group C,Haiti,Scotland,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+8,2026-06-14,Group Stage,Group D,Australia,Winner UEFA Playoff C,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+9,2026-06-14,Group Stage,Group E,Germany,Curaçao,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+10,2026-06-14,Group Stage,Group F,Netherlands,Japan,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+11,2026-06-14,Group Stage,Group E,Ivory Coast,Ecuador,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+12,2026-06-15,Group Stage,Group F,Winner UEFA Playoff B,Tunisia,Estadio BBVA,Monterrey,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+13,2026-06-15,Group Stage,Group H,Spain,Cabo Verde,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+14,2026-06-15,Group Stage,Group G,Belgium,Egypt,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+15,2026-06-15,Group Stage,Group H,Saudi Arabia,Uruguay,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+16,2026-06-16,Group Stage,Group G,Iran,New Zealand,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+17,2026-06-16,Group Stage,Group I,France,Senegal,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+18,2026-06-16,Group Stage,Group I,Winner FIFA Playoff 2,Norway,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+19,2026-06-17,Group Stage,Group J,Argentina,Algeria,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+20,2026-06-17,Group Stage,Group J,Austria,Jordan,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+21,2026-06-17,Group Stage,Group K,Portugal,Winner FIFA Playoff 1,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+22,2026-06-17,Group Stage,Group L,England,Croatia,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+23,2026-06-17,Group Stage,Group L,Ghana,Panama,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+24,2026-06-18,Group Stage,Group K,Uzbekistan,Colombia,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+25,2026-06-18,Group Stage,Group A,Winner UEFA Playoff D,South Africa,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+26,2026-06-18,Group Stage,Group B,Switzerland,Winner UEFA Playoff A,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+27,2026-06-19,Group Stage,Group B,Canada,Qatar,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+28,2026-06-19,Group Stage,Group A,Mexico,South Korea,Estadio Akron,Guadalajara,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+29,2026-06-19,Group Stage,Group D,United States,Australia,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+30,2026-06-19,Group Stage,Group C,Scotland,Morocco,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+31,2026-06-20,Group Stage,Group C,Brazil,Haiti,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+32,2026-06-20,Group Stage,Group D,Winner UEFA Playoff C,Paraguay,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+33,2026-06-20,Group Stage,Group F,Netherlands,Winner UEFA Playoff B,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+34,2026-06-20,Group Stage,Group E,Germany,Ivory Coast,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+35,2026-06-21,Group Stage,Group E,Ecuador,Curaçao,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+36,2026-06-21,Group Stage,Group F,Tunisia,Japan,Estadio BBVA,Monterrey,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+37,2026-06-21,Group Stage,Group H,Spain,Saudi Arabia,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+38,2026-06-21,Group Stage,Group G,Belgium,Iran,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+39,2026-06-21,Group Stage,Group H,Uruguay,Cabo Verde,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+40,2026-06-22,Group Stage,Group G,New Zealand,Egypt,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+41,2026-06-22,Group Stage,Group J,Argentina,Austria,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+42,2026-06-22,Group Stage,Group I,France,Winner FIFA Playoff 2,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+43,2026-06-23,Group Stage,Group I,Norway,Senegal,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+44,2026-06-23,Group Stage,Group J,Jordan,Algeria,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+45,2026-06-23,Group Stage,Group K,Portugal,Uzbekistan,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+46,2026-06-23,Group Stage,Group L,England,Ghana,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+47,2026-06-23,Group Stage,Group L,Panama,Croatia,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+48,2026-06-24,Group Stage,Group K,Colombia,Winner FIFA Playoff 1,Estadio Akron,Guadalajara,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+49,2026-06-24,Group Stage,Group B,Switzerland,Canada,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+50,2026-06-24,Group Stage,Group B,Winner UEFA Playoff A,Qatar,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+51,2026-06-24,Group Stage,Group C,Scotland,Brazil,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+52,2026-06-24,Group Stage,Group C,Morocco,Haiti,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+53,2026-06-25,Group Stage,Group A,Winner UEFA Playoff D,Mexico,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+54,2026-06-25,Group Stage,Group A,South Africa,South Korea,Estadio BBVA,Monterrey,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+55,2026-06-25,Group Stage,Group E,Curaçao,Ivory Coast,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+56,2026-06-25,Group Stage,Group E,Ecuador,Germany,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+57,2026-06-26,Group Stage,Group F,Japan,Winner UEFA Playoff B,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+58,2026-06-26,Group Stage,Group F,Tunisia,Netherlands,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+59,2026-06-26,Group Stage,Group D,Winner UEFA Playoff C,United States,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+60,2026-06-26,Group Stage,Group D,Paraguay,Australia,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+61,2026-06-26,Group Stage,Group I,Norway,France,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+62,2026-06-26,Group Stage,Group I,Senegal,Winner FIFA Playoff 2,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+63,2026-06-27,Group Stage,Group H,Cabo Verde,Saudi Arabia,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+64,2026-06-27,Group Stage,Group H,Uruguay,Spain,Estadio Akron,Guadalajara,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+65,2026-06-27,Group Stage,Group G,Egypt,Iran,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+66,2026-06-27,Group Stage,Group G,New Zealand,Belgium,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+67,2026-06-27,Group Stage,Group L,Panama,England,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+68,2026-06-27,Group Stage,Group L,Croatia,Ghana,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+69,2026-06-27,Group Stage,Group K,Colombia,Portugal,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+70,2026-06-27,Group Stage,Group K,Winner FIFA Playoff 1,Uzbekistan,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+71,2026-06-28,Group Stage,Group J,Algeria,Austria,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+72,2026-06-28,Group Stage,Group J,Jordan,Argentina,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+73,2026-06-28,Round of 32,2A vs 2B,,,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+74,2026-06-29,Round of 32,1C vs 2F,,,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+75,2026-06-29,Round of 32,1E vs 3ABCDF,,,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+76,2026-06-30,Round of 32,1F vs 2C,,,Estadio BBVA,Monterrey,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+77,2026-06-30,Round of 32,2E vs 2I,,,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+78,2026-06-30,Round of 32,1I vs 3CDFGH,,,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+79,2026-07-01,Round of 32,1A vs 3CEFHI,,,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+80,2026-07-01,Round of 32,1L vs 3EHIJK,,,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+81,2026-07-01,Round of 32,1G vs 3AEHIJ,,,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+82,2026-07-02,Round of 32,1D vs 3BEFIJ,,,Levi's Stadium,San Francisco Bay Area,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+83,2026-07-02,Round of 32,1H vs 2J,,,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+84,2026-07-02,Round of 32,2K vs 2L,,,BMO Field,Toronto,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+85,2026-07-03,Round of 32,1B vs 3EFGIJ,,,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+86,2026-07-03,Round of 32,2D vs 2G,,,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+87,2026-07-03,Round of 32,1J vs 2H,,,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+88,2026-07-04,Round of 32,1K vs 3DEIJL,,,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+89,2026-07-04,Round of 16,W73 vs W75,,,NRG Stadium,Houston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+90,2026-07-04,Round of 16,W74 vs W77,,,Lincoln Financial Field,Philadelphia,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+91,2026-07-05,Round of 16,W76 vs W78,,,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+92,2026-07-06,Round of 16,W79 vs W80,,,Estadio Azteca,Mexico City,Mexico,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+93,2026-07-06,Round of 16,W83 vs W84,,,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+94,2026-07-07,Round of 16,W81 vs W82,,,Lumen Field,Seattle,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+95,2026-07-07,Round of 16,W86 vs W88,,,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+96,2026-07-07,Round of 16,W85 vs W87,,,BC Place,Vancouver,Canada,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+97,2026-07-09,Quarterfinals,W89 vs W90,,,Gillette Stadium,Boston,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+98,2026-07-10,Quarterfinals,W93 vs W94,,,SoFi Stadium,Los Angeles,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+99,2026-07-11,Quarterfinals,W91 vs W92,,,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+100,2026-07-12,Quarterfinals,W95 vs W100,,,Arrowhead Stadium,Kansas City,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+101,2026-07-14,Semifinals,W97 vs W98,,,AT&T Stadium,Dallas,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+102,2026-07-15,Semifinals,W99 vs W100,,,Mercedes-Benz Stadium,Atlanta,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+103,2026-07-18,Third Place Playoff,RU101 vs RU102,,,Hard Rock Stadium,Miami,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00
+104,2026-07-19,Final,W101 vs W102,,,MetLife Stadium,New York/New Jersey,USA,scheduled,kaggle_world_cup_2026_schedule,2026-07-19T18:05:16+00:00

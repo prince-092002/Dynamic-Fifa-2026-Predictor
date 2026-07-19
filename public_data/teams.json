@@ -496,24 +496,24 @@
    "stage_reached": "Semifinal",
    "eliminated_by": "Argentina",
    "eliminated_in": "Semifinal",
-   "played": 7,
-   "wins": 5,
+   "played": 8,
+   "wins": 6,
    "draws": 1,
    "losses": 1,
-   "goals_for": 14,
-   "goals_against": 8,
-   "goal_difference": 6,
+   "goals_for": 20,
+   "goals_against": 12,
+   "goal_difference": 8,
    "champion_probability": 0.0,
    "reach_final_probability": 0.0,
    "next_matchup": null,
    "latest_result": {
-    "date": "2026-07-15",
-    "stage": "Semifinal",
-    "opponent": "Argentina",
-    "goals_for": 1,
-    "goals_against": 2,
-    "result": "L",
-    "score": "1-2"
+    "date": "2026-07-18",
+    "stage": "Third Place Playoff",
+    "opponent": "France",
+    "goals_for": 6,
+    "goals_against": 4,
+    "result": "W",
+    "score": "6-4"
    }
   },
   {
@@ -526,24 +526,24 @@
    "stage_reached": "Semifinal",
    "eliminated_by": "Spain",
    "eliminated_in": "Semifinal",
-   "played": 7,
+   "played": 8,
    "wins": 6,
    "draws": 0,
-   "losses": 1,
-   "goals_for": 16,
-   "goals_against": 4,
-   "goal_difference": 12,
+   "losses": 2,
+   "goals_for": 20,
+   "goals_against": 10,
+   "goal_difference": 10,
    "champion_probability": 0.0,
    "reach_final_probability": 0.0,
    "next_matchup": null,
    "latest_result": {
-    "date": "2026-07-14",
-    "stage": "Semifinal",
-    "opponent": "Spain",
-    "goals_for": 0,
-    "goals_against": 2,
+    "date": "2026-07-18",
+    "stage": "Third Place Playoff",
+    "opponent": "England",
+    "goals_for": 4,
+    "goals_against": 6,
     "result": "L",
-    "score": "0-2"
+    "score": "4-6"
    }
   },
   {
@@ -1454,7 +1454,7 @@
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-16T02:05:01+00:00",
+  "generated_at": "2026-07-19T18:07:42+00:00",
   "source_files": [
    "outputs/live_state/football_data_org_teams_normalized.csv",
    "outputs/live_state/merged_bracket_state.csv",
@@ -1463,6 +1463,6 @@
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "current_phase": "final",
-  "run_id": "2026-07-16T020349Z-fc367517"
+  "run_id": "2026-07-19T180552Z-3892c2d5"
  }
 }

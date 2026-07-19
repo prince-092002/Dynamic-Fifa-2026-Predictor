@@ -1,7 +1,7 @@
 {
-  "run_id": "2026-07-16T020349Z-fc367517",
-  "run_started_at": "2026-07-16T02:03:49+00:00",
-  "run_completed_at": "2026-07-16T02:05:01+00:00",
+  "run_id": "2026-07-19T180552Z-3892c2d5",
+  "run_started_at": "2026-07-19T18:05:52+00:00",
+  "run_completed_at": "2026-07-19T18:07:41+00:00",
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
   "source_quality_score": 100,
@@ -19,7 +19,7 @@
     "current_phase": "final",
     "phase_changed": false,
     "newly_resolved_matchups": 0,
-    "newly_completed_matches": 0
+    "newly_completed_matches": 1
   },
   "top_finalist_pair": "Argentina vs Spain",
   "top_champion": "Spain",

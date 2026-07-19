@@ -220,10 +220,27 @@
    "total_simulated_decisions": 10000,
    "model_driven_pct": 1.0,
    "fallback_pct": 0.0
+  },
+  {
+   "run_id": "2026-07-19T180552Z-3892c2d5",
+   "timestamp": "2026-07-19T18:07:41+00:00",
+   "tournament_phase": "final",
+   "simulation_count": 10000,
+   "known_remaining_matchups": 1,
+   "live_model_predictions_available": 1,
+   "live_model_exact": 10000,
+   "live_model_reversed": 0,
+   "model_exact": 0,
+   "model_reversed": 0,
+   "elo_fallback": 0,
+   "neutral_fallback": 0,
+   "total_simulated_decisions": 10000,
+   "model_driven_pct": 1.0,
+   "fallback_pct": 0.0
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-16T02:05:01+00:00",
+  "generated_at": "2026-07-19T18:07:42+00:00",
   "source_files": [
    "outputs/live_state/probability_source_history.csv"
   ]

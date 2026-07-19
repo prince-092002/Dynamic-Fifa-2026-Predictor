@@ -1,6 +1,6 @@
 # End-of-Matchday Update Summary
 
-- Refresh timestamp: 2026-07-16T00:15:25+00:00
+- Refresh timestamp: 2026-07-19T18:07:42+00:00
 - Update status: passed
 - New completed matches detected: 0
 - Live forecast status: success
@@ -15,7 +15,7 @@
 - Tournament phase before update: final
 - Tournament phase after update: final
 - Phase transition detected: False
-- Newly completed matches (since last forecast run): 0
+- Newly completed matches (since last forecast run): 1
 - Newly resolved knockout matchups: 0
 - New XGBoost predictions generated: 1
 - Why or why not: forecast ran or no blocking reason reported

@@ -9,8 +9,8 @@
 - Matches endpoint HTTP status: 200
 - Matches row count: 104
 - resultSet count: 104
-- Finished matches count: 102
-- Scheduled matches count: 2
+- Finished matches count: 103
+- Scheduled matches count: 1
 - Live/in-play matches count: 0
 - Teams endpoint HTTP status: 200
 - Teams row count: 48

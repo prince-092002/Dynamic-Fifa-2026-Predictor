@@ -1,6 +1,6 @@
 {
  "current_phase": "final",
- "completed_matches": 102,
+ "completed_matches": 103,
  "teams_total": 48,
  "teams_alive": 2,
  "teams_eliminated": 46,
@@ -22,10 +22,10 @@
  "selected_model": "xgboost",
  "live_forecast_validation": "pass",
  "broader_refresh_validation": "pass",
- "run_id": "2026-07-16T020349Z-fc367517",
+ "run_id": "2026-07-19T180552Z-3892c2d5",
  "seed": 42,
  "_meta": {
-  "generated_at": "2026-07-16T02:05:01+00:00",
+  "generated_at": "2026-07-19T18:07:42+00:00",
   "source_files": [
    "outputs/live_state/live_forecast_summary.json",
    "outputs/live_state/live_forecast_quality_gate.json",

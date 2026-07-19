@@ -171,3 +171,7 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='v3.football.api-s
 2026-07-15 19:14:12 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
 2026-07-15 19:14:12 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Fifa Project\data\backups\20260715_191412
 2026-07-15 19:15:25 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Fifa Project\outputs\reports\latest_refresh_summary.json
+2026-07-19 13:05:08 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-19 13:05:08 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-19 13:05:08 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\data\backups\20260719_130508
+2026-07-19 13:07:42 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\reports\latest_refresh_summary.json

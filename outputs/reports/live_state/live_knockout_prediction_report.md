@@ -1,6 +1,6 @@
 # Live Knockout Prediction Report
 
-- Generated: 2026-07-16T00:15:25+00:00
+- Generated: 2026-07-19T18:07:41+00:00
 - Known remaining knockout matchups: 1
 - Predicted by live model: 1
 - Failed (missing features): 0

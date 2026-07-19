@@ -6,7 +6,7 @@ FORECAST_MODE = true_live_forecast
 - Source quality score: 100
 - Source quality level: high
 - Current phase: final
-- Completed result count: 102
+- Completed result count: 103
 - Live fixture coverage: 100.00%
 - Completed result coverage: 100.00%
 - Standings coverage: 100.00%
