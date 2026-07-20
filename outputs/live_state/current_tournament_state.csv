@@ -1,49 +1,49 @@
 team,group,current_status,current_stage,matches_played,points,goal_difference,qualified_stage,eliminated,still_alive,source,last_updated
-Algeria,STAGE,still_alive,semifinal,1,1,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Argentina,STAGE,still_alive,semifinal,1,3,2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Australia,STAGE,still_alive,semifinal,2,1,-2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Austria,STAGE,still_alive,semifinal,2,1,-2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Belgium,STAGE,still_alive,semifinal,2,2,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Bosnia-Herzegovina,STAGE,still_alive,semifinal,2,1,-3,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Brazil,STAGE,still_alive,semifinal,1,3,3,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Canada,STAGE,still_alive,semifinal,1,0,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Cape Verde Islands,STAGE,still_alive,semifinal,1,1,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Colombia,STAGE,still_alive,semifinal,1,3,2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Congo DR,STAGE,still_alive,semifinal,2,1,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Croatia,STAGE,still_alive,semifinal,2,3,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Curaçao,STAGE,still_alive,semifinal,1,0,-2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Czechia,STAGE,still_alive,semifinal,1,0,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Ecuador,STAGE,still_alive,semifinal,1,0,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Egypt,STAGE,still_alive,semifinal,1,1,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-England,STAGE,still_alive,semifinal,1,3,2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-France,STAGE,still_alive,semifinal,1,3,3,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Germany,STAGE,still_alive,semifinal,1,0,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Ghana,STAGE,still_alive,semifinal,2,1,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Haiti,STAGE,still_alive,semifinal,3,0,-6,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Iran,STAGE,still_alive,semifinal,1,1,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Iraq,STAGE,still_alive,semifinal,3,0,-11,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Ivory Coast,STAGE,still_alive,semifinal,1,3,1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Japan,STAGE,still_alive,semifinal,1,1,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Jordan,STAGE,still_alive,semifinal,3,0,-5,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Mexico,STAGE,still_alive,semifinal,1,3,3,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Morocco,STAGE,still_alive,semifinal,1,3,2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Netherlands,STAGE,still_alive,semifinal,1,3,2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-New Zealand,STAGE,still_alive,semifinal,2,0,-6,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Norway,STAGE,still_alive,semifinal,2,3,-2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Panama,STAGE,still_alive,semifinal,3,0,-4,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Paraguay,STAGE,still_alive,semifinal,1,1,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Portugal,STAGE,still_alive,semifinal,1,1,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Qatar,STAGE,still_alive,semifinal,2,0,-8,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Saudi Arabia,STAGE,still_alive,semifinal,2,1,-4,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Scotland,STAGE,still_alive,semifinal,2,0,-4,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Senegal,STAGE,still_alive,semifinal,2,0,-3,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-South Africa,STAGE,still_alive,semifinal,2,1,-2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-South Korea,STAGE,still_alive,semifinal,2,0,-2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Spain,STAGE,still_alive,semifinal,1,3,1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Sweden,STAGE,still_alive,semifinal,2,1,-4,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Switzerland,STAGE,still_alive,semifinal,1,1,0,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Tunisia,STAGE,still_alive,semifinal,3,0,-10,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Turkey,STAGE,still_alive,semifinal,1,0,-2,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-United States,STAGE,still_alive,semifinal,1,0,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Uruguay,STAGE,still_alive,semifinal,2,1,-1,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
-Uzbekistan,STAGE,still_alive,semifinal,3,0,-9,unknown,False,True,live_state_builder,2026-07-19T18:06:22+00:00
+Algeria,STAGE,still_alive,complete,1,1,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Argentina,STAGE,still_alive,complete,1,3,2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Australia,STAGE,still_alive,complete,2,1,-2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Austria,STAGE,still_alive,complete,2,1,-2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Belgium,STAGE,still_alive,complete,2,2,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Bosnia-Herzegovina,STAGE,still_alive,complete,2,1,-3,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Brazil,STAGE,still_alive,complete,1,3,3,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Canada,STAGE,still_alive,complete,1,0,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Cape Verde Islands,STAGE,still_alive,complete,1,1,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Colombia,STAGE,still_alive,complete,1,3,2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Congo DR,STAGE,still_alive,complete,2,1,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Croatia,STAGE,still_alive,complete,2,3,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Curaçao,STAGE,still_alive,complete,1,0,-2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Czechia,STAGE,still_alive,complete,1,0,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Ecuador,STAGE,still_alive,complete,1,0,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Egypt,STAGE,still_alive,complete,1,1,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+England,STAGE,still_alive,complete,1,3,2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+France,STAGE,still_alive,complete,1,3,3,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Germany,STAGE,still_alive,complete,1,0,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Ghana,STAGE,still_alive,complete,2,1,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Haiti,STAGE,still_alive,complete,3,0,-6,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Iran,STAGE,still_alive,complete,1,1,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Iraq,STAGE,still_alive,complete,3,0,-11,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Ivory Coast,STAGE,still_alive,complete,1,3,1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Japan,STAGE,still_alive,complete,1,1,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Jordan,STAGE,still_alive,complete,3,0,-5,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Mexico,STAGE,still_alive,complete,1,3,3,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Morocco,STAGE,still_alive,complete,1,3,2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Netherlands,STAGE,still_alive,complete,1,3,2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+New Zealand,STAGE,still_alive,complete,2,0,-6,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Norway,STAGE,still_alive,complete,2,3,-2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Panama,STAGE,still_alive,complete,3,0,-4,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Paraguay,STAGE,still_alive,complete,1,1,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Portugal,STAGE,still_alive,complete,1,1,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Qatar,STAGE,still_alive,complete,2,0,-8,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Saudi Arabia,STAGE,still_alive,complete,2,1,-4,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Scotland,STAGE,still_alive,complete,2,0,-4,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Senegal,STAGE,still_alive,complete,2,0,-3,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+South Africa,STAGE,still_alive,complete,2,1,-2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+South Korea,STAGE,still_alive,complete,2,0,-2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Spain,STAGE,still_alive,complete,1,3,1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Sweden,STAGE,still_alive,complete,2,1,-4,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Switzerland,STAGE,still_alive,complete,1,1,0,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Tunisia,STAGE,still_alive,complete,3,0,-10,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Turkey,STAGE,still_alive,complete,1,0,-2,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+United States,STAGE,still_alive,complete,1,0,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Uruguay,STAGE,still_alive,complete,2,1,-1,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00
+Uzbekistan,STAGE,still_alive,complete,3,0,-9,unknown,False,True,live_state_builder,2026-07-20T06:04:10+00:00

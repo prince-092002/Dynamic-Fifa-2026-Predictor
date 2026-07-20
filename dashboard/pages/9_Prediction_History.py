@@ -192,10 +192,10 @@ def render_forecast(snap):
         f'<div class="ph-champ">{flag(champ.get("team"), 34)}'
         f'<span class="name">{champ.get("team","—")}</span>'
         f'<span class="pct">{pctf(champ.get("probability"))}</span></div>'
-        f'<div class="ph-row" style="color:{FG3}">Most likely champion at this point</div>')
+        f'<div class="ph-row" style="color:{FG3}">{"Confirmed champion" if str(snap.get("tournament_phase","")).lower() == "complete" else "Most likely champion at this point"}</div>')
     if final.get("team_1"):
         html.append(
-            f'<div class="ph-row" style="margin-top:.6rem"><span class="t">{"Confirmed Final" if confirmed_final else "Projected final"}</span>'
+            f'<div class="ph-row" style="margin-top:.6rem"><span class="t">{"Final result" if str(snap.get("tournament_phase","")).lower() == "complete" else ("Confirmed Final" if confirmed_final else "Projected final")}</span>'
             f'<span class="v">{final.get("team_1")} vs {final.get("team_2")}{" · Official matchup" if confirmed_final else " · " + pctf(final.get("probability"))}</span></div>')
     html.append(f'<div class="ph-row" style="margin-top:.7rem;color:{FG3}">Champion probabilities</div>')
     top = (mf.get("champion_probabilities") or [])[:6]

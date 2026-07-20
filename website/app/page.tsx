@@ -4,7 +4,7 @@ import HeroBackdrop from "@/components/HeroBackdrop";
 import { Section, SectionHead, StatCard, ProbRing, Meter, Disclaimer } from "@/components/ui";
 import { Trophy, Pitch, Chart, Shield, Lock, Sim, Signal, Gauge, Database, Network, Team, Lab, Arrow, Check, Route } from "@/components/icons";
 import CountryFlag from "@/components/CountryFlag";
-import { formatPct, formatPhase, getBracket, getChampionForecast, getFinalistPairs, getOverview, getTeams } from "@/lib/data";
+import { formatPct, formatPhase, getBracket, getChampionForecast, getFinalistPairs, getOverview, getPreFinalForecast, getTeams } from "@/lib/data";
 
 const BADGES = ["Python", "XGBoost", "Monte Carlo", "Elo", "football-data.org", "Next.js", "Streamlit"];
 
@@ -29,9 +29,13 @@ export default function Home() {
   const teamBy = new Map(teams.map((t) => [t.team, t]));
   const teamCodes = Object.fromEntries(teams.map((t) => [t.team, t.code]));
   const contenders = (champion?.entries ?? []).slice().sort((a, b) => b.champion_probability - a.champion_probability).slice(0, 5);
-  const live = overview?.forecast_mode === "true_live_forecast";
+  const finalResult = overview?.final_result ?? null;
+  const isComplete = Boolean(overview?.tournament_complete && finalResult);
+  const live = overview?.forecast_mode === "true_live_forecast" && !isComplete;
   const isFinalStage = overview?.current_phase === "final";
   const confirmedFinal = isFinalStage ? pairs?.entries?.slice().sort((a, b) => b.probability - a.probability)[0] : null;
+  // Pre-final forecast preserved from the archived snapshot taken before kickoff.
+  const preFinal = getPreFinalForecast();
 
   return (
     <>
@@ -40,6 +44,7 @@ export default function Home() {
       <section className="relative flex min-h-[86vh] flex-col items-center justify-center px-4 pb-20 pt-16 text-center md:min-h-[90vh]">
         <div className="reveal flex flex-wrap items-center justify-center gap-2.5">
           {live && <span className="badge-live"><span className="dot-live" /> LIVE FORECAST ACTIVE</span>}
+          {isComplete && <span className="champion-badge"><Trophy width={13} height={13} aria-hidden /> Tournament complete</span>}
           <span className="chip"><Pitch width={14} height={14} /> {formatPhase(overview?.current_phase)}</span>
           <span className="chip"><Lock width={14} height={14} /> {overview?.completed_matches ?? "—"} matches locked</span>
           {overview?.simulations && <span className="chip"><Sim width={14} height={14} /> {overview.simulations.toLocaleString()} simulations</span>}
@@ -47,18 +52,33 @@ export default function Home() {
 
         <p className="reveal reveal-2 kicker hero-copy mt-7">Dynamic Tournament Intelligence</p>
         <h1 className="reveal reveal-2 poster-title mt-2">FIFA 2026</h1>
-        <p className="reveal reveal-3 poster-sub hero-copy mt-3 text-lg text-white md:text-2xl">
-          Live finalist &amp; champion forecasting — <span className="text-white">powered by machine learning</span>
-        </p>
-        <p className="reveal reveal-3 hero-copy mx-auto mt-4 max-w-2xl text-[0.98rem] text-white md:text-lg">
-          ~50,000 historical matches · Elo ratings · XGBoost matchup probabilities · Monte Carlo simulation —
-          fused into one forecast that updates the moment a real match ends.
-        </p>
+        {isComplete && finalResult ? (
+          <>
+            <p className="reveal reveal-3 poster-sub hero-copy mt-3 text-lg text-white md:text-2xl">
+              <span className="champion-name">{finalResult.champion}</span> are FIFA World Cup champions
+            </p>
+            <p className="reveal reveal-3 hero-copy mx-auto mt-4 max-w-2xl text-[0.98rem] text-white md:text-lg">
+              {finalResult.champion} defeated {finalResult.runner_up} {finalResult.score}
+              {finalResult.went_to_extra_time ? " after extra time" : ""} in the final.
+              The tournament is complete and the full forecast history is preserved.
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="reveal reveal-3 poster-sub hero-copy mt-3 text-lg text-white md:text-2xl">
+              Live finalist &amp; champion forecasting — <span className="text-white">powered by machine learning</span>
+            </p>
+            <p className="reveal reveal-3 hero-copy mx-auto mt-4 max-w-2xl text-[0.98rem] text-white md:text-lg">
+              ~50,000 historical matches · Elo ratings · XGBoost matchup probabilities · Monte Carlo simulation —
+              fused into one forecast that updates the moment a real match ends.
+            </p>
+          </>
+        )}
 
         <div className="reveal reveal-3 mt-8 flex flex-wrap items-center justify-center gap-3">
           {process.env.NEXT_PUBLIC_DASHBOARD_URL && (
             <a href={process.env.NEXT_PUBLIC_DASHBOARD_URL} target="_blank" rel="noreferrer" className="btn btn-primary">
-              Explore Live Dashboard <Arrow width={16} height={16} />
+              {isComplete ? "Explore the Dashboard" : "Explore Live Dashboard"} <Arrow width={16} height={16} />
             </a>
           )}
           <a href="#snapshot" className="btn btn-ghost">See the Forecast</a>
@@ -76,18 +96,55 @@ export default function Home() {
         {/* ============ LIVE SNAPSHOT (broadcast row) ============ */}
         {overview && (
           <Section id="snapshot">
-            <SectionHead kicker="Live tournament snapshot" title="The state of play" icon={<Signal width={14} height={14} />}
-              sub={overview.public_label ?? undefined} />
+            <SectionHead kicker={isComplete ? "Final tournament state" : "Live tournament snapshot"} title={isComplete ? "How it finished" : "The state of play"} icon={<Signal width={14} height={14} />}
+              sub={isComplete && finalResult ? `Final update: ${finalResult.published_label}` : (overview.public_label ?? undefined)} />
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              <StatCard icon={<Pitch width={17} height={17} />} label="Current phase" value={formatPhase(overview.current_phase)} accent="var(--cyan)" hint={`${overview.known_unresolved_matchups} ${overview.known_unresolved_matchups === 1 ? "matchup" : "matchups"} unresolved`} />
+              <StatCard icon={<Pitch width={17} height={17} />} label="Current phase" value={formatPhase(overview.current_phase)} accent="var(--cyan)" hint={isComplete ? "all matches played" : `${overview.known_unresolved_matchups} ${overview.known_unresolved_matchups === 1 ? "matchup" : "matchups"} unresolved`} />
               <StatCard icon={<Lock width={17} height={17} />} label="Matches complete" value={overview.completed_matches ?? "—"} accent="var(--pitch)" hint="locked · never re-simulated" />
-              <StatCard icon={<Team width={17} height={17} />} label="Teams remaining" value={overview.teams_alive} accent="var(--gold-c)" hint={`${overview.teams_eliminated} eliminated`} />
+              <StatCard icon={<Team width={17} height={17} />} label="Teams remaining" value={overview.teams_alive} accent="var(--gold-c)" hint={isComplete ? "tournament decided" : `${overview.teams_eliminated} eliminated`} />
               <StatCard icon={<Signal width={17} height={17} />} label="Source quality" value={`${overview.source_quality_score ?? "—"}/100`} accent="var(--cyan)"
                 hint={overview.data_source_mode === "fresh_api" ? `fresh · ${overview.data_age_minutes ?? 0} min` : String(overview.data_source_mode)} />
             </div>
 
-            {/* Featured champion */}
-            {overview.top_champion && (
+            {/* ---- Champion (tournament complete) ---- */}
+            {isComplete && finalResult && (
+              <div className="champion-card mt-4 p-6 md:p-8">
+                <div className="relative">
+                  <span className="champion-badge"><Trophy width={13} height={13} aria-hidden /> World Champions</span>
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <CountryFlag code={teamBy.get(finalResult.champion)?.code} country={finalResult.champion} size="xl" />
+                    <span className="display champion-name text-4xl md:text-5xl">{finalResult.champion}</span>
+                  </div>
+                  <p className="champion-score mt-3 text-xl md:text-2xl">
+                    {finalResult.champion} {finalResult.champion_goals}–{finalResult.runner_up_goals} {finalResult.runner_up}
+                    <span className="ml-2 align-middle text-sm font-normal text-fg2">· {finalResult.decided_label}</span>
+                  </p>
+                  <hr className="champion-divider" />
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="champion-chip"><Trophy width={13} height={13} aria-hidden /> {finalResult.champion} — Champion</span>
+                    {finalResult.runner_up && <span className="runner-up-chip">{finalResult.runner_up} — Runner-up</span>}
+                    {preFinal && preFinal.entries[0]?.team === finalResult.champion && (
+                      <span className="champion-chip"><Check width={13} height={13} aria-hidden /> Final champion prediction: Correct</span>
+                    )}
+                  </div>
+                  {preFinal && (
+                    <p className="mt-4 text-sm text-fg2">
+                      Pre-final simulation (archived before kickoff):{" "}
+                      {preFinal.entries.map((e, i) => (
+                        <span key={e.team}>
+                          {i > 0 && " · "}
+                          <span className="text-fg">{e.team}</span> {formatPct(e.probability, 1)}
+                        </span>
+                      ))}
+                      . The model gave {finalResult.champion} a narrow edge; the result matched its leading probability.
+                    </p>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Featured champion (live forecast) */}
+            {!isComplete && overview.top_champion && (
               <div className="card-feature mt-4 grid gap-6 p-6 md:grid-cols-[1fr_auto] md:items-center">
                 <div className="bg-floodlight absolute inset-0 opacity-60" aria-hidden />
                 <div className="relative">
@@ -113,8 +170,13 @@ export default function Home() {
         {/* ============ WHO WILL WIN ============ */}
         {contenders.length > 0 && (
           <Section id="forecast">
-            <SectionHead kicker="The title race" title="Who will win?" icon={<Trophy width={14} height={14} />}
-              sub={isFinalStage ? "Direct model probability of winning the confirmed final and championship." : `Championship probability from the current live forecast${champion?.simulations ? ` · ${champion.simulations.toLocaleString()} simulations` : ""}.`} />
+            <SectionHead
+              kicker={isComplete ? "Final outcome" : "The title race"}
+              title={isComplete ? "How the title was decided" : "Who will win?"}
+              icon={<Trophy width={14} height={14} />}
+              sub={isComplete
+                ? "The tournament is complete. Championship probabilities below reflect the confirmed result; the pre-final forecast is preserved above and in Prediction History."
+                : isFinalStage ? "Direct model probability of winning the confirmed final and championship." : `Championship probability from the current live forecast${champion?.simulations ? ` · ${champion.simulations.toLocaleString()} simulations` : ""}.`} />
             <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
               {contenders.map((c, i) => {
                 const t = teamBy.get(c.team);
@@ -132,7 +194,7 @@ export default function Home() {
                       </div>
                       <ProbRing value={c.champion_probability} size={featured ? 84 : 66} stroke={featured ? 8 : 7} color={RANK_ACCENT[i]} label="champ" />
                     </div>
-                    {!isFinalStage && t?.reach_final_probability != null && (
+                    {!isFinalStage && !isComplete && t?.reach_final_probability != null && (
                       <div className="mt-4">
                         <div className="mb-1 flex justify-between text-xs text-fg2"><span>Reach final</span><span className="stat-num text-fg">{formatPct(t.reach_final_probability)}</span></div>
                         <Meter value={t.reach_final_probability} color={featured ? "var(--gold-c)" : "var(--cyan)"} />
@@ -146,7 +208,24 @@ export default function Home() {
                 <Arrow width={18} height={18} />
               </Link>
             </div>
-            {confirmedFinal ? (
+            {isComplete && finalResult ? (
+              <div className="card mt-4 p-5">
+                <span className="kicker inline-flex items-center gap-2 text-gold"><Trophy width={14} height={14} /> Final result</span>
+                <div className="mt-4 flex flex-wrap items-center gap-3 text-lg font-semibold text-fg">
+                  <CountryFlag code={teamBy.get(finalResult.champion)?.code} country={finalResult.champion} size="lg" />
+                  <span>{finalResult.champion}</span>
+                  <span className="champion-score text-xl">{finalResult.champion_goals}–{finalResult.runner_up_goals}</span>
+                  {finalResult.runner_up && <CountryFlag code={teamBy.get(finalResult.runner_up)?.code} country={finalResult.runner_up} size="lg" />}
+                  <span>{finalResult.runner_up}</span>
+                  <span className="champion-chip ml-auto"><Check width={13} height={13} aria-hidden /> {finalResult.decided_label}</span>
+                </div>
+                <p className="mt-3 text-sm text-fg2">
+                  {finalResult.champion} won the FIFA World Cup; {finalResult.runner_up} finished as runner-up.
+                  {finalResult.match_date ? ` Match played ${new Date(finalResult.match_date).toLocaleDateString("en-US", { timeZone: "America/Chicago", year: "numeric", month: "long", day: "numeric" })}.` : ""}
+                  {" "}Final update: {finalResult.published_label}.
+                </p>
+              </div>
+            ) : confirmedFinal ? (
               <div className="card mt-4 p-5">
                 <span className="kicker inline-flex items-center gap-2 text-pitch"><Route width={14} height={14} /> Confirmed Final</span>
                 <div className="mt-4 flex flex-wrap items-center gap-3 text-lg font-semibold text-fg">
@@ -172,7 +251,7 @@ export default function Home() {
                 </div>
               </div>
             ) : null}
-            <p className="mt-3 text-xs text-fg3">Probabilistic estimates from the latest live forecast — not guarantees.</p>
+            <p className="mt-3 text-xs text-fg3">{isComplete ? "The tournament is complete. Pre-final probabilities were estimates archived before kickoff — not guarantees." : "Probabilistic estimates from the latest live forecast — not guarantees."}</p>
           </Section>
         )}
 
@@ -221,8 +300,10 @@ export default function Home() {
 
         {/* ============ BRACKET ============ */}
         <Section id="bracket">
-          <SectionHead kicker="Knockout path" title="The road to the final" icon={<Route width={14} height={14} />}
-            sub={isFinalStage ? "The finalists are confirmed; the unresolved Final shows each team's probability of winning the championship." : "Completed results are locked; unresolved matchups show the live XGBoost advance probability."} />
+          <SectionHead kicker="Knockout path" title={isComplete ? "The road to the title" : "The road to the final"} icon={<Route width={14} height={14} />}
+            sub={isComplete
+              ? "Every knockout result is final and locked, through to the completed final."
+              : isFinalStage ? "The finalists are confirmed; the unresolved Final shows each team's probability of winning the championship." : "Completed results are locked; unresolved matchups show the live XGBoost advance probability."} />
           {bracket ? <Bracket bracket={bracket} teamCodes={teamCodes} /> : <div className="card p-6 text-fg2">Bracket data unavailable.</div>}
         </Section>
 
@@ -233,7 +314,7 @@ export default function Home() {
               <SectionHead kicker="Project story" title="Why live tournament forecasting is hard" />
               <div className="space-y-3 text-sm text-fg2">
                 <p>Static match prediction is a solved-ish problem: train a model, score a fixture. <span className="text-fg">Live tournament forecasting is different.</span> The bracket rewrites itself after every match, completed results must be treated as immutable truth, and each new result reshapes who can still reach the final.</p>
-                <p>This platform locks every completed result, regenerates leakage-safe features for each newly resolved matchup, predicts it with XGBoost, and re-runs thousands of Monte Carlo simulations from the <span className="text-fg">actual current bracket</span> — so champion and finalist odds update the moment a match ends, without ever re-simulating history.</p>
+                <p>This platform locks every completed result, regenerates leakage-safe features for each newly resolved matchup, predicts it with XGBoost, and re-runs thousands of Monte Carlo simulations from the <span className="text-fg">actual current bracket</span> — so champion and finalist odds updated the moment a match ended, without ever re-simulating history.</p>
                 <p>Every probability is auditable: each simulation decision is attributed to its source (completed result, live model, or Elo fallback), and a 19-check integrity suite runs on every forecast.</p>
               </div>
             </div>
@@ -259,10 +340,10 @@ export default function Home() {
             <div className="bg-grid absolute inset-0 opacity-40" aria-hidden />
             <div className="relative max-w-2xl">
               <span className="kicker inline-flex items-center gap-2 text-gold"><Chart width={14} height={14} /> Deep analytics</span>
-              <h2 className="display mt-3 text-3xl md:text-4xl text-fg">Enter the live analytics dashboard</h2>
-              <p className="mt-3 text-fg2">Explore the full knockout bracket, champion & finalist forecasts, live XGBoost matchup predictions, team dossiers, forecast evolution, model diagnostics, and system health — all updating from the real tournament.</p>
+              <h2 className="display mt-3 text-3xl md:text-4xl text-fg">{isComplete ? "Explore the analytics dashboard" : "Enter the live analytics dashboard"}</h2>
+              <p className="mt-3 text-fg2">Explore the full knockout bracket, champion & finalist forecasts, live XGBoost matchup predictions, team dossiers, forecast evolution, model diagnostics, and system health — recorded from the real tournament.</p>
               <div className="mt-6 flex flex-wrap gap-3">
-                {process.env.NEXT_PUBLIC_DASHBOARD_URL && <a href={process.env.NEXT_PUBLIC_DASHBOARD_URL} target="_blank" rel="noreferrer" className="btn btn-gold">Enter Live Dashboard <Arrow width={16} height={16} /></a>}
+                {process.env.NEXT_PUBLIC_DASHBOARD_URL && <a href={process.env.NEXT_PUBLIC_DASHBOARD_URL} target="_blank" rel="noreferrer" className="btn btn-gold">{isComplete ? "Open the Dashboard" : "Enter Live Dashboard"} <Arrow width={16} height={16} /></a>}
                 <Link href="/methodology" className="btn btn-ghost">Open the Analytics Lab <Lab width={16} height={16} /></Link>
               </div>
             </div>

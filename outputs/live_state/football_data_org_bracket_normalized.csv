@@ -30,4 +30,4 @@ fixture_id,match_id,round,stage,team_a,team_b,winner,status,is_completed,is_live
 537387,football_data_org_537387,SEMI_FINALS,Semifinal,France,Spain,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-19T05:20:05Z
 537388,football_data_org_537388,SEMI_FINALS,Semifinal,England,Argentina,Argentina,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-19T05:20:05Z
 537389,football_data_org_537389,THIRD_PLACE,Third Place Playoff,France,England,England,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-19T05:20:05Z
-537390,football_data_org_537390,FINAL,Final,Spain,Argentina,,TIMED,False,False,True,False,football_data_org_live,football_data_org,2026-07-19T05:20:05Z
+537390,football_data_org_537390,FINAL,Final,Spain,Argentina,Spain,FINISHED,True,False,False,False,football_data_org_live,football_data_org,2026-07-19T22:25:01Z

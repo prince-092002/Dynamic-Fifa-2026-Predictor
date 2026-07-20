@@ -18,12 +18,24 @@ if not overview:
 phase = str(overview.get("current_phase", "unknown")).replace("_", " ").title()
 live = overview.get("forecast_mode") == "true_live_forecast"
 is_final = overview.get("current_phase") == "final"
-header("Live Tournament Intelligence", "Command center", "Current forecast based on completed tournament results and live tournament state.", icon_name="pitch", live=live)
+final_result = overview.get("final_result") or {}
+is_complete = bool(overview.get("tournament_complete") and final_result)
+if is_complete:
+    phase = "Tournament complete"
+    live = False
+header(
+    "Tournament Intelligence" if is_complete else "Live Tournament Intelligence",
+    "Final state" if is_complete else "Command center",
+    (f'Tournament complete — {final_result.get("champion")} are FIFA World Cup champions. '
+     f'Final update: {final_result.get("published_label")}.')
+    if is_complete else "Current forecast based on completed tournament results and live tournament state.",
+    icon_name="pitch", live=live,
+)
 
 kpi_grid([
-    {"label": "Current phase", "value": phase, "accent": "cyan", "icon": "pitch", "hint": f'{overview.get("known_unresolved_matchups","—")} {"matchup" if overview.get("known_unresolved_matchups") == 1 else "matchups"} unresolved'},
+    {"label": "Current phase", "value": phase, "accent": "cyan", "icon": "pitch", "hint": "all matches played" if is_complete else f'{overview.get("known_unresolved_matchups","—")} {"matchup" if overview.get("known_unresolved_matchups") == 1 else "matchups"} unresolved'},
     {"label": "Matches complete", "value": overview.get("completed_matches", "—"), "accent": "pitch", "icon": "lock", "hint": "locked · never re-simulated"},
-    {"label": "Teams remaining", "value": overview.get("teams_alive", "—"), "accent": "gold", "icon": "team", "hint": f'{overview.get("teams_eliminated","—")} eliminated'},
+    {"label": "Teams remaining", "value": overview.get("teams_alive", "—"), "accent": "gold", "icon": "team", "hint": "tournament decided" if is_complete else f'{overview.get("teams_eliminated","—")} eliminated'},
     {"label": "Source quality", "value": f'{overview.get("source_quality_score","—")}/100', "accent": "cyan", "icon": "signal",
      "hint": f'{overview.get("data_source_mode","—")} · {overview.get("data_age_minutes",0)} min'},
     {"label": "Simulations", "value": f'{overview.get("simulations",0):,}' if overview.get("simulations") else "—", "accent": "blue", "icon": "sim", "hint": overview.get("selected_model", "")},
@@ -41,14 +53,14 @@ with left:
         prob = overview.get("top_champion_probability") or 0
         st.markdown(
             f'''<div class="sk-feature">
-              <div class="sk-kicker" style="color:{GOLD}">{icon("trophy", GOLD, 14)} Most likely champion</div>
+              <div class="sk-kicker" style="color:{GOLD}">{icon("trophy", GOLD, 14)} {"World champions" if is_complete else "Most likely champion"}</div>
               <div style="display:flex;align-items:center;gap:.6rem;margin-top:.5rem">
                 <span style="font-size:2.2rem">{flag}</span>
                 <span style="font-family:'Space Grotesk';font-weight:700;font-size:2.3rem;color:#eef4fd">{overview["top_champion"]}</span>
               </div>
-              <div style="font-family:'Space Grotesk';font-weight:700;font-size:2.6rem;color:{GOLD};margin-top:.3rem">{pct(prob)}</div>
-              <div style="color:{FG2};font-size:.85rem;margin-top:.4rem">{'Confirmed Final' if is_final else 'Projected final'}: {overview.get("top_finalist_pair","—")}{'' if is_final else f' ({pct(overview.get("top_finalist_pair_probability"))})'}</div>
-              <div style="color:{FG3};font-size:.75rem;margin-top:.35rem">{'Direct XGBoost probability of winning the final and championship' if is_final else 'Monte Carlo championship probability'}</div>
+              <div style="font-family:'Space Grotesk';font-weight:700;font-size:2.6rem;color:{GOLD};margin-top:.3rem">{(str(final_result.get("champion_goals")) + "–" + str(final_result.get("runner_up_goals"))) if is_complete else pct(prob)}</div>
+              <div style="color:{FG2};font-size:.85rem;margin-top:.4rem">{f'Final: {final_result.get("champion")} {final_result.get("champion_goals")}–{final_result.get("runner_up_goals")} {final_result.get("runner_up")} · {final_result.get("decided_label")}' if is_complete else ('Confirmed Final' if is_final else 'Projected final') + f': {overview.get("top_finalist_pair","—")}' + ('' if is_final else f' ({pct(overview.get("top_finalist_pair_probability"))})')}</div>
+              <div style="color:{FG3};font-size:.75rem;margin-top:.35rem">{f'{final_result.get("runner_up")} finished as runner-up · tournament complete' if is_complete else ('Direct XGBoost probability of winning the final and championship' if is_final else 'Monte Carlo championship probability')}</div>
             </div>''',
             unsafe_allow_html=True,
         )

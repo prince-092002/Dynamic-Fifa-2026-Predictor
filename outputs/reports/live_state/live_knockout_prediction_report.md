@@ -1,28 +1,28 @@
 # Live Knockout Prediction Report
 
-- Generated: 2026-07-19T18:07:41+00:00
-- Known remaining knockout matchups: 1
-- Predicted by live model: 1
+- Generated: 2026-07-20T06:05:48+00:00
+- Known remaining knockout matchups: 0
+- Predicted by live model: 0
 - Failed (missing features): 0
-- Knockout matches skipped because they are completed: 30
+- Knockout matches skipped because they are completed: 31
 - Knockout matches skipped because participants are TBD: 0
-- Model used: xgboost
+- Model used: unknown
 
 ## Feature Completeness
 
-- Spain vs Argentina (Final): complete (0 missing feature values)
+No live knockout feature rows were generated.
 
 ## Live Model Predictions
 
 | Stage | Match | P(team A win) | P(draw) | P(team A loss) | P(A advances) | Source | Status |
 |---|---|---:|---:|---:|---:|---|---|
-| Final | Spain vs Argentina | 0.4079 | 0.2232 | 0.3689 | 0.5195 | live_model | predicted |
+| - | No predictions generated | - | - | - | - | - | - |
 
 ## Probability Source Usage (simulated matches)
 
 | Source | Previous run | Latest run |
 |---|---:|---:|
-| live_model_exact | 10000 | 10000 |
+| completed_result | 10000 | 10000 |
 
 - Elo/neutral fallback share before: 0.00%
 - Elo/neutral fallback share after: 0.00%

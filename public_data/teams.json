@@ -36,34 +36,28 @@
    "code": "AR",
    "flag": "\ud83c\udde6\ud83c\uddf7",
    "group": "J",
-   "status": "alive",
+   "status": "runner_up",
    "stage_reached": "Final",
-   "eliminated_by": null,
-   "eliminated_in": null,
-   "played": 7,
+   "eliminated_by": "Spain",
+   "eliminated_in": "Final",
+   "played": 8,
    "wins": 7,
    "draws": 0,
-   "losses": 0,
+   "losses": 1,
    "goals_for": 19,
-   "goals_against": 7,
-   "goal_difference": 12,
-   "champion_probability": 0.480529,
+   "goals_against": 8,
+   "goal_difference": 11,
+   "champion_probability": null,
    "reach_final_probability": 1.0,
-   "next_matchup": {
-    "opponent": "Spain",
-    "stage": "Final",
-    "date": "2026-07-19T19:00:00Z",
-    "advance_probability": 0.480529,
-    "source_label": "Live XGBoost prediction"
-   },
+   "next_matchup": null,
    "latest_result": {
-    "date": "2026-07-15",
-    "stage": "Semifinal",
-    "opponent": "England",
-    "goals_for": 2,
+    "date": "2026-07-19",
+    "stage": "Final",
+    "opponent": "Spain",
+    "goals_for": 0,
     "goals_against": 1,
-    "result": "W",
-    "score": "2-1"
+    "result": "L",
+    "score": "0-1"
    }
   },
   {
@@ -1212,34 +1206,28 @@
    "code": "ES",
    "flag": "\ud83c\uddea\ud83c\uddf8",
    "group": "H",
-   "status": "alive",
+   "status": "champion",
    "stage_reached": "Final",
    "eliminated_by": null,
    "eliminated_in": null,
-   "played": 7,
-   "wins": 6,
+   "played": 8,
+   "wins": 7,
    "draws": 1,
    "losses": 0,
-   "goals_for": 13,
+   "goals_for": 14,
    "goals_against": 1,
-   "goal_difference": 12,
-   "champion_probability": 0.519471,
+   "goal_difference": 13,
+   "champion_probability": 1.0,
    "reach_final_probability": 1.0,
-   "next_matchup": {
-    "opponent": "Argentina",
-    "stage": "Final",
-    "date": "2026-07-19T19:00:00Z",
-    "advance_probability": 0.519471,
-    "source_label": "Live XGBoost prediction"
-   },
+   "next_matchup": null,
    "latest_result": {
-    "date": "2026-07-14",
-    "stage": "Semifinal",
-    "opponent": "France",
-    "goals_for": 2,
+    "date": "2026-07-19",
+    "stage": "Final",
+    "opponent": "Argentina",
+    "goals_for": 1,
     "goals_against": 0,
     "result": "W",
-    "score": "2-0"
+    "score": "1-0"
    }
   },
   {
@@ -1454,7 +1442,7 @@
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-19T18:07:42+00:00",
+  "generated_at": "2026-07-20T06:05:49+00:00",
   "source_files": [
    "outputs/live_state/football_data_org_teams_normalized.csv",
    "outputs/live_state/merged_bracket_state.csv",
@@ -1462,7 +1450,7 @@
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "final",
-  "run_id": "2026-07-19T180552Z-3892c2d5"
+  "current_phase": "complete",
+  "run_id": "2026-07-20T060341Z-d924d50f"
  }
 }

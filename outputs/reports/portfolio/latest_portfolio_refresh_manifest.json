@@ -1,18 +1,18 @@
 {
-  "refresh_id": "refresh-2026-07-19T180507Z-ff5ce7",
-  "started_at": "2026-07-19T18:05:07+00:00",
-  "completed_at": "2026-07-19T18:07:43+00:00",
-  "git_commit_before_refresh": "3714ca6",
-  "phase_before": "final",
-  "phase_after": "final",
+  "refresh_id": "refresh-2026-07-20T060259Z-3a7a32",
+  "started_at": "2026-07-20T06:02:59+00:00",
+  "completed_at": "2026-07-20T06:05:51+00:00",
+  "git_commit_before_refresh": "1c522df",
+  "phase_before": "complete",
+  "phase_after": "complete",
   "provider": "football_data_org",
   "provider_mode": "fresh_api",
-  "completed_matches_before": 102,
-  "completed_matches_after": 103,
-  "teams_alive": 2,
+  "completed_matches_before": 104,
+  "completed_matches_after": 104,
+  "teams_alive": 0,
   "teams_eliminated": 46,
-  "newly_completed_matches": 1,
-  "newly_predicted_matchups": 1,
+  "newly_completed_matches": 0,
+  "newly_predicted_matchups": 0,
   "simulation_count": 10000,
   "live_forecast_status": "success",
   "live_forecast_validation": "pass",
@@ -43,12 +43,12 @@
     "pre_refresh": {
       "archived": false,
       "reason": "duplicate_state",
-      "state_hash": "c8dee2c9730f6428"
+      "state_hash": "336a0303adbefde2"
     },
     "post_refresh": {
-      "archived": true,
-      "snapshot_id": "20260719T180742Z__final__103_completed",
-      "state_hash": "c369c9ee48835b50"
+      "archived": false,
+      "reason": "duplicate_state",
+      "state_hash": "336a0303adbefde2"
     },
     "dry_run": false
   }

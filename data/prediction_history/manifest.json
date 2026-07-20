@@ -88,6 +88,17 @@
       "record_class": "genuine_archived_forecast",
       "git_commit": "3714ca6",
       "file": "snapshots/20260719T180742Z__final__103_completed.json"
+    },
+    {
+      "snapshot_id": "20260720T055301Z__complete__104_completed",
+      "generated_at": "2026-07-20T05:53:01+00:00",
+      "display_date": "2026-07-20",
+      "tournament_phase": "complete",
+      "completed_matches": 104,
+      "state_hash": "336a0303adbefde2",
+      "record_class": "genuine_archived_forecast",
+      "git_commit": "1c522df",
+      "file": "snapshots/20260720T055301Z__complete__104_completed.json"
     }
   ]
 }

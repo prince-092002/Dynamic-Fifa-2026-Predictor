@@ -9,7 +9,7 @@ import {
 export const metadata: Metadata = {
   title: "About — FIFA 2026 Tournament Intelligence",
   description:
-    "What this project is, the data and models behind it, how the live forecast updates, its limitations, and a plain-language FAQ. Independent football analytics — not affiliated with FIFA.",
+    "What this project is, the data and models behind it, how the forecast updated through the tournament, its limitations, and a plain-language FAQ. The completed archive records Spain as FIFA World Cup 2026 champions. Independent football analytics — not affiliated with FIFA.",
 };
 
 const DATA_SOURCES = [
@@ -80,11 +80,11 @@ const FAQS: [string, React.ReactNode][] = [
   ["Is recency bias affecting the model?",
     "Recent form is deliberately a short-window signal and is balanced against Elo and head-to-head history. It informs the forecast; it doesn't dominate it."],
   ["Why do finalist and champion probabilities change after each match?",
-    "Because this is a live forecast, not a one-time prediction. Every completed result is locked, and the remaining bracket is simulated again from the real current state — so the odds move as the tournament actually resolves."],
+    "Because this was a live forecast, not a one-time prediction. Every completed result was locked, and the remaining bracket was simulated again from the real current state — so the odds moved as the tournament actually resolved. The archived final version records Spain as champion and preserves the model's 51.9% pre-final probability through Prediction History."],
   ["Why can a team look more likely to reach the final after a different team is eliminated?",
     "A team's path to the final runs through its own half of the bracket. When a strong rival on that side is knocked out, the simulated route gets easier, so that team's finalist probability rises even though it didn't play."],
   ["Does the model use the current team status?",
-    "Yes. Completed results, eliminations, standings, and the live bracket are always current, sourced from football-data.org, and reflected in every new forecast."],
+    "Yes. Completed results, eliminations, standings, and the bracket were sourced from football-data.org and reflected in every new forecast — through to the completed final."],
   ["Does it use player injuries, lineups, or tactics?",
     "No. The production model is team-level — Elo, form, goals, head-to-head, and tournament context. It does not model individual injuries, expected lineups, or tactical style. That's a stated limitation, not a hidden one."],
   ["What is Monte Carlo simulation?",
@@ -129,8 +129,15 @@ export default function AboutPage() {
           A live <span className="text-gold-grad">football intelligence</span> platform
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-fg2">
-          An independent analytics project that forecasts the likely finalists and champion of the FIFA World Cup 2026 —
-          and keeps updating as real matches are played. Not a one-time prediction: a live decision system.
+          An independent analytics project that forecast the likely finalists and champion of the FIFA World Cup 2026,
+          updating as real matches were played. Not a one-time prediction: a live decision system.
+        </p>
+        <p className="mx-auto mt-5 max-w-2xl text-sm text-fg2">
+          <span className="champion-chip"><Trophy width={13} height={13} aria-hidden /> Tournament complete</span>
+          <span className="mt-2 block">
+            The archived final version records <span className="text-fg">Spain</span> as FIFA World Cup 2026 champions
+            and preserves the model&apos;s 51.9% pre-final probability through Prediction History.
+          </span>
         </p>
         <div className="mt-7 flex flex-wrap justify-center gap-2">
           {["Live forecasting", "Machine learning", "Bracket-aware simulation", "Auditable & honest"].map((c) => (
@@ -142,10 +149,10 @@ export default function AboutPage() {
       {/* ---------- A · OVERVIEW ---------- */}
       <section className="mt-6">
         <SecHead icon={<Trophy width={18} height={18} />} kicker="Project overview" title="What this project is"
-          sub="An end-to-end sports-analytics system: it ingests real results, engineers leakage-safe machine-learning features, predicts each resolved knockout matchup, and simulates the remaining tournament to estimate finalist and champion probabilities." />
+          sub="An end-to-end sports-analytics system: it ingested real results, engineered leakage-safe machine-learning features, predicted each resolved knockout matchup, and simulated the remaining tournament to estimate finalist and champion probabilities. The tournament is now complete — Spain are champions — and this archived version preserves the final state and the full prediction history." />
         <div className="grid gap-3 sm:grid-cols-2">
           {[
-            ["Live, not static", "Forecasts refresh the moment a real match ends — the bracket rewrites itself and the odds move with it."],
+            ["Live, not static", "Through the tournament, forecasts refreshed the moment a real match ended — the bracket rewrote itself and the odds moved with it."],
             ["Machine learning", "A trained XGBoost model estimates win / draw / loss probabilities for each matchup."],
             ["Bracket-aware simulation", "Monte Carlo plays out the rest of the tournament thousands of times to turn match odds into title odds."],
             ["Product thinking", "Data engineering, modeling, simulation, honest UX, and deployment — built as a portfolio-grade system."],

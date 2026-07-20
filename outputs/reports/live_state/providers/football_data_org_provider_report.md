@@ -9,8 +9,8 @@
 - Matches endpoint HTTP status: 200
 - Matches row count: 104
 - resultSet count: 104
-- Finished matches count: 103
-- Scheduled matches count: 1
+- Finished matches count: 104
+- Scheduled matches count: 0
 - Live/in-play matches count: 0
 - Teams endpoint HTTP status: 200
 - Teams row count: 48
@@ -19,7 +19,7 @@
 - Normalized data source: latest provider response
 - Stages detected: Final, Group Stage, Quarterfinal, Round of 16, Round of 32, Semifinal, Third Place Playoff
 - Groups detected: GROUP_A, GROUP_B, GROUP_C, GROUP_D, GROUP_E, GROUP_F, GROUP_G, GROUP_H, GROUP_I, GROUP_J, GROUP_K, GROUP_L
-- Current phase detected: final
+- Current phase detected: complete
 - Can support live forecast: yes
 - Provider status: available_true_live
 

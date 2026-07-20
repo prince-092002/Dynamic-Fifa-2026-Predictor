@@ -13,6 +13,8 @@ from theme import header, apply_plotly, flag_html  # noqa: E402
 
 overview = load_json("latest_overview.json")
 is_final = overview.get("current_phase") == "final"
+final_result = overview.get("final_result") or {}
+is_complete = bool(overview.get("tournament_complete") and final_result)
 header(
     "The Road to the Title",
     "Final prediction" if is_final else "Tournament forecast",
@@ -72,7 +74,7 @@ with right:
     else:
         missing("Finalist forecast unavailable.")
 
-st.subheader("Confirmed Final" if is_final else "Projected finals")
+st.subheader("Final result" if is_complete else ("Confirmed Final" if is_final else "Projected finals"))
 if pairs.get("entries"):
     frame = pd.DataFrame(pairs["entries"]).nlargest(10, "probability")
     frame = frame.head(1) if is_final else frame

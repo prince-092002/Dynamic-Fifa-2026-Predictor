@@ -1,32 +1,13 @@
 {
- "matchups": [
-  {
-   "stage": "Final",
-   "team_a": "Spain",
-   "team_b": "Argentina",
-   "team_a_slug": "spain",
-   "team_b_slug": "argentina",
-   "team_a_advance_probability": 0.519471,
-   "team_b_advance_probability": 0.480529,
-   "prob_team_a_win": 0.407867,
-   "prob_draw": 0.223209,
-   "prob_team_a_loss": 0.368924,
-   "favorite": "Spain",
-   "model": "xgboost",
-   "prediction_status": "predicted",
-   "probability_source": "live_model",
-   "source_label": "Live XGBoost prediction",
-   "generated_at": "2026-07-19T18:06:33+00:00"
-  }
- ],
+ "matchups": [],
  "_meta": {
-  "generated_at": "2026-07-19T18:07:42+00:00",
+  "generated_at": "2026-07-20T06:05:49+00:00",
   "source_files": [
    "outputs/live_state/live_knockout_match_predictions.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "final",
-  "run_id": "2026-07-19T180552Z-3892c2d5"
+  "current_phase": "complete",
+  "run_id": "2026-07-20T060341Z-d924d50f"
  }
 }

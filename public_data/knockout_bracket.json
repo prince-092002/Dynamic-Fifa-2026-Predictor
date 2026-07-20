@@ -12,6 +12,7 @@
      "team_b": "Canada",
      "score": "0-1",
      "winner": "Canada",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -24,6 +25,7 @@
      "team_b": "Japan",
      "score": "2-1",
      "winner": "Brazil",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -36,6 +38,7 @@
      "team_b": "Paraguay",
      "score": "4-5",
      "winner": "Paraguay",
+     "score_duration": "PENALTY_SHOOTOUT",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -48,6 +51,7 @@
      "team_b": "Morocco",
      "score": "3-4",
      "winner": "Morocco",
+     "score_duration": "PENALTY_SHOOTOUT",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -60,6 +64,7 @@
      "team_b": "Norway",
      "score": "1-2",
      "winner": "Norway",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -72,6 +77,7 @@
      "team_b": "Sweden",
      "score": "3-0",
      "winner": "France",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -84,6 +90,7 @@
      "team_b": "Ecuador",
      "score": "2-0",
      "winner": "Mexico",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -96,6 +103,7 @@
      "team_b": "Congo DR",
      "score": "2-1",
      "winner": "England",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -108,6 +116,7 @@
      "team_b": "Senegal",
      "score": "3-2",
      "winner": "Belgium",
+     "score_duration": "EXTRA_TIME",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -120,6 +129,7 @@
      "team_b": "Bosnia-Herzegovina",
      "score": "2-0",
      "winner": "United States",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -132,6 +142,7 @@
      "team_b": "Austria",
      "score": "3-0",
      "winner": "Spain",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -144,6 +155,7 @@
      "team_b": "Croatia",
      "score": "2-1",
      "winner": "Portugal",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -156,6 +168,7 @@
      "team_b": "Algeria",
      "score": "2-0",
      "winner": "Switzerland",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -168,6 +181,7 @@
      "team_b": "Egypt",
      "score": "3-5",
      "winner": "Egypt",
+     "score_duration": "PENALTY_SHOOTOUT",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -180,6 +194,7 @@
      "team_b": "Cape Verde Islands",
      "score": "3-2",
      "winner": "Argentina",
+     "score_duration": "EXTRA_TIME",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -192,6 +207,7 @@
      "team_b": "Ghana",
      "score": "1-0",
      "winner": "Colombia",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     }
@@ -209,6 +225,7 @@
      "team_b": "Morocco",
      "score": "0-3",
      "winner": "Morocco",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -221,6 +238,7 @@
      "team_b": "France",
      "score": "0-1",
      "winner": "France",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -233,6 +251,7 @@
      "team_b": "Norway",
      "score": "1-2",
      "winner": "Norway",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -245,6 +264,7 @@
      "team_b": "England",
      "score": "2-3",
      "winner": "England",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -257,6 +277,7 @@
      "team_b": "Spain",
      "score": "0-1",
      "winner": "Spain",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -269,6 +290,7 @@
      "team_b": "Belgium",
      "score": "1-4",
      "winner": "Belgium",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -281,6 +303,7 @@
      "team_b": "Egypt",
      "score": "3-2",
      "winner": "Argentina",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -293,6 +316,7 @@
      "team_b": "Colombia",
      "score": "4-3",
      "winner": "Switzerland",
+     "score_duration": "PENALTY_SHOOTOUT",
      "source": "completed_result",
      "source_label": "Completed real result"
     }
@@ -310,6 +334,7 @@
      "team_b": "Morocco",
      "score": "2-0",
      "winner": "France",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -322,6 +347,7 @@
      "team_b": "Belgium",
      "score": "2-1",
      "winner": "Spain",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -334,6 +360,7 @@
      "team_b": "England",
      "score": "1-2",
      "winner": "England",
+     "score_duration": "EXTRA_TIME",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -346,6 +373,7 @@
      "team_b": "Switzerland",
      "score": "3-1",
      "winner": "Argentina",
+     "score_duration": "EXTRA_TIME",
      "source": "completed_result",
      "source_label": "Completed real result"
     }
@@ -363,6 +391,7 @@
      "team_b": "Spain",
      "score": "0-2",
      "winner": "Spain",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     },
@@ -375,6 +404,7 @@
      "team_b": "Argentina",
      "score": "1-2",
      "winner": "Argentina",
+     "score_duration": "REGULAR",
      "source": "completed_result",
      "source_label": "Completed real result"
     }
@@ -387,15 +417,14 @@
      "fixture_id": 537390,
      "stage": "Final",
      "date": "2026-07-19T19:00:00Z",
-     "state": "scheduled_known",
+     "state": "completed",
      "team_a": "Spain",
      "team_b": "Argentina",
-     "team_a_advance_probability": 0.519471,
-     "team_b_advance_probability": 0.480529,
-     "predicted_favorite": "Spain",
-     "source": "live_model",
-     "source_label": "Live XGBoost prediction",
-     "model": "xgboost"
+     "score": "1-0",
+     "winner": "Spain",
+     "score_duration": "EXTRA_TIME",
+     "source": "completed_result",
+     "source_label": "Completed real result"
     }
    ]
   }
@@ -408,9 +437,9 @@
   "neutral_fallback": "Neutral fallback",
   "unresolved_tbd": "Awaiting real participants"
  },
- "current_phase": "final",
+ "current_phase": "complete",
  "_meta": {
-  "generated_at": "2026-07-19T18:07:42+00:00",
+  "generated_at": "2026-07-20T06:05:49+00:00",
   "source_files": [
    "outputs/live_state/merged_bracket_state.csv",
    "outputs/live_state/football_data_org_fixtures_normalized.csv",
@@ -418,7 +447,7 @@
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "final",
-  "run_id": "2026-07-19T180552Z-3892c2d5"
+  "current_phase": "complete",
+  "run_id": "2026-07-20T060341Z-d924d50f"
  }
 }

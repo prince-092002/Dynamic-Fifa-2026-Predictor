@@ -10,10 +10,24 @@ const body = Inter({ subsets: ["latin"], variable: "--font-body" });
 // Tall, geometric, high-impact display face used only for the hero "FIFA 2026" title.
 const poster = Anton({ subsets: ["latin"], weight: "400", variable: "--font-poster" });
 
+const TITLE = "Spain Win the FIFA World Cup | Dynamic FIFA 2026 Predictor";
+const DESCRIPTION =
+  "The completed Dynamic FIFA 2026 Tournament Outcome Predictor records Spain as world champions after a 1–0 extra-time victory over Argentina. The model's final pre-match simulation gave Spain a 51.9% championship probability. Independent analytics project — not affiliated with FIFA.";
+
 export const metadata: Metadata = {
-  title: "Dynamic FIFA 2026 — Tournament Intelligence Platform",
-  description:
-    "A live football intelligence platform combining ~50,000 historical matches, Elo ratings, XGBoost matchup probabilities, and Monte Carlo simulation to forecast the FIFA World Cup 2026. Independent analytics project — not affiliated with FIFA.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    type: "website",
+    siteName: "Dynamic FIFA 2026 Predictor",
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

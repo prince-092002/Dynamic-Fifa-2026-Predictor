@@ -1,5 +1,5 @@
 {
-  "refresh_timestamp": "2026-07-19T18:05:08+00:00",
+  "refresh_timestamp": "2026-07-20T06:02:59+00:00",
   "mode": "matchday",
   "force": false,
   "source_used": "existing_processed_csv",
@@ -8,18 +8,18 @@
   "completed_results_count": 0,
   "new_completed_matches_detected": 0,
   "files_updated": [
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\processed\\historical_international_matches.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\processed\\historical_world_cup_matches.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\processed\\fixtures_2026.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\processed\\results_2026.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\processed\\team_ratings.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\processed\\team_stats_2026.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\processed\\player_stats_2026.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\processed\\matches_master.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\data_validation_report.csv",
-    "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\end_of_matchday_update_summary.md"
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\processed\\historical_international_matches.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\processed\\historical_world_cup_matches.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\processed\\fixtures_2026.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\processed\\results_2026.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\processed\\team_ratings.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\processed\\team_stats_2026.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\processed\\player_stats_2026.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\processed\\matches_master.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\data_validation_report.csv",
+    "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\end_of_matchday_update_summary.md"
   ],
-  "backup_folder": "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\data\\backups\\20260719_130508",
+  "backup_folder": "C:\\Users\\abelp\\Desktop\\fifa-final-production\\data\\backups\\20260720_010300",
   "validation_status": "passed",
   "warnings": [
     "API-Football returned 0 fixture rows; using existing processed CSVs."
@@ -28,35 +28,33 @@
   "next_recommended_action": "Data refresh complete. Ready for the next modeling phase when needed.",
   "live_forecast": {
     "status": "success",
-    "current_phase": "final",
+    "current_phase": "complete",
     "finalist_prediction_active": false,
     "top_finalist_pair": "Argentina vs Spain",
     "top_finalist_pair_probability": 1.0,
     "top_champion": "Spain",
-    "top_champion_probability": 0.5194714075169387,
+    "top_champion_probability": 1.0,
     "fallback_bracket_usage": 0.0,
     "forecast_mode": "true_live_forecast",
     "public_label": "True live forecast from current tournament state",
     "source_quality_score": 100,
     "forecast_ran": true,
     "live_matchup_prediction_status": "success",
-    "live_matchups_predicted": 1,
-    "live_model_probability_uses": 10000,
+    "live_matchups_predicted": 0,
+    "live_model_probability_uses": 0,
     "probability_source_counts": {
-      "live_model_exact": 10000
+      "completed_result": 10000
     },
-    "run_id": "2026-07-19T180552Z-3892c2d5",
+    "run_id": "2026-07-20T060341Z-d924d50f",
     "phase_transition": {
-      "previous_phase": "final",
-      "current_phase": "final",
+      "previous_phase": "complete",
+      "current_phase": "complete",
       "phase_changed": false,
-      "detected_at": "2026-07-19T18:07:41+00:00",
+      "detected_at": "2026-07-20T06:05:48+00:00",
       "newly_resolved_matchups": 0,
-      "newly_completed_matches": 1,
-      "completed_match_count": 103,
-      "resolved_matchup_ids": [
-        "football_data_org_537390"
-      ],
+      "newly_completed_matches": 0,
+      "completed_match_count": 104,
+      "resolved_matchup_ids": [],
       "first_recorded_run": false
     },
     "public_export_publication": {
@@ -97,18 +95,18 @@
       "message": "13 public files changed."
     },
     "reports": [
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\providers\\provider_selection_report.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\fifa_official_live_status.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\fifa_official_live_status.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\live_knockout_prediction_report.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\live_knockout_prediction_validation.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\probability_source_progression.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\live_state\\latest_live_run_manifest.json",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\live_state_summary.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\finalist_prediction_summary.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\live_update_limitations.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\source_verification\\live_forecast_quality_gate.md",
-      "C:\\Users\\abelp\\Desktop\\Dynamic-Fifa-2026-Predictor-PreFinal\\outputs\\reports\\live_state\\live_validation_report.md"
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\providers\\provider_selection_report.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\fifa_official_live_status.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\fifa_official_live_status.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\live_knockout_prediction_report.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\live_knockout_prediction_validation.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\probability_source_progression.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\live_state\\latest_live_run_manifest.json",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\live_state_summary.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\finalist_prediction_summary.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\live_update_limitations.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\source_verification\\live_forecast_quality_gate.md",
+      "C:\\Users\\abelp\\Desktop\\fifa-final-production\\outputs\\reports\\live_state\\live_validation_report.md"
     ]
   },
   "no_retrain": true,

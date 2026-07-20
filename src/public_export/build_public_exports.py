@@ -199,6 +199,62 @@ def _team_groups() -> dict[str, str]:
 
 
 # ---------------------------------------------------------------------------
+# Completed-tournament publication metadata
+# ---------------------------------------------------------------------------
+# Timestamp of the final publication of the completed-tournament state. This is a
+# PUBLICATION time, deliberately distinct from any provider match timestamp (the final
+# kicked off at 2026-07-19T19:00:00Z). It is never written back onto match data.
+FINAL_PUBLICATION_AT = "2026-07-19T19:00:00-05:00"
+FINAL_PUBLICATION_LABEL = "July 19, 2026 at 7:00 PM CT"
+
+# Provider score.duration -> public label for how the result was decided.
+DURATION_LABELS = {
+    "REGULAR": "Full time",
+    "EXTRA_TIME": "After extra time",
+    "PENALTY_SHOOTOUT": "After penalties",
+}
+
+
+def _build_final_result(lifecycle: dict) -> dict | None:
+    """The completed final as historical fact (champion, runner-up, score, duration).
+
+    Returns ``None`` while the final has not been played, so callers can keep showing the
+    live forecast. Everything here is derived from provider data — nothing is hardcoded.
+    """
+    champion = next((n for n, e in lifecycle.items() if e.get("status") == "champion"), None)
+    runner_up = next((n for n, e in lifecycle.items() if e.get("status") == "runner_up"), None)
+    if not champion:
+        return None
+    fixtures = _read_csv(LIVE_STATE_DIR / "football_data_org_fixtures_normalized.csv")
+    if fixtures.empty:
+        return None
+    stage = fixtures.get("stage", pd.Series("", index=fixtures.index)).astype(str).str.strip().str.lower()
+    completed = coerce_bool_series(fixtures.get("is_completed", pd.Series(False, index=fixtures.index)))
+    finals = fixtures[(stage == "final") & completed]
+    if finals.empty:
+        return None
+    row = finals.iloc[-1]
+    goals_a = pd.to_numeric(row.get("team_a_goals"), errors="coerce")
+    goals_b = pd.to_numeric(row.get("team_b_goals"), errors="coerce")
+    champion_goals, runner_up_goals = (goals_a, goals_b) if str(row.get("team_a")) == champion else (goals_b, goals_a)
+    duration = row.get("score_duration")
+    duration = str(duration) if pd.notna(duration) else None
+    return {
+        "champion": champion,
+        "runner_up": runner_up,
+        "champion_goals": int(champion_goals) if pd.notna(champion_goals) else None,
+        "runner_up_goals": int(runner_up_goals) if pd.notna(runner_up_goals) else None,
+        "score": f"{int(champion_goals)}-{int(runner_up_goals)}" if pd.notna(champion_goals) and pd.notna(runner_up_goals) else None,
+        "score_duration": duration,
+        "decided_label": DURATION_LABELS.get(duration or "", "Full time"),
+        "went_to_extra_time": duration in {"EXTRA_TIME", "PENALTY_SHOOTOUT"},
+        "match_date": str(row.get("date")) if pd.notna(row.get("date")) else None,
+        "published_at": FINAL_PUBLICATION_AT,
+        "published_label": FINAL_PUBLICATION_LABEL,
+    }
+
+
+# ---------------------------------------------------------------------------
 # Export builders
 # ---------------------------------------------------------------------------
 
@@ -209,11 +265,17 @@ def _build_overview(lifecycle: dict) -> dict:
     manifest = _read_json(LIVE_STATE_DIR / "latest_live_run_manifest.json")
     matchups = _read_csv(LIVE_STATE_DIR / "remaining_known_knockout_matchups.csv")
     statuses = [entry["status"] for entry in lifecycle.values()]
+    final_result = _build_final_result(lifecycle)
+    tournament_complete = str(gate.get("current_phase")) == "complete" and final_result is not None
     return {
         "current_phase": gate.get("current_phase"),
+        "tournament_complete": tournament_complete,
+        "final_result": final_result,
         "completed_matches": gate.get("completed_result_count"),
         "teams_total": len(lifecycle),
-        "teams_alive": sum(1 for s in statuses if s in {"alive", "champion", "runner_up"}),
+        # Teams with a live path to the trophy. Once the final is played nobody is still
+        # competing, so this is 0 — the champion/runner-up are reported via final_result.
+        "teams_alive": 0 if tournament_complete else sum(1 for s in statuses if s in {"alive", "champion", "runner_up"}),
         "teams_eliminated": sum(1 for s in statuses if s == "eliminated"),
         "known_unresolved_matchups": int(len(matchups)),
         "top_champion": summary.get("top_champion"),
@@ -272,10 +334,13 @@ def _build_bracket() -> dict:
         if is_completed and fixture is not None:
             goals_a = pd.to_numeric(fixture.get("team_a_goals"), errors="coerce")
             goals_b = pd.to_numeric(fixture.get("team_b_goals"), errors="coerce")
+            duration = fixture.get("score_duration")
             match.update(
                 {
                     "score": f"{int(goals_a)}-{int(goals_b)}" if pd.notna(goals_a) and pd.notna(goals_b) else None,
                     "winner": str(row.get("winner")) if pd.notna(row.get("winner")) else None,
+                    # Provider-supplied: REGULAR | EXTRA_TIME | PENALTY_SHOOTOUT.
+                    "score_duration": str(duration) if pd.notna(duration) else None,
                     "source": "completed_result",
                     "source_label": SOURCE_LABELS["completed_result"],
                 }

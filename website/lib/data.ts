@@ -28,3 +28,30 @@ export const getTeamStats = () => readJson<{ team_stats: Record<string, TeamStat
 export const getMatchupPredictions = () => readJson<{ matchups: MatchupPrediction[] }>("matchup_predictions.json");
 export const getModelInsights = () => readJson<ModelInsights>("model_insights.json");
 
+interface ChampionHistoryPoint {
+  run_id: string;
+  timestamp: string;
+  phase: string;
+  team: string;
+  champion_probability: number;
+}
+
+/**
+ * The last champion forecast archived *before* the final was played.
+ *
+ * Read from the committed forecast history so the pre-match probabilities shown beside the
+ * result are the genuine archived numbers — never rewritten after the outcome was known.
+ */
+export function getPreFinalForecast(): { entries: { team: string; probability: number }[]; timestamp: string | null } | null {
+  const history = readJson<{ champion?: ChampionHistoryPoint[] }>("forecast_history.json");
+  const points = history?.champion ?? [];
+  const preFinal = points.filter((p) => p.phase === "final");
+  if (preFinal.length === 0) return null;
+  const lastRun = preFinal[preFinal.length - 1].run_id;
+  const entries = preFinal
+    .filter((p) => p.run_id === lastRun)
+    .map((p) => ({ team: p.team, probability: p.champion_probability }))
+    .sort((a, b) => b.probability - a.probability);
+  return entries.length ? { entries, timestamp: preFinal[preFinal.length - 1].timestamp ?? null } : null;
+}
+

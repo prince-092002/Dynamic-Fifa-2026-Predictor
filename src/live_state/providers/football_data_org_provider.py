@@ -30,7 +30,7 @@ REPORT_DIR = LIVE_STATE_DIR.parent / "reports" / "live_state" / "providers"
 FIXTURE_COLUMNS = [
     "fixture_id", "match_id", "date", "round", "stage", "group", "team_a", "team_b", "team_a_id", "team_b_id",
     "team_a_goals", "team_b_goals", "team_a_penalty_goals", "team_b_penalty_goals", "winner", "status_short",
-    "status_long", "elapsed", "is_completed", "is_live", "is_scheduled", "is_knockout", "venue", "city",
+    "status_long", "score_duration", "elapsed", "is_completed", "is_live", "is_scheduled", "is_knockout", "venue", "city",
     "country", "source", "provider", "last_updated",
 ]
 TEAM_COLUMNS = ["team_id", "team", "short_name", "tla", "crest", "country", "source", "provider", "last_updated"]
@@ -228,6 +228,10 @@ class FootballDataOrgProvider:
                     "winner": winner,
                     "status_short": status,
                     "status_long": status,
+                    # Provider-supplied match duration: REGULAR | EXTRA_TIME | PENALTY_SHOOTOUT.
+                    # Preserved so a result decided after extra time can be labelled truthfully
+                    # rather than inferred or hardcoded downstream.
+                    "score_duration": score.get("duration"),
                     "elapsed": match.get("minute"),
                     "is_completed": status in COMPLETED,
                     "is_live": status in LIVE,

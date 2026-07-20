@@ -885,3 +885,42 @@ TypeError: Invalid value 'FINISHED' for dtype 'float64'
 2026-07-19 13:05:20 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\reports\unmapped_team_names.csv
 2026-07-19 13:05:34 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\data\processed\matches_master.csv
 2026-07-19 13:05:51 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-20 00:51:18 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:51:19 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:51:19 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-20 00:51:19 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-20 00:51:19 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:51:19 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_results_2026_template.csv
+2026-07-20 00:51:19 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-20 00:51:19 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-20 00:51:19 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-20 00:51:20 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:51:21 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:51:27 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\fifa-final-production\data\processed\matches_master.csv
+2026-07-20 00:51:35 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-20 00:56:12 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:56:14 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:56:15 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-20 00:56:15 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-20 00:56:15 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:56:15 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_results_2026_template.csv
+2026-07-20 00:56:15 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-20 00:56:15 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-20 00:56:15 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-20 00:56:17 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:56:19 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 00:56:32 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\fifa-final-production\data\processed\matches_master.csv
+2026-07-20 00:56:48 | INFO | src.validation.validate_data | Validation completed with no failures.
+2026-07-20 01:03:04 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 01:03:07 | INFO | src.cleaning.standardize_team_names | Saved 150 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 01:03:07 | INFO | src.loading.manual_sources | Manual fixtures template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_fixtures_2026_template.csv
+2026-07-20 01:03:07 | INFO | src.cleaning.clean_matches | No real manual fixtures rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-20 01:03:07 | INFO | src.cleaning.standardize_team_names | Saved 84 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 01:03:07 | INFO | src.loading.manual_sources | Manual results template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_results_2026_template.csv
+2026-07-20 01:03:07 | INFO | src.cleaning.clean_matches | No real manual results rows found (no_real_manual_rows); using template path only as schema fallback.
+2026-07-20 01:03:07 | INFO | src.loading.manual_sources | Manual team_stats template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_team_stats_2026_template.csv
+2026-07-20 01:03:07 | INFO | src.loading.manual_sources | Manual player_stats template exists but has no real rows: C:\Users\abelp\Desktop\fifa-final-production\data\raw\manual\manual_player_stats_2026_template.csv
+2026-07-20 01:03:09 | INFO | src.cleaning.standardize_team_names | Saved 634 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 01:03:11 | INFO | src.cleaning.standardize_team_names | Saved 154 unmapped team names to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\unmapped_team_names.csv
+2026-07-20 01:03:24 | INFO | src.cleaning.build_master_dataset | Saved matches master with 50464 rows to C:\Users\abelp\Desktop\fifa-final-production\data\processed\matches_master.csv
+2026-07-20 01:03:41 | INFO | src.validation.validate_data | Validation completed with no failures.

@@ -5,7 +5,7 @@
 
 | Provider | Status | Fixtures | Completed | Standings | Bracket | Score |
 |---|---|---:|---:|---:|---:|---:|
-| football_data_org | available_true_live | 104 | 103 | 144 | 32 | 105 |
+| football_data_org | available_true_live | 104 | 104 | 144 | 32 | 105 |
 | api_football | no_2026_rows | 0 | 0 | 0 | 0 | 0 |
 | sportmonks | credentials_missing | 0 | 0 | 0 | 0 | 0 |
 | fifa_official | endpoint_error | 0 | 0 | 0 | 0 | 0 |

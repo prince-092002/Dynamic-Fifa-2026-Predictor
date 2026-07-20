@@ -1,5 +1,21 @@
+export interface FinalResult {
+  champion: string;
+  runner_up: string | null;
+  champion_goals: number | null;
+  runner_up_goals: number | null;
+  score: string | null;
+  score_duration: string | null;
+  decided_label: string;
+  went_to_extra_time: boolean;
+  match_date: string | null;
+  published_at: string;
+  published_label: string;
+}
+
 export interface Overview {
   current_phase: string | null;
+  tournament_complete?: boolean;
+  final_result?: FinalResult | null;
   completed_matches: number | null;
   teams_total: number;
   teams_alive: number;
@@ -34,6 +50,7 @@ export interface BracketMatch {
   team_a: string | null;
   team_b: string | null;
   score?: string | null;
+  score_duration?: string | null;
   winner?: string | null;
   team_a_advance_probability?: number | null;
   team_b_advance_probability?: number | null;
@@ -172,8 +189,12 @@ export interface ModelInsights {
 export const formatPct = (value: number | null | undefined, digits = 2) =>
   value === null || value === undefined ? "—" : `${(value * 100).toFixed(digits)}%`;
 
+const PHASE_LABELS: Record<string, string> = { complete: "Tournament complete" };
+
 export const formatPhase = (phase: string | null | undefined) =>
-  phase ? phase.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()) : "—";
+  phase
+    ? PHASE_LABELS[phase] ?? phase.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+    : "—";
 
 export const STATUS_LABELS: Record<Team["status"], string> = {
   alive: "Still alive",

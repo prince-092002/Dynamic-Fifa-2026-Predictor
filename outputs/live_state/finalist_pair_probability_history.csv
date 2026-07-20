@@ -39,3 +39,6 @@ run_id,timestamp,phase,simulation_count,provider,forecast_mode,finalist_team_1,f
 2026-07-16T001427Z-9f49d25b,2026-07-16T00:15:25+00:00,final,10000,football_data_org,true_live_forecast,Argentina,Spain,1.0
 2026-07-16T020349Z-fc367517,2026-07-16T02:05:01+00:00,final,10000,football_data_org,true_live_forecast,Argentina,Spain,1.0
 2026-07-19T180552Z-3892c2d5,2026-07-19T18:07:41+00:00,final,10000,football_data_org,true_live_forecast,Argentina,Spain,1.0
+2026-07-20T055135Z-4e8e463d,2026-07-20T05:53:00+00:00,complete,10000,football_data_org,true_live_forecast,Argentina,Spain,1.0
+2026-07-20T055648Z-dd79c3ce,2026-07-20T05:59:02+00:00,complete,10000,football_data_org,true_live_forecast,Argentina,Spain,1.0
+2026-07-20T060341Z-d924d50f,2026-07-20T06:05:48+00:00,complete,10000,football_data_org,true_live_forecast,Argentina,Spain,1.0

@@ -237,10 +237,61 @@
    "total_simulated_decisions": 10000,
    "model_driven_pct": 1.0,
    "fallback_pct": 0.0
+  },
+  {
+   "run_id": "2026-07-20T055135Z-4e8e463d",
+   "timestamp": "2026-07-20T05:53:00+00:00",
+   "tournament_phase": "complete",
+   "simulation_count": 10000,
+   "known_remaining_matchups": 0,
+   "live_model_predictions_available": 0,
+   "live_model_exact": 0,
+   "live_model_reversed": 0,
+   "model_exact": 0,
+   "model_reversed": 0,
+   "elo_fallback": 0,
+   "neutral_fallback": 0,
+   "total_simulated_decisions": 10000,
+   "model_driven_pct": 0.0,
+   "fallback_pct": 0.0
+  },
+  {
+   "run_id": "2026-07-20T055648Z-dd79c3ce",
+   "timestamp": "2026-07-20T05:59:02+00:00",
+   "tournament_phase": "complete",
+   "simulation_count": 10000,
+   "known_remaining_matchups": 0,
+   "live_model_predictions_available": 0,
+   "live_model_exact": 0,
+   "live_model_reversed": 0,
+   "model_exact": 0,
+   "model_reversed": 0,
+   "elo_fallback": 0,
+   "neutral_fallback": 0,
+   "total_simulated_decisions": 10000,
+   "model_driven_pct": 0.0,
+   "fallback_pct": 0.0
+  },
+  {
+   "run_id": "2026-07-20T060341Z-d924d50f",
+   "timestamp": "2026-07-20T06:05:48+00:00",
+   "tournament_phase": "complete",
+   "simulation_count": 10000,
+   "known_remaining_matchups": 0,
+   "live_model_predictions_available": 0,
+   "live_model_exact": 0,
+   "live_model_reversed": 0,
+   "model_exact": 0,
+   "model_reversed": 0,
+   "elo_fallback": 0,
+   "neutral_fallback": 0,
+   "total_simulated_decisions": 10000,
+   "model_driven_pct": 0.0,
+   "fallback_pct": 0.0
   }
  ],
  "_meta": {
-  "generated_at": "2026-07-19T18:07:42+00:00",
+  "generated_at": "2026-07-20T06:05:49+00:00",
   "source_files": [
    "outputs/live_state/probability_source_history.csv"
   ]

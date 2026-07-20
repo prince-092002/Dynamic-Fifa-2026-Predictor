@@ -1,5 +1,5 @@
 provider,provider_status,credentials_available,fixture_rows,completed_rows,live_rows,scheduled_rows,teams_rows,standings_rows,bracket_rows,can_support_true_live,can_support_partial_live,priority,selection_score
-football_data_org,available_true_live,True,104,103,0,1,48,144,32,True,True,2,105
+football_data_org,available_true_live,True,104,104,0,0,48,144,32,True,True,2,105
 api_football,no_2026_rows,True,0,0,0,0,0,0,0,False,False,1,0
 sportmonks,credentials_missing,False,0,0,0,0,0,0,0,False,False,3,0
 fifa_official,endpoint_error,True,0,0,0,0,0,0,0,False,False,4,0

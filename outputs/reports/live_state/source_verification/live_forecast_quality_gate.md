@@ -5,8 +5,8 @@ FORECAST_MODE = true_live_forecast
 - Public label: True live forecast from current tournament state
 - Source quality score: 100
 - Source quality level: high
-- Current phase: final
-- Completed result count: 103
+- Current phase: complete
+- Completed result count: 104
 - Live fixture coverage: 100.00%
 - Completed result coverage: 100.00%
 - Standings coverage: 100.00%

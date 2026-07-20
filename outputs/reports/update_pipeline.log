@@ -175,3 +175,15 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='v3.football.api-s
 2026-07-19 13:05:08 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
 2026-07-19 13:05:08 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\data\backups\20260719_130508
 2026-07-19 13:07:42 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\reports\latest_refresh_summary.json
+2026-07-20 00:51:14 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-20 00:51:15 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-20 00:51:15 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\fifa-final-production\data\backups\20260720_005115
+2026-07-20 00:53:03 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\latest_refresh_summary.json
+2026-07-20 00:56:07 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-20 00:56:08 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-20 00:56:08 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\fifa-final-production\data\backups\20260720_005608
+2026-07-20 00:59:03 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\latest_refresh_summary.json
+2026-07-20 01:02:59 | INFO | fifa_update_pipeline | Update started | mode=matchday | force=False | api_key_available=True
+2026-07-20 01:03:00 | INFO | fifa_update_pipeline | Detected 0 new completed matches from existing_processed_csv
+2026-07-20 01:03:00 | INFO | fifa_update_pipeline | Backups created at C:\Users\abelp\Desktop\fifa-final-production\data\backups\20260720_010300
+2026-07-20 01:05:50 | INFO | fifa_update_pipeline | Refresh summary written to C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\latest_refresh_summary.md and C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\latest_refresh_summary.json

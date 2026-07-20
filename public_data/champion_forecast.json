@@ -2,36 +2,21 @@
  "entries": [
   {
    "team": "Spain",
-   "monte_carlo_champion_probability": 0.5223,
-   "champion_probability": 0.519471,
-   "probability_basis": "direct_final_matchup_probability",
-   "source_match_id": "football_data_org_537390",
-   "model_name": "xgboost",
-   "probability_source": "live_model",
-   "prediction_generated_at": "2026-07-19T18:06:33+00:00",
+   "monte_carlo_champion_probability": 1.0,
+   "champion_probability": 1.0,
+   "probability_basis": "monte_carlo_simulation",
    "slug": "spain"
-  },
-  {
-   "team": "Argentina",
-   "monte_carlo_champion_probability": 0.4777,
-   "champion_probability": 0.480529,
-   "probability_basis": "direct_final_matchup_probability",
-   "source_match_id": "football_data_org_537390",
-   "model_name": "xgboost",
-   "probability_source": "live_model",
-   "prediction_generated_at": "2026-07-19T18:06:33+00:00",
-   "slug": "argentina"
   }
  ],
  "simulations": 10000,
  "_meta": {
-  "generated_at": "2026-07-19T18:07:42+00:00",
+  "generated_at": "2026-07-20T06:05:49+00:00",
   "source_files": [
    "outputs/live_state/live_champion_probabilities.csv"
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "final",
-  "run_id": "2026-07-19T180552Z-3892c2d5"
+  "current_phase": "complete",
+  "run_id": "2026-07-20T060341Z-d924d50f"
  }
 }

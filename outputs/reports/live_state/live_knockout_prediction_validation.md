@@ -1,17 +1,17 @@
 # Live Knockout Prediction Validation
 
-- Generated: 2026-07-19T18:07:41+00:00
+- Generated: 2026-07-20T06:05:48+00:00
 
 | Check | Status | Message |
 |---|---|---|
-| matchup_file_exists | pass | C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\live_state\remaining_known_knockout_matchups.csv |
-| known_unplayed_matchups_detected | pass | 1 matchups |
-| feature_file_exists | pass | C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\live_state\live_knockout_match_features.csv |
-| feature_columns_match_model | pass | all model feature columns present |
-| probabilities_in_range | pass | all probabilities within [0, 1] |
-| probabilities_sum_to_one | pass | max deviation 0.00000 |
-| advancement_probabilities_sum_to_one | pass | max deviation 0.00000 |
+| matchup_file_exists | pass | C:\Users\abelp\Desktop\fifa-final-production\outputs\live_state\remaining_known_knockout_matchups.csv |
+| known_unplayed_matchups_detected | warn | 0 matchups |
+| feature_file_exists | pass | C:\Users\abelp\Desktop\fifa-final-production\outputs\live_state\live_knockout_match_features.csv |
+| feature_columns_match_model | fail | missing: ['team_a_pre_match_elo', 'team_b_pre_match_elo', 'elo_difference', 'elo_expected_score_team_a', 'form_points_last_5_diff', 'win_rate_last_5_diff'] |
+| probabilities_in_range | warn | no predicted rows |
+| probabilities_sum_to_one | warn | no predicted rows |
+| advancement_probabilities_sum_to_one | warn | no predicted rows |
 | completed_matches_not_predicted | pass | 0 completed matches predicted |
 | tbd_matches_not_predicted | pass | 0 TBD matches predicted |
-| live_model_source_used_in_simulation | pass | live_model_exact + live_model_reversed = 10000 |
+| live_model_source_used_in_simulation | warn | no live predictions exist, so simulator fallback is expected |
 | elo_fallback_usage_decreased | warn | fallback share 0.00% -> 0.00% |

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "20260720T055301Z__complete__104_completed",
+  "generated_at": "2026-07-20T05:53:01+00:00",
+  "display_date": "2026-07-20",
+  "timezone": "America/Chicago",
+  "tournament_phase": "complete",
+  "completed_matches": 104,
+  "remaining_matches": 0,
+  "teams_alive": 2,
+  "teams_eliminated": 46,
+  "provider": "football_data_org",
+  "forecast_mode": "true_live_forecast",
+  "source_quality_score": 100,
+  "simulation_count": 10000,
+  "seed": 42,
+  "selected_model": "xgboost",
+  "run_id": "2026-07-20T055135Z-4e8e463d",
+  "record_class": "genuine_archived_forecast",
+  "provenance": {
+    "refresh_id": "refresh-2026-07-20T055607Z-6ee71a",
+    "git_commit": "1c522df",
+    "stage": "pre_refresh"
+  },
+  "main_forecast": {
+    "most_likely_champion": {
+      "team": "Spain",
+      "probability": 1.0,
+      "probability_basis": "monte_carlo_simulation",
+      "monte_carlo_probability": 1.0
+    },
+    "second_most_likely_champion": null,
+    "champion_probabilities": [
+      {
+        "team": "Spain",
+        "probability": 1.0,
+        "probability_basis": "monte_carlo_simulation",
+        "monte_carlo_probability": 1.0
+      }
+    ],
+    "champion_probability_basis": "monte_carlo_simulation",
+    "most_likely_final": {
+      "team_1": "Argentina",
+      "team_2": "Spain",
+      "pair_key": "Argentina vs Spain",
+      "probability": 1.0
+    },
+    "finalist_probabilities": [
+      {
+        "team": "Spain",
+        "probability": 1.0
+      },
+      {
+        "team": "Argentina",
+        "probability": 1.0
+      }
+    ],
+    "predicted_final_winner": null
+  },
+  "matchday_predictions": [],
+  "state_hash": "336a0303adbefde2"
+}

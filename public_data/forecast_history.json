@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-07-19T18:07:42+00:00",
+  "generated_at": "2026-07-20T06:05:49+00:00",
   "source_files": [
    "outputs/live_state/champion_probability_history.csv",
    "outputs/live_state/finalist_probability_history.csv",
@@ -8,8 +8,8 @@
   ],
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
-  "current_phase": "final",
-  "run_id": "2026-07-19T180552Z-3892c2d5"
+  "current_phase": "complete",
+  "run_id": "2026-07-20T060341Z-d924d50f"
  },
  "champion": [
   {
@@ -351,6 +351,36 @@
    "forecast_mode": "true_live_forecast",
    "team": "Argentina",
    "champion_probability": 0.4805285924830613
+  },
+  {
+   "run_id": "2026-07-20T055135Z-4e8e463d",
+   "timestamp": "2026-07-20T05:53:00+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "champion_probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T055648Z-dd79c3ce",
+   "timestamp": "2026-07-20T05:59:02+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "champion_probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T060341Z-d924d50f",
+   "timestamp": "2026-07-20T06:05:48+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "champion_probability": 1.0
   }
  ],
  "finalist": [
@@ -688,6 +718,66 @@
    "run_id": "2026-07-19T180552Z-3892c2d5",
    "timestamp": "2026-07-19T18:07:41+00:00",
    "phase": "final",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Argentina",
+   "reach_final_probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T055135Z-4e8e463d",
+   "timestamp": "2026-07-20T05:53:00+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "reach_final_probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T055135Z-4e8e463d",
+   "timestamp": "2026-07-20T05:53:00+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Argentina",
+   "reach_final_probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T055648Z-dd79c3ce",
+   "timestamp": "2026-07-20T05:59:02+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "reach_final_probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T055648Z-dd79c3ce",
+   "timestamp": "2026-07-20T05:59:02+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Argentina",
+   "reach_final_probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T060341Z-d924d50f",
+   "timestamp": "2026-07-20T06:05:48+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "team": "Spain",
+   "reach_final_probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T060341Z-d924d50f",
+   "timestamp": "2026-07-20T06:05:48+00:00",
+   "phase": "complete",
    "simulation_count": 10000,
    "provider": "football_data_org",
    "forecast_mode": "true_live_forecast",
@@ -1129,6 +1219,39 @@
    "run_id": "2026-07-19T180552Z-3892c2d5",
    "timestamp": "2026-07-19T18:07:41+00:00",
    "phase": "final",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Argentina",
+   "finalist_team_2": "Spain",
+   "probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T055135Z-4e8e463d",
+   "timestamp": "2026-07-20T05:53:00+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Argentina",
+   "finalist_team_2": "Spain",
+   "probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T055648Z-dd79c3ce",
+   "timestamp": "2026-07-20T05:59:02+00:00",
+   "phase": "complete",
+   "simulation_count": 10000,
+   "provider": "football_data_org",
+   "forecast_mode": "true_live_forecast",
+   "finalist_team_1": "Argentina",
+   "finalist_team_2": "Spain",
+   "probability": 1.0
+  },
+  {
+   "run_id": "2026-07-20T060341Z-d924d50f",
+   "timestamp": "2026-07-20T06:05:48+00:00",
+   "phase": "complete",
    "simulation_count": 10000,
    "provider": "football_data_org",
    "forecast_mode": "true_live_forecast",

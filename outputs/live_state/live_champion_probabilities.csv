@@ -1,3 +1,2 @@
-team,champion_count,monte_carlo_champion_probability,champion_probability,probability_basis,source_match_id,model_name,probability_source,prediction_generated_at
-Spain,5223,0.5223,0.5194714075169387,direct_final_matchup_probability,football_data_org_537390,xgboost,live_model,2026-07-19T18:06:33+00:00
-Argentina,4777,0.4777,0.48052859248306135,direct_final_matchup_probability,football_data_org_537390,xgboost,live_model,2026-07-19T18:06:33+00:00
+team,champion_count,monte_carlo_champion_probability,champion_probability,probability_basis
+Spain,10000,1.0,1.0,monte_carlo_simulation

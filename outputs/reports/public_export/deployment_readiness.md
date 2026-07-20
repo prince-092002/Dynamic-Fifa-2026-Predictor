@@ -1,6 +1,6 @@
 # Deployment Readiness
 
-- Generated: 2026-07-19T18:07:43+00:00
+- Generated: 2026-07-20T06:05:50+00:00
 - Overall: not_ready
 
 - public_data_ready: yes

@@ -1,11 +1,11 @@
 check,status,message
-public_exports_overall,pass,C:\Users\abelp\Desktop\Dynamic-Fifa-2026-Predictor-PreFinal\outputs\reports\public_export\public_export_validation.md
+public_exports_overall,pass,C:\Users\abelp\Desktop\fifa-final-production\outputs\reports\public_export\public_export_validation.md
 dashboard_input:latest_live_run_manifest.json,pass,readable
 dashboard_input:live_provider_freshness.json,pass,readable
 dashboard_input:probability_source_history.csv,pass,readable
 team_stats:only_completed_matches,pass,team stats contain only completed (non-future) matches
 team_stats:no_duplicate_identities,pass,48 unique team identities
-history:champion_probability_history.csv:no_duplicate_run_entries,pass,"34 rows, no duplicate ['run_id', 'team'] entries"
-history:finalist_probability_history.csv:no_duplicate_run_entries,pass,"34 rows, no duplicate ['run_id', 'team'] entries"
-history:finalist_pair_probability_history.csv:no_duplicate_run_entries,pass,"40 rows, no duplicate ['run_id', 'finalist_team_1', 'finalist_team_2'] entries"
-history:probability_source_history.csv:no_duplicate_run_entries,pass,"14 rows, no duplicate ['run_id'] entries"
+history:champion_probability_history.csv:no_duplicate_run_entries,pass,"37 rows, no duplicate ['run_id', 'team'] entries"
+history:finalist_probability_history.csv:no_duplicate_run_entries,pass,"40 rows, no duplicate ['run_id', 'team'] entries"
+history:finalist_pair_probability_history.csv:no_duplicate_run_entries,pass,"43 rows, no duplicate ['run_id', 'finalist_team_1', 'finalist_team_2'] entries"
+history:probability_source_history.csv:no_duplicate_run_entries,pass,"17 rows, no duplicate ['run_id'] entries"

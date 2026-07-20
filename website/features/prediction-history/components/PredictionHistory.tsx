@@ -66,6 +66,8 @@ export default function PredictionHistory({ data }: { data: PredictionHistoryDat
   }
 
   const { selected, previous, isLatest } = selection;
+  // The newest archived state is a completed tournament: the leader is the confirmed champion.
+  const latestComplete = data.snapshots.at(-1)?.tournament_phase.toLowerCase() === "complete";
 
   return (
     <PageHeader>
@@ -107,9 +109,9 @@ export default function PredictionHistory({ data }: { data: PredictionHistoryDat
         />
         <SummaryCard
           icon={<Trophy width={17} height={17} />}
-          label="Latest archived leader"
+          label={latestComplete ? "Confirmed champion" : "Latest archived leader"}
           value={data.snapshots.at(-1)?.main_forecast.most_likely_champion?.team ?? "Unavailable"}
-          hint={pct(data.snapshots.at(-1)?.main_forecast.most_likely_champion?.probability)}
+          hint={latestComplete ? "tournament complete" : pct(data.snapshots.at(-1)?.main_forecast.most_likely_champion?.probability)}
           accent="var(--gold-c)"
         />
         <SummaryCard
@@ -200,6 +202,9 @@ function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, prominent = 
   const champion = forecast.most_likely_champion;
   const final = forecast.most_likely_final;
   const confirmedFinal = isConfirmedFinalSnapshot(snapshot);
+  // Tournament had finished at this archived state: the champion and the final are settled
+  // facts here, so label them as results rather than projections.
+  const completedSnapshot = snapshot.tournament_phase.toLowerCase() === "complete";
   const archivedMonteCarloFinal = confirmedFinal && forecast.champion_probability_basis !== "direct_final_matchup_probability";
   const provenance = snapshot.record_class === "genuine_archived_forecast"
     ? "Genuine archived forecast"
@@ -227,27 +232,29 @@ function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, prominent = 
 
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
         <div className="history-headline-card">
-          <span>Most likely champion</span>
+          <span>{completedSnapshot ? "Champion" : "Most likely champion"}</span>
           <div className="mt-3 flex items-center gap-2">
             {champion?.team && <CountryFlag code={teamCodes[champion.team]} country={champion.team} size="lg" />}
             <strong>{champion?.team ?? "Unavailable"}</strong>
-            <b>{pct(champion?.probability)}</b>
+            {!completedSnapshot && <b>{pct(champion?.probability)}</b>}
           </div>
-          {forecast.second_most_likely_champion && (
-            <small>Next: {forecast.second_most_likely_champion.team} at {pct(forecast.second_most_likely_champion.probability)}</small>
-          )}
+          {completedSnapshot
+            ? <small>Confirmed champion — the tournament was complete at this update</small>
+            : forecast.second_most_likely_champion && (
+                <small>Next: {forecast.second_most_likely_champion.team} at {pct(forecast.second_most_likely_champion.probability)}</small>
+              )}
         </div>
         <div className="history-headline-card">
-          <span>{confirmedFinal ? "Confirmed Final" : "Projected final"}</span>
+          <span>{completedSnapshot ? "Final result" : confirmedFinal ? "Confirmed Final" : "Projected final"}</span>
           <strong className="mt-3 block !text-lg">{final ? `${final.team_1} vs ${final.team_2}` : "Unavailable"}</strong>
-          {!confirmedFinal && <b className="mt-1 block">{final ? pct(final.probability) : ""}</b>}
-          <small>{confirmedFinal ? "Official final matchup at this update" : "Most likely final pairing at this update"}</small>
+          {!confirmedFinal && !completedSnapshot && <b className="mt-1 block">{final ? pct(final.probability) : ""}</b>}
+          <small>{completedSnapshot ? "The final had been played at this update" : confirmedFinal ? "Official final matchup at this update" : "Most likely final pairing at this update"}</small>
         </div>
       </div>
 
       <div className="mt-6 grid gap-5 md:grid-cols-2">
-        <ProbabilityList title="Champion probabilities" entries={forecast.champion_probabilities} teamCodes={teamCodes} color="var(--gold-c)" />
-        {confirmedFinal && final
+        <ProbabilityList title={completedSnapshot ? "Confirmed outcome" : "Champion probabilities"} entries={forecast.champion_probabilities} teamCodes={teamCodes} color="var(--gold-c)" />
+        {(confirmedFinal || completedSnapshot) && final
           ? <ConfirmedFinalists teams={[final.team_1, final.team_2]} teamCodes={teamCodes} />
           : <ProbabilityList title="Finalist probabilities" entries={forecast.finalist_probabilities} teamCodes={teamCodes} color="var(--cyan)" />}
       </div>

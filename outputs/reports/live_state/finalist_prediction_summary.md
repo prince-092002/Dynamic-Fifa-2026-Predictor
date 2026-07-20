@@ -1,32 +1,33 @@
-# Final Prediction Summary
+# Finalist Prediction Summary
 
-- Current phase: final
+- Current phase: complete
 - Selected live provider: football_data_org
 - Forecast mode: true_live_forecast
 - Public label: True live forecast from current tournament state
 - Source quality score: 100
 - Forecast ran: True
-- Prediction relevance: finalists_known
-- Champion probability basis: direct_final_matchup_probability
-- Monte Carlo diagnostic leader: Spain (0.5223)
-- Live model probability usage: 10000 of 10000 simulated matches (100.00%)
+- Prediction relevance: tournament_complete
+- Champion probability basis: monte_carlo_simulation
+- Monte Carlo diagnostic leader: Spain (1.0000)
+- Live model probability usage: 0 of 10000 simulated matches (0.00%)
 - Elo fallback probability usage: 0 of 10000 simulated matches (0.00%)
 
 
-## Confirmed Final
+## Top Finalist Pairs
 
-| Matchup | Status |
-|---|---|
-| Argentina vs Spain | Confirmed |
+| Pair | Probability |
+|---|---:|
+| Argentina vs Spain | 1.0000 |
 
-## Confirmed Finalists
+## Top Reach-Final Teams
 
-- Argentina
-- Spain
+| Team | Probability |
+|---|---:|
+| Spain | 1.0000 |
+| Argentina | 1.0000 |
 
-## Championship Probabilities
+## Top Champion Probabilities
 
-| Team | Canonical direct probability | Monte Carlo diagnostic |
-|---|---:|---:|
-| Spain | 0.5195 | 0.5223 |
-| Argentina | 0.4805 | 0.4777 |
+| Team | Probability |
+|---|---:|
+| Spain | 1.0000 |

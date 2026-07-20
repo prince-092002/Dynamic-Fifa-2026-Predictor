@@ -1,8 +1,8 @@
 # Live Bracket Status Report
 
 - Knockout fixture rows: 31
-- Completed knockout matches: 30
-- Scheduled knockout matches: 1
+- Completed knockout matches: 31
+- Scheduled knockout matches: 0
 - TBD knockout matches: 0
 - Percentage live_api: 0.00%
 - Percentage fallback_template: 0.00%

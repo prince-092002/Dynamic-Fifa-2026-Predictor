@@ -4,6 +4,8 @@ A live machine-learning forecasting system that combines **real FIFA World Cup 2
 
 > Independent analytics project. Not affiliated with or endorsed by FIFA. Predictions are probabilistic estimates, not guarantees.
 
+> **🏆 Tournament complete — Spain are FIFA World Cup 2026 champions.** Spain beat Argentina 1–0 after extra time in the final; Argentina finished as runner-up. The model's final pre-match simulation gave Spain a 51.9% championship probability (Argentina 48.1%), so the final champion prediction was correct. That pre-final forecast is preserved unchanged in Prediction History — it was not rewritten after the result was known. Final update: **July 19, 2026 at 7:00 PM CT**.
+
 ## Live demo
 
 - **Website (Vercel):** https://dynamic-fifa-2026-predictor.vercel.app — auto-redeploys from `main` on every matchday push

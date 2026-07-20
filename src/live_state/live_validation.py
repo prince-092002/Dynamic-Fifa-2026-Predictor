@@ -61,6 +61,30 @@ def _surviving_teams_from_bracket() -> set:
     return teams - losers
 
 
+def _completed_final_teams() -> set:
+    """The two teams that contested the completed final.
+
+    Once the final has been played these are historical fact, not a projection: the
+    winner is champion and the loser is runner-up. Used to validate the completed
+    tournament state, where the runner-up is legitimately no longer a surviving team.
+    """
+    bracket_path = LIVE_STATE_DIR / "merged_bracket_state.csv"
+    bracket = pd.read_csv(bracket_path) if bracket_path.exists() else pd.DataFrame()
+    if bracket.empty:
+        return set()
+    completed = coerce_bool_series(bracket.get("is_completed", pd.Series(False, index=bracket.index)))
+    stage = bracket.get("stage", pd.Series("", index=bracket.index)).astype(str).str.strip().str.lower()
+    # Exact match keeps 'Quarterfinal'/'Semifinal'/'Third Place Playoff' out.
+    finals = bracket[(stage == "final") & completed]
+    teams = set()
+    for _, row in finals.iterrows():
+        for column in ("team_a", "team_b"):
+            value = row.get(column)
+            if pd.notna(value):
+                teams.add(str(value))
+    return teams
+
+
 def _integrity_checks(probabilities: pd.DataFrame, summary: dict, gate: dict, forecast_ran: bool) -> list[dict]:
     rows = []
     champion_path = LIVE_STATE_DIR / "live_champion_probabilities.csv"
@@ -110,8 +134,25 @@ def _integrity_checks(probabilities: pd.DataFrame, summary: dict, gate: dict, fo
             finalists = set()
             for column in ["finalist_team_1", "finalist_team_2"]:
                 finalists.update(pair.get(column, pd.Series(dtype=str)).dropna().astype(str))
-            bad_finalists = sorted(finalists - surviving)
-            rows.append(_row("no_eliminated_team_as_finalist", "pass" if not bad_finalists else "fail", f"teams outside surviving bracket: {bad_finalists}" if bad_finalists else "all finalist teams are in the surviving bracket"))
+            if str(gate.get("current_phase")) == "complete":
+                # Tournament over: finalists are historical fact, and the runner-up is
+                # necessarily outside the surviving set, so the survivor rule cannot apply.
+                # Assert the stricter invariant instead — the reported finalists must be
+                # exactly the two teams that contested the completed final.
+                final_teams = _completed_final_teams()
+                if final_teams:
+                    mismatch = sorted(finalists.symmetric_difference(final_teams))
+                    rows.append(_row(
+                        "no_eliminated_team_as_finalist",
+                        "pass" if not mismatch else "fail",
+                        f"reported finalists do not match the completed final: {mismatch}" if mismatch
+                        else f"finalists match the completed final ({' vs '.join(sorted(final_teams))})",
+                    ))
+                else:
+                    rows.append(_row("no_eliminated_team_as_finalist", "warn", "tournament complete but no completed final row found in the bracket"))
+            else:
+                bad_finalists = sorted(finalists - surviving)
+                rows.append(_row("no_eliminated_team_as_finalist", "pass" if not bad_finalists else "fail", f"teams outside surviving bracket: {bad_finalists}" if bad_finalists else "all finalist teams are in the surviving bracket"))
         else:
             rows.append(_row("no_eliminated_team_as_champion", "warn", "no unplayed known bracket rows to derive the surviving set from"))
         tbd_teams = [t for t in champion["team"].astype(str) if t.upper().startswith("TBD")]

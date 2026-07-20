@@ -1,13 +1,11 @@
 {
-  "previous_phase": "final",
-  "current_phase": "final",
+  "previous_phase": "complete",
+  "current_phase": "complete",
   "phase_changed": false,
-  "detected_at": "2026-07-19T18:07:41+00:00",
+  "detected_at": "2026-07-20T06:05:48+00:00",
   "newly_resolved_matchups": 0,
-  "newly_completed_matches": 1,
-  "completed_match_count": 103,
-  "resolved_matchup_ids": [
-    "football_data_org_537390"
-  ],
+  "newly_completed_matches": 0,
+  "completed_match_count": 104,
+  "resolved_matchup_ids": [],
   "first_recorded_run": false
 }
