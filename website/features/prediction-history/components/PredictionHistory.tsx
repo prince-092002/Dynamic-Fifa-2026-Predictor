@@ -311,14 +311,14 @@ function ChampionshipRecord({ outcome, teamCodes }: {
   outcome: HistoryFinalOutcome;
   teamCodes: Record<string, string | null>;
 }) {
-  const { champion, runnerUp, championGoals, runnerUpGoals, decidedLabel } = outcome;
+  const { champion, runnerUp, championGoals, runnerUpGoals } = outcome;
   const scoreText =
     championGoals !== null && runnerUpGoals !== null
       ? `${champion} ${championGoals}–${runnerUpGoals} ${runnerUp ?? ""}`.trim()
       : `${champion} def. ${runnerUp ?? "runner-up"}`;
   const scoreSpoken =
     championGoals !== null && runnerUpGoals !== null && runnerUp
-      ? `${champion} defeated ${runnerUp} ${championGoals} ${championGoals === 1 ? "goal" : "goals"} to ${runnerUpGoals}${outcome.wentToExtraTime ? " after extra time" : ""}.`
+      ? `${champion} defeated ${runnerUp} ${championGoals} ${championGoals === 1 ? "goal" : "goals"} to ${runnerUpGoals}.`
       : `${champion} won the FIFA World Cup.`;
   const correct = outcome.predictionOutcome === "correct";
 
@@ -337,7 +337,7 @@ function ChampionshipRecord({ outcome, teamCodes }: {
           <p className="mt-2 text-sm text-fg2">2026 FIFA World Cup Champions</p>
           <hr className="history-champion-divider" />
           <p className="text-sm text-fg2">
-            Final: <span className="text-fg">{scoreText}</span> · {decidedLabel}
+            Final: <span className="text-fg">{scoreText}</span>
           </p>
           {outcome.predictedChampion && (
             <p className="mt-3">
@@ -353,23 +353,24 @@ function ChampionshipRecord({ outcome, teamCodes }: {
         <div className="history-result-card">
           <h3 className="text-xs font-semibold uppercase tracking-wider text-fg3">Final result</h3>
           <p className="sr-only">{scoreSpoken}</p>
-          <div className="mt-4 flex items-center justify-center gap-4 md:gap-6" aria-hidden>
-            <div className="flex min-w-0 flex-col items-center gap-2 text-center">
-              <CountryFlag code={teamCodes[champion]} country={champion} size="lg" />
-              <span className="truncate text-sm font-semibold text-fg">{champion}</span>
+          {/* Symmetric 1fr / auto / 1fr grid: both teams get identical width, so the score
+              stays optically centred in the card regardless of name length. */}
+          <div className="history-result-body">
+            <div className="history-result-row" aria-hidden>
+              <div className="history-result-team">
+                <CountryFlag code={teamCodes[champion]} country={champion} size="lg" />
+                <span className="history-result-name is-winner">{champion}</span>
+              </div>
+              <span className="history-score">
+                {championGoals ?? "–"}<span className="history-score-dash">–</span>{runnerUpGoals ?? "–"}
+              </span>
+              <div className="history-result-team">
+                {runnerUp && <CountryFlag code={teamCodes[runnerUp]} country={runnerUp} size="lg" />}
+                <span className="history-result-name">{runnerUp ?? "—"}</span>
+              </div>
             </div>
-            <span className="history-score">
-              {championGoals ?? "–"}<span className="history-score-dash">–</span>{runnerUpGoals ?? "–"}
-            </span>
-            <div className="flex min-w-0 flex-col items-center gap-2 text-center">
-              {runnerUp && <CountryFlag code={teamCodes[runnerUp]} country={runnerUp} size="lg" />}
-              <span className="truncate text-sm text-fg2">{runnerUp ?? "—"}</span>
-            </div>
+            <p className="history-result-caption">{champion} won the World Cup.</p>
           </div>
-          <p className="mt-4 text-center text-sm text-fg2">{decidedLabel}</p>
-          <p className="mt-1 text-center text-sm text-fg2">
-            {champion} won the World Cup{outcome.wentToExtraTime ? " after extra time" : ""}.
-          </p>
         </div>
       </div>
 

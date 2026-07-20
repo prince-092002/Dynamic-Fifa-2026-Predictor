@@ -58,8 +58,7 @@ export default function Home() {
               <span className="champion-name">{finalResult.champion}</span> are FIFA World Cup champions
             </p>
             <p className="reveal reveal-3 hero-copy mx-auto mt-4 max-w-2xl text-[0.98rem] text-white md:text-lg">
-              {finalResult.champion} defeated {finalResult.runner_up} {finalResult.score}
-              {finalResult.went_to_extra_time ? " after extra time" : ""} in the final.
+              {finalResult.champion} defeated {finalResult.runner_up} {finalResult.score} in the final.
               The tournament is complete and the full forecast history is preserved.
             </p>
           </>
@@ -117,7 +116,6 @@ export default function Home() {
                   </div>
                   <p className="champion-score mt-3 text-xl md:text-2xl">
                     {finalResult.champion} {finalResult.champion_goals}–{finalResult.runner_up_goals} {finalResult.runner_up}
-                    <span className="ml-2 align-middle text-sm font-normal text-fg2">· {finalResult.decided_label}</span>
                   </p>
                   <hr className="champion-divider" />
                   <div className="flex flex-wrap items-center gap-2">
@@ -217,7 +215,7 @@ export default function Home() {
                   <span className="champion-score text-xl">{finalResult.champion_goals}–{finalResult.runner_up_goals}</span>
                   {finalResult.runner_up && <CountryFlag code={teamBy.get(finalResult.runner_up)?.code} country={finalResult.runner_up} size="lg" />}
                   <span>{finalResult.runner_up}</span>
-                  <span className="champion-chip ml-auto"><Check width={13} height={13} aria-hidden /> {finalResult.decided_label}</span>
+                  <span className="champion-chip ml-auto"><Trophy width={13} height={13} aria-hidden /> {finalResult.champion} — Champion</span>
                 </div>
                 <p className="mt-3 text-sm text-fg2">
                   {finalResult.champion} won the FIFA World Cup; {finalResult.runner_up} finished as runner-up.
