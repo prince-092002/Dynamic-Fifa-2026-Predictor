@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "snapshot_id": "20260720T055301Z__complete__104_completed",
-  "generated_at": "2026-07-20T05:53:01+00:00",
-  "display_date": "2026-07-20",
+  "snapshot_id": "20260720T000000Z__complete__104_completed",
+  "generated_at": "2026-07-20T00:00:00Z",
+  "display_date": "2026-07-19",
   "timezone": "America/Chicago",
   "tournament_phase": "complete",
   "completed_matches": 104,
   "remaining_matches": 0,
-  "teams_alive": 2,
+  "teams_alive": 0,
   "teams_eliminated": 46,
   "provider": "football_data_org",
   "forecast_mode": "true_live_forecast",
@@ -15,12 +15,10 @@
   "simulation_count": 10000,
   "seed": 42,
   "selected_model": "xgboost",
-  "run_id": "2026-07-20T055135Z-4e8e463d",
+  "run_id": "2026-07-20T060341Z-d924d50f",
   "record_class": "genuine_archived_forecast",
   "provenance": {
-    "refresh_id": "refresh-2026-07-20T055607Z-6ee71a",
-    "git_commit": "1c522df",
-    "stage": "pre_refresh"
+    "git_commit": "a866c7d"
   },
   "main_forecast": {
     "most_likely_champion": {

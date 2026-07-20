@@ -1,5 +1,6 @@
 import type {
   HistoryDateOption,
+  HistoryFinalOutcome,
   HistoryMatchPrediction,
   HistorySelection,
   PredictionHistoryDataset,
@@ -170,10 +171,20 @@ export function isConfirmedFinalSnapshot(snapshot: PredictionHistorySnapshot): b
   );
 }
 
+interface CompletedMatchResult {
+  winner: string;
+  score: string | null;
+  teamA: string;
+  teamB: string;
+  stage: string;
+  scoreDuration: string | null;
+}
+
 function completedResults(bracketPayload: unknown) {
   const bracket = record(bracketPayload);
-  const byId = new Map<string, { winner: string; score: string | null }>();
-  const byPair = new Map<string, { winner: string; score: string | null }>();
+  const byId = new Map<string, CompletedMatchResult>();
+  const byPair = new Map<string, CompletedMatchResult>();
+  let completedFinal: CompletedMatchResult | null = null;
   for (const rawRound of list(bracket?.rounds)) {
     const round = record(rawRound);
     for (const rawMatch of list(round?.matches)) {
@@ -182,14 +193,92 @@ function completedResults(bracketPayload: unknown) {
       const teamA = text(match?.team_a);
       const teamB = text(match?.team_b);
       if (!match || text(match.state) !== "completed" || !winner || !teamA || !teamB) continue;
-      const result = { winner, score: text(match.score) || null };
+      const result: CompletedMatchResult = {
+        winner,
+        score: text(match.score) || null,
+        teamA,
+        teamB,
+        stage: text(match.stage),
+        scoreDuration: text(match.score_duration) || null,
+      };
       if (typeof match.fixture_id === "number" || typeof match.fixture_id === "string") {
         byId.set(String(match.fixture_id), result);
       }
       byPair.set(pairKey(teamA, teamB), result);
+      // Exact stage match keeps Quarterfinal / Semifinal / Third Place Playoff out.
+      if (result.stage.trim().toLowerCase() === "final") completedFinal = result;
     }
   }
-  return { byId, byPair };
+  return { byId, byPair, completedFinal };
+}
+
+const DURATION_LABELS: Record<string, string> = {
+  REGULAR: "Full time",
+  EXTRA_TIME: "After extra time",
+  PENALTY_SHOOTOUT: "After penalties",
+};
+
+/**
+ * Assemble the settled outcome from data that is already archived or published.
+ *
+ * Champion/runner-up come from published team statuses, the score from the completed final
+ * in the bracket, and the model's call from the genuinely archived pre-final snapshot — so
+ * nothing here rewrites, recomputes, or back-dates a forecast after the result was known.
+ * Returns null until the final has actually been played.
+ */
+function buildFinalOutcome(
+  snapshots: PredictionHistorySnapshot[],
+  results: ReturnType<typeof completedResults>,
+  currentTeamStatuses: Record<string, string>,
+): HistoryFinalOutcome | null {
+  const finalMatch = results.completedFinal;
+  if (!finalMatch) return null;
+
+  const champion =
+    Object.keys(currentTeamStatuses).find((team) => currentTeamStatuses[team] === "champion") ??
+    finalMatch.winner;
+  if (!champion) return null;
+  const runnerUp =
+    Object.keys(currentTeamStatuses).find((team) => currentTeamStatuses[team] === "runner_up") ??
+    (finalMatch.teamA === champion ? finalMatch.teamB : finalMatch.teamA);
+
+  // The bracket stores the score home-first; re-orient so the champion's goals lead.
+  const parts = (finalMatch.score ?? "").split("-").map((value) => Number.parseInt(value.trim(), 10));
+  const validScore = parts.length === 2 && parts.every((value) => Number.isFinite(value));
+  const championIsHome = finalMatch.teamA === champion;
+  const championGoals = validScore ? (championIsHome ? parts[0] : parts[1]) : null;
+  const runnerUpGoals = validScore ? (championIsHome ? parts[1] : parts[0]) : null;
+
+  // Most recent archived snapshot that actually carried a prediction for the final.
+  const preFinal =
+    [...snapshots]
+      .reverse()
+      .find((snapshot) =>
+        snapshot.matchday_predictions.some((match) => match.stage.trim().toLowerCase() === "final"),
+      ) ?? null;
+  const finalPrediction =
+    preFinal?.matchday_predictions.find((match) => match.stage.trim().toLowerCase() === "final") ?? null;
+
+  return {
+    champion,
+    runnerUp: runnerUp ?? null,
+    championGoals,
+    runnerUpGoals,
+    score:
+      championGoals !== null && runnerUpGoals !== null
+        ? `${championGoals}-${runnerUpGoals}`
+        : finalMatch.score,
+    wentToExtraTime:
+      finalMatch.scoreDuration === "EXTRA_TIME" || finalMatch.scoreDuration === "PENALTY_SHOOTOUT",
+    decidedLabel: DURATION_LABELS[finalMatch.scoreDuration ?? "REGULAR"] ?? "Full time",
+    predictedChampion: finalPrediction?.predicted_winner ?? null,
+    predictionOutcome: finalPrediction
+      ? predictionOutcome(finalPrediction.predicted_winner, champion)
+      : "pending",
+    preFinalForecast:
+      preFinal?.main_forecast.champion_probabilities.map((entry) => ({ ...entry })) ?? [],
+    preFinalDisplayDate: preFinal?.display_date ?? null,
+  };
 }
 
 function enrichSnapshot(
@@ -297,6 +386,7 @@ export function buildPredictionHistoryDataset(
     skippedSnapshots,
     teamCodes: metadata.teamCodes,
     currentTeamStatuses: metadata.currentTeamStatuses,
+    finalOutcome: buildFinalOutcome(snapshots, results, metadata.currentTeamStatuses),
     accuracy: { correct, resolved, pending },
   };
 }

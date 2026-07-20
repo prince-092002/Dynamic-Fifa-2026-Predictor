@@ -466,3 +466,63 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .runner-up-chip { display:inline-flex; align-items:center; gap:.4rem; padding:.3rem .7rem; border-radius:999px;
   font-size:.78rem; font-weight:600; color: var(--fg-2);
   border:1px solid var(--line-strong); background: rgba(20,32,50,.7); }
+
+/* ============================================================
+   Prediction History — completed-tournament record
+   Gold championship accents on the existing history card system.
+   Pure CSS/typography: no images, no new assets. Motion is opt-in
+   behind prefers-reduced-motion (the global reduce rule also applies).
+   ============================================================ */
+.history-champion-card { position: relative; overflow: hidden; border-radius: 1rem; padding: 1.35rem;
+  border: 1px solid rgba(245,196,81,0.42); border-top: 2px solid var(--gold-c);
+  background: linear-gradient(158deg, rgba(245,196,81,0.12), rgba(20,32,50,0.92) 48%, rgba(14,22,38,0.95));
+  box-shadow: 0 20px 52px -30px rgba(245,196,81,0.55), inset 0 1px 0 rgba(255,255,255,0.05); }
+/* soft gold glow behind the flag — decorative only */
+.history-champion-card::after { content:""; position:absolute; inset:-45% 58% 45% -22%; pointer-events:none;
+  background: radial-gradient(circle at 50% 50%, rgba(245,196,81,0.20), transparent 70%); }
+.history-champion-card > * { position: relative; }
+
+.history-champion-badge { display:inline-flex; align-items:center; gap:.45rem; padding:.32rem .78rem; border-radius:999px;
+  font-family:var(--font-display); font-size:.7rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase;
+  color:#241a00; background: linear-gradient(180deg, #ffe6a1, var(--gold-c));
+  border:1px solid rgba(255,255,255,.35); box-shadow: 0 9px 24px -14px rgba(245,196,81,.85); }
+@media (prefers-reduced-motion: no-preference) {
+  .history-champion-badge { position:relative; overflow:hidden; }
+  .history-champion-badge::before { content:""; position:absolute; top:0; bottom:0; width:38%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.6), transparent);
+    transform: translateX(-160%); animation: history-champion-shine 5s ease-in-out 1.4s infinite; }
+}
+@keyframes history-champion-shine { 0% { transform: translateX(-160%); } 55%,100% { transform: translateX(320%); } }
+
+.history-champion-name { background: linear-gradient(100deg, #fff3cd, var(--gold-c) 72%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+.history-champion-divider { height:1px; border:0; margin:.95rem 0;
+  background: linear-gradient(90deg, rgba(245,196,81,.5), rgba(245,196,81,.09) 55%, transparent); }
+
+.history-result-card { border-radius: 1rem; padding: 1.35rem; border:1px solid var(--line-strong);
+  background: linear-gradient(180deg, rgba(20,32,50,0.85), rgba(14,22,38,0.85)); }
+
+.history-score { font-family:var(--font-display); font-weight:700; font-variant-numeric: tabular-nums;
+  font-size: clamp(2rem, 7vw, 3rem); line-height:1; letter-spacing:-0.02em; color: var(--fg);
+  display:inline-flex; align-items:baseline; }
+.history-score-dash { margin: 0 .3rem; color: var(--gold-c); }
+
+.history-outcome-badge { display:inline-flex; align-items:center; gap:.35rem; padding:.28rem .65rem; border-radius:999px;
+  font-size:.75rem; font-weight:600; color: var(--fg-2);
+  border:1px solid var(--line-strong); background: rgba(20,32,50,.7); }
+.history-outcome-badge.is-correct { color: var(--pitch);
+  border-color: rgba(61,214,140,.38); background: rgba(61,214,140,.10); }
+
+.history-standing { display:flex; align-items:center; gap:.6rem; padding:.6rem .7rem; border-radius:.7rem;
+  border:1px solid var(--line); background: rgba(14,22,38,0.6); }
+.history-standing.is-champion { border-color: rgba(245,196,81,.42); background: rgba(245,196,81,.08); }
+.history-standing-rank { font-family:var(--font-display); font-weight:700; font-size:.85rem; color: var(--fg-3);
+  min-width:1.1rem; text-align:center; }
+.history-standing.is-champion .history-standing-rank { color: var(--gold-c); }
+.history-standing-team { font-weight:600; color: var(--fg); min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.history-standing-label { margin-left:auto; flex:0 0 auto; padding:.2rem .55rem; border-radius:999px;
+  font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  color: var(--fg-2); border:1px solid var(--line-strong); background: rgba(20,32,50,.75); }
+.history-standing-label.is-champion { color:#241a00; border-color: transparent;
+  background: linear-gradient(180deg, #ffe6a1, var(--gold-c)); }

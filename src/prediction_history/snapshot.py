@@ -67,6 +67,24 @@ def _compact_ts(iso: str) -> str:
     return (iso or "").replace(":", "").replace("+0000", "Z").replace("+00:00", "Z").replace("-", "")[:16] or "unknown"
 
 
+def _to_utc_iso(iso: str | None) -> str | None:
+    """Normalise a timezone-aware timestamp to the archive's UTC ``...Z`` convention.
+
+    Accepts either a UTC value or a local offset value (e.g. ``2026-07-19T19:00:00-05:00``)
+    and returns the equivalent instant as ``2026-07-20T00:00:00Z``. Display stays correct
+    because ``_display_date`` and the website both render it in America/Chicago.
+    """
+    if not iso:
+        return None
+    try:
+        value = datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        return None
+    if value.tzinfo is None:
+        value = value.replace(tzinfo=timezone.utc)
+    return value.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
 def _display_date(iso: str) -> str:
     """Convert an archival UTC timestamp to the product's Chicago calendar date."""
     try:
@@ -98,8 +116,15 @@ def build_snapshot(files: dict[str, Any], record_class: str = RECORD_GENUINE,
     run_manifest = files.get("run_manifest") or {}
 
     champ_meta = champion.get("_meta") if isinstance(champion, dict) else {}
+    # Once the tournament is complete the archived state is dated by when the final state was
+    # PUBLISHED, not by the wall-clock runtime of whichever rerun happened to write it. Without
+    # this, a rerun just after midnight UTC dates the final archive to the following calendar
+    # day in America/Chicago, which misrepresents when the result was published.
+    final_publication_at = _to_utc_iso(((overview.get("final_result") or {}).get("published_at"))) \
+        if overview.get("tournament_complete") else None
     generated_at = (
-        (champ_meta or {}).get("generated_at")
+        final_publication_at
+        or (champ_meta or {}).get("generated_at")
         or (overview.get("_meta") or {}).get("generated_at")
         or run_manifest.get("generated_at")
         or run_manifest.get("timestamp")

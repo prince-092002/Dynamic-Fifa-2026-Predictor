@@ -5,6 +5,7 @@ import CountryFlag from "@/components/CountryFlag";
 import { Calendar, Check, Lock, Route, Shield, Signal, Trophy } from "@/components/icons";
 import { isConfirmedFinalSnapshot, selectHistorySnapshot } from "../lib/history";
 import type {
+  HistoryFinalOutcome,
   HistoryMatchPrediction,
   HistoryProbability,
   PredictionHistoryDataset,
@@ -141,6 +142,7 @@ export default function PredictionHistory({ data }: { data: PredictionHistoryDat
           snapshot={selected}
           teamCodes={data.teamCodes}
           predictionLabel={isLatest ? "Current Prediction" : "Historical Prediction"}
+          finalOutcome={data.finalOutcome}
           prominent
         />
         {previous ? (
@@ -149,6 +151,7 @@ export default function PredictionHistory({ data }: { data: PredictionHistoryDat
             snapshot={previous}
             teamCodes={data.teamCodes}
             predictionLabel="Historical Prediction"
+            finalOutcome={data.finalOutcome}
           />
         ) : (
           <section className="card p-6">
@@ -191,11 +194,12 @@ function PageHeader({ children }: { children: React.ReactNode }) {
   );
 }
 
-function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, prominent = false }: {
+function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, finalOutcome = null, prominent = false }: {
   title: string;
   snapshot: PredictionHistorySnapshot;
   teamCodes: Record<string, string | null>;
   predictionLabel: "Current Prediction" | "Historical Prediction";
+  finalOutcome?: HistoryFinalOutcome | null;
   prominent?: boolean;
 }) {
   const forecast = snapshot.main_forecast;
@@ -203,12 +207,16 @@ function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, prominent = 
   const final = forecast.most_likely_final;
   const confirmedFinal = isConfirmedFinalSnapshot(snapshot);
   // Tournament had finished at this archived state: the champion and the final are settled
-  // facts here, so label them as results rather than projections.
+  // facts here, so render the championship record instead of a probability comparison.
+  // Pre-final snapshots are untouched by this branch.
   const completedSnapshot = snapshot.tournament_phase.toLowerCase() === "complete";
+  const outcome = completedSnapshot ? finalOutcome : null;
   const archivedMonteCarloFinal = confirmedFinal && forecast.champion_probability_basis !== "direct_final_matchup_probability";
-  const provenance = snapshot.record_class === "genuine_archived_forecast"
-    ? "Genuine archived forecast"
-    : "Recovered from historical committed output";
+  const provenance = completedSnapshot
+    ? "Final tournament archive"
+    : snapshot.record_class === "genuine_archived_forecast"
+      ? "Genuine archived forecast"
+      : "Recovered from historical committed output";
 
   return (
     <section className={`history-update ${prominent ? "is-current" : ""}`} aria-labelledby={`${snapshot.snapshot_id}-title`}>
@@ -230,54 +238,206 @@ function UpdatePanel({ title, snapshot, teamCodes, predictionLabel, prominent = 
         {snapshot.source_quality_score !== null && <span className="chip">Source quality: {snapshot.source_quality_score}</span>}
       </div>
 
-      <div className="mt-5 grid gap-3 sm:grid-cols-2">
-        <div className="history-headline-card">
-          <span>{completedSnapshot ? "Champion" : "Most likely champion"}</span>
-          <div className="mt-3 flex items-center gap-2">
-            {champion?.team && <CountryFlag code={teamCodes[champion.team]} country={champion.team} size="lg" />}
-            <strong>{champion?.team ?? "Unavailable"}</strong>
-            {!completedSnapshot && <b>{pct(champion?.probability)}</b>}
-          </div>
-          {completedSnapshot
-            ? <small>Confirmed champion — the tournament was complete at this update</small>
-            : forecast.second_most_likely_champion && (
+      {outcome ? (
+        <ChampionshipRecord outcome={outcome} teamCodes={teamCodes} />
+      ) : (
+        <>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2">
+            <div className="history-headline-card">
+              <span>Most likely champion</span>
+              <div className="mt-3 flex items-center gap-2">
+                {champion?.team && <CountryFlag code={teamCodes[champion.team]} country={champion.team} size="lg" />}
+                <strong>{champion?.team ?? "Unavailable"}</strong>
+                <b>{pct(champion?.probability)}</b>
+              </div>
+              {forecast.second_most_likely_champion && (
                 <small>Next: {forecast.second_most_likely_champion.team} at {pct(forecast.second_most_likely_champion.probability)}</small>
               )}
-        </div>
-        <div className="history-headline-card">
-          <span>{completedSnapshot ? "Final result" : confirmedFinal ? "Confirmed Final" : "Projected final"}</span>
-          <strong className="mt-3 block !text-lg">{final ? `${final.team_1} vs ${final.team_2}` : "Unavailable"}</strong>
-          {!confirmedFinal && !completedSnapshot && <b className="mt-1 block">{final ? pct(final.probability) : ""}</b>}
-          <small>{completedSnapshot ? "The final had been played at this update" : confirmedFinal ? "Official final matchup at this update" : "Most likely final pairing at this update"}</small>
-        </div>
-      </div>
+            </div>
+            <div className="history-headline-card">
+              <span>{confirmedFinal ? "Confirmed Final" : "Projected final"}</span>
+              <strong className="mt-3 block !text-lg">{final ? `${final.team_1} vs ${final.team_2}` : "Unavailable"}</strong>
+              {!confirmedFinal && <b className="mt-1 block">{final ? pct(final.probability) : ""}</b>}
+              <small>{confirmedFinal ? "Official final matchup at this update" : "Most likely final pairing at this update"}</small>
+            </div>
+          </div>
 
-      <div className="mt-6 grid gap-5 md:grid-cols-2">
-        <ProbabilityList title={completedSnapshot ? "Confirmed outcome" : "Champion probabilities"} entries={forecast.champion_probabilities} teamCodes={teamCodes} color="var(--gold-c)" />
-        {(confirmedFinal || completedSnapshot) && final
-          ? <ConfirmedFinalists teams={[final.team_1, final.team_2]} teamCodes={teamCodes} />
-          : <ProbabilityList title="Finalist probabilities" entries={forecast.finalist_probabilities} teamCodes={teamCodes} color="var(--cyan)" />}
-      </div>
-      {archivedMonteCarloFinal && (
-        <p className="mt-3 text-xs text-fg3">This preserved update used Monte Carlo winner frequency for title odds; its Final Prediction card retains the direct XGBoost matchup probability.</p>
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            <ProbabilityList title="Champion probabilities" entries={forecast.champion_probabilities} teamCodes={teamCodes} color="var(--gold-c)" />
+            {confirmedFinal && final
+              ? <ConfirmedFinalists teams={[final.team_1, final.team_2]} teamCodes={teamCodes} />
+              : <ProbabilityList title="Finalist probabilities" entries={forecast.finalist_probabilities} teamCodes={teamCodes} color="var(--cyan)" />}
+          </div>
+          {archivedMonteCarloFinal && (
+            <p className="mt-3 text-xs text-fg3">This preserved update used Monte Carlo winner frequency for title odds; its Final Prediction card retains the direct XGBoost matchup probability.</p>
+          )}
+        </>
       )}
 
       <div className="mt-7">
-        <div className="flex items-center justify-between gap-3">
-          <h3 className="font-display text-base font-semibold text-fg">Matchday predictions</h3>
-          <span className="text-xs text-fg3">{snapshot.matchday_predictions.length} archived</span>
-        </div>
-        {snapshot.matchday_predictions.length ? (
-          <div className="mt-3 grid gap-3">
-            {snapshot.matchday_predictions.map((match) => (
-              <MatchCard key={`${snapshot.snapshot_id}-${match.match_id}`} match={match} teamCodes={teamCodes} predictionLabel={predictionLabel} />
-            ))}
+        {outcome ? (
+          <div className="card p-4 text-sm text-fg2" role="note">
+            <h3 className="font-display text-base font-semibold text-fg">Tournament complete</h3>
+            <p className="mt-1">No future match predictions remained after the final result was recorded.</p>
           </div>
         ) : (
-          <div className="card mt-3 p-4 text-sm text-fg2">No upcoming-match prediction was pending in this archived state.</div>
+          <>
+            <div className="flex items-center justify-between gap-3">
+              <h3 className="font-display text-base font-semibold text-fg">Matchday predictions</h3>
+              <span className="text-xs text-fg3">{snapshot.matchday_predictions.length} archived</span>
+            </div>
+            {snapshot.matchday_predictions.length ? (
+              <div className="mt-3 grid gap-3">
+                {snapshot.matchday_predictions.map((match) => (
+                  <MatchCard key={`${snapshot.snapshot_id}-${match.match_id}`} match={match} teamCodes={teamCodes} predictionLabel={predictionLabel} />
+                ))}
+              </div>
+            ) : (
+              <div className="card mt-3 p-4 text-sm text-fg2">No upcoming-match prediction was pending in this archived state.</div>
+            )}
+          </>
         )}
       </div>
     </section>
+  );
+}
+
+/**
+ * Completed-tournament record: championship hero, final score, model outcome and final
+ * standings. Rendered only when the final has been played, so historical snapshots keep
+ * their original probability-comparison layout.
+ */
+function ChampionshipRecord({ outcome, teamCodes }: {
+  outcome: HistoryFinalOutcome;
+  teamCodes: Record<string, string | null>;
+}) {
+  const { champion, runnerUp, championGoals, runnerUpGoals, decidedLabel } = outcome;
+  const scoreText =
+    championGoals !== null && runnerUpGoals !== null
+      ? `${champion} ${championGoals}–${runnerUpGoals} ${runnerUp ?? ""}`.trim()
+      : `${champion} def. ${runnerUp ?? "runner-up"}`;
+  const scoreSpoken =
+    championGoals !== null && runnerUpGoals !== null && runnerUp
+      ? `${champion} defeated ${runnerUp} ${championGoals} ${championGoals === 1 ? "goal" : "goals"} to ${runnerUpGoals}${outcome.wentToExtraTime ? " after extra time" : ""}.`
+      : `${champion} won the FIFA World Cup.`;
+  const correct = outcome.predictionOutcome === "correct";
+
+  return (
+    <>
+      <div className="mt-5 grid gap-3 lg:grid-cols-2">
+        {/* --- A. Championship hero --- */}
+        <div className="history-champion-card">
+          <span className="history-champion-badge">
+            <Trophy width={13} height={13} aria-hidden /> World Champions
+          </span>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <CountryFlag code={teamCodes[champion]} country={champion} size="xl" />
+            <span className="display history-champion-name text-4xl md:text-5xl">{champion}</span>
+          </div>
+          <p className="mt-2 text-sm text-fg2">2026 FIFA World Cup Champions</p>
+          <hr className="history-champion-divider" />
+          <p className="text-sm text-fg2">
+            Final: <span className="text-fg">{scoreText}</span> · {decidedLabel}
+          </p>
+          {outcome.predictedChampion && (
+            <p className="mt-3">
+              <span className={correct ? "history-outcome-badge is-correct" : "history-outcome-badge"}>
+                <Check width={13} height={13} aria-hidden />
+                Final champion prediction: {correct ? "Correct" : "Incorrect"}
+              </span>
+            </p>
+          )}
+        </div>
+
+        {/* --- B. Final result --- */}
+        <div className="history-result-card">
+          <h3 className="text-xs font-semibold uppercase tracking-wider text-fg3">Final result</h3>
+          <p className="sr-only">{scoreSpoken}</p>
+          <div className="mt-4 flex items-center justify-center gap-4 md:gap-6" aria-hidden>
+            <div className="flex min-w-0 flex-col items-center gap-2 text-center">
+              <CountryFlag code={teamCodes[champion]} country={champion} size="lg" />
+              <span className="truncate text-sm font-semibold text-fg">{champion}</span>
+            </div>
+            <span className="history-score">
+              {championGoals ?? "–"}<span className="history-score-dash">–</span>{runnerUpGoals ?? "–"}
+            </span>
+            <div className="flex min-w-0 flex-col items-center gap-2 text-center">
+              {runnerUp && <CountryFlag code={teamCodes[runnerUp]} country={runnerUp} size="lg" />}
+              <span className="truncate text-sm text-fg2">{runnerUp ?? "—"}</span>
+            </div>
+          </div>
+          <p className="mt-4 text-center text-sm text-fg2">{decidedLabel}</p>
+          <p className="mt-1 text-center text-sm text-fg2">
+            {champion} won the World Cup{outcome.wentToExtraTime ? " after extra time" : ""}.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-3 grid gap-3 lg:grid-cols-2">
+        {/* --- C. Model outcome --- */}
+        <div className="history-headline-card">
+          <span>Model outcome</span>
+          <dl className="mt-3 space-y-2 text-sm">
+            <div className="flex items-center justify-between gap-3">
+              <dt className="text-fg2">Final champion prediction</dt>
+              <dd className="font-semibold text-fg">{outcome.predictedChampion ?? "Not archived"}</dd>
+            </div>
+            <div className="flex items-center justify-between gap-3">
+              <dt className="text-fg2">Actual champion</dt>
+              <dd className="font-semibold text-fg">{champion}</dd>
+            </div>
+            <div className="flex items-center justify-between gap-3">
+              <dt className="text-fg2">Prediction status</dt>
+              <dd>
+                <span className={correct ? "history-outcome-badge is-correct" : "history-outcome-badge"}>
+                  {correct ? "Correct" : outcome.predictionOutcome === "pending" ? "Not archived" : "Incorrect"}
+                </span>
+              </dd>
+            </div>
+          </dl>
+          {outcome.preFinalForecast.length > 0 && (
+            <div className="mt-4 border-t border-line pt-3">
+              <h4 className="text-[0.68rem] font-semibold uppercase tracking-wider text-fg3">Pre-final forecast</h4>
+              <p className="mt-1.5 text-sm text-fg2">
+                {outcome.preFinalForecast.map((entry, index) => (
+                  <span key={entry.team}>
+                    {index > 0 && " · "}
+                    <span className="text-fg">{entry.team}</span> {pct(entry.probability)}
+                  </span>
+                ))}
+              </p>
+              <p className="mt-1 text-xs text-fg3">
+                Archived before kickoff{outcome.preFinalDisplayDate ? ` on ${fullDateLabel(outcome.preFinalDisplayDate)}` : ""} — not recalculated after the result.
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* --- D. Final standings --- */}
+        <div className="history-headline-card">
+          <span>Final standings</span>
+          <ol className="mt-3 space-y-2">
+            <li className="history-standing is-champion">
+              <span className="history-standing-rank">1</span>
+              <CountryFlag code={teamCodes[champion]} country={champion} size="lg" />
+              <span className="history-standing-team">{champion}</span>
+              <span className="history-standing-label is-champion">Champion</span>
+            </li>
+            {runnerUp && (
+              <li className="history-standing">
+                <span className="history-standing-rank">2</span>
+                <CountryFlag code={teamCodes[runnerUp]} country={runnerUp} size="lg" />
+                <span className="history-standing-team">{runnerUp}</span>
+                <span className="history-standing-label">Runner-up</span>
+              </li>
+            )}
+          </ol>
+          <p className="mt-3 text-xs text-fg3">
+            The tournament is complete, and this archived update records {champion} as the champion.
+          </p>
+        </div>
+      </div>
+    </>
   );
 }
 

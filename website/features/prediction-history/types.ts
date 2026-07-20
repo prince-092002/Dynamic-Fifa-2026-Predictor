@@ -71,6 +71,27 @@ export interface HistoryDateOption {
   snapshotId: string;
 }
 
+/**
+ * The settled tournament outcome, derived (not duplicated) from data that already exists:
+ * the published bracket's completed final, current team statuses, and the genuinely
+ * archived pre-final prediction. Null while the final has not been played, so pre-final
+ * snapshots keep rendering exactly as they did before.
+ */
+export interface HistoryFinalOutcome {
+  champion: string;
+  runnerUp: string | null;
+  championGoals: number | null;
+  runnerUpGoals: number | null;
+  score: string | null;
+  wentToExtraTime: boolean;
+  decidedLabel: string;
+  /** From the archived pre-final snapshot — never recomputed after the result. */
+  predictedChampion: string | null;
+  predictionOutcome: PredictionOutcome;
+  preFinalForecast: HistoryProbability[];
+  preFinalDisplayDate: string | null;
+}
+
 export interface PredictionHistoryDataset {
   status: "ready" | "empty";
   snapshots: PredictionHistorySnapshot[];
@@ -79,6 +100,8 @@ export interface PredictionHistoryDataset {
   skippedSnapshots: number;
   teamCodes: Record<string, string | null>;
   currentTeamStatuses: Record<string, string>;
+  /** Present only once the final has been played; null otherwise. */
+  finalOutcome: HistoryFinalOutcome | null;
   accuracy: {
     correct: number;
     resolved: number;

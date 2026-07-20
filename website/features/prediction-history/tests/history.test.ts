@@ -308,3 +308,159 @@ test("confirmed-final semantics require a final-stage snapshot with the official
   assert.equal(isConfirmedFinalSnapshot(dataset.snapshots.at(-1)!), true);
   assert.equal(isConfirmedFinalSnapshot(dataset.snapshots[0]), false);
 });
+
+// --------------------------------------------------------------------------- //
+// Completed-tournament state (final played): the derived championship record.
+// --------------------------------------------------------------------------- //
+
+type Loose = Record<string, unknown>;
+
+/** fixtureData() extended so the final has been played: Alpha beat Bravo 1-0 after extra time. */
+function completedTournamentData() {
+  const value = fixtureData() as unknown as {
+    files: Record<string, Loose>;
+    manifest: { schema_version: string; snapshots: Loose[] };
+    bracket: { rounds: Loose[] };
+    teams: { teams: Loose[] };
+  };
+
+  // The archived pre-final snapshot carrying the model's call on the final.
+  const preFinal = value.files["snapshots/three.json"];
+  preFinal.matchday_predictions = [{ ...match(5, "Alpha", "Bravo", "Alpha", 0.519471), stage: "Final" }];
+  (preFinal.main_forecast as Loose).champion_probabilities = [
+    { team: "Alpha", probability: 0.519471 },
+    { team: "Bravo", probability: 0.480529 },
+  ];
+
+  // A later completed-phase snapshot with no pending predictions.
+  const complete = snapshot("complete", "2026-07-20T00:00:00Z", 104, [], 1) as unknown as Loose;
+  complete.tournament_phase = "complete";
+  complete.display_date = "2026-07-19";
+  (complete.main_forecast as Loose).champion_probabilities = [{ team: "Alpha", probability: 1 }];
+  (complete.main_forecast as Loose).most_likely_champion = { team: "Alpha", probability: 1 };
+  value.files["snapshots/complete.json"] = complete;
+  value.manifest.snapshots.push({
+    file: "snapshots/complete.json",
+    snapshot_id: complete.snapshot_id,
+    generated_at: complete.generated_at,
+    completed_matches: complete.completed_matches,
+  });
+
+  // The published bracket now carries the completed final, decided after extra time.
+  value.bracket.rounds.push({
+    stage: "Final",
+    matches: [{
+      fixture_id: 5,
+      stage: "Final",
+      state: "completed",
+      team_a: "Alpha",
+      team_b: "Bravo",
+      score: "1-0",
+      score_duration: "EXTRA_TIME",
+      winner: "Alpha",
+    }],
+  });
+  value.teams.teams = [
+    { team: "Alpha", code: "AR", status: "champion" },
+    { team: "Bravo", code: "ES", status: "runner_up" },
+  ];
+  return value;
+}
+
+test("completed tournament derives champion, runner-up, score and extra-time status", () => {
+  const value = completedTournamentData();
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  const outcome = dataset.finalOutcome!;
+  assert.ok(outcome, "finalOutcome should be derived once the final is completed");
+  assert.equal(outcome.champion, "Alpha");
+  assert.equal(outcome.runnerUp, "Bravo");
+  assert.equal(outcome.championGoals, 1);
+  assert.equal(outcome.runnerUpGoals, 0);
+  assert.equal(outcome.score, "1-0");
+  assert.equal(outcome.wentToExtraTime, true);
+  assert.equal(outcome.decidedLabel, "After extra time");
+});
+
+test("completed tournament reports the archived final champion prediction as correct", () => {
+  const value = completedTournamentData();
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  assert.equal(dataset.finalOutcome!.predictedChampion, "Alpha");
+  assert.equal(dataset.finalOutcome!.predictionOutcome, "correct");
+});
+
+test("completed tournament preserves the pre-final forecast, not a post-result 100%", () => {
+  const value = completedTournamentData();
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  const forecast = dataset.finalOutcome!.preFinalForecast;
+  assert.deepEqual(
+    forecast.map((entry) => [entry.team, Number(entry.probability.toFixed(6))]),
+    [["Alpha", 0.519471], ["Bravo", 0.480529]],
+  );
+  // The settled champion must never be surfaced as a 100% "forecast".
+  assert.ok(!forecast.some((entry) => entry.probability === 1));
+});
+
+test("an incorrect archived call is reported as incorrect, never silently corrected", () => {
+  const value = completedTournamentData();
+  value.files["snapshots/three.json"].matchday_predictions = [
+    { ...match(5, "Alpha", "Bravo", "Bravo", 0.48), stage: "Final" },
+  ];
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  assert.equal(dataset.finalOutcome!.predictedChampion, "Bravo");
+  assert.equal(dataset.finalOutcome!.predictionOutcome, "incorrect");
+});
+
+test("the completed final snapshot displays the publication date, not the UTC calendar day", () => {
+  const value = completedTournamentData();
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  const latest = dataset.snapshots.at(-1)!;
+  assert.equal(latest.tournament_phase, "complete");
+  // 2026-07-20T00:00:00Z is 7:00 PM CDT on 2026-07-19 in America/Chicago.
+  assert.equal(latest.display_date, "2026-07-19");
+  const rendered = new Intl.DateTimeFormat("en-US", {
+    month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit",
+    timeZone: "America/Chicago", timeZoneName: "short",
+  }).format(new Date(latest.generated_at));
+  assert.equal(rendered, "Jul 19, 2026, 7:00 PM CDT");
+});
+
+test("finalOutcome stays null while the final has not been played", () => {
+  const value = fixtureData();
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  assert.equal(dataset.finalOutcome, null);
+});
+
+test("older snapshots keep their historical probabilities after the final is played", () => {
+  const value = completedTournamentData();
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  const preFinal = dataset.snapshots.find((entry) => entry.snapshot_id === "three")!;
+  assert.equal(preFinal.tournament_phase, "final");
+  assert.deepEqual(
+    preFinal.main_forecast.champion_probabilities.map((entry) => Number(entry.probability.toFixed(6))),
+    [0.519471, 0.480529],
+  );
+  const earliest = dataset.snapshots[0];
+  assert.ok(earliest.main_forecast.champion_probabilities.length > 0);
+  assert.notEqual(earliest.tournament_phase, "complete");
+});
+
+test("deriving the completed outcome does not mutate the source snapshots or bracket", () => {
+  const value = completedTournamentData();
+  const before = JSON.stringify(value);
+  buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  assert.equal(JSON.stringify(value), before);
+});
+
+test("the third-place playoff is never mistaken for the final", () => {
+  const value = completedTournamentData();
+  value.bracket.rounds.push({
+    stage: "Third Place Playoff",
+    matches: [{
+      fixture_id: 9, stage: "Third Place Playoff", state: "completed",
+      team_a: "Charlie", team_b: "Delta", score: "4-6", score_duration: "REGULAR", winner: "Delta",
+    }],
+  });
+  const dataset = buildPredictionHistoryDataset(value.manifest, value.files, value.bracket, value.teams);
+  assert.equal(dataset.finalOutcome!.champion, "Alpha");
+  assert.equal(dataset.finalOutcome!.score, "1-0");
+});
